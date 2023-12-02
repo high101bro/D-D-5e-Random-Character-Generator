@@ -82,17 +82,8 @@
 
 import random
 import numpy as np
+from dnd_lists import *
 
-# List of random names
-first_names = ["Grog", "Vax'ildan", "Keyleth", "Percy", "Scanlan", "Vex'ahlia", "Pike", "Tiberius", "Pike", "Percival"]
-last_names = ["Strongjaw", "De Rolo", "of the Air Ashari", "Fredrickstein", "Shorthalt", "of Syngorn", "Trickfoot", "Stormwind", "Trickfoot", "de Rolo"]
-# name_list = []
-# for i in range(10):
-#     full_name = {
-#         "first": random.choice(first_names),
-#         "last": random.choice(last_names)
-#     }
-#     name_list.append(full_name)
 
 # List of items
 def generate_item_list():
@@ -367,109 +358,109 @@ class Character():
             },
             'skills' : {
                 'acrobatics' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'animal_handling' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'arcana' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'athletics' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'deception' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'history' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'insight' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'intimidation' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'investigation' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'medicine' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'nature' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'perception' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'performance' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'persuasion' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'religion' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'sleight_of_hand' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'stealth' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
                 },
                 'survival' : {
-                    'related_attribute' : None,
+                    'related attribute' : None,
                     'proficiency' : False,
                     'total' : 0,
                     'description' : None
@@ -542,7 +533,7 @@ def print_character(dictionary, spaces=2):
     try:
         for key, value in dictionary.items():
             if isinstance(value, dict):  # Check if value is a nested dictionary
-                print(f"{' ' * spaces}{key}:")
+                print(f"{' ' * spaces}{key} :")
                 print_character(value, spaces + 2)  # recursively call the function to handle nested dictionary
             else:
                 padding = padding_value - spaces
@@ -568,9 +559,10 @@ def generate_random_weapon():
     return random_weapon
 
 
-number_of_characters = int(input(f"Enter number of characters to generate: "))
+character_number = int(input(f"Enter number of characters to generate: "))
+character_level = int(input(f"Enter character level [1-20]: "))
 characters = []
-for _ in range(number_of_characters):
+for _ in range(character_number):
     character = Character()
     characters.append(character)
 
@@ -624,27 +616,55 @@ for _ in range(number_of_characters):
 for character in characters:
     character.profile['name']['first'] = random.choice(first_names)
     character.profile['name']['last'] = random.choice(last_names)
+    character.profile['level'] = character_level
+    character.profile['proficiency_bonus'] = dnd_proficiency_bonus.get(character_level, '1')
+    character.profile['experience'] = dnd_levels_exp.get(character_level, '1')    
+    character.profile['race']['name'] = random.choice(dnd_races)
+    character.profile['race']['bonuses'] = dnd_race_bonuses.get(character.profile['race']['name'])
+    character.profile['race']['proficiencies'] = []
+    character.profile['race']['languages'] = []
+    character.profile['race']['features'] = []
+    character.profile['class']['name'] = random.choice(dnd_classes)
+    character.profile['class']['level'] = 0
+    character.profile['class']['bonuses'] = []
+    character.profile['class']['proficiencies'] = []
+    character.profile['class']['languages'] = []
+    character.profile['class']['features'] = []
+    character.profile['background']['name'] = None
+    character.profile['background']['features'] = []
+    character.profile['background']['description'] = None
+    character.profile['traits']['personality'] = []
+    character.profile['traits']['feats'] = []
+    character.profile['traits']['ideals'] = []
+    character.profile['traits']['bonds'] = []
+    character.profile['traits']['flaws'] = []
+    character.profile['moral_alignment'] = None
+    character.profile['ethical_alignment'] = None
+    character.profile['all_proficiencies'] = []
+    character.profile['all_languages'] = []
+
     for i in range(1, random.randint(1,6)):
         character.items.append(generate_random_item())
     for i in range(1, random.randint(1,4)):
         character.weapons.append(generate_random_weapon())
 
 
-
-for character in characters:
+# Print Character to screen
+for index, character in enumerate(characters):
     print(f"==================================================")
-    print(f"Character")
+    print(f"Character #{index + 1}")
+    print(f"==================================================")
+    print(f"Profile")
     print_character(character.profile)
-
-    print(f"Items:")
-    print_inventory(character.items, 'Item')
-
-    print(f"Weapons:")
-    print_inventory(character.weapons, 'Weapon')
 
     print(f"Physical:")
     print_character(character.physical)
 
+    print(f"Weapons:")
+    print_inventory(character.weapons, 'Weapon')
+
+    print(f"Items:")
+    print_inventory(character.items, 'Item')
 
 
 
