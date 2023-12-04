@@ -5,59 +5,8 @@
         # 'name' : {
         #     'first' : "",
         #     'last' : ""
-#     'spells' : {
-#         'attack_modifier' : 0,
-#         'save_dc' : 0,
-#         'number_known' : {
-#             'level_0' : 0,
-#             'level_1' : 0,
-#             'level_2' : 0,
-#             'level_3' : 0,
-#             'level_4' : 0,
-#             'level_5' : 0,
-#             'level_6' : 0,
-#             'level_7' : 0,
-#             'level_8' : 0,
-#             'level_9' : 0
-#         },
-#         'slots' : {
-#             'level_0' : 0,
-#             'level_1' : 0,
-#             'level_2' : 0,
-#             'level_3' : 0,
-#             'level_4' : 0,
-#             'level_5' : 0,
-#             'level_6' : 0,
-#             'level_7' : 0,
-#             'level_8' : 0,
-#             'level_9' : 0
-#         },
-#         'known' : {
-#             'name': "",
-#             'level' : 0,
-#             'damage' : 0,
-#             'type' : "",
-#             'casting_time' : "",
-#             'range' : 0,
-#             'components' : [],
-#             'duration' : 0,
-#             'description' : ""
-#         },
-#         'availabe' : [],
-#     },
+
 #     'items' : {
-#         'weapons' : {
-#             'name' : "",
-#             'class' : 0,
-#             'type' : "",
-#             'damage' : 0,
-#             'damage_type' : "",
-#             'attack_bonus' : 0,
-#             'range_low' : 0,
-#             'range_high' : 0,
-#             'properties' : [],
-#             'description' : ""
-#         },
 #         'armor' : {
 #             'name' : "",
 #             'class' : 0,
@@ -83,7 +32,9 @@
 import random
 import numpy as np
 from dnd_lists import *
-
+from dnd_races import *
+from dnd_classes import *
+from dnd_backgrounds import *
 
 # List of items
 def generate_item_list():
@@ -246,275 +197,33 @@ weapon_list = [generate_weapon_list() for _ in range(10)]
 
 class Character():
     def __init__(self):
-        self.profile = {
-            'name': {
-                'first' : None,
-                'last' : None
-            },
-            'level' : 0,
-            'proficiency_bonus' : 0,
-            'experience' : 0,
-            'race' : {
-                'name' : None,
-                'bonuses' : [],
-                'proficiencies' : [],
-                'languages' : [],
-                'features' : []
-            },
-            'class' : {
-                'name' : None,
-                'level' : 0,
-                'bonuses' : [],
-                'proficiencies' : [],
-                'languages' : [],
-                'features' : []
-            },
-            'background' : {
-                'name' : None,
-                'features' : [],
-                'description' : None      
-            },
-            'traits' : {
-                'personality' : [],
-                'feats' : [],
-                'ideals' : [],
-                'bonds' : [],
-                'flaws' : []
-            },
-            'moral_alignment' : None,
-            'ethical_alignment' : None,
-            'all_proficiencies' : [],
-            'all_languages' : []
-        }            
+        self.profile = {}         
+        #         'description' : {
+        #             'age' : 0,
+        #             'height' : 0,
+        #             'weight' : 0,
+        #             'skin_color' : None,
+        #             'description' : None,
+        #             'eye_color' : None,
+        #             'ear_type' : None
+
+        #         'traits' : {
+        #             'personality' : [],
+        #             'feats' : [],
+        #             'ideals' : [],
+        #             'bonds' : [],
+        #             'flaws' : []
+        #         },
+        #         'all_proficiencies' : [],
+        #         'all_languages' : []
+
+        self.capabilities = {}
+        self.spells = {}
         self.items = []
         self.weapons = []
-        self.physical = {
-            'description' : {
-                'age' : 0,
-                'height' : 0,
-                'weight' : 0,
-                'skin_color' : None,
-                'description' : None,
-                'eye_color' : None,
-                'ear_type' : None
-            },
-            'capabilities' : {
-                'carry_capacity' : 0,
-                'push_pull_lift' : 0,
-                'speed' : 0,
-                'vision' : None,
-                'dark_vision' : 0,
-                'passive_perception' : 0
-            },
-            'attributes' : {
-                'strength' : {
-                    'base' : 0,
-                    'race_bonus' : 0,
-                    'class_proficiency' : 0,
-                    'total' : 0,
-                    'modifier' : 0,
-                    'saving_throw' : 0
-                },
-                'dexterity' : {
-                    'base' : 0,
-                    'race_bonus' : 0,
-                    'class_proficiency' : 0,
-                    'total' : 0,
-                    'modifier' : 0,
-                    'saving_throw' : 0
-                },
-                'constitution' : {
-                    'base' : 0,
-                    'race_bonus' : 0,
-                    'class_proficiency' : 0,
-                    'total' : 0,
-                    'modifier' : 0,
-                    'saving_throw' : 0
-                },
-                'inteligence' : {
-                    'base' : 0,
-                    'race_bonus' : 0,
-                    'class_proficiency' : 0,
-                    'total' : 0,
-                    'modifier' : 0,
-                    'saving_throw' : 0
-                },
-                'wisdom' : {
-                    'base' : 0,
-                    'race_bonus' : 0,
-                    'class_proficiency' : 0,
-                    'total' : 0,
-                    'modifier' : 0,
-                    'saving_throw' : 0
-                },
-                'charisma' : {
-                    'base' : 0,
-                    'race_bonus' : 0,
-                    'class_proficiency' : 0,
-                    'total' : 0,
-                    'modifier' : 0,
-                    'saving_throw' : 0
-                },
-            },
-            'skills' : {
-                'acrobatics' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'animal_handling' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'arcana' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'athletics' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'deception' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'history' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'insight' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'intimidation' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'investigation' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'medicine' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'nature' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'perception' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'performance' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'persuasion' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'religion' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'sleight_of_hand' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'stealth' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                },
-                'survival' : {
-                    'related attribute' : None,
-                    'proficiency' : False,
-                    'total' : 0,
-                    'description' : None
-                }
-            },
-            'combat' : {
-                'initiative' : {
-                    'modifier' : 0,
-                    'total' : 0
-                },
-                'armor_class' : {
-                    'temporary' : 0,
-                    'total' : 0
-                },
-                'hit_points' : {
-                    'damage_resistance' : 0,
-                    'false_life' : 0,
-                    'temp_hit_points' : 0,
-                    'total' : 0
-                },
-            }
-        }
-        # End def
-    # End class
-
-def add_item(item):
-    item.name = None
-    item.owner = None
-    item.type = None
-    item.amount = None
-    item.cost = None
-    item.weight = None
-    item.mundane_properties = None
-    item.is_magical = None
-    item.magical_type = None
-    item.magical_properties = None
-    item.description = None
-    item.notes = None
-    return item
 
 
-# @add_item
-# class Weapon:
-#     def __init__(self, name, damage_amount, damage_type, attack_type, attack_bonus, is_ranged, range_low, range_high):
-#         self.name = name
-#         self.damage_amount = damage_amount
-#         self.damage_type = damage_type
-#         self.attack_type = attack_type
-#         self.attack_bonus = attack_bonus
-#         self.is_ranged = is_ranged
-#         self.range_low = range_low
-#         self.range_high = range_high
-
-padding_value = 30
+padding_value = 35
 
 def customize_character(dictionary, spaces=2):
     try:
@@ -559,8 +268,19 @@ def generate_random_weapon():
     return random_weapon
 
 
+def generate_attribute_number():
+    roles = []
+    for role in range(0,4):
+        roles.append(random.randint(1,6))
+    roles.remove(min(roles))
+    return sum(roles)
+
+
 character_number = int(input(f"Enter number of characters to generate: "))
 character_level = int(input(f"Enter character level [1-20]: "))
+character_race = input(f"Enter human: ")
+character_class = input(f"Enter paladin: ")
+
 characters = []
 for _ in range(character_number):
     character = Character()
@@ -612,36 +332,309 @@ for _ in range(character_number):
 #     "notes" : "This sword was pass down to you from your father"
 # })
 
+
 # Create random character
 for character in characters:
+    character.profile['name'] = {}
     character.profile['name']['first'] = random.choice(first_names)
     character.profile['name']['last'] = random.choice(last_names)
     character.profile['level'] = character_level
-    character.profile['proficiency_bonus'] = dnd_proficiency_bonus.get(character_level, '1')
+    character.profile['proficiency bonus'] = dnd_proficiency_bonus.get(character_level, '1')
     character.profile['experience'] = dnd_levels_exp.get(character_level, '1')    
-    character.profile['race']['name'] = random.choice(dnd_races)
-    character.profile['race']['bonuses'] = dnd_race_bonuses.get(character.profile['race']['name'])
-    character.profile['race']['proficiencies'] = []
-    character.profile['race']['languages'] = []
-    character.profile['race']['features'] = []
-    character.profile['class']['name'] = random.choice(dnd_classes)
-    character.profile['class']['level'] = 0
-    character.profile['class']['bonuses'] = []
-    character.profile['class']['proficiencies'] = []
-    character.profile['class']['languages'] = []
-    character.profile['class']['features'] = []
-    character.profile['background']['name'] = None
-    character.profile['background']['features'] = []
-    character.profile['background']['description'] = None
+
+    character.profile['race'] = {}
+    # if character_race.lower() == 'human':
+    character.profile['race']['name'] = 'Human'    
+    # else:
+    #     character.profile['race']['name'] = random.choice(list(dnd_races.keys()))
+    character_race = character.profile['race']['name']
+    character.profile['race'] = dnd_races[character_race]
+
+    character.profile['class'] = {}
+    # if character_class.lower() == 'paladin':
+    character.profile['class']['name'] = 'Paladin'
+    # else:
+    #     character.profile['class']['name'] = random.choice(list(dnd_classes.keys()))
+    character_class = character.profile['class']['name']
+
+
+    character.profile['class'] = dnd_classes[character_class]
+ 
+    character.profile['background'] = {}
+    character.profile['background']['name'] = random.choice(list(dnd_backgrounds.keys()))
+    character.profile['background'] = dnd_backgrounds[character.profile['background']['name']]
+
+    
+    character.profile['traits'] = {}
     character.profile['traits']['personality'] = []
     character.profile['traits']['feats'] = []
     character.profile['traits']['ideals'] = []
     character.profile['traits']['bonds'] = []
     character.profile['traits']['flaws'] = []
-    character.profile['moral_alignment'] = None
-    character.profile['ethical_alignment'] = None
-    character.profile['all_proficiencies'] = []
-    character.profile['all_languages'] = []
+
+    character.profile['alignment'] = random.choice(list(dnd_alignments))
+
+    # probably not needed, it really just duplicates the info
+    # character.profile['all_armor_proficiencies'] = []
+    # character.profile['all_weapon_proficiencies'] = []
+    # character.profile['all_tools_proficiencies'] = []
+    # character.profile['all_languages'] = list(character.profile['race']['Proficiencies']['languages']) + list(character.profile['class']['Proficiencies']['Languages'])
+
+
+    #!!!!!!!!!!!!!!!!!!!!!!
+    #!!!!!!!!!!!!!!!!!!!!!!
+    #!!!!!!!!!!!!!!!!!!!!!!
+    character.spells['attack modifier'] = 'answer' #need to calculate, need to get stat attribtes first
+    character.spells['save dc'] = 0 #need to calculate, need to get stat attribtes first
+    character.spells['known'] = 0 #need to script cal autogen
+    character.spells['prepared'] = 0 #need to script cal autogen
+    character.spells['spellcasting ability'] = 'answer' #need to calculate, need to get stat attribtes first
+    character.spells['spellcasting focus'] = 'answer' #need to calculate, need to get stat attribtes first
+    #!!!!!!!!!!!!!!!!!!!!!!
+    #!!!!!!!!!!!!!!!!!!!!!!
+    #!!!!!!!!!!!!!!!!!!!!!!
+
+    if character_class != 'Paladin' and character_class != 'Ranger' :
+        character.spells['number known'] = \
+        dnd_classes[character_class]['Level Chart'][character.profile['level']]['1st Level Spell Slots'],
+        dnd_classes[character_class]['Level Chart'][character.profile['level']]['2nd Level Spell Slots'],
+        dnd_classes[character_class]['Level Chart'][character.profile['level']]['3rd Level Spell Slots'],
+        dnd_classes[character_class]['Level Chart'][character.profile['level']]['4th Level Spell Slots'],
+        dnd_classes[character_class]['Level Chart'][character.profile['level']]['5th Level Spell Slots'],
+        dnd_classes[character_class]['Level Chart'][character.profile['level']]['6th Level Spell Slots'],
+        dnd_classes[character_class]['Level Chart'][character.profile['level']]['7th Level Spell Slots'],
+        dnd_classes[character_class]['Level Chart'][character.profile['level']]['8th Level Spell Slots'],
+        dnd_classes[character_class]['Level Chart'][character.profile['level']]['9th Level Spell Slots']
+    else:
+        dnd_classes[character_class]['Level Chart'][character.profile['level']]['1st Level Spell Slots'],
+        dnd_classes[character_class]['Level Chart'][character.profile['level']]['2nd Level Spell Slots'],
+        dnd_classes[character_class]['Level Chart'][character.profile['level']]['3rd Level Spell Slots'],
+        dnd_classes[character_class]['Level Chart'][character.profile['level']]['4th Level Spell Slots'],
+        dnd_classes[character_class]['Level Chart'][character.profile['level']]['5th Level Spell Slots']
+
+    character.spells['slots'] = {}
+    
+    if dnd_classes[character_class]['Level Chart'][character.profile['level']]['1st Level Spell Slots'] != '-':
+        if character_class == 'Paladin':
+            character.spells['slots']['1st Level'] = {
+                'known spells' : dnd_classes[character_class]['Spells']['Available']['1st Level'],
+                'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['1st Level Spell Slots']
+            }
+    if dnd_classes[character_class]['Level Chart'][character.profile['level']]['2nd Level Spell Slots'] != '-':
+        if character_class == 'Paladin':
+            character.spells['slots']['2nd Level'] = {
+                'known spells' : dnd_classes[character_class]['Spells']['Available']['2nd Level'],
+                'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['2nd Level Spell Slots']
+            }
+    if dnd_classes[character_class]['Level Chart'][character.profile['level']]['3rd Level Spell Slots'] != '-':
+        if character_class == 'Paladin':
+            character.spells['slots']['3rd Level'] = {
+                'known spells' : dnd_classes[character_class]['Spells']['Available']['3rd Level'],
+                'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['3rd Level Spell Slots']
+            }
+
+    if dnd_classes[character_class]['Level Chart'][character.profile['level']]['4th Level Spell Slots'] != '-':
+        if character_class == 'Paladin':
+            character.spells['slots']['4th Level'] = {
+                'known spells' : dnd_classes[character_class]['Spells']['Available']['4th Level'],
+                'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['4th Level Spell Slots']
+            }
+
+    if dnd_classes[character_class]['Level Chart'][character.profile['level']]['5th Level Spell Slots'] != '-':
+        if character_class == 'Paladin':
+            character.spells['slots']['5th Level'] = {
+                'known spells' : dnd_classes[character_class]['Spells']['Available']['5th Level'],
+                'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['5th Level Spell Slots']
+            }
+
+    if character_class != 'Paladin' and character_class != 'Ranger' :
+        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['6th Level Spell Slots'] != '-':
+            character.spells['slots']['6th Level'] = dnd_classes[character_class]['Spells']['Available']['6th Level']
+
+        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['7th Level Spell Slots'] != '-':
+            character.spells['slots']['7th Level'] = dnd_classes[character_class]['Spells']['Available']['7th Level']
+
+        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['8th Level Spell Slots'] != '-':
+            character.spells['slots']['8th Level'] = dnd_classes[character_class]['Spells']['Available']['8th Level']
+
+        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['9th Level Spell Slots'] != '-':
+            character.spells['slots']['9th Level'] = dnd_classes[character_class]['Spells']['Available']['9th Level']
+
+    character.capabilities['physical'] = {}
+
+    
+
+    character.capabilities['attributes'] = {
+        'strength' : {},
+        'dexterity' : {},
+        'constitution' : {},
+        'intelligence' : {},
+        'wisdom' : {},
+        'charisma' : {}
+    }
+    for attribute in character.capabilities['attributes']:
+        character.capabilities['attributes'][attribute]['base'] = generate_attribute_number()
+        try:
+            character.capabilities['attributes'][attribute]['race_bonus'] = dnd_races[character_race]['Ability Score Increase'][attribute]
+        except:
+            character.capabilities['attributes'][attribute]['race_bonus'] = 0
+
+        if attribute == str(dnd_classes[character_class]['Features']["Proficiencies"]["Spellcasting Modifier"]).lower():
+            character.capabilities['attributes'][attribute]['spellcasting modifier'] = True
+        else:
+            character.capabilities['attributes'][attribute]['spellcasting modifier'] = False
+        character.capabilities['attributes'][attribute]['total'] =  character.capabilities['attributes'][attribute]['base'] + character.capabilities['attributes'][attribute]['race_bonus']
+        character.capabilities['attributes'][attribute]['modifier'] = (character.capabilities['attributes'][attribute]['total'] - 10) // 2
+        for saving_throw in dnd_classes[character_class]['Features']["Proficiencies"]["Saving Throws"]:
+            if attribute in str(saving_throw).lower():
+                character.capabilities['attributes'][attribute]['saving_throw'] = character.capabilities['attributes'][attribute]['modifier'] + character.profile['proficiency bonus']
+
+
+
+
+    character.capabilities['combat'] = {}
+
+    #         },
+    #         'physical' : {
+    #             'carry_capacity' : 0,
+    #             'push_pull_lift' : 0,
+    #             'speed' : 0,
+    #             'vision' : None,
+    #             'dark_vision' : 0,
+    #             'passive_perception' : 0
+    #         },
+
+    #         },
+    #         'skills' : {
+    #             'acrobatics' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'animal_handling' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'arcana' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'athletics' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'deception' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'history' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'insight' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'intimidation' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'investigation' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'medicine' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'nature' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'perception' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'performance' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'persuasion' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'religion' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'sleight_of_hand' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'stealth' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             },
+    #             'survival' : {
+    #                 'related_attribute' : None,
+    #                 'proficiency' : False,
+    #                 'total' : 0,
+    #                 'description' : None
+    #             }
+    #         },
+    #         'combat' : {
+    #             'initiative' : {
+    #                 'modifier' : 0,
+    #                 'total' : 0
+    #             },
+    #             'armor_class' : {
+    #                 'temporary' : 0,
+    #                 'total' : 0
+    #             },
+    #             'hit_points' : {
+    #                 'damage_resistance' : 0,
+    #                 'false_life' : 0,
+    #                 'temp_hit_points' : 0,
+    #                 'total' : 0
+    #             },
+    #         }
+    #     }
+
+
+
 
     for i in range(1, random.randint(1,6)):
         character.items.append(generate_random_item())
@@ -649,22 +642,28 @@ for character in characters:
         character.weapons.append(generate_random_weapon())
 
 
+
 # Print Character to screen
 for index, character in enumerate(characters):
     print(f"==================================================")
     print(f"Character #{index + 1}")
     print(f"==================================================")
-    print(f"Profile")
+    print(f"Profile :")
     print_character(character.profile)
 
-    print(f"Physical:")
-    print_character(character.physical)
-
-    print(f"Weapons:")
+    print(f"Weapons :")
     print_inventory(character.weapons, 'Weapon')
 
-    print(f"Items:")
+    print(f"Items :")
     print_inventory(character.items, 'Item')
+
+    print(f"Spells :")
+    print_character(character.spells)
+
+    print(f"Capabilities :")
+    print_character(character.capabilities)
+
+
 
 
 
