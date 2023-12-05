@@ -45,6 +45,7 @@ dnd_classes = {
                 'An explorer\'s pack and four javelins',
             ]
         },
+        "Attribute Priority" : ['strength', 'constitution', 'dexterity', 'wisdom', 'charisma', 'intelligence'],
         "Spells" : {
             "Spellcasting Modifier" : "None",
             "Available" : {}
@@ -95,6 +96,7 @@ dnd_classes = {
                 'Leather armor and a dagger': 1
             }
         },
+        "Attribute Priority" : ['charisma', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'strength'],
         "Spells" : {
             "Spellcasting Modifier" : "charisma",
             "Available" : {
@@ -160,6 +162,7 @@ dnd_classes = {
                 'Choice 8 (if proficient)': 'chain mail'
             }
         },
+        "Attribute Priority" : ['wisdom', 'constitution', 'strength', 'charisma', 'dexterity', 'intelligence'],
         "Spells" : {
             "Spellcasting Modifier" : "wisdom",
             "Available" : {
@@ -188,6 +191,7 @@ dnd_classes = {
                 "Druidic": "You know Druidic, the secret language of druids."
             }
         },
+        "Attribute Priority" : ['wisdom', 'constitution', 'dexterity', 'intelligence', 'charisma', 'strength'],
         "Spells" : {
             "Spellcasting Modifier" : "wisdom",
             "Available" : {
@@ -214,6 +218,7 @@ dnd_classes = {
             "Spellcasting Modifier" : "None",
             "Languages": []
         },
+        "Attribute Priority" : ['strength', 'constitution', 'dexterity', 'intelligence', 'wisdom', 'charisma'],
         "Spells" : {
             "Spellcasting Modifier" : "None",
             "Available" : {}
@@ -229,6 +234,7 @@ dnd_classes = {
             "Spellcasting Modifier" : "None",
             "Languages": []
         },
+        "Attribute Priority" : ['dexterity', 'wisdom', 'constitution', 'strength', 'charisma', 'intelligence'],
         "Spells" : {
             "Spellcasting Modifier" : "None",
             "Available" : {}
@@ -279,6 +285,7 @@ dnd_classes = {
                 "Additional": "Chain mail and a holy symbol"
             }            
         },
+        "Attribute Priority": ['strength', 'charisma', 'constitution', 'dexterity', 'wisdom', 'intelligence'],
         "Spells" : {
             "Spellcasting Modifier" : "charisma",
             "Spell Slots" : "Paladins have a limited number of spell slots of different levels, which they use to cast spells. The number and level of these slots depend on the paladin's level. Refer to the 'The Paladin Spell Slots per Spell Level' table in your class description to see how many spell slots of each level you have.",
@@ -307,6 +314,7 @@ dnd_classes = {
             "Spellcasting Modifier" : "Widsom",
             "Languages": []
         },
+        "Attribute Priority" : ['dexterity', 'wisdom', 'constitution', 'strength', 'intelligence', 'charisma'],
         "Spells" : {
             "Spellcasting Modifier" : "wisdom",
             "Available" : {
@@ -328,6 +336,7 @@ dnd_classes = {
             "Spellcasting Modifier" : "None",
             "Languages": []
         },
+        "Attribute Priority" : ['dexterity', 'intelligence', 'constitution', 'charisma', 'wisdom', 'strength'],
         "Spells" : {
             "Spellcasting Modifier" : "None",
             "Available" : {}
@@ -352,6 +361,7 @@ dnd_classes = {
             "Skills": "Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion",
             "Languages": []
         },
+        "Attribute Priority" : ['charisma', 'constitution', 'dexterity', 'intelligence', 'wisdom', 'strength'],
         "Spells" : {
             "Spellcasting Modifier" : "charisma",
             "Available" : {
@@ -378,6 +388,7 @@ dnd_classes = {
             "Spellcasting Modifier" : "Charisma",
             "Languages": []
         },
+        "Attribute Priority" : ['charisma', 'constitution', 'dexterity', 'intelligence', 'wisdom', 'strength'],
         "Spells" : {
             "Spellcasting Modifier" : "charisma",
             "Available" : {
@@ -403,6 +414,7 @@ dnd_classes = {
             "Spellcasting Modifier" : "Intelligence",
             "Languages": []
         },
+        "Attribute Priority" : ['intelligence', 'constitution', 'dexterity', 'wisdom', 'charisma', 'strength'],
         "Spells" : {
             "Spellcasting Modifier" : "intelligence",
             "Available" : {

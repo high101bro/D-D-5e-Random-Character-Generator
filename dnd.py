@@ -269,11 +269,17 @@ def generate_random_weapon():
 
 
 def generate_attribute_number():
-    roles = []
-    for role in range(0,4):
-        roles.append(random.randint(1,6))
-    roles.remove(min(roles))
-    return sum(roles)
+    attribute_roles = []
+    for atr_role in range(0,7):
+        roles = []
+        for role in range(0,4):
+            roles.append(random.randint(1,6))
+        roles.remove(min(roles))
+        role_sum = sum(roles)
+        attribute_roles.append(role_sum)
+        
+    attribute_roles.remove(min(attribute_roles))
+    return attribute_roles
 
 
 character_number = int(input(f"Enter number of characters to generate: "))
@@ -384,12 +390,12 @@ for character in characters:
     #!!!!!!!!!!!!!!!!!!!!!!
     #!!!!!!!!!!!!!!!!!!!!!!
     #!!!!!!!!!!!!!!!!!!!!!!
-    character.spells['attack modifier'] = 'answer' #need to calculate, need to get stat attribtes first
-    character.spells['save dc'] = 0 #need to calculate, need to get stat attribtes first
-    character.spells['known'] = 0 #need to script cal autogen
-    character.spells['prepared'] = 0 #need to script cal autogen
-    character.spells['spellcasting ability'] = 'answer' #need to calculate, need to get stat attribtes first
-    character.spells['spellcasting focus'] = 'answer' #need to calculate, need to get stat attribtes first
+    # character.spells['attack modifier'] = 'answer' #need to calculate, need to get stat attribtes first
+    # character.spells['save dc'] = 0 #need to calculate, need to get stat attribtes first
+    # character.spells['known'] = 0 #need to script cal autogen
+    # character.spells['prepared'] = 0 #need to script cal autogen
+    # character.spells['spellcasting ability'] = 'answer' #need to calculate, need to get stat attribtes first
+    # character.spells['spellcasting focus'] = 'answer' #need to calculate, need to get stat attribtes first
     #!!!!!!!!!!!!!!!!!!!!!!
     #!!!!!!!!!!!!!!!!!!!!!!
     #!!!!!!!!!!!!!!!!!!!!!!
@@ -472,8 +478,26 @@ for character in characters:
         'wisdom' : {},
         'charisma' : {}
     }
+
+    new_roles = {
+        'strength' : 0,
+        'charisma' : 0,
+        'constitution' : 0,
+        'dexterity' : 0,
+        'wisdom' : 0,
+        'intelligence' : 0
+    }
+
+    generate_new_roles = generate_attribute_number()
+    generate_new_roles = sorted(generate_new_roles, reverse=True)
+    # Assigns role values in priority based on that listed in the dnd_classes
+    for index, attribute in enumerate(dnd_classes[character_class]['Attribute Priority']):
+        new_roles[attribute] = generate_new_roles[index]
+
+
     for attribute in character.capabilities['attributes']:
-        character.capabilities['attributes'][attribute]['base'] = generate_attribute_number()
+        character.capabilities['attributes'][attribute]['base'] = new_roles[attribute]
+        
         try:
             character.capabilities['attributes'][attribute]['race_bonus'] = dnd_races[character_race]['Ability Score Increase'][attribute]
         except:
@@ -663,7 +687,9 @@ for index, character in enumerate(characters):
     print(f"Capabilities :")
     print_character(character.capabilities)
 
-
+print(
+    generate_new_roles
+)
 
 
 
