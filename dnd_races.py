@@ -1,18 +1,46 @@
 #! /usr/bin/env python3
 
+# ASCII Art
+# https://patorjk.com/software/taag/#p=display&f=Big&t=DnD
+
 dnd_races = {
+
+
+
     "Elf": {
+        "ASCII Art": """
+  ______ _  __ 
+ |  ____| |/ _|
+ | |__  | | |_ 
+ |  __| | |  _|
+ | |____| | |  
+ |______|_|_|  
+               
+        """,
         "Name" : "Elf",
         "Description": "Elves are a magical people of otherworldly grace, living in the world but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light.",
         "Traits": {
-            "Darkvision": {
-                "Description": "Grants the ability to see in dim light within a certain radius as if it were bright light, and in darkness as if it were dim light. This trait allows characters to see in near-total darkness.",
-                "Range": "Typically 60 feet",
-                "Type": "Sensory"
+            "Speed" : {
+                "Ground" : 30,
+                "Flight" : 0
+            },
+            "Vision": {
+                "Normal" : {
+                    "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
+                    "Range" : "Characters with normal vision typically have a visual range determined by the lighting conditions in the game. In normal daylight or well-lit areas, characters with normal vision can see up to a specific distance without any hindrance. The exact range may vary depending on factors like the time of day, weather, and the DM's discretion.",
+                    "Light Sources" : "Characters with normal vision rely on natural or artificial light sources to see in dimly lit or dark areas. If there is insufficient light, they may suffer from the effects of dim light or darkness, which can impose penalties on their ability to see and perceive their surroundings.",
+                    "No Special Features" : "Normal vision does not grant any special abilities like darkvision, which allows characters to see in darkness as if it were dim light. Characters with normal vision may require torches, lanterns, or other light sources in dark environments.",
+                    "No Stat Modifications" : "Characters with normal vision do not receive any specific stat modifications related to their vision. Their vision is considered the standard baseline for visual perception."
+                },
+                "Darkvision": {
+                    "Possesses" : False,
+                    "Description": "Grants the ability to see in dim light within a certain radius as if it were bright light, and in darkness as if it were dim light. This trait allows characters to see in near-total darkness.",
+                    "Range": "Typically 60 feet"
+                }
             },
             "Keen Senses": {
-                "Description": "Provides proficiency in the Perception skill. This trait reflects a character's acute senses, allowing them to be more aware of their surroundings.",
-                "Skill Benefit": "Perception",
+                "Description": "Provides proficiency in the perception skill. This trait reflects a character's acute senses, allowing them to be more aware of their surroundings.",
+                "Skill Benefit": "perception",
                 "Type": "Skill Proficiency"
             },
             "Fey Ancestry": {
@@ -35,15 +63,40 @@ dnd_races = {
         },
         "Ability Score Increase": {'dexterity' : 2}
     },
+
+
+
     "Dwarf": {
+        "ASCII Art": """
+  _____                      __ 
+ |  __ \                    / _|
+ | |  | |_      ____ _ _ __| |_ 
+ | |  | \ \ /\ / / _` | '__|  _|
+ | |__| |\ V  V / (_| | |  | |  
+ |_____/  \_/\_/ \__,_|_|  |_|  
+                                
+        """,
         "Name" : "Dwarf",
         "Description": "Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. Dwarven kingdoms are located deep underground and they have a deep respect for their ancestors.",
         "Traits": {
-            "Darkvision": {
-                "Description": "Grants the ability to see in dim light within a certain radius as if it were bright light, and in darkness as if it were dim light. This trait allows characters to see in near-total darkness.",
-                "Range": "Typically 60 feet",
-                "Type": "Sensory"
-            }, 
+            "Speed" : {
+                "Ground" : 25,
+                "Flight" : 0
+            },
+            "Vision": {
+                "Normal" : {
+                    "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
+                    "Range" : "Characters with normal vision typically have a visual range determined by the lighting conditions in the game. In normal daylight or well-lit areas, characters with normal vision can see up to a specific distance without any hindrance. The exact range may vary depending on factors like the time of day, weather, and the DM's discretion.",
+                    "Light Sources" : "Characters with normal vision rely on natural or artificial light sources to see in dimly lit or dark areas. If there is insufficient light, they may suffer from the effects of dim light or darkness, which can impose penalties on their ability to see and perceive their surroundings.",
+                    "No Special Features" : "Normal vision does not grant any special abilities like darkvision, which allows characters to see in darkness as if it were dim light. Characters with normal vision may require torches, lanterns, or other light sources in dark environments.",
+                    "No Stat Modifications" : "Characters with normal vision do not receive any specific stat modifications related to their vision. Their vision is considered the standard baseline for visual perception."
+                },
+                "Darkvision": {
+                    "Possesses" : True,
+                    "Description": "Grants the ability to see in dim light within a certain radius as if it were bright light, and in darkness as if it were dim light. This trait allows characters to see in near-total darkness.",
+                    "Range": "Typically 60 feet"
+                }
+            },
             "Dwarven Resilience": {
                 "Description": "Dwarves have an innate resistance to poison damage and an advantage on saving throws against poison, reflecting their hardy nature and strong constitution.",
                 "Benefit": "Advantage on saving throws against poison, resistance to poison damage",
@@ -55,8 +108,8 @@ dnd_races = {
                 "Type": "Combat Proficiency"
             },
             "Stonecunning": {
-                "Description": "This trait represents the dwarven affinity for stonework. Dwarves receive double their proficiency bonus on Intelligence (History) checks related to the origin of stonework.",
-                "Benefit": "Double proficiency bonus on certain History checks",
+                "Description": "This trait represents the dwarven affinity for stonework. Dwarves receive double their proficiency bonus on Intelligence (history) checks related to the origin of stonework.",
+                "Benefit": "Double proficiency bonus on certain history checks",
                 "Type": "Skill Enhancement"
             }
         },
@@ -69,10 +122,39 @@ dnd_races = {
             'constitution': 2
         }
     },
+
+
+
     "Dragonborn": {
+        "ASCII Art": """
+  _____                              _                      
+ |  __ \                            | |                     
+ | |  | |_ __ __ _  __ _  ___  _ __ | |__   ___  _ __ _ __  
+ | |  | | '__/ _` |/ _` |/ _ \| '_ \| '_ \ / _ \| '__| '_ \ 
+ | |__| | | | (_| | (_| | (_) | | | | |_) | (_) | |  | | | |
+ |_____/|_|  \__,_|\__, |\___/|_| |_|_.__/ \___/|_|  |_| |_|
+                    __/ |                                   
+                   |___/                                    
+        """,
         "Name" : "Dragonborn",
         "Description": "Dragonborn look very much like dragons standing erect in humanoid form, though they lack wings or a tail. The first dragonborn had scales of vibrant hues matching the colors of their dragon kin, but generations of interbreeding have created a more uniform appearance.",
         "Traits": {
+            "Speed" : {
+                "Ground" : 30,
+                "Flight" : 0
+            },
+            "Vision" : {
+                "Normal" : {
+                    "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
+                    "Range" : "Characters with normal vision typically have a visual range determined by the lighting conditions in the game. In normal daylight or well-lit areas, characters with normal vision can see up to a specific distance without any hindrance. The exact range may vary depending on factors like the time of day, weather, and the DM's discretion.",
+                    "Light Sources" : "Characters with normal vision rely on natural or artificial light sources to see in dimly lit or dark areas. If there is insufficient light, they may suffer from the effects of dim light or darkness, which can impose penalties on their ability to see and perceive their surroundings.",
+                    "No Special Features" : "Normal vision does not grant any special abilities like darkvision, which allows characters to see in darkness as if it were dim light. Characters with normal vision may require torches, lanterns, or other light sources in dark environments.",
+                    "No Stat Modifications" : "Characters with normal vision do not receive any specific stat modifications related to their vision. Their vision is considered the standard baseline for visual perception."
+                },
+                "Darkvision": {
+                    "Possesses" : False
+                }
+            },
             "Draconic Ancestry": {
                 "Description": "Dragonborn characters have an ancestral link to dragons, which influences their breath weapon and damage resistance. They choose a type of dragon as their ancestor, which determines these traits.",
                 "Benefit": "Determines type of breath weapon and resistance",
@@ -102,15 +184,40 @@ dnd_races = {
             'charisma': 1
         }
     },
+
+
+
     "Gnome": {
+        "ASCII Art": """
+   _____                            
+  / ____|                           
+ | |  __ _ __   ___  _ __ ___   ___ 
+ | | |_ | '_ \ / _ \| '_ ` _ \ / _ \
+ | |__| | | | | (_) | | | | | |  __/
+  \_____|_| |_|\___/|_| |_| |_|\___|
+                                    
+        """,
         "Name" : "Gnome",
         "Description": "A gnome’s energy and enthusiasm for living shines through every inch of their tiny body. Gnomes average slightly over 3 feet tall and weigh 40 to 45 pounds. Their tan or brown faces are usually adorned with broad smiles.",
         "Traits": {
-            "Darkvision": {
-                "Description": "Grants the ability to see in dim light within a certain radius as if it were bright light, and in darkness as if it were dim light. This trait allows characters to see in near-total darkness.",
-                "Range": "Typically 60 feet",
-                "Type": "Sensory"
-            }, 
+            "Speed" : {
+                "Ground" : 25,
+                "Flight" : 0
+            },
+            "Vision": {
+                "Normal" : {
+                    "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
+                    "Range" : "Characters with normal vision typically have a visual range determined by the lighting conditions in the game. In normal daylight or well-lit areas, characters with normal vision can see up to a specific distance without any hindrance. The exact range may vary depending on factors like the time of day, weather, and the DM's discretion.",
+                    "Light Sources" : "Characters with normal vision rely on natural or artificial light sources to see in dimly lit or dark areas. If there is insufficient light, they may suffer from the effects of dim light or darkness, which can impose penalties on their ability to see and perceive their surroundings.",
+                    "No Special Features" : "Normal vision does not grant any special abilities like darkvision, which allows characters to see in darkness as if it were dim light. Characters with normal vision may require torches, lanterns, or other light sources in dark environments.",
+                    "No Stat Modifications" : "Characters with normal vision do not receive any specific stat modifications related to their vision. Their vision is considered the standard baseline for visual perception."
+                },
+                "Darkvision": {
+                    "Possesses" : True,
+                    "Description": "Grants the ability to see in dim light within a certain radius as if it were bright light, and in darkness as if it were dim light. This trait allows characters to see in near-total darkness.",
+                    "Range": "Typically 60 feet"
+                }
+            },
             "Gnome Cunning": {
                 "Description": "Gnome Cunning provides Gnomes with an innate mental fortitude against certain types of magical illusions, as well as against spells and effects that attempt to charm or deceive them. This reflects their inherently quick and perceptive mind, which makes them adept at avoiding magical deceit.",
                 "Benefit": "Advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.",
@@ -127,15 +234,38 @@ dnd_races = {
             'intelligence': 2
         }
     },
+
+
+
     "Half-Elf": {
+        "ASCII Art": """
+  _    _       _  __      ______ _  __ 
+ | |  | |     | |/ _|    |  ____| |/ _|
+ | |__| | __ _| | |_ ____| |__  | | |_ 
+ |  __  |/ _` | |  _|____|  __| | |  _|
+ | |  | | (_| | | |      | |____| | |  
+ |_|  |_|\__,_|_|_|      |______|_|_|  
+                                           
+        """,
         "Name" : "Half-Elf",
         "Description": "Half-elves combine what some say are the best qualities of their elf and human parents. They are as versatile and diverse as humans, while also possessing some of the grace and natural talents of elves.",
         "Traits": {
-            "Darkvision": {
-                "Description": "Grants the ability to see in dim light within a certain radius as if it were bright light, and in darkness as if it were dim light. This trait allows characters to see in near-total darkness.",
-                "Range": "Typically 60 feet",
-                "Type": "Sensory"
-            }, 
+            "Speed" : {
+                "Ground" : 30,
+                "Flight" : 0
+            },
+            "Vision": {
+                "Normal" : {
+                    "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
+                    "Range" : "Characters with normal vision typically have a visual range determined by the lighting conditions in the game. In normal daylight or well-lit areas, characters with normal vision can see up to a specific distance without any hindrance. The exact range may vary depending on factors like the time of day, weather, and the DM's discretion.",
+                    "Light Sources" : "Characters with normal vision rely on natural or artificial light sources to see in dimly lit or dark areas. If there is insufficient light, they may suffer from the effects of dim light or darkness, which can impose penalties on their ability to see and perceive their surroundings.",
+                    "No Special Features" : "Normal vision does not grant any special abilities like darkvision, which allows characters to see in darkness as if it were dim light. Characters with normal vision may require torches, lanterns, or other light sources in dark environments.",
+                    "No Stat Modifications" : "Characters with normal vision do not receive any specific stat modifications related to their vision. Their vision is considered the standard baseline for visual perception."
+                },
+                "Darkvision": {
+                    "Possesses" : False
+                }
+            },
             "Fey Ancestry": {
                 "Description": "This trait reflects the magical heritage of a character, providing them with a natural defense against being charmed. Additionally, magic cannot put them to sleep. It is a manifestation of their elven or other fey lineage, granting them an innate resilience against enchantments and illusions.",
                 "Benefit": "Advantage on saving throws against being charmed, immunity to sleep spells and effects",
@@ -159,14 +289,39 @@ dnd_races = {
             'random' : 1
         }
     },
+
+
+
     "Half-Orc": {
+        "ASCII Art": """
+  _    _       _  __       ____           
+ | |  | |     | |/ _|     / __ \          
+ | |__| | __ _| | |_ ____| |  | |_ __ ___ 
+ |  __  |/ _` | |  _|____| |  | | '__/ __|
+ | |  | | (_| | | |      | |__| | | | (__ 
+ |_|  |_|\__,_|_|_|       \____/|_|  \___|
+                                            
+        """,
         "Name" : "Half-Orc",
         "Description": "Half-orcs’ grayish pigmentation, sloping foreheads, jutting jaws, prominent teeth, and towering builds make their orcish heritage plain for all to see. They are often the ambassadors between orc and human societies.",
         "Traits": {
-            "Darkvision": {
-                "Description": "Grants the ability to see in dim light within a certain radius as if it were bright light, and in darkness as if it were dim light. This trait allows characters to see in near-total darkness.",
-                "Range": "Typically 60 feet",
-                "Type": "Sensory"
+            "Speed" : {
+                "Ground" : 30,
+                "Flight" : 0
+            },
+            "Vision": {
+                "Normal" : {
+                    "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
+                    "Range" : "Characters with normal vision typically have a visual range determined by the lighting conditions in the game. In normal daylight or well-lit areas, characters with normal vision can see up to a specific distance without any hindrance. The exact range may vary depending on factors like the time of day, weather, and the DM's discretion.",
+                    "Light Sources" : "Characters with normal vision rely on natural or artificial light sources to see in dimly lit or dark areas. If there is insufficient light, they may suffer from the effects of dim light or darkness, which can impose penalties on their ability to see and perceive their surroundings.",
+                    "No Special Features" : "Normal vision does not grant any special abilities like darkvision, which allows characters to see in darkness as if it were dim light. Characters with normal vision may require torches, lanterns, or other light sources in dark environments.",
+                    "No Stat Modifications" : "Characters with normal vision do not receive any specific stat modifications related to their vision. Their vision is considered the standard baseline for visual perception."
+                },
+                "Darkvision": {
+                    "Possesses" : True,
+                    "Description": "Grants the ability to see in dim light within a certain radius as if it were bright light, and in darkness as if it were dim light. This trait allows characters to see in near-total darkness.",
+                    "Range": "Typically 60 feet"
+                }
             },
             "Relentless Endurance": {
                 "Description": "This trait allows a character to push through injuries that would incapacitate others. When a character with Relentless Endurance would be reduced to 0 hit points but not killed outright, they can instead drop to 1 hit point once per long rest. It reflects their extraordinary grit and determination to stay standing despite grievous harm.",
@@ -191,10 +346,39 @@ dnd_races = {
             'constitution' : 1
         }
     },
+
+
+
     "Halfling": {
+        "ASCII Art": """
+  _    _       _  __ _ _             
+ | |  | |     | |/ _| (_)            
+ | |__| | __ _| | |_| |_ _ __   __ _ 
+ |  __  |/ _` | |  _| | | '_ \ / _` |
+ | |  | | (_| | | | | | | | | | (_| |
+ |_|  |_|\__,_|_|_| |_|_|_| |_|\__, |
+                                __/ |
+                               |___/ 
+        """,
         "Name" : "Halfling",
         "Description": "The diminutive halflings survive in a world full of larger creatures by avoiding notice or, barring that, avoiding offense. They are adept at fitting into a community of humans, dwarves, or elves, making themselves valuable and welcome.",
         "Traits": {
+            "Speed" : {
+                "Ground" : 25,
+                "Flight" : 0
+            },
+            "Vision": {
+                "Normal" : {
+                    "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
+                    "Range" : "Characters with normal vision typically have a visual range determined by the lighting conditions in the game. In normal daylight or well-lit areas, characters with normal vision can see up to a specific distance without any hindrance. The exact range may vary depending on factors like the time of day, weather, and the DM's discretion.",
+                    "Light Sources" : "Characters with normal vision rely on natural or artificial light sources to see in dimly lit or dark areas. If there is insufficient light, they may suffer from the effects of dim light or darkness, which can impose penalties on their ability to see and perceive their surroundings.",
+                    "No Special Features" : "Normal vision does not grant any special abilities like darkvision, which allows characters to see in darkness as if it were dim light. Characters with normal vision may require torches, lanterns, or other light sources in dark environments.",
+                    "No Stat Modifications" : "Characters with normal vision do not receive any specific stat modifications related to their vision. Their vision is considered the standard baseline for visual perception."
+                },
+                "Darkvision": {
+                    "Possesses" : False
+                }
+            },
             "Lucky": {
                 "Description": "The Lucky trait allows a Halfling to reroll a 1 on any attack roll, ability check, or saving throw. The new roll must be used, even if it is another 1. This trait represents the Halfling’s inherent luck, turning potential failures into new opportunities.",
                 "Benefit": "Reroll if you roll a 1 on attack rolls, ability checks, or saving throws",
@@ -223,10 +407,39 @@ dnd_races = {
             'dexterity': 2
         }
     },
+
+
+
     "Human": {
+        "ASCII Art": """
+  _    _                             
+ | |  | |                            
+ | |__| |_   _ _ __ ___   __ _ _ __  
+ |  __  | | | | '_ ` _ \ / _` | '_ \ 
+ | |  | | |_| | | | | | | (_| | | | |
+ |_|  |_|\__,_|_| |_| |_|\__,_|_| |_|
+                                     
+        """,
         "Name" : "Human",
         "Description": "Humans are the most adaptable and ambitious people among the common races. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.",
-        "Traits": [],
+        "Traits": {
+            "Speed" : {
+                "Ground" : 30,
+                "Flight" : 0
+            },
+            "Vision": {
+                "Normal" : {
+                    "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
+                    "Range" : "Characters with normal vision typically have a visual range determined by the lighting conditions in the game. In normal daylight or well-lit areas, characters with normal vision can see up to a specific distance without any hindrance. The exact range may vary depending on factors like the time of day, weather, and the DM's discretion.",
+                    "Light Sources" : "Characters with normal vision rely on natural or artificial light sources to see in dimly lit or dark areas. If there is insufficient light, they may suffer from the effects of dim light or darkness, which can impose penalties on their ability to see and perceive their surroundings.",
+                    "No Special Features" : "Normal vision does not grant any special abilities like darkvision, which allows characters to see in darkness as if it were dim light. Characters with normal vision may require torches, lanterns, or other light sources in dark environments.",
+                    "No Stat Modifications" : "Characters with normal vision do not receive any specific stat modifications related to their vision. Their vision is considered the standard baseline for visual perception."
+                },
+                "Darkvision": {
+                    "Possesses" : False
+                }
+            }            
+        },
         "Proficiencies": {
             "languages": ["Common", "One of player's choice"],
             "tools": [],
@@ -241,15 +454,41 @@ dnd_races = {
             'charisma' : 1
         }
     },
+
+
+
     "Tiefling": {
+        "ASCII Art": """
+  _______ _       __ _ _             
+ |__   __(_)     / _| (_)            
+    | |   _  ___| |_| |_ _ __   __ _ 
+    | |  | |/ _ \  _| | | '_ \ / _` |
+    | |  | |  __/ | | | | | | | (_| |
+    |_|  |_|\___|_| |_|_|_| |_|\__, |
+                                __/ |
+                               |___/ 
+        """,
         "Name" : "Tiefling",
         "Description": "To be greeted with stares and whispers, to suffer violence and insult on the street, to see mistrust and fear in every eye: this is the lot of the tiefling. They have infernal heritage and bear the physical marks of their lineage.",
         "Traits": {
-            "Darkvision": {
-                "Description": "Grants the ability to see in dim light within a certain radius as if it were bright light, and in darkness as if it were dim light. This trait allows characters to see in near-total darkness.",
-                "Range": "Typically 60 feet",
-                "Type": "Sensory"
-            }, 
+            "Speed" : {
+                "Ground" : 30,
+                "Flight" : 0
+            },
+            "Vision": {
+                "Normal" : {
+                    "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
+                    "Range" : "Characters with normal vision typically have a visual range determined by the lighting conditions in the game. In normal daylight or well-lit areas, characters with normal vision can see up to a specific distance without any hindrance. The exact range may vary depending on factors like the time of day, weather, and the DM's discretion.",
+                    "Light Sources" : "Characters with normal vision rely on natural or artificial light sources to see in dimly lit or dark areas. If there is insufficient light, they may suffer from the effects of dim light or darkness, which can impose penalties on their ability to see and perceive their surroundings.",
+                    "No Special Features" : "Normal vision does not grant any special abilities like darkvision, which allows characters to see in darkness as if it were dim light. Characters with normal vision may require torches, lanterns, or other light sources in dark environments.",
+                    "No Stat Modifications" : "Characters with normal vision do not receive any specific stat modifications related to their vision. Their vision is considered the standard baseline for visual perception."
+                },
+                "Darkvision": {
+                    "Possesses" : True,
+                    "Description": "Grants the ability to see in dim light within a certain radius as if it were bright light, and in darkness as if it were dim light. This trait allows characters to see in near-total darkness.",
+                    "Range": "Typically 60 feet"
+                }
+            },
             "Hellish Resistance": {
                 "Description": "This trait gives Tieflings resistance to fire damage, a reflection of their infernal heritage. It symbolizes their innate ability to withstand fiery environments and effects, a legacy from their fiendish ancestors.",
                 "Benefit": "Resistance to fire damage",

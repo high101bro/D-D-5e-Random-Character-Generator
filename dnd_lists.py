@@ -50,13 +50,122 @@ dnd_alignments = [
     'Chaotic evil'
 ]
 
-dnd_skills = {
-    "Strength": ["Athletics"],
-    "Dexterity": ["Acrobatics", "Sleight of Hand", "Stealth"],
-    "Intelligence": ["Arcana", "History", "Investigation", "Nature", "Religion"],
-    "Wisdom": ["Animal Handling", "Insight", "Medicine", "Perception", "Survival"],
-    "Charisma": ["Deception", "Intimidation", "Performance", "Persuasion"]
+dnd_skills_by_attribute = {
+    "Strength": ["athletics"],
+    "Dexterity": ["acrobatics", "sleight of hand", "stealth"],
+    "Intelligence": ["arcana", "history", "investigation", "nature", "religion"],
+    "Wisdom": ["animal handling", "insight", "medicine", "perception", "survival"],
+    "Charisma": ["deception", "intimidation", "performance", "persuasion"]
 }
 
-
+dnd_skills = {
+    'acrobatics' : {
+        'related attribute' : 'dexterity',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Performing physical feats, maintaining balance, and tumbling."
+    },
+    'animal handling' : {
+        'related attribute' : 'wisdom',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Calming, controlling, or understanding the intentions of animals."
+    },
+    'arcana' : {
+        'related attribute' : 'intelligence',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Knowledge of magic, magical creatures, mystical lore, and magical traditions."
+    },
+    'athletics' : {
+        'related attribute' : 'strength',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Performing physical activities like climbing, jumping, and swimming."
+    },
+    'deception' : {
+        'related attribute' : 'charisma',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Your ability to convincingly hide the truth, either verbally or through actions."
+    },
+    'history' : {
+        'related attribute' : 'intelligence',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Recalling information about historical events, legendary people, ancient kingdoms, and recent wars."
+    },
+    'insight' : {
+        'related attribute' : 'wisdom',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Determining the true intentions of a creature, such as when searching out a lie or predicting someone’s next move."
+    },
+    'intimidation' : {
+        'related attribute' : 'charisma',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Influencing someone through overt threats, hostile actions, and physical intimidation."
+    },
+    'investigation' : {
+        'related attribute' : 'intelligence',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Looking for clues and making deductions based on those clues."
+    },
+    'medicine' : {
+        'related attribute' : 'wisdom',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Ability to diagnose and treat injuries and diseases."
+    },
+    'nature' : {
+        'related attribute' : 'intelligence',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Knowledge about terrain, plants and animals, the weather, and natural cycles."
+    },
+    'perception' : {
+        'related attribute' : 'wisdom',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Noticing or sensing things, typically based on Wisdom. It’s the skill you’d use to hear a conversation through a door, spot something hidden under a rock, or notice someone sneaking up on you."
+    },
+    'performance' : {
+        'related attribute' : 'charisma',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Delighting an audience with music, dance, acting, storytelling, or some other form of entertainment."
+    },
+    'persuasion' : {
+        'related attribute' : 'charisma',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Influencing someone with tact, social graces, or good nature."
+    },
+    'religion' : {
+        'related attribute' : 'intelligence',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Knowledge about deities, rites and prayers, religious hierarchies, holy symbols, and the practices of secret cults."
+    },
+    'sleight of hand' : {
+        'related attribute' : 'dexterity',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Executing tricks of dexterity or misdirection, like picking pockets or conjuring objects."
+    },
+    'stealth' : {
+        'related attribute' : 'dexterity',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Concealing yourself from enemies, slinking past guards, slipping away without being noticed."
+    },
+    'survival' : {
+        'related attribute' : 'wisdom',
+        'proficiency' : False,
+        'total' : 0,
+        'description' : "Following tracks, hunting wild game, guiding your group through frozen wastelands, identifying signs that owlbears live nearby, predicting the weather, or avoiding quicksand and other natural hazards."
+    }
+}
 

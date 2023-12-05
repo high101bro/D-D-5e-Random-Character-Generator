@@ -36,6 +36,8 @@ from dnd_races import *
 from dnd_classes import *
 from dnd_backgrounds import *
 
+debug = []
+
 # List of items
 def generate_item_list():
     # Lists of item properties
@@ -466,10 +468,6 @@ for character in characters:
         if dnd_classes[character_class]['Level Chart'][character.profile['level']]['9th Level Spell Slots'] != '-':
             character.spells['slots']['9th Level'] = dnd_classes[character_class]['Spells']['Available']['9th Level']
 
-    character.capabilities['physical'] = {}
-
-    
-
     character.capabilities['attributes'] = {
         'strength' : {},
         'dexterity' : {},
@@ -514,149 +512,75 @@ for character in characters:
                 character.capabilities['attributes'][attribute]['saving_throw'] = character.capabilities['attributes'][attribute]['modifier'] + character.profile['proficiency bonus']
 
 
+    # character.capabilities['physical'] = {}
+    # character.capabilities['physical']['carry_capacity'] = character.capabilities['attributes']['strength']['total'] * 15
+    # character.capabilities['physical']['push_pull_lift'] = character.capabilities['attributes']['strength']['total'] * 30
+    # character.capabilities['physical']['speed'] = dnd_races[character_race]['Traits']['Speed']['Ground']
+    # character.capabilities['physical']['vision'] = dnd_races[character_race]['Vision']
+    # character.capabilities['physical']['dark_vision'] = dnd_races[character_race]['Dark Vision']
+    # character.capabilities['physical']['passive_perception'] = 10 + character.capabilities['skills']['perception']['total']
 
+# 'physical' : {
+#     'carry_capacity' : 0,
+#     'push_pull_lift' : 0,
+#     'speed' : 0,
+#     'vision' : None,
+#     'dark_vision' : 0,
+#     'passive_perception' : 0
+# },
+
+
+
+
+    character.capabilities['skills'] = dnd_skills
+    def choose_random_proficiency_skill():
+        randomly_chosen_proficiency_skills = []
+        class_proficiency_choices = list(dnd_classes[character_class]['Features']["Proficiencies"]["Skills"]["Choose From"])
+        for i in range(0, int(dnd_classes[character_class]['Features']["Proficiencies"]["Skills"]["Choose Number"])):
+            randomly_chosen_skill = random.choice(class_proficiency_choices)
+            if randomly_chosen_skill not in randomly_chosen_proficiency_skills:
+                randomly_chosen_proficiency_skills.append(randomly_chosen_skill)
+                class_proficiency_choices.remove(randomly_chosen_skill)
+        return randomly_chosen_proficiency_skills
+
+
+    randomly_chosen_skills = choose_random_proficiency_skill()
+    for skill in dnd_skills:
+        if character.capabilities['skills'][skill]['related attribute'] == 'strength':
+            character.capabilities['skills'][skill]['total'] = character.capabilities['attributes']['strength']['modifier']
+        elif character.capabilities['skills'][skill]['related attribute'] == 'dexterity':
+            character.capabilities['skills'][skill]['total'] = character.capabilities['attributes']['dexterity']['modifier']
+        elif character.capabilities['skills'][skill]['related attribute'] == 'constitution':
+            character.capabilities['skills'][skill]['total'] = character.capabilities['attributes']['constitution']['modifier']
+        elif character.capabilities['skills'][skill]['related attribute'] == 'intelligence':
+            character.capabilities['skills'][skill]['total'] = character.capabilities['attributes']['intelligence']['modifier']
+        elif character.capabilities['skills'][skill]['related attribute'] == 'wisdom':
+            character.capabilities['skills'][skill]['total'] = character.capabilities['attributes']['wisdom']['modifier']
+        elif character.capabilities['skills'][skill]['related attribute'] == 'charisma':
+            character.capabilities['skills'][skill]['total'] = character.capabilities['attributes']['charisma']['modifier']
+
+        for choose_skill in randomly_chosen_skills: 
+            if skill == choose_skill:
+                character.capabilities['skills'][skill]['proficiency'] = True
+                character.capabilities['skills'][skill]['total'] += character.profile['proficiency bonus']
 
     character.capabilities['combat'] = {}
-
-    #         },
-    #         'physical' : {
-    #             'carry_capacity' : 0,
-    #             'push_pull_lift' : 0,
-    #             'speed' : 0,
-    #             'vision' : None,
-    #             'dark_vision' : 0,
-    #             'passive_perception' : 0
-    #         },
-
-    #         },
-    #         'skills' : {
-    #             'acrobatics' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'animal_handling' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'arcana' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'athletics' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'deception' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'history' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'insight' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'intimidation' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'investigation' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'medicine' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'nature' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'perception' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'performance' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'persuasion' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'religion' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'sleight_of_hand' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'stealth' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             },
-    #             'survival' : {
-    #                 'related_attribute' : None,
-    #                 'proficiency' : False,
-    #                 'total' : 0,
-    #                 'description' : None
-    #             }
-    #         },
-    #         'combat' : {
-    #             'initiative' : {
-    #                 'modifier' : 0,
-    #                 'total' : 0
-    #             },
-    #             'armor_class' : {
-    #                 'temporary' : 0,
-    #                 'total' : 0
-    #             },
-    #             'hit_points' : {
-    #                 'damage_resistance' : 0,
-    #                 'false_life' : 0,
-    #                 'temp_hit_points' : 0,
-    #                 'total' : 0
-    #             },
-    #         }
-    #     }
-
+# 'combat' : {
+#     'initiative' : {
+#         'modifier' : 0,
+#         'total' : 0
+#     },
+#     'armor_class' : {
+#         'temporary' : 0,
+#         'total' : 0
+#     },
+#     'hit_points' : {
+#         'damage_resistance' : 0,
+#         'false_life' : 0,
+#         'temp_hit_points' : 0,
+#         'total' : 0
+#     },
+# }
 
 
 
@@ -688,11 +612,7 @@ for index, character in enumerate(characters):
     print_character(character.capabilities)
 
 print(
-    generate_new_roles
+    debug
 )
-
-
-
-
 
 

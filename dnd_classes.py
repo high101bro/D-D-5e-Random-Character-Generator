@@ -1,7 +1,22 @@
 #! /usr/bin/env python3
 
+# ASCII Art
+# https://patorjk.com/software/taag/#p=display&f=Big&t=DnD
+
 dnd_classes = {
+
+
+
     "Barbarian": {
+        "ASCII Art": """
+  ____             _                _             
+ |  _ \           | |              (_)            
+ | |_) | __ _ _ __| |__   __ _ _ __ _  __ _ _ __  
+ |  _ < / _` | '__| '_ \ / _` | '__| |/ _` | '_ \ 
+ | |_) | (_| | |  | |_) | (_| | |  | | (_| | | | |
+ |____/ \__,_|_|  |_.__/ \__,_|_|  |_|\__,_|_| |_|
+ 
+        """,
         "Name": "Barbarian",
         "Description": "A fierce warrior of primitive background who can enter a battle rage.",
         "Level Chart" : {
@@ -34,9 +49,9 @@ dnd_classes = {
                 'Armor': ['Light armor', 'medium armor', 'shields'],
                 'Weapons': ['Simple weapons', 'martial weapons'],
                 'Tools': 'None',
-                "Spellcasting Modifier" : "None",
+                'Spellcasting Modifier' : "None",
                 'Saving Throws': ['Strength', 'Constitution'],
-                'Skills': 'Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival',
+                'Skills': 'Choose two from animal handling, athletics, intimidation, nature, perception, and survival',
                 "Languages": []
             },
             'Equipment': [
@@ -47,11 +62,23 @@ dnd_classes = {
         },
         "Attribute Priority" : ['strength', 'constitution', 'dexterity', 'wisdom', 'charisma', 'intelligence'],
         "Spells" : {
-            "Spellcasting Modifier" : "None",
+            'Spellcasting Modifier' : "None",
             "Available" : {}
         }
     },
+
+
+
     "Bard": {
+        "ASCII Art": """
+  ____                _ 
+ |  _ \              | |
+ | |_) | __ _ _ __ __| |
+ |  _ < / _` | '__/ _` |
+ | |_) | (_| | | | (_| |
+ |____/ \__,_|_|  \__,_| 
+
+        """,
         "Name": "Bard",
         "Description": "An inspiring magician whose power echoes the music of creation.",
         "Level Chart" : {
@@ -84,7 +111,7 @@ dnd_classes = {
                 'Armor': 'Light armor',
                 'Weapons': 'Simple weapons, hand crossbows, longswords, rapiers, shortswords',
                 'Tools': 'Three musical instruments of your choice',
-                "Spellcasting Modifier" : "Charisma",
+                'Spellcasting Modifier' : "Charisma",
                 'Saving Throws': 'Dexterity, Charisma',
                 'Skills': 'Choose any three',
                 "Languages": []
@@ -98,7 +125,7 @@ dnd_classes = {
         },
         "Attribute Priority" : ['charisma', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'strength'],
         "Spells" : {
-            "Spellcasting Modifier" : "charisma",
+            'Spellcasting Modifier' : "charisma",
             "Available" : {
                 "Cantrips" : ["Blade Ward","Dancing Lights","Friends","Light","Mage Hand","Mending","Message","Minor Illusion","Prestidigitation","Thunderclap","True Strike","Vicious Mockery"],
                 "1st Level" : ["Animal Friendship","Bane","Charm Person","Comprehend Languages","Cure Wounds","Detect Magic","Disguise Self","Dissonant Whispers","Distort Value","Earth Tremor","Faerie Fire","Feather Fall","Healing Word","Heroism","Identify","Illusory Script","Longstrider","Silent Image","Silvery Barbs","Sleep","Speak with Animals","Tasha's Hideous Laughter","Thunderwave","Unseen Servant"],
@@ -113,7 +140,19 @@ dnd_classes = {
             }
         }
     },
+
+
+
     "Cleric": {
+        "ASCII Art": """
+   _____ _           _      
+  / ____| |         (_)     
+ | |    | | ___ _ __ _  ___ 
+ | |    | |/ _ \ '__| |/ __|
+ | |____| |  __/ |  | | (__ 
+  \_____|_|\___|_|  |_|\___|
+
+        """,
         "Name": "Cleric",
         "Description": "A priestly champion who wields divine magic in service of a higher power.",
         "Level Chart" : {
@@ -146,9 +185,9 @@ dnd_classes = {
                 'Armor': 'Light armor, medium armor, shields',
                 'Weapons': 'All simple weapons',
                 'Tools': 'None',
-                "Spellcasting Modifier" : "Wisdom",
+                'Spellcasting Modifier' : "Wisdom",
                 'Saving Throws': 'Wisdom, Charisma',
-                'Skills': 'Choose two from History, Insight, Medicine, Persuasion, and Religion',
+                'Skills': 'Choose two from history, insight, medicine, persuasion, and religion',
                 "Languages": []
             },
             'Equipment': {
@@ -164,7 +203,7 @@ dnd_classes = {
         },
         "Attribute Priority" : ['wisdom', 'constitution', 'strength', 'charisma', 'dexterity', 'intelligence'],
         "Spells" : {
-            "Spellcasting Modifier" : "wisdom",
+            'Spellcasting Modifier' : "wisdom",
             "Available" : {
                 "Cantrips" : ["Guidance","Light","Mending","Resistance","Sacred Flame","Spare the Dying","Thaumaturgy","Toll the Dead","Word of Radiance"],
                 "1st Level" : ["Bane","Bless","Ceremony","Command","Create or Destroy Water","Cure Wounds","Detect Evil and Good","Detect Magic","Detect Poison and Disease","Guiding Bolt","Healing Word","Inflict Wounds","Protection from Evil and Good","Purify Food and Drink","Sanctuary","Shield of Faith"],
@@ -179,28 +218,76 @@ dnd_classes = {
             }
         }
     },
+
+
+
     "Druid": {
+        "ASCII Art": """
+  _____             _     _ 
+ |  __ \           (_)   | |
+ | |  | |_ __ _   _ _  __| |
+ | |  | | '__| | | | |/ _` |
+ | |__| | |  | |_| | | (_| |
+ |_____/|_|   \__,_|_|\__,_|
+
+        """,
         "Name": "Druid",
         "Description": "A priest of the Old Faith, wielding the powers of nature and adopting animal forms.",
         "Level Chart" : {
-            
+            1: {'Proficiency Bonus': '+2','Features': 'Druidic, Spellcasting','Cantrips Known': 2,'1st': 2,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
+            2: {'Proficiency Bonus': '+2','Features': 'Wild Shape, Druid Circle, Wild Companion (Optional)','Cantrips Known': 2,'1st': 3,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
+            3: {'Proficiency Bonus': '+2','Features': '-','Cantrips Known': 2,'1st': 4,'2nd': 2,'3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
+            4: {'Proficiency Bonus': '+2','Features': 'Wild Shape improvement, Ability Score Improvement, Cantrip Versatility (Optional)','Cantrips Known': 3,'1st': 4,'2nd': 3,'3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
+            5: {'Proficiency Bonus': '+3','Features': '-','Cantrips Known': 3,'1st': 4,'2nd': 3,'3rd': 2,'4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
+            6: {'Proficiency Bonus': '+3','Features': 'Druid Circle feature','Cantrips Known': 3,'1st': 4,'2nd': 3,'3rd': 3,'4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
+            7: {'Proficiency Bonus': '+3','Features': '-','Cantrips Known': 3,'1st': 4,'2nd': 3,'3rd': 3,'4th': 1,'5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
+            8: {'Proficiency Bonus': '+3','Features': 'Wild Shape improvement, Ability Score Improvement, Cantrip Versatility (Optional)','Cantrips Known': 3,'1st': 4,'2nd': 3,'3rd': 3,'4th': 2,'5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
+            9: {'Proficiency Bonus': '+4','Features': '-','Cantrips Known': 3,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 1,'6th': '-','7th': '-','8th': '-','9th': '-'},
+            10: {'Proficiency Bonus': '+4','Features': 'Druid Circle feature','Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': '-','7th': '-','8th': '-','9th': '-'},
+            11: {'Proficiency Bonus': '+4','Features': '-','Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': '-','8th': '-','9th': '-'},
+            12: {'Proficiency Bonus': '+4','Features': 'Ability Score Improvement, Cantrip Versatility (Optional)','Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': '-','8th': '-','9th': '-'},
+            13: {'Proficiency Bonus': '+5','Features': '-','Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': '-','9th': '-'},
+            14: {'Proficiency Bonus': '+5','Features': 'Druid Circle feature','Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': '-','9th': '-'},
+            15: {'Proficiency Bonus': '+5','Features': '-','Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': 1,'9th': '-'},
+            16: {'Proficiency Bonus': '+5','Features': 'Ability Score Improvement, Cantrip Versatility (Optional)','Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': 1,'9th': '-'},
+            17: {'Proficiency Bonus': '+6','Features': '-','Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': 1,'9th': 1},
+            18: {'Proficiency Bonus': '+6','Features': 'Timeless Body, Beast Spells','Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 1,'7th': 1,'8th': 1,'9th': 1},
+            19: {'Proficiency Bonus': '+6','Features': 'Ability Score Improvement, Cantrip Versatility (Optional)','Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 1,'8th': 1,'9th': 1},
+            20: {'Proficiency Bonus': '+6','Features': 'Archdruid','Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 2,'8th': 1,'9th': 1}
         },
         "Features": {
-            "Spellcasting Modifier" : "Wisdom",
-            "Languages": {
-                "Druidic": "You know Druidic, the secret language of druids."
-            }
+            "Hit Dice": "1d8 per druid level",
+            "Hit Points at 1st Level": "8 + your Constitution modifier",
+            "Hit Points at Higher Levels": "1d8 (or 5) + your Constitution modifier per druid level after 1st",
+            "Proficiencies": {
+                "Armor": "Light armor, medium armor, shields (druids will not wear armor or use shields made of metal)",
+                "Weapons": "Clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears",
+                "Tools": "Herbalism kit",
+                'Spellcasting Modifier' : "Wisdom",
+                "Saving Throws": "Intelligence, Wisdom",
+                "Skills": "Choose two from arcana, animal handling, insight, medicine, nature, perception, religion, and survival",
+                "Languages": {
+                    "Druidic": "You know Druidic, the secret language of druids."
+                }
+            },
+            "Equipment": [
+                "(a) a wooden shield or (b) any simple weapon",
+                "(a) a scimitar or (b) any simple melee weapon",
+                "Leather armor, an explorer's pack, and a druidic focus"
+            ]
+            
+
         },
         "Attribute Priority" : ['wisdom', 'constitution', 'dexterity', 'intelligence', 'charisma', 'strength'],
         "Spells" : {
-            "Spellcasting Modifier" : "wisdom",
+            'Spellcasting Modifier' : "wisdom",
             "Available" : {
                 "Cantrips" : ["Control Flames","Create Bonfire","Druidcraft","Frostbite","Guidance","Gust","Infestation","Magic Stone","Mending","Mold Earth","Poison Spray","Primal Savagery","Produce Flame","Resistance","Shape Water","Shillelagh","Thorn Whip","Thunderclap"],
                 "1st Level" : ["Absorb Elements","Animal Friendship","Beast Bond","Charm Person","Create or Destroy Water","Cure Wounds","Detect Magic","Detect Poison and Disease","Earth Tremor","Entangle","Faerie Fire","Fog Cloud","Goodberry","Healing Word","Ice Knife","Jump","Longstrider","Purify Food and Drink","Snare","Speak with Animals","Thunderwave"],
                 "2nd Level" : ["Air Bubble","Animal Messenger","Barkskin","Beast Sense","Darkvision","Dust Devil","Earthbind","Enhance Ability","Find Traps","Flame Blade","Flaming Sphere","Gust of Wind","Healing Spirit","Heat Metal","Hold Person","Lesser Restoration","Locate Animals or Plants","Locate Object","Moonbeam","Pass Without Trace","Protection from Poison","Skywrite","Spike Growth","Warding Wind","Wither and Bloom"],
                 "3rd Level" : ["Call Lightning","Conjure Animals","Daylight","Dispel Magic","Erupting Earth","Feign Death","Flame Arrows","Meld into Stone","Plant Growth","Protection from Energy","Sleet Storm","Speak with Plants","Tidal Wave","Wall of Water","Water Breathing","Water Walk","Wind Wall"],
-                "4th Level" : ["Blight","Charm Monster","Confusion","Conjure Minor Elementals","Conjure Woodland Beings","Control Water","Dominate Beast","Elemental Bane","Freedom of Movement","Giant Insect","Grasping Vine","Guardian of Nature","Hallucinatory Terrain","Ice Storm","Locate Creature","Polymorph","Stone Shape","Stoneskin","Wall of Fire","Watery Sphere"],
-                "5th Level" : ["Antilife Shell","Awaken","Commune with Nature","Conjure Elemental","Contagion","Control Winds","Geas","Greater Restoration","Insect Plague","Maelstrom","Mass Cure Wounds","Planar Binding","Reincarnate","Scrying","Summon Draconic Spirit","Transmute Rock","Tree Stride","Wall of Stone","Wrath Of Nature"],
+                "4th Level" : ["Blight","Charm Monster","Confusion","Conjure Minor Elementals","Conjure Woodland Beings","Control Water","Dominate Beast","Elemental Bane","Freedom of Movement","Giant Insect","Grasping Vine","Guardian of nature","Hallucinatory Terrain","Ice Storm","Locate Creature","Polymorph","Stone Shape","Stoneskin","Wall of Fire","Watery Sphere"],
+                "5th Level" : ["Antilife Shell","Awaken","Commune with nature","Conjure Elemental","Contagion","Control Winds","Geas","Greater Restoration","Insect Plague","Maelstrom","Mass Cure Wounds","Planar Binding","Reincarnate","Scrying","Summon Draconic Spirit","Transmute Rock","Tree Stride","Wall of Stone","Wrath Of nature"],
                 "6th Level" : ["Bones of the Earth","Conjure Fey","Druid Grove","Find the Path","Heal","Heroes' Feast","Investiture of Flame","Investiture of Ice","Investiture of Stone","Investiture of Wind","Move Earth","Primordial Ward","Sunbeam","Transport via Plants","Wall of Thorns","Wind Walk"],
                 "7th Level" : ["Draconic Transformation","Fire Storm","Mirage Arcane","Plane Shift","Regenerate","Reverse Gravity","Whirlwind"],
                 "8th Level" : ["Animal Shapes","Antipathy/Sympathy","Control Weather","Earthquake","Feeblemind","Sunburst","Tsunami"],
@@ -208,39 +295,145 @@ dnd_classes = {
             }
         }
     },
+
+
+
     "Fighter": {
+        "ASCII Art": """
+  ______ _       _     _            
+ |  ____(_)     | |   | |           
+ | |__   _  __ _| |__ | |_ ___ _ __ 
+ |  __| | |/ _` | '_ \| __/ _ \ '__|
+ | |    | | (_| | | | | ||  __/ |   
+ |_|    |_|\__, |_| |_|\__\___|_|   
+            __/ |                   
+           |___/                    
+        """,
         "Name": "Fighter",
         "Description": "A master of martial combat, skilled with a variety of weapons and armor.",
         "Level Chart" : {
-            
+            1: {"Proficiency Bonus": "+2","Features": "Fighting Style, Second Wind"},
+            2: {"Proficiency Bonus": "+2","Features": "Action Surge (x1)"},
+            3: {"Proficiency Bonus": "+2","Features": "Martial Archetype"},
+            4: {"Proficiency Bonus": "+2","Features": "Ability Score Improvement, Martial Versatility (Optional)"},
+            5: {"Proficiency Bonus": "+3","Features": "Extra Attack (x1)"},
+            6: {"Proficiency Bonus": "+3","Features": "Ability Score Improvement, Martial Versatility (Optional)"},
+            7: {"Proficiency Bonus": "+3","Features": "Martial Archetype feature"},
+            8: {"Proficiency Bonus": "+3","Features": "Ability Score Improvement, Martial Versatility (Optional)"},
+            9: {"Proficiency Bonus": "+4","Features": "Indomitable (x1)"},
+            10: {"Proficiency Bonus": "+4","Features": "Martial Archetype feature"},
+            11: {"Proficiency Bonus": "+4","Features": "Extra Attack (x2)"},
+            12: {"Proficiency Bonus": "+4","Features": "Ability Score Improvement, Martial Versatility (Optional)"},
+            13: {"Proficiency Bonus": "+5","Features": "Indomitable (x2)"},
+            14: {"Proficiency Bonus": "+5","Features": "Ability Score Improvement, Martial Versatility (Optional)"},
+            15: {"Proficiency Bonus": "+5","Features": "Martial Archetype feature"},
+            16: {"Proficiency Bonus": "+5","Features": "Ability Score Improvement, Martial Versatility (Optional)"},
+            17: {"Proficiency Bonus": "+6","Features": "Action Surge (x2), Indomitable (x3)"},
+            18: {"Proficiency Bonus": "+6","Features": "Martial Archetype feature"},
+            19: {"Proficiency Bonus": "+6","Features": "Ability Score Improvement, Martial Versatility (Optional)"},
+            20: {"Proficiency Bonus": "+6","Features": "Extra Attack (x3)"}
         },
         "Features": {
-            "Spellcasting Modifier" : "None",
-            "Languages": []
+            "Hit Dice": "1d10 per fighter level",
+            "Hit Points at 1st Level": "10 + your Constitution modifier",
+            "Hit Points at Higher Levels": "1d10 (or 6) + your Constitution modifier per fighter level after 1st",
+            "Proficiencies": {
+                "Armor": "All armor, shields",
+                "Weapons": "Simple weapons, martial weapons",
+                "Tools": "None",
+                'Spellcasting Modifier' : "None",
+                "Saving Throws": "Strength, Constitution",
+                "Skills": "Choose two skills from acrobatics, animal handling, athletics, history, insight, intimidation, perception, and survival",
+                "Languages": []
+            },
+            "Equipment": {
+                "(a) chain mail or (b) leather, longbow, and 20 arrows": "Choose one",
+                "(a) a martial weapon and a shield or (b) two martial weapons": "Choose one",
+                "(a) a light crossbow and 20 bolts or (b) two handaxes": "Choose one",
+                "(a) a dungeoneer's pack or (b) an explorer's pack": "Choose one"
+            }
         },
         "Attribute Priority" : ['strength', 'constitution', 'dexterity', 'intelligence', 'wisdom', 'charisma'],
         "Spells" : {
-            "Spellcasting Modifier" : "None",
+            'Spellcasting Modifier' : "None",
             "Available" : {}
         }
     },
+
+
+
     "Monk": {
+        "ASCII Art": """
+  __  __             _    
+ |  \/  |           | |   
+ | \  / | ___  _ __ | | __
+ | |\/| |/ _ \| '_ \| |/ /
+ | |  | | (_) | | | |   < 
+ |_|  |_|\___/|_| |_|_|\_\
+                          
+        """,
         "Name": "Monk",
         "Description": "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.",
         "Level Chart" : {
-            
+            1: {'Proficiency Bonus': '+2','Martial Arts': '1d4','Ki Points': '–','Unarmored Movement': '–','Features': 'Unarmored Defense, Martial Arts'},
+            2: {'Proficiency Bonus': '+2','Martial Arts': '1d4','Ki Points': '2','Unarmored Movement': '+10 ft.','Features': 'Ki, Unarmored Movement, Dedicated Weapon (Optional)'},
+            3: {'Proficiency Bonus': '+2','Martial Arts': '1d4','Ki Points': '3','Unarmored Movement': '+10 ft.','Features': 'Monastic Tradition, Deflect Missiles, Ki-Fueled Attack (Optional)'},
+            4: {'Proficiency Bonus': '+2','Martial Arts': '1d4','Ki Points': '4','Unarmored Movement': '+10 ft.','Features': 'Ability Score Improvement, Slow Fall, Quickened Healing (Optional)'},
+            5: {'Proficiency Bonus': '+3','Martial Arts': '1d6','Ki Points': '5','Unarmored Movement': '+10 ft.','Features': 'Extra Attack, Stunning Strike, Focused Aim (Optional)'},
+            6: {'Proficiency Bonus': '+3','Martial Arts': '1d6','Ki Points': '6','Unarmored Movement': '+15 ft.','Features': 'Ki-Empowered Strikes, Monastic Tradition feature'},
+            7: {'Proficiency Bonus': '+3','Martial Arts': '1d6','Ki Points': '7','Unarmored Movement': '+15 ft.','Features': 'Evasion, Stillness of Mind'},
+            8: {'Proficiency Bonus': '+3','Martial Arts': '1d6','Ki Points': '8','Unarmored Movement': '+15 ft.','Features': 'Ability Score Improvement'},
+            9: {'Proficiency Bonus': '+4','Martial Arts': '1d6','Ki Points': '9','Unarmored Movement': '+15 ft.','Features': 'Unarmored Movement improvement'},
+            10: {'Proficiency Bonus': '+4','Martial Arts': '1d6','Ki Points': '10','Unarmored Movement': '+20 ft.','Features': 'Purity of Body'},
+            11: {'Proficiency Bonus': '+4','Martial Arts': '1d8','Ki Points': '11','Unarmored Movement': '+20 ft.','Features': 'Monastic Tradition feature'},
+            12: {'Proficiency Bonus': '+4','Martial Arts': '1d8','Ki Points': '12','Unarmored Movement': '+20 ft.','Features': 'Ability Score Improvement'},
+            13: {'Proficiency Bonus': '+5','Martial Arts': '1d8','Ki Points': '13','Unarmored Movement': '+20 ft.','Features': 'Tongue of the Sun and Moon'},
+            14: {'Proficiency Bonus': '+5','Martial Arts': '1d8','Ki Points': '14','Unarmored Movement': '+25 ft.','Features': 'Diamond Soul'},
+            15: {'Proficiency Bonus': '+5','Martial Arts': '1d8','Ki Points': '15','Unarmored Movement': '+25 ft.','Features': 'Timeless Body'},
+            16: {'Proficiency Bonus': '+5','Martial Arts': '1d8','Ki Points': '16','Unarmored Movement': '+25 ft.','Features': 'Ability Score Improvement'},
+            17: {'Proficiency Bonus': '+6','Martial Arts': '1d10','Ki Points': '17','Unarmored Movement': '+25 ft.','Features': 'Monastic Tradition feature'},
+            18: {'Proficiency Bonus': '+6','Martial Arts': '1d10','Ki Points': '18','Unarmored Movement': '+30 ft.','Features': 'Empty Body'},
+            19: {'Proficiency Bonus': '+6','Martial Arts': '1d10','Ki Points': '19','Unarmored Movement': '+30 ft.','Features': 'Ability Score Improvement'},
+            20: {'Proficiency Bonus': '+6','Martial Arts': '1d10','Ki Points': '20','Unarmored Movement': '+30 ft.','Features': 'Perfect Self'}
         },
         "Features": {
-            "Spellcasting Modifier" : "None",
-            "Languages": []
+            "Hit Dice": "1d8 per monk level",
+            "Hit Points at 1st Level": "8 + your Constitution modifier",
+            "Hit Points at Higher Levels": "1d8 (or 5) + your Constitution modifier per monk level after 1st",
+            "Proficiencies": {
+                "Armor": "None",
+                "Weapons": "Simple weapons, shortswords",
+                "Tools": "Choose one type of artisan's tools or one musical instrument",
+                'Spellcasting Modifier' : "None",
+                "Saving Throws": "Strength, Dexterity",
+                "Skills": "Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth",
+                "Languages": []
+            },
+            "Equipment": {
+                "(a) a shortsword or (b) any simple weapon": "Choose one",
+                "(a) a dungeoneer's pack or (b) an explorer's pack": "Choose one",
+                "10 darts": "Included"
+            }
         },
         "Attribute Priority" : ['dexterity', 'wisdom', 'constitution', 'strength', 'charisma', 'intelligence'],
         "Spells" : {
-            "Spellcasting Modifier" : "None",
+            'Spellcasting Modifier' : "None",
             "Available" : {}
         }
     },
+
+
+
     "Paladin": {
+        "ASCII Art": """
+  _____      _           _ _       
+ |  __ \    | |         | (_)      
+ | |__) |_ _| | __ _  __| |_ _ __  
+ |  ___/ _` | |/ _` |/ _` | | '_ \ 
+ | |  | (_| | | (_| | (_| | | | | |
+ |_|   \__,_|_|\__,_|\__,_|_|_| |_|
+                                   
+        """,
         "Name": "Paladin",
         "Description": "A holy warrior bound to a sacred oath.",
         "Level Chart" : {
@@ -273,9 +466,12 @@ dnd_classes = {
                 "Armor": "All armor, shields",
                 "Weapons": ["simple weapons", "martial weapons"],
                 "Tools": "None",
-                "Spellcasting Modifier" : "Charisma",
+                'Spellcasting Modifier' : "Charisma",
                 "Saving Throws": ["Wisdom, Charisma"],
-                "Skills": ["Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion"],
+                'Skills': {
+                    'Choose Number' : 2,
+                    'Choose From' :  ['athletics', 'insight', 'intimidation', 'medicine', 'persuasion', 'religion']
+                },
                 "Languages": []
             },
             "Equipment": {
@@ -287,7 +483,7 @@ dnd_classes = {
         },
         "Attribute Priority": ['strength', 'charisma', 'constitution', 'dexterity', 'wisdom', 'intelligence'],
         "Spells" : {
-            "Spellcasting Modifier" : "charisma",
+            'Spellcasting Modifier' : "charisma",
             "Spell Slots" : "Paladins have a limited number of spell slots of different levels, which they use to cast spells. The number and level of these slots depend on the paladin's level. Refer to the 'The Paladin Spell Slots per Spell Level' table in your class description to see how many spell slots of each level you have.",
             "Preparing Spells" : "Unlike spellcasters like wizards who prepare spells each day, paladins know all the spells available to them at their level. They don't need to prepare spells in advance. Instead, they choose which spells to cast from their known spells when they use their spell slots.",
             "Casting Spells" : "To cast a spell, a paladin expends one of their spell slots of the appropriate level. The paladin then uses their spellcasting ability (Charisma) to determine the spell's effects, such as its attack roll or saving throw DC, if applicable.",
@@ -304,66 +500,203 @@ dnd_classes = {
             }
         }
     },
+
+
+
     "Ranger": {
+        "ASCII Art": """
+  _____                             
+ |  __ \                            
+ | |__) |__ _ _ __   __ _  ___ _ __ 
+ |  _  // _` | '_ \ / _` |/ _ \ '__|
+ | | \ \ (_| | | | | (_| |  __/ |   
+ |_|  \_\__,_|_| |_|\__, |\___|_|   
+                     __/ |          
+                    |___/           
+        """,
         "Name": "Ranger",
         "Description": "A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.",
         "Level Chart" : {
-            
+            1: {'Proficiency Bonus': '+2', 'Features': 'Favored Enemy, Natural Explorer, Deft Explorer (Optional), Favored Foe (Optional)', 'Spells Known': '-', '1st': '-', '2nd': '-', '3rd': '-', '4th': '-', '5th': '-'},
+            2: {'Proficiency Bonus': '+2', 'Features': 'Fighting Style, Spellcasting, Spellcasting Focus (Optional)', 'Spells Known': 2, '1st': 2, '2nd': '-', '3rd': '-', '4th': '-', '5th': '-'},
+            3: {'Proficiency Bonus': '+2', 'Features': 'Primeval Awareness, Ranger Conclave, Primal Awareness (Optional)', 'Spells Known': 3, '1st': 3, '2nd': '-', '3rd': '-', '4th': '-', '5th': '-'},
+            4: {'Proficiency Bonus': '+2', 'Features': 'Ability Score Improvement, Martial Versatility (Optional)', 'Spells Known': 3, '1st': 3, '2nd': '-', '3rd': '-', '4th': '-', '5th': '-'},
+            5: {'Proficiency Bonus': '+3', 'Features': 'Extra Attack', 'Spells Known': 4, '1st': 4, '2nd': 2, '3rd': '-', '4th': '-', '5th': '-'},
+            6: {'Proficiency Bonus': '+3', 'Features': 'Favored Enemy Improvement, Natural Explorer Improvement, Deft Explorer Improvement (Optional)', 'Spells Known': 4, '1st': 4, '2nd': 2, '3rd': '-', '4th': '-', '5th': '-'},
+            7: {'Proficiency Bonus': '+3', 'Features': 'Ranger Conclave feature', 'Spells Known': 5, '1st': 4, '2nd': 3, '3rd': '-', '4th': '-', '5th': '-'},
+            8: {'Proficiency Bonus': '+3', 'Features': "Ability Score Improvement, Land's Stride, Martial Versatility (Optional)", 'Spells Known': 5, '1st': 4, '2nd': 3, '3rd': '-', '4th': '-', '5th': '-'},
+            9: {'Proficiency Bonus': '+4', 'Features': '-', 'Spells Known': 6, '1st': 4, '2nd': 3, '3rd': 2, '4th': '-', '5th': '-'},
+            10: {'Proficiency Bonus': '+4', 'Features': "Natural Explorer Improvement, Hide in Plain Sight, Deft Explorer Feature (Optional), Nature's Veil (Optional)", 'Spells Known': 6, '1st': 4, '2nd': 3, '3rd': 2, '4th': '-', '5th': '-'},
+            11: {'Proficiency Bonus': '+4', 'Features': 'Ranger Conclave feature', 'Spells Known': 7, '1st': 4, '2nd': 3, '3rd': 3, '4th': '-', '5th': '-'},
+            12: {'Proficiency Bonus': '+4', 'Features': 'Ability Score Improvement, Martial Versatility (Optional)', 'Spells Known': 7, '1st': 4, '2nd': 3, '3rd': 3, '4th': '-', '5th': '-'},
+            13: {'Proficiency Bonus': '+5', 'Features': '-', 'Spells Known': 8, '1st': 4, '2nd': 3, '3rd': 3, '4th': 1, '5th': '-'},
+            14: {'Proficiency Bonus': '+5', 'Features': 'Favored Enemy Improvement, Vanish', 'Spells Known': 8, '1st': 4, '2nd': 3, '3rd': 3, '4th': 1, '5th': '-'},
+            15: {'Proficiency Bonus': '+5', 'Features': 'Ranger Conclave feature', 'Spells Known': 9, '1st': 4, '2nd': 3, '3rd': 3, '4th': 2, '5th': '-'},
+            16: {'Proficiency Bonus': '+5', 'Features': 'Ability Score Improvement, Martial Versatility (Optional)', 'Spells Known': 9, '1st': 4, '2nd': 3, '3rd': 3, '4th': 2, '5th': '-'},
+            17: {'Proficiency Bonus': '+6', 'Features': '-', 'Spells Known': 10, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 1},
+            18: {'Proficiency Bonus': '+6', 'Features': 'Feral Senses', 'Spells Known': 10, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 1},
+            19: {'Proficiency Bonus': '+6', 'Features': 'Ability Score Improvement, Martial Versatility (Optional)', 'Spells Known': 11, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2},
+            20: {'Proficiency Bonus': '+6', 'Features': 'Foe Slayer', 'Spells Known': 11, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2}
         },
         "Features": {
-            "Spellcasting Modifier" : "Widsom",
-            "Languages": []
+            'Hit Dice': '1d10 per ranger level',
+            'Hit Points at 1st Level': '10 + your Constitution modifier',
+            'Hit Points at Higher Levels': '1d10 (or 6) + your Constitution modifier per ranger level after 1st',
+            'Proficiencies': {
+                'Armor': 'Light armor, medium armor, shields',
+                'Weapons': 'Simple weapons, martial weapons',
+                'Tools': 'None',
+                'Spellcasting Modifier' : "Widsom",
+                'Saving Throws': 'Strength, Dexterity',
+                'Skills': 'Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival',
+                "Languages": []
+            },
+            'Equipment': [
+                '(a) scale mail or (b) leather armor',
+                '(a) two shortswords or (b) two simple melee weapons',
+                '(a) a dungeoneer\'s pack or (b) an explorer\'s pack',
+                'A longbow and a quiver of 20 arrows'
+            ]
         },
         "Attribute Priority" : ['dexterity', 'wisdom', 'constitution', 'strength', 'intelligence', 'charisma'],
         "Spells" : {
-            "Spellcasting Modifier" : "wisdom",
+            'Spellcasting Modifier' : "wisdom",
             "Available" : {
                 "1st Level" : ["Absorb Elements","Alarm","Animal Friendship","Beast Bond","Cure Wounds","Detect Magic","Detect Poison and Disease","Ensnaring Strike","Fog Cloud","Goodberry","Hail of Thorns","Hunter's Mark","Jump","Longstrider","Snare","Speak with Animals","Zephyr Strike"],
                 "2nd Level" : ["Air Bubble","Animal Messenger","Barkskin","Beast Sense","Cordon of Arrows","Darkvision","Find Traps","Healing Spirit","Lesser Restoration","Locate Animals or Plants","Locate Object","Pass Without Trace","Protection from Poison","Silence","Spike Growth"],
                 "3rd Level" : ["Ashardalon's Stride","Conjure Animals","Conjure Barrage","Daylight","Flame Arrows","Lightning Arrow","Nondetection","Plant Growth","Protection from Energy","Speak with Plants","Water Breathing","Water Walk","Wind Wall"],
-                "4th Level" : ["Conjure Woodland Beings","Freedom of Movement","Grasping Vine","Guardian of Nature","Locate Creature","Stoneskin"],
-                "5th Level" : ["Commune with Nature","Conjure Volley","Steel Wind Strike","Swift Quiver","Tree Stride","Wrath Of Nature"]           
+                "4th Level" : ["Conjure Woodland Beings","Freedom of Movement","Grasping Vine","Guardian of nature","Locate Creature","Stoneskin"],
+                "5th Level" : ["Commune with nature","Conjure Volley","Steel Wind Strike","Swift Quiver","Tree Stride","Wrath Of nature"]           
             }
         }
     },
+
+
+
     "Rogue": {
+        "ASCII Art": """
+  _____                        
+ |  __ \                       
+ | |__) |___   __ _ _   _  ___ 
+ |  _  // _ \ / _` | | | |/ _ \
+ | | \ \ (_) | (_| | |_| |  __/
+ |_|  \_\___/ \__, |\__,_|\___|
+               __/ |           
+              |___/            
+        """,
         "Name": "Rogue",
         "Description": "A scoundrel who uses stealth and trickery to overcome obstacles and enemies.",
         "Level Chart" : {
-            
+            1: {'Proficiency Bonus': '+2', 'Sneak Attack': '1d6', 'Features': 'Expertise, Sneak Attack, Thieves\' Cant'},
+            2: {'Proficiency Bonus': '+2', 'Sneak Attack': '1d6', 'Features': 'Cunning Action'},
+            3: {'Proficiency Bonus': '+2', 'Sneak Attack': '2d6', 'Features': 'Roguish Archetype, Steady Aim (Optional)'},
+            4: {'Proficiency Bonus': '+2', 'Sneak Attack': '2d6', 'Features': 'Ability Score Improvement'},
+            5: {'Proficiency Bonus': '+3', 'Sneak Attack': '3d6', 'Features': 'Uncanny Dodge'},
+            6: {'Proficiency Bonus': '+3', 'Sneak Attack': '3d6', 'Features': 'Expertise'},
+            7: {'Proficiency Bonus': '+3', 'Sneak Attack': '4d6', 'Features': 'Evasion'},
+            8: {'Proficiency Bonus': '+3', 'Sneak Attack': '4d6', 'Features': 'Ability Score Improvement'},
+            9: {'Proficiency Bonus': '+4', 'Sneak Attack': '5d6', 'Features': 'Roguish Archetype feature'},
+            10: {'Proficiency Bonus': '+4', 'Sneak Attack': '5d6', 'Features': 'Ability Score Improvement'},
+            11: {'Proficiency Bonus': '+4', 'Sneak Attack': '6d6', 'Features': 'Reliable Talent'},
+            12: {'Proficiency Bonus': '+4', 'Sneak Attack': '6d6', 'Features': 'Ability Score Improvement'},
+            13: {'Proficiency Bonus': '+5', 'Sneak Attack': '7d6', 'Features': 'Roguish Archetype feature'},
+            14: {'Proficiency Bonus': '+5', 'Sneak Attack': '7d6', 'Features': 'Blindsense'},
+            15: {'Proficiency Bonus': '+5', 'Sneak Attack': '8d6', 'Features': 'Slippery Mind'},
+            16: {'Proficiency Bonus': '+5', 'Sneak Attack': '8d6', 'Features': 'Ability Score Improvement'},
+            17: {'Proficiency Bonus': '+6', 'Sneak Attack': '9d6', 'Features': 'Roguish Archetype feature'},
+            18: {'Proficiency Bonus': '+6', 'Sneak Attack': '9d6', 'Features': 'Elusive'},
+            19: {'Proficiency Bonus': '+6', 'Sneak Attack': '10d6', 'Features': 'Ability Score Improvement'},
+            20: {'Proficiency Bonus': '+6', 'Sneak Attack': '10d6', 'Features': 'Stroke of Luck'}
         },
         "Features": {
-            "Spellcasting Modifier" : "None",
-            "Languages": []
+            'Hit Dice': '1d8 per rogue level',
+            'Hit Points at 1st Level': '8 + your Constitution modifier',
+            'Hit Points at Higher Levels': '1d8 (or 5) + your Constitution modifier per rogue level after 1st',
+            'Proficiencies': {
+                'Armor': 'Light armor',
+                'Weapons': 'Simple weapons, hand crossbows, longswords, rapiers, shortswords',
+                'Tools': 'Thieves\' tools',
+                'Spellcasting Modifier' : "None",
+                'Saving Throws': 'Dexterity, Intelligence',
+                'Skills': 'Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth',
+                "Languages": []
+            },
+            'Equipment': {
+                'Choice of Weapon': '(a) a rapier or (b) a shortsword',
+                'Choice of Weapon or Shortbow': '(a) a shortbow and quiver of 20 arrows or (b) a shortsword',
+                'Choice of Pack': '(a) a burglar\'s pack, (b) dungeoneer\'s pack, or (c) an explorer\'s pack',
+                'Additional Equipment': 'Leather armor, two daggers, and thieves\' tools'
+            }
         },
         "Attribute Priority" : ['dexterity', 'intelligence', 'constitution', 'charisma', 'wisdom', 'strength'],
         "Spells" : {
-            "Spellcasting Modifier" : "None",
+            'Spellcasting Modifier' : "None",
             "Available" : {}
         }
     },
+
+
+
     "Sorcerer": {
+        "ASCII Art": """
+   _____                                  
+  / ____|                                 
+ | (___   ___  _ __ ___ ___ _ __ ___ _ __ 
+  \___ \ / _ \| '__/ __/ _ \ '__/ _ \ '__|
+  ____) | (_) | | | (_|  __/ | |  __/ |   
+ |_____/ \___/|_|  \___\___|_|  \___|_|   
+                                          
+        """,
         "Name": "Sorcerer",
         "Description": "A spellcaster who draws on inherent magic from a gift or bloodline.",
         "Level Chart" : {
-            
+            1: {'Proficiency Bonus': '+2', 'Sorcery Points': '-', 'Features': 'Spellcasting, Sorcerous Origin', 'Cantrips Known': 4, 'Spells Known': 2, '1st': 2, '2nd': '-', '3rd': '-', '4th': '-', '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            2: {'Proficiency Bonus': '+2', 'Sorcery Points': '2', 'Features': 'Font of Magic', 'Cantrips Known': 4, 'Spells Known': 3, '1st': 3, '2nd': '-', '3rd': '-', '4th': '-', '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            3: {'Proficiency Bonus': '+2', 'Sorcery Points': '3', 'Features': 'Metamagic', 'Cantrips Known': 4, 'Spells Known': 4, '1st': 4, '2nd': 2, '3rd': '-', '4th': '-', '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            4: {'Proficiency Bonus': '+2', 'Sorcery Points': '4', 'Features': 'Ability Score Improvement, Sorcerous Versatility (Optional)', 'Cantrips Known': 5, 'Spells Known': 5, '1st': 4, '2nd': 3, '3rd': '-', '4th': '-', '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            5: {'Proficiency Bonus': '+3', 'Sorcery Points': '5', 'Features': 'Magical Guidance (Optional)', 'Cantrips Known': 5, 'Spells Known': 6, '1st': 4, '2nd': 3, '3rd': 2, '4th': '-', '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            6: {'Proficiency Bonus': '+3', 'Sorcery Points': '6', 'Features': 'Sorcerous Origin feature', 'Cantrips Known': 5, 'Spells Known': 7, '1st': 4, '2nd': 3, '3rd': 3, '4th': '-', '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            7: {'Proficiency Bonus': '+3', 'Sorcery Points': '7', 'Features': '-', 'Cantrips Known': 5, 'Spells Known': 8, '1st': 4, '2nd': 3, '3rd': 3, '4th': 1, '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            8: {'Proficiency Bonus': '+3', 'Sorcery Points': '8', 'Features': 'Ability Score Improvement, Sorcerous Versatility (Optional)', 'Cantrips Known': 5, 'Spells Known': 9, '1st': 4, '2nd': 3, '3rd': 3, '4th': 2, '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            9: {'Proficiency Bonus': '+4', 'Sorcery Points': '9', 'Features': '-', 'Cantrips Known': 5, 'Spells Known': 10, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 1, '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            10: {'Proficiency Bonus': '+4', 'Sorcery Points': '10', 'Features': 'Metamagic', 'Cantrips Known': 6, 'Spells Known': 11, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            11: {'Proficiency Bonus': '+4', 'Sorcery Points': '11', 'Features': '-', 'Cantrips Known': 6, 'Spells Known': 12, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': '-', '8th': '-', '9th': '-'},
+            12: {'Proficiency Bonus': '+4', 'Sorcery Points': '12', 'Features': 'Ability Score Improvement, Sorcerous Versatility (Optional)', 'Cantrips Known': 6, 'Spells Known': 12, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': '-', '8th': '-', '9th': '-'},
+            13: {'Proficiency Bonus': '+5', 'Sorcery Points': '13', 'Features': '-', 'Cantrips Known': 6, 'Spells Known': 13, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': '-', '9th': '-'},
+            14: {'Proficiency Bonus': '+5', 'Sorcery Points': '14', 'Features': 'Sorcerous Origin feature', 'Cantrips Known': 6, 'Spells Known': 13, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': '-', '9th': '-'},
+            15: {'Proficiency Bonus': '+5', 'Sorcery Points': '15', 'Features': '-', 'Cantrips Known': 6, 'Spells Known': 14, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1, '9th': '-'},
+            16: {'Proficiency Bonus': '+5', 'Sorcery Points': '16', 'Features': 'Ability Score Improvement, Sorcerous Versatility (Optional)', 'Cantrips Known': 6, 'Spells Known': 14, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1, '9th': '-'},
+            17: {'Proficiency Bonus': '+6', 'Sorcery Points': '17', 'Features': 'Metamagic', 'Cantrips Known': 6, 'Spells Known': 15, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1, '9th': 1},
+            18: {'Proficiency Bonus': '+6', 'Sorcery Points': '18', 'Features': 'Sorcerous Origin feature', 'Cantrips Known': 6, 'Spells Known': 15, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1, '9th': 1},
+            19: {'Proficiency Bonus': '+6', 'Sorcery Points': '19', 'Features': 'Ability Score Improvement, Sorcerous Versatility (Optional)', 'Cantrips Known': 6, 'Spells Known': 15, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1, '9th': 1},
+            20: {'Proficiency Bonus': '+6', 'Sorcery Points': '20', 'Features': 'Sorcerous Restoration', 'Cantrips Known': 6, 'Spells Known': 15, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1, '9th': 1}
         },
         "Features": {
-            "Spellcasting": "Cast sorcerer spells.",
-            "Sorcerous Origin": "Gain special magical abilities based on your magical origin."
-        },
-        "Proficiencies": {
-            "Armor": [],
-            "Weapons": ["Daggers", "Darts", "Slings", "Quarterstaffs", "Light crossbows"],
-            "Tools": [],
-            "Spellcasting Modifier" : "Charisma",
-            "Saving Throws": ["Constitution", "Charisma"],
-            "Skills": "Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion",
-            "Languages": []
+            'Hit Dice': '1d6 per sorcerer level',
+            'Hit Points at 1st Level': '6 + your Constitution modifier',
+            'Hit Points at Higher Levels': '1d6 (or 4) + your Constitution modifier per sorcerer level after 1st',
+            'Proficiencies': {
+                'Armor': 'None',
+                'Weapons': 'Daggers, darts, slings, quarterstaffs, light crossbows',
+                'Tools': 'None',
+                'Spellcasting Modifier' : "Charisma",
+                'Saving Throws': 'Constitution, Charisma',
+                'Skills': 'Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion',
+                "Languages": []
+            },
+            'Equipment': {
+                'Choice 1': 'a light crossbow and 20 bolts',
+                'Choice 2': 'any simple weapon',
+                'Choice 3': 'a component pouch',
+                'Choice 4': 'an arcane focus',
+                'Choice 5': 'a dungeoneer\'s pack',
+                'Choice 6': 'an explorer\'s pack',
+                'Choice 7': 'Two daggers'
+            }
         },
         "Attribute Priority" : ['charisma', 'constitution', 'dexterity', 'intelligence', 'wisdom', 'strength'],
         "Spells" : {
-            "Spellcasting Modifier" : "charisma",
+            'Spellcasting Modifier' : "charisma",
             "Available" : {
                 "Cantrips" : ["Acid Splash","Blade Ward","Chill Touch","Control Flames","Create Bonfire","Dancing Lights","Fire Bolt","Friends","Frostbite","Gust","Infestation","Light","Mage Hand","Mending","Message","Minor Illusion","Mold Earth","Poison Spray","Prestidigitation","Ray of Frost","Shape Water","Shocking Grasp","Thunderclap","True Strike"],
                 "1st Level" : ["Absorb Elements","Burning Hands","Catapult","Chaos Bolt","Charm Person","Chromatic Orb","Color Spray","Comprehend Languages","Detect Magic","Disguise Self","Distort Value","Earth Tremor","Expeditious Retreat","False Life","Feather Fall","Fog Cloud","Ice Knife","Jump","Mage Armor","Magic Missile","Ray of Sickness","Shield","Silent Image","Silvery Barbs","Sleep","Thunderwave","Witch Bolt"],
@@ -378,19 +711,66 @@ dnd_classes = {
             }
         }
     },
+
+
+
     "Warlock": {
+        "ASCII Art": """
+ __          __        _            _    
+ \ \        / /       | |          | |   
+  \ \  /\  / /_ _ _ __| | ___   ___| | __
+   \ \/  \/ / _` | '__| |/ _ \ / __| |/ /
+    \  /\  / (_| | |  | | (_) | (__|   < 
+     \/  \/ \__,_|_|  |_|\___/ \___|_|\_\
+                                         
+        """,
         "Name": "Warlock",
         "Description": "A wielder of magic that is derived from a bargain with an extraplanar entity.",
         "Level Chart" : {
-            
+            1: {'Proficiency Bonus': '+2', 'Features': 'Otherworldly Patron, Pact Magic', 'Cantrips Known': 2, 'Spells Known': 2, 'Spell Slots': 1, 'Slot Level': '1st', 'Invocations Known': '-'},
+            2: {'Proficiency Bonus': '+2', 'Features': 'Eldritch Invocations', 'Cantrips Known': 2, 'Spells Known': 3, 'Spell Slots': 2, 'Slot Level': '1st', 'Invocations Known': '2'},
+            3: {'Proficiency Bonus': '+2', 'Features': 'Pact Boon', 'Cantrips Known': 2, 'Spells Known': 4, 'Spell Slots': 2, 'Slot Level': '2nd', 'Invocations Known': '2'},
+            4: {'Proficiency Bonus': '+2', 'Features': 'Ability Score Improvement, Eldritch Versatility (Optional)', 'Cantrips Known': 3, 'Spells Known': 5, 'Spell Slots': 2, 'Slot Level': '2nd', 'Invocations Known': '2'},
+            5: {'Proficiency Bonus': '+3', 'Features': '-', 'Cantrips Known': 3, 'Spells Known': 6, 'Spell Slots': 2, 'Slot Level': '3rd', 'Invocations Known': '3'},
+            6: {'Proficiency Bonus': '+3', 'Features': 'Otherworldly Patron feature', 'Cantrips Known': 3, 'Spells Known': 7, 'Spell Slots': 2, 'Slot Level': '3rd', 'Invocations Known': '3'},
+            7: {'Proficiency Bonus': '+3', 'Features': '-', 'Cantrips Known': 3, 'Spells Known': 8, 'Spell Slots': 2, 'Slot Level': '4th', 'Invocations Known': '4'},
+            8: {'Proficiency Bonus': '+3', 'Features': 'Ability Score Improvement, Eldritch Versatility (Optional)', 'Cantrips Known': 3, 'Spells Known': 9, 'Spell Slots': 2, 'Slot Level': '4th', 'Invocations Known': '4'},
+            9: {'Proficiency Bonus': '+4', 'Features': '-', 'Cantrips Known': 3, 'Spells Known': 10, 'Spell Slots': 2, 'Slot Level': '5th', 'Invocations Known': '5'},
+            10: {'Proficiency Bonus': '+4', 'Features': 'Otherworldly Patron feature', 'Cantrips Known': 4, 'Spells Known': 10, 'Spell Slots': 2, 'Slot Level': '5th', 'Invocations Known': '5'},
+            11: {'Proficiency Bonus': '+4', 'Features': 'Mystic Arcanum (6th level)', 'Cantrips Known': 4, 'Spells Known': 11, 'Spell Slots': 3, 'Slot Level': '5th', 'Invocations Known': '5'},
+            12: {'Proficiency Bonus': '+4', 'Features': 'Ability Score Improvement, Eldritch Versatility (Optional)', 'Cantrips Known': 4, 'Spells Known': 11, 'Spell Slots': 3, 'Slot Level': '5th', 'Invocations Known': '6'},
+            13: {'Proficiency Bonus': '+5', 'Features': 'Mystic Arcanum (7th level)', 'Cantrips Known': 4, 'Spells Known': 12, 'Spell Slots': 3, 'Slot Level': '5th', 'Invocations Known': '6'},
+            14: {'Proficiency Bonus': '+5', 'Features': 'Otherworldly Patron feature', 'Cantrips Known': 4, 'Spells Known': 12, 'Spell Slots': 3, 'Slot Level': '5th', 'Invocations Known': '6'},
+            15: {'Proficiency Bonus': '+5', 'Features': 'Mystic Arcanum (8th level)', 'Cantrips Known': 4, 'Spells Known': 13, 'Spell Slots': 3, 'Slot Level': '5th', 'Invocations Known': '7'},
+            16: {'Proficiency Bonus': '+5', 'Features': 'Ability Score Improvement, Eldritch Versatility (Optional)', 'Cantrips Known': 4, 'Spells Known': 13, 'Spell Slots': 3, 'Slot Level': '5th', 'Invocations Known': '7'},
+            17: {'Proficiency Bonus': '+6', 'Features': 'Mystic Arcanum (9th level)', 'Cantrips Known': 4, 'Spells Known': 14, 'Spell Slots': 4, 'Slot Level': '5th', 'Invocations Known': '7'},
+            18: {'Proficiency Bonus': '+6', 'Features': '-', 'Cantrips Known': 4, 'Spells Known': 14, 'Spell Slots': 4, 'Slot Level': '5th', 'Invocations Known': '8'},
+            19: {'Proficiency Bonus': '+6', 'Features': 'Ability Score Improvement, Eldritch Versatility (Optional)', 'Cantrips Known': 4, 'Spells Known': 15, 'Spell Slots': 4, 'Slot Level': '5th', 'Invocations Known': '8'},
+            20: {'Proficiency Bonus': '+6', 'Features': 'Eldritch Master', 'Cantrips Known': 4, 'Spells Known': 15, 'Spell Slots': 4, 'Slot Level': '5th', 'Invocations Known': '8'}
         },
         "Features": {
-            "Spellcasting Modifier" : "Charisma",
-            "Languages": []
+            'Hit Dice': '1d8 per warlock level',
+            'Hit Points at 1st Level': '8 + your Constitution modifier',
+            'Hit Points at Higher Levels': '1d8 (or 5) + your Constitution modifier per warlock level after 1st',
+            'Proficiencies': {
+                'Armor': 'Light armor',
+                'Weapons': 'Simple weapons',
+                'Tools': 'None',
+                'Spellcasting Modifier' : "Charisma",
+                'Saving Throws': 'Wisdom, Charisma',
+                'Skills': 'Choose two from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion',
+                "Languages": []
+            },
+            'Equipment': {
+                'Option 1': '(a) a light crossbow and 20 bolts or (b) any simple weapon',
+                'Option 2': '(a) a component pouch or (b) an arcane focus',
+                'Option 3': '(a) a scholar\'s pack or (b) a dungeoneer\'s pack',
+                'Additional Items': 'Leather armor, any simple weapon, and two daggers'
+            }
         },
         "Attribute Priority" : ['charisma', 'constitution', 'dexterity', 'intelligence', 'wisdom', 'strength'],
         "Spells" : {
-            "Spellcasting Modifier" : "charisma",
+            'Spellcasting Modifier' : "charisma",
             "Available" : {
                 "Cantrips" : ["Blade Ward","Chill Touch","Create Bonfire","Eldritch Blast","Friends","Frostbite","Infestation","Mage Hand","Magic Stone","Minor Illusion","Poison Spray","Prestidigitation","Thunderclap","Toll the Dead","True Strike"],
                 "1st Level" : ["Armor of Agathys","Arms of Hadar","Cause Fear","Charm Person","Comprehend Languages","Distort Value","Expeditious Retreat","Hellish Rebuke","Hex","Illusory Script","Protection from Evil and Good","Unseen Servant","Witch Bolt"],
@@ -405,18 +785,66 @@ dnd_classes = {
             }
         }
     },
+
+
+
     "Wizard": {
+        "ASCII Art": """
+ __          ___                  _ 
+ \ \        / (_)                | |
+  \ \  /\  / / _ ______ _ _ __ __| |
+   \ \/  \/ / | |_  / _` | '__/ _` |
+    \  /\  /  | |/ / (_| | | | (_| |
+     \/  \/   |_/___\__,_|_|  \__,_|
+                                    
+        """,
+        "Name": "Wizard",
         "Description": "A scholarly magic-user capable of manipulating the structures of reality.",
         "Level Chart" : {
-            
+            1: {'Proficiency Bonus': '+2', 'Features': 'Spellcasting, Arcane Recovery', 'Cantrips Known': 3, '1st': 2},
+            2: {'Proficiency Bonus': '+2', 'Features': 'Arcane Tradition', 'Cantrips Known': 3, '1st': 3},
+            3: {'Proficiency Bonus': '+2', 'Features': 'Cantrip Formulas (Optional)', 'Cantrips Known': 3, '1st': 4, '2nd': 2},
+            4: {'Proficiency Bonus': '+2', 'Features': 'Ability Score Improvement', 'Cantrips Known': 4, '1st': 4, '2nd': 3},
+            5: {'Proficiency Bonus': '+3', 'Cantrips Known': 4, '1st': 4, '2nd': 3, '3rd': 2},
+            6: {'Proficiency Bonus': '+3', 'Features': 'Arcane Tradition feature', 'Cantrips Known': 4, '1st': 4, '2nd': 3, '3rd': 3},
+            7: {'Proficiency Bonus': '+3', 'Cantrips Known': 4, '1st': 4, '2nd': 3, '3rd': 3, '4th': 1},
+            8: {'Proficiency Bonus': '+3', 'Features': 'Ability Score Improvement', 'Cantrips Known': 4, '1st': 4, '2nd': 3, '3rd': 3, '4th': 2},
+            9: {'Proficiency Bonus': '+4', 'Cantrips Known': 4, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 1},
+            10: {'Proficiency Bonus': '+4', 'Features': 'Arcane Tradition feature', 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2},
+            11: {'Proficiency Bonus': '+4', 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1},
+            12: {'Proficiency Bonus': '+4', 'Features': 'Ability Score Improvement', 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1},
+            13: {'Proficiency Bonus': '+5', 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1},
+            14: {'Proficiency Bonus': '+5', 'Features': 'Arcane Tradition feature', 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1},
+            15: {'Proficiency Bonus': '+5', 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1},
+            16: {'Proficiency Bonus': '+5', 'Features': 'Ability Score Improvement', 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1},
+            17: {'Proficiency Bonus': '+6', 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1, '9th': 1},
+            18: {'Proficiency Bonus': '+6', 'Features': 'Spell Mastery', 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 3, '6th': 1, '7th': 1, '8th': 1, '9th': 1},
+            19: {'Proficiency Bonus': '+6', 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 3, '6th': 2, '7th': 1, '8th': 1, '9th': 1},
+            20: {'Proficiency Bonus': '+6', 'Features': 'Signature Spells', 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 3, '6th': 2, '7th': 2, '8th': 1, '9th': 1}    
         },
         "Features": {
-            "Spellcasting Modifier" : "Intelligence",
-            "Languages": []
+            'Hit Dice': '1d6 per wizard level',
+            'Hit Points at 1st Level': '6 + your Constitution modifier',
+            'Hit Points at Higher Levels': '1d6 (or 4) + your Constitution modifier per wizard level after 1st',
+            'Proficiencies': {
+                'Armor': 'None',
+                'Weapons': 'Daggers, darts, slings, quarterstaffs, light crossbows',
+                'Tools': 'None',
+                'Spellcasting Modifier' : "Intelligence",
+                'Saving Throws': 'Intelligence, Wisdom',
+                'Skills': 'Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion',
+                "Languages": []
+            },
+            'Equipment': {
+                'Choose one of the following as a primary weapon': '(a) a quarterstaff or (b) a dagger',
+                'Choose one of the following as a focus': '(a) a component pouch or (b) an arcane focus',
+                'Choose one of the following packs': '(a) a scholar\'s pack or (b) an explorer\'s pack',
+                'Additional Equipment': 'A spellbook'
+            }
         },
         "Attribute Priority" : ['intelligence', 'constitution', 'dexterity', 'wisdom', 'charisma', 'strength'],
         "Spells" : {
-            "Spellcasting Modifier" : "intelligence",
+            'Spellcasting Modifier' : "intelligence",
             "Available" : {
                 "Cantrips" : ["Acid Splash","Blade Ward","Chill Touch","Control Flames","Create Bonfire","Dancing Lights","Encode Thoughts","Fire Bolt","Friends","Frostbite","Gust","Infestation","Light","Mage Hand","Mending","Message","Minor Illusion","Mold Earth","Poison Spray","Prestidigitation","Ray of Frost","Sapping Sting","Shape Water","Shocking Grasp","Thunderclap","Toll the Dead","True Strike"],
                 "1st Level" : ["Absorb Elements","Alarm","Burning Hands","Catapult","Cause Fear","Charm Person","Chromatic Orb","Color Spray","Comprehend Languages","Detect Magic","Disguise Self","Distort Value","Earth Tremor","Expeditious Retreat","False Life","Feather Fall","Find Familiar","Fog Cloud","Frost Fingers","Gift of Alacrity","Grease","Ice Knife","Identify","Illusory Script","Jim's Magic Missile","Jump","Longstrider","Mage Armor","Magic Missile","Magnify Gravity","Protection from Evil and Good","Ray of Sickness","Shield","Silent Image","Silvery Barbs","Sleep","Snare","Tasha's Hideous Laughter","Tenser's Floating Disk","Thunderwave","Unseen Servant","Witch Bolt"],
