@@ -343,6 +343,9 @@ def generate_characters(character, character_number, character_level=1, characte
     for i in range(1, random.randint(1,4)):
         character.weapons.append(generate_random_weapon(weapon_list))
 
+    return character
+
+
 
 def display_character(characters):
     # Print Character to screen

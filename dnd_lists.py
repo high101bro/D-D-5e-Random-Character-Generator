@@ -1,10 +1,33 @@
 #! /usr/bin/env python3
 
 
-first_names = ["Grog", "Vax'ildan", "Keyleth", "Percy", "Scanlan", "Vex'ahlia", "Pike", "Tiberius", "Pike", "Percival"]
+first_names = [
+    'Grog', "Vax'ildan", 'Keyleth', 'Percy', 'Scanlan', "Vex'ahlia", 'Pike', 'Tiberius', 'Percival', 'Aric', 
+    'Elowen', 'Thrain', 'Isolde', 'Kael', 'Seraphina', 'Grom', 'Elira', 'Finnian', 'Eilif', 'Lyria', 
+    'Thalwin', 'Oona', 'Idris', 'Brigid', 'Dagfinn', 'Ysolde', 'Sylas', 'Maelis', 'Linnea', 'Thorne', 
+    'Keldan', 'Elysia', 'Thora', 'Erling', 'Nerys', 'Aldric', 'Fianna', 'Varin', 'Seren', 'Ailin', 
+    'Eilin', 'Alaric', 'Gwendolyn', 'Leif', 'Elowyn', 'Caelan', 'Aislinn', 'Einar', 'Imogen', 'Gavric', 
+    'Elara', 'Freyr', 'Aislyn', 'Eolande', 'Lachlan', 'Tamsin', 'Rowan', 'Fiore', 'Magnus', 'Seraphim', 
+    'Yrsa', 'Nolin', 'Ulfric', 'Ilyana', 'Kaelan', 'Eirik', 'Thalia', 'Sigurd', 'Gwyneira', 'Emrys', 
+    'Idunn', 'Ulrik', 'Aislin', 'Thane', 'Eilwen', 'Orin', 'Lyra', 'Rhiannon', 'Soren', 'Lirael', 
+    'Eldric', 'Daelin', 'Freya', 'Taran', 'Ysolt', 'Iolande'
+]
 
 
-last_names = ["Strongjaw", "De Rolo", "of the Air Ashari", "Fredrickstein", "Shorthalt", "of Syngorn", "Trickfoot", "Stormwind", "Trickfoot", "de Rolo"]
+last_names = [
+    'Strongjaw', 'De Rolo', 'of the Air Ashari', 'Fredrickstein', 'Shorthalt', 'of Syngorn', 'Trickfoot', 'Stormwind', 'de Rolo', 'Brightwood', 
+    'Ironheart', 'Fireforge', 'Stonefist', 'Wildwalker', 'Stormbringer', 'Doomhammer', 'Lionheart', 'Dragonslayer', 'Darkbane', 'Moonshadow', 
+    'Blackthorn', 'Stormrage', 'Duskwalker', 'Battlehammer', 'Ironfist', 'Hammersmith', 'Wyrmslayer', 'Thundershield', 'Hawkwing', 'Bloodrider', 
+    'Skyblade', 'Frostwolf', 'Snowfall', 'Windrider', 'Darkthorn', 'Nighthunter', 'Shadowstalker', 'Grimtotem', 'Stonemaul', 'Blackhand', 
+    'Stormreaver', 'Bloodhoof', 'Ravencrest', 'Firebeard', 'Hellscream', 'Whisperwind', 'Blackrock', 'Thornsong', 'Swiftstrike', 'Warbringer', 
+    'Thundertotem', 'Mistrunner', 'Rockseeker', 'Ironfoot', 'Braveforge', 'Mossbeard', 'Goldvein', 'Silvershield', 'Darkhammer', 'Stormbeard', 
+    'Bronzebeard', 'Thrainsson', 'Dwarfbane', 'Silveraxe', 'Mountainheart', 'Stonesmith', 'Goreblade', 'Sureshot', 'Braveheart', 'Winterfall', 
+    'Stormswift', 'Hawkmoon', 'Nightslayer', 'Redfist', 'Gorehammer', 'Hammerheart', 'Bronzeforge', 'Flintbeard', 'Dragonbane', 'Trollbane', 
+    'Frostbeard', 'Whitestone', 'Dragonfist', 'Runeheart', 'Swiftaxe', 'Silentstrike', 'Brightblade', 'Gorehoof', 'Thunderaxe', 'Nightsong', 
+    'Flintforge', 'Mountainaxe', 'Darkbeard', 'Waraxe', 'Silentstorm', 'Ironhorn', 'Stonehammer', 'Stoneguard', 'Hawkeye', 'Stormwalker', 
+    'Darkfist', 'Ironclaw', 'Gorehelm', 'Stormshield', 'Hammerfall', 'Darkblade', 'Runeaxe'
+]
+
 
 dnd_menu_level = [
     "Level  1          0 Exp    You're just starting your adventuring journey, full of potential.",

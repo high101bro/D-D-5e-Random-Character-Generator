@@ -26,7 +26,7 @@ optionsMenu  = [
     'Roll Dice'
 ]
 
-characters = []
+all_characters = []
 
 def debug(show):
     ts = input(f"{show}")
@@ -37,6 +37,7 @@ while True:
     print(dnd_dungeon_master)
 
 
+    characters = []
     menuMain = TerminalMenu(optionsMenu)
     selectedMenuOption = menuMain.show()
     if re.compile("^Create Character").match(optionsMenu [selectedMenuOption]):
@@ -135,12 +136,14 @@ while True:
 
 
                     clear()
-                    generate_characters(
-                        character,
-                        character_number,
-                        character_level,
-                        character_race,
-                        character_class
+                    all_characters.append(
+                        generate_characters(
+                            character,
+                            character_number,
+                            character_level,
+                            character_race,
+                            character_class
+                        )
                     )
                     display_character(characters)
 
@@ -151,12 +154,14 @@ while True:
                     character_number = index + 1
 
                     clear()
-                    generate_characters(
-                        character,
-                        character_number,
-                        character_level = 1, #random.randint(1,21),
-                        character_race = random.choice(list(dnd_races.keys())),
-                        character_class = 'Paladin' #random.choice(list(dnd_classes.keys()))
+                    all_characters.append(
+                        generate_characters(
+                            character,
+                            character_number,
+                            character_level = 1, #random.randint(1,21),
+                            character_race = random.choice(list(dnd_races.keys())),
+                            character_class = 'Paladin' #random.choice(list(dnd_classes.keys()))
+                        )
                     )
                     display_character(characters)
 
@@ -175,7 +180,7 @@ while True:
             print(f"  ====================================================================================================")
 
             character_list = []
-            for character in characters:
+            for character in all_characters:
                 character_list.append(f"Character {character.profile['character number']:<7} {character.profile['race']['Name']:<15} {character.profile['class']['Name']:<14} {character.profile['name']['first'] + ' ' + character.profile['name']['last']:<34} {character.profile['created']:<20}")
             character_list.append('Exit')
 
