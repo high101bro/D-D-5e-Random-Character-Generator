@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-import click, re
+import re
 from simple_term_menu import TerminalMenu
 from dnd_generate_character import *
 from dnd_lists import *
@@ -8,6 +8,8 @@ from dnd_lists import *
 
 # def menu():
 #     click.echo('Hello, World!')
+clear()
+
 characters = []
 
 optionsMenu  = [
@@ -21,9 +23,9 @@ optionsMenu  = [
 menuMain = TerminalMenu(optionsMenu)
 selectedMenuOption = menuMain.show()
 if re.compile("^Create Character").match(optionsMenu [selectedMenuOption]):
-    print('Creating character...')
 
     # Number of Characters
+    clear()
     print('How many characters do you want to create? ')
     dnd_choose_character_number = ['1','2','3','4','5','6','7','8','9','10']
     dnd_choose_character_number.append('Random Number')
@@ -41,56 +43,65 @@ if re.compile("^Create Character").match(optionsMenu [selectedMenuOption]):
         character = Character()
         characters.append(character)
 
-
-    # Character Level
-    print("Select Character Level:")
-    dnd_menu_level.append('Random Level')
-    character_level_menu = TerminalMenu(dnd_menu_level)
-    character_level_index = character_level_menu.show()
     
-    if character_level_index == (len(dnd_menu_level)-1): # Which should the 'Random Level' index
-        dnd_menu_level.pop()
-        character_level = random.randint(1,21) #random int instead of parsing the menu string
-        int(random.choice(dnd_choose_character_number))
-    else: # The chosen level of the character
-        character_level = int(dnd_menu_level[character_level_index][:8][-3:])
+    for character in characters:
+
+        # Character Level
+        clear()
+        print("Select Character Level:")
+        dnd_menu_level.append('Random Level')
+        character_level_menu = TerminalMenu(dnd_menu_level)
+        character_level_index = character_level_menu.show()
+        
+        if character_level_index == (len(dnd_menu_level)-1): # Which should the 'Random Level' index
+            dnd_menu_level.pop()
+            character_level = random.randint(1,21) #random int instead of parsing the menu string
+            int(random.choice(dnd_choose_character_number))
+        else: # The chosen level of the character
+            character_level = int(dnd_menu_level[character_level_index][:8][-3:])
 
 
-    # Character Race
-    print("Select Character Race:")
-    dnd_menu_race.append('Random Race')
-    character_race_menu = TerminalMenu(dnd_menu_race)
-    character_race_index = character_race_menu.show()
+        # Character Race
+        clear()
+        print("Select Character Race:")
+        dnd_menu_race.append('Random Race')
+        character_race_menu = TerminalMenu(dnd_menu_race)
+        character_race_index = character_race_menu.show()
 
-    if character_race_index == (len(dnd_menu_race)-1): # Which should the 'Random Race' index
-        dnd_menu_race.pop()
-        character_race = random.choice(dnd_menu_race).split()[0]
-    else: # The chosen race of the character
-        character_race = dnd_menu_race[character_race_index].split()[0]
-    character_race = 'Human'
-
-
-    # Character Class
-    print("Select Character Class:")
-    dnd_menu_class.append('Random Class')
-    character_class_menu = TerminalMenu(dnd_menu_class)
-    character_class_index = character_class_menu.show()
-
-    if character_class_index == (len(dnd_menu_class)-1): # Which should the 'Random Class' index
-        dnd_menu_class.pop()
-        character_class = random.choice(dnd_menu_class).split()[0]
-    else: # The chosen class of the character
-        character_class = dnd_menu_class[character_class_index].split()[0]
-    character_class='Paladin'
+        if character_race_index == (len(dnd_menu_race)-1): # Which should the 'Random Race' index
+            dnd_menu_race.pop()
+            character_race = random.choice(list(dnd_races.keys()))
+            # Alternative method
+            # character_race = random.choice(dnd_menu_race).split()[0]
+        else: # The chosen race of the character
+            character_race = dnd_menu_race[character_race_index].split()[0]
 
 
-    generate_characters(
-        characters,
-        character_level,
-        character_race,
-        character_class
-    )
-    display_character(characters)
+        # Character Class
+        clear()
+        print("Select Character Class:")
+        dnd_menu_class.append('Random Class')
+        character_class_menu = TerminalMenu(dnd_menu_class)
+        character_class_index = character_class_menu.show()
+
+        if character_class_index == (len(dnd_menu_class)-1): # Which should the 'Random Class' index
+            dnd_menu_class.pop()
+            character_class = random.choice(list(dnd_classes.keys()))
+            # Alternative method
+            # character_class = random.choice(dnd_menu_class).split()[0] 
+        else: # The chosen class of the character
+            character_class = dnd_menu_class[character_class_index].split()[0]
+        character_class='Paladin'
+
+
+        clear()
+        generate_characters(
+            character,
+            character_level,
+            character_race,
+            character_class
+        )
+        display_character(characters)
 
 elif re.compile("^Manage Character").match(optionsMenu [selectedMenuOption]):
     print('Managing a character is under deverlopment...')
