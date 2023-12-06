@@ -18,7 +18,8 @@ dnd_classes = {
  
         """,
         "Name": "Barbarian",
-        "Description": "A fierce warrior of primitive background who can enter a battle rage.",
+        "Description": "A fierce warrior of primitive background who can enter a battle rage. For some, their rage springs from a communion with fierce animal spirits. Others draw from a roiling reservoir of anger at a world full of pain. For every barbarian, rage is a power that fuels not just a battle frenzy but also uncanny reflexes, resilience, and feats of strength.",
+        "Requirement" : "You must have a Strength score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2', 'Features': ['Rage', 'Unarmored Defense'], 'Rages': 2, 'Rage Damage': '+2'},
             2: {'Proficiency Bonus': '+2', 'Features': ['Reckless Attack', 'Danger Sense'], 'Rages': 2, 'Rage Damage': '+2'},
@@ -41,28 +42,38 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6', 'Features': ['Ability Score Improvement'], 'Rages': 6, 'Rage Damage': '+4'},
             20: {'Proficiency Bonus': '+6', 'Features': ['Primal Champion'], 'Rages': 'Unlimited', 'Rage Damage': '+4'}
         },
-        "Features": {
-            'Hit Dice': '1d12',
-            'Hit Points at 1st Level': '12 + your Constitution modifier',
-            'Hit Points at Higher Levels': '1d12 (or 7) + your Constitution modifier per barbarian level after 1st',
-            'Proficiencies': {
-                'Armor': ['Light armor', 'medium armor', 'shields'],
-                'Weapons': ['Simple weapons', 'martial weapons'],
-                'Tools': 'None',
-                'Spellcasting Modifier' : "None",
-                'Saving Throws': ['Strength', 'Constitution'],
-                'Skills': 'Choose two from animal handling, athletics, intimidation, nature, perception, and survival',
-                "Languages": []
+        "Features": {},
+        'Hit Dice': '1d12',
+        'Proficiencies': {
+            'Armor': ['Light armor', 'medium armor', 'shields'],
+            'Weapons': ['Simple weapons', 'martial weapons'],
+            'Tools': 'None',
+            "Spellcasting Modifier" : "None",
+            'Saving Throws': ['Strength', 'Constitution'],
+            'Skills': 'Choose two from animal handling, athletics, intimidation, nature, perception, and survival',
+            "Languages": []
+        },
+        "Equipment": {
+            'Choices' : {
+                'Choice 1' : {
+                    'greataxe' : 1,
+                    'any martial melee weapon' : 1
+                    },
+                'Choice 2' : {
+                    'handaxe': 2,
+                    'any simple weapon' : 1
+                },
             },
-            'Equipment': [
-                'a greataxe or any martial melee weapon',
-                'two handaxes or any simple weapon',
-                'An explorer\'s pack and four javelins',
-            ]
+            "Start With" : {
+                "explorer's pack" : 1,
+                "javelins" : 4
+            }
         },
         "Attribute Priority" : ['strength', 'constitution', 'dexterity', 'wisdom', 'charisma', 'intelligence'],
         "Spells" : {
-            'Spellcasting Modifier' : "None",
+            "Spellcasting" : "None",
+            "Preparation" : "None",
+            "Spellcasting Modifier" : "None",
             "Available" : {}
         }
     },
@@ -80,7 +91,8 @@ dnd_classes = {
 
         """,
         "Name": "Bard",
-        "Description": "An inspiring magician whose power echoes the music of creation.",
+        "Description": "An inspiring magician whose power echoes the music of creation. Whether scholar, skald, or scoundrel, a bard weaves magic through words and music to inspire allies, demoralize foes, manipulate minds, create illusions, and even heal wounds. The bard is a master of song, speech, and the magic they contain.",
+        "Requirement" : "You must have a Charisma score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2','Features': 'Spellcasting, Bardic Inspiration (d6)','Cantrips Known': 2,'Spells Known': 4,'1st': 2,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-',},
             2: {'Proficiency Bonus': '+2','Features': 'Jack of All Trades, Song of Rest (d6), Magical Inspiration (Optional)','Cantrips Known': 2,'Spells Known': 5,'1st': 3,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-',},
@@ -103,29 +115,43 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6','Features': 'Ability Score Improvement, Bardic Versatility (Optional)','Cantrips Known': 4,'Spells Known': 22,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 1,'8th': 1,'9th': 1,},
             20: {'Proficiency Bonus': '+6','Features': 'Superior Inspiration','Cantrips Known': 4,'Spells Known': 22,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 2,'8th': 1,'9th': 1,}
         },
-        "Features": {
-            'Hit Dice': '1d8',
-            'Hit Points at 1st Level': '8 + your Constitution modifier',
-            'Hit Points at Higher Levels': '1d8 (or 5) + your Constitution modifier per bard level after 1st',
-            'Proficiencies': {
-                'Armor': 'Light armor',
-                'Weapons': 'Simple weapons, hand crossbows, longswords, rapiers, shortswords',
-                'Tools': 'Three musical instruments of your choice',
-                'Spellcasting Modifier' : "Charisma",
-                'Saving Throws': 'Dexterity, Charisma',
-                'Skills': 'Choose any three',
-                "Languages": []
+        "Features": {},
+        'Hit Dice': '1d8',
+        'Proficiencies': {
+            'Armor': 'Light armor',
+            'Weapons': 'Simple weapons, hand crossbows, longswords, rapiers, shortswords',
+            'Tools': 'Three musical instruments of your choice',
+            "Spellcasting Modifier" : "Charisma",
+            'Saving Throws': 'Dexterity, Charisma',
+            'Skills': 'Choose any three',
+            "Languages": []
+        },
+        "Equipment": {
+            'Choices' : {
+                'Choice 1' : {
+                    'rapier' : 1,
+                    'longsword' : 1,
+                    'any simple weapon' : 1
+                    },
+                'Choice 2' : {
+                    "diplomat's pack": 1,
+                    "entertainer's pack" : 1
+                },
+                'Choice 3' : {
+                    'lute': 1,
+                    'any other musical instrument' : 1
+                },
             },
-            'Equipment': {
-                '(a) a rapier, (b) a longsword, or (c) any simple weapon': 1,
-                '(a) a diplomat\'s pack or (b) an entertainer\'s pack': 1,
-                '(a) a lute or (b) any other musical instrument': 1,
-                'Leather armor and a dagger': 1
-            }
+            "Start With" : {
+                "lether armor" : 1,
+                "dagger" : 1
+            }            
         },
         "Attribute Priority" : ['charisma', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'strength'],
         "Spells" : {
-            'Spellcasting Modifier' : "charisma",
+            "Spellcasting" : "Bards have a list of spells known and can cast any spell from that list using their spell slots. They learn additional spells as they level up. Bards have the versatility to choose their spells known when they gain levels.",
+            "Preparation" : "Bards do not prepare spells. They have a list of spells known and can cast any of those spells using their spell slots. Bards regain expended spell slots after a long rest.",
+            "Spellcasting Modifier" : "charisma",
             "Available" : {
                 "Cantrips" : ["Blade Ward","Dancing Lights","Friends","Light","Mage Hand","Mending","Message","Minor Illusion","Prestidigitation","Thunderclap","True Strike","Vicious Mockery"],
                 "1st Level" : ["Animal Friendship","Bane","Charm Person","Comprehend Languages","Cure Wounds","Detect Magic","Disguise Self","Dissonant Whispers","Distort Value","Earth Tremor","Faerie Fire","Feather Fall","Healing Word","Heroism","Identify","Illusory Script","Longstrider","Silent Image","Silvery Barbs","Sleep","Speak with Animals","Tasha's Hideous Laughter","Thunderwave","Unseen Servant"],
@@ -154,7 +180,8 @@ dnd_classes = {
 
         """,
         "Name": "Cleric",
-        "Description": "A priestly champion who wields divine magic in service of a higher power.",
+        "Description": "A priestly champion who wields divine magic in service of a higher power. Clerics are intermediaries between the mortal world and the distant planes of the gods. As varied as the gods they serve, clerics strive to embody the handiwork of their deities. No ordinary priest, a cleric is imbued with divine magic.",
+        "Requirement" : "You must have a Wisdom score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2','Features': 'Spellcasting, Divine Domain','Cantrips Known': 3,'1st': 2,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
             2: {'Proficiency Bonus': '+2','Features': 'Channel Divinity (x1), Divine Domain feature, Harness Divine Power (Optional)','Cantrips Known': 3,'1st': 3,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
@@ -177,33 +204,47 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6','Features': 'Ability Score Improvement, Cantrip Versatility (Optional)','Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 1,'7th': 1,'8th': 1,'9th': 1},
             20: {'Proficiency Bonus': '+6','Features': 'Divine Intervention improvement','Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 1,'8th': 1,'9th': 1}
         },
-        "Features": {
-            'Hit Dice': '1d8',
-            'Hit Points at 1st Level': '8 + your Constitution modifier',
-            'Hit Points at Higher Levels': '1d8 (or 5) + your Constitution modifier per cleric level after 1st',
-            'Proficiencies': {
-                'Armor': 'Light armor, medium armor, shields',
-                'Weapons': 'All simple weapons',
-                'Tools': 'None',
-                'Spellcasting Modifier' : "Wisdom",
-                'Saving Throws': 'Wisdom, Charisma',
-                'Skills': 'Choose two from history, insight, medicine, persuasion, and religion',
-                "Languages": []
+        "Features": {},
+        'Hit Dice': '1d8',
+        'Proficiencies': {
+            'Armor': 'Light armor, medium armor, shields',
+            'Weapons': 'All simple weapons',
+            'Tools': 'None',
+            "Spellcasting Modifier" : "Wisdom",
+            'Saving Throws': 'Wisdom, Charisma',
+            'Skills': 'Choose two from history, insight, medicine, persuasion, and religion',
+            "Languages": []
+        },
+        "Equipment": {
+            'Choices' : {
+                'Choice 1' : {
+                    'mace' : 1,
+                    'warhammer (if proficient)' : 1,
+                    },
+                'Choice 2' : {
+                    "scale mail": 1,
+                    "leather armor" : 1,
+                    "chain mail (if proficient)" : 1
+                },
+                'Choice 3' : {
+                    'light crossbow and 20 bolts': 1,
+                    'any simple weapon' : 1
+                },
+                'Choice 4' : {
+                    "priest's pack" : 1,
+                    "explorer's pack" : 1
+                },
             },
-            'Equipment': {
-                'Choice 1': 'a mace',
-                'Choice 2': 'scale mail',
-                'Choice 3': 'a light crossbow and 20 bolts',
-                'Choice 4': 'a priest\'s pack',
-                'Choice 5': 'A shield and a holy symbol',
-                'Choice 6 (if proficient)': 'a warhammer',
-                'Choice 7 (if proficient)': 'leather armor',
-                'Choice 8 (if proficient)': 'chain mail'
+            "Start With" : {
+                "shield" : 1,
+                "holy symbol" : 1
             }
         },
         "Attribute Priority" : ['wisdom', 'constitution', 'strength', 'charisma', 'dexterity', 'intelligence'],
         "Spells" : {
-            'Spellcasting Modifier' : "wisdom",
+            "Spellcasting" : "Clerics have access to their entire spell list and can prepare a certain number of spells each day based on their cleric level and Wisdom modifier. They can change their prepared spells after a long rest.",
+            "Preparation" : "Clerics need to prepare spells after a long rest, choosing from their entire spell list. They can change their prepared spells during this rest. Clerics regain expended spell slots after a long rest.",
+            "Spellcasting Modifier" : "wisdom",
             "Available" : {
                 "Cantrips" : ["Guidance","Light","Mending","Resistance","Sacred Flame","Spare the Dying","Thaumaturgy","Toll the Dead","Word of Radiance"],
                 "1st Level" : ["Bane","Bless","Ceremony","Command","Create or Destroy Water","Cure Wounds","Detect Evil and Good","Detect Magic","Detect Poison and Disease","Guiding Bolt","Healing Word","Inflict Wounds","Protection from Evil and Good","Purify Food and Drink","Sanctuary","Shield of Faith"],
@@ -232,7 +273,8 @@ dnd_classes = {
 
         """,
         "Name": "Druid",
-        "Description": "A priest of the Old Faith, wielding the powers of nature and adopting animal forms.",
+        "Description": "A priest of the Old Faith, wielding the powers of nature and adopting animal forms. Whether calling on the elemental forces of nature or emulating the creatures of the animal world, druids are an embodiment of nature's resilience, cunning, and fury. They claim no mastery over nature, but see themselves as extensions of nature's indomitable will.",
+        "Requirement" : "You must have a Wisdom score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2','Features': 'Druidic, Spellcasting','Cantrips Known': 2,'1st': 2,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
             2: {'Proficiency Bonus': '+2','Features': 'Wild Shape, Druid Circle, Wild Companion (Optional)','Cantrips Known': 2,'1st': 3,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
@@ -255,32 +297,41 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6','Features': 'Ability Score Improvement, Cantrip Versatility (Optional)','Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 1,'8th': 1,'9th': 1},
             20: {'Proficiency Bonus': '+6','Features': 'Archdruid','Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 2,'8th': 1,'9th': 1}
         },
-        "Features": {
-            "Hit Dice": "1d8 per druid level",
-            "Hit Points at 1st Level": "8 + your Constitution modifier",
-            "Hit Points at Higher Levels": "1d8 (or 5) + your Constitution modifier per druid level after 1st",
-            "Proficiencies": {
-                "Armor": "Light armor, medium armor, shields (druids will not wear armor or use shields made of metal)",
-                "Weapons": "Clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears",
-                "Tools": "Herbalism kit",
-                'Spellcasting Modifier' : "Wisdom",
-                "Saving Throws": "Intelligence, Wisdom",
-                "Skills": "Choose two from arcana, animal handling, insight, medicine, nature, perception, religion, and survival",
-                "Languages": {
-                    "Druidic": "You know Druidic, the secret language of druids."
-                }
+        "Features": {},
+        "Hit Dice": "1d8",
+        "Proficiencies": {
+            "Armor": "Light armor, medium armor, shields (druids will not wear armor or use shields made of metal)",
+            "Weapons": "Clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears",
+            "Tools": "Herbalism kit",
+            "Spellcasting Modifier" : "Wisdom",
+            "Saving Throws": "Intelligence, Wisdom",
+            "Skills": "Choose two from arcana, animal handling, insight, medicine, nature, perception, religion, and survival",
+            "Languages": {
+                "Druidic": "You know Druidic, the secret language of druids."
+            }
+        },
+        "Equipment": {
+            'Choices' : {
+                'Choice 1' : {
+                    'wooden shield' : 1,
+                    'any simple weapon' : 1,
+                    },
+                'Choice 2' : {
+                    "scimitar": 1,
+                    "any simple melee weapon" : 1,
+                },
             },
-            "Equipment": [
-                "(a) a wooden shield or (b) any simple weapon",
-                "(a) a scimitar or (b) any simple melee weapon",
-                "Leather armor, an explorer's pack, and a druidic focus"
-            ]
-            
-
+            "Start With" : {
+                "leather armor" : 1,
+                "explorer's pack" : 1,
+                "druidic focus" : 1
+            }
         },
         "Attribute Priority" : ['wisdom', 'constitution', 'dexterity', 'intelligence', 'charisma', 'strength'],
         "Spells" : {
-            'Spellcasting Modifier' : "wisdom",
+            "Spellcasting" : "Druids prepare spells each day from their entire spell list, and their prepared spells can be cast using their spell slots. They have access to a wide range of spells, but they must choose what to prepare each day.",
+            "Preparation" : "Druids need to prepare spells from their entire spell list after a long rest. They can change their prepared spells during this rest. Druids regain expended spell slots after a long rest.",
+            "Spellcasting Modifier" : "wisdom",
             "Available" : {
                 "Cantrips" : ["Control Flames","Create Bonfire","Druidcraft","Frostbite","Guidance","Gust","Infestation","Magic Stone","Mending","Mold Earth","Poison Spray","Primal Savagery","Produce Flame","Resistance","Shape Water","Shillelagh","Thorn Whip","Thunderclap"],
                 "1st Level" : ["Absorb Elements","Animal Friendship","Beast Bond","Charm Person","Create or Destroy Water","Cure Wounds","Detect Magic","Detect Poison and Disease","Earth Tremor","Entangle","Faerie Fire","Fog Cloud","Goodberry","Healing Word","Ice Knife","Jump","Longstrider","Purify Food and Drink","Snare","Speak with Animals","Thunderwave"],
@@ -310,7 +361,8 @@ dnd_classes = {
            |___/                    
         """,
         "Name": "Fighter",
-        "Description": "A master of martial combat, skilled with a variety of weapons and armor.",
+        "Description": "A master of martial combat, skilled with a variety of weapons and armor. Fighters share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat. They are well acquainted with death, both meting it out and staring it defiantly in the face.",
+        "Requirement" : "You must have a Dexterity or Strength score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {"Proficiency Bonus": "+2","Features": "Fighting Style, Second Wind"},
             2: {"Proficiency Bonus": "+2","Features": "Action Surge (x1)"},
@@ -333,29 +385,43 @@ dnd_classes = {
             19: {"Proficiency Bonus": "+6","Features": "Ability Score Improvement, Martial Versatility (Optional)"},
             20: {"Proficiency Bonus": "+6","Features": "Extra Attack (x3)"}
         },
-        "Features": {
-            "Hit Dice": "1d10 per fighter level",
-            "Hit Points at 1st Level": "10 + your Constitution modifier",
-            "Hit Points at Higher Levels": "1d10 (or 6) + your Constitution modifier per fighter level after 1st",
-            "Proficiencies": {
-                "Armor": "All armor, shields",
-                "Weapons": "Simple weapons, martial weapons",
-                "Tools": "None",
-                'Spellcasting Modifier' : "None",
-                "Saving Throws": "Strength, Constitution",
-                "Skills": "Choose two skills from acrobatics, animal handling, athletics, history, insight, intimidation, perception, and survival",
-                "Languages": []
+        "Features": {},
+        "Hit Dice": "1d10",
+        "Proficiencies": {
+            "Armor": "All armor, shields",
+            "Weapons": "Simple weapons, martial weapons",
+            "Tools": "None",
+            "Spellcasting Modifier" : "None",
+            "Saving Throws": "Strength, Constitution",
+            "Skills": "Choose two skills from acrobatics, animal handling, athletics, history, insight, intimidation, perception, and survival",
+            "Languages": []
+        },
+        "Equipment": {
+            'Choices' : {
+                'Choice 1' : {
+                    'chain mail' : 1,
+                    'leather and longbow and 20 arrows' : 1,
+                    },
+                'Choice 2' : {
+                    "any martial weapon and shield": 1,
+                    "any martial weapon" : 2
+                },
+                'Choice 3' : {
+                    'light crossbow and 20 bolts': 1,
+                    'handaxe' : 2
+                },
+                'Choice 4' : {
+                    "dungeoneer's pack" : 1,
+                    "explorer's pack" : 1
+                },
             },
-            "Equipment": {
-                "(a) chain mail or (b) leather, longbow, and 20 arrows": "Choose one",
-                "(a) a martial weapon and a shield or (b) two martial weapons": "Choose one",
-                "(a) a light crossbow and 20 bolts or (b) two handaxes": "Choose one",
-                "(a) a dungeoneer's pack or (b) an explorer's pack": "Choose one"
-            }
+            "Start With" : "None"
         },
         "Attribute Priority" : ['strength', 'constitution', 'dexterity', 'intelligence', 'wisdom', 'charisma'],
         "Spells" : {
-            'Spellcasting Modifier' : "None",
+            "Spellcasting" : "None",
+            "Preparation" : "None",
+            "Spellcasting Modifier" : "None",
             "Available" : {}
         }
     },
@@ -373,7 +439,8 @@ dnd_classes = {
                           
         """,
         "Name": "Monk",
-        "Description": "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.",
+        "Description": "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection. Monks are united in their ability to magically harness the energy that flows in their bodies. Whether channeled as a striking display of combat prowess or a subtler focus of defensive ability and speed, this energy infuses all that a monk does.",
+        "Requirement" : "You must have a Dexterity score and a Wisdom score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2','Martial Arts': '1d4','Ki Points': '–','Unarmored Movement': '–','Features': 'Unarmored Defense, Martial Arts'},
             2: {'Proficiency Bonus': '+2','Martial Arts': '1d4','Ki Points': '2','Unarmored Movement': '+10 ft.','Features': 'Ki, Unarmored Movement, Dedicated Weapon (Optional)'},
@@ -396,28 +463,37 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6','Martial Arts': '1d10','Ki Points': '19','Unarmored Movement': '+30 ft.','Features': 'Ability Score Improvement'},
             20: {'Proficiency Bonus': '+6','Martial Arts': '1d10','Ki Points': '20','Unarmored Movement': '+30 ft.','Features': 'Perfect Self'}
         },
-        "Features": {
-            "Hit Dice": "1d8 per monk level",
-            "Hit Points at 1st Level": "8 + your Constitution modifier",
-            "Hit Points at Higher Levels": "1d8 (or 5) + your Constitution modifier per monk level after 1st",
-            "Proficiencies": {
-                "Armor": "None",
-                "Weapons": "Simple weapons, shortswords",
-                "Tools": "Choose one type of artisan's tools or one musical instrument",
-                'Spellcasting Modifier' : "None",
-                "Saving Throws": "Strength, Dexterity",
-                "Skills": "Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth",
-                "Languages": []
+        "Features": {},
+        "Hit Dice": "1d8",
+        "Proficiencies": {
+            "Armor": "None",
+            "Weapons": "Simple weapons, shortswords",
+            "Tools": "Choose one type of artisan's tools or one musical instrument",
+            "Spellcasting Modifier" : "None",
+            "Saving Throws": "Strength, Dexterity",
+            "Skills": "Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth",
+            "Languages": []
+        },
+        "Equipment": {
+            'Choices' : {
+                'Choice 1' : {
+                    'shortsword' : 1,
+                    'any simple weapon' : 1,
+                    },
+                'Choice 2' : {
+                    "dungeoneer's pack": 1,
+                    "explorer's pack" : 1,
+                },
             },
-            "Equipment": {
-                "(a) a shortsword or (b) any simple weapon": "Choose one",
-                "(a) a dungeoneer's pack or (b) an explorer's pack": "Choose one",
-                "10 darts": "Included"
-            }
+            "Start With" : {
+                "dart" : 10,
+            }   
         },
         "Attribute Priority" : ['dexterity', 'wisdom', 'constitution', 'strength', 'charisma', 'intelligence'],
         "Spells" : {
-            'Spellcasting Modifier' : "None",
+            "Spellcasting" : "None",
+            "Preparation" : "None",
+            "Spellcasting Modifier" : "None",
             "Available" : {}
         }
     },
@@ -435,7 +511,8 @@ dnd_classes = {
                                    
         """,
         "Name": "Paladin",
-        "Description": "A holy warrior bound to a sacred oath.",
+        "Description": "A holy warrior bound to a sacred oath. Whether sworn before a god's altar and the witness of a priest, in a sacred glade before nature spirits and fey beings, or in a moment of desperation and grief with the dead as the only witness, a paladin's oath is a powerful bond.",
+        "Requirement" : "You must have a Charisma score and a Strength score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2', 'Features': 'Divine Sense, Lay on Hands', '1st Level Spell Slots': '-', '2nd Level Spell Slots': '-', '3rd Level Spell Slots': '-', '4th Level Spell Slots': '-', '5th Level Spell Slots': '-'},
             2: {'Proficiency Bonus': '+2', 'Features': 'Fighting Style, Spellcasting, Divine Smite', '1st Level Spell Slots': '2', '2nd Level Spell Slots': '-', '3rd Level Spell Slots': '-', '4th Level Spell Slots': '-', '5th Level Spell Slots': '-'},
@@ -458,39 +535,45 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6', 'Features': 'Ability Score Improvement, Martial Versatility (Optional)', '1st Level Spell Slots': '4', '2nd Level Spell Slots': '3', '3rd Level Spell Slots': '3', '4th Level Spell Slots': '3', '5th Level Spell Slots': '2'},
             20: {'Proficiency Bonus': '+6', 'Features': 'Sacred Oath feature', '1st Level Spell Slots': '4', '2nd Level Spell Slots': '3', '3rd Level Spell Slots': '3', '4th Level Spell Slots': '3', '5th Level Spell Slots': '2'}
         },
-        "Features" : {
-            "Hit Dice": "1d10",
-            "Hit Points at 1st Level": "10 + your Constitution modifier",
-            "Hit Points at Higher Levels": "1d10 (or 6) + your Constitution modifier per paladin level after 1st",
-            "Proficiencies": {
-                "Armor": "All armor, shields",
-                "Weapons": ["simple weapons", "martial weapons"],
-                "Tools": "None",
-                'Spellcasting Modifier' : "Charisma",
-                "Saving Throws": ["Wisdom, Charisma"],
-                'Skills': {
-                    'Choose Number' : 2,
-                    'Choose From' :  ['athletics', 'insight', 'intimidation', 'medicine', 'persuasion', 'religion']
-                },
-                "Languages": []
+        "Features" : {},
+        "Hit Dice": "1d10",
+        "Proficiencies": {
+            "Armor": "All armor, shields",
+            "Weapons": ["simple weapons", "martial weapons"],
+            "Tools": "None",
+            "Spellcasting Modifier" : "Charisma",
+            "Saving Throws": ["Wisdom, Charisma"],
+            'Skills': {
+                'Choose Number' : 2,
+                'Choose From' :  ['athletics', 'insight', 'intimidation', 'medicine', 'persuasion', 'religion']
             },
-            "Equipment": {
-                "Choice 1": "(a) a martial weapon and a shield or (b) two martial weapons",
-                "Choice 2": "(a) five javelins or (b) any simple melee weapon",
-                "Choice 3": "(a) a priest's pack or (b) an explorer's pack",
-                "Additional": "Chain mail and a holy symbol"
-            }            
+            "Languages": []
+        },
+        "Equipment": {
+            'Choices' : {
+                'Choice 1' : {
+                    'any martial weapon and shield' : 1,
+                    'any martial weapon' : 2,
+                    },
+                'Choice 2' : {
+                    "javelins": 5,
+                    "any simple melee weaon" : 1,
+                },
+                'Choice 3' : {
+                    "priest's pack" : 1,
+                    "explorer's pack" : 1
+                },
+            },
+            "Start With" : {
+                "chain mail" : 1,
+                "holy symbol" : 1
+            }  
         },
         "Attribute Priority": ['strength', 'charisma', 'constitution', 'dexterity', 'wisdom', 'intelligence'],
         "Spells" : {
-            'Spellcasting Modifier' : "charisma",
-            "Spell Slots" : "Paladins have a limited number of spell slots of different levels, which they use to cast spells. The number and level of these slots depend on the paladin's level. Refer to the 'The Paladin Spell Slots per Spell Level' table in your class description to see how many spell slots of each level you have.",
-            "Preparing Spells" : "Unlike spellcasters like wizards who prepare spells each day, paladins know all the spells available to them at their level. They don't need to prepare spells in advance. Instead, they choose which spells to cast from their known spells when they use their spell slots.",
-            "Casting Spells" : "To cast a spell, a paladin expends one of their spell slots of the appropriate level. The paladin then uses their spellcasting ability (Charisma) to determine the spell's effects, such as its attack roll or saving throw DC, if applicable.",
-            "Divine Smite" : "Paladins have a unique ability called Divine Smite. This ability allows them to expend spell slots to deal extra damage when they hit with a melee weapon attack. The higher the level of the spell slot they expend, the more damage they can add.",
-            "Spell Levels" : "Spells in D&D 5e are categorized into spell levels, ranging from 1st level to 9th level, with 1st-level spells being the least powerful and 9th-level spells the most powerful. The level of a spell slot determines the highest-level spell a paladin can cast using that slot. For example, a 2nd-level spell slot can be used to cast a 1st-level or 2nd-level spell.",
-            "Spell Preparation" : "At the end of a long rest, paladins can change their known spells by meditating and praying for their spells. They can swap out spells they know for other spells from the paladin spell list, as long as they have spell slots of the appropriate level.",
-            "Spell List" : "Paladins have access to a specific list of spells, which is outlined in the Paladin class description. They can only choose spells from this list when they gain access to new spells.",
+            "Spellcasting" : "Paladins know their entire spell list and have a fixed number of spells they can prepare each day based on their level and Charisma modifier. However, they can change their prepared spells after a long rest. Paladins also have a pool of spell slots from which they can cast their prepared spells.",
+            "Preparation" : "Paladins need to prepare spells after a long rest. They can change their prepared spells during this rest. Paladins regain expended spell slots after a long rest.",
+            "Spellcasting Modifier" : "charisma",
             "Available" : {
                 "1st Level" : ["Bless","Ceremony","Command","Compelled Duel","Cure Wounds","Detect Evil and Good","Detect Magic","Detect Poison and Disease","Divine Favor","Heroism","Protection from Evil and Good","Purify Food and Drink","Searing Smite","Shield of Faith","Thunderous Smite","Wrathful Smite"],
                 "2nd Level" : ["Aid","Branding Smite","Find Steed","Lesser Restoration","Locate Object","Magic Weapon","Protection from Poison","Zone of Truth"],
@@ -515,7 +598,8 @@ dnd_classes = {
                     |___/           
         """,
         "Name": "Ranger",
-        "Description": "A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.",
+        "Description": "A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization. Far from the bustle of cities and towns, past the hedges that shelter the most distant farms from the terrors of the wild, amid the dense-packed trees of trackless forests and across wide and empty plains, rangers keep their unending watch.",
+        "Requirement" : "You must have a Dexterity score and a Wisdom score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2', 'Features': 'Favored Enemy, Natural Explorer, Deft Explorer (Optional), Favored Foe (Optional)', 'Spells Known': '-', '1st': '-', '2nd': '-', '3rd': '-', '4th': '-', '5th': '-'},
             2: {'Proficiency Bonus': '+2', 'Features': 'Fighting Style, Spellcasting, Spellcasting Focus (Optional)', 'Spells Known': 2, '1st': 2, '2nd': '-', '3rd': '-', '4th': '-', '5th': '-'},
@@ -538,29 +622,42 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6', 'Features': 'Ability Score Improvement, Martial Versatility (Optional)', 'Spells Known': 11, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2},
             20: {'Proficiency Bonus': '+6', 'Features': 'Foe Slayer', 'Spells Known': 11, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2}
         },
-        "Features": {
-            'Hit Dice': '1d10 per ranger level',
-            'Hit Points at 1st Level': '10 + your Constitution modifier',
-            'Hit Points at Higher Levels': '1d10 (or 6) + your Constitution modifier per ranger level after 1st',
-            'Proficiencies': {
-                'Armor': 'Light armor, medium armor, shields',
-                'Weapons': 'Simple weapons, martial weapons',
-                'Tools': 'None',
-                'Spellcasting Modifier' : "Widsom",
-                'Saving Throws': 'Strength, Dexterity',
-                'Skills': 'Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival',
-                "Languages": []
+        "Features": {},
+        'Hit Dice': '1d10',
+        'Proficiencies': {
+            'Armor': 'Light armor, medium armor, shields',
+            'Weapons': 'Simple weapons, martial weapons',
+            'Tools': 'None',
+            "Spellcasting Modifier" : "Widsom",
+            'Saving Throws': 'Strength, Dexterity',
+            'Skills': 'Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival',
+            "Languages": []
+        },
+        "Equipment": {
+            'Choices' : {
+                'Choice 1' : {
+                    'scale mail' : 1,
+                    'any simple melee weapon' : 2,
+                    },
+                'Choice 2' : {
+                    "shortsword" : 2,
+                    "any simple melee weapon" : 2,
+                },
+                'Choice 3' : {
+                    "dungeoneer's pack" : 1,
+                    "explorer's pack" : 1
+                },
             },
-            'Equipment': [
-                '(a) scale mail or (b) leather armor',
-                '(a) two shortswords or (b) two simple melee weapons',
-                '(a) a dungeoneer\'s pack or (b) an explorer\'s pack',
-                'A longbow and a quiver of 20 arrows'
-            ]
+            "Start With" : {
+                "longbow" : 1,
+                "arrow" : 20
+            }              
         },
         "Attribute Priority" : ['dexterity', 'wisdom', 'constitution', 'strength', 'intelligence', 'charisma'],
         "Spells" : {
-            'Spellcasting Modifier' : "wisdom",
+            "Spellcasting" : "Rangers prepare spells each day from a limited list of spells, and they can change their prepared spells after a long rest. They have a fixed number of spells they can prepare based on their level and Wisdom modifier.",
+            "Preparation" : "Rangers need to prepare spells from their limited spell list after a long rest. They can change their prepared spells during this rest. Rangers regain expended spell slots after a long rest.",
+            "Spellcasting Modifier" : "wisdom",
             "Available" : {
                 "1st Level" : ["Absorb Elements","Alarm","Animal Friendship","Beast Bond","Cure Wounds","Detect Magic","Detect Poison and Disease","Ensnaring Strike","Fog Cloud","Goodberry","Hail of Thorns","Hunter's Mark","Jump","Longstrider","Snare","Speak with Animals","Zephyr Strike"],
                 "2nd Level" : ["Air Bubble","Animal Messenger","Barkskin","Beast Sense","Cordon of Arrows","Darkvision","Find Traps","Healing Spirit","Lesser Restoration","Locate Animals or Plants","Locate Object","Pass Without Trace","Protection from Poison","Silence","Spike Growth"],
@@ -585,7 +682,8 @@ dnd_classes = {
               |___/            
         """,
         "Name": "Rogue",
-        "Description": "A scoundrel who uses stealth and trickery to overcome obstacles and enemies.",
+        "Description": "A scoundrel who uses stealth and trickery to overcome obstacles and enemies. Rogues rely on skill, stealth, and their foes' vulnerabilities to get the upper hand in any situation. They have a knack for finding the solution to just about any problem, demonstrating a resourcefulness and versatility that is the cornerstone of any successful adventuring party.",
+        "Requirement" : "You must have a Dexterity score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2', 'Sneak Attack': '1d6', 'Features': 'Expertise, Sneak Attack, Thieves\' Cant'},
             2: {'Proficiency Bonus': '+2', 'Sneak Attack': '1d6', 'Features': 'Cunning Action'},
@@ -608,29 +706,44 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6', 'Sneak Attack': '10d6', 'Features': 'Ability Score Improvement'},
             20: {'Proficiency Bonus': '+6', 'Sneak Attack': '10d6', 'Features': 'Stroke of Luck'}
         },
-        "Features": {
-            'Hit Dice': '1d8 per rogue level',
-            'Hit Points at 1st Level': '8 + your Constitution modifier',
-            'Hit Points at Higher Levels': '1d8 (or 5) + your Constitution modifier per rogue level after 1st',
-            'Proficiencies': {
-                'Armor': 'Light armor',
-                'Weapons': 'Simple weapons, hand crossbows, longswords, rapiers, shortswords',
-                'Tools': 'Thieves\' tools',
-                'Spellcasting Modifier' : "None",
-                'Saving Throws': 'Dexterity, Intelligence',
-                'Skills': 'Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth',
-                "Languages": []
+        "Features": {},
+        'Hit Dice': '1d8',
+        'Proficiencies': {
+            'Armor': 'Light armor',
+            'Weapons': 'Simple weapons, hand crossbows, longswords, rapiers, shortswords',
+            'Tools': 'Thieves\' tools',
+            "Spellcasting Modifier" : "None",
+            'Saving Throws': 'Dexterity, Intelligence',
+            'Skills': 'Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth',
+            "Languages": []
+        },
+        "Equipment": {
+            'Choices' : {
+                'Choice 1' : {
+                    'rapier' : 1,
+                    'shortsword' : 1,
+                    },
+                'Choice 2' : {
+                    "shortbow and 20 arrows": 1,
+                    "shortsword" : 1,
+                },
+                'Choice 3' : {
+                    "burglar's pack": 1,
+                    "dungeoneer's pack" : 1,
+                    "explorer's pack": 1
+                },
             },
-            'Equipment': {
-                'Choice of Weapon': '(a) a rapier or (b) a shortsword',
-                'Choice of Weapon or Shortbow': '(a) a shortbow and quiver of 20 arrows or (b) a shortsword',
-                'Choice of Pack': '(a) a burglar\'s pack, (b) dungeoneer\'s pack, or (c) an explorer\'s pack',
-                'Additional Equipment': 'Leather armor, two daggers, and thieves\' tools'
-            }
+            "Start With" : {
+                "leather armor" : 1,
+                "dagger" : 2,
+                "theives' tools" : 1,
+            }  
         },
         "Attribute Priority" : ['dexterity', 'intelligence', 'constitution', 'charisma', 'wisdom', 'strength'],
         "Spells" : {
-            'Spellcasting Modifier' : "None",
+            "Spellcasting" : "None",
+            "Preparation" : "None",
+            "Spellcasting Modifier" : "None",
             "Available" : {}
         }
     },
@@ -648,7 +761,8 @@ dnd_classes = {
                                           
         """,
         "Name": "Sorcerer",
-        "Description": "A spellcaster who draws on inherent magic from a gift or bloodline.",
+        "Description": "A spellcaster who draws on inherent magic from a gift or bloodline. Sorcerers carry a magical birthright conferred upon them by an exotic bloodline, some otherworldly influence, or exposure to unknown cosmic forces. No one chooses sorcery; the power chooses the sorcerer.",
+        "Requirement" : "You must have a Charisma score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2', 'Sorcery Points': '-', 'Features': 'Spellcasting, Sorcerous Origin', 'Cantrips Known': 4, 'Spells Known': 2, '1st': 2, '2nd': '-', '3rd': '-', '4th': '-', '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
             2: {'Proficiency Bonus': '+2', 'Sorcery Points': '2', 'Features': 'Font of Magic', 'Cantrips Known': 4, 'Spells Known': 3, '1st': 3, '2nd': '-', '3rd': '-', '4th': '-', '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
@@ -671,32 +785,42 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6', 'Sorcery Points': '19', 'Features': 'Ability Score Improvement, Sorcerous Versatility (Optional)', 'Cantrips Known': 6, 'Spells Known': 15, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1, '9th': 1},
             20: {'Proficiency Bonus': '+6', 'Sorcery Points': '20', 'Features': 'Sorcerous Restoration', 'Cantrips Known': 6, 'Spells Known': 15, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1, '9th': 1}
         },
-        "Features": {
-            'Hit Dice': '1d6 per sorcerer level',
-            'Hit Points at 1st Level': '6 + your Constitution modifier',
-            'Hit Points at Higher Levels': '1d6 (or 4) + your Constitution modifier per sorcerer level after 1st',
-            'Proficiencies': {
-                'Armor': 'None',
-                'Weapons': 'Daggers, darts, slings, quarterstaffs, light crossbows',
-                'Tools': 'None',
-                'Spellcasting Modifier' : "Charisma",
-                'Saving Throws': 'Constitution, Charisma',
-                'Skills': 'Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion',
-                "Languages": []
+        "Features": {},
+        'Hit Dice': '1d6',
+        'Proficiencies': {
+            'Armor': 'None',
+            'Weapons': 'Daggers, darts, slings, quarterstaffs, light crossbows',
+            'Tools': 'None',
+            "Spellcasting Modifier" : "Charisma",
+            'Saving Throws': 'Constitution, Charisma',
+            'Skills': 'Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion',
+            "Languages": []
+        },
+        "Equipment": {
+            'Choices' : {
+                'Choice 1' : {
+                    'light crossbow and 20 bolts' : 1,
+                    'any simple weapon' : 1,
+                    },
+                'Choice 2' : {
+                    "component pouch": 1,
+                    "arcane focus" : 1,
+                    "chain mail (if proficient)" : 1
+                },
+                'Choice 3' : {
+                    "dungeoneer's pack" : 1,
+                    "explorer's pack" : 1
+                },
             },
-            'Equipment': {
-                'Choice 1': 'a light crossbow and 20 bolts',
-                'Choice 2': 'any simple weapon',
-                'Choice 3': 'a component pouch',
-                'Choice 4': 'an arcane focus',
-                'Choice 5': 'a dungeoneer\'s pack',
-                'Choice 6': 'an explorer\'s pack',
-                'Choice 7': 'Two daggers'
-            }
+            "Start With" : {
+                "dagger" : 2,
+            }  
         },
         "Attribute Priority" : ['charisma', 'constitution', 'dexterity', 'intelligence', 'wisdom', 'strength'],
         "Spells" : {
-            'Spellcasting Modifier' : "charisma",
+            "Spellcasting" : "Sorcerers have a limited list of known spells, but they can cast any spell they know using their spell slots. They gain more spells known as they level up, but they have a fixed number of spells they can prepare each day.",
+            "Preparation" : "Sorcerers do not prepare spells. They have a fixed number of spells known and can cast any of those spells using their spell slots. Sorcerers regain expended spell slots after a long rest.",
+            "Spellcasting Modifier" : "charisma",
             "Available" : {
                 "Cantrips" : ["Acid Splash","Blade Ward","Chill Touch","Control Flames","Create Bonfire","Dancing Lights","Fire Bolt","Friends","Frostbite","Gust","Infestation","Light","Mage Hand","Mending","Message","Minor Illusion","Mold Earth","Poison Spray","Prestidigitation","Ray of Frost","Shape Water","Shocking Grasp","Thunderclap","True Strike"],
                 "1st Level" : ["Absorb Elements","Burning Hands","Catapult","Chaos Bolt","Charm Person","Chromatic Orb","Color Spray","Comprehend Languages","Detect Magic","Disguise Self","Distort Value","Earth Tremor","Expeditious Retreat","False Life","Feather Fall","Fog Cloud","Ice Knife","Jump","Mage Armor","Magic Missile","Ray of Sickness","Shield","Silent Image","Silvery Barbs","Sleep","Thunderwave","Witch Bolt"],
@@ -725,7 +849,8 @@ dnd_classes = {
                                          
         """,
         "Name": "Warlock",
-        "Description": "A wielder of magic that is derived from a bargain with an extraplanar entity.",
+        "Description": "A wielder of magic that is derived from a bargain with an extraplanar entity. Warlocks are seekers of the knowledge that lies hidden in the fabric of the multiverse. Through pacts made with mysterious beings of supernatural power, warlocks unlock magical effects both subtle and spectacular.",
+        "Requirement" : "You must have a Charisma score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2', 'Features': 'Otherworldly Patron, Pact Magic', 'Cantrips Known': 2, 'Spells Known': 2, 'Spell Slots': 1, 'Slot Level': '1st', 'Invocations Known': '-'},
             2: {'Proficiency Bonus': '+2', 'Features': 'Eldritch Invocations', 'Cantrips Known': 2, 'Spells Known': 3, 'Spell Slots': 2, 'Slot Level': '1st', 'Invocations Known': '2'},
@@ -748,29 +873,43 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6', 'Features': 'Ability Score Improvement, Eldritch Versatility (Optional)', 'Cantrips Known': 4, 'Spells Known': 15, 'Spell Slots': 4, 'Slot Level': '5th', 'Invocations Known': '8'},
             20: {'Proficiency Bonus': '+6', 'Features': 'Eldritch Master', 'Cantrips Known': 4, 'Spells Known': 15, 'Spell Slots': 4, 'Slot Level': '5th', 'Invocations Known': '8'}
         },
-        "Features": {
-            'Hit Dice': '1d8 per warlock level',
-            'Hit Points at 1st Level': '8 + your Constitution modifier',
-            'Hit Points at Higher Levels': '1d8 (or 5) + your Constitution modifier per warlock level after 1st',
-            'Proficiencies': {
-                'Armor': 'Light armor',
-                'Weapons': 'Simple weapons',
-                'Tools': 'None',
-                'Spellcasting Modifier' : "Charisma",
-                'Saving Throws': 'Wisdom, Charisma',
-                'Skills': 'Choose two from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion',
-                "Languages": []
+        "Features": {},
+        'Hit Dice': '1d8',
+        'Proficiencies': {
+            'Armor': 'Light armor',
+            'Weapons': 'Simple weapons',
+            'Tools': 'None',
+            "Spellcasting Modifier" : "Charisma",
+            'Saving Throws': 'Wisdom, Charisma',
+            'Skills': 'Choose two from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion',
+            "Languages": []
+        },
+        "Equipment": {
+            'Choices' : {
+                'Choice 1' : {
+                    'light crossbow and 20 bolts' : 1,
+                    'any simple weapon' : 1,
+                    },
+                'Choice 2' : {
+                    "component pouch": 1,
+                    "arcane focus" : 1,
+                },
+                'Choice 3' : {
+                    "scholar's pack" : 1,
+                    "dungeoneer's pack" : 1
+                },
             },
-            'Equipment': {
-                'Option 1': '(a) a light crossbow and 20 bolts or (b) any simple weapon',
-                'Option 2': '(a) a component pouch or (b) an arcane focus',
-                'Option 3': '(a) a scholar\'s pack or (b) a dungeoneer\'s pack',
-                'Additional Items': 'Leather armor, any simple weapon, and two daggers'
-            }
+            "Start With" : {
+                "leather armor" : 1,
+                "any wimple weapon" : 1,
+                "dagger" : 2
+            }  
         },
         "Attribute Priority" : ['charisma', 'constitution', 'dexterity', 'intelligence', 'wisdom', 'strength'],
         "Spells" : {
-            'Spellcasting Modifier' : "charisma",
+            "Spellcasting" : "Warlocks have a limited number of spell slots, but they regain them after a short rest. They have a small list of known spells, and they can cast any of those spells using their spell slots. Warlocks can also choose invocations that grant additional spell-like abilities.",
+            "Preparation" : "Warlocks have a unique mechanic. They regain expended spell slots after a short rest, and not just a long rest. They have a limited number of known spells, and they can cast any of those spells using their spell slots.",
+            "Spellcasting Modifier" : "charisma",
             "Available" : {
                 "Cantrips" : ["Blade Ward","Chill Touch","Create Bonfire","Eldritch Blast","Friends","Frostbite","Infestation","Mage Hand","Magic Stone","Minor Illusion","Poison Spray","Prestidigitation","Thunderclap","Toll the Dead","True Strike"],
                 "1st Level" : ["Armor of Agathys","Arms of Hadar","Cause Fear","Charm Person","Comprehend Languages","Distort Value","Expeditious Retreat","Hellish Rebuke","Hex","Illusory Script","Protection from Evil and Good","Unseen Servant","Witch Bolt"],
@@ -799,7 +938,8 @@ dnd_classes = {
                                     
         """,
         "Name": "Wizard",
-        "Description": "A scholarly magic-user capable of manipulating the structures of reality.",
+        "Description": "A scholarly magic-user capable of manipulating the structures of reality. Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, brute-force mind control, and much more.",
+        "Requirement": "You must have an Intelligence score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2', 'Features': 'Spellcasting, Arcane Recovery', 'Cantrips Known': 3, '1st': 2},
             2: {'Proficiency Bonus': '+2', 'Features': 'Arcane Tradition', 'Cantrips Known': 3, '1st': 3},
@@ -822,29 +962,41 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6', 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 3, '6th': 2, '7th': 1, '8th': 1, '9th': 1},
             20: {'Proficiency Bonus': '+6', 'Features': 'Signature Spells', 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 3, '6th': 2, '7th': 2, '8th': 1, '9th': 1}    
         },
-        "Features": {
-            'Hit Dice': '1d6 per wizard level',
-            'Hit Points at 1st Level': '6 + your Constitution modifier',
-            'Hit Points at Higher Levels': '1d6 (or 4) + your Constitution modifier per wizard level after 1st',
-            'Proficiencies': {
-                'Armor': 'None',
-                'Weapons': 'Daggers, darts, slings, quarterstaffs, light crossbows',
-                'Tools': 'None',
-                'Spellcasting Modifier' : "Intelligence",
-                'Saving Throws': 'Intelligence, Wisdom',
-                'Skills': 'Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion',
-                "Languages": []
+        "Features": {},
+        'Hit Dice': '1d6',
+        'Proficiencies': {
+            'Armor': 'None',
+            'Weapons': 'Daggers, darts, slings, quarterstaffs, light crossbows',
+            'Tools': 'None',
+            "Spellcasting Modifier" : "Intelligence",
+            'Saving Throws': 'Intelligence, Wisdom',
+            'Skills': 'Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion',
+            "Languages": []
+        },
+        "Equipment": {
+            'Choices' : {
+                'Choice 1' : {
+                    'quarterstaff' : 1,
+                    'dagger' : 1,
+                    },
+                'Choice 2' : {
+                    "component pouch": 1,
+                    "arcane focus" : 1,
+                },
+                'Choice 3' : {
+                    "scholar's pack" : 1,
+                    "explorer's pack" : 1
+                },
             },
-            'Equipment': {
-                'Choose one of the following as a primary weapon': '(a) a quarterstaff or (b) a dagger',
-                'Choose one of the following as a focus': '(a) a component pouch or (b) an arcane focus',
-                'Choose one of the following packs': '(a) a scholar\'s pack or (b) an explorer\'s pack',
-                'Additional Equipment': 'A spellbook'
-            }
+            "Start With" : {
+                "spellbook" : 1,
+            }  
         },
         "Attribute Priority" : ['intelligence', 'constitution', 'dexterity', 'wisdom', 'charisma', 'strength'],
         "Spells" : {
-            'Spellcasting Modifier' : "intelligence",
+            "Spellcasting" : "Wizards have a spellbook from which they prepare spells daily. They have a fixed number of spells they can prepare each day, but they have a broad list of spells to choose from. Wizards also gain additional spells when they level up.",
+            "Preparation" : "Wizards need to prepare spells from their spellbook after a long rest, and they can change their prepared spells during this rest. They regain expended spell slots after a long rest.",
+            "Spellcasting Modifier" : "intelligence",
             "Available" : {
                 "Cantrips" : ["Acid Splash","Blade Ward","Chill Touch","Control Flames","Create Bonfire","Dancing Lights","Encode Thoughts","Fire Bolt","Friends","Frostbite","Gust","Infestation","Light","Mage Hand","Mending","Message","Minor Illusion","Mold Earth","Poison Spray","Prestidigitation","Ray of Frost","Sapping Sting","Shape Water","Shocking Grasp","Thunderclap","Toll the Dead","True Strike"],
                 "1st Level" : ["Absorb Elements","Alarm","Burning Hands","Catapult","Cause Fear","Charm Person","Chromatic Orb","Color Spray","Comprehend Languages","Detect Magic","Disguise Self","Distort Value","Earth Tremor","Expeditious Retreat","False Life","Feather Fall","Find Familiar","Fog Cloud","Frost Fingers","Gift of Alacrity","Grease","Ice Knife","Identify","Illusory Script","Jim's Magic Missile","Jump","Longstrider","Mage Armor","Magic Missile","Magnify Gravity","Protection from Evil and Good","Ray of Sickness","Shield","Silent Image","Silvery Barbs","Sleep","Snare","Tasha's Hideous Laughter","Tenser's Floating Disk","Thunderwave","Unseen Servant","Witch Bolt"],

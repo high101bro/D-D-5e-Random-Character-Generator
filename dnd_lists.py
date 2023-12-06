@@ -6,6 +6,55 @@ first_names = ["Grog", "Vax'ildan", "Keyleth", "Percy", "Scanlan", "Vex'ahlia", 
 
 last_names = ["Strongjaw", "De Rolo", "of the Air Ashari", "Fredrickstein", "Shorthalt", "of Syngorn", "Trickfoot", "Stormwind", "Trickfoot", "de Rolo"]
 
+dnd_menu_level = [
+    "Level  1          0 Exp    You're just starting your adventuring journey, full of potential.",
+    "Level  2        300 Exp    Now, you have a battle or two under your belt, gaining some confidence.",
+    "Level  3        900 Exp    Your abilities are Expanding, and you're starting to specialize.",
+    "Level  4      2,700 Exp    More powerful, you face greater challenges and choices.",
+    "Level  5      6,500 Exp    A significant milestone, with access to new spells and abilities.",
+    "Level  6     14,000 Exp    You're honing your skills, becoming a formidable force.",
+    "Level  7     23,000 Exp    A master of your class, you can tackle complex encounters.",
+    "Level  8     34,000 Exp    Your character is well-rounded, capable in various situations.",
+    "Level  9     48,000 Exp    You're pushing the boundaries of your power.",
+    "Level 10     64,000 Exp    A true Expert, you excel in your chosen path.",
+    "Level 11     82,000 Exp    You've achieved greatness, your legend beginning to spread.",
+    "Level 12    102,000 Exp    Your character is a force to be reckoned with.",
+    "Level 13    125,000 Exp    Mastery of your abilities grants you confidence.",
+    "Level 14    151,000 Exp    Few can match your Expertise and power.",
+    "Level 15    180,000 Exp    You're on the verge of becoming legendary.",
+    "Level 16    212,000 Exp    Your character's name is known far and wide.",
+    "Level 17    247,000 Exp    You're considered a living legend, your deeds celebrated.",
+    "Level 18    285,000 Exp    Nearly unparalleled in your mastery.",
+    "Level 19    326,000 Exp    You're a true hero, capable of incredible feats.",
+    "Level 20    370,000 Exp    At the pinnacle of power, you're virtually untouchable."
+]
+
+dnd_menu_race = [
+    "Dwarf         Known for their craftsmanship, mining skills, and resilience in battle. They often live in mountain strongholds and value honor and tradition." ,
+    "Elf           Graceful and long-lived, with a deep connection to nature and magic. They are known for their agility, keen senses, and affinity for archery." ,
+    "Halfling      Small and nimble, often living peaceful lives in rural communities. They are known for their love of good food, simple pleasures, and luck." ,
+    "Human         Adaptable and diverse, found in all corners of the world. They are known for their ambition, versatility, and ability to excel in various roles." ,
+    "Dragonborn    Draconic ancestry with distinctive scales. They often have breath weapons tied to their dragon heritage and are known for their honor and strength." ,
+    "Gnome         Curious inventors and tinkerers, known for their intellect and humor. They have a deep affinity for illusions and a love of pranks." ,
+    "Half-Elf      The result of human and elf unions, inheriting qualities of both races. They are often charismatic, adaptable, and skilled diplomats." ,
+    "Half-Orc      Strong and hardy, with orc and human ancestry. They are known for their endurance, combat prowess, and resilience." ,
+    "Tiefling      Infernal bloodlines with fiendish features. They are tied to dark forces but can use their unique abilities for good or ill."
+]
+
+dnd_menu_class = [
+    "Barbarian     Barbarians are fierce warriors from untamed lands, known for their rage and primal strength. They excel in melee combat and are often linked to nature.",
+    "Bard          Bards are versatile performers and spellcasters, using their art and magic to inspire allies and hinder foes. They are charismatic and adaptable adventurers.",
+    "Cleric        Clerics are divine spellcasters and servants of gods, channeling their power to heal or smite. They provide spiritual guidance and support in battle.",
+    "Druid         Druids are protectors of nature, with the ability to shape-shift and cast spells tied to the natural world. They seek to maintain balance and harmony.",
+    "Fighter       Fighters are masterful combatants with a wide range of fighting styles and weapon mastery. They excel in physical combat and tactics.",
+    "Monk          Monks are disciplined martial artists with incredible agility and supernatural abilities. They harness ki energy and excel in unarmed combat.",
+    "Paladin       Paladins are holy knights, sworn to uphold justice and righteousness. They combine martial prowess with divine spellcasting to protect the innocent.",
+    "Ranger        Rangers are skilled hunters and trackers, at home in the wilderness. They excel in archery, survival, and protecting the natural world.",
+    "Rogue         Rogues are cunning thieves, spies, and assassins, known for their agility and stealth. They excel in sneaking, lock-picking, and subterfuge.",
+    "Sorcerer      Sorcerers have innate magical abilities, drawing power from their bloodline or inner potential. They cast spells with raw magical energy.",
+    "Warlock       Warlocks forge pacts with otherworldly beings for magical powers. They have a unique set of spells and eldritch invocations.",
+    "Wizard        Wizards are studious spellcasters who learn magic through rigorous study and spellbooks. They can cast a wide variety of spells and specialize in arcane knowledge."
+]
 
 dnd_levels_exp = {
     1: 0,
@@ -127,7 +176,7 @@ dnd_skills = {
     },
     'perception' : {
         'related attribute' : 'wisdom',
-        'proficiency' : False,
+        'proficiency' : True,
         'total' : 0,
         'description' : "Noticing or sensing things, typically based on Wisdom. It’s the skill you’d use to hear a conversation through a door, spot something hidden under a rock, or notice someone sneaking up on you."
     },

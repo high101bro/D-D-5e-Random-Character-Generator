@@ -35,7 +35,8 @@ dnd_races = {
                 "Darkvision": {
                     "Possesses" : False,
                     "Description": "Grants the ability to see in dim light within a certain radius as if it were bright light, and in darkness as if it were dim light. This trait allows characters to see in near-total darkness.",
-                    "Range": "Typically 60 feet"
+                    "Range": "Typically 60 feet",
+                    "Monochromatic": "Able to descern color in dim light as if it were bright light and in darkness as if it were dim light, but they can't discern color in darkness, only shades of gray."
                 }
             },
             "Keen Senses": {
@@ -94,7 +95,8 @@ dnd_races = {
                 "Darkvision": {
                     "Possesses" : True,
                     "Description": "Grants the ability to see in dim light within a certain radius as if it were bright light, and in darkness as if it were dim light. This trait allows characters to see in near-total darkness.",
-                    "Range": "Typically 60 feet"
+                    "Range": "Typically 60 feet",
+                    "Monochromatic": "Able to see in shades of gray without the ability to discern colors."
                 }
             },
             "Dwarven Resilience": {
@@ -215,7 +217,8 @@ dnd_races = {
                 "Darkvision": {
                     "Possesses" : True,
                     "Description": "Grants the ability to see in dim light within a certain radius as if it were bright light, and in darkness as if it were dim light. This trait allows characters to see in near-total darkness.",
-                    "Range": "Typically 60 feet"
+                    "Range": "Typically 60 feet",
+                    "Monochromatic": "Able to see in shades of gray without the ability to discern colors."
                 }
             },
             "Gnome Cunning": {
@@ -320,7 +323,8 @@ dnd_races = {
                 "Darkvision": {
                     "Possesses" : True,
                     "Description": "Grants the ability to see in dim light within a certain radius as if it were bright light, and in darkness as if it were dim light. This trait allows characters to see in near-total darkness.",
-                    "Range": "Typically 60 feet"
+                    "Range": "Typically 60 feet",
+                    "Monochromatic": "Able to see in shades of gray without the ability to discern colors."
                 }
             },
             "Relentless Endurance": {
@@ -486,7 +490,8 @@ dnd_races = {
                 "Darkvision": {
                     "Possesses" : True,
                     "Description": "Grants the ability to see in dim light within a certain radius as if it were bright light, and in darkness as if it were dim light. This trait allows characters to see in near-total darkness.",
-                    "Range": "Typically 60 feet"
+                    "Range": "Typically 60 feet",
+                    "Monochromatic": "Able to see in shades of gray without the ability to discern colors."
                 }
             },
             "Hellish Resistance": {
