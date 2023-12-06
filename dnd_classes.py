@@ -74,7 +74,7 @@ dnd_classes = {
             "Spellcasting" : "None",
             "Preparation" : "None",
             "Spellcasting Modifier" : "None",
-            "Available" : {}
+            "All Class Spells" : {}
         }
     },
 
@@ -152,7 +152,7 @@ dnd_classes = {
             "Spellcasting" : "Bards have a list of spells known and can cast any spell from that list using their spell slots. They learn additional spells as they level up. Bards have the versatility to choose their spells known when they gain levels.",
             "Preparation" : "Bards do not prepare spells. They have a list of spells known and can cast any of those spells using their spell slots. Bards regain expended spell slots after a long rest.",
             "Spellcasting Modifier" : "charisma",
-            "Available" : {
+            "All Class Spells" : {
                 "Cantrips" : ["Blade Ward","Dancing Lights","Friends","Light","Mage Hand","Mending","Message","Minor Illusion","Prestidigitation","Thunderclap","True Strike","Vicious Mockery"],
                 "1st Level" : ["Animal Friendship","Bane","Charm Person","Comprehend Languages","Cure Wounds","Detect Magic","Disguise Self","Dissonant Whispers","Distort Value","Earth Tremor","Faerie Fire","Feather Fall","Healing Word","Heroism","Identify","Illusory Script","Longstrider","Silent Image","Silvery Barbs","Sleep","Speak with Animals","Tasha's Hideous Laughter","Thunderwave","Unseen Servant"],
                 "2nd Level" : ["Animal Messenger","Blindness/Deafness","Borrowed Knowledge","Calm Emotions","Cloud of Daggers","Crown of Madness","Detect Thoughts","Enhance Ability","Enthrall","Gift of Gab","Heat Metal","Hold Person","Invisibility","Kinetic Jaunt","Knock","Lesser Restoration","Locate Animals or Plants","Locate Object","Magic Mouth","Nathair's Mischief","Phantasmal Force","Pyrotechnics","See Invisibility","Shatter","Silence","Skywrite","Spray Of Cards","Suggestion","Warding Wind","Zone of Truth"],
@@ -245,7 +245,7 @@ dnd_classes = {
             "Spellcasting" : "Clerics have access to their entire spell list and can prepare a certain number of spells each day based on their cleric level and Wisdom modifier. They can change their prepared spells after a long rest.",
             "Preparation" : "Clerics need to prepare spells after a long rest, choosing from their entire spell list. They can change their prepared spells during this rest. Clerics regain expended spell slots after a long rest.",
             "Spellcasting Modifier" : "wisdom",
-            "Available" : {
+            "All Class Spells" : {
                 "Cantrips" : ["Guidance","Light","Mending","Resistance","Sacred Flame","Spare the Dying","Thaumaturgy","Toll the Dead","Word of Radiance"],
                 "1st Level" : ["Bane","Bless","Ceremony","Command","Create or Destroy Water","Cure Wounds","Detect Evil and Good","Detect Magic","Detect Poison and Disease","Guiding Bolt","Healing Word","Inflict Wounds","Protection from Evil and Good","Purify Food and Drink","Sanctuary","Shield of Faith"],
                 "2nd Level" : ["Aid","Augury","Blindness/Deafness","Borrowed Knowledge","Calm Emotions","Continual Flame","Enhance Ability","Find Traps","Gentle Repose","Hold Person","Lesser Restoration","Locate Object","Prayer of Healing","Protection from Poison","Silence","Spiritual Weapon","Warding Bond","Zone of Truth"],
@@ -332,7 +332,7 @@ dnd_classes = {
             "Spellcasting" : "Druids prepare spells each day from their entire spell list, and their prepared spells can be cast using their spell slots. They have access to a wide range of spells, but they must choose what to prepare each day.",
             "Preparation" : "Druids need to prepare spells from their entire spell list after a long rest. They can change their prepared spells during this rest. Druids regain expended spell slots after a long rest.",
             "Spellcasting Modifier" : "wisdom",
-            "Available" : {
+            "All Class Spells" : {
                 "Cantrips" : ["Control Flames","Create Bonfire","Druidcraft","Frostbite","Guidance","Gust","Infestation","Magic Stone","Mending","Mold Earth","Poison Spray","Primal Savagery","Produce Flame","Resistance","Shape Water","Shillelagh","Thorn Whip","Thunderclap"],
                 "1st Level" : ["Absorb Elements","Animal Friendship","Beast Bond","Charm Person","Create or Destroy Water","Cure Wounds","Detect Magic","Detect Poison and Disease","Earth Tremor","Entangle","Faerie Fire","Fog Cloud","Goodberry","Healing Word","Ice Knife","Jump","Longstrider","Purify Food and Drink","Snare","Speak with Animals","Thunderwave"],
                 "2nd Level" : ["Air Bubble","Animal Messenger","Barkskin","Beast Sense","Darkvision","Dust Devil","Earthbind","Enhance Ability","Find Traps","Flame Blade","Flaming Sphere","Gust of Wind","Healing Spirit","Heat Metal","Hold Person","Lesser Restoration","Locate Animals or Plants","Locate Object","Moonbeam","Pass Without Trace","Protection from Poison","Skywrite","Spike Growth","Warding Wind","Wither and Bloom"],
@@ -422,7 +422,7 @@ dnd_classes = {
             "Spellcasting" : "None",
             "Preparation" : "None",
             "Spellcasting Modifier" : "None",
-            "Available" : {}
+            "All Class Spells" : {}
         }
     },
 
@@ -494,7 +494,7 @@ dnd_classes = {
             "Spellcasting" : "None",
             "Preparation" : "None",
             "Spellcasting Modifier" : "None",
-            "Available" : {}
+            "All Class Spells" : {}
         }
     },
 
@@ -574,7 +574,7 @@ dnd_classes = {
             "Spellcasting" : "Paladins know their entire spell list and have a fixed number of spells they can prepare each day based on their level and Charisma modifier. However, they can change their prepared spells after a long rest. Paladins also have a pool of spell slots from which they can cast their prepared spells.",
             "Preparation" : "Paladins need to prepare spells after a long rest. They can change their prepared spells during this rest. Paladins regain expended spell slots after a long rest.",
             "Spellcasting Modifier" : "charisma",
-            "Available" : {
+            "All Class Spells" : {
                 "1st Level" : ["Bless","Ceremony","Command","Compelled Duel","Cure Wounds","Detect Evil and Good","Detect Magic","Detect Poison and Disease","Divine Favor","Heroism","Protection from Evil and Good","Purify Food and Drink","Searing Smite","Shield of Faith","Thunderous Smite","Wrathful Smite"],
                 "2nd Level" : ["Aid","Branding Smite","Find Steed","Lesser Restoration","Locate Object","Magic Weapon","Protection from Poison","Zone of Truth"],
                 "3rd Level" : ["Aura of Vitality","Blinding Smite","Create Food and Water","Crusader's Mantle","Daylight","Dispel Magic","Elemental Weapon","Magic Circle","Remove Curse","Spirit Shroud"],
@@ -658,7 +658,7 @@ dnd_classes = {
             "Spellcasting" : "Rangers prepare spells each day from a limited list of spells, and they can change their prepared spells after a long rest. They have a fixed number of spells they can prepare based on their level and Wisdom modifier.",
             "Preparation" : "Rangers need to prepare spells from their limited spell list after a long rest. They can change their prepared spells during this rest. Rangers regain expended spell slots after a long rest.",
             "Spellcasting Modifier" : "wisdom",
-            "Available" : {
+            "All Class Spells" : {
                 "1st Level" : ["Absorb Elements","Alarm","Animal Friendship","Beast Bond","Cure Wounds","Detect Magic","Detect Poison and Disease","Ensnaring Strike","Fog Cloud","Goodberry","Hail of Thorns","Hunter's Mark","Jump","Longstrider","Snare","Speak with Animals","Zephyr Strike"],
                 "2nd Level" : ["Air Bubble","Animal Messenger","Barkskin","Beast Sense","Cordon of Arrows","Darkvision","Find Traps","Healing Spirit","Lesser Restoration","Locate Animals or Plants","Locate Object","Pass Without Trace","Protection from Poison","Silence","Spike Growth"],
                 "3rd Level" : ["Ashardalon's Stride","Conjure Animals","Conjure Barrage","Daylight","Flame Arrows","Lightning Arrow","Nondetection","Plant Growth","Protection from Energy","Speak with Plants","Water Breathing","Water Walk","Wind Wall"],
@@ -744,7 +744,7 @@ dnd_classes = {
             "Spellcasting" : "None",
             "Preparation" : "None",
             "Spellcasting Modifier" : "None",
-            "Available" : {}
+            "All Class Spells" : {}
         }
     },
 
@@ -821,7 +821,7 @@ dnd_classes = {
             "Spellcasting" : "Sorcerers have a limited list of known spells, but they can cast any spell they know using their spell slots. They gain more spells known as they level up, but they have a fixed number of spells they can prepare each day.",
             "Preparation" : "Sorcerers do not prepare spells. They have a fixed number of spells known and can cast any of those spells using their spell slots. Sorcerers regain expended spell slots after a long rest.",
             "Spellcasting Modifier" : "charisma",
-            "Available" : {
+            "All Class Spells" : {
                 "Cantrips" : ["Acid Splash","Blade Ward","Chill Touch","Control Flames","Create Bonfire","Dancing Lights","Fire Bolt","Friends","Frostbite","Gust","Infestation","Light","Mage Hand","Mending","Message","Minor Illusion","Mold Earth","Poison Spray","Prestidigitation","Ray of Frost","Shape Water","Shocking Grasp","Thunderclap","True Strike"],
                 "1st Level" : ["Absorb Elements","Burning Hands","Catapult","Chaos Bolt","Charm Person","Chromatic Orb","Color Spray","Comprehend Languages","Detect Magic","Disguise Self","Distort Value","Earth Tremor","Expeditious Retreat","False Life","Feather Fall","Fog Cloud","Ice Knife","Jump","Mage Armor","Magic Missile","Ray of Sickness","Shield","Silent Image","Silvery Barbs","Sleep","Thunderwave","Witch Bolt"],
                 "2nd Level" : ["Aganazzar's Scorcher","Air Bubble","Alter Self","Blindness/Deafness","Blur","Cloud of Daggers","Crown of Madness","Darkness","Darkvision","Detect Thoughts","Dragon's Breath","Dust Devil","Earthbind","Enhance Ability","Enlarge/Reduce","Gust of Wind","Hold Person","Invisibility","Kinetic Jaunt","Knock","Levitate","Maximillian's Earthen Grasp","Mind Spike","Mirror Image","Misty Step","Nathair's Mischief","Phantasmal Force","Pyrotechnics","Rime's Binding Ice","Scorching Ray","See Invisibility","Shadow Blade","Shatter","Snilloc's Snowball Storm","Spider Climb","Spray Of Cards","Suggestion","Vortex Warp","Warding Wind","Warp Sense","Web","Wither and Bloom"],
@@ -910,7 +910,7 @@ dnd_classes = {
             "Spellcasting" : "Warlocks have a limited number of spell slots, but they regain them after a short rest. They have a small list of known spells, and they can cast any of those spells using their spell slots. Warlocks can also choose invocations that grant additional spell-like abilities.",
             "Preparation" : "Warlocks have a unique mechanic. They regain expended spell slots after a short rest, and not just a long rest. They have a limited number of known spells, and they can cast any of those spells using their spell slots.",
             "Spellcasting Modifier" : "charisma",
-            "Available" : {
+            "All Class Spells" : {
                 "Cantrips" : ["Blade Ward","Chill Touch","Create Bonfire","Eldritch Blast","Friends","Frostbite","Infestation","Mage Hand","Magic Stone","Minor Illusion","Poison Spray","Prestidigitation","Thunderclap","Toll the Dead","True Strike"],
                 "1st Level" : ["Armor of Agathys","Arms of Hadar","Cause Fear","Charm Person","Comprehend Languages","Distort Value","Expeditious Retreat","Hellish Rebuke","Hex","Illusory Script","Protection from Evil and Good","Unseen Servant","Witch Bolt"],
                 "2nd Level" : ["Borrowed Knowledge","Cloud of Daggers","Crown of Madness","Darkness","Earthbind","Enthrall","Flock of Familiars","Hold Person","Invisibility","Mind Spike","Mirror Image","Misty Step","Ray of Enfeeblement","Shadow Blade","Shatter","Spider Climb","Spray Of Cards","Suggestion","Warp Sense"],
@@ -997,7 +997,7 @@ dnd_classes = {
             "Spellcasting" : "Wizards have a spellbook from which they prepare spells daily. They have a fixed number of spells they can prepare each day, but they have a broad list of spells to choose from. Wizards also gain additional spells when they level up.",
             "Preparation" : "Wizards need to prepare spells from their spellbook after a long rest, and they can change their prepared spells during this rest. They regain expended spell slots after a long rest.",
             "Spellcasting Modifier" : "intelligence",
-            "Available" : {
+            "All Class Spells" : {
                 "Cantrips" : ["Acid Splash","Blade Ward","Chill Touch","Control Flames","Create Bonfire","Dancing Lights","Encode Thoughts","Fire Bolt","Friends","Frostbite","Gust","Infestation","Light","Mage Hand","Mending","Message","Minor Illusion","Mold Earth","Poison Spray","Prestidigitation","Ray of Frost","Sapping Sting","Shape Water","Shocking Grasp","Thunderclap","Toll the Dead","True Strike"],
                 "1st Level" : ["Absorb Elements","Alarm","Burning Hands","Catapult","Cause Fear","Charm Person","Chromatic Orb","Color Spray","Comprehend Languages","Detect Magic","Disguise Self","Distort Value","Earth Tremor","Expeditious Retreat","False Life","Feather Fall","Find Familiar","Fog Cloud","Frost Fingers","Gift of Alacrity","Grease","Ice Knife","Identify","Illusory Script","Jim's Magic Missile","Jump","Longstrider","Mage Armor","Magic Missile","Magnify Gravity","Protection from Evil and Good","Ray of Sickness","Shield","Silent Image","Silvery Barbs","Sleep","Snare","Tasha's Hideous Laughter","Tenser's Floating Disk","Thunderwave","Unseen Servant","Witch Bolt"],
                 "2nd Level" : ["Aganazzar's Scorcher","Air Bubble","Alter Self","Arcane Lock","Blindness/Deafness","Blur","Borrowed Knowledge","Cloud of Daggers","Continual Flame","Crown of Madness","Darkness","Darkvision","Detect Thoughts","Dragon's Breath","Dust Devil","Earthbind","Enlarge/Reduce","Flaming Sphere","Flock of Familiars","Fortune's Favor","Gentle Repose","Gift of Gab","Gust of Wind","Hold Person","Immovable Object","Invisibility","Jim's Glowing Coin","Kinetic Jaunt","Knock","Levitate","Locate Object","Magic Mouth","Magic Weapon","Maximillian's Earthen Grasp","Melf's Acid Arrow","Mind Spike","Mirror Image","Misty Step","Nathair's Mischief","Nystul's Magic Aura","Phantasmal Force","Pyrotechnics","Ray of Enfeeblement","Rime's Binding Ice","Rope Trick","Scorching Ray","See Invisibility","Shadow Blade","Shatter","Skywrite","Snilloc's Snowball Storm","Spider Climb","Spray Of Cards","Suggestion","Vortex Warp","Warding Wind","Warp Sense","Web","Wither and Bloom","Wristpocket"],
