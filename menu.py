@@ -27,6 +27,7 @@ optionsMenu  = [
 ]
 
 all_characters = []
+character_number_tracker = 0
 
 def debug(show):
     ts = input(f"{show}")
@@ -136,10 +137,11 @@ while True:
 
 
                     clear()
+                    character_number_tracker += 1
                     all_characters.append(
                         generate_characters(
                             character,
-                            character_number,
+                            character_number_tracker,
                             character_level,
                             character_race,
                             character_class
@@ -151,13 +153,13 @@ while True:
 
             elif dnd_choose_character_number[generation_menu_index] == 'Automated':
                 for index, character in enumerate(characters):
-                    character_number = index + 1
 
                     clear()
+                    character_number_tracker += 1
                     all_characters.append(
                         generate_characters(
                             character,
-                            character_number,
+                            character_number_tracker,
                             character_level = 1, #random.randint(1,21),
                             character_race = random.choice(list(dnd_races.keys())),
                             character_class = 'Paladin' #random.choice(list(dnd_classes.keys()))
@@ -180,8 +182,9 @@ while True:
             print(f"  ====================================================================================================")
 
             character_list = []
-            for character in all_characters:
-                character_list.append(f"Character {character.profile['character number']:<7} {character.profile['race']['Name']:<15} {character.profile['class']['Name']:<14} {character.profile['name']['first'] + ' ' + character.profile['name']['last']:<34} {character.profile['created']:<20}")
+            for index, character in enumerate(all_characters):
+                character_list.append(f"Character {character.profile['character number']:<7} {character.character_race['Name']:<15} {character.character_class['Name']:<14} {character.profile['name']['first'] + ' ' + character.profile['name']['last']:<34} {character.profile['created']:<20}")
+            character_list.append('Remove Character')
             character_list.append('Exit')
 
             characters_menu = TerminalMenu(character_list)
@@ -189,8 +192,41 @@ while True:
             
             if character_list[characters_menu_index] == 'Exit':
                 character_list.pop()
+                character_list.pop()
+                break
+            elif character_list[characters_menu_index] == 'Remove Character':
+                character_list.pop()
+                character_list.pop()
+
+                while True:
+                    clear()
+                    print("Remove a Character.")
+                    print(f"  ====================================================================================================")
+                    print(f"  Character {'#':<7} {'Race':<15} {'Class':<14} {'Name':<34} {'Created':<20} ")
+                    print(f"  ====================================================================================================")
+
+                    character_remove_list = []
+                    for character in all_characters:
+                        character_remove_list.append(f"Character {character.profile['character number']:<7} {character.character_race['Name']:<15} {character.character_class['Name']:<14} {character.profile['name']['first'] + ' ' + character.profile['name']['last']:<34} {character.profile['created']:<20}")
+                    character_remove_list.append('Exit')
+
+                    characters_menu = TerminalMenu(character_remove_list)
+                    characters_menu_index = characters_menu.show()
+                    
+                    if character_remove_list[characters_menu_index] == 'Exit':
+                        character_remove_list.pop()
+                        break
+                    else:
+                        character_remove_list.pop()
+                        character_remove_confirm = input(f"Are you sure you want to delete the following?\n\n  {character_remove_list[characters_menu_index]}\n\nEnter 'd' to confirm deletion: ")
+                        if character_remove_confirm.lower() == 'd':
+                            del character_remove_list[characters_menu_index]
+                            del all_characters[characters_menu_index]
+                        else:
+                            pass  
                 break
             else: 
+                dnd_menu_level.pop()
                 dnd_menu_level.pop()
 
                 clear()
@@ -199,105 +235,42 @@ while True:
                 # Gets all the attributues of Character() and removes all the attributes that start with '__'
                 dnd_menu_character_class_section_selection = [attr for attr in dir(Character()) if not attr.startswith("__")]
 
-                # Selecte Character Class()
-                # debug(
-                #     characters[characters_menu_index].profile['race']['Name']
-                # )
-                # debug(
-                #     characters[characters_menu_index].profile['class']['Name']
-                # )
-                # debug(
-                #     characters[characters_menu_index].profile['name']['first']
-                # )
-
                 dnd_menu_character_class_section_selection_menu = TerminalMenu(dnd_menu_character_class_section_selection)
                 dnd_menu_character_class_section_selection_menu_index = dnd_menu_character_class_section_selection_menu.show()
 
                 
-                # debug(
-                #     dnd_menu_character_class_section_selection_menu_index
-                # )
-                # debug(
-                #     dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index]
-                # )
-                # print_character(characters[characters_menu_index].profile)
-                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'profile':            
-                    print_character(characters[characters_menu_index].profile)
-                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'capabilities':            
-                    print_character(characters[characters_menu_index].profile)
-                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'items':            
-                    print_character(characters[characters_menu_index].profile)
-                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'weapons':            
-                    print_character(characters[characters_menu_index].profile)
-                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'spells':            
-                    print_character(characters[characters_menu_index].profile)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'stats':
-                #     print_character(characters[characters_menu_index].stats)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'inventory':
-                #     print_character(characters[characters_menu_index].inventory)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'spells':
-                #     print_character(characters[characters_menu_index].spells)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'equipment':
-                #     print_character(characters[characters_menu_index].equipment)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'proficiencies':
-                #     print_character(characters[characters_menu_index].proficiencies)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'features':
-                #     print_character(characters[characters_menu_index].features)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'traits':
-                #     print_character(characters[characters_menu_index].traits)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'background':
-                #     print_character(characters[characters_menu_index].background)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'alignment':
-                #     print_character(characters[characters_menu_index].alignment)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'languages':
-                #     print_character(characters[characters_menu_index].languages)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'actions':
-                #     print_character(characters[characters_menu_index].actions)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'reactions':
-                #     print_character(characters[characters_menu_index].reactions)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'bonus actions':
-                #     print_character(characters[characters_menu_index].bonus_actions)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'legendary actions':
-                #     print_character(characters[characters_menu_index].legendary_actions)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'hitpoints':
-                #     print_character(characters[characters_menu_index].hitpoints)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'armor class':
-                #     print_character(characters[characters_menu_index].armor_class)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'initiative':
-                #     print_character(characters[characters_menu_index].initiative)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'speed':
-                #     print_character(characters[characters_menu_index].speed)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'hitdice':
-                #     print_character(characters[characters_menu_index].hitdice)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'level':
-                #     print_character(characters[characters_menu_index].level)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'proficiency bonus':
-                #     print_character(characters[characters_menu_index].proficiency_bonus)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'experience points':
-                #     print_character(characters[characters_menu_index].experience_points)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'inspiration':
-                #     print_character(characters[characters_menu_index].inspiration)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'saving throws':
-                #     print_character(characters[characters_menu_index].saving_throws)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'skills':
-                #     print_character(characters[characters_menu_index].skills)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'personality traits':
-                #     print_character(characters[characters_menu_index].personality_traits)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'ideals':
-                #     print_character(characters[characters_menu_index].ideals)
-                # elif dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] ==
-
-                # if dnd_choose_character_number[character_number_index] == 'Random Number': # Which should be the 'Random Number' index
-
-
-
-
-
-
-
-
-
-
+                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'profile':
+                    print_character(all_characters[characters_menu_index].profile)
+                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'character_race':
+                    print_character(all_characters[characters_menu_index].character_race)
+                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'character_class':
+                    print_character(all_characters[characters_menu_index].character_class)
+                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'description':
+                    print_character(all_characters[characters_menu_index].description)
+                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'background':
+                    print_character(all_characters[characters_menu_index].background)
+                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'level_chart':
+                    print_character(all_characters[characters_menu_index].level_chart)
+                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'attributes':
+                    print_character(all_characters[characters_menu_index].attributes)
+                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'capabilities':
+                    print_character(all_characters[characters_menu_index].capabilities)
+                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'skills':
+                    print_character(all_characters[characters_menu_index].skills)
+                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'featuers':
+                    print_character(all_characters[characters_menu_index].feautres)
+                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'money':
+                    print_character(all_characters[characters_menu_index].money)
+                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'items':
+                    print_character(all_characters[characters_menu_index].items)
+                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'armor':
+                    print_character(all_characters[characters_menu_index].armor)
+                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'weapons':
+                    print_character(all_characters[characters_menu_index].weapons)
+                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'combat':
+                    print_character(all_characters[characters_menu_index].combat)
+                if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'spells':
+                    print_character(all_characters[characters_menu_index].spells)
 
             input('Press Enter to Continue...')
     

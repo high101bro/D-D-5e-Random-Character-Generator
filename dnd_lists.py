@@ -15,7 +15,7 @@ first_names = [
 
 
 last_names = [
-    'Strongjaw', 'De Rolo', 'of the Air Ashari', 'Fredrickstein', 'Shorthalt', 'of Syngorn', 'Trickfoot', 'Stormwind', 'de Rolo', 'Brightwood', 
+    'Strongjaw', 'De Rolo', 'Fredrickstein', 'Shorthalt', 'of Syngorn', 'Trickfoot', 'Stormwind', 'de Rolo', 'Brightwood', 'Runeaxe',
     'Ironheart', 'Fireforge', 'Stonefist', 'Wildwalker', 'Stormbringer', 'Doomhammer', 'Lionheart', 'Dragonslayer', 'Darkbane', 'Moonshadow', 
     'Blackthorn', 'Stormrage', 'Duskwalker', 'Battlehammer', 'Ironfist', 'Hammersmith', 'Wyrmslayer', 'Thundershield', 'Hawkwing', 'Bloodrider', 
     'Skyblade', 'Frostwolf', 'Snowfall', 'Windrider', 'Darkthorn', 'Nighthunter', 'Shadowstalker', 'Grimtotem', 'Stonemaul', 'Blackhand', 
@@ -25,7 +25,16 @@ last_names = [
     'Stormswift', 'Hawkmoon', 'Nightslayer', 'Redfist', 'Gorehammer', 'Hammerheart', 'Bronzeforge', 'Flintbeard', 'Dragonbane', 'Trollbane', 
     'Frostbeard', 'Whitestone', 'Dragonfist', 'Runeheart', 'Swiftaxe', 'Silentstrike', 'Brightblade', 'Gorehoof', 'Thunderaxe', 'Nightsong', 
     'Flintforge', 'Mountainaxe', 'Darkbeard', 'Waraxe', 'Silentstorm', 'Ironhorn', 'Stonehammer', 'Stoneguard', 'Hawkeye', 'Stormwalker', 
-    'Darkfist', 'Ironclaw', 'Gorehelm', 'Stormshield', 'Hammerfall', 'Darkblade', 'Runeaxe'
+    'Darkfist', 'Ironclaw', 'Ironbeak', 'Gorehelm', 'Stormshield', 'Hammerfall', 'Darkblade', 'of the Air Ashari', "of the Ironclad Keep", "of the Silent Moors", 
+    "of the Silvered Glen", "of the Frozen Tundra", "of the Crimson Blades", "of the Hidden Caverns", "of the Lost Isles", "of the Whispering Wind", "of the Enchanted Grove", "of the Mystic Mountains", "of the Emerald Isles", "of the Ancient Ruins", 
+    "of the Stormy Seas", "of the Eternal Flame", "of the Misty Veil", "of the Shrouded Peaks", "of the Luminous Sky", "of the Ebon Tower", "of the Whispered Secrets", "of the Obsidian Spire", "of the Celestial Watchers", "of the Forgotten Realms", 
+    "of the Fading Sunset", "of the Astral Guardians", "of the Eternal Nightfall", "of the Crystal Caves", "of the Crimson Rose", "of the Starlit Path", "of the Forgotten Woods", "of the Serpent's Fang", "of the Moonlit Meadow", "of the Shattered Shield", 
+    "of the Silent Night", "of the Phoenix Feather", "of the Sacred Flame", "of the Silver Serpent", "of the Thundering Hooves", "of the Whistling Winds", "of the Amber Eye", "of the Soaring Eagle", "of the Howling Wolf", "of the Golden Sun", 
+    "of the Dragon's Breath", "of the Braveheart", "of the Stormcaller", "of the Iron Fist", "of the Crimson Moon", "of the Feral Cat", "of the Hidden Blade", "of the Swift Arrow", "of the Shadowed Hand", "of the Fiery Heart", 
+    "of the Serene Lake", "of the Celestial Dawn", "of the Thunderstrike", "of the Verdant Forest", "of the Silent Song", "of the Silver Lining", "of the Ebon Rose", "of the Glittering Sands", "of the Cursed Blood", "of the Iron Will", 
+    "of the Whispering Pines", "of the Crimson Sky", "of the Midnight Hour", "of the Starry Night", "of the Enigmatic Orb", "of the Shining Beacon", "of the Ironclad Resolve", "of the Gilded Throne", "of the Thundersong", "of the Fading Echo", 
+    "of the Silent Mirage", "of the Serpent's Kiss", "of the Lunar Eclipse", "of the Solar Flare", "of the Shimmering Veil", "of the Sable Shadow", "of the Emerald Dream", "of the Frozen Heart", "of the Crystalline Shard", "of the Primal Roar", 
+    "of the Verdant Valley", "of the Whispers of Fate", "of the Mystic Scroll", "of the Eternal Spring",
 ]
 
 
