@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-import re
+import re, time, sys
 from simple_term_menu import TerminalMenu
 from dnd_generate_character import *
 from dnd_lists import *
@@ -22,6 +22,8 @@ dnd_dungeon_master = """
 optionsMenu  = [
     'Create Character',
     'Character Management',
+    'Items, Weapons, Armor, Equipment',
+    'Locations',
     'Manage Battle',
     'Roll Dice'
 ]
@@ -32,6 +34,72 @@ character_number_tracker = 0
 def debug(show):
     ts = input(f"{show}")
     return print(ts)
+
+
+def roll_dice(sides):
+    def roll(sides):
+        roll = str(random.randint(1, sides))
+        return str(roll)
+    for _ in range(15):  # The number of iterations determines the length of the animation
+        time.sleep(0.1)  # Pause for a short period to create the animation effect
+        the_roll = roll(sides)
+        sys.stdout.write("\r" + "[" + the_roll + "]")  # Random number between 1 and 6
+        sys.stdout.flush()
+    final_roll = the_roll
+    return final_roll
+
+
+def display_dnd_menu(items_dictionary):
+    clear = lambda: print("\033[H\033[J")  # Clearing the terminal screen
+    clear()
+    print('Make a selection: ')
+
+    # Convert the dictionary into a list
+    menu_items = [f"{key} - {value}" for key, value in items_dictionary.items()]
+
+    # Function to split text into two elements
+    def split_two_elements(text):
+        split_text = text.split('-', 1)
+        return split_text[0], split_text[1]
+
+    # Format the list to be pretty in the menu
+    menu_formatted = []
+    for item in menu_items:
+        first_element, second_element = split_two_elements(item)
+        menu_formatted.append(f"{first_element.strip():<30}{second_element.strip()}")
+    menu_formatted = sorted(menu_formatted)
+
+    # The menu
+    print(f"Select from {len(menu_formatted)} options: ")
+    menu_formatted.insert(0, 'Random Selection(s)')
+    menu_formatted.append('Exit')
+    terminal_menu = TerminalMenu(menu_formatted)
+    menu_index = terminal_menu.show()
+
+    # Handling menu selections
+    if menu_formatted[menu_index] == 'Random Selection(s)':
+        del menu_formatted[0]
+        del menu_formatted[-1]
+        while True:
+            try:
+                number_of_random_selections = int(input(f"How many selections? "))
+                break
+            except ValueError:
+                print(f"Error: Enter a number.")
+        random_selections = []
+        for _ in range(number_of_random_selections):
+            random_selection = random.choice(menu_formatted)
+            random_selections.append(random_selection)
+            print(random_selection)
+
+    elif menu_formatted[menu_index] == 'Exit':
+        pass
+    else:
+        del menu_formatted[0]
+        del menu_formatted[-1]
+        print(menu_formatted[menu_index - 1])
+
+
 
 while True:
     clear()
@@ -278,10 +346,132 @@ while True:
     elif re.compile("^Manage Battle").match(optionsMenu [selectedMenuOption]):
         print('Managing the Battle is under deverlopment...')
         input('Press Enter to Continue...')
-    
-    
+
+
+    elif re.compile("^Items").match(optionsMenu [selectedMenuOption]):
+      
+
+
+        print('Managing the Battle is under deverlopment...')
+
+        stuff_category = ['Items','Equipment','Weapons','Armor']
+        print(f"Select one of the following: ")
+        stuff_category.append('Exit')
+        stuff_category_menu = TerminalMenu(stuff_category)
+        stuff_category_menu_index = stuff_category_menu.show()
+        
+        if stuff_category[stuff_category_menu_index] == 'Exit':
+            del stuff_category[-1]
+            pass
+        else:
+            del stuff_category[-1]
+            print(stuff_category[stuff_category_menu_index])
+
+            if stuff_category[stuff_category_menu_index] == 'Items':
+                display_dnd_menu(dnd_items)
+            elif stuff_category[stuff_category_menu_index] == 'Equipment':
+                display_dnd_menu(dnd_equipment)
+            elif stuff_category[stuff_category_menu_index] == 'Weapons':
+                display_dnd_menu(dnd_weapons)
+            elif stuff_category[stuff_category_menu_index] == 'Armor':
+                display_dnd_menu(dnd_armor)
+
+        input('Press Enter to Continue...')
+
+
+    elif re.compile("^Locations").match(optionsMenu [selectedMenuOption]):
+
+        clear()
+        print('Select a location: ')
+
+        # Convert the dicionary into a list
+        dnd_locations_menu = []
+        for key, value in dnd_locations.items():
+            dnd_locations_menu.append(f"{key} - {value}")
+
+
+        # Format the list to be pretty in the menu
+        def split_two_elements(text):
+            split_text = text.split('-',1)
+            return split_text[0], split_text[1]
+
+        dnd_locations_menu_formatted = []
+        for item in dnd_locations_menu:
+            first_element, second_element = split_two_elements(item)
+            dnd_locations_menu_formatted.append(f"{first_element.strip():<30}{second_element.strip()}")
+        dnd_locations_menu_formatted = sorted(dnd_locations_menu_formatted)
+
+
+        # The menu
+        print(f"Select from {len(dnd_locations_menu_formatted)} locations: ")
+        dnd_locations_menu_formatted.insert(0,'Random Location(s)')
+        dnd_locations_menu_formatted.append('Exit')
+        locations_menu = TerminalMenu(dnd_locations_menu_formatted)
+        dnd_locations_menu_index = locations_menu.show()
+        
+        if dnd_locations_menu_formatted[dnd_locations_menu_index] == 'Random Location(s)':
+            del dnd_locations_menu_formatted[0]
+            del dnd_locations_menu_formatted[-1]
+            while True:
+                try:
+                    number_of_random_locations = int(input(f"How many locations? "))
+                    break
+                except:
+                    print(f"Error: Enter an number.")
+            random_locations = []
+            for location in range(0,number_of_random_locations):
+                random_location = random.choice(dnd_locations_menu_formatted)
+                random_locations.append(random_location)
+                print(random_location)
+            #print(random_locations)  
+      
+        elif dnd_locations_menu_formatted[dnd_locations_menu_index] == 'Exit':
+            del dnd_locations_menu_formatted[0]
+            del dnd_locations_menu_formatted[-1]
+            pass
+        else:
+            del dnd_locations_menu_formatted[0]
+            del dnd_locations_menu_formatted[-1]
+            print(dnd_locations_menu_formatted[dnd_locations_menu_index])
+
+        input('Press Enter to Continue...')
+
     elif re.compile("^Roll Dice").match(optionsMenu [selectedMenuOption]):
-        print('Rolling dice is under deverlopment...')
+        while True:
+            try:
+                dice_number = int(input(f"Enter the number of dice: "))
+                break
+            except:
+                print(f"Enter a number!")
+        while True:
+            try:
+                dice_sides = int(input(f"Enter the dice size/number of sides: "))
+                break
+            except:
+                print(f"Enter a number!")
+        while True:
+            try:
+                roll_modifier = int(input(f"Enter your total modifier to add to each roll: "))
+                break
+            except:
+                print(f"Enter a number!")
+
+        clear()
+        print("==================================================")
+        print(f"Going to roll {dice_number}d{dice_sides} + {roll_modifier}.")
+        print("==================================================")
+        dice_roll_total = 0 
+        for index,roll in enumerate(range(1,dice_number + 1)):
+            # dice_roll = random.randint(1,dice_sides + 1)
+            dice_roll = int(roll_dice(dice_sides))
+            roll_total = dice_roll + roll_modifier
+            dice_roll_total += roll_total
+            print(f" Roll #{index + 1} is {dice_roll} + {roll_modifier} = {roll_total}.")
+        print(f"\nTotal rolled value is {dice_roll_total}.")
+        
+
+
+
         input('Press Enter to Continue...')
     
 
