@@ -37,7 +37,6 @@ last_names = [
     "of the Verdant Valley", "of the Whispers of Fate", "of the Mystic Scroll", "of the Eternal Spring",
 ]
 
-
 dnd_menu_level = [
     "Level  1          0 Exp    You're just starting your adventuring journey, full of potential.",
     "Level  2        300 Exp    Now, you have a battle or two under your belt, gaining some confidence.",
@@ -4590,5 +4589,8 @@ dnd_locations = {
     "gilded_spire_bazaar": "A bustling bazaar located within a towering gilded spire, where exotic goods are traded.",
     "mystic_tidepool": "A tidepool filled with mysterious aquatic creatures and magical seaweed.",
     "voidshroud_forest": "A forest covered in an eerie voidshroud, home to creatures of darkness and shadow.",
-        "starry_maze": "A labyrinthine maze with walls made of twinkling stars, where travelers navigate by constellations.",
+    "starry_maze": "A labyrinthine maze with walls made of twinkling stars, where travelers navigate by constellations.",
 }
+
+
+

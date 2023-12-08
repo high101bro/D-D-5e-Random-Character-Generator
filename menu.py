@@ -4,6 +4,9 @@ import re, time, sys
 from simple_term_menu import TerminalMenu
 from dnd_generate_character import *
 from dnd_lists import *
+from dnd_cities import *
+from chatgpt import *
+from my_secrets import *
 
 
 # def menu():
@@ -25,7 +28,8 @@ optionsMenu  = [
     'Items, Weapons, Armor, Equipment',
     'Locations',
     'Manage Battle',
-    'Roll Dice'
+    'Roll Dice',
+    'ChatGPT'
 ]
 
 all_characters = []
@@ -36,23 +40,56 @@ def debug(show):
     return print(ts)
 
 
-def roll_dice(sides):
-    def roll(sides):
-        roll = str(random.randint(1, sides))
-        return str(roll)
-    for _ in range(15):  # The number of iterations determines the length of the animation
-        time.sleep(0.1)  # Pause for a short period to create the animation effect
-        the_roll = roll(sides)
-        sys.stdout.write("\r" + "[" + the_roll + "]")  # Random number between 1 and 6
-        sys.stdout.flush()
-    final_roll = the_roll
-    return final_roll
+def dnd_roll_dice():
+    def roll_dice(sides):
+        def roll(sides):
+            roll = str(random.randint(1, sides))
+            return str(roll)
+        for _ in range(15):  # The number of iterations determines the length of the animation
+            time.sleep(0.1)  # Pause for a short period to create the animation effect
+            the_roll = roll(sides)
+            sys.stdout.write(f"\r{'['+ the_roll + ']':<6}")  # Random number between 1 and 6
+            sys.stdout.flush()
+        final_roll = the_roll
+        return final_roll
+
+    while True:
+        try:
+            dice_number = int(input(f"Enter the number of dice: "))
+            break
+        except:
+            print(f"Enter a number!")
+    while True:
+        try:
+            dice_sides = int(input(f"Enter the dice size/number of sides: "))
+            break
+        except:
+            print(f"Enter a number!")
+    while True:
+        try:
+            roll_modifier = int(input(f"Enter your total modifier to add to each roll: "))
+            break
+        except:
+            print(f"Enter a number!")
+
+    clear()
+    print("==================================================")
+    print(f"Going to roll {dice_number}d{dice_sides} + {roll_modifier}.")
+    print("==================================================")
+
+    dice_roll_total = 0 
+    for index,roll in enumerate(range(1,dice_number + 1)):
+        # dice_roll = random.randint(1,dice_sides + 1)
+        dice_roll = int(roll_dice(dice_sides))
+        roll_total = dice_roll + roll_modifier
+        dice_roll_total += roll_total
+        print(f"  Roll #{(index + 1):<3}    {dice_roll:<3} + {roll_modifier:<3} = {roll_total:<3}")
+    print(f"\nTotal rolled value is {dice_roll_total}.")
+    input("\nPress Enter to Continue...")
+    return dice_roll_total
 
 
 def display_dnd_menu(items_dictionary):
-    clear = lambda: print("\033[H\033[J")  # Clearing the terminal screen
-    clear()
-    print('Make a selection: ')
 
     # Convert the dictionary into a list
     menu_items = [f"{key} - {value}" for key, value in items_dictionary.items()]
@@ -86,18 +123,25 @@ def display_dnd_menu(items_dictionary):
                 break
             except ValueError:
                 print(f"Error: Enter a number.")
+                input("\nPress Enter to Continue...")
         random_selections = []
         for _ in range(number_of_random_selections):
             random_selection = random.choice(menu_formatted)
             random_selections.append(random_selection)
             print(random_selection)
-
+            input("\nPress Enter to Continue...")
+            return random_selection
     elif menu_formatted[menu_index] == 'Exit':
         pass
+        return None
     else:
         del menu_formatted[0]
         del menu_formatted[-1]
         print(menu_formatted[menu_index - 1])
+        return None
+    
+    input("\nPress Enter to Continue...")
+
 
 
 
@@ -217,7 +261,7 @@ while True:
                     )
                     display_character(characters)
 
-                input('Press Enter to Continue...')
+                input("\nPress Enter to Continue...")
 
             elif dnd_choose_character_number[generation_menu_index] == 'Automated':
                 for index, character in enumerate(characters):
@@ -235,7 +279,7 @@ while True:
                     )
                     display_character(characters)
 
-                input('Press Enter to Continue...')
+                input("\nPress Enter to Continue...")
             else:
                 pass
 
@@ -340,12 +384,12 @@ while True:
                 if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'spells':
                     print_character(all_characters[characters_menu_index].spells)
 
-            input('Press Enter to Continue...')
+            input("\nPress Enter to Continue...")
     
     
     elif re.compile("^Manage Battle").match(optionsMenu [selectedMenuOption]):
         print('Managing the Battle is under deverlopment...')
-        input('Press Enter to Continue...')
+        input("\nPress Enter to Continue...")
 
 
     elif re.compile("^Items").match(optionsMenu [selectedMenuOption]):
@@ -376,103 +420,86 @@ while True:
             elif stuff_category[stuff_category_menu_index] == 'Armor':
                 display_dnd_menu(dnd_armor)
 
-        input('Press Enter to Continue...')
+        input("\nPress Enter to Continue...")
 
 
     elif re.compile("^Locations").match(optionsMenu [selectedMenuOption]):
 
-        clear()
-        print('Select a location: ')
-
-        # Convert the dicionary into a list
-        dnd_locations_menu = []
-        for key, value in dnd_locations.items():
-            dnd_locations_menu.append(f"{key} - {value}")
-
-
-        # Format the list to be pretty in the menu
-        def split_two_elements(text):
-            split_text = text.split('-',1)
-            return split_text[0], split_text[1]
-
-        dnd_locations_menu_formatted = []
-        for item in dnd_locations_menu:
-            first_element, second_element = split_two_elements(item)
-            dnd_locations_menu_formatted.append(f"{first_element.strip():<30}{second_element.strip()}")
-        dnd_locations_menu_formatted = sorted(dnd_locations_menu_formatted)
-
-
-        # The menu
-        print(f"Select from {len(dnd_locations_menu_formatted)} locations: ")
-        dnd_locations_menu_formatted.insert(0,'Random Location(s)')
-        dnd_locations_menu_formatted.append('Exit')
-        locations_menu = TerminalMenu(dnd_locations_menu_formatted)
-        dnd_locations_menu_index = locations_menu.show()
+        dnd_locations_menu = {
+            "Cities and Towns" : 'Various places where civilization has taken root.',
+            "Other Locations" : 'An assortment of bespoke places to possibly explore.',
+            "Merchant Shops" : "Planes where you can purchase and sell goods.",
+        }
+        display_dnd_menu(dnd_locations_menu)
         
-        if dnd_locations_menu_formatted[dnd_locations_menu_index] == 'Random Location(s)':
-            del dnd_locations_menu_formatted[0]
-            del dnd_locations_menu_formatted[-1]
-            while True:
-                try:
-                    number_of_random_locations = int(input(f"How many locations? "))
-                    break
-                except:
-                    print(f"Error: Enter an number.")
-            random_locations = []
-            for location in range(0,number_of_random_locations):
-                random_location = random.choice(dnd_locations_menu_formatted)
-                random_locations.append(random_location)
-                print(random_location)
-            #print(random_locations)  
-      
-        elif dnd_locations_menu_formatted[dnd_locations_menu_index] == 'Exit':
-            del dnd_locations_menu_formatted[0]
-            del dnd_locations_menu_formatted[-1]
-            pass
-        else:
-            del dnd_locations_menu_formatted[0]
-            del dnd_locations_menu_formatted[-1]
-            print(dnd_locations_menu_formatted[dnd_locations_menu_index])
+        # if re.compile("^Roll Dice").match(optionsMenu [selectedMenuOption]):
 
-        input('Press Enter to Continue...')
+            # display_dnd_menu(dnd_locations)
+                                        # clear()
+                                        # print('Select a location: ')
+
+                                        # # Convert the dicionary into a list
+                                        # dnd_locations_menu = []
+                                        # for key, value in dnd_locations.items():
+                                        #     dnd_locations_menu.append(f"{key} - {value}")
+
+
+                                        # # Format the list to be pretty in the menu
+                                        # def split_two_elements(text):
+                                        #     split_text = text.split('-',1)
+                                        #     return split_text[0], split_text[1]
+
+                                        # dnd_locations_menu_formatted = []
+                                        # for item in dnd_locations_menu:
+                                        #     first_element, second_element = split_two_elements(item)
+                                        #     dnd_locations_menu_formatted.append(f"{first_element.strip():<30}{second_element.strip()}")
+                                        # dnd_locations_menu_formatted = sorted(dnd_locations_menu_formatted)
+
+
+                                        # # The menu
+                                        # print(f"Select from {len(dnd_locations_menu_formatted)} locations: ")
+                                        # dnd_locations_menu_formatted.insert(0,'Random Location(s)')
+                                        # dnd_locations_menu_formatted.append('Exit')
+                                        # locations_menu = TerminalMenu(dnd_locations_menu_formatted)
+                                        # dnd_locations_menu_index = locations_menu.show()
+                                        
+                                        # if dnd_locations_menu_formatted[dnd_locations_menu_index] == 'Random Location(s)':
+                                        #     del dnd_locations_menu_formatted[0]
+                                        #     del dnd_locations_menu_formatted[-1]
+                                        #     while True:
+                                        #         try:
+                                        #             number_of_random_locations = int(input(f"How many locations? "))
+                                        #             break
+                                        #         except:
+                                        #             print(f"Error: Enter an number.")
+                                        #     random_locations = []
+                                        #     for location in range(0,number_of_random_locations):
+                                        #         random_location = random.choice(dnd_locations_menu_formatted)
+                                        #         random_locations.append(random_location)
+                                        #         print(random_location)
+                                        #     #print(random_locations)  
+                                    
+                                        # elif dnd_locations_menu_formatted[dnd_locations_menu_index] == 'Exit':
+                                        #     del dnd_locations_menu_formatted[0]
+                                        #     del dnd_locations_menu_formatted[-1]
+                                        #     pass
+                                        # else:
+                                        #     del dnd_locations_menu_formatted[0]
+                                        #     del dnd_locations_menu_formatted[-1]
+                                        #     print(dnd_locations_menu_formatted[dnd_locations_menu_index])
+
+                                        # input("\nPress Enter to Continue...")
 
     elif re.compile("^Roll Dice").match(optionsMenu [selectedMenuOption]):
-        while True:
-            try:
-                dice_number = int(input(f"Enter the number of dice: "))
-                break
-            except:
-                print(f"Enter a number!")
-        while True:
-            try:
-                dice_sides = int(input(f"Enter the dice size/number of sides: "))
-                break
-            except:
-                print(f"Enter a number!")
-        while True:
-            try:
-                roll_modifier = int(input(f"Enter your total modifier to add to each roll: "))
-                break
-            except:
-                print(f"Enter a number!")
 
-        clear()
-        print("==================================================")
-        print(f"Going to roll {dice_number}d{dice_sides} + {roll_modifier}.")
-        print("==================================================")
-        dice_roll_total = 0 
-        for index,roll in enumerate(range(1,dice_number + 1)):
-            # dice_roll = random.randint(1,dice_sides + 1)
-            dice_roll = int(roll_dice(dice_sides))
-            roll_total = dice_roll + roll_modifier
-            dice_roll_total += roll_total
-            print(f" Roll #{index + 1} is {dice_roll} + {roll_modifier} = {roll_total}.")
-        print(f"\nTotal rolled value is {dice_roll_total}.")
-        
+        dnd_roll_dice()
 
 
-
-        input('Press Enter to Continue...')
+    elif re.compile("^ChatGPT").match(optionsMenu [selectedMenuOption]):
+        user_query = input(f"Ask ChatGPT: ")
+        chatgpt_response = query_chatgpt(openai_key,user_query)
+        print(chatgpt_response)
+        input("\nPress Enter to Continue...")
     
 
 # if __name__ == '__main__':
