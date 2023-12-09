@@ -10,7 +10,7 @@ from dnd_spells import *
 from dnd_monsters import *
 from chatgpt import *
 from my_secrets import *
-
+import pickle_handler
 
 # def menu():
 #     click.echo('Hello, World!')
@@ -37,11 +37,19 @@ optionsMenu  = [
     'ChatGPT'
 ]
 
-all_characters = []
+
+save_directory = "./save_states"
+
+# Option to load previous save files
+all_characters = pickle_handler.select_and_load_pkl(save_directory)
+if all_characters is not None:
+    print("Characters loaded")
+else:
+    print("No Characters loaded")
+    all_characters = []
+
+
 character_number_tracker = 0
-
-
-
 
 
 def print_dnd_menu(items_dictionary,pad=30):
@@ -212,6 +220,9 @@ while True:
                             character_class
                         )
                     )
+
+                    pickle_handler.save_dnd_state('characters', all_characters)
+
                     display_character(characters)
 
                 input("\nPress Enter to Continue...")
@@ -230,6 +241,9 @@ while True:
                             character_class = 'Paladin' #random.choice(list(dnd_classes.keys()))
                         )
                     )
+
+                    pickle_handler.save_dnd_state('characters', all_characters)
+
                     display_character(characters)
 
                 input("\nPress Enter to Continue...")
@@ -242,13 +256,13 @@ while True:
         while True:
             clear()
             print('Character Management')
-            print(f"  ====================================================================================================")
-            print(f"  Character {'#':<7} {'Race':<15} {'Class':<14} {'Name':<34} {'Created':<20} ")
-            print(f"  ====================================================================================================")
+            print(f"  ===============================================================================================================")
+            print(f"  Character {'#':<7} {'Level':<10} {'Race':<15} {'Class':<14} {'Name':<34} {'Created':<20} ")
+            print(f"  ===============================================================================================================")
 
             character_list = []
             for index, character in enumerate(all_characters):
-                character_list.append(f"Character {character.profile['character number']:<7} {character.character_race['Name']:<15} {character.character_class['Name']:<14} {character.profile['name']['first'] + ' ' + character.profile['name']['last']:<34} {character.profile['created']:<20}")
+                character_list.append(f"Character {character.profile['character number']:<7} {character.profile['level']:<10} {character.character_race['Name']:<15} {character.character_class['Name']:<14} {character.profile['name']['first'] + ' ' + character.profile['name']['last']:<34} {character.profile['created']:<20}")
             character_list.append('Remove Character')
             character_list.append('Exit')
 
@@ -341,63 +355,7 @@ while True:
     
     
     elif re.compile("^Manage Battle").match(optionsMenu [selectedMenuOption]):
-        print('Managing the Battle is under deverlopment...')
-        characters_on_the_battlefield = []
-        number_of_characters = int(input(f"How many characters? "))
-        class Character_in_battle():
-            def __init__(self):
-                self.name = ''
-                self.cr = 0
-                self.char_race = ''
-                self.char_class = ''
-                self.type = ''
-                self.ac = 0
-                self.hp = 0
-                self.speed = 0
-                self.initiative = 0
-                self.str = 0
-                self.dex = 0
-                self.con = 0
-                self.int = 0
-                self.wis = 0
-                self.cha = 0
-                self.attacks = {}
-                self.attack_number = 1
-        dan = Character_in_battle()
-        dan.name = 'Elowen'
-        dan.cr = 2
-        dan.level = 2
-        dan.pb = 2
-        dan.char_race = 'elf'
-        dan.char_class = 'ranger'
-        dan.type = 'character'
-        dan.ac = 12+5+1
-        dan.hp = 20
-        dan.speed = 25
-        dan.initiative = '1d20 + dex'
-        dan.str = 2
-        dan.dex = 5
-        dan.con = 1
-        dan.int = 0
-        dan.wis = 2
-        dan.cha = -1
-        dan.attacks = {
-            'long bow' : '1d20 + 1d8 + dex + pb',
-            'rapier' : '1d20 + 1d8 + dex + pb',
-        }
-        dan.attack_number = 1
-
-        while True:
-            # input(f"Enter the character name: ")
-            dan = Character_in_battle()
-            dan.name = 'dan'
-            dan.ac = 17
-            break
-        print(
-            dan.name,
-            dan.ac
-        )
-        debug(dan)
+        pass
 
 
     elif re.compile("^Items").match(optionsMenu [selectedMenuOption]):
