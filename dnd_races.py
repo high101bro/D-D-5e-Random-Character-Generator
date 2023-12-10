@@ -24,6 +24,7 @@ dnd_races = {
                 "Ground" : 30,
                 "Flight" : 0
             },
+            "Size" : "Medium",
             "Vision": {
                 "Normal" : {
                     "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
@@ -84,6 +85,7 @@ dnd_races = {
                 "Ground" : 25,
                 "Flight" : 0
             },
+            "Size" : "Medium",
             "Vision": {
                 "Normal" : {
                     "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
@@ -145,6 +147,7 @@ dnd_races = {
                 "Ground" : 30,
                 "Flight" : 0
             },
+            "Size" : "Medium",
             "Vision" : {
                 "Normal" : {
                     "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
@@ -206,6 +209,7 @@ dnd_races = {
                 "Ground" : 25,
                 "Flight" : 0
             },
+            "Size" : "Small",
             "Vision": {
                 "Normal" : {
                     "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
@@ -257,6 +261,7 @@ dnd_races = {
                 "Ground" : 30,
                 "Flight" : 0
             },
+            "Size" : "Medium",
             "Vision": {
                 "Normal" : {
                     "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
@@ -312,6 +317,7 @@ dnd_races = {
                 "Ground" : 30,
                 "Flight" : 0
             },
+            "Size" : "Medium",
             "Vision": {
                 "Normal" : {
                     "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
@@ -371,6 +377,7 @@ dnd_races = {
                 "Ground" : 25,
                 "Flight" : 0
             },
+            "Size" : "Small",
             "Vision": {
                 "Normal" : {
                     "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
@@ -431,6 +438,7 @@ dnd_races = {
                 "Ground" : 30,
                 "Flight" : 0
             },
+            "Size" : "Medium",
             "Vision": {
                 "Normal" : {
                     "Description": "Normal vision is the default vision type for most humanoid characters in the game.",
@@ -479,6 +487,7 @@ dnd_races = {
                 "Ground" : 30,
                 "Flight" : 0
             },
+            "Size" : "Medium",
             "Vision": {
                 "Normal" : {
                     "Description": "Normal vision is the default vision type for most humanoid characters in the game.",

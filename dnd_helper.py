@@ -1,5 +1,7 @@
 #! /usr/bin/env python3
 
+import readline
+
 def debug(show):
     print(f"[Debug] Type: {type(show)} == Value: {show}")
     input("\nPress Enter to Continue...")
@@ -53,5 +55,4 @@ def dnd_roll_dice():
         print(f"  Roll #{(index + 1):<3}    {dice_roll:<3} + {roll_modifier:<3} = {roll_total:<3}")
     print(f"\nTotal rolled value is {dice_roll_total}.")
     return dice_roll_total
-
 

@@ -125,6 +125,8 @@ def generate_characters(character, character_number, character_level=1, characte
     character.character_class["ASCII Art"] = dnd_classes[character_class]["ASCII Art"]
     character.character_class["Name"] = dnd_classes[character_class]["Name"]
     character.character_class["Description"] = dnd_classes[character_class]["Description"]
+    character.character_class["Requirements"] = dnd_classes[character_class]["Requirements"]
+    character.character_class["Hit Die"] = dnd_classes[character_class]["Hit Die"]
     character.character_class["Current Level Chart"] = {}
     character.character_class["Current Level Chart"][character.profile['level']] = dnd_classes[character_class]["Level Chart"][character.profile['level']]
     character.character_class["Features"] = dnd_classes[character_class]["Features"]
@@ -444,6 +446,26 @@ def generate_characters(character, character_number, character_level=1, characte
 
 
     character.capabilities['combat'] = {}
+    character.capabilities['combat']['initiative'] = {}
+    character.capabilities['combat']['initiative']['normal'] = character.capabilities['attributes']['dexterity']['modifier']
+    character.capabilities['combat']['initiative']['temporary'] = 0 #placeholder
+    character.capabilities['combat']['initiative']['total'] = character.capabilities['combat']['initiative']['normal'] + character.capabilities['combat']['initiative']['temporary']
+    character.capabilities['combat']['armor_class'] = 10 + character.capabilities['attributes']['dexterity']['modifier']
+    character.capabilities['combat']['hit_points'] = {}
+    character.capabilities['combat']['hit_points']['damage_resistence'] = 0
+    character.capabilities['combat']['hit_points']['false_life'] = 0
+    character.capabilities['combat']['hit_points']['temp_hit_points'] = 0
+
+
+    character_hp_calc_total = 0
+    # add full level 1 hit die hp
+    character_hp_calc_total += int(character.character_class["Hit Die"].split('d')[1]) + int(character.capabilities['attributes']['constitution']['modifier'])
+    for level in range(2,int(character.profile['level'] + 1)): # starts at level 2, because level 1 is added in full up above
+        val = random.randint(1, int(character.character_class["Hit Die"].split('d')[1])) + int(character.capabilities['attributes']['constitution']['modifier'])
+        character_hp_calc_total += val
+    character.capabilities['combat']['hit_points']['total'] = character_hp_calc_total
+    character.capabilities['combat']['hit_points']['current'] = character.capabilities['combat']['hit_points']['total']
+
 # 'combat' : {
 #     'initiative' : {
 #         'modifier' : 0,

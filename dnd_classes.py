@@ -19,7 +19,7 @@ dnd_classes = {
         """,
         "Name": "Barbarian",
         "Description": "A fierce warrior of primitive background who can enter a battle rage. For some, their rage springs from a communion with fierce animal spirits. Others draw from a roiling reservoir of anger at a world full of pain. For every barbarian, rage is a power that fuels not just a battle frenzy but also uncanny reflexes, resilience, and feats of strength.",
-        "Requirement" : "You must have a Strength score of 13 or higher in order to multiclass in or out of this class.",
+        "Requirements" : "You must have a Strength score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2', 'Features': ['Rage', 'Unarmored Defense'], 'Rages': 2, 'Rage Damage': '+2'},
             2: {'Proficiency Bonus': '+2', 'Features': ['Reckless Attack', 'Danger Sense'], 'Rages': 2, 'Rage Damage': '+2'},
@@ -43,8 +43,8 @@ dnd_classes = {
             20: {'Proficiency Bonus': '+6', 'Features': ['Primal Champion'], 'Rages': 'Unlimited', 'Rage Damage': '+4'}
         },
         "Features": {},
-        'Hit Dice': '1d12',
-        'Proficiencies': {
+        "Hit Die": '1d12',
+        "Proficiencies": {
             'Armor': ['Light armor', 'medium armor', 'shields'],
             'Weapons': ['Simple weapons', 'martial weapons'],
             'Tools': 'None',
@@ -92,7 +92,7 @@ dnd_classes = {
         """,
         "Name": "Bard",
         "Description": "An inspiring magician whose power echoes the music of creation. Whether scholar, skald, or scoundrel, a bard weaves magic through words and music to inspire allies, demoralize foes, manipulate minds, create illusions, and even heal wounds. The bard is a master of song, speech, and the magic they contain.",
-        "Requirement" : "You must have a Charisma score of 13 or higher in order to multiclass in or out of this class.",
+        "Requirements" : "You must have a Charisma score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2','Features': 'Spellcasting, Bardic Inspiration (d6)','Cantrips Known': 2,'Spells Known': 4,'1st': 2,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-',},
             2: {'Proficiency Bonus': '+2','Features': 'Jack of All Trades, Song of Rest (d6), Magical Inspiration (Optional)','Cantrips Known': 2,'Spells Known': 5,'1st': 3,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-',},
@@ -116,8 +116,8 @@ dnd_classes = {
             20: {'Proficiency Bonus': '+6','Features': 'Superior Inspiration','Cantrips Known': 4,'Spells Known': 22,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 2,'8th': 1,'9th': 1,}
         },
         "Features": {},
-        'Hit Dice': '1d8',
-        'Proficiencies': {
+        "Hit Die": '1d8',
+        "Proficiencies": {
             'Armor': 'Light armor',
             'Weapons': 'Simple weapons, hand crossbows, longswords, rapiers, shortswords',
             'Tools': 'Three musical instruments of your choice',
@@ -181,7 +181,7 @@ dnd_classes = {
         """,
         "Name": "Cleric",
         "Description": "A priestly champion who wields divine magic in service of a higher power. Clerics are intermediaries between the mortal world and the distant planes of the gods. As varied as the gods they serve, clerics strive to embody the handiwork of their deities. No ordinary priest, a cleric is imbued with divine magic.",
-        "Requirement" : "You must have a Wisdom score of 13 or higher in order to multiclass in or out of this class.",
+        "Requirements" : "You must have a Wisdom score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2','Features': 'Spellcasting, Divine Domain','Cantrips Known': 3,'1st': 2,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
             2: {'Proficiency Bonus': '+2','Features': 'Channel Divinity (x1), Divine Domain feature, Harness Divine Power (Optional)','Cantrips Known': 3,'1st': 3,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
@@ -205,8 +205,8 @@ dnd_classes = {
             20: {'Proficiency Bonus': '+6','Features': 'Divine Intervention improvement','Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 1,'8th': 1,'9th': 1}
         },
         "Features": {},
-        'Hit Dice': '1d8',
-        'Proficiencies': {
+        "Hit Die": '1d8',
+        "Proficiencies": {
             'Armor': 'Light armor, medium armor, shields',
             'Weapons': 'All simple weapons',
             'Tools': 'None',
@@ -274,7 +274,7 @@ dnd_classes = {
         """,
         "Name": "Druid",
         "Description": "A priest of the Old Faith, wielding the powers of nature and adopting animal forms. Whether calling on the elemental forces of nature or emulating the creatures of the animal world, druids are an embodiment of nature's resilience, cunning, and fury. They claim no mastery over nature, but see themselves as extensions of nature's indomitable will.",
-        "Requirement" : "You must have a Wisdom score of 13 or higher in order to multiclass in or out of this class.",
+        "Requirements" : "You must have a Wisdom score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2','Features': 'Druidic, Spellcasting','Cantrips Known': 2,'1st': 2,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
             2: {'Proficiency Bonus': '+2','Features': 'Wild Shape, Druid Circle, Wild Companion (Optional)','Cantrips Known': 2,'1st': 3,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
@@ -298,7 +298,7 @@ dnd_classes = {
             20: {'Proficiency Bonus': '+6','Features': 'Archdruid','Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 2,'8th': 1,'9th': 1}
         },
         "Features": {},
-        "Hit Dice": "1d8",
+        "Hit Die": "1d8",
         "Proficiencies": {
             "Armor": "Light armor, medium armor, shields (druids will not wear armor or use shields made of metal)",
             "Weapons": "Clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears",
@@ -362,7 +362,7 @@ dnd_classes = {
         """,
         "Name": "Fighter",
         "Description": "A master of martial combat, skilled with a variety of weapons and armor. Fighters share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat. They are well acquainted with death, both meting it out and staring it defiantly in the face.",
-        "Requirement" : "You must have a Dexterity or Strength score of 13 or higher in order to multiclass in or out of this class.",
+        "Requirements" : "You must have a Dexterity or Strength score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {"Proficiency Bonus": "+2","Features": "Fighting Style, Second Wind"},
             2: {"Proficiency Bonus": "+2","Features": "Action Surge (x1)"},
@@ -386,7 +386,7 @@ dnd_classes = {
             20: {"Proficiency Bonus": "+6","Features": "Extra Attack (x3)"}
         },
         "Features": {},
-        "Hit Dice": "1d10",
+        "Hit Die": "1d10",
         "Proficiencies": {
             "Armor": "All armor, shields",
             "Weapons": "Simple weapons, martial weapons",
@@ -440,7 +440,7 @@ dnd_classes = {
         """,
         "Name": "Monk",
         "Description": "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection. Monks are united in their ability to magically harness the energy that flows in their bodies. Whether channeled as a striking display of combat prowess or a subtler focus of defensive ability and speed, this energy infuses all that a monk does.",
-        "Requirement" : "You must have a Dexterity score and a Wisdom score of 13 or higher in order to multiclass in or out of this class.",
+        "Requirements" : "You must have a Dexterity score and a Wisdom score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2','Martial Arts': '1d4','Ki Points': '–','Unarmored Movement': '–','Features': 'Unarmored Defense, Martial Arts'},
             2: {'Proficiency Bonus': '+2','Martial Arts': '1d4','Ki Points': '2','Unarmored Movement': '+10 ft.','Features': 'Ki, Unarmored Movement, Dedicated Weapon (Optional)'},
@@ -464,7 +464,7 @@ dnd_classes = {
             20: {'Proficiency Bonus': '+6','Martial Arts': '1d10','Ki Points': '20','Unarmored Movement': '+30 ft.','Features': 'Perfect Self'}
         },
         "Features": {},
-        "Hit Dice": "1d8",
+        "Hit Die": "1d8",
         "Proficiencies": {
             "Armor": "None",
             "Weapons": "Simple weapons, shortswords",
@@ -512,7 +512,7 @@ dnd_classes = {
         """,
         "Name": "Paladin",
         "Description": "A holy warrior bound to a sacred oath. Whether sworn before a god's altar and the witness of a priest, in a sacred glade before nature spirits and fey beings, or in a moment of desperation and grief with the dead as the only witness, a paladin's oath is a powerful bond.",
-        "Requirement" : "You must have a Charisma score and a Strength score of 13 or higher in order to multiclass in or out of this class.",
+        "Requirements" : "You must have a Charisma score and a Strength score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2', 'Features': 'Divine Sense, Lay on Hands', '1st Level Spell Slots': '-', '2nd Level Spell Slots': '-', '3rd Level Spell Slots': '-', '4th Level Spell Slots': '-', '5th Level Spell Slots': '-'},
             2: {'Proficiency Bonus': '+2', 'Features': 'Fighting Style, Spellcasting, Divine Smite', '1st Level Spell Slots': '2', '2nd Level Spell Slots': '-', '3rd Level Spell Slots': '-', '4th Level Spell Slots': '-', '5th Level Spell Slots': '-'},
@@ -536,7 +536,7 @@ dnd_classes = {
             20: {'Proficiency Bonus': '+6', 'Features': 'Sacred Oath feature', '1st Level Spell Slots': '4', '2nd Level Spell Slots': '3', '3rd Level Spell Slots': '3', '4th Level Spell Slots': '3', '5th Level Spell Slots': '2'}
         },
         "Features" : {},
-        "Hit Dice": "1d10",
+        "Hit Die": "1d10",
         "Proficiencies": {
             "Armor": "All armor, shields",
             "Weapons": ["simple weapons", "martial weapons"],
@@ -599,7 +599,7 @@ dnd_classes = {
         """,
         "Name": "Ranger",
         "Description": "A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization. Far from the bustle of cities and towns, past the hedges that shelter the most distant farms from the terrors of the wild, amid the dense-packed trees of trackless forests and across wide and empty plains, rangers keep their unending watch.",
-        "Requirement" : "You must have a Dexterity score and a Wisdom score of 13 or higher in order to multiclass in or out of this class.",
+        "Requirements" : "You must have a Dexterity score and a Wisdom score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2', 'Features': 'Favored Enemy, Natural Explorer, Deft Explorer (Optional), Favored Foe (Optional)', 'Spells Known': '-', '1st': '-', '2nd': '-', '3rd': '-', '4th': '-', '5th': '-'},
             2: {'Proficiency Bonus': '+2', 'Features': 'Fighting Style, Spellcasting, Spellcasting Focus (Optional)', 'Spells Known': 2, '1st': 2, '2nd': '-', '3rd': '-', '4th': '-', '5th': '-'},
@@ -623,8 +623,8 @@ dnd_classes = {
             20: {'Proficiency Bonus': '+6', 'Features': 'Foe Slayer', 'Spells Known': 11, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2}
         },
         "Features": {},
-        'Hit Dice': '1d10',
-        'Proficiencies': {
+        "Hit Die": '1d10',
+        "Proficiencies": {
             'Armor': 'Light armor, medium armor, shields',
             'Weapons': 'Simple weapons, martial weapons',
             'Tools': 'None',
@@ -683,7 +683,7 @@ dnd_classes = {
         """,
         "Name": "Rogue",
         "Description": "A scoundrel who uses stealth and trickery to overcome obstacles and enemies. Rogues rely on skill, stealth, and their foes' vulnerabilities to get the upper hand in any situation. They have a knack for finding the solution to just about any problem, demonstrating a resourcefulness and versatility that is the cornerstone of any successful adventuring party.",
-        "Requirement" : "You must have a Dexterity score of 13 or higher in order to multiclass in or out of this class.",
+        "Requirements" : "You must have a Dexterity score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2', 'Sneak Attack': '1d6', 'Features': 'Expertise, Sneak Attack, Thieves\' Cant'},
             2: {'Proficiency Bonus': '+2', 'Sneak Attack': '1d6', 'Features': 'Cunning Action'},
@@ -707,8 +707,8 @@ dnd_classes = {
             20: {'Proficiency Bonus': '+6', 'Sneak Attack': '10d6', 'Features': 'Stroke of Luck'}
         },
         "Features": {},
-        'Hit Dice': '1d8',
-        'Proficiencies': {
+        "Hit Die": '1d8',
+        "Proficiencies": {
             'Armor': 'Light armor',
             'Weapons': 'Simple weapons, hand crossbows, longswords, rapiers, shortswords',
             'Tools': 'Thieves\' tools',
@@ -762,7 +762,7 @@ dnd_classes = {
         """,
         "Name": "Sorcerer",
         "Description": "A spellcaster who draws on inherent magic from a gift or bloodline. Sorcerers carry a magical birthright conferred upon them by an exotic bloodline, some otherworldly influence, or exposure to unknown cosmic forces. No one chooses sorcery; the power chooses the sorcerer.",
-        "Requirement" : "You must have a Charisma score of 13 or higher in order to multiclass in or out of this class.",
+        "Requirements" : "You must have a Charisma score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2', 'Sorcery Points': '-', 'Features': 'Spellcasting, Sorcerous Origin', 'Cantrips Known': 4, 'Spells Known': 2, '1st': 2, '2nd': '-', '3rd': '-', '4th': '-', '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
             2: {'Proficiency Bonus': '+2', 'Sorcery Points': '2', 'Features': 'Font of Magic', 'Cantrips Known': 4, 'Spells Known': 3, '1st': 3, '2nd': '-', '3rd': '-', '4th': '-', '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
@@ -786,8 +786,8 @@ dnd_classes = {
             20: {'Proficiency Bonus': '+6', 'Sorcery Points': '20', 'Features': 'Sorcerous Restoration', 'Cantrips Known': 6, 'Spells Known': 15, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1, '9th': 1}
         },
         "Features": {},
-        'Hit Dice': '1d6',
-        'Proficiencies': {
+        "Hit Die": '1d6',
+        "Proficiencies": {
             'Armor': 'None',
             'Weapons': 'Daggers, darts, slings, quarterstaffs, light crossbows',
             'Tools': 'None',
@@ -850,7 +850,7 @@ dnd_classes = {
         """,
         "Name": "Warlock",
         "Description": "A wielder of magic that is derived from a bargain with an extraplanar entity. Warlocks are seekers of the knowledge that lies hidden in the fabric of the multiverse. Through pacts made with mysterious beings of supernatural power, warlocks unlock magical effects both subtle and spectacular.",
-        "Requirement" : "You must have a Charisma score of 13 or higher in order to multiclass in or out of this class.",
+        "Requirements" : "You must have a Charisma score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2', 'Features': 'Otherworldly Patron, Pact Magic', 'Cantrips Known': 2, 'Spells Known': 2, 'Spell Slots': 1, 'Slot Level': '1st', 'Invocations Known': '-'},
             2: {'Proficiency Bonus': '+2', 'Features': 'Eldritch Invocations', 'Cantrips Known': 2, 'Spells Known': 3, 'Spell Slots': 2, 'Slot Level': '1st', 'Invocations Known': '2'},
@@ -874,8 +874,8 @@ dnd_classes = {
             20: {'Proficiency Bonus': '+6', 'Features': 'Eldritch Master', 'Cantrips Known': 4, 'Spells Known': 15, 'Spell Slots': 4, 'Slot Level': '5th', 'Invocations Known': '8'}
         },
         "Features": {},
-        'Hit Dice': '1d8',
-        'Proficiencies': {
+        "Hit Die": '1d8',
+        "Proficiencies": {
             'Armor': 'Light armor',
             'Weapons': 'Simple weapons',
             'Tools': 'None',
@@ -939,7 +939,7 @@ dnd_classes = {
         """,
         "Name": "Wizard",
         "Description": "A scholarly magic-user capable of manipulating the structures of reality. Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, brute-force mind control, and much more.",
-        "Requirement": "You must have an Intelligence score of 13 or higher in order to multiclass in or out of this class.",
+        "Requirements": "You must have an Intelligence score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2', 'Features': 'Spellcasting, Arcane Recovery', 'Cantrips Known': 3, '1st': 2},
             2: {'Proficiency Bonus': '+2', 'Features': 'Arcane Tradition', 'Cantrips Known': 3, '1st': 3},
@@ -963,8 +963,8 @@ dnd_classes = {
             20: {'Proficiency Bonus': '+6', 'Features': 'Signature Spells', 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 3, '6th': 2, '7th': 2, '8th': 1, '9th': 1}    
         },
         "Features": {},
-        'Hit Dice': '1d6',
-        'Proficiencies': {
+        "Hit Die": '1d6',
+        "Proficiencies": {
             'Armor': 'None',
             'Weapons': 'Daggers, darts, slings, quarterstaffs, light crossbows',
             'Tools': 'None',
