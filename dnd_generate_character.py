@@ -28,12 +28,7 @@ from dnd_races import *
 from dnd_classes import *
 from dnd_backgrounds import *
 from dnd_random_generation import *
-from dnd_character_print import *
-
-
-# Clear the terminal screen
-def clear():
-    os.system('cls' if os.name == 'nt' else 'clear')
+from dnd_helper import *
 
 
 item_list = [generate_item_list() for _ in range(10)]

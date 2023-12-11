@@ -92,23 +92,6 @@ dnd_monsters = {
             "Magical Artifacts",
             "Jewelry",
             "Rare Spices"
-        ],
-        "Race": "Humanoid",
-        "Class": "Ranger",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Erak",
-            "Jarak",
-            "Kesk",
-            "Torin",
-            "Yvar"
-        ],
-        "5 Common Last Names": [
-            "Alasan",
-            "Darkmont",
-            "Felsan",
-            "Sarling",
-            "Skyfeather"
         ]
     },
     "Aboleth": {
@@ -212,23 +195,6 @@ dnd_monsters = {
             "Partially digested corpses of aquatic creatures",
             "Mundane and magical trinkets",
             "Aboleth slime"
-        ],
-        "Race": "Aquatic Aberration",
-        "Class": "Mage",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Slyvoy",
-            "Eredon",
-            "Vorrel",
-            "Vorlass",
-            "Croak"
-        ],
-        "5 Common Last Names": [
-            "Muskellunge",
-            "Barracuda",
-            "Lakebottom",
-            "Drakefin",
-            "Lobsterclaw"
         ]
     },
     "Abominable_Yeti": {
@@ -315,23 +281,6 @@ dnd_monsters = {
             "Potion of Healing",
             "Gemstone (200 GP worth)",
             "Scroll of Protection"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Unknown",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Orsh",
-            "Korusk",
-            "Akor",
-            "Gola",
-            "Senang"
-        ],
-        "5 Common Last Names": [
-            "Snowtusk",
-            "Frostwalker",
-            "Icemane",
-            "Tundrahand",
-            "Whitefang"
         ]
     },
     "Acolyte": {
@@ -426,23 +375,6 @@ dnd_monsters = {
             "Holy symbols and amulets",
             "Herbs and healing items",
             "Weapons and armor"
-        ],
-        "Race": "Humanoid",
-        "Class": "Cleric",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Marcus",
-            "Vincent",
-            "Arianna",
-            "Celia",
-            "Fiona"
-        ],
-        "5 Common Last Names": [
-            "Giles",
-            "Wikehild",
-            "Hyland",
-            "Lemonde",
-            "Fernandes"
         ]
     },
     "Adult_Black_Dragon": {
@@ -552,23 +484,6 @@ dnd_monsters = {
             "Magic weapons and items",
             "Rare books",
             "Jeweled artifacts"
-        ],
-        "Race": "Dragon",
-        "Class": "Reptile",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Neferis",
-            "Nazaki",
-            "Malachi",
-            "Vorlesh",
-            "Shaan"
-        ],
-        "5 Common Last Names": [
-            "Ectosteel",
-            "Kitsune",
-            "Lifedrinker",
-            "Graersom",
-            "Wyvernsteel"
         ]
     },
     "Adult_Blue_Dracolich": {
@@ -686,23 +601,6 @@ dnd_monsters = {
             "Magic Weapons",
             "Jewels and Gems",
             "Rare Artifacts"
-        ],
-        "Race": "Dragon",
-        "Class": "Undead",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Viryssa",
-            "Yskarath",
-            "Azamorthes",
-            "Lezunar",
-            "Vabarath"
-        ],
-        "5 Common Last Names": [
-            "Vampyr",
-            "Dragorven",
-            "Vengeful",
-            "Shadowspire",
-            "Crystalline"
         ]
     },
     "Adult_Blue_Dragon": {
@@ -809,23 +707,6 @@ dnd_monsters = {
             "Golden Coins",
             "Mithril Armor",
             "Magical Weapons"
-        ],
-        "Race": "Dragon",
-        "Class": "Natural",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Ardent",
-            "Glint",
-            "Hex",
-            "Liftoft",
-            "Sky"
-        ],
-        "5 Common Last Names": [
-            "Arrow",
-            "Aurora",
-            "Claw",
-            "Scale",
-            "Spark"
         ]
     },
     "Adult_Brass_Dragon": {
@@ -932,23 +813,6 @@ dnd_monsters = {
             "Magical armor pieces",
             "High-value coins",
             "Treasure maps"
-        ],
-        "Race": "Dragon",
-        "Class": "None",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Shassa",
-            "Kressle",
-            "Sorn",
-            "Verro",
-            "Charrak"
-        ],
-        "5 Common Last Names": [
-            "Ambolkin",
-            "Morgheim",
-            "Sundethul",
-            "Vaaken",
-            "Flambith"
         ]
     },
     "Adult_Bronze_Dragon": {
@@ -1055,23 +919,6 @@ dnd_monsters = {
             "Magic Weapons",
             "Expensive Cloth and Clothing",
             "Masterwork Tools"
-        ],
-        "Race": "Dragon",
-        "Class": "Magical Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Aramil",
-            "Uhehu",
-            "Gelnaymn",
-            "Onastay",
-            "Essyld"
-        ],
-        "5 Common Last Names": [
-            "Arcosbree",
-            "Highgloun",
-            "Maerthain",
-            "Bantholme",
-            "Goldspor"
         ]
     },
     "Adult_Copper_Dragon": {
@@ -1181,23 +1028,6 @@ dnd_monsters = {
             "Elixirs and Potions",
             "Scrolls and Tomes",
             "Miscellaneous Magic Items"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Taranir",
-            "Griffon",
-            "Mannor",
-            "Remmon",
-            "Joryan"
-        ],
-        "5 Common Last Names": [
-            "Ruthirin",
-            "Gundivar",
-            "Tresimir",
-            "Ophinis",
-            "Isstyr"
         ]
     },
     "Adult_Gold_Dragon": {
@@ -1308,23 +1138,6 @@ dnd_monsters = {
             "Magic weapons",
             "Magic armor",
             "Artifacts of wealth and power"
-        ],
-        "Race": "Dragon",
-        "Class": "Monstrosity",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Aidan",
-            "Bastian",
-            "Darius",
-            "Jove",
-            "Tavian"
-        ],
-        "5 Common Last Names": [
-            "Agleos",
-            "Bronzefire",
-            "Goldoriel",
-            "Silverwing",
-            "Vaynessa"
         ]
     },
     "Adult_Green_Dragon": {
@@ -1436,23 +1249,6 @@ dnd_monsters = {
             "Magical armor",
             "Healing potions",
             "Mystic scrolls"
-        ],
-        "Race": "Dragon",
-        "Class": "Reptile",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Maeloc",
-            "Ornael",
-            "Brannor",
-            "Dhrall",
-            "Taryon"
-        ],
-        "5 Common Last Names": [
-            "Falconguard",
-            "Greenscales",
-            "Silvertongue",
-            "Stormeye",
-            "Woodward"
         ]
     },
     "Adult_Red_Dragon": {
@@ -1555,23 +1351,6 @@ dnd_monsters = {
             "Magical Artifacts",
             "Magical Weapons",
             "Rarity Scrolls"
-        ],
-        "Race": "Dragon",
-        "Class": "Creature",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Asterax",
-            "Thrax",
-            "Karanak",
-            "Tyrra",
-            "Vosur"
-        ],
-        "5 Common Last Names": [
-            "Breathbane",
-            "Firefume",
-            "Furywing",
-            "Scalecaver",
-            "Tailsting"
         ]
     },
     "Adult_Silver_Dragon": {
@@ -1684,23 +1463,6 @@ dnd_monsters = {
             "Gold coins",
             "Art Objects",
             "Rare plants and herbs"
-        ],
-        "Race": "Dragon",
-        "Class": "Draconic Creature",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Valens",
-            "Diamond",
-            "Silver",
-            "Luna",
-            "Gem"
-        ],
-        "5 Common Last Names": [
-            "Cloudsteel",
-            "Crownshadow",
-            "Nightfall",
-            "Oceanshine",
-            "Queenrage"
         ]
     },
     "Adult_White_Dragon": {
@@ -1815,23 +1577,6 @@ dnd_monsters = {
             "Cold Potion",
             "Frosted Helm",
             "Frozen Shield"
-        ],
-        "Race": "Dragon",
-        "Class": "Magical Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Hrodwulf",
-            "Vili",
-            "Thugr",
-            "Taarvik",
-            "Grani"
-        ],
-        "5 Common Last Names": [
-            "Snow Raven",
-            "Frost Destruction",
-            "Ice Breaker",
-            "Frosthunter",
-            "Whitehunter"
         ]
     },
     "Air_Elemental": {
@@ -1930,23 +1675,6 @@ dnd_monsters = {
             "Air Elemental Essence",
             "Ritual Armor from the Elemental Plane of Air",
             "Gemstones"
-        ],
-        "Race": "Elemental",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Breeze",
-            "Airi",
-            "Skye",
-            "Susurrus",
-            "Zephyr"
-        ],
-        "5 Common Last Names": [
-            "Airborne",
-            "Weathersphere",
-            "Airbender",
-            "Stormbringer",
-            "Skywalker"
         ]
     },
     "Allosaurus": {
@@ -2034,23 +1762,6 @@ dnd_monsters = {
             "Theropod bone fragments",
             "Chromatic scales",
             "Monster claw from a previous hunt"
-        ],
-        "Race": "Dinosaur",
-        "Class": "Behemoth",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Thall",
-            "Belle",
-            "Corr",
-            "Arne",
-            "Korul"
-        ],
-        "5 Common Last Names": [
-            "Tailbiter",
-            "Foulclaw",
-            "Scavenger",
-            "Thundergut",
-            "Skullcleaver"
         ]
     },
     "Ancient_Black_Dragon": {
@@ -2152,23 +1863,6 @@ dnd_monsters = {
             "Coins of Rare Metals",
             "Rare Artifacts",
             "Magical Weapons/Armor"
-        ],
-        "Race": "Dragon",
-        "Class": "Dracolich",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Tyrrahk",
-            "Tsuvahr",
-            "Glaazac",
-            "Vrexhear",
-            "Craahl"
-        ],
-        "5 Common Last Names": [
-            "Vegaar",
-            "Trentharos",
-            "Byair",
-            "Kahl",
-            "Armenstok"
         ]
     },
     "Ancient_Blue_Dragon": {
@@ -2275,23 +1969,6 @@ dnd_monsters = {
             "Rare and powerful weapons",
             "Exquisite art pieces",
             "Lore and ancient secrets"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Bluver",
-            "Gurreim",
-            "Neilic",
-            "Saeign",
-            "Vattu"
-        ],
-        "5 Common Last Names": [
-            "Saeyerth",
-            "Foryctr",
-            "Larenth",
-            "Eorlhaen",
-            "Bransae"
         ]
     },
     "Ancient_Brass_Dragon": {
@@ -2401,23 +2078,6 @@ dnd_monsters = {
             "Magical scrolls",
             "Treasure chests full of gold and gems",
             "Gems of great power"
-        ],
-        "Race": "Dragon",
-        "Class": "None",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Gormant",
-            "Eldamir",
-            "Tudeleos",
-            "Baelnaer",
-            "Nimdrultan"
-        ],
-        "5 Common Last Names": [
-            "The Bronze",
-            "The Proud",
-            "The Diamondwing",
-            "The Unyielding",
-            "The Glorious"
         ]
     },
     "Ancient_Bronze_Dragon": {
@@ -2528,23 +2188,6 @@ dnd_monsters = {
             "Mithril Plate Armor",
             "Adamantine Armor",
             "Wands of Lightning Bolt"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Agnorseth",
-            "Githaranoth",
-            "Ligarth",
-            "Mithrorith",
-            "Porthannoth"
-        ],
-        "5 Common Last Names": [
-            "Anguillave",
-            "Coilshadow",
-            "Gildedscale",
-            "Roarhawk",
-            "Stalemantle"
         ]
     },
     "Ancient_Copper_Dragon": {
@@ -2649,23 +2292,6 @@ dnd_monsters = {
             "Gems",
             "Rare books or scrolls",
             "Magical weapons/items"
-        ],
-        "Race": "Dragon",
-        "Class": "Monstrosity",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Aurum",
-            "Boreas",
-            "Dunstan",
-            "Xanthius",
-            "Ysabel"
-        ],
-        "5 Common Last Names": [
-            "Copperhoard",
-            "Bronzefist",
-            "Goldslayer",
-            "Metalthroat",
-            "Tarnscale"
         ]
     },
     "Ancient_Gold_Dragon": {
@@ -2772,23 +2398,6 @@ dnd_monsters = {
             "Mounds of Gold and Precious Gems",
             "Artifacts of Great Power",
             "Enchanted Armor and Jewelry"
-        ],
-        "Race": "Dragon",
-        "Class": "Creature",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Chendera",
-            "Glora",
-            "Mogina",
-            "Miricha",
-            "Artoria"
-        ],
-        "5 Common Last Names": [
-            "Goldfyre",
-            "Dragontamer",
-            "Pyrefly",
-            "Armorwyrm",
-            "Mountaindweller"
         ]
     },
     "Ancient_Green_Dragon": {
@@ -2901,23 +2510,6 @@ dnd_monsters = {
             "Gold coins",
             "Magical artifacts",
             "Rings, gems, and other jewelry"
-        ],
-        "Race": "Dragon",
-        "Class": "Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Arrnthorr",
-            "Jartek",
-            "Krordrim",
-            "Thunderbreath",
-            "Swamplord"
-        ],
-        "5 Common Last Names": [
-            "Treacharous",
-            "Silvertongue",
-            "Stormwyrm",
-            "Scalebane",
-            "Gladeheart"
         ]
     },
     "Ancient_Red_Dragon": {
@@ -3021,23 +2613,6 @@ dnd_monsters = {
             "Weapons",
             "Armor",
             "Gold coins"
-        ],
-        "Race": "Dragon",
-        "Class": "Monster",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Donamarie",
-            "Sable",
-            "Adair",
-            "Bedivere",
-            "Cordelia"
-        ],
-        "5 Common Last Names": [
-            "Vendirvurth",
-            "Kazdun",
-            "Cullfield",
-            "Tuule",
-            "Stromme"
         ]
     },
     "Ancient_Silver_Dragon": {
@@ -3140,23 +2715,6 @@ dnd_monsters = {
             "Gold and silver coins",
             "Mystical artifacts",
             "Books written in Ancient Silver Dragon tongue"
-        ],
-        "Race": "dragon",
-        "Class": "--",
-        "Size": "gargantuan",
-        "5 Common First Names": [
-            "Kimarah",
-            "Vallant",
-            "Fortuna",
-            "Amaranth",
-            "Calantha"
-        ],
-        "5 Common Last Names": [
-            "Wyrmfang",
-            "Steelhoard",
-            "Fangsilver",
-            "Hollowscale",
-            "Shieldsteel"
         ]
     },
     "Ancient_White_Dragon": {
@@ -3261,23 +2819,6 @@ dnd_monsters = {
             "Ice-Forged Armor",
             "Evercold Ring",
             "Frostweave Robes"
-        ],
-        "Race": "Dragon",
-        "Class": "Magical Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Valkrist",
-            "Valyria",
-            "Yezzan",
-            "Ulfric",
-            "Shela"
-        ],
-        "5 Common Last Names": [
-            "Horrsk",
-            "Kelarr",
-            "Korrsk",
-            "Lacvosk",
-            "Vensk"
         ]
     },
     "Androsphinx": {
@@ -3384,23 +2925,6 @@ dnd_monsters = {
             "Scrolls of Prophecy",
             "Amulets of Clairvoyance",
             "Jeweled Statues of the Androsphinx"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Ajmal",
-            "Bakari",
-            "Khanda",
-            "Kefu",
-            "Ramyar"
-        ],
-        "5 Common Last Names": [
-            "Namad",
-            "Ahmose",
-            "Khashab",
-            "Najib",
-            "Izz-Al-Din"
         ]
     },
     "Animated_Armor": {
@@ -3497,23 +3021,6 @@ dnd_monsters = {
             "Artwork And Other Valuables",
             "Magical Scrolls And Potions",
             "Rare Spell Components"
-        ],
-        "Race": "Construct",
-        "Class": "Medium Construct",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Armordrake",
-            "Adamantknight",
-            "Steelghast",
-            "Stalware",
-            "Chainwraith"
-        ],
-        "5 Common Last Names": [
-            "Hexsteel",
-            "Rivereaper",
-            "Guardworker",
-            "Gauntletbone",
-            "Silverbone"
         ]
     },
     "Ankheg": {
@@ -3601,23 +3108,6 @@ dnd_monsters = {
             "Rare Herbs",
             "Chitin Shards",
             "Magical Items"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Borris",
-            "Irzak",
-            "Ymmyg",
-            "Fenthir",
-            "Aluriak"
-        ],
-        "5 Common Last Names": [
-            "Uluth",
-            "Chasmal",
-            "Uros",
-            "Marza",
-            "Orthuk"
         ]
     },
     "Ankylosaurus": {
@@ -3705,23 +3195,6 @@ dnd_monsters = {
             "Gems & Jewellery",
             "Scrolls & Books",
             "Potion & Elixirs"
-        ],
-        "Race": "Reptile",
-        "Class": "Medium Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Chulayo",
-            "Sankofa",
-            "Tafari",
-            "Chuma",
-            "Aina"
-        ],
-        "5 Common Last Names": [
-            "Monevato",
-            "Dorogo",
-            "Kunala",
-            "Sontina",
-            "Sarima"
         ]
     },
     "Ape": {
@@ -3818,23 +3291,6 @@ dnd_monsters = {
             "Rings",
             "Artefacts",
             "Magical Weapons"
-        ],
-        "Race": "Beast",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Cracko",
-            "Hooey",
-            "Lokee",
-            "Slap",
-            "Taco"
-        ],
-        "5 Common Last Names": [
-            "Apelyon",
-            "Baboon",
-            "Gorillo",
-            "Macaqua",
-            "Simian"
         ]
     },
     "Arcanaloth": {
@@ -3931,23 +3387,6 @@ dnd_monsters = {
             "Potion of Resistance",
             "Scroll of Protection",
             "Amulet of Spell Resistance"
-        ],
-        "Race": "Yugoloth",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Kryoz",
-            "Cidos",
-            "Rithrios",
-            "Valkem",
-            "Kuulos"
-        ],
-        "5 Common Last Names": [
-            "Felltreacher",
-            "Devillustrator",
-            "Lustrae",
-            "Shadowborn",
-            "Helvexis"
         ]
     },
     "Archmage": {
@@ -4051,23 +3490,6 @@ dnd_monsters = {
             "Magical Weapons",
             "Tomes of Knowledge",
             "Trinkets of Power"
-        ],
-        "Race": "Human",
-        "Class": "Wizard",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Jurden",
-            "Emmeline",
-            "Maijun",
-            "Silvera",
-            "Everard"
-        ],
-        "5 Common Last Names": [
-            "Nalistan",
-            "Jansynor",
-            "Rinford",
-            "Draydon",
-            "Rivard"
         ]
     },
     "Assassin": {
@@ -4171,23 +3593,6 @@ dnd_monsters = {
             "Masks or Hoods",
             "Throwing Knives",
             "Climbing Gear"
-        ],
-        "Race": "Humanoid",
-        "Class": "Rogue",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Grim",
-            "Malik",
-            "Mord",
-            "Severus",
-            "Pasha"
-        ],
-        "5 Common Last Names": [
-            "Blackblade",
-            "Bones",
-            "Crow",
-            "Dagger",
-            "Scourge"
         ]
     },
     "Awakened_Shrub": {
@@ -4276,23 +3681,6 @@ dnd_monsters = {
             "Finely Woven Rope",
             "Small Amulet",
             "Scroll of Protection"
-        ],
-        "Race": "Plant",
-        "Class": "Plant",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Bramble",
-            "Thorn",
-            "Root",
-            "Briar",
-            "Vine"
-        ],
-        "5 Common Last Names": [
-            "Sprout",
-            "Leaf",
-            "Bloom",
-            "Sap",
-            "Petal"
         ]
     },
     "Awakened_Tree": {
@@ -4383,23 +3771,6 @@ dnd_monsters = {
             "Lumber",
             "Leather",
             "Coin"
-        ],
-        "Race": "Plant",
-        "Class": "Monstrosity",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Rysilarh",
-            "Myshoje",
-            "Gashteyn",
-            "Ziiol",
-            "Phaerla"
-        ],
-        "5 Common Last Names": [
-            "Shroomkin",
-            "Oakstump",
-            "Rootlar",
-            "Boargrove",
-            "Fungripper"
         ]
     },
     "Axe_Beak": {
@@ -4485,23 +3856,6 @@ dnd_monsters = {
             "Small Animal Pelts",
             "Low Quality Leather",
             "Axe Beak Feathers"
-        ],
-        "Race": "Avian",
-        "Class": "Animal",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Cackle",
-            "Peck",
-            "Screech",
-            "Shriek",
-            "Tikki"
-        ],
-        "5 Common Last Names": [
-            "Beak",
-            "Claw",
-            "Feather",
-            "Gizzard",
-            "Wing"
         ]
     },
     "Azer": {
@@ -4598,23 +3952,6 @@ dnd_monsters = {
             "amber gems",
             "fire arrows",
             "bejeweled brass rods"
-        ],
-        "Race": "Elemental",
-        "Class": "Caster",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Amal",
-            "Durax",
-            "kirviter",
-            "Nostrom",
-            "Zefir"
-        ],
-        "5 Common Last Names": [
-            "Dymethorn",
-            "Griffinhost",
-            "Marzathen",
-            "Razortor",
-            "Soulbend"
         ]
     },
     "Baboon": {
@@ -4703,23 +4040,6 @@ dnd_monsters = {
             "Animal Teeth",
             "Beads",
             "Gems"
-        ],
-        "Race": "Beast",
-        "Class": "N/A",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Teller",
-            "Mander",
-            "Banger",
-            "Danger",
-            "Finger"
-        ],
-        "5 Common Last Names": [
-            "Gibber",
-            "Chatter",
-            "Caper",
-            "Sneer",
-            "Yowl"
         ]
     },
     "Badger": {
@@ -4804,23 +4124,6 @@ dnd_monsters = {
             "Badger teeth",
             "Small amounts of gold and gems",
             "Magical trinkets and other items"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Badger",
-            "Burrow",
-            "Creek",
-            "Digger",
-            "Tunnel"
-        ],
-        "5 Common Last Names": [
-            "Muzzle",
-            "Scratch",
-            "Snout",
-            "Tails",
-            "Whisker"
         ]
     },
     "Balor": {
@@ -4918,23 +4221,6 @@ dnd_monsters = {
             "Magical Artifacts",
             "Vorpal Sword",
             "Rare and Exotic Weapons"
-        ],
-        "Race": "Fiend",
-        "Class": "Demon",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Laskar",
-            "Kahlor",
-            "Haephast",
-            "Agryos",
-            "Darastrix"
-        ],
-        "5 Common Last Names": [
-            "Kriggot",
-            "Kelmri",
-            "Krafnar",
-            "Karshak",
-            "Lorrimer"
         ]
     },
     "Bandit": {
@@ -5029,23 +4315,6 @@ dnd_monsters = {
             "Weapons and Armor",
             "magical Items",
             "Rare Books or Writings"
-        ],
-        "Race": "Human",
-        "Class": "Rogue",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Burt",
-            "John",
-            "Al",
-            "Mick",
-            "Jake"
-        ],
-        "5 Common Last Names": [
-            "Duckworth",
-            "Shrewd",
-            "Kidd",
-            "McGoldrick",
-            "Cutpurse"
         ]
     },
     "Bandit_Captain": {
@@ -5146,23 +4415,6 @@ dnd_monsters = {
             "Jewelry",
             "Silverware",
             "Spices"
-        ],
-        "Race": "Human",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Jed",
-            "Harley",
-            "Jade",
-            "Chastity",
-            "Brigette"
-        ],
-        "5 Common Last Names": [
-            "Sharpe",
-            "Rivera",
-            "Fletcher",
-            "Blackman",
-            "Hayes"
         ]
     },
     "Banshee": {
@@ -5256,23 +4508,6 @@ dnd_monsters = {
             "Potion of Healing",
             "Scrolls",
             "Magic Weapons"
-        ],
-        "Race": "Fey",
-        "Class": "Undead",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Doireann",
-            "Maire",
-            "Dysania",
-            "Aoife",
-            "Caitee"
-        ],
-        "5 Common Last Names": [
-            "Blazhevich",
-            "Vieites",
-            "Stirone",
-            "Rigantona",
-            "Karuna"
         ]
     },
     "Barbed_Devil": {
@@ -5374,23 +4609,6 @@ dnd_monsters = {
             "Magical items",
             "Gold coins",
             "Art Objects"
-        ],
-        "Race": "Devil",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Lempo",
-            "Kontio",
-            "Perkele",
-            "Tonttu",
-            "Tupris"
-        ],
-        "5 Common Last Names": [
-            "Zogoth",
-            "Azerage",
-            "Gravnine",
-            "Sporlawl",
-            "Exzifges"
         ]
     },
     "Barlgura": {
@@ -5488,23 +4706,6 @@ dnd_monsters = {
             "Large pieces of raw meat or fur",
             "Dark artifacts",
             "Ancient scrolls"
-        ],
-        "Race": "Demon",
-        "Class": "Fiend",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Gorrum",
-            "Kurzol",
-            "Roam",
-            "Xailomar",
-            "Yernork"
-        ],
-        "5 Common Last Names": [
-            "Kulgrath",
-            "Mumrith",
-            "Storrim",
-            "Urbidonk",
-            "Verrish"
         ]
     },
     "Basilisk": {
@@ -5581,23 +4782,6 @@ dnd_monsters = {
             "Magical Potions",
             "Rare Herbs",
             "Spinal Fluids"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ceratus",
-            "Vulcana",
-            "Vitulus",
-            "Iceran",
-            "Gulgareth"
-        ],
-        "5 Common Last Names": [
-            "Jormugar",
-            "Mazzranache",
-            "Kleethos",
-            "Graaliik",
-            "Azkalar"
         ]
     },
     "Bat": {
@@ -5686,23 +4870,6 @@ dnd_monsters = {
             "Insects/insect parts",
             "Small animal carcass parts",
             "Small amounts of coins"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Flitter",
-            "Screech",
-            "Wing",
-            "Fang",
-            "Scratch"
-        ],
-        "5 Common Last Names": [
-            "Batwing",
-            "Fang",
-            "Batbolt",
-            "Flitterfleet",
-            "Sharpstone"
         ]
     },
     "Bearded_Devil": {
@@ -5806,23 +4973,6 @@ dnd_monsters = {
             "Silver Coins",
             "Gemstones",
             "Plate Mail Armor"
-        ],
-        "Race": "Devil",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Mammon",
-            "Bel",
-            "Geryon",
-            "Amy",
-            "Amon"
-        ],
-        "5 Common Last Names": [
-            "Mephistopheles",
-            "Beelzebub",
-            "Asmodeus",
-            "Belial",
-            "Azazel"
         ]
     },
     "Behir": {
@@ -5912,23 +5062,6 @@ dnd_monsters = {
             "Magic weapons",
             "Magic items",
             "Art objects"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Vaiqes",
-            "Xazom",
-            "Irqest",
-            "Gavqen",
-            "Prhrust"
-        ],
-        "5 Common Last Names": [
-            "Scalefender",
-            "Fangbreaker",
-            "Shimmerdarter",
-            "Skystrider",
-            "Stormhunter"
         ]
     },
     "Beholder": {
@@ -6025,23 +5158,6 @@ dnd_monsters = {
             "Magic Items",
             "Magical Weapons",
             "Miscellaneous Artifacts"
-        ],
-        "Race": "Aberration",
-        "Class": "None",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Eylzi",
-            "Gzor",
-            "Kryhg",
-            "Qazsh",
-            "Zooto"
-        ],
-        "5 Common Last Names": [
-            "Redtentacle",
-            "Cyclopsmane",
-            "Spinehorn",
-            "Eyehook",
-            "Eyelessring"
         ]
     },
     "Beholder_Zombie": {
@@ -6132,23 +5248,6 @@ dnd_monsters = {
             "Gems and jewelry",
             "Magical artifacts",
             "Scrolls of powerful magic"
-        ],
-        "Race": "Undead",
-        "Class": "Zombie types",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Lazorus",
-            "Icchan",
-            "Carlescia",
-            "Azarudar",
-            "Kezam"
-        ],
-        "5 Common Last Names": [
-            "Starear",
-            "Gazulnaught",
-            "Stabskull",
-            "Horrorstar",
-            "Tentaeye"
         ]
     },
     "Berserker": {
@@ -6244,23 +5343,6 @@ dnd_monsters = {
             "Magic weapons",
             "Magic armor",
             "Magical scrolls"
-        ],
-        "Race": "Humanoid",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ulfbar",
-            "Drengarr",
-            "Anderr",
-            "Brynri",
-            "Hakon"
-        ],
-        "5 Common Last Names": [
-            "Ironfist",
-            "Frostbeard",
-            "Firehand",
-            "Thegn",
-            "Berserkir"
         ]
     },
     "Black_Bear": {
@@ -6354,23 +5436,6 @@ dnd_monsters = {
             "Black bear teeth",
             "Black bear berry preserves",
             "Mushrooms and nuts gathered by the black bear"
-        ],
-        "Race": "Beast",
-        "Class": "Animal",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Mog",
-            "Bruin",
-            "Grumble",
-            "Muckle",
-            "Ursos"
-        ],
-        "5 Common Last Names": [
-            "Cubsack",
-            "Rootclaws",
-            "Longtooth",
-            "Clawhame",
-            "Greyfur"
         ]
     },
     "Black_Dragon_Wyrmling": {
@@ -6467,23 +5532,6 @@ dnd_monsters = {
             "Magical relics",
             "Elixir of life",
             "Weapons and armor"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Gem",
-            "Ash",
-            "Riga",
-            "Claw",
-            "Ryker"
-        ],
-        "5 Common Last Names": [
-            "Streaks",
-            "Scale",
-            "Tail",
-            "Hover",
-            "Wings"
         ]
     },
     "Black_Pudding": {
@@ -6575,23 +5623,6 @@ dnd_monsters = {
             "Potions",
             "Gems",
             "Gold coins"
-        ],
-        "Race": "Amorphous Aberration",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Sluggy",
-            "Glock",
-            "Gelmoriah",
-            "Icy",
-            "Tentacus"
-        ],
-        "5 Common Last Names": [
-            "Fluidgore",
-            "Lakenscope",
-            "Slickreap",
-            "Venomseed",
-            "Plaguegrip"
         ]
     },
     "Blink_Dog": {
@@ -6679,23 +5710,6 @@ dnd_monsters = {
             "Fey whistle necklace",
             "Teleportation Ring",
             "Yttrium Eye-of-Teleportation Shard"
-        ],
-        "Race": "Fey",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Razer",
-            "Barker",
-            "Flash",
-            "Arf",
-            "Bristle"
-        ],
-        "5 Common Last Names": [
-            "Whisker",
-            "Boulder",
-            "Bow",
-            "Tail",
-            "Fang"
         ]
     },
     "Blood_Hawk": {
@@ -6786,23 +5800,6 @@ dnd_monsters = {
             "Art objects",
             "Magic feathers",
             "Magical artifacts"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Gorp",
-            "Talon",
-            "Claw",
-            "Fang",
-            "Screech"
-        ],
-        "5 Common Last Names": [
-            "Flyer",
-            "Soar",
-            "Dive",
-            "Hunter",
-            "Scout"
         ]
     },
     "Blue_Dragon_Wyrmling": {
@@ -6905,23 +5902,6 @@ dnd_monsters = {
             "Frostmaul Weapons",
             "Ice Elementium",
             "Scrolls of the Cold Wind"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Azaghal",
-            "Churka",
-            "Kershka",
-            "Malkazarn",
-            "Tiamat"
-        ],
-        "5 Common Last Names": [
-            "Linnormgut",
-            "Einhander",
-            "Nippytail",
-            "Herpesscalp",
-            "Murkbringer"
         ]
     },
     "Blue_Slaad": {
@@ -7007,23 +5987,6 @@ dnd_monsters = {
             "Tooth of the Slaad",
             "Amulet of Greed",
             "Unstable Limestone of Chaos"
-        ],
-        "Race": "Slaad",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Klevoh",
-            "Kokskrak",
-            "Golaar",
-            "Kelthok",
-            "Hool"
-        ],
-        "5 Common Last Names": [
-            "Pazobut",
-            "Zloglaar",
-            "Synnasoab",
-            "Fomkov",
-            "Ibux"
         ]
     },
     "Boar": {
@@ -7115,23 +6078,6 @@ dnd_monsters = {
             "Boar Meat",
             "Boar Claw",
             "Boar Ivy Leaf"
-        ],
-        "Race": "Beast",
-        "Class": "Wild Boar",
-        "Size": "Medium",
-        "5 Common First Names Specific Of This Monster": [
-            "Grunter",
-            "Sawtusk",
-            "Snuffle",
-            "Snort",
-            "Tusk"
-        ],
-        "5 Common Last Names": [
-            "Bristlerun",
-            "Clovenhoof",
-            "Tusk",
-            "Tusksnort",
-            "Tusktracker"
         ]
     },
     "Bone_Devil": {
@@ -7231,23 +6177,6 @@ dnd_monsters = {
             "Lamiae eyes",
             "Demonhide armor",
             "Wandermaw blades"
-        ],
-        "Race": "Devil",
-        "Class": "Fiend",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Morthos",
-            "Andros",
-            "Vorvis",
-            "Tavalak",
-            "Arazni"
-        ],
-        "5 Common Last Names": [
-            "Krosis",
-            "Barakas",
-            "Thoxus",
-            "Sthenelon",
-            "Lamareth"
         ]
     },
     "Bone_Naga": {
@@ -7337,23 +6266,6 @@ dnd_monsters = {
             "Soul-filled Crystal",
             "Mysterious Skull",
             "Glow-in-the-Dark Bones"
-        ],
-        "Race": "Undead",
-        "Class": "Monster",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Donor",
-            "Kharn",
-            "Banshee",
-            "Kaal",
-            "Tish"
-        ],
-        "5 Common Last Names": [
-            "Coldkin",
-            "Omhroth",
-            "Silenius",
-            "Polymath",
-            "Drudgeon"
         ]
     },
     "Brass_Dragon_Wyrmling": {
@@ -7442,23 +6354,6 @@ dnd_monsters = {
             "Gems",
             "Jewelry",
             "Artifacts"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Azaza",
-            "Daladith",
-            "Heskel",
-            "Kalek",
-            "Vinuth"
-        ],
-        "5 Common Last Names": [
-            "Goldsun",
-            "Mountainpeak",
-            "Silverscales",
-            "Skyroar",
-            "Starbreak"
         ]
     },
     "Bronze_Dragon_Wyrmling": {
@@ -7559,23 +6454,6 @@ dnd_monsters = {
             "Magic Weapons",
             "Magical Artifacts",
             "Legendary Relics"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Bahet",
-            "Cazul",
-            "Fantor",
-            "Oria",
-            "Sandar"
-        ],
-        "5 Common Last Names": [
-            "Azzir",
-            "Gor",
-            "Mordam",
-            "Shizar",
-            "Tolmor"
         ]
     },
     "Brown_Bear": {
@@ -7666,23 +6544,6 @@ dnd_monsters = {
             "Small teeth",
             "Berries",
             "Fish remains"
-        ],
-        "Race": "Beast",
-        "Class": "Mammal",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Berry",
-            "Judy",
-            "Flynn",
-            "Chester",
-            "\u200dUrsa"
-        ],
-        "5 Common Last Names": [
-            "Grizzly",
-            "Shaggy",
-            "Honey",
-            "Coastal",
-            "Mountain"
         ]
     },
     "Bugbear": {
@@ -7778,23 +6639,6 @@ dnd_monsters = {
             "Tarnished armor",
             "Curious trinkets",
             "Magical artifacts"
-        ],
-        "Race": "Humanoid",
-        "Class": "Warrior",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Grug",
-            "Graul",
-            "Otgrug",
-            "Sog",
-            "Urdruk"
-        ],
-        "5 Common Last Names": [
-            "Thistlehorn",
-            "Frothinater",
-            "Blackspine",
-            "Rumblepit",
-            "Foulswill"
         ]
     },
     "Bugbear_Chief": {
@@ -7888,23 +6732,6 @@ dnd_monsters = {
             "Magical Items",
             "Potions",
             "Scrolls"
-        ],
-        "Race": "Bugbear",
-        "Class": "Leader",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Grak",
-            "Hragk",
-            "Krak",
-            "Vragk",
-            "Yragk"
-        ],
-        "5 Common Last Names": [
-            "Barkelbow",
-            "Brokenbrow",
-            "Mournshield",
-            "Sparkhollow",
-            "Wildhelm"
         ]
     },
     "Bulette": {
@@ -7994,23 +6821,6 @@ dnd_monsters = {
             "Gems",
             "Coins",
             "Magical Items"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Truckle",
-            "Mordecai",
-            "Percival",
-            "Zaphod",
-            "Beleth"
-        ],
-        "5 Common Last Names": [
-            "Clawgut",
-            "Thresher",
-            "Terrordoom",
-            "VMcCreep",
-            "Terrafang"
         ]
     },
     "Bullywug": {
@@ -8111,23 +6921,6 @@ dnd_monsters = {
             "Salvaged weapons and armor",
             "Food and supplies",
             "Mystical Ingredients"
-        ],
-        "Race": "Reptilian",
-        "Class": "Humanoid",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Dringlo",
-            "Gimbu",
-            "Hanlo",
-            "Tillic",
-            "Vulmug"
-        ],
-        "5 Common Last Names": [
-            "Umpaindle",
-            "Uloragath",
-            "Grintok",
-            "Pashana",
-            "Lurpraunt"
         ]
     },
     "Cambion": {
@@ -8232,23 +7025,6 @@ dnd_monsters = {
             "Amulets or Charms (providing protection or enhancing abilities)",
             "Treasure Hoard (coins, gems, valuable trinkets)",
             "Infernal Knowledge (tomes, scrolls with infernal rituals and secrets)"
-        ],
-        "Race": "Fiend",
-        "Class": "Humanoid",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Azazel",
-            "Baalphegor",
-            "Belial",
-            "Belphegor",
-            "Beelzebub"
-        ],
-        "5 Common Last Names": [
-            "D'Vorvan",
-            "Despana",
-            "Galdrum",
-            "Voligstod",
-            "Zsampley"
         ]
     },
     "Camel": {
@@ -8337,23 +7113,6 @@ dnd_monsters = {
             "Animal Bones",
             "Animal Teeth",
             "Animal Fur"
-        ],
-        "Race": "Animal",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Al",
-            "Curt",
-            "Willa",
-            "Rick",
-            "Rico"
-        ],
-        "5 Common Last Names": [
-            "Watts",
-            "Hoover",
-            "Gentry",
-            "Tucker",
-            "Hudson"
         ]
     },
     "Carrion_Crawler": {
@@ -8439,23 +7198,6 @@ dnd_monsters = {
             "Silver Coin",
             "Gemstone",
             "Scroll of Protection"
-        ],
-        "Race": "Aberration",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Hessk'K",
-            "Pussk'd",
-            "Kesssk'd",
-            "Tassk'd",
-            "Dussk'd"
-        ],
-        "5 Common Last Names": [
-            "Kesss",
-            "Tisss",
-            "Lasss",
-            "Kasss",
-            "Gusss"
         ]
     },
     "Cat": {
@@ -8544,23 +7286,6 @@ dnd_monsters = {
             "Small mammal skulls",
             "Pieces of wool",
             "Catnip"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Charles",
-            "Mittens",
-            "Felix",
-            "Garfield",
-            "Morris"
-        ],
-        "5 Common Last Names": [
-            "Paws",
-            "Meow",
-            "Whiskers",
-            "Furr",
-            "Purr"
         ]
     },
     "Centaur": {
@@ -8661,23 +7386,6 @@ dnd_monsters = {
             "Hide boots",
             "Scale armor pieces",
             "Tribal items"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Galloping Combatant",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Apelios",
-            "Videnos",
-            "Heraeles",
-            "Logous",
-            "Aristaios"
-        ],
-        "5 Common Last Names": [
-            "Axilonus",
-            "Oronthas",
-            "Thothesos",
-            "Elaros",
-            "Hippomanes"
         ]
     },
     "Chain_Devil": {
@@ -8780,23 +7488,6 @@ dnd_monsters = {
             "Scrolls",
             "Wands",
             "Magical Artifacts"
-        ],
-        "Race": "Devil",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Pyro",
-            "Klinker",
-            "Edzel",
-            "Ymenek",
-            "Drozd"
-        ],
-        "5 Common Last Names": [
-            "Khemme",
-            "Crackbinder",
-            "Spearman",
-            "Fetterwright",
-            "Fetter-Smith/Fetter-Smyth"
         ]
     },
     "Chasme": {
@@ -8890,23 +7581,6 @@ dnd_monsters = {
             "Magical Artifacts",
             "Weapons and Armor",
             "Potions and Scrolls"
-        ],
-        "Race": "Demon",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Mephistopheles",
-            "Barbas",
-            "Leraje",
-            "Vapula",
-            "Decarabia"
-        ],
-        "5 Common Last Names": [
-            "Gargouille",
-            "Beelzebub",
-            "Smoothtalker",
-            "Thornback",
-            "Nightcaller"
         ]
     },
     "Chimera": {
@@ -8998,23 +7672,6 @@ dnd_monsters = {
             "Dragon Fang Necklace",
             "Gilded Lion Boot",
             "Cheetah Skin Belt"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Uemar",
-            "Okaar",
-            "Maram",
-            "Maelar",
-            "Roele"
-        ],
-        "5 Common Last Names": [
-            "Alkyon",
-            "Oinaea",
-            "Sido",
-            "Tigris",
-            "Lynges"
         ]
     },
     "Chuul": {
@@ -9108,23 +7765,6 @@ dnd_monsters = {
             "Gold coins",
             "Silver coins",
             "Aquatic trinkets"
-        ],
-        "Race": "Aberration",
-        "Class": "Large Aberration",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Rhump",
-            "Khamar",
-            "Yangal",
-            "Khass",
-            "Izza"
-        ],
-        "5 Common Last Names": [
-            "Sozzenar",
-            "Hoodshrike",
-            "Clomring",
-            "Jaaruskor",
-            "Krusshrak"
         ]
     },
     "Clay_Golem": {
@@ -9222,23 +7862,6 @@ dnd_monsters = {
             "Crudely Made Clay Armor",
             "Magical Weapons",
             "Magical Scrolls"
-        ],
-        "Race": "Construct",
-        "Class": "Golem",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Rock",
-            "Mud",
-            "Stone",
-            "Sand",
-            "Ceramic"
-        ],
-        "5 Common Last Names": [
-            "Sculpture",
-            "Totem",
-            "Clay",
-            "Statue",
-            "Artifice"
         ]
     },
     "Cloaker": {
@@ -9337,23 +7960,6 @@ dnd_monsters = {
             "Magic items",
             "Scrolls",
             "Potions"
-        ],
-        "Race": "Aberration",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Kraa",
-            "Dusk",
-            "Moath",
-            "Vhalt",
-            "Ghail"
-        ],
-        "5 Common Last Names": [
-            "Salvare",
-            "Unhallo",
-            "Tselest",
-            "Forskor",
-            "Anask"
         ]
     },
     "Cloud_Giant": {
@@ -9452,23 +8058,6 @@ dnd_monsters = {
             "Potions of healing",
             "Scrolls of summoning",
             "Runes of power"
-        ],
-        "Race": "giant",
-        "Class": "none",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Tosty",
-            "Heward",
-            "Kelby",
-            "Dillon",
-            "Illa"
-        ],
-        "5 Common Last Names": [
-            "Stormhaps",
-            "Mudonshield",
-            "Skyrist",
-            "Thundersplitter",
-            "Windrider"
         ]
     },
     "Cockatrice": {
@@ -9553,23 +8142,6 @@ dnd_monsters = {
             "Potions of Invulnerability",
             "Magical Weapons",
             "Rare Gems"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Kert",
-            "Bobb",
-            "Gob",
-            "Fenvil",
-            "Jal"
-        ],
-        "5 Common Last Names": [
-            "Grackle",
-            "Tailor",
-            "Cockrell",
-            "Featherstrut",
-            "RootWalker"
         ]
     },
     "Commoner": {
@@ -9652,23 +8224,6 @@ dnd_monsters = {
             "Simple Weapons and Tools",
             "Household Goods and Supplies",
             "Clothes and Linens"
-        ],
-        "Race": "Human",
-        "Class": "Villager",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "John",
-            "Jane",
-            "Jack",
-            "Mary",
-            "Fred"
-        ],
-        "5 Common Last Names": [
-            "Smith",
-            "Johnson",
-            "Williams",
-            "Brown",
-            "Jones"
         ]
     },
     "Constrictor_Snake": {
@@ -9744,23 +8299,6 @@ dnd_monsters = {
             "Jewelry",
             "Magic potions",
             "Amulets"
-        ],
-        "Race": "Reptile",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Hoel",
-            "Uduv",
-            "Sirac",
-            "Mirim",
-            "Bialon"
-        ],
-        "5 Common Last Names": [
-            "Shed-Skin",
-            "Constant-Coil",
-            "Smooth-Scale",
-            "Heavy-Belly",
-            "Sand-Biter"
         ]
     },
     "Copper_Dragon_Wyrmling": {
@@ -9861,23 +8399,6 @@ dnd_monsters = {
             "Magical items such as wands, magic armor, and spells",
             "Wyvern-shaped figurines made of copper plated gold",
             "Large copper barrels"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Aloest",
-            "Fort",
-            "Kuren",
-            "Orri",
-            "Sihr"
-        ],
-        "5 Common Last Names": [
-            "Astraacher",
-            "Poxfinder",
-            "Resourcemonger",
-            "Scopp",
-            "Troubleshaper"
         ]
     },
     "Couatl": {
@@ -9978,23 +8499,6 @@ dnd_monsters = {
             "Runes",
             "Gold",
             "Rare Herbs"
-        ],
-        "Race": "Celestial",
-        "Class": "Celestial",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Iuhax",
-            "Uyanh",
-            "Yaxil",
-            "Ouxul",
-            "Pephl"
-        ],
-        "5 Common Last Names": [
-            "Xuyca",
-            "Rancun",
-            "Tuzah",
-            "Oxtal",
-            "Pechen"
         ]
     },
     "Crab": {
@@ -10084,23 +8588,6 @@ dnd_monsters = {
             "Coral chunks",
             "Limpets",
             "Bezoar stones"
-        ],
-        "Race": "Beast",
-        "Class": "Aquatic Creature",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Snap",
-            "Claw",
-            "Shell",
-            "Chatter",
-            "Scuttle"
-        ],
-        "5 Common Last Names": [
-            "Pincer",
-            "Crusher",
-            "Dragger",
-            "Grasper",
-            "Clawer"
         ]
     },
     "Crawling_Claw": {
@@ -10193,23 +8680,6 @@ dnd_monsters = {
             "Gems",
             "Magical Items",
             "Artifacts"
-        ],
-        "Race": " Construct",
-        "Class": "Undead",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Clawly",
-            "Scrappy",
-            "Ratty",
-            "Grabby",
-            "Sticky"
-        ],
-        "5 Common Last Names": [
-            "Crawler",
-            "Scrapper",
-            "Rattler",
-            "Grabbers",
-            "Stickler"
         ]
     },
     "Crocodile": {
@@ -10306,23 +8776,6 @@ dnd_monsters = {
             "Gems",
             "Armor",
             "Weapons"
-        ],
-        "Race": "Beast",
-        "Class": "N/A",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Gator",
-            "Sly",
-            "Basil",
-            "Croak",
-            "Mud"
-        ],
-        "5 Common Last Names": [
-            "Hunter",
-            "Croc",
-            "Jaws",
-            "Tooth",
-            "Reef"
         ]
     },
     "Cult_Fanatic": {
@@ -10424,23 +8877,6 @@ dnd_monsters = {
             "Precious gems",
             "Rare books",
             "Magical artifacts"
-        ],
-        "Race": "Humanoid",
-        "Class": "Cleric",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Rikon",
-            "Yamah",
-            "Iorwa",
-            "Adster",
-            "Farnio"
-        ],
-        "5 Common Last Names": [
-            "Ravenblood",
-            "Sunbright",
-            "Lantern",
-            "Skycaller",
-            "Shadowweaver"
         ]
     },
     "Cultist": {
@@ -10540,23 +8976,6 @@ dnd_monsters = {
             "Enchanted weapons and armor",
             "Precious gems and stones",
             "Magical artifacts and potions"
-        ],
-        "Race": "Humanoid",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Furmorg",
-            "Morbel",
-            "Gorbet",
-            "Urgorn",
-            "Lorgen"
-        ],
-        "5 Common Last Names": [
-            "Yishgar",
-            "Novgor",
-            "Schwamme",
-            "Semmow",
-            "Grevleck"
         ]
     },
     "Cyclops": {
@@ -10651,23 +9070,6 @@ dnd_monsters = {
             "Gem",
             "Amulet",
             "Potion of Strength"
-        ],
-        "Race": "Giant",
-        "Class": "Barbarian",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Bruuk",
-            "Cragnor",
-            "Kran",
-            "Thokk",
-            "Varr"
-        ],
-        "5 Common Last Names": [
-            "Cloudsplitter",
-            "Earthshaker",
-            "Stormbreaker",
-            "Thunderborn",
-            "Windcaller"
         ]
     },
     "Dao": {
@@ -10763,23 +9165,6 @@ dnd_monsters = {
             "Arcane foci",
             "Gold coins",
             "Earth or stone statues"
-        ],
-        "Race": "Elemental",
-        "Class": "Greater Elemental",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Hang",
-            "Ze",
-            "Kang",
-            "Shan",
-            "Lan"
-        ],
-        "5 Common Last Names": [
-            "Bahamir",
-            "Dreus",
-            "Geshai",
-            "Janaz",
-            "Ursen"
         ]
     },
     "Darkmantle": {
@@ -10872,23 +9257,6 @@ dnd_monsters = {
             "Magical Artifacts",
             "Rare Herbs",
             "Potions of Healing"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Aberration",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Shrike",
-            "Krohan",
-            "Fallo",
-            "Italor",
-            "Arohk"
-        ],
-        "5 Common Last Names": [
-            "Stoneshadow",
-            "Darkfall",
-            "Tunnelshriek",
-            "Underdeep",
-            "Cuttungeons"
         ]
     },
     "Death_Dog": {
@@ -10983,23 +9351,6 @@ dnd_monsters = {
             "Spears",
             "Potions",
             "Wands"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Akezar",
-            "Eagran",
-            "Hacome",
-            "Kroma",
-            "Murjak"
-        ],
-        "5 Common Last Names": [
-            "Nispar",
-            "Ahatmah",
-            "Fhurdyk",
-            "Eep lag",
-            "Yithoo"
         ]
     },
     "Death_Knight": {
@@ -11102,23 +9453,6 @@ dnd_monsters = {
             "Scrolls of Protection",
             "Tome of Necromancy",
             "Rune-inscribed Armor"
-        ],
-        "Race": "Undead",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Eugord",
-            "Feramus",
-            "Iathrax",
-            "Khaloros",
-            "Ravon"
-        ],
-        "5 Common Last Names": [
-            "Argentblade",
-            "Deathbringer",
-            "Darkfury",
-            "Fellrider",
-            "Winchester"
         ]
     },
     "Death_Slaad": {
@@ -11212,23 +9546,6 @@ dnd_monsters = {
             "Gems and jewelry",
             "Loot collected from fallen enemies",
             "Immortalized remains of fiends or creatures they've slain"
-        ],
-        "Race": "aberration",
-        "Class": "none",
-        "Size": "large",
-        "5 Common First Names": [
-            "Ggorothh",
-            "Chaax",
-            "Syyke",
-            "Throgx",
-            "Munnega"
-        ],
-        "5 Common Last Names": [
-            "Kizgraak",
-            "Fhrintun",
-            "Throcktt",
-            "Larkiron",
-            "Temkaarg"
         ]
     },
     "Death_Tyrant": {
@@ -11406,23 +9723,6 @@ dnd_monsters = {
             "Smoked venison jerky",
             "Deer bone tools",
             "Rare antlers"
-        ],
-        "Race": "Beast",
-        "Class": "Acephalous",
-        "Size": "Small/Medium",
-        "5 Common First Names": [
-            "Frieda",
-            "Mae",
-            "Dewy",
-            "Leafy",
-            "andria"
-        ],
-        "5 Common Last Names": [
-            "Spottedtail",
-            "Boundinglegs",
-            "Prancinghooves",
-            "Silvertine",
-            "Whiteheart"
         ]
     },
     "Demilich": {
@@ -11516,23 +9816,6 @@ dnd_monsters = {
             "Scrolls of Invulnerability",
             "Soul Stones",
             "Undead Curses"
-        ],
-        "Race": "Undead",
-        "Class": "Lich",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Akoron",
-            "Fyllijan",
-            "Jannalor",
-            "Mortrook",
-            "Vostelok"
-        ],
-        "5 Common Last Names": [
-            "Evershard",
-            "Hailwarp",
-            "Screamshield",
-            "Spinewail",
-            "Treader"
         ]
     },
     "Deva": {
@@ -11634,23 +9917,6 @@ dnd_monsters = {
             "Vials of Holy water",
             "Diamond dust",
             "Holy symbols"
-        ],
-        "Race": "Celestial",
-        "Class": "Cleric",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ura",
-            "Amin",
-            "Meja",
-            "Nehebkau",
-            "Anhur"
-        ],
-        "5 Common Last Names": [
-            "Fandora",
-            "Chekecha",
-            "Sirantha",
-            "Umaethon",
-            "Xanothos"
         ]
     },
     "Dire_Wolf": {
@@ -11739,23 +10005,6 @@ dnd_monsters = {
             "Pelt of the Dire Wolf",
             "Knowledge of the Hunting Pack",
             "Heart of the Wolf"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Fang",
-            "Howl",
-            "Grey",
-            "White",
-            "Shadow"
-        ],
-        "5 Common Last Names": [
-            "Hunter",
-            "Runner",
-            "Chaser",
-            "Killer",
-            "Rogue"
         ]
     },
     "Displacer_Beast": {
@@ -11845,23 +10094,6 @@ dnd_monsters = {
             "Rare Herbs",
             "Alchemical Ingredients",
             "Magical Furs"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Mysti",
-            "Warai",
-            "Kasso",
-            "Korgus",
-            "Kragus"
-        ],
-        "5 Common Last Names": [
-            "Starfang",
-            "Furryhide",
-            "Grassfur",
-            "Blossomhorn",
-            "Plainspaw"
         ]
     },
     "Djinni": {
@@ -11964,23 +10196,6 @@ dnd_monsters = {
             "Scrolls",
             "Runes",
             "Crystals"
-        ],
-        "Race": "Genie",
-        "Class": "Elemental",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Marid",
-            "Raqim",
-            "Efreet",
-            "Jann",
-            "Ghul"
-        ],
-        "5 Common Last Names": [
-            "Demaan",
-            "Aamir",
-            "Salaam",
-            "Rameed",
-            "Dahab"
         ]
     },
     "Doppelganger": {
@@ -12063,23 +10278,6 @@ dnd_monsters = {
             "Magical Weapons",
             "Magical Armor",
             "Rare Artifacts"
-        ],
-        "Race": "Shapechanger",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Bryn",
-            "Lora",
-            "Arno",
-            "Carold",
-            "Jovic"
-        ],
-        "5 Common Last Names": [
-            "Dramme",
-            "Kendings",
-            "Ganner",
-            "Stryzal",
-            "Veeck"
         ]
     },
     "Draft_Horse": {
@@ -12175,23 +10373,6 @@ dnd_monsters = {
             "Gold Coins",
             "Pearls",
             "Gems"
-        ],
-        "Race": "Equine",
-        "Class": "Animal",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Suzy",
-            "Alyonka",
-            "Duchess",
-            "Jasper",
-            "Orca"
-        ],
-        "5 Common Last Names": [
-            "Champion",
-            "MacArthur",
-            "Pippin",
-            "Speedster",
-            "Dasher"
         ]
     },
     "Dragon_Turtle": {
@@ -12285,23 +10466,6 @@ dnd_monsters = {
             "Gold Coins",
             "Silver Coins",
             "Gemstones"
-        ],
-        "Race": "Dragon",
-        "Class": "Reptile",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Ebere",
-            "Neikko",
-            "Faruvi",
-            "Vaine",
-            "Turiu"
-        ],
-        "5 Common Last Names": [
-            "Dragtortle",
-            "Turttlesaur",
-            "Turtletank",
-            "Shellomp",
-            "Behemourse"
         ]
     },
     "Dretch": {
@@ -12397,23 +10561,6 @@ dnd_monsters = {
             "Weapons",
             "Magical items",
             "Jewelry"
-        ],
-        "Race": "Fiend",
-        "Class": "Demon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Nurgal",
-            "Thasog",
-            "Maragtuta",
-            "Otgloig",
-            "Il-Shokasah"
-        ],
-        "5 Common Last Names": [
-            "Joyshriek",
-            "Cellarwheezer",
-            "Fleshlurker",
-            "Consumeblood",
-            "Screamtongue"
         ]
     },
     "Drider": {
@@ -12523,23 +10670,6 @@ dnd_monsters = {
             "Magical Wands/Items",
             "Gems and Coins",
             "Magic Weapons and Armor"
-        ],
-        "Race": "Aberration",
-        "Class": "Monstrous Creature",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Gressill",
-            "Telthir",
-            "Sruss",
-            "Hriek",
-            "Chs'uthpillar"
-        ],
-        "5 Common Last Names": [
-            "Meiromph",
-            "Thraxxaril",
-            "Clautharic",
-            "Holosuth",
-            "Xailiikin"
         ]
     },
     "Drow": {
@@ -12642,23 +10772,6 @@ dnd_monsters = {
             "Daggers of venom",
             "Rings of protection",
             "Sacrifices to Lolth"
-        ],
-        "Race": "Elf",
-        "Class": "Humanoid",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Sharlotta",
-            "Daffid",
-            "Jorlan",
-            "Dorella",
-            "Vesz'aun"
-        ],
-        "5 Common Last Names": [
-            "Kbanon",
-            "Kethzun",
-            "Mizzrym",
-            "Vir Reynolds",
-            "Zilvreen"
         ]
     },
     "Drow_Elite_Warrior": {
@@ -12760,23 +10873,6 @@ dnd_monsters = {
             "Crossbow",
             "Scrolls of Protection",
             "Leather Armor"
-        ],
-        "Race": "Drow",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Maladom",
-            "Sildar",
-            "Zalantar",
-            "Vinin",
-            "Beldar"
-        ],
-        "5 Common Last Names": [
-            "Dhaevizn",
-            "Paeliir",
-            "Tzarrin",
-            "Phaervor",
-            "Auvryn"
         ]
     },
     "Drow_Mage": {
@@ -12875,23 +10971,6 @@ dnd_monsters = {
             "Scrolls of Divination",
             "Wands of Power",
             "Daggers of Disruption"
-        ],
-        "Race": "Elf (Drow)",
-        "Class": "Spellcaster",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ildrann",
-            "Lialdhra",
-            "Gauthix",
-            "Vaela",
-            "Trelana"
-        ],
-        "5 Common Last Names": [
-            "Xuterrt",
-            "Gelhirr",
-            "Ghinn",
-            "Yharim",
-            "Follasti"
         ]
     },
     "Drow_Priestess_of_Lolth": {
@@ -12989,23 +11068,6 @@ dnd_monsters = {
             "Enchanted weapons",
             "Dark totems of Lolth",
             "Scrolls of dark knowledge"
-        ],
-        "Race": "Drow",
-        "Class": "Cleric",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Tari",
-            "Riz'tan",
-            "Nivv",
-            "Kivvi",
-            "Amin"
-        ],
-        "5 Common Last Names": [
-            "T'Luareth",
-            "Numbers",
-            "Uthestra",
-            "Vadra",
-            "Maeh'rith"
         ]
     },
     "Druid": {
@@ -13101,23 +11163,6 @@ dnd_monsters = {
             "Magical scrolls and tomes",
             "Magical weapons and armor",
             "Gems or jewelry"
-        ],
-        "Race": "Humanoid",
-        "Class": "Cleric, Ranger or Wizard",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Olavn",
-            "Elinora",
-            "Sara",
-            "Dale",
-            "Eluned"
-        ],
-        "5 Common Last Names": [
-            "Merrowloch",
-            "Geyer",
-            "Treyford",
-            "Roe",
-            "Hayes"
         ]
     },
     "Dryad": {
@@ -13214,23 +11259,6 @@ dnd_monsters = {
             "Vial of Liquid Amber",
             "Bag of Fae Dust",
             "Songbird Feather"
-        ],
-        "Race": "Fey",
-        "Class": "N/A",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Tiana",
-            "Dryandra",
-            "Kalani",
-            "Lizette",
-            "Lilith"
-        ],
-        "5 Common Last Names": [
-            "Oakenwood",
-            "Willowshade",
-            "Leprechaunhoof",
-            "Enchantedwood",
-            "Oakmystery"
         ]
     },
     "Duergar": {
@@ -13330,23 +11358,6 @@ dnd_monsters = {
             "Gems",
             "Jewelry",
             "Weapons"
-        ],
-        "Race": "Gray Dwarf",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Gryll",
-            "Nym",
-            "Berrol",
-            "Vig",
-            "Brak"
-        ],
-        "5 Common Last Names": [
-            "Morgar",
-            "Rugar",
-            "Haren",
-            "Borl",
-            "Oskren"
         ]
     },
     "Duodrone": {
@@ -13431,23 +11442,6 @@ dnd_monsters = {
             "Insectoid parts",
             "Gems and jewels",
             "Scroll of communication"
-        ],
-        "Race": "Construct",
-        "Class": "Clockwork",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Tik-tok",
-            "Zik",
-            "Ticktok",
-            "Klockwerk",
-            "Glowtick"
-        ],
-        "5 Common Last Names": [
-            "Fortress",
-            "Machineworks",
-            "Cogworn",
-            "Claker",
-            "Clicksilver"
         ]
     },
     "Dust_Mephit": {
@@ -13547,23 +11541,6 @@ dnd_monsters = {
             "Rocks",
             "Bones",
             "Magical trinkets"
-        ],
-        "Race": "Elemental",
-        "Class": "",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Vyaash",
-            "Vikas",
-            "Dnyanesh",
-            "Shiv",
-            "Shankar"
-        ],
-        "5 Common Last Names": [
-            "Blown",
-            "Powdery",
-            "Airy",
-            "Colored",
-            "Tantalizing"
         ]
     },
     "Eagle": {
@@ -13651,23 +11628,6 @@ dnd_monsters = {
             "Eggs",
             "Bones",
             "Raw meat"
-        ],
-        "Race": "Animal",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Gwilson",
-            "Rhorton",
-            "Tkline",
-            "Ramsey",
-            "Treynolds"
-        ],
-        "5 Common Last Names": [
-            "Wgular",
-            "Kruff",
-            "Wilwin",
-            "Gnatman",
-            "Ushner"
         ]
     },
     "Earth_Elemental": {
@@ -13760,23 +11720,6 @@ dnd_monsters = {
             "Magical Artifacts",
             "Mystical Power Stones",
             "Cursed Weapons"
-        ],
-        "Race": "Elemental",
-        "Class": "Outsider",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Earthenia",
-            "Golem",
-            "Mudburl",
-            "Tecton",
-            "Terra"
-        ],
-        "5 Common Last Names": [
-            "Cairn",
-            "McErde",
-            "Rockshield",
-            "Stonestomp",
-            "TheMudlord"
         ]
     },
     "Efreeti": {
@@ -13878,23 +11821,6 @@ dnd_monsters = {
             "Elemental Essence",
             "Smoke Bombs",
             "Magical Scroll"
-        ],
-        "Race": "Genie",
-        "Class": "Elemental",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Rashid",
-            "MALIK",
-            "JAHI",
-            "NAAL",
-            "DAMAR"
-        ],
-        "5 Common Last Names": [
-            "FAHAD",
-            "ALPHA",
-            "ASIF",
-            "JAMEEL",
-            "ZAHIR"
         ]
     },
     "Elephant": {
@@ -13985,23 +11911,6 @@ dnd_monsters = {
             "Tusks carvings",
             "Large Bones",
             "Wool or hair"
-        ],
-        "Race": "Beast",
-        "Class": "Animal",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Tuskor",
-            "Trunkon",
-            "Tley",
-            "Daubor",
-            "Konar"
-        ],
-        "5 Common Last Names": [
-            "Ramhorn",
-            "Tuskwalker",
-            "Hoofdancer",
-            "Tailender",
-            "Trunkhold"
         ]
     },
     "Elk": {
@@ -14093,23 +12002,6 @@ dnd_monsters = {
             "Elk Teeth",
             "Elk Tallow",
             "Elk Horn"
-        ],
-        "Race": "Beast",
-        "Class": "Animal",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Runs-with-Antlers",
-            "Dances-in-the-Trees",
-            "Dawn-Stomper",
-            "Legs-of-Lightning",
-            "Pace-of-the-Leaves"
-        ],
-        "5 Common Last Names": [
-            "of-the-High-Woods",
-            "of-Greenskin-Ridge",
-            "of-the-Gale-Forrest",
-            "of-Distant-Lands",
-            "of-the-Still-Lakes"
         ]
     },
     "Empyrean": {
@@ -14203,23 +12095,6 @@ dnd_monsters = {
             "Pearls",
             "Magic Weapons",
             "Spell Scrolls"
-        ],
-        "Race": "Celestial",
-        "Class": "Divine Being",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Basil",
-            "Cassiel",
-            "Michael",
-            "Raphael",
-            "Uriel"
-        ],
-        "5 Common Last Names": [
-            "Acierite",
-            "Aetha",
-            "Deivael",
-            "Herran",
-            "Kalliope"
         ]
     },
     "Erinyes": {
@@ -14322,23 +12197,6 @@ dnd_monsters = {
             "Magic weapons and armor",
             "Gems and coins",
             "Artifacts of divine origin"
-        ],
-        "Race": "Devil",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Zepar",
-            "Berith",
-            "Femabeth",
-            "Vassago",
-            "Sealas"
-        ],
-        "5 Common Last Names": [
-            "Baall",
-            "Thamuz",
-            "Glasya",
-            "Fahhamut",
-            "Asmoday"
         ]
     },
     "Ettercap": {
@@ -14432,23 +12290,6 @@ dnd_monsters = {
             "Rare spices and herbs",
             "Potions and elixirs",
             "Coins and other valuables"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Tam",
-            "Fustel",
-            "Sturtura",
-            "Yoddish",
-            "Kaula"
-        ],
-        "5 Common Last Names": [
-            "Goboloca",
-            "lurkio",
-            "zarnoza",
-            "Wantersnab",
-            "Kimskrool"
         ]
     },
     "Ettin": {
@@ -14545,19 +12386,6 @@ dnd_monsters = {
             "Copper Coins",
             "Gems",
             "Magical Weapons"
-        ],
-        "Race": "Giant",
-        "Class": "Divine Trickster",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Hengral",
-            "Grekken",
-            "StokkolFrenngalMahoug"
-        ],
-        "5 Common Last Names": [
-            "Double-Axe",
-            "CrushingFist",
-            "BlackbeardSaltpileHippocampus"
         ]
     },
     "Faerie_Dragon": {
@@ -14751,23 +12579,6 @@ dnd_monsters = {
             "Flaming Gauntlet",
             "Fire Whip",
             "Lamp of Endless Fire"
-        ],
-        "Race": "Elemental",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Ignus",
-            "Embers",
-            "Vulcan",
-            "Infernus",
-            "Ace"
-        ],
-        "5 Common Last Names": [
-            "Flament",
-            "Pyre",
-            "Furnace",
-            "Scorch",
-            "Burnout"
         ]
     },
     "Fire_Giant": {
@@ -15053,23 +12864,6 @@ dnd_monsters = {
             "Magical tomes and scrolls",
             "Cursed Items",
             "Wands and Staves"
-        ],
-        "Race": "Undead",
-        "Class": "Monstrosity",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Ignas",
-            "Volut",
-            "Tortos",
-            "Zerius",
-            "Haerut"
-        ],
-        "5 Common Last Names": [
-            "Vates",
-            "Cedex",
-            "Ramirus",
-            "Hatral",
-            "Fedek"
         ]
     },
     "Flesh_Golem": {
@@ -15172,23 +12966,6 @@ dnd_monsters = {
             "Minor Magical Weapons",
             "Minor Magical Items",
             "Gems and Coins"
-        ],
-        "Race": "Construct",
-        "Class": "None",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Raise",
-            "Reanimate",
-            "Animate",
-            "Form",
-            "Alt"
-        ],
-        "5 Common Last Names": [
-            "Flesh",
-            "Life",
-            "Fleshman",
-            "Body",
-            "Clay"
         ]
     },
     "Flumph": {
@@ -15282,23 +13059,6 @@ dnd_monsters = {
             "Gems and jewels",
             "Magical items",
             "Strange artifacts"
-        ],
-        "Race": "Aberration",
-        "Class": "Monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Cleavis",
-            "Snorom",
-            "Lishane",
-            "Neiday",
-            "Rimmar"
-        ],
-        "5 Common Last Names": [
-            "Blissvine",
-            "Flightfloat",
-            "Bluetoe",
-            "Skimmerflight",
-            "Lipthrift"
         ]
     },
     "Flying_Snake": {
@@ -15386,23 +13146,6 @@ dnd_monsters = {
             "Magic Scrolls",
             "Potions",
             "Rare Artifacts"
-        ],
-        "Race": "Reptilian",
-        "Class": "Dragon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Slither",
-            "Coil",
-            "Slyther",
-            "Clevser",
-            "Growl"
-        ],
-        "5 Common Last Names": [
-            "Spieser",
-            "Slipser",
-            "Scaleser",
-            "Slyser",
-            "Rattleer"
         ]
     },
     "Flying_Sword": {
@@ -15494,23 +13237,6 @@ dnd_monsters = {
             "Magic ring",
             "Greek fire flask",
             "Weapon enchantment scroll"
-        ],
-        "Race": "Construct",
-        "Class": "Undead",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Zander",
-            "Gattor",
-            "Godfrey",
-            "Golam",
-            "Uriel"
-        ],
-        "5 Common Last Names": [
-            "Swordshaper",
-            "Bladebinder",
-            "Flagelant",
-            "Windslinger",
-            "Steelguard"
         ]
     },
     "Fomorian": {
@@ -15602,23 +13328,6 @@ dnd_monsters = {
             "Jewelry",
             "Mundane weapons",
             "Potions"
-        ],
-        "Race": "Giant",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Borraug",
-            "Ebthon",
-            "Ichinn",
-            "Koro",
-            "Makon"
-        ],
-        "5 Common Last Names": [
-            "Gronael",
-            "Ymonn",
-            "Tuth",
-            "Lhan",
-            "Eckmiel"
         ]
     },
     "Frog": {
@@ -15707,23 +13416,6 @@ dnd_monsters = {
             "Potion of healing",
             "Scroll of magic missile",
             "Potion of water breathing"
-        ],
-        "Race": "Animal",
-        "Class": "Beast",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Froggy",
-            "Hoppy",
-            "Leppy",
-            "Polly",
-            "Thumpy"
-        ],
-        "5 Common Last Names": [
-            "Frogger",
-            "Lepper",
-            "Croaker",
-            "Splasher",
-            "Leaper"
         ]
     },
     "Frost_Giant": {
@@ -15820,23 +13512,6 @@ dnd_monsters = {
             "Weapons",
             "Armor",
             "Magic Items"
-        ],
-        "Race": "Giant",
-        "Class": "Openly Barbarian or Fighter",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Agmar",
-            "Dargul",
-            "Harald",
-            "Tuk",
-            "Ulf"
-        ],
-        "5 Common Last Names": [
-            "Agmundr",
-            "Angrbrek",
-            "Murdskald",
-            "Sturmfist",
-            "Valdskald"
         ]
     },
     "Galeb_Duhr": {
@@ -15936,23 +13611,6 @@ dnd_monsters = {
             "Runes of Warding",
             "Gems and Jewels",
             "Magic Weapons and Armor"
-        ],
-        "Race": "earth elemental",
-        "Class": "monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Rocky",
-            "Ezra",
-            "Stone",
-            "Wilson",
-            "Rockwell"
-        ],
-        "5 Common Last Names": [
-            "Rumbletum",
-            "Tumblebop",
-            "Rockdust",
-            "Rockbottom",
-            "Tumblestump"
         ]
     },
     "Gargoyle": {
@@ -16047,23 +13705,6 @@ dnd_monsters = {
             "Potions",
             "Scrolls",
             "Gems"
-        ],
-        "Race": "Elemental",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Veldrak",
-            "Hawr",
-            "Ketar",
-            "Kreg",
-            "Faelar"
-        ],
-        "5 Common Last Names": [
-            "Korladur",
-            "Lerok",
-            "Nargalur",
-            "Tebalad",
-            "Shand"
         ]
     },
     "Gas_Spore": {
@@ -16157,23 +13798,6 @@ dnd_monsters = {
             "Scrolls of Protection",
             "Minor Magical Items",
             "Gems and Jewels"
-        ],
-        "Race": "Fungus",
-        "Class": "Behemoth",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Vacuol",
-            "Chloroplaz",
-            "Septoz",
-            "Stalkon",
-            "Gamspor"
-        ],
-        "5 Common Last Names": [
-            "Floater",
-            "Gasser",
-            "Mistery",
-            "Cleaner",
-            "Bstalker"
         ]
     },
     "Gelatinous_Cube": {
@@ -16269,23 +13893,6 @@ dnd_monsters = {
             "Magical items",
             "Artifacts",
             "Mysterious ooze"
-        ],
-        "Race": "Ooze",
-        "Class": "Cube",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Slippy",
-            "Drippy",
-            "Gloop",
-            "Oozle",
-            "Blurp"
-        ],
-        "5 Common Last Names": [
-            "Cube",
-            "Slime",
-            "Slimer",
-            "Jiggly",
-            "Gooey"
         ]
     },
     "Ghast": {
@@ -16381,23 +13988,6 @@ dnd_monsters = {
             "Grimoires of necromantic magic",
             "Pendants infused with necromantic energy",
             "Necromantically-crafted weapons and armor"
-        ],
-        "Race": "Undead",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ghaash",
-            "Gletsch",
-            "Gorph",
-            "Ghul",
-            "Graff"
-        ],
-        "5 Common Last Names": [
-            "Grim",
-            "Zorg",
-            "Lurg",
-            "Slurk",
-            "Shraak"
         ]
     },
     "Ghost": {
@@ -16489,23 +14079,6 @@ dnd_monsters = {
             "Magical weapons and armor.",
             "Relic or talisman.",
             "Scrolls or books of knowledge."
-        ],
-        "Race": "Undead",
-        "Class": "Spirit",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Theophilus",
-            "Tabitha",
-            "Abezil",
-            "McKenzie",
-            "Gideon"
-        ],
-        "5 Common Last Names": [
-            "Holloway",
-            "Ripperton",
-            "Kline",
-            "Cunningham",
-            "Fetedo"
         ]
     },
     "Ghoul": {
@@ -16596,23 +14169,6 @@ dnd_monsters = {
             "Gems",
             "Ancient artifacts",
             "Magic items"
-        ],
-        "Race": "Undead",
-        "Class": "Monster",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Erik",
-            "Agnes",
-            "Talia",
-            "Konstanz",
-            "Tim"
-        ],
-        "5 Common Last Names": [
-            "Jorgensen",
-            "Nevels",
-            "Amadio",
-            "D'Ablemont",
-            "Tinholt"
         ]
     },
     "Giant_Ape": {
@@ -16707,23 +14263,6 @@ dnd_monsters = {
             "Gems",
             "Coins",
             "Jeweled Artifacts"
-        ],
-        "Race": "Primordial",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Gogogo",
-            "Krusk",
-            "Koda",
-            "Ooklah",
-            "Tulkas"
-        ],
-        "5 Common Last Names": [
-            "Frostjaw",
-            "Suumasii",
-            "Gorakk",
-            "Mogokk",
-            "Kaankii"
         ]
     },
     "Giant_Badger": {
@@ -16813,23 +14352,6 @@ dnd_monsters = {
             "Insect carapaces",
             "Rare herbs and mushrooms",
             "Small trinkets lost by previous explorers"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Grunter",
-            "Snuffler",
-            "Rooter",
-            "Clawer",
-            "Whinny"
-        ],
-        "5 Common Last Names": [
-            "Burrower",
-            "Snarer",
-            "Furrier",
-            "Sniffer",
-            "Furry"
         ]
     },
     "Giant_Bat": {
@@ -16918,23 +14440,6 @@ dnd_monsters = {
             "Bat fur",
             "Small gems",
             "Rare herbs"
-        ],
-        "Race": "Beast",
-        "Class": "N/A",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Fang",
-            "Talon",
-            "Batshka",
-            "Sharptooth",
-            "Ulthar"
-        ],
-        "5 Common Last Names": [
-            "Ripper",
-            "Howler",
-            "Screamer",
-            "Shrieker",
-            "Flitter"
         ]
     },
     "Giant_Boar": {
@@ -17026,23 +14531,6 @@ dnd_monsters = {
             "Boar Hide",
             "Boar Bones",
             "Boar Meat"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Shar",
-            "Mork",
-            "Rav",
-            "Urg",
-            "Ulf"
-        ],
-        "5 Common Last Names": [
-            "Tuskhorn",
-            "Carrun",
-            "Bellowchomp",
-            "Grontooth",
-            "Warbrush"
         ]
     },
     "Giant_Centipede": {
@@ -17127,23 +14615,6 @@ dnd_monsters = {
             "Mystical scrolls",
             "Rare potions",
             "Spell components"
-        ],
-        "Race": "Vermin",
-        "Class": "Monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Chitra",
-            "Hiska",
-            "Mgarr",
-            "Soprina",
-            "Vikram"
-        ],
-        "5 Common Last Names": [
-            "Badhku",
-            "Gulshan",
-            "Laikti",
-            "Shyamala",
-            "Uttana"
         ]
     },
     "Giant_Constrictor_Snake": {
@@ -17220,23 +14691,6 @@ dnd_monsters = {
             "Gems",
             "Potions of healing",
             "Scrolls of knowledge"
-        ],
-        "Race": "Reptile",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Grim",
-            "Ghostly",
-            "Vengeful",
-            "Coiling",
-            "Slithering"
-        ],
-        "5 Common Last Names": [
-            "Wyrm",
-            "Serpent",
-            "Viper",
-            "Anaconda",
-            "Cobra"
         ]
     },
     "Giant_Crab": {
@@ -17332,23 +14786,6 @@ dnd_monsters = {
             "Gold coins",
             "Fish scales",
             "Seashells"
-        ],
-        "Race": "Beast",
-        "Class": "Giant Crab",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Duran",
-            "Cranak",
-            "Jarrar",
-            "Sealga",
-            "Korrak"
-        ],
-        "5 Common Last Names": [
-            "Snapclaw",
-            "Spearclaw",
-            "Footclaw",
-            "Shellorak",
-            "Stomper"
         ]
     },
     "Giant_Crocodile": {
@@ -17441,23 +14878,6 @@ dnd_monsters = {
             "Rare metals",
             "Gems",
             "Potions"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Tolaya",
-            "Gargool",
-            "Krtas",
-            "Igrip",
-            "Krutls"
-        ],
-        "5 Common Last Names": [
-            "Gatorbite",
-            "Mudslides",
-            "Tailswipe",
-            "Tenacious",
-            "Swamplurk"
         ]
     },
     "Giant_Eagle": {
@@ -17548,23 +14968,6 @@ dnd_monsters = {
             "Eagle claws",
             "Eagle eye gems",
             "Eagle-shaped jewelry"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Sky",
-            "Dash",
-            "Fjord",
-            "Walter",
-            "Deaton"
-        ],
-        "5 Common Last Names": [
-            "Seabird",
-            "Feathers",
-            "Skystorm",
-            "Flightz",
-            "Roar"
         ]
     },
     "Giant_Elk": {
@@ -17657,23 +15060,6 @@ dnd_monsters = {
             "Hide Armor",
             "Elk Horn Drums",
             "Elk Horn Spear"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Calia",
-            "Kaira",
-            "Uri",
-            "Delphi",
-            "Lorikeet"
-        ],
-        "5 Common Last Names": [
-            "Lancier",
-            "Hart",
-            "Roan",
-            "Crag",
-            "Vigil"
         ]
     },
     "Giant_Fire_Beetle": {
@@ -17760,23 +15146,6 @@ dnd_monsters = {
             "Beetle mandibles",
             "Glow crystals",
             "Glowwater"
-        ],
-        "Race": "Beetle",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Bur checked",
-            "Forarcher",
-            "Fuegrinder",
-            "Flamewing",
-            "Goraner"
-        ],
-        "5 Common Last Names": [
-            "Firespitter",
-            "Burnstrike",
-            "Tindsting",
-            "Griddletoast",
-            "Forgeguarder"
         ]
     },
     "Giant_Frog": {
@@ -17866,23 +15235,6 @@ dnd_monsters = {
             "Pearls",
             "Ancient coins",
             "Mysterious objects"
-        ],
-        "Race": "Beast",
-        "Class": "Huge Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Croako",
-            "Kermat",
-            "Bubba",
-            "Gumbo",
-            "Toes"
-        ],
-        "5 Common Last Names": [
-            "Ribbit",
-            "Boing",
-            "Paddler",
-            "Bubblestream",
-            "Leaper"
         ]
     },
     "Giant_Goat": {
@@ -17975,23 +15327,6 @@ dnd_monsters = {
             "Large thick hooves",
             "Rare herbs and plants",
             "Gold or precious gems"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Buttercup",
-            "Heather",
-            "Bramble",
-            "Daisy",
-            "Honey"
-        ],
-        "5 Common Last Names": [
-            "Hornhallow",
-            "Hornedfield",
-            "Clovendon",
-            "Velzey",
-            "Fellfield"
         ]
     },
     "Giant_Hyena": {
@@ -18080,23 +15415,6 @@ dnd_monsters = {
             "Polished gems and stones",
             "Rare animal pelts and hides",
             "Small piles of coins and jewelry"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Hakim",
-            "Karim",
-            "Juma",
-            "Tawheed",
-            "Fahd"
-        ],
-        "5 Common Last Names": [
-            "Musaramba",
-            "Naromurinyi",
-            "Gokora",
-            "Kushaba",
-            "Salimu"
         ]
     },
     "Giant_Lizard": {
@@ -18182,23 +15500,6 @@ dnd_monsters = {
             "Giant Lizard Claw",
             "Giant Lizard Scale",
             "Giant Lizard Tooth"
-        ],
-        "Race": "Reptile",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Etamor",
-            "Igagor",
-            "Levixu",
-            "Mulorv",
-            "Vahati"
-        ],
-        "5 Common Last Names": [
-            "Scaledfang",
-            "Swiftclaw",
-            "Sharpstone",
-            "Hidescale",
-            "Stoneskull"
         ]
     },
     "Giant_Octopus": {
@@ -18279,23 +15580,6 @@ dnd_monsters = {
             "Pearls",
             "Sea glass",
             "Tentacles"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Arazzi",
-            "Krakko",
-            "Blipp",
-            "Klop",
-            "Lop"
-        ],
-        "5 Common Last Names": [
-            "Gill-maker",
-            "Watersong",
-            "The Tentacled",
-            "Tintamare",
-            "Fated Feather"
         ]
     },
     "Giant_Owl": {
@@ -18385,23 +15669,6 @@ dnd_monsters = {
             "Books and scrolls on nature and the forest.",
             "Musical instruments crafted from wood.",
             "Potions and elixirs related to nature."
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Hooton",
-            "Arpio",
-            "Nyctea",
-            "Thekla",
-            "Hubris"
-        ],
-        "5 Common Last Names": [
-            "Talon",
-            "Fetters",
-            "Calyx",
-            "Fledge",
-            "Glidesail"
         ]
     },
     "Giant_Poisonous_Snake": {
@@ -18487,23 +15754,6 @@ dnd_monsters = {
             "Snake Scales",
             "Snake Venom",
             "Snake Pouch"
-        ],
-        "Race": "Reptiles and Amphibians",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Slither",
-            "Rattle",
-            "Asp",
-            "Cobra",
-            "Viper"
-        ],
-        "5 Common Last Names": [
-            "Hisser",
-            "Biter",
-            "Stygian",
-            "Tailer",
-            "Striker"
         ]
     },
     "Giant_Rat": {
@@ -18593,23 +15843,6 @@ dnd_monsters = {
             "a pair of dice",
             "a piece of cloth ",
             "a broken vial"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Squeak",
-            "Fang",
-            "Tooth",
-            "Bite",
-            "Cheese"
-        ],
-        "5 Common Last Names": [
-            "Furr",
-            "Sniffer",
-            "Taster",
-            "Ripclaw",
-            "Scurry"
         ]
     },
     "Giant_Scorpion": {
@@ -18693,23 +15926,6 @@ dnd_monsters = {
             "Scroll of Protection",
             "Elixir of Poison Resistance",
             "Potion of Healing"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Solivar",
-            "Skaylar",
-            "Tukvahn",
-            "Xethan",
-            "Yurick"
-        ],
-        "5 Common Last Names": [
-            "Krell",
-            "Neffen",
-            "Sehn",
-            "Snen",
-            "Tilman"
         ]
     },
     "Giant_Sea_Horse": {
@@ -18803,23 +16019,6 @@ dnd_monsters = {
             "Rare Fish",
             "Sea Explorers' Kit",
             "Giant Sea Horse Saddle"
-        ],
-        "Race": "Celestial",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Flipper",
-            "Prancer",
-            "Jumper",
-            "Salty",
-            "Neptune"
-        ],
-        "5 Common Last Names": [
-            "Fin",
-            "Mane",
-            "Tide",
-            "Fishtail",
-            "Hoof"
         ]
     },
     "Giant_Shark": {
@@ -18909,23 +16108,6 @@ dnd_monsters = {
             "Pearl Necklace",
             "Shark Fin",
             "Tusk"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Gulo",
-            "Ripper",
-            "Tsung",
-            "Krahk",
-            "Muish"
-        ],
-        "5 Common Last Names": [
-            "Finroar",
-            "Scaletooth",
-            "Deathsnout",
-            "Sandscream",
-            "Steelpalm"
         ]
     },
     "Giant_Spider": {
@@ -19017,23 +16199,6 @@ dnd_monsters = {
             "Small magical trinkets",
             "Hides and teeth from smaller animals",
             "Rare herbs found within webs"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Charlotte",
-            "Shaneeqa",
-            "Jennifer",
-            "Anansi",
-            "Aragog"
-        ],
-        "5 Common Last Names": [
-            "Webster",
-            "Crawford",
-            "Legspin",
-            "Evans",
-            "Prescott"
         ]
     },
     "Giant_Toad": {
@@ -19125,23 +16290,6 @@ dnd_monsters = {
             "Giant Toad Slime (used in potions)",
             "Giant Toad Liquor (used in alchemy)",
             "Giant Toad Warts (used in charms)"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Croaker",
-            "Hopper",
-            "Kevok",
-            "Thib",
-            "Row"
-        ],
-        "5 Common Last Names": [
-            "Tadpole",
-            "Kelp",
-            "Muck",
-            "Hop",
-            "Splay"
         ]
     },
     "Giant_Vulture": {
@@ -19235,23 +16383,6 @@ dnd_monsters = {
             "Rare herbs and plants",
             "Shiny trinkets and baubles",
             "Gems and precious metals"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Axe",
-            "Bill",
-            "John",
-            "Ozzy",
-            "Pete"
-        ],
-        "5 Common Last Names": [
-            "Beak",
-            "Gnarler",
-            "Kite",
-            "Plumage",
-            "Talon"
         ]
     },
     "Giant_Wasp": {
@@ -19333,23 +16464,6 @@ dnd_monsters = {
             "Large insect wings",
             "Abdomen chitin plates",
             "Bones of small prey animals"
-        ],
-        "Race": "Beasts",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Bees",
-            "Swarm",
-            "Hive",
-            "Parasite",
-            "Venom"
-        ],
-        "5 Common Last Names": [
-            "Blade",
-            "Jamess",
-            "Kuchaen",
-            "Raphson",
-            "Lotz"
         ]
     },
     "Giant_Weasel": {
@@ -19441,23 +16555,6 @@ dnd_monsters = {
             "String of teeth",
             "Poisonous plants",
             "Random potions"
-        ],
-        "Race": "Beast",
-        "Class": "none",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Elfin",
-            "Fen",
-            "Mustard",
-            "Tod",
-            "Weezle"
-        ],
-        "5 Common Last Names": [
-            "Brindle",
-            "Stoat",
-            "Vixen",
-            "Buck",
-            "Fitch"
         ]
     },
     "Giant_Wolf_Spider": {
@@ -19553,23 +16650,6 @@ dnd_monsters = {
             "Bag of Spider Legs",
             "Bag of Spider Silk",
             "Small Totem of a Giant Wolf Spider"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Leger",
-            "Gretel",
-            "Jorakh",
-            "Perina",
-            "Moresco"
-        ],
-        "5 Common Last Names": [
-            "Oples",
-            "Lenury",
-            "Penhook",
-            "Yurmin",
-            "Arenel"
         ]
     },
     "Gibbering_Mouther": {
@@ -19658,23 +16738,6 @@ dnd_monsters = {
             "Jewelry",
             "Gems",
             "Magic items and spell scrolls"
-        ],
-        "Race": "Aberration",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Gibba",
-            "Bababa",
-            "Bubber",
-            "Soser",
-            "Goobly"
-        ],
-        "5 Common Last Names": [
-            "Mumbler",
-            "Mouthy",
-            "Gibberman",
-            "Speaker",
-            "Bumpali"
         ]
     },
     "Glabrezu": {
@@ -19770,23 +16833,6 @@ dnd_monsters = {
             "Magical Items",
             "Valuable Artifacts",
             "Powerful Magic Items"
-        ],
-        "Race": "Demon",
-        "Class": "Fiend",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Kel'thalas",
-            "Math'alas",
-            "Nye'kol",
-            "Ees'alas",
-            "Sih'zil"
-        ],
-        "5 Common Last Names": [
-            "Grammaks",
-            "Krabarus",
-            "Baneratus",
-            "Jacobrath",
-            "Vrakarentos"
         ]
     },
     "Gladiator": {
@@ -19888,23 +16934,6 @@ dnd_monsters = {
             "Magical weapons",
             "Potions of healing",
             "Scrolls of protection"
-        ],
-        "Race": "Human",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Maximos",
-            "Gaius",
-            "Quintus",
-            "Claudius",
-            "Aurelius"
-        ],
-        "5 Common Last Names": [
-            "Fulvius",
-            "Aemilius",
-            "Plautus",
-            "Fabius",
-            "Valerianus"
         ]
     },
     "Gnoll": {
@@ -20001,23 +17030,6 @@ dnd_monsters = {
             "Scraps of leather armor",
             "Scavenged trinkets",
             "Herbs and potions"
-        ],
-        "Race": "Humanoid (Gnoll)",
-        "Class": "Warrior",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Yeenoghu",
-            "Ahconomo",
-            "Gnarsh",
-            "Thren",
-            "Zudock"
-        ],
-        "5 Common Last Names": [
-            "Hyena Claw",
-            "Ragebite",
-            "Gorefang",
-            "Gnoll Fang",
-            "Axe-Skull"
         ]
     },
     "Gnoll_Fang_of_Yeenoghu": {
@@ -20110,23 +17122,6 @@ dnd_monsters = {
             "Magical Items",
             "Splintered Shields",
             "Amulets"
-        ],
-        "Race": "Gnoll",
-        "Class": "Fang of Yeenoghu",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Grancheffa",
-            "Baka",
-            "Ugral",
-            "Ulbag",
-            "Oghrin"
-        ],
-        "5 Common Last Names": [
-            "Yeenoghuards",
-            "Church Bashers",
-            "Scourges",
-            "Hurrells",
-            "Reavers"
         ]
     },
     "Gnoll_Pack_Lord": {
@@ -20225,23 +17220,6 @@ dnd_monsters = {
             "Pieces of armor",
             "Weapons",
             "Random trinkets"
-        ],
-        "Race": "Gnoll",
-        "Class": "Pack Lord",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Kylik",
-            "Kirtok",
-            "Kurthok",
-            "Kalphac",
-            "Korik"
-        ],
-        "5 Common Last Names": [
-            "Brokenskull",
-            "Crazymane",
-            "Ragelord",
-            "Gorefang",
-            "Maliciousblood"
         ]
     },
     "Goat": {
@@ -20328,23 +17306,6 @@ dnd_monsters = {
             "Horn",
             "Raw goat meat",
             "Goat milk"
-        ],
-        "Race": "Animal",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Buttercup",
-            "Billy",
-            "Brash",
-            "Billyjo",
-            "Brianna"
-        ],
-        "5 Common Last Names": [
-            "Buckers",
-            "Barnes",
-            "Bleaters",
-            "Brown-Fur",
-            "Baaaa"
         ]
     },
     "Goblin": {
@@ -20439,23 +17400,6 @@ dnd_monsters = {
             "Rations",
             "Potion of Healing",
             "Surprise Badges"
-        ],
-        "Race": "Humanoid (Goblinoid)",
-        "Class": "Rogue",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Gog",
-            "Gork",
-            "Gorg",
-            "Grot",
-            "Grit"
-        ],
-        "5 Common Last Names": [
-            "Gobblefink",
-            "Gubbleums",
-            "Tricklenose",
-            "Spitelip",
-            "Muckfoot"
         ]
     },
     "Goblin_Boss": {
@@ -20558,23 +17502,6 @@ dnd_monsters = {
             "Gems and jewelry",
             "Potions and scrolls",
             "Rare artifacts"
-        ],
-        "Race": "Goblin",
-        "Class": "Warrior",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Grog",
-            "Grok",
-            "Grub",
-            "Galt",
-            "Goth"
-        ],
-        "5 Common Last Names": [
-            "Runecutter",
-            "Logsplitter",
-            "Goblinblood",
-            "Stonebinder",
-            "Ogresmasher"
         ]
     },
     "Gold_Dragon_Wyrmling": {
@@ -20671,23 +17598,6 @@ dnd_monsters = {
             "Magical artifacts",
             "Finely crafted weapons and armor",
             "Potion and scrolls"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Sor\u00e9l",
-            "Galizur",
-            "sanuar",
-            "Arakshil",
-            "Lucan"
-        ],
-        "5 Common Last Names": [
-            "Shimmerwing",
-            "Goldenhorn",
-            "Starbrow",
-            "Goldflight",
-            "Sunhorn"
         ]
     },
     "Gorgon": {
@@ -20779,23 +17689,6 @@ dnd_monsters = {
             "Finely crafted weapons and armor.",
             "Rarely, a powerful magical relic.",
             "Small trinkets of luck or protection."
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Kallisto",
-            "Medusa",
-            "Stheno",
-            "Euryale",
-            "Eurymedon"
-        ],
-        "5 Common Last Names": [
-            "Petraeus",
-            "Agaetes",
-            "Ophios",
-            "Ophis",
-            "Gorgos"
         ]
     },
     "Gray_Ooze": {
@@ -20985,23 +17878,6 @@ dnd_monsters = {
             "Green dragon's eye gemstone",
             "Green dragon eggs",
             "Green dragon's breath elixir"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragonborn",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Esgauth",
-            "Jeetla",
-            "Ossel",
-            "Quarith",
-            "Vserkin"
-        ],
-        "5 Common Last Names": [
-            "Greenblade",
-            "Greenfang",
-            "Greentooth",
-            "Greenwing",
-            "Scalebane"
         ]
     },
     "Green_Hag": {
@@ -21193,23 +18069,6 @@ dnd_monsters = {
             "Silver ring with griffon head",
             "Griffon talon",
             "Potion of strength/courage"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Magnus",
-            "Matilda",
-            "Maximus",
-            "Maya",
-            "Monty"
-        ],
-        "5 Common Last Names": [
-            "Skywhiskers",
-            "Cloudbound",
-            "Windvelocity",
-            "Skytalon",
-            "Cloudsurfer"
         ]
     },
     "Grimlock": {
@@ -21305,23 +18164,6 @@ dnd_monsters = {
             "Magical weapons and armor",
             "Potions",
             "Scrolls"
-        ],
-        "Race": "Humanoid",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Uzgog",
-            "Grurk",
-            "Skurv",
-            "Xuglorg",
-            "Urk"
-        ],
-        "5 Common Last Names": [
-            "Glargh",
-            "Winglor",
-            "Xoogity",
-            "Furggeny",
-            "Crubgull"
         ]
     },
     "Guard": {
@@ -21419,23 +18261,6 @@ dnd_monsters = {
             "Potions",
             "Jewelry",
             "Weapon Parts"
-        ],
-        "Race": "Human",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Aldo",
-            "Carlos",
-            "Eddie",
-            "Fernando",
-            "Giovanni"
-        ],
-        "5 Common Last Names": [
-            "Robles",
-            "Trujillo",
-            "Romero",
-            "Ortega",
-            "Flores"
         ]
     },
     "Guardian_Naga": {
@@ -21532,23 +18357,6 @@ dnd_monsters = {
             "Magical artifacts and items",
             "Gems and jewels",
             "Enchanted armors and weapons"
-        ],
-        "Race": "Monstrosity",
-        "Class": "N/A",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Zulist",
-            "Gwemlix",
-            "Theora",
-            "Estiva",
-            "Nataro"
-        ],
-        "5 Common Last Names": [
-            "Krilver",
-            "Marnise",
-            "Fazonn",
-            "Vyelv",
-            "Dedric"
         ]
     },
     "Gynosphinx": {
@@ -21652,23 +18460,6 @@ dnd_monsters = {
             "Mystical artifacts",
             "Divine artifacts",
             "Illusionary magic potions"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Amorette",
-            "Dazzare",
-            "Farrarre",
-            "Gitesh",
-            "Kriyam"
-        ],
-        "5 Common Last Names": [
-            "Angkor",
-            "Charnie",
-            "Illaam",
-            "Quoram",
-            "Vivred"
         ]
     },
     "Half_Red_Dragon_Veteran": {
@@ -21856,23 +18647,6 @@ dnd_monsters = {
             "Magical Weapons",
             "Magical Armor",
             "Magic Items"
-        ],
-        "Race": "Monstrosity",
-        "Class": "No Class",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Athelia",
-            "Clovia",
-            "Ilythia",
-            "Lonnia",
-            "Mervia"
-        ],
-        "5 Common Last Names": [
-            "Crowfeather",
-            "Crossbeak",
-            "Volbayre",
-            "Windcaller",
-            "Webberson"
         ]
     },
     "Hawk": {
@@ -21962,23 +18736,6 @@ dnd_monsters = {
             "Hawk Talons",
             "Eggs",
             "Eggshells"
-        ],
-        "Race": "Animal",
-        "Class": "Beast",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Aki",
-            "Rook",
-            "Kite",
-            "Frye",
-            "Kester"
-        ],
-        "5 Common Last Names": [
-            "Wingfield",
-            "Skye",
-            "Sparrow",
-            "Featherstone",
-            "Flynn"
         ]
     },
     "Hezrou": {
@@ -22078,23 +18835,6 @@ dnd_monsters = {
             "Gems",
             "Magic Weapons",
             "Potions"
-        ],
-        "Race": "Demon",
-        "Class": "Fiend",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Pluto",
-            "Oriax",
-            "Naberus",
-            "Gomory",
-            "Amon"
-        ],
-        "5 Common Last Names": [
-            "Gargouille",
-            "Euryale",
-            "Harpyia",
-            "Chimera",
-            "Stymphaliae"
         ]
     },
     "Hill_Giant": {
@@ -22188,23 +18928,6 @@ dnd_monsters = {
             "gemstones",
             "flintlock rifles and ammunition",
             "leather armor and hide armor"
-        ],
-        "Race": "Giant",
-        "Class": "None",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Tharrak",
-            "Krolm",
-            "Uzgor",
-            "Furgo",
-            "Yurk"
-        ],
-        "5 Common Last Names": [
-            "Stonecrusher",
-            "Thunderslam",
-            "Turniptoes",
-            "Hillcrusher",
-            "Ironfist"
         ]
     },
     "Hippogriff": {
@@ -22295,23 +19018,6 @@ dnd_monsters = {
             "Eagle Claws",
             "Horse Bones",
             "Horse Hair"
-        ],
-        "Race": "Magical Beast",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Lariska",
-            "Thairon",
-            "Kereck",
-            "Fendrik",
-            "Eddan"
-        ],
-        "5 Common Last Names": [
-            "Hawkrider",
-            "Squallhowl",
-            "Grimdawn",
-            "Skystalker",
-            "Wyvern"
         ]
     },
     "Hobgoblin": {
@@ -22404,23 +19110,6 @@ dnd_monsters = {
             "Gems",
             "Plate Armor",
             "Crossbow"
-        ],
-        "Race": "Humanoid",
-        "Class": "Warrior",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Azzakh",
-            "Karno",
-            "Sabgok",
-            "Uglamore",
-            "Zogmugot"
-        ],
-        "5 Common Last Names": [
-            "Cutthroat",
-            "Hammerfist",
-            "Ironblade",
-            "Shieldbiter",
-            "Wolfkiller"
         ]
     },
     "Hobgoblin_Captain": {
@@ -22718,23 +19407,6 @@ dnd_monsters = {
             "Gems",
             "Potions & elixirs",
             "Magical items"
-        ],
-        "Race": "Construct",
-        "Class": "Unknown",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Hob",
-            "Bug",
-            "Max",
-            "Bob",
-            "John"
-        ],
-        "5 Common Last Names": [
-            "Buttons",
-            "Gears",
-            "Bolts",
-            "Springs",
-            "Wires"
         ]
     },
     "Horned_Devil": {
@@ -22840,23 +19512,6 @@ dnd_monsters = {
             "magical artifacts",
             "gems and precious metals",
             "golems and constructs"
-        ],
-        "Race": "Devil",
-        "Class": "Fiend",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Infernus",
-            "Krezk",
-            "Verik",
-            "Malebog",
-            "Crest"
-        ],
-        "5 Common Last Names": [
-            "Maelfel",
-            "Serpentari",
-            "Comiren",
-            "Hornseeker",
-            "Silverhorn"
         ]
     },
     "Hunter_Shark": {
@@ -22949,23 +19604,6 @@ dnd_monsters = {
             "Shark fin",
             "Shark liver oil",
             "Shark vertebrae"
-        ],
-        "Race": "Beast",
-        "Class": "Aquatic Creature",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Sam",
-            "Mako",
-            "Fin",
-            "Tuna",
-            "Angel"
-        ],
-        "5 Common Last Names": [
-            "Sharktooth",
-            "Bloodjaw",
-            "Ripper",
-            "Teeth",
-            "Striker"
         ]
     },
     "Hydra": {
@@ -23066,23 +19704,6 @@ dnd_monsters = {
             "Potions",
             "Gems and jewelry",
             "Art objects"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Callin",
-            "Cephalus",
-            "Evander",
-            "Gillan",
-            "Eurypyle"
-        ],
-        "5 Common Last Names": [
-            "Hydrium",
-            "Hydrak",
-            "Hydraiss",
-            "Hydrul",
-            "Hydrakis"
         ]
     },
     "Hyena": {
@@ -23171,23 +19792,6 @@ dnd_monsters = {
             "Scavenged Hide",
             "Hyena Tooth Necklace",
             "Mystic Stones"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Lazuli",
-            "Kai",
-            "Chang",
-            "Shamir",
-            "Nimbus"
-        ],
-        "5 Common Last Names": [
-            "Goldenfur",
-            "Lightchaser",
-            "Ravencrest",
-            "Nightmane",
-            "Starborne"
         ]
     },
     "Ice_Devil": {
@@ -23289,23 +19893,6 @@ dnd_monsters = {
             "Frozen Potions",
             "Ice Amulet",
             "Icy Chain Mail"
-        ],
-        "Race": "Devil",
-        "Class": "Fiend",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Frost",
-            "Shard",
-            "Chill",
-            "Chillbane",
-            "Cryos"
-        ],
-        "5 Common Last Names": [
-            "Coldrender",
-            "Frostmare",
-            "Glacialheart",
-            "Frozenflame",
-            "Iceguardian"
         ]
     },
     "Ice_Mephit": {
@@ -23403,23 +19990,6 @@ dnd_monsters = {
             "Vest of Snow and Ice",
             "Ice Shards",
             "Ice Sword"
-        ],
-        "Race": "Elemental",
-        "Class": "Mephit",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Frost",
-            "Boreal",
-            "Glacial",
-            "Chill",
-            "Fimbul"
-        ],
-        "5 Common Last Names": [
-            "Heartsmith",
-            "Frostclaw",
-            "Borespark",
-            "Chillflicker",
-            "Icerage"
         ]
     },
     "Imp": {
@@ -23521,23 +20091,6 @@ dnd_monsters = {
             "Gems",
             "Magical Items",
             "Scrolls"
-        ],
-        "Race": "Fiend",
-        "Class": "Demon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Gommy",
-            "Scruffy",
-            "Ibble",
-            "Nibbit",
-            "Squibble"
-        ],
-        "5 Common Last Names": [
-            "Pillich",
-            "Gibblet",
-            "Meeplar",
-            "Ickity",
-            "Diz"
         ]
     },
     "Intellect_Devourer": {
@@ -23632,23 +20185,6 @@ dnd_monsters = {
             "Magical Scrolls",
             "Magical Books & Tomes",
             "Rare Artifacts"
-        ],
-        "Race": "aberration",
-        "Class": "monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Geth",
-            "Jhon",
-            "Orak",
-            "Zenith",
-            "Gareth"
-        ],
-        "5 Common Last Names": [
-            "Strokato",
-            "Haloster",
-            "Lounel",
-            "Creeness",
-            "Ardesey"
         ]
     },
     "Invisible_Stalker": {
@@ -23831,23 +20367,6 @@ dnd_monsters = {
             "Rare Weapons",
             "Highly Valuable Metals",
             "Rare Armors"
-        ],
-        "Race": "Construct",
-        "Class": "Elemental",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Whirr",
-            "Chink",
-            "Chonk",
-            "Clink",
-            "Clank"
-        ],
-        "5 Common Last Names": [
-            "Thump",
-            "Flex",
-            "Mender",
-            "Smith",
-            "Gears"
         ]
     },
     "Jackal": {
@@ -23937,23 +20456,6 @@ dnd_monsters = {
             "Jackal teeth",
             "Jackal skulls",
             "Jackal bones"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Kallik",
-            "Nikita",
-            "Jahkim",
-            "Antinua",
-            "Zeben"
-        ],
-        "5 Common Last Names": [
-            "Packmaster",
-            "Huntclaw",
-            "Skyroc",
-            "Uprib",
-            "Scavenger"
         ]
     },
     "Killer_Whale": {
@@ -24048,23 +20550,6 @@ dnd_monsters = {
             "Kraken's Teeth Necklace",
             "Sunken Chest",
             "Glimmerroot Herbs"
-        ],
-        "Race": "Animal",
-        "Class": "Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Thula",
-            "Grindy",
-            "Templeton",
-            "Timote",
-            "William"
-        ],
-        "5 Common Last Names": [
-            "Caddell",
-            "Hermanns",
-            "Madigan",
-            "Streeper",
-            "Carozza"
         ]
     },
     "Knight": {
@@ -24165,23 +20650,6 @@ dnd_monsters = {
             "Armor",
             "Helmet",
             "Longbow"
-        ],
-        "Race": "Human",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Giles",
-            "Barry",
-            "Edward",
-            "Matthew",
-            "Lancelot"
-        ],
-        "5 Common Last Names": [
-            "Marshall",
-            "Corwin",
-            "Stanwick",
-            "Cullen",
-            "Ironside"
         ]
     },
     "Kobold": {
@@ -24280,23 +20748,6 @@ dnd_monsters = {
             "Magic Scrolls/Items",
             "Trap Components",
             "Heavy Iron Keys"
-        ],
-        "Race": "Humanoid, Dragonborn",
-        "Class": "Warrior, Wizard",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Cross",
-            "Wizened",
-            "Kobl",
-            "Rax",
-            "Yor,"
-        ],
-        "5 Common Last Names": [
-            "Tix",
-            "Xor",
-            "Krum",
-            "Jesk",
-            "Ulix"
         ]
     },
     "Kraken": {
@@ -24404,23 +20855,6 @@ dnd_monsters = {
             "Encrusted Pearl Necklaces",
             "Gemstones",
             "Coin Purses filled with Silver and Gold Coins"
-        ],
-        "Race": "Giant",
-        "Class": "Monstrosity",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Krask",
-            "Gorg",
-            "Parus",
-            "Myrh",
-            "Thalamo"
-        ],
-        "5 Common Last Names": [
-            "Grumph",
-            "Iberus",
-            "Tilos",
-            "Yamam",
-            "Charyb"
         ]
     },
     "Lamia": {
@@ -24516,23 +20950,6 @@ dnd_monsters = {
             "Magical Talismans",
             "Ancient artifacts",
             "Mystic potion"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Gikua",
-            "Pherenike",
-            "Khanusra",
-            "Antigone",
-            "Nafaar"
-        ],
-        "5 Common Last Names": [
-            "Salencis",
-            "Tantalous",
-            "Damalis",
-            "Timarete",
-            "Kleopatra"
         ]
     },
     "Lemure": {
@@ -24629,23 +21046,6 @@ dnd_monsters = {
             "Magic weapons",
             "Magic armor",
             "Jewelry"
-        ],
-        "Race": "Devil",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Gyfer",
-            "Fistrill",
-            "Hashtooth",
-            "Tembloon",
-            "Moldoo"
-        ],
-        "5 Common Last Names": [
-            "Gutlick",
-            "Gravist",
-            "Grimbol",
-            "Finnarr",
-            "Haggish"
         ]
     },
     "Lich": {
@@ -24759,23 +21159,6 @@ dnd_monsters = {
             "Potions of power",
             "Gems and jewelry",
             "Gold coins"
-        ],
-        "Race": "Undead",
-        "Class": "Spellcaster",
-        "Size": "Medium",
-        "5_Common_First_Names_Specific_To_This_Monster": [
-            "Rahvin",
-            "Uzot",
-            "Mordai",
-            "Tolman",
-            "Lokossa"
-        ],
-        "5_Common_Last_Names_Specific_To_This_Monster": [
-            "Nameless",
-            "the Wise",
-            "the Vengeful",
-            "of Avernus",
-            "the Eternal"
         ]
     },
     "Lizard": {
@@ -24860,23 +21243,6 @@ dnd_monsters = {
             "Lizard hide used for armor",
             "Pouch containing lizard teeth or claws",
             "Snake oil with healing properties"
-        ],
-        "Race": "Reptilian",
-        "Class": "Monstrosity",
-        "Size": "Small to Medium",
-        "5 Common First Names": [
-            "Tep",
-            "Alp",
-            "Spit",
-            "Snap",
-            "Kree"
-        ],
-        "5 Common Last Names": [
-            "Krik",
-            "Krack",
-            "Vlak",
-            "Hiss",
-            "Jeer"
         ]
     },
     "Lizardfolk": {
@@ -24975,23 +21341,6 @@ dnd_monsters = {
             "Totems",
             "Leather Armor",
             "Spears"
-        ],
-        "Race": "Reptilian",
-        "Class": "Warrior",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Udak",
-            "Shatak",
-            "Arotak",
-            "Qagri",
-            "Tomak"
-        ],
-        "5 Common Last Names": [
-            "Stonebight",
-            "Stillstream",
-            "Deepscale",
-            "Friarback",
-            "Trueluck"
         ]
     },
     "Lizardfolk_Shaman": {
@@ -25094,23 +21443,6 @@ dnd_monsters = {
             "Gems and Jewels",
             "Ritual Tools",
             "Carved Totems"
-        ],
-        "Race": "Lizardfolk",
-        "Class": "Shaman",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Aeskar",
-            "Fashok",
-            "Garok",
-            "Kaski",
-            "Kesh"
-        ],
-        "5 Common Last Names": [
-            "Eelbraid",
-            "Crocstabber",
-            "Mudtreader",
-            "Swampcaller",
-            "Wetfoot"
         ]
     },
     "Mage": {
@@ -25205,23 +21537,6 @@ dnd_monsters = {
             "Magical Scrolls",
             "Mystical Gems",
             "Magical Potions"
-        ],
-        "Race": "Human",
-        "Class": "Mage",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Garrick",
-            "Jaspar",
-            "Mardren",
-            "Claudia",
-            "Ludwig"
-        ],
-        "5 Common Last Names": [
-            "Marcurio",
-            "Ugoreth",
-            "Blazedrake",
-            "Azurehearth",
-            "Dawnfire"
         ]
     },
     "Magma_Mephit": {
@@ -25319,23 +21634,6 @@ dnd_monsters = {
             "Scorched Coins",
             "Smoke Pouches",
             "Volcanic Crystal"
-        ],
-        "Race": "Elemental",
-        "Class": "Mephit",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Bunsen",
-            "Forgey",
-            "Fiero",
-            "Glitterflame",
-            "Firefly"
-        ],
-        "5 Common Last Names": [
-            "Crackleflame",
-            "Heatscar",
-            "Magmist",
-            "Thumbstone",
-            "Lavaflow"
         ]
     },
     "Magmin": {
@@ -25427,23 +21725,6 @@ dnd_monsters = {
             "Magical Fire-Elemental Weapons",
             "Magical Armor",
             "Magical Amulet of Fire Resistance"
-        ],
-        "Race": "Elemental",
-        "Class": "Monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Damstra",
-            "Joren",
-            "Gurney",
-            "Hitalda",
-            "Ren"
-        ],
-        "5 Common Last Names": [
-            "Magrobe",
-            "Varius",
-            "Vestin",
-            "Orozax",
-            "Byro"
         ]
     },
     "Mammoth": {
@@ -25532,23 +21813,6 @@ dnd_monsters = {
             "Ivory Shards",
             "Rawhide",
             "Teeth"
-        ],
-        "Race": "Beast",
-        "Class": " -- ",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Drome",
-            "Hugh",
-            "Hildar",
-            "Vandan",
-            "Urian"
-        ],
-        "5 Common Last Names": [
-            "Thrumbolt",
-            "Bellowhorn",
-            "Crushstone",
-            "Tusktreader",
-            "Tuskwell"
         ]
     },
     "Manticore": {
@@ -25641,23 +21905,6 @@ dnd_monsters = {
             "Sharp claws and tusks",
             "Leather hide armor",
             "Gems"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Haralan",
-            "Malagon",
-            "Ghorlan",
-            "Coran",
-            "Othlon"
-        ],
-        "5 Common Last Names": [
-            "Wyrmsbreath",
-            "Heronshield",
-            "Scalebender",
-            "Stingtail",
-            "Stonescream"
         ]
     },
     "Marilith": {
@@ -25764,23 +22011,6 @@ dnd_monsters = {
             "Magical Artifacts",
             "Gems and Jewelry",
             "Rare Ingredients"
-        ],
-        "Race": "Demon",
-        "Class": "Fiend",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Cibilien",
-            "Lajaya",
-            "Manibozho",
-            "Novzala",
-            "Yune"
-        ],
-        "5 Common Last Names": [
-            "Cawikas",
-            "Edeprat",
-            "Fennid",
-            "Gastetrix",
-            "Yalrael"
         ]
     },
     "Mastiff": {
@@ -25873,23 +22103,6 @@ dnd_monsters = {
             "Gems",
             "Weapons",
             "Armor"
-        ],
-        "Race": "Animal",
-        "Class": "Monster",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Mighty",
-            "Brave",
-            "Fearless",
-            "Gentle",
-            "Loyal"
-        ],
-        "5 Common Last Names": [
-            "Fang",
-            "Ruff",
-            "Bite",
-            "Growl",
-            "Sprint"
         ]
     },
     "Medusa": {
@@ -25970,23 +22183,6 @@ dnd_monsters = {
             "Magic weapons",
             "Magic armor",
             "Rare magical items"
-        ],
-        "Race": "Gorgon",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Medus",
-            "Styx",
-            "Leon",
-            "Mercy",
-            "Onyx"
-        ],
-        "5 Common Last Names": [
-            "Viper",
-            "Snake",
-            "Coil",
-            "Stony",
-            "Glare"
         ]
     },
     "Merfolk": {
@@ -26081,23 +22277,6 @@ dnd_monsters = {
             "Gems",
             "Magical scrolls",
             "Rare gems"
-        ],
-        "Race": "Humaniod",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Blaise",
-            "Coral",
-            "Mateo",
-            "Taryn",
-            "Vania"
-        ],
-        "5 Common Last Names": [
-            "Coralbeard",
-            "Sarlocker",
-            "Finlanger",
-            "Wildshigh",
-            "Waverunner"
         ]
     },
     "Merrow": {
@@ -26189,23 +22368,6 @@ dnd_monsters = {
             "Seaweed",
             "Gold Coins",
             "Jewelry"
-        ],
-        "Race": "Giant",
-        "Class": "Aquatic Monstrous Humanoid",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Dorrin",
-            "Lochmar",
-            "Suuzan",
-            "Froon",
-            "Kraal"
-        ],
-        "5 Common Last Names": [
-            "Kelpbeard",
-            "Seaheaver",
-            "Umberclaw",
-            "Stonescale",
-            "Shorecrusher"
         ]
     },
     "Mezzoloth": {
@@ -26310,23 +22472,6 @@ dnd_monsters = {
             "Armor of protection",
             "Scrolls of magical protection",
             "Enchanted jewelry"
-        ],
-        "Race": "Yugoloth",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Darazaq",
-            "Hadarai",
-            "Ixtab",
-            "Maganon",
-            "Raxivort"
-        ],
-        "5 Common Last Names": [
-            "Gulvox",
-            "Hezrou",
-            "Mu'Rakath",
-            "Syssarian",
-            "Vroxath"
         ]
     },
     "Mimic": {
@@ -26422,23 +22567,6 @@ dnd_monsters = {
             "Magic items",
             "Armour pieces",
             "Weapons"
-        ],
-        "Race": "Construct",
-        "Class": "Aberration",
-        "Size": "Various",
-        "5 Common First Names": [
-            "Closer",
-            "Lurker",
-            "Athena",
-            "Pretender",
-            "TrapJaw"
-        ],
-        "5 Common Last Names": [
-            "Shapeshifter",
-            "Mutator",
-            "Doommaker",
-            "Deceiver",
-            "Pretense"
         ]
     },
     "Minotaur": {
@@ -26535,23 +22663,6 @@ dnd_monsters = {
             "Arms and Armor",
             "Spices and Potions",
             "Other Valuables"
-        ],
-        "Race": "monstrosity",
-        "Class": "none",
-        "Size": "large",
-        "5 Common First Names": [
-            "Korag",
-            "Raum",
-            "Yezer",
-            "Dorak",
-            "Ulukin"
-        ],
-        "5 Common Last Names": [
-            "Bloodhorn",
-            "Stormhoof",
-            "Greataxe",
-            "Bonecrusher",
-            "Morninghide"
         ]
     },
     "Minotaur_Skeleton": {
@@ -26643,23 +22754,6 @@ dnd_monsters = {
             "Set of Silver Cutlery",
             "Tarnished Bronze Helmet",
             "Torn Leather Armor"
-        ],
-        "Race": "Undead",
-        "Class": "Skeleton",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Aeldar",
-            "Dathras",
-            "Horgar",
-            "Kadar",
-            "Naros"
-        ],
-        "5 Common Last Names": [
-            "Crenchom",
-            "Daggar",
-            "Gruntheran",
-            "Fanchom",
-            "Thindor"
         ]
     },
     "Mule": {
@@ -26747,23 +22841,6 @@ dnd_monsters = {
             "Pottery",
             "Small trinkets",
             "Horse/Mule gear"
-        ],
-        "Race": "Beast",
-        "Class": "Non-Player Character",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Murray",
-            "Maximus",
-            "Moose",
-            "Moses",
-            "Maverick"
-        ],
-        "5 Common Last Names": [
-            "Maneuver",
-            "Mane",
-            "Marathon",
-            "Mountain",
-            "Muscle"
         ]
     },
     "Mummy": {
@@ -26863,23 +22940,6 @@ dnd_monsters = {
             "Holy Relics",
             "Cursed Blades",
             "Banishing Charms"
-        ],
-        "Race": "Undead",
-        "Class": "Monster",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Anubis",
-            "Horus",
-            "Nefertiti",
-            "Senet",
-            "Tutankhamen"
-        ],
-        "5 Common Last Names": [
-            "Ben-Amun",
-            "Hapu",
-            "Ka-Ra",
-            "Mahlah",
-            "Shepsi"
         ]
     },
     "Mummy_Lord": {
@@ -26991,23 +23051,6 @@ dnd_monsters = {
             "Mystical Trinkets",
             "Tomes of Necromancy",
             "Gold Coins"
-        ],
-        "Race": "Undead",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Mizimar",
-            "Barltekh",
-            "Amonhar",
-            "Ramsingh",
-            "Ninthara"
-        ],
-        "5 Common Last Names": [
-            "Anka",
-            "Isthaf",
-            "Atum",
-            "Mesingeh",
-            "Nefertem"
         ]
     },
     "Myconid_adult": {
@@ -27120,23 +23163,6 @@ dnd_monsters = {
             "Potions of Regeneration",
             "Scrolls of Power Word: Kill",
             "Spore Cap of Clarity"
-        ],
-        "Race": "Fungus",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Strophor",
-            "Strompur",
-            "Strolom",
-            "Gustrom",
-            "Nulossem"
-        ],
-        "5 Common Last Names": [
-            "Loyram",
-            "Voylem",
-            "Gruarm",
-            "Vresharm",
-            "Gestrell"
         ]
     },
     "Myconid_sprout": {
@@ -27258,23 +23284,6 @@ dnd_monsters = {
             "Magical weapons",
             "Magical armor",
             "Scrolls and potions"
-        ],
-        "Race": "Demon",
-        "Class": "Great Old One",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Hethkor",
-            "Aka-Shem",
-            "Xetiran",
-            "Magrin",
-            "Tiri-Many"
-        ],
-        "5 Common Last Names": [
-            "Glubrax",
-            "Vezravon",
-            "Awngidor",
-            "Yethrieh",
-            "Goldumel"
         ]
     },
     "Noble": {
@@ -27375,23 +23384,6 @@ dnd_monsters = {
             "Rare books and scrolls",
             "Coins",
             "Weapons"
-        ],
-        "Race": "Human",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ophra",
-            "Olan",
-            "Milo",
-            "Harlen",
-            "Mara"
-        ],
-        "5 Common Last Names": [
-            "Kenting",
-            "Topper",
-            "Biddle",
-            "Tann",
-            "Grenn"
         ]
     },
     "Ochre_Jelly": {
@@ -27422,23 +23414,6 @@ dnd_monsters = {
         ],
         "Actions": [
             "Pseudopod.Melee Weapon Attack: +4 to hit, reach 5 ft., one target.Hit: 9 (2d6 + 2) bludgeoning damage plus 3 (1d6) acid damage."
-        ],
-        "Race": "Ooze",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Jimirr",
-            "Amere",
-            "Yazen",
-            "Saverre",
-            "Chimme"
-        ],
-        "5 Common Last Names": [
-            "Slime",
-            "Muck",
-            "Glompkin",
-            "Gloop",
-            "Grummle"
         ]
     },
     "Octopus": {
@@ -27532,23 +23507,6 @@ dnd_monsters = {
             "Octopus tooth necklace (sprite attractor/luck charm)",
             "Octopus hide breastplate (light armor)",
             "Octopus tentacle lasso (weapon)"
-        ],
-        "Race": "Beast",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Lomol",
-            "Grogog",
-            "Mollym",
-            "Hoggo",
-            "Tagi"
-        ],
-        "5 Common Last Names": [
-            "Tentaclebeard",
-            "Squidbreath",
-            "Krakel",
-            "Coralwhiskers",
-            "Pecbuster"
         ]
     },
     "Ogre": {
@@ -27647,23 +23605,6 @@ dnd_monsters = {
             "Magic Weapons",
             "Magical Scrolls",
             "Potions"
-        ],
-        "Race": "Giant",
-        "Class": "Fighter",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Grunth",
-            "Ulfgar",
-            "Har'eth",
-            "Bleth",
-            "Ghrum"
-        ],
-        "5 Common Last Names": [
-            "Daarmak",
-            "Nargu",
-            "Gorga",
-            "Gul'thok",
-            "Mak'morn"
         ]
     },
     "Ogre_Zombie": {
@@ -27756,23 +23697,6 @@ dnd_monsters = {
             "Magic weapons",
             "Potions",
             "Spell scrolls"
-        ],
-        "Race": "Undead",
-        "Class": "Monster",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Grundle",
-            "Munkh",
-            "Ungro",
-            "Thokk",
-            "Sorg"
-        ],
-        "5 Common Last Names": [
-            "Crusher",
-            "Mangler",
-            "Crusher",
-            "Mauler",
-            "Trample"
         ]
     },
     "Oni": {
@@ -27871,23 +23795,6 @@ dnd_monsters = {
             "Spell Scrolls",
             "Rare Metals",
             "Gems and Jewelry"
-        ],
-        "Race": "Outsider (Yokai)",
-        "Class": "Fighter or Warlock",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Himiko",
-            "Kanbiko",
-            "Motoshi",
-            "Hokago",
-            "Kazuhiro"
-        ],
-        "5 Common Last Names": [
-            "Kazakura",
-            "Yamato",
-            "Umemiya",
-            "Okami",
-            "Yoguchi"
         ]
     },
     "Orc": {
@@ -27986,23 +23893,6 @@ dnd_monsters = {
             "Weapons and Armor",
             "Gems",
             "Mystical Orbs or Relics"
-        ],
-        "Race": "Humanoid",
-        "Class": "Fighter Ranger Warlord Barbarian Paladin Martial Artist",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Goru",
-            "Golu",
-            "Drog",
-            "Dorm",
-            "Bolu"
-        ],
-        "5 Common Last Names": [
-            "Lagruk",
-            "Barhammer",
-            "Ironfist",
-            "Dornsmasher",
-            "Gwharthog"
         ]
     },
     "Orog": {
@@ -28100,23 +23990,6 @@ dnd_monsters = {
             "Weapons",
             "Armor",
             "Tools"
-        ],
-        "Race": "Goblinoid",
-        "Class": "Warrior",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Kurbo",
-            "Tsheeg",
-            "Clorg",
-            "Mersha",
-            "Gostor"
-        ],
-        "5 Common Last Names": [
-            "Bellowsbreath",
-            "Bonebreaker",
-            "Echoaxe",
-            "Ironheart",
-            "Rotmaw"
         ]
     },
     "Otyugh": {
@@ -28210,23 +24083,6 @@ dnd_monsters = {
             "Magical scrolls",
             "Rare herbs",
             "Healing potions"
-        ],
-        "Race": "Aberration",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Otrig",
-            "Uthol",
-            "Thonart",
-            "Rutheg",
-            "Duric"
-        ],
-        "5 Common Last Names": [
-            "Mireclaw",
-            "Stenchhoof",
-            "Rotfeather",
-            "Gutrender",
-            "Ructionspew"
         ]
     },
     "Owl": {
@@ -28317,23 +24173,6 @@ dnd_monsters = {
             "Eyes of the Owl",
             "Beak of the Owl",
             "Owl Statuette"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Hoot",
-            "Screech",
-            "Feathered",
-            "Wise",
-            "Gabby"
-        ],
-        "5 Common Last Names": [
-            "Owlwing",
-            "Marin",
-            "Owlfeather",
-            "Nightwatch",
-            "Nocturne"
         ]
     },
     "Owlbear": {
@@ -28424,23 +24263,6 @@ dnd_monsters = {
             "Potions",
             "Armor/ Weapon Components",
             "Magical Items"
-        ],
-        "Race": "Magical Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Gutr",
-            "Snurg",
-            "Gowg",
-            "Warg",
-            "Varv"
-        ],
-        "5 Common Last Names": [
-            "Gnashclaws",
-            "Roarfoot",
-            "Talonstrike",
-            "Beakbrand",
-            "Clawskinner"
         ]
     },
     "Pegasus": {
@@ -28532,23 +24354,6 @@ dnd_monsters = {
             "Pegasus Armor",
             "Horseshoes of Protection",
             "Keratin protection charms"
-        ],
-        "Race": "Celestial",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Aleon",
-            "Aetheria",
-            "Brinon",
-            "Hespera",
-            "Kreon"
-        ],
-        "5 Common Last Names": [
-            "Angelwing",
-            "Cloudrider",
-            "Heavensteed",
-            "Nightflyer",
-            "Stormrunner"
         ]
     },
     "Pentadrone": {
@@ -28636,23 +24441,6 @@ dnd_monsters = {
             "A small vial of a pale blue liquid.",
             "A handcrafted dagger made of a unique metal.",
             "A scrap of parchment with an ancient rune etched on it."
-        ],
-        "Race": "Construct",
-        "Class": "Drone",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Cyberial",
-            "Arcturius",
-            "Cogmon",
-            "Terti-un",
-            "Betamax"
-        ],
-        "5 Common Last Names": [
-            "Beta-3",
-            "G-7T24",
-            "Gentro-2",
-            "Terramox",
-            "Omega-K2"
         ]
     },
     "Peryton": {
@@ -28748,23 +24536,6 @@ dnd_monsters = {
             "Glossy black beak",
             "Shiny black talon",
             "Large peryton feathers"
-        ],
-        "Race": "Monstrosity",
-        "Class": "N/A",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Anki",
-            "Geron",
-            "Oluf",
-            "Sarvos",
-            "Yngvi"
-        ],
-        "5 Common Last Names": [
-            "Bjorvil",
-            "Svennir",
-            "Thv\u0446r",
-            "Ulve",
-            "Vemund"
         ]
     },
     "Pirate": {
@@ -28870,23 +24641,6 @@ dnd_monsters = {
             "Jewels",
             "Weapons",
             "Furs"
-        ],
-        "Race": "Human",
-        "Class": "Any",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Bill",
-            "Bob",
-            "Jack",
-            "Anne",
-            "Sam"
-        ],
-        "5 Common Last Names": [
-            "Hook",
-            "Blackheart",
-            "Rumrunner",
-            "Cutloose",
-            "Savage"
         ]
     },
     "Pixie": {
@@ -28978,23 +24732,6 @@ dnd_monsters = {
             "Mystical Weapons",
             "Glamours",
             "Magical scrolls"
-        ],
-        "Race": "Fey",
-        "Class": "Wild Magic Sorcerer",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Elli",
-            "Iyach",
-            "Kiribar",
-            "Gandoil",
-            "Blee"
-        ],
-        "5 Common Last Names": [
-            "Tinklesocks",
-            "Spr DEWdrop",
-            "Blossomflutter",
-            "Pondripple",
-            "Luchasparkle"
         ]
     },
     "Planetar": {
@@ -29099,23 +24836,6 @@ dnd_monsters = {
             "Healing Rod",
             "Divine Arrows",
             "Divine Scroll"
-        ],
-        "Race": "Celestial",
-        "Class": "Outsider",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Asar",
-            "Dabari",
-            "Hemla",
-            "Omer",
-            "Tariel"
-        ],
-        "5 Common Last Names": [
-            "Helohim",
-            "Liop",
-            "Memfis",
-            "Azh",
-            "Raziel"
         ]
     },
     "Plesiosaurus": {
@@ -29207,23 +24927,6 @@ dnd_monsters = {
             "Shark Gems",
             "Sea Tortoiseshells",
             "Ambergris"
-        ],
-        "Race": "Reptile",
-        "Class": "Aquatic, Beast",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Domo",
-            "Myta",
-            "Lon",
-            "Gurus",
-            "Xuk"
-        ],
-        "5 Common Last Names": [
-            "Alon",
-            "Kuno",
-            "Nenged",
-            "Gomog",
-            "Baimun"
         ]
     },
     "Poisonous_Snake": {
@@ -29308,23 +25011,6 @@ dnd_monsters = {
             "Magical items",
             "Rare herbs",
             "Potions of healing"
-        ],
-        "Race": "Reptile",
-        "Class": "Beast",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Single",
-            "Tricky",
-            "Rapacious",
-            "Vicious",
-            "Spectral"
-        ],
-        "5 Common Last Names": [
-            "Slayer",
-            "collection",
-            "Crawler",
-            "Wriggler",
-            "Hisser"
         ]
     },
     "Polar_Bear": {
@@ -29415,23 +25101,6 @@ dnd_monsters = {
             "Fish",
             "Sealskin",
             "Raw Meat"
-        ],
-        "Race": "Creature",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Husky",
-            "Frosty",
-            "Suluqsi",
-            "Snowball",
-            "Siku"
-        ],
-        "5 Common Last Names": [
-            "the North Wind",
-            "the Whitecoat",
-            "by the Sleet",
-            "the Arctic Kings",
-            "the Frozen Moon"
         ]
     },
     "Pony": {
@@ -29523,23 +25192,6 @@ dnd_monsters = {
             "Mystical horsetail hair",
             "Saddle bags filled with coins or precious metals",
             "Magical armor or weapons tailored to the pony's size"
-        ],
-        "Race": "Beast",
-        "Class": "Animal Companion",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Tiny",
-            "Dusty",
-            "Goldie",
-            "Dancer",
-            "Pebble"
-        ],
-        "5 Common Last Names": [
-            "Foal",
-            "Gambler",
-            "Friendship",
-            "Hope",
-            "Patience"
         ]
     },
     "Priest": {
@@ -29636,23 +25288,6 @@ dnd_monsters = {
             "Holy symbols and enchanted weapons.",
             "Gems and jewelry.",
             "Exotic materials and tomes."
-        ],
-        "Race": "Human",
-        "Class": "Cleric",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Josephine",
-            "Geoffrey",
-            "Gregory",
-            "Giselle",
-            "Gaston"
-        ],
-        "5 Common Last Names": [
-            "Bishop",
-            "Priest",
-            "Niryn",
-            "Pilgrim",
-            "Preacher"
         ]
     },
     "Pseudodragon": {
@@ -29747,23 +25382,6 @@ dnd_monsters = {
             "Weapons imbued with magical energy.",
             "Atherical orbs, used for arcane casting.",
             "Rare books, often filled with secret knowledge."
-        ],
-        "Race": "Dragon",
-        "Class": "Magical Beast",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Smokey",
-            "Sooty",
-            "Scaley",
-            "Rusty",
-            "Sparky"
-        ],
-        "5 Common Last Names": [
-            "Rivenwing",
-            "Twinstrike",
-            "Fangfire",
-            "Mistfall",
-            "Sparkflight"
         ]
     },
     "Purple_Worm": {
@@ -29859,23 +25477,6 @@ dnd_monsters = {
             "Small Art Objects",
             "Gems",
             "Gold"
-        ],
-        "Race": "Giant Vermin",
-        "Class": "Worm",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Gormos",
-            "Lenshurl",
-            "Dalufaryn",
-            "Kinashul",
-            "Kenburl"
-        ],
-        "5 Common Last Names": [
-            "Gormasfel",
-            "Mohafe",
-            "Dastabur",
-            "Mallarm",
-            "Roskenhal"
         ]
     },
     "Quasit": {
@@ -29973,23 +25574,6 @@ dnd_monsters = {
             "Gold coins",
             "Gems or jewelry",
             "Magical components or reagents"
-        ],
-        "Race": "Fiend (Demon)",
-        "Class": "Demon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Gimuar",
-            "Shadrad",
-            "Nimbur",
-            "Tigdar",
-            "Vonthar"
-        ],
-        "5 Common Last Names": [
-            "Lahumil",
-            "Narajuar",
-            "Puahur",
-            "Jedigar",
-            "Utharog"
         ]
     },
     "Quipper": {
@@ -30078,23 +25662,6 @@ dnd_monsters = {
             "Fish Scales",
             "Fish Bones",
             "Potion Ingredients"
-        ],
-        "Race": "Fish",
-        "Class": "Beast",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Bob",
-            "Shelly",
-            "Finny",
-            "Jaws",
-            "Sammy"
-        ],
-        "5 Common Last Names": [
-            "Sailfish",
-            "Barracuda",
-            "Cod",
-            "Claw",
-            "Gulper"
         ]
     },
     "Rakshasa": {
@@ -30189,23 +25756,6 @@ dnd_monsters = {
             "Elixirs and Poisons",
             "Gems and Coins",
             "Mystic Scrolls"
-        ],
-        "Race": "Fiend",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Pharun",
-            "Shan",
-            "Aja",
-            "Uman",
-            "Ehak"
-        ],
-        "5 Common Last Names": [
-            "Mahan",
-            "Uvatha",
-            "Ghul",
-            "Makha",
-            "Banda"
         ]
     },
     "Rat": {
@@ -30292,23 +25842,6 @@ dnd_monsters = {
             "gems",
             "jewelry",
             "small trinkets"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Squeak",
-            "Scamper",
-            "Grubbing",
-            "Cheechee",
-            "Chitter"
-        ],
-        "5 Common Last Names": [
-            "Gigglesnout",
-            "Tailspinner",
-            "Bobtail",
-            "Tailbanger",
-            "Bellychaser"
         ]
     },
     "Raven": {
@@ -30396,23 +25929,6 @@ dnd_monsters = {
             "Iron Headpiece",
             "Silver Clasp",
             "Bronze Buckle"
-        ],
-        "Race": "Beast",
-        "Class": "Bird of Prey",
-        "Size": "small (6-10 in head to body)",
-        "5 Common First Names": [
-            "Feather",
-            "Nero",
-            "Corvus",
-            "Poe",
-            "Loki"
-        ],
-        "5 Common Last Names": [
-            "Crow",
-            "Wing",
-            "Flock",
-            "Flight",
-            "Sky"
         ]
     },
     "Red_Dragon_Wyrmling": {
@@ -30505,23 +26021,6 @@ dnd_monsters = {
             "Potions and elixirs",
             "Jewelry and gems",
             "Rare herbs and spices"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Crackle",
-            "Sizzle",
-            "Burne",
-            "Corona",
-            "Char"
-        ],
-        "5 Common Last Names": [
-            "Ignas",
-            "Igniss",
-            "Ignem",
-            "Sulfurspell",
-            "Firebursts"
         ]
     },
     "Reef_Shark": {
@@ -30611,23 +26110,6 @@ dnd_monsters = {
             "Reef Coral",
             "Pearls",
             "Gems"
-        ],
-        "Race": "Animal",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Finley",
-            "Midas",
-            "Laney",
-            "Willamina",
-            "Lotus"
-        ],
-        "5 Common Last Names": [
-            "Finn",
-            "Jaws",
-            "Finman",
-            "Sea-Bite",
-            "Swell"
         ]
     },
     "Remorhaz": {
@@ -30714,23 +26196,6 @@ dnd_monsters = {
             "Remorhaz Tail Plate",
             "Remorhaz Hide",
             "Remorhaz Fang"
-        ],
-        "Race": "Magical Beast",
-        "Class": "Monstrosity",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Spaunn",
-            "Fron",
-            "Karrgo",
-            "Srumb",
-            "Freyf"
-        ],
-        "5 Common Last Names": [
-            "Clawburner",
-            "Snowstalker",
-            "Ashwhisker",
-            "Stampeder",
-            "Frostbite"
         ]
     },
     "Rhinoceros": {
@@ -30819,23 +26284,6 @@ dnd_monsters = {
             "Rare herbs",
             "Rhinoceros teeth",
             "Mystical scrolls"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Boone",
-            "Bran",
-            "Brea",
-            "Brey",
-            "Bri"
-        ],
-        "5 Common Last Names": [
-            "Lash",
-            "Sinon",
-            "Clymer",
-            "Faun",
-            "Octavian"
         ]
     },
     "Riding_Horse": {
@@ -30914,23 +26362,6 @@ dnd_monsters = {
             "Whip",
             "Bit and Bridle",
             "Feedbag"
-        ],
-        "Race": "Equidae",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Henry",
-            "Jade",
-            "Jack",
-            "Mack",
-            "Sunny"
-        ],
-        "5 Common Last Names": [
-            "Tempest",
-            "Copper",
-            "Cottage",
-            "Upland",
-            "Frost"
         ]
     },
     "Roc": {
@@ -31022,23 +26453,6 @@ dnd_monsters = {
             "Jewelry",
             "Small weapons and armor",
             "Rare herbs and plants"
-        ],
-        "Race": "Giant",
-        "Class": "Beast",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Feather",
-            "Siu",
-            "Sang",
-            "Sovna",
-            "Norl"
-        ],
-        "5 Common Last Names": [
-            "Plume",
-            "Viga",
-            "Wing",
-            "Riker",
-            "Eagle"
         ]
     },
     "Roper": {
@@ -31134,23 +26548,6 @@ dnd_monsters = {
             "Mysterious artifacts",
             "Unknown scrolls",
             "Essence of fear"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Magical beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Sogg",
-            "Flol",
-            "Zarg",
-            "Kreeg",
-            "Brunn"
-        ],
-        "5 Common Last Names": [
-            "Tooker",
-            "Rotgut",
-            "Gulper",
-            "Grubber",
-            "Leggin"
         ]
     },
     "Rug_of_Smothering": {
@@ -31231,23 +26628,6 @@ dnd_monsters = {
             "Magical Amulet",
             "Potion of Healing",
             "Ring of Protection"
-        ],
-        "Race": "Construct",
-        "Class": "Magical",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Stow",
-            "Gorg",
-            "Devour",
-            "Snug",
-            "Spread"
-        ],
-        "5 Common Last Names": [
-            "Misery",
-            "Silence",
-            "Novacule",
-            "Surge",
-            "Suffocation"
         ]
     },
     "Rust_Monster": {
@@ -31345,23 +26725,6 @@ dnd_monsters = {
             "Silver Pieces",
             "Gems",
             "Pearls"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Skrotchh",
-            "Lodhar",
-            "Grauitz",
-            "Sogrip",
-            "Fustrarg"
-        ],
-        "5 Common Last Names": [
-            "Ironjaw",
-            "Grelbaff",
-            "Scrapmouth",
-            "Crozkaff",
-            "Gafftooth"
         ]
     },
     "Saber_Toothed_Tiger": {
@@ -31546,23 +26909,6 @@ dnd_monsters = {
             "Gems",
             "Jewelry",
             "Magic Items"
-        ],
-        "Race": "Humanoid",
-        "Class": "Monster",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Kessish",
-            "Tasjak",
-            "Glekis",
-            "Lupka",
-            "Agerak"
-        ],
-        "5 Common Last Names": [
-            "Slukshuk",
-            "Vortish",
-            "Goboltok",
-            "Jugorash",
-            "Mugsnurk"
         ]
     },
     "Sahuagin_Baron": {
@@ -31751,23 +27097,6 @@ dnd_monsters = {
             "Scroll of Water Mimicry",
             "Silk Robe of the Sea",
             "Amulet of Adaptation"
-        ],
-        "Race": "Sahuagin",
-        "Class": "Cleric",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ralzak",
-            "Zerezca",
-            "Seltyorz",
-            "Venkara",
-            "Dozala"
-        ],
-        "5 Common Last Names": [
-            "Slithikor",
-            "Unelanta",
-            "Ruletzoe",
-            "Slithithr",
-            "L'alune"
         ]
     },
     "Salamander": {
@@ -31866,23 +27195,6 @@ dnd_monsters = {
             "Scrolls and Potions",
             "Gems and Jewels",
             "Magic Weapons and Armor"
-        ],
-        "Race": "Elemental",
-        "Class": "Fey",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Razerun",
-            "Eklomar",
-            "Terragon",
-            "Fefnir",
-            "Serelion"
-        ],
-        "5 Common Last Names": [
-            "Salamasend",
-            "Vijular",
-            "Metalor",
-            "Stonefire",
-            "Celatine"
         ]
     },
     "Satyr": {
@@ -31978,23 +27290,6 @@ dnd_monsters = {
             "Musical instruments",
             "Gold necklaces and brooches",
             "Magical items related to nature"
-        ],
-        "Race": "Fey",
-        "Class": "Humanoid",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Baphor",
-            "Faunus",
-            "Moros",
-            "Pan",
-            "Silenus"
-        ],
-        "5 Common Last Names": [
-            "Eupalinos",
-            "Fangthorn",
-            "Kelkro",
-            "Loretron",
-            "Timdarch"
         ]
     },
     "Scorpion": {
@@ -32080,23 +27375,6 @@ dnd_monsters = {
             "Potion of Healing",
             "Scroll of Summoning",
             "Potion of Animal Control"
-        ],
-        "Race": "Beast",
-        "Class": "Monster",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Pincer",
-            "Stinger",
-            "Mantis",
-            "Lasher",
-            "Scuttle"
-        ],
-        "5 Common Last Names": [
-            "Claw",
-            "Pincer",
-            "Striker",
-            "Biter",
-            "Strider"
         ]
     },
     "Scout": {
@@ -32198,23 +27476,6 @@ dnd_monsters = {
             "Gems and jewelry",
             "Potions and scrolls",
             "Rare and magical items"
-        ],
-        "Race": "Humanoid",
-        "Class": "Rogue",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Corin",
-            "Gwenn",
-            "Keyle",
-            "Raleen",
-            "Tristan"
-        ],
-        "5 Common Last Names": [
-            "Alehandro",
-            "Kevlane",
-            "McDuill",
-            "Oakwood",
-            "Swaringen"
         ]
     },
     "Sea_Hag": {
@@ -32307,23 +27568,6 @@ dnd_monsters = {
             "Magical trinkets",
             "Artifacts from other sea creatures",
             "Ancient relics"
-        ],
-        "Race": "Fiend",
-        "Class": "Humanoid",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Aella",
-            "Lilith",
-            "Mala",
-            "Mesemna",
-            "Verellis"
-        ],
-        "5 Common Last Names": [
-            "Sea Witch",
-            "Fishwife",
-            "Tide-Caller",
-            "Cove-Talker",
-            "Seaborn"
         ]
     },
     "Sea_Horse": {
@@ -32408,23 +27652,6 @@ dnd_monsters = {
             "Mermaid Scale Shards",
             "Gemstones",
             "Gold Coins"
-        ],
-        "Race": "Celestial",
-        "Class": "Beast",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Lightning",
-            "Glimmer",
-            "Sparkle",
-            "Glitter",
-            "Moonbeam"
-        ],
-        "5 Common Last Names": [
-            "Fetterless",
-            "Striker",
-            "Dashing",
-            "Loudwater",
-            "Crestsplash"
         ]
     },
     "Shadow": {
@@ -32515,23 +27742,6 @@ dnd_monsters = {
             "Magic Weapons and Items",
             "Mystical Scrolls",
             "Ancient Relics"
-        ],
-        "Race": "Shade",
-        "Class": "Undead",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Shadow",
-            "Thorn",
-            "Raven",
-            "Night",
-            "Doom"
-        ],
-        "5 Common Last Names": [
-            "Walker",
-            "Pain",
-            "Feather",
-            "Stalker",
-            "Soul"
         ]
     },
     "Shambling_Mound": {
@@ -32627,23 +27837,6 @@ dnd_monsters = {
             "Gems",
             "Potions",
             "Magic Weapons"
-        ],
-        "Race": "Plant",
-        "Class": "Monster",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Chortle",
-            "Humphrey",
-            "Bogel",
-            "McMurphy",
-            "Arlyn"
-        ],
-        "5 Common Last Names": [
-            "Mounds",
-            "Girdle",
-            "Hanks",
-            "Scuttles",
-            "Oakenwoods"
         ]
     },
     "Shield_Guardian": {
@@ -32741,23 +27934,6 @@ dnd_monsters = {
             "Rune stones used to control the Shield Guardian",
             "Valuable gems and jewelry stolen from the Guardian's targets",
             "Exquisite works of art taken from its victims"
-        ],
-        "Race": "Construct",
-        "Class": "Outsider",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Bosonival",
-            "Arben",
-            "Karsten",
-            "Gustav",
-            "Gereon"
-        ],
-        "5 Common Last Names": [
-            "The Builder",
-            "Hearthsworn",
-            "The Smith",
-            "The Forgemaster",
-            "Of Stone and Steel"
         ]
     },
     "Shrieker": {
@@ -32843,23 +28019,6 @@ dnd_monsters = {
             "Food rations",
             "Torches",
             "Magic scrolls"
-        ],
-        "Race": "Fungus",
-        "Class": "Plant",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Fung",
-            "Gurk",
-            "Zorc",
-            "Shroom",
-            "Rot"
-        ],
-        "5 Common Last Names": [
-            "Spore",
-            "Grower",
-            "Cryer",
-            "Screamer",
-            "Shrieker"
         ]
     },
     "Silver_Dragon_Wyrmling": {
@@ -32951,23 +28110,6 @@ dnd_monsters = {
             "Potions and elixirs.",
             "Gems and jewels.",
             "Taxidermy trophies."
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Silveria",
-            "Silvern",
-            "Sulara",
-            "Saryssa",
-            "Silvershine"
-        ],
-        "5 Common Last Names": [
-            "Silvercloud",
-            "Silvertongue",
-            "Silverscale",
-            "Moonstone",
-            "Brightclaw"
         ]
     },
     "Skeleton": {
@@ -33069,23 +28211,6 @@ dnd_monsters = {
             "Scrolls",
             "Rare herbs and ingredients for magical potions",
             "Rare books"
-        ],
-        "Race": "Undead",
-        "Class": "Undead",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Randy",
-            "Grimm",
-            "Karel",
-            "Norton",
-            "Remmy"
-        ],
-        "5 Common Last Names": [
-            "Rattlebones",
-            "Bonechill",
-            "Starknuckle",
-            "Deathsap",
-            "Mortarmane"
         ]
     },
     "Solar": {
@@ -33197,23 +28322,6 @@ dnd_monsters = {
             "Magic Armor",
             "Gold",
             "Precious Stones"
-        ],
-        "Race": "Celestial",
-        "Class": "Outsider",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Diana",
-            "Apollo",
-            "Helios",
-            "Teucer",
-            "Ladon"
-        ],
-        "5 Common Last Names": [
-            "Haloed",
-            "Light",
-            "Radiant",
-            "Brilliant",
-            "Celestian"
         ]
     },
     "Specter": {
@@ -33305,23 +28413,6 @@ dnd_monsters = {
             "Silver blade",
             "Divine scroll or book",
             "Gemstone imbued with powerful necromantic magics"
-        ],
-        "Race": "Undead",
-        "Class": "Ghost",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Atropos",
-            "Gorlag",
-            "Thalgent",
-            "Vogren",
-            "Xanthos"
-        ],
-        "5 Common Last Names": [
-            "The Stern",
-            "The Soothing Shadow",
-            "The Frosty Maw",
-            "The Burning Ember",
-            "The Silent Stalker"
         ]
     },
     "Spider": {
@@ -33416,23 +28507,6 @@ dnd_monsters = {
             "Jewelry",
             "Gems",
             "Trinkets"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Creep",
-            "Crawl",
-            "Leap",
-            "Spin",
-            "Stalk"
-        ],
-        "5 Common Last Names": [
-            "Weaver",
-            "Silks",
-            "Eggsack",
-            "Legger",
-            "Hunter"
         ]
     },
     "Spirit_Naga": {
@@ -33521,23 +28595,6 @@ dnd_monsters = {
             "Silver coins",
             "Magical items",
             "Secrets and ancient texts"
-        ],
-        "Race": "Naga",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Azeret",
-            "Malzaketh",
-            "Nalanyr",
-            "Raamer",
-            "Vaanya"
-        ],
-        "5 Common Last Names": [
-            "Bloodbinder",
-            "Celestis",
-            "Diviner",
-            "Geomancer",
-            "Maleficarum"
         ]
     },
     "Sprite": {
@@ -33636,23 +28693,6 @@ dnd_monsters = {
             "Glimmering Coins",
             "Mystical Charms",
             "Shiny Stones"
-        ],
-        "Race": "Fey",
-        "Class": "Feywild",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Willow",
-            "Rill",
-            "Teal",
-            "Thorn",
-            "River"
-        ],
-        "5 Common Last Names": [
-            "Fern",
-            "Briar",
-            "Glow",
-            "Whistle",
-            "Spark"
         ]
     },
     "Spy": {
@@ -33751,23 +28791,6 @@ dnd_monsters = {
             "Gold Bars",
             "Lock-Picks",
             "Spyglass"
-        ],
-        "Race": "Human",
-        "Class": "Rogue",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ash",
-            "Ezra",
-            "Jace",
-            "Isobel",
-            "Hale"
-        ],
-        "5 Common Last Names": [
-            "Kane",
-            "Foster",
-            "Graves",
-            "Wren",
-            "DeLuca"
         ]
     },
     "Steam_Mephit": {
@@ -33859,23 +28882,6 @@ dnd_monsters = {
             "Magic items related to steam or smoke",
             "Thin cloth armor",
             "Small blades"
-        ],
-        "Race": "Elemental",
-        "Class": "None",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Hotaru",
-            "Fuego",
-            "Hontan",
-            "Budo",
-            "Ikazuchi"
-        ],
-        "5 Common Last Names": [
-            "Plumes",
-            "Steamvents",
-            "Smokescales",
-            "Geysers",
-            "Fumaroles"
         ]
     },
     "Stirge": {
@@ -33961,23 +28967,6 @@ dnd_monsters = {
             "Pieces of jewelry",
             "Small pieces of silver",
             "Gems (large and small)"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Chomper",
-            "Fweep",
-            "Stabber",
-            "Buzzo",
-            "Scooper"
-        ],
-        "5 Common Last Names": [
-            "Swarm",
-            "Tick",
-            "Lasher",
-            "Gnawer",
-            "Bitepest"
         ]
     },
     "Stone_Giant": {
@@ -34076,23 +29065,6 @@ dnd_monsters = {
             "Potion of Giant Growth",
             "Gems and Jewels",
             "Magic Items associated with Stone-related powers"
-        ],
-        "Race": "Giant",
-        "Class": "Fighter",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Stronar",
-            "Gronuk",
-            "Gorim",
-            "Thorgrim",
-            "Vondar"
-        ],
-        "5 Common Last Names": [
-            "Stoukis",
-            "Dornick",
-            "Roklom",
-            "Becklar",
-            "Lekkis"
         ]
     },
     "Stone_Golem": {
@@ -34185,23 +29157,6 @@ dnd_monsters = {
             "Potions",
             "Gems and jewelry",
             "Rare materials"
-        ],
-        "Race": "Construct",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Hob",
-            "Chuf",
-            "Whin",
-            "Drak",
-            "Ston"
-        ],
-        "5 Common Last Names": [
-            "Clack",
-            "Lump",
-            "Forge",
-            "Granite",
-            "Strate"
         ]
     },
     "Storm_Giant": {
@@ -34303,23 +29258,6 @@ dnd_monsters = {
             "Weather Stones",
             "Lightning Bolts",
             "Plate Armor"
-        ],
-        "Race": "Giant",
-        "Class": "Fighter",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Orsik",
-            "Ultherm",
-            "Olarrow",
-            "Vigart",
-            "Umion"
-        ],
-        "5 Common Last Names": [
-            "Stormhammer",
-            "Cloudbreaker",
-            "Thundergale",
-            "Cloudchaser",
-            "Stormbringer"
         ]
     },
     "Succubus/Incubus": {
@@ -34429,23 +29367,6 @@ dnd_monsters = {
             "Gold Coins",
             "Gems",
             "Fancy Clothing"
-        ],
-        "Race": "Demon",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Arum",
-            "Dahlia",
-            "Jahi",
-            "Manna",
-            "Turel"
-        ],
-        "5 Common Last Names": [
-            "Greaves",
-            "Ironsmith",
-            "Laroux",
-            "Verinth",
-            "Yuston"
         ]
     },
     "Swarm_of_Bats": {
@@ -34536,23 +29457,6 @@ dnd_monsters = {
             "Bat tooth",
             "Bat wings",
             "Bat claws"
-        ],
-        "Race": "Beast",
-        "Class": "Swarm",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Sterling",
-            "Morgana",
-            "Bonaire",
-            "Cecily",
-            "Alana"
-        ],
-        "5 Common Last Names": [
-            "Bogensvogel",
-            "Vesperian",
-            "Odaki",
-            "Tkachev",
-            "Ederlein"
         ]
     },
     "Swarm_of_Bees": {
@@ -34647,23 +29551,6 @@ dnd_monsters = {
             "Venom",
             "Bee Antennae",
             "Bee Stinger"
-        ],
-        "Race": "Vermin",
-        "Class": "Swarm",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Beezle",
-            "Buzzo",
-            "Swarmy",
-            "Bozz",
-            "Bizzles"
-        ],
-        "5 Common Last Names": [
-            "Bumble",
-            "Bee",
-            "Hive",
-            "Stinger",
-            "Killer"
         ]
     },
     "Swarm_of_Centipedes": {
@@ -34745,23 +29632,6 @@ dnd_monsters = {
             "Insect wings",
             "Insect stingers",
             "Insect eggs"
-        ],
-        "Race": "Beast",
-        "Class": "Vermin",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Fiddy",
-            "Ceba",
-            "Milli",
-            "Kem",
-            "Skal"
-        ],
-        "5 Common Last Names": [
-            "Gume",
-            "Ventur",
-            "Crust",
-            "Larv",
-            "Tarsi"
         ]
     },
     "Swarm_of_Insects": {
@@ -34864,23 +29734,6 @@ dnd_monsters = {
             "Potions",
             "Scrolls of Protection",
             "Minor Magic Items"
-        ],
-        "Race": "Swarm",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Buzz",
-            "Scuttle",
-            "Crawler",
-            "Chirper",
-            "Bitey"
-        ],
-        "5 Common Last Names": [
-            "Beepers",
-            "Hoppers",
-            "Flutterers",
-            "Chompers",
-            "Stinkers"
         ]
     },
     "Swarm_of_Poisonous_Snakes": {
@@ -34970,23 +29823,6 @@ dnd_monsters = {
             "Venom Sacs",
             "Venomous Snake Venom",
             "Venomous Snake Scales"
-        ],
-        "Race": "Vermin",
-        "Class": "Animal",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Vish",
-            "Marisa",
-            "Sly",
-            "Pelop",
-            "Raja"
-        ],
-        "5 Common Last Names": [
-            "inx",
-            "iskr",
-            "ides",
-            "teon",
-            "opel"
         ]
     },
     "Swarm_of_Quippers": {
@@ -35083,23 +29919,6 @@ dnd_monsters = {
             "Gold Earring",
             "Bronze Dagger",
             "Precious Stones"
-        ],
-        "Race": "Aquatic Beast Fiend",
-        "Class": "None",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Skittering",
-            "Grinning",
-            "Quarrelsome",
-            "Chittering",
-            "Ripping"
-        ],
-        "5 Common Last Names": [
-            "Quip",
-            "Snipper",
-            "Nipper",
-            "Gnash",
-            "Bite"
         ]
     },
     "Swarm_of_Rats": {
@@ -35192,23 +30011,6 @@ dnd_monsters = {
             "Wheat",
             "Small Gems",
             "Animal Remains"
-        ],
-        "Race": "Animated Vermin",
-        "Class": "Beast",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Squeeze",
-            "Skitter",
-            "Scurry",
-            "Sniff",
-            "Scratch"
-        ],
-        "5 Common Last Names": [
-            "Rattus",
-            "Murinae",
-            "Vespertilionidae",
-            "Rodentia",
-            "Muroidea"
         ]
     },
     "Swarm_of_Ravens": {
@@ -35302,23 +30104,6 @@ dnd_monsters = {
             "Jewelry",
             "Magic items",
             "Rare books"
-        ],
-        "Race": "Swarm",
-        "Class": "Beast",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Cawthorne",
-            "Kraak",
-            "Corvus",
-            "Carax",
-            "Naira"
-        ],
-        "5 Common Last Names": [
-            "Duskwing",
-            "Emberwing",
-            "Vandalore",
-            "Flockfeather",
-            "Wrygrin"
         ]
     },
     "Swarm_of_Spiders": {
@@ -35411,23 +30196,6 @@ dnd_monsters = {
             "Mandrake Root",
             "Wyrmsbane",
             "Spider Silk Armor"
-        ],
-        "Race": "Vermin",
-        "Class": "Swarm",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Scuttler",
-            "Terrant",
-            "Gloat",
-            "Rend",
-            "Venom"
-        ],
-        "5 Common Last Names": [
-            "Webber",
-            "Crawler",
-            "Nipper",
-            "Leaper",
-            "Lurker"
         ]
     },
     "Swarm_of_Wasps": {
@@ -35517,23 +30285,6 @@ dnd_monsters = {
             "Gold Coins",
             "Artifacts",
             "Potions"
-        ],
-        "Race": "Insect",
-        "Class": "Swarm",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Wes",
-            "Hass",
-            "Bess",
-            "Les",
-            "Vess"
-        ],
-        "5 Common Last Names": [
-            "Flier",
-            "Stinger",
-            "Droner",
-            "Biter",
-            "Mourn"
         ]
     },
     "Tarrasque": {
@@ -35636,23 +30387,6 @@ dnd_monsters = {
             "Ancient Artifacts",
             "Gold and Silver Coins",
             "Magical Scrolls and Tomes"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Gorr",
-            "Raj",
-            "Deekin",
-            "Ugluk",
-            "Kurr"
-        ],
-        "5 Common Last Names": [
-            "Smash",
-            "Stomp",
-            "Maul",
-            "Charge",
-            "Rampage"
         ]
     },
     "Thug": {
@@ -35748,23 +30482,6 @@ dnd_monsters = {
             "Jewelry",
             "Relics",
             "Potions"
-        ],
-        "Race": "Human",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Jarl",
-            "Brynja",
-            "Thorgrim",
-            "Eirik",
-            "Raegar"
-        ],
-        "5 Common Last Names": [
-            "Greystone",
-            "Skaterwick",
-            "Galegrinder",
-            "Markus",
-            "Kneebiter"
         ]
     },
     "Tiger": {
@@ -35857,23 +30574,6 @@ dnd_monsters = {
             "Animal pelts",
             "Animal bones",
             "Rare spices"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Sheba",
-            "Kiki",
-            "Tiger",
-            "Leo",
-            "Saber"
-        ],
-        "5 Common Last Names": [
-            "Stripes",
-            "Tails",
-            "The Great",
-            "King",
-            "Hunter"
         ]
     },
     "Treant": {
@@ -35971,23 +30671,6 @@ dnd_monsters = {
             "Herbs/spices",
             "Nuts/berries",
             "Gems/Gold"
-        ],
-        "Race": "Plant",
-        "Class": "Monstrosity",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Ashe",
-            "Korina",
-            "Orsil",
-            "Brinell",
-            "Nalain"
-        ],
-        "5 Common Last Names": [
-            "Woodroot",
-            "Oaklimb",
-            "Fallowbough",
-            "Greenbranch",
-            "Wildwood"
         ]
     },
     "Tribal_Warrior": {
@@ -36083,23 +30766,6 @@ dnd_monsters = {
             "Jewelry",
             "Cloth Wraps",
             "Equipment or Weapons"
-        ],
-        "Race": "Human",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Kaya",
-            "Nathaniel",
-            "Alexandra",
-            "Makena",
-            "Ethan"
-        ],
-        "5 Common Last Names": [
-            "Silvermane",
-            "Hooktooth",
-            "Shieldfist",
-            "Moonbreather",
-            "Ridgehorn"
         ]
     },
     "Triceratops": {
@@ -36190,23 +30856,6 @@ dnd_monsters = {
             "Plants Fibres",
             "Leather Scraps",
             "Tail Plates"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Burrdon",
-            "Lurdon",
-            "Cragar",
-            "Wormar",
-            "Krumbor"
-        ],
-        "5 Common Last Names": [
-            "Cresthorn",
-            "Tailhorn",
-            "Tuskman",
-            "Slaughterhorn",
-            "Smallwing"
         ]
     },
     "Troglodyte": {
@@ -36303,23 +30952,6 @@ dnd_monsters = {
             "Weapons and armor",
             "Alchemical items",
             "Trophies and body parts"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Chumash",
-            "Kurusa",
-            "Misak",
-            "Poloski",
-            "Vassa"
-        ],
-        "5 Common Last Names": [
-            "Bogatyr",
-            "Karpaty",
-            "Volyn",
-            "Voronin",
-            "Yatvyag"
         ]
     },
     "Troll": {
@@ -36420,23 +31052,6 @@ dnd_monsters = {
             "Magical weapons",
             "Mystical trinkets",
             "Rare artifacts"
-        ],
-        "Race": "Giant",
-        "Class": "Humanoid",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Grendar",
-            "Hargur",
-            "Heorogar",
-            "Hernar",
-            "Merlick"
-        ],
-        "5 Common Last Names": [
-            "Thumbripper",
-            "Muckboar",
-            "Chopsticks",
-            "Stomper",
-            "Crusher"
         ]
     },
     "Tyrannosaurus_Rex": {
@@ -36527,23 +31142,6 @@ dnd_monsters = {
             "Prehistoric artifacts",
             "Ancient coins",
             "Gems"
-        ],
-        "Race": "Dinosaur",
-        "Class": "Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Goliath",
-            "Gorefang",
-            "Gash-singer",
-            "Lordscreamer",
-            "Crimsonblade"
-        ],
-        "5 Common Last Names": [
-            "the Crusher",
-            "Terrormaw",
-            "the King of Bones",
-            "the Bloody Talon",
-            "Mountain-shaker"
         ]
     },
     "Ultroloth": {
@@ -36640,23 +31238,6 @@ dnd_monsters = {
             "Rings of power.",
             "Scrolls of ancient knowledge.",
             "Helms of command."
-        ],
-        "Race": "Yugoloth",
-        "Class": "Fiend",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Allaz",
-            "Ika",
-            "Warul",
-            "Nukar",
-            "Wenru"
-        ],
-        "5 Common Last Names": [
-            "Erldolol",
-            "Naharjob",
-            "Nindlenet",
-            "Rurnsuul",
-            "Talladon"
         ]
     },
     "Umber_Hulk": {
@@ -36747,23 +31328,6 @@ dnd_monsters = {
             "Greatsword",
             "Dragon Scale Mail",
             "Amulet of Protection"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Bab'Ylg'Roth",
-            "Kuutasha",
-            "Xuggurtep",
-            "Gor'Duran",
-            "Rozgarg"
-        ],
-        "5 Common Last Names": [
-            "Rollwallish",
-            "Zizspike",
-            "Lorayshrike",
-            "Vlorarusselle",
-            "Uzgakarah"
         ]
     },
     "Unicorn": {
@@ -36868,23 +31432,6 @@ dnd_monsters = {
             "Mystical dust",
             "Rainbow colored fur",
             "Lucky horseshoes"
-        ],
-        "Race": "Celestial",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Raine",
-            "Brynne",
-            "Keryn",
-            "Ayla",
-            "Rider"
-        ],
-        "5 Common Last Names": [
-            "Meadowstrider",
-            "Tallhoof",
-            "Brightmane",
-            "Pridehorn",
-            "Sunbeam"
         ]
     },
     "Vampire": {
@@ -37001,23 +31548,6 @@ dnd_monsters = {
             "Gems",
             "Coins",
             "Finely crafted weapons"
-        ],
-        "Race": "Undead",
-        "Class": "Undead Spawn",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Geoffrey",
-            "Adriel",
-            "Charlotte",
-            "Dimitri",
-            "Victoria"
-        ],
-        "5 Common Last Names": [
-            "Belmont",
-            "Langdon",
-            "Krieger",
-            "Harker",
-            "Von Carstein"
         ]
     },
     "Vampire_Spawn": {
@@ -37125,23 +31655,6 @@ dnd_monsters = {
             "Jewelry",
             "Negative energy-imbued weapons",
             "Magical items"
-        ],
-        "Race": "Undead",
-        "Class": " Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Jezebeth",
-            "Vladimir",
-            "Herman",
-            "Jasper",
-            "Roger"
-        ],
-        "5 Common Last Names": [
-            "Shadowmane",
-            "Crimsonblood",
-            "Nightfell",
-            "Duskfire",
-            "Damon"
         ]
     },
     "Veteran": {
@@ -37240,23 +31753,6 @@ dnd_monsters = {
             "Rings and Jewellery",
             "Magic Items",
             "Artifacts"
-        ],
-        "Race": "Human",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Isabelle",
-            "Samantha",
-            "Cecilia",
-            "Thomas",
-            "Brock"
-        ],
-        "5 Common Last Names": [
-            "Jones",
-            "Smith",
-            "Davies",
-            "Cooper",
-            "Garrison"
         ]
     },
     "Violet_Fungus": {
@@ -37349,23 +31845,6 @@ dnd_monsters = {
             "Scrolls of Protection",
             "Scrolls of Enchantment",
             "Weapons and Armor"
-        ],
-        "Race": "Plant",
-        "Class": "Monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Stilbert",
-            "Veridian",
-            "Speckle",
-            "Kozin",
-            "Millay"
-        ],
-        "5 Common Last Names": [
-            "Tanglebough",
-            "Tanglecap",
-            "Stalefin",
-            "Funglord",
-            "Mossmantle"
         ]
     },
     "Vrock": {
@@ -37470,23 +31949,6 @@ dnd_monsters = {
             "Gold coins",
             "Gems and jewelry",
             "Weapons and armor"
-        ],
-        "Race": "Demon",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "BERITH",
-            "FORCAS",
-            "MALEB",
-            "PURSON",
-            "RAUM"
-        ],
-        "5 Common Last Names": [
-            "SCARAB",
-            "RAVEN",
-            "GRIMLLE",
-            "DEATH",
-            "DEVIL"
         ]
     },
     "Vulture": {
@@ -37575,23 +32037,6 @@ dnd_monsters = {
             "Tough vulture hide",
             "Large and sharp claws",
             "Tarnished coins"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Vorph",
-            "Maxx",
-            "Tatsu",
-            "Jak",
-            "Roark"
-        ],
-        "5 Common Last Names": [
-            "Vultureclaw",
-            "Skyfeather",
-            "Skycrest",
-            "Talonspike",
-            "Scavenger"
         ]
     },
     "Warhorse": {
@@ -37683,23 +32128,6 @@ dnd_monsters = {
             "Weapon or Armor Upgrade",
             "Horse Tack or Saddle",
             "Riding Animal Training Treats"
-        ],
-        "Race": "Equine",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Max",
-            "Alexander",
-            "George",
-            "Scout",
-            "Silver"
-        ],
-        "5 Common Last Names": [
-            "Stallion",
-            "Whinny",
-            "Mane",
-            "Fury",
-            "Noble"
         ]
     },
     "Warhorse_Skeleton": {
@@ -37794,23 +32222,6 @@ dnd_monsters = {
             "Silver jewelry",
             "Magical weapons and armor",
             "Scrolls of dark magic"
-        ],
-        "Race": "Undead",
-        "Class": "Skeleton",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Boneheart",
-            "Marrow",
-            "Bonecrusher",
-            "Sinew",
-            "Ossuary"
-        ],
-        "5 Common Last Names": [
-            "Skelflesh",
-            "Bonecharmer",
-            "Ghoulcrest",
-            "Gorywyrd",
-            "Melankbone"
         ]
     },
     "Water_Elemental": {
@@ -37908,23 +32319,6 @@ dnd_monsters = {
             "Scrolls of Aquatic Spells",
             "Water Resistant Armor",
             "Aquatic Artifacts"
-        ],
-        "Race": "Elemental",
-        "Class": "N/A",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Ara",
-            "Erzul",
-            "Pelai",
-            "Tila",
-            "Vialai"
-        ],
-        "5 Common Last Names": [
-            "Ebbchurner",
-            "Gritflow",
-            "Tidessender",
-            "Brookebringer",
-            "Rippledrift"
         ]
     },
     "Weasel": {
@@ -38015,23 +32409,6 @@ dnd_monsters = {
             "Sapphire",
             "Gold coins",
             "Gold nuggets"
-        ],
-        "Race": "Beast",
-        "Class": "Wilderness",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Sneaky",
-            "Graceful",
-            "Natty",
-            "Tinah",
-            "Quinn"
-        ],
-        "5 Common Last Names": [
-            "Hunter",
-            "Knight",
-            "Whisper",
-            "Spider",
-            "Tracker"
         ]
     },
     "Werebear": {
@@ -38133,23 +32510,6 @@ dnd_monsters = {
             "Small stones or crystals.",
             "Berries or other edible items.",
             "Rare herbs or roots."
-        ],
-        "Race": "Shapechanger",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Bristen",
-            "Ferno",
-            "Gashok",
-            "Macial",
-            "Vishon"
-        ],
-        "5 Common Last Names": [
-            "Cliffjaw",
-            "Furclaw",
-            "Grizzlemount",
-            "Riverpaw",
-            "Silverback"
         ]
     },
     "Wereboar": {
@@ -38245,23 +32605,6 @@ dnd_monsters = {
             "Gems or jewelry",
             "Glowing mushrooms or herbs",
             "Rare artifacts or relics"
-        ],
-        "Race": "Humanoid (Shapechanger)",
-        "Class": "Barbarian/Monk",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Marne",
-            "Lorik",
-            "Krash",
-            "Thokk",
-            "Grodok"
-        ],
-        "5 Common Last Names": [
-            "Goreheart",
-            "Strangetusk",
-            "Wildbrow",
-            "Beasttongue",
-            "Furymane"
         ]
     },
     "Wererat": {
@@ -38360,23 +32703,6 @@ dnd_monsters = {
             "Smoke Bombs",
             "Small, sharp teeth",
             "Gold coins"
-        ],
-        "Race": "Shapechanger",
-        "Class": "Monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Hurst",
-            "Wijit",
-            "Oskar",
-            "Marius",
-            "Jarvis"
-        ],
-        "5 Common Last Names": [
-            "Creekbat",
-            "Tooblimp",
-            "Ovesqueer",
-            "Vesfer",
-            "Apreed"
         ]
     },
     "Weretiger": {
@@ -38481,23 +32807,6 @@ dnd_monsters = {
             "Silver Jewellery",
             "Silver Coins",
             "Uncommon Potions"
-        ],
-        "Race": "Shapechanger (Humanoid, Tiger)",
-        "Class": "N/A",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Alaric",
-            "Solomon",
-            "Ursula",
-            "Douglas",
-            "Dawn"
-        ],
-        "5 Common Last Names": [
-            "Stark",
-            "Weaver",
-            "Kakeda",
-            "Atwood",
-            "Ferguson"
         ]
     },
     "Werewolf": {
@@ -38592,23 +32901,6 @@ dnd_monsters = {
             "Mystical totems",
             "Gems and coins",
             "Animal hide clothing"
-        ],
-        "Race": "Humanoid (Shapechanger)",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Strahd",
-            "Vlad",
-            "Tiberius",
-            "Lucian",
-            "Fenrir"
-        ],
-        "5 Common Last Names": [
-            "Von Zarovich",
-            "Vladislav",
-            "Blackmoor",
-            "Fenris",
-            "Meyer"
         ]
     },
     "White_Dragon_Wyrmling": {
@@ -38700,23 +32992,6 @@ dnd_monsters = {
             "Jewels",
             "Magic Scrolls",
             "Magic Weapons"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Frosty",
-            "Arctic",
-            "Frigid",
-            "Icy",
-            "Chilly"
-        ],
-        "5 Common Last Names": [
-            "Sleet",
-            "Dracos",
-            "Snowsight",
-            "Icewing",
-            "Whitefang"
         ]
     },
     "Wight": {
@@ -38811,23 +33086,6 @@ dnd_monsters = {
             "Magic items",
             "Artifacts",
             "Rare weapons and armor"
-        ],
-        "Race": "Undead",
-        "Class": "Humanoid",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Caius",
-            "Dyer",
-            "Kallus",
-            "Talamon",
-            "Urgan"
-        ],
-        "5 Common Last Names": [
-            "Anstrigle",
-            "Bellerud",
-            "Mordenheim",
-            "Verodir",
-            "Zeddelvar"
         ]
     },
     "Will_o'_Wisp": {
@@ -39020,23 +33278,6 @@ dnd_monsters = {
             "Winter Wolf's Tooth",
             "Winter Wolf Skin",
             "Winter Wolf Hide"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Akkia",
-            "Idefix",
-            "Fenrir",
-            "Slash",
-            "Kai"
-        ],
-        "5 Common Last Names": [
-            "Frostfur",
-            "Icecrest",
-            "Snowcoat",
-            "Shiver",
-            "Frostbite"
         ]
     },
     "Wolf": {
@@ -39131,23 +33372,6 @@ dnd_monsters = {
             "Gems",
             "Silver coins",
             "Animal pelts"
-        ],
-        "Race": "Beast",
-        "Class": "Undead",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Stark",
-            "Shadow",
-            "Grey",
-            "Wolf",
-            "Jagged"
-        ],
-        "5 Common Last Names": [
-            "Howl",
-            "Ranger",
-            "Wolfington",
-            "Grim",
-            "Preyhall"
         ]
     },
     "Worg": {
@@ -39237,23 +33461,6 @@ dnd_monsters = {
             "Silver jewelry",
             "Coins",
             "Gemstone jewelry"
-        ],
-        "Race": "Monstrous Humanoid",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Foul",
-            "Gaunt",
-            "Grim",
-            "Rabid",
-            "Ulf"
-        ],
-        "5 Common Last Names": [
-            "Howler",
-            "Hunter",
-            "Rider",
-            "Runner",
-            "Slayer"
         ]
     },
     "Wraith": {
@@ -39350,23 +33557,6 @@ dnd_monsters = {
             "Potions of healing",
             "Gems and coins",
             "Scrolls of powerful spells"
-        ],
-        "Race": "Undead",
-        "Class": "Spectre",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Edra",
-            "Maer",
-            "Xazraga",
-            "Hev",
-            "Vlodir"
-        ],
-        "5 Common Last Names": [
-            "Wraithblade",
-            "Wraithgloom",
-            "Wraithshadow",
-            "Wraithdark",
-            "Wraithscythe"
         ]
     },
     "Wyvern": {
@@ -39460,23 +33650,6 @@ dnd_monsters = {
             "Amulets",
             "Ritual components",
             "Ringed or studded leathers"
-        ],
-        "Race": "Dragon",
-        "Class": "Large Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Terex",
-            "Grax",
-            "Gorex",
-            "Merix",
-            "Hael"
-        ],
-        "5 Common Last Names": [
-            "Vetrik",
-            "Stoneclaw",
-            "Slatewing",
-            "Sharpfang",
-            "Chillclaw"
         ]
     },
     "Xorn": {
@@ -39574,23 +33747,6 @@ dnd_monsters = {
             "Magical Armor",
             "Magical Potions",
             "Gems and Jewels"
-        ],
-        "Race": "Elemental",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Xorthon",
-            "Selenim",
-            "Ostol",
-            "Korrlad",
-            "Sokal"
-        ],
-        "5 Common Last Names": [
-            "Gorengr",
-            "Streel",
-            "Sunderthe",
-            "Foldrock",
-            "Vicentik"
         ]
     },
     "Yeti": {
@@ -39687,23 +33843,6 @@ dnd_monsters = {
             "Boulder",
             "Clubs",
             "Scarce Berries and Roots"
-        ],
-        "Race": "Monstrosity",
-        "Class": "N/A",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Urunge",
-            "Okenpa",
-            "Numa",
-            "Zeeang",
-            "Tinga"
-        ],
-        "5 Common Last Names": [
-            "Ogoloke",
-            "Taasen",
-            "Kelney",
-            "Shevich",
-            "Wassen"
         ]
     },
     "Yuan_ti_Abomination": {
@@ -40105,23 +34244,6 @@ dnd_monsters = {
             "Small Artifacts",
             "Weapons",
             "Armor"
-        ],
-        "Race": "Undead",
-        "Class": "Monster",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Shuffling",
-            "Groaning",
-            "Creaking",
-            "Graveyard",
-            "Festering"
-        ],
-        "5 Common Last Names": [
-            "Walker",
-            "Creeper",
-            "Stomper",
-            "Singer",
-            "Creech"
         ]
     },
     "Elf": {
@@ -40220,23 +34342,6 @@ dnd_monsters = {
             "Rare herbs and potions",
             "Enchanted armor and weapons",
             "Rare gems and coins"
-        ],
-        "Race": "High Elf",
-        "Class": "Any class",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Serena",
-            "Llewellyn",
-            "Taro",
-            "Kara",
-            "Oron"
-        ],
-        "5 Common Last Names": [
-            "Sunrider",
-            "Featherlight",
-            "Starsight",
-            "Moonrunner",
-            "Eveningfire"
         ]
     },
     "Dwarf": {
@@ -40341,23 +34446,6 @@ dnd_monsters = {
             "Precious Metals",
             "Silver Coins",
             "Artifacts"
-        ],
-        "Race": "Humanoid",
-        "Class": "Fighter",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Gorek",
-            "Tordek",
-            "Tharkur",
-            "Thegran",
-            "Bboldohn"
-        ],
-        "5 Common Last Names": [
-            "Oakenbelt",
-            "Stronghammer",
-            "Ironfist",
-            "Fireforge",
-            "Brightspear"
         ]
     },
     "Dragonborn": {
@@ -40455,23 +34543,6 @@ dnd_monsters = {
             "Jewelry",
             "Magical weapons",
             "Magical weapons"
-        ],
-        "Race": "Humanoid Dragon",
-        "Class": "Fighter, Warlord, Paladin, Sorcerer, Cleric",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ghorrk",
-            "Kosthak",
-            "Kija",
-            "Imrak",
-            "Rizeman"
-        ],
-        "5 Common Last Names": [
-            "Vossdeth",
-            "Felgeffen",
-            "Mazook",
-            "Tiefengar",
-            "Kes'ik"
         ]
     },
     "Gnome": {
@@ -40571,23 +34642,6 @@ dnd_monsters = {
             "Potions",
             "Herbs",
             "Odd Objects"
-        ],
-        "Race": "Fey",
-        "Class": "Illusionist",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Chinley",
-            "Lorenna",
-            "Mirella",
-            "Porfin",
-            "Wrenn"
-        ],
-        "5 Common Last Names": [
-            "Amblecrown",
-            "Bushcook",
-            "Fellhearth",
-            "Greycastle",
-            "Tallstag"
         ]
     },
     "Half_Elf": {
@@ -40886,23 +34940,6 @@ dnd_monsters = {
             "Small pieces of jewelry",
             "Potions",
             "Magic scrolls"
-        ],
-        "Race": "Humanoid",
-        "Class": "Rogue, Warlock, Sorcerer",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Billie",
-            "Gilly",
-            "Pippin",
-            "Samwise",
-            "Tilly"
-        ],
-        "5 Common Last Names": [
-            "Brushgather",
-            "Halfpint",
-            "Leagallow",
-            "Tallfellow",
-            "Thorngage"
         ]
     },
     "Human": {
@@ -41004,23 +35041,6 @@ dnd_monsters = {
             "Maps or historical documents",
             "Magical items",
             "Crafting materials"
-        ],
-        "Race": "Human",
-        "Class": "Any",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "James",
-            "John",
-            "Robert",
-            "Michael",
-            "William"
-        ],
-        "5 Common Last Names": [
-            "Smith",
-            "Johnson",
-            "Williams",
-            "Jones",
-            "Brown"
         ]
     },
     "Tiefling": {
@@ -41119,23 +35139,6 @@ dnd_monsters = {
             "Spell scrolls",
             "Magical Weapons",
             "Gems and jewelry"
-        ],
-        "Race": "Fiend",
-        "Class": "Any",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Fara",
-            "Gaston",
-            "Ozben",
-            "Kriv",
-            "Miltiades"
-        ],
-        "5 Common Last Names": [
-            "Barreto",
-            "Guy",
-            "Heinrick",
-            "Morial",
-            "Romero"
         ]
     },
     "Tabaxi": {
@@ -41236,23 +35239,6 @@ dnd_monsters = {
             "Gems/Jewelry",
             "Scrolls",
             "Potion of Healing"
-        ],
-        "Race": "Feline Humanoid",
-        "Class": "Ranger/Rogue",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Tano",
-            "Ika",
-            "Kalan",
-            "Yenne",
-            "Mikono"
-        ],
-        "5 Common Last Names": [
-            "Ekon",
-            "Ona",
-            "Lupu",
-            "Gili",
-            "Mepe"
         ]
     },
     "Deep_Gnome_(Svirfneblin)": {
@@ -41321,23 +35307,6 @@ dnd_monsters = {
             "Magical items",
             "Gems & Jewels",
             "Magic potions"
-        ],
-        "Race": "Gnome",
-        "Class": "Commoner",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Uka",
-            "Jonel",
-            "Quelby",
-            "Rudol",
-            "Garza"
-        ],
-        "5 Common Last Names": [
-            "Denseduster",
-            "Gallowglass",
-            "Understone",
-            "Clackerdamp",
-            "Polcules"
         ]
     },
     "Myconid_Adult": {
@@ -41411,23 +35380,6 @@ dnd_monsters = {
             "Myconid Touching Leaf",
             "Mystic Bedstone",
             "Myconid Spear"
-        ],
-        "Race": "Myconid",
-        "Class": "Fungus",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Dolouth",
-            "Nototh",
-            "Keototh",
-            "Gonototh",
-            "Utoloth"
-        ],
-        "5 Common Last Names": [
-            "Swarmguard",
-            "Sporecaller",
-            "Fungalkeeper",
-            "Reefguard",
-            "Plaguecaller"
         ]
     },
     "Myconid_Sprout": {
@@ -41494,23 +35446,6 @@ dnd_monsters = {
             "Gleaming Mushroom",
             "Glowshroom",
             "Fungal Cluster"
-        ],
-        "Race": "Fungus",
-        "Class": "Plant",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Mowh",
-            "Mihak",
-            "Sorp",
-            "040",
-            "Adra"
-        ],
-        "5 Common Last Names": [
-            "Sporeheart",
-            "Tightfist",
-            "Grayweaver",
-            "Territrooper",
-            "Striderling"
         ]
     },
     "Pterydactyl": {
@@ -41575,365 +35510,6 @@ dnd_monsters = {
             "Eyes of the Beast",
             "Rare Gems",
             "Potions of Flight"
-        ],
-        "Race": "Reptilian",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Dactyl",
-            "Pterius",
-            "Scapula",
-            "Huxley",
-            "Arlo"
-        ],
-        "5 Common Last Names": [
-            "Satheron",
-            "Sparrow",
-            "Silvertongue",
-            "Twing",
-            "Mortberg"
-        ]
-    },
-    "Death Tyrant": {
-        "Race": "Undead",
-        "Class": "Tyrant",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Accius",
-            "Berrus",
-            "Cronos",
-            "Gorgon",
-            "Hades"
-        ],
-        "5 Common Last Names": [
-            "Deathbringer",
-            "Darkling",
-            "Grimwalker",
-            "Terrormonger",
-            "Malevolence"
-        ]
-    },
-    "Faerie Dragon": {
-        "Race": "Dragon",
-        "Class": "Fairy",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Treestar",
-            "Neptune",
-            "Whizz",
-            "Bubble",
-            "Clover"
-        ],
-        "5 Common Last Names": [
-            "Prancer",
-            "Elfwing",
-            "Glimmer",
-            "Mistletoe",
-            "Sparkle"
-        ]
-    },
-    "Fire Giant": {
-        "Race": "Giant",
-        "Class": "Fighter",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Boldar",
-            "Durvar",
-            "Grevik",
-            "Mordrog",
-            "Varlyr"
-        ],
-        "5 Common Last Names": [
-            "Firebane",
-            "Firewalker",
-            "Firebrand",
-            "Firescar",
-            "Firelash"
-        ]
-    },
-    "Fire Snake": {
-        "Race": "Elemental",
-        "Class": "Monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Sal",
-            "Cinder",
-            "Feni",
-            "Firedrake",
-            "Shilla"
-        ],
-        "5 Common Last Names": [
-            "Tailburner",
-            "Blazefang",
-            "Ashenhood",
-            "Sparkcape",
-            "Flarebraid"
-        ]
-    },
-    "Gray Ooze": {
-        "Race": "Ooze",
-        "Class": "Amorphous Creature",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Amal",
-            "Fenstrim",
-            "Gora",
-            "Glut",
-            "Gorl"
-        ],
-        "5 Common Last Names": [
-            "GelPetty",
-            "OozeFly",
-            "GelTing",
-            "OozeCraw",
-            "OozeSeep"
-        ]
-    },
-    "Green Hag": {
-        "Race": "Fey",
-        "Class": "Natural Magic User",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Seditha",
-            "Delora",
-            "Maria",
-            "Morwen",
-            "Bridget"
-        ],
-        "5 Common Last Names": [
-            "Hagspinner",
-            "Ragglemane",
-            "Boarbones",
-            "Grimtooth",
-            "Feastmaggot"
-        ]
-    },
-    "Half-Red_Dragon_Veteran": {
-        "Race": "Dragonborn",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Kirathar",
-            "Liathar",
-            "Marduthar",
-            "Rhanthar",
-            "Nandar"
-        ],
-        "5 Common Last Names": [
-            "Ojemann",
-            "Scthac",
-            "Draclen",
-            "Valkor",
-            "Gusteven"
-        ]
-    },
-    "Hobgoblin Captain": {
-        "Race": "Humanoid (Hobgoblin)",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Grundrak",
-            "Urgok",
-            "Vargka",
-            "Vorri",
-            "Vikun"
-        ],
-        "5 Common Last Names": [
-            "Balizar",
-            "Kazik",
-            "Krathik",
-            "Kozel",
-            "Uzden"
-        ]
-    },
-    "Hobgoblin Warlord": {
-        "Race": "Hobgoblin",
-        "Class": "Warlord",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Kurgan",
-            "Ruldar",
-            "Morn",
-            "Akkush",
-            "Umber"
-        ],
-        "5 Common Last Names": [
-            "Gr Colorscar",
-            "Devil-Fire",
-            "Baytongue",
-            "Lardblood",
-            "Slatersaws"
-        ]
-    },
-    "Invisible Stalker": {
-        "Race": "Air elemental",
-        "Class": "Elemental",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Elbows",
-            "Wheezes",
-            "Flicks",
-            "Rumbles",
-            "Whimpers"
-        ],
-        "5 Common Last Names": [
-            "of the Wind",
-            "of the Storm",
-            "of the Maelstrom",
-            "of the Gale",
-            "of the Cyclone"
-        ]
-    },
-    "Saber-Toothed_Tiger": {
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Tawny",
-            "Stripey",
-            "Ferocious",
-            "Growly",
-            "Savannah"
-        ],
-        "5 Common Last Names": [
-            "Panther",
-            "Stripe",
-            "Claw",
-            "Fang",
-            "Mane"
-        ]
-    },
-    "Sahuagin Baron": {
-        "Race": "Sahuagin",
-        "Class": "Barbarian",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Bralgar",
-            "Gomar",
-            "Ralan",
-            "Toral",
-            "Tokar"
-        ],
-        "5 Common Last Names": [
-            "Aurmuzor",
-            "Shemesh",
-            "Gezer",
-            "Kittoni",
-            "Opharar"
-        ]
-    },
-    "Will-o'-Wisp": {
-        "Race": "Undead",
-        "Class": "Fey",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Gleam",
-            "Glimmer",
-            "Paley",
-            "Flimsy",
-            "Twinkle"
-        ],
-        "5 Common Last Names": [
-            "Willowlight",
-            "Hoverglow",
-            "Flickerfrye",
-            "Lumeglimmer",
-            "Gleanfire"
-        ]
-    },
-    "Yuan-ti Abomination": {
-        "Race": "Yuan-ti Abomination",
-        "Class": "Monstrosity",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Aplox",
-            "Ezhir",
-            "Ithik",
-            "Sseeth",
-            "Yzot"
-        ],
-        "5 Common Last Names": [
-            "Pradat",
-            "Rivith",
-            "Nekhet",
-            "Lilthiss",
-            "Tezral"
-        ]
-    },
-    "Yuan-ti_Malison": {
-        "Race": "Yuan-ti",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Bucha",
-            "Jirra",
-            "Kayla",
-            "Kyon",
-            "Veska"
-        ],
-        "5 Common Last Names": [
-            "Tolaj",
-            "Udossi",
-            "Yemaj",
-            "Veranij",
-            "Urunnu"
-        ]
-    },
-    "Yuan-ti_Pureblood": {
-        "Race": "Yuan-ti",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Vokaya",
-            "Cet",
-            "Carric",
-            "Suvash",
-            "Baru"
-        ],
-        "5 Common Last Names": [
-            "Nagaheart",
-            "Snaketamer",
-            "Serpenteye",
-            "Coilslayer",
-            "Malison"
-        ]
-    },
-    "Half-Elf": {
-        "Race": "humanoid",
-        "Class": "Various",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Aeliana",
-            "Elora",
-            "Loralei",
-            "Jaxom",
-            "Parsell"
-        ],
-        "5 Common Last Names": [
-            "Whitethorn",
-            "Riverwood",
-            "Everwind",
-            "Moonfall",
-            "Goldoak"
-        ]
-    },
-    "Half-Ord": {
-        "Race": "Half-Orc",
-        "Class": "Barbarian",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Grugnak",
-            "Ozuk",
-            "Krolik",
-            "Torguk",
-            "Horgul"
-        ],
-        "5 Common Last Names": [
-            "Murkblood",
-            "Mangut",
-            "Fangsmasher",
-            "Volpcrawler",
-            "One-Eye"
         ]
     }
 }

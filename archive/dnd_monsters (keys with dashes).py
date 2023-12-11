@@ -1,11 +1,10 @@
 #! /usr/bin/env python3
 
-
 dnd_monsters = {
     "Aarakocra": {
         "Name": "Aarakocra",
         "Type": "Medium humanoid (Aarakocra)",
-        "Alignment": "neutral good",
+        "alignment": "neutral good",
         "Armor Class": "12",
         "Hit Points": "13 (3d8)",
         "Speed": "20 ft., fly 50 ft.",
@@ -19,7 +18,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "12 (+1)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "Dive Attack. If the aarakocra is flying and dives at least 30 feet straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 3 (1d6) damage to the target."
         ],
         "Actions": [
@@ -92,29 +91,12 @@ dnd_monsters = {
             "Magical Artifacts",
             "Jewelry",
             "Rare Spices"
-        ],
-        "Race": "Humanoid",
-        "Class": "Ranger",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Erak",
-            "Jarak",
-            "Kesk",
-            "Torin",
-            "Yvar"
-        ],
-        "5 Common Last Names": [
-            "Alasan",
-            "Darkmont",
-            "Felsan",
-            "Sarling",
-            "Skyfeather"
         ]
     },
     "Aboleth": {
         "Name": "Aboleth",
         "Type": "Large aberration",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "135 (18d10 + 36)",
         "Speed": "10 ft., swim 40 ft.",
@@ -135,7 +117,7 @@ dnd_monsters = {
             "Tail Swipe. The aboleth makes one tail attack.",
             "Psychic Drain (Costs 2 Actions). One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes."
         ],
-        "Features": [
+        "features": [
             "Amphibious. The aboleth can breathe air and water.",
             "Mucous Cloud. While underwater, the aboleth is surrounded by transformative mucus. A creature that touches the aboleth or that hits it with a melee attack while within 5 feet of it must make a DC 14 Constitution saving throw. On a failure, the creature is diseased for 1d4 hours. The diseased creature can breathe only underwater.",
             "Probing Telepathy. If a creature communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires if the aboleth can see the creature."
@@ -212,29 +194,12 @@ dnd_monsters = {
             "Partially digested corpses of aquatic creatures",
             "Mundane and magical trinkets",
             "Aboleth slime"
-        ],
-        "Race": "Aquatic Aberration",
-        "Class": "Mage",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Slyvoy",
-            "Eredon",
-            "Vorrel",
-            "Vorlass",
-            "Croak"
-        ],
-        "5 Common Last Names": [
-            "Muskellunge",
-            "Barracuda",
-            "Lakebottom",
-            "Drakefin",
-            "Lobsterclaw"
         ]
     },
-    "Abominable_Yeti": {
+    "Abominable-Yeti": {
         "Name": "Abominable Yeti",
         "Type": "Huge monstrosity",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "137 (11d12 + 66)",
         "Speed": "40 ft., climb 40 ft.",
@@ -249,7 +214,7 @@ dnd_monsters = {
         "INT": "9 (-1)",
         "WIS": "13 (+1)",
         "CHA": "9 (-1)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -315,29 +280,12 @@ dnd_monsters = {
             "Potion of Healing",
             "Gemstone (200 GP worth)",
             "Scroll of Protection"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Unknown",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Orsh",
-            "Korusk",
-            "Akor",
-            "Gola",
-            "Senang"
-        ],
-        "5 Common Last Names": [
-            "Snowtusk",
-            "Frostwalker",
-            "Icemane",
-            "Tundrahand",
-            "Whitefang"
         ]
     },
     "Acolyte": {
         "Name": "Acolyte",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any alignment",
+        "alignment": "any alignment",
         "Armor Class": "10",
         "Hit Points": "9 (2d8)",
         "Speed": "30 ft.",
@@ -351,7 +299,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "14 (+2)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "Spellcasting. The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has the following cleric spells prepared:"
         ],
         "Actions": [
@@ -426,29 +374,12 @@ dnd_monsters = {
             "Holy symbols and amulets",
             "Herbs and healing items",
             "Weapons and armor"
-        ],
-        "Race": "Humanoid",
-        "Class": "Cleric",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Marcus",
-            "Vincent",
-            "Arianna",
-            "Celia",
-            "Fiona"
-        ],
-        "5 Common Last Names": [
-            "Giles",
-            "Wikehild",
-            "Hyland",
-            "Lemonde",
-            "Fernandes"
         ]
     },
-    "Adult_Black_Dragon": {
+    "Adult-Black-Dragon": {
         "Name": "Adult Black Dragon",
         "Type": "Huge dragon (Chromatic)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "195 (17d12 + 85)",
         "Speed": "40 ft., fly 80 ft., swim 40 ft.",
@@ -470,7 +401,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed."
         ],
-        "Features": [
+        "features": [
             "Amphibious. The dragon can breathe air and water.",
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
@@ -552,29 +483,12 @@ dnd_monsters = {
             "Magic weapons and items",
             "Rare books",
             "Jeweled artifacts"
-        ],
-        "Race": "Dragon",
-        "Class": "Reptile",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Neferis",
-            "Nazaki",
-            "Malachi",
-            "Vorlesh",
-            "Shaan"
-        ],
-        "5 Common Last Names": [
-            "Ectosteel",
-            "Kitsune",
-            "Lifedrinker",
-            "Graersom",
-            "Wyvernsteel"
         ]
     },
-    "Adult_Blue_Dracolich": {
+    "Adult-Blue-Dracolich": {
         "Name": "Adult Blue Dracolich",
         "Type": "Huge undead",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "225 (18d12 + 108)",
         "Speed": "40 ft., burrow 30 ft., fly 80 ft.",
@@ -598,7 +512,7 @@ dnd_monsters = {
             "Tail Attack. The dracolich makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dracolich beats its tattered wings. Each creature within 10 ft. of the dracolich must succeed on a DC 21 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. After beating its wings this way, the dracolich can fly up to half its flying speed."
         ],
-        "Features": [
+        "features": [
             "Legendary Resistance (3/Day). If the dracolich fails a saving throw, it can choose to succeed instead.",
             "Magic Resistance. The dracolich has advantage on saving throws against spells and other magical effects."
         ],
@@ -686,29 +600,12 @@ dnd_monsters = {
             "Magic Weapons",
             "Jewels and Gems",
             "Rare Artifacts"
-        ],
-        "Race": "Dragon",
-        "Class": "Undead",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Viryssa",
-            "Yskarath",
-            "Azamorthes",
-            "Lezunar",
-            "Vabarath"
-        ],
-        "5 Common Last Names": [
-            "Vampyr",
-            "Dragorven",
-            "Vengeful",
-            "Shadowspire",
-            "Crystalline"
         ]
     },
-    "Adult_Blue_Dragon": {
+    "Adult-Blue-Dragon": {
         "Name": "Adult Blue Dragon",
         "Type": "Huge dragon (Chromatic)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "225 (18d12 + 108)",
         "Speed": "40 ft., burrow 30 ft., fly 80 ft.",
@@ -730,7 +627,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed."
         ],
-        "Features": [
+        "features": [
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
         "Actions": [
@@ -809,29 +706,12 @@ dnd_monsters = {
             "Golden Coins",
             "Mithril Armor",
             "Magical Weapons"
-        ],
-        "Race": "Dragon",
-        "Class": "Natural",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Ardent",
-            "Glint",
-            "Hex",
-            "Liftoft",
-            "Sky"
-        ],
-        "5 Common Last Names": [
-            "Arrow",
-            "Aurora",
-            "Claw",
-            "Scale",
-            "Spark"
         ]
     },
-    "Adult_Brass_Dragon": {
+    "Adult-Brass-Dragon": {
         "Name": "Adult Brass Dragon",
         "Type": "Huge dragon (Metallic)",
-        "Alignment": "chaotic good",
+        "alignment": "chaotic good",
         "Armor Class": "18 (natural armor)",
         "Hit Points": "172 (15d12 + 75)",
         "Speed": "40 ft., burrow 30 ft., fly 80 ft.",
@@ -853,7 +733,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying Speed."
         ],
-        "Features": [
+        "features": [
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
         "Actions": [
@@ -932,29 +812,12 @@ dnd_monsters = {
             "Magical armor pieces",
             "High-value coins",
             "Treasure maps"
-        ],
-        "Race": "Dragon",
-        "Class": "None",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Shassa",
-            "Kressle",
-            "Sorn",
-            "Verro",
-            "Charrak"
-        ],
-        "5 Common Last Names": [
-            "Ambolkin",
-            "Morgheim",
-            "Sundethul",
-            "Vaaken",
-            "Flambith"
         ]
     },
-    "Adult_Bronze_Dragon": {
+    "Adult-Bronze-Dragon": {
         "Name": "Adult Bronze Dragon",
         "Type": "Huge dragon (Metallic)",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "212 (17d12 + 102)",
         "Speed": "40 ft., fly 80 ft., swim 40 ft.",
@@ -976,7 +839,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed."
         ],
-        "Features": [
+        "features": [
             "Amphibious. The dragon can breathe air and water.",
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
@@ -1055,29 +918,12 @@ dnd_monsters = {
             "Magic Weapons",
             "Expensive Cloth and Clothing",
             "Masterwork Tools"
-        ],
-        "Race": "Dragon",
-        "Class": "Magical Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Aramil",
-            "Uhehu",
-            "Gelnaymn",
-            "Onastay",
-            "Essyld"
-        ],
-        "5 Common Last Names": [
-            "Arcosbree",
-            "Highgloun",
-            "Maerthain",
-            "Bantholme",
-            "Goldspor"
         ]
     },
-    "Adult_Copper_Dragon": {
+    "Adult-Copper-Dragon": {
         "Name": "Adult Copper Dragon",
         "Type": "Huge dragon (Metallic)",
-        "Alignment": "chaotic good",
+        "alignment": "chaotic good",
         "Armor Class": "18 (natural armor)",
         "Hit Points": "184 (16d12 + 80)",
         "Speed": "40 ft., climb 40 ft., fly 80 ft.",
@@ -1099,7 +945,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying Speed."
         ],
-        "Features": [
+        "features": [
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
         "Actions": [
@@ -1181,29 +1027,12 @@ dnd_monsters = {
             "Elixirs and Potions",
             "Scrolls and Tomes",
             "Miscellaneous Magic Items"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Taranir",
-            "Griffon",
-            "Mannor",
-            "Remmon",
-            "Joryan"
-        ],
-        "5 Common Last Names": [
-            "Ruthirin",
-            "Gundivar",
-            "Tresimir",
-            "Ophinis",
-            "Isstyr"
         ]
     },
-    "Adult_Gold_Dragon": {
+    "Adult-Gold-Dragon": {
         "Name": "Adult Gold Dragon",
         "Type": "Huge dragon (Metallic)",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "256 (19d12 + 133)",
         "Speed": "40 ft., fly 80 ft., swim 40 ft.",
@@ -1225,7 +1054,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying Speed."
         ],
-        "Features": [
+        "features": [
             "Amphibious. The dragon can breathe air and water.",
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
@@ -1308,29 +1137,12 @@ dnd_monsters = {
             "Magic weapons",
             "Magic armor",
             "Artifacts of wealth and power"
-        ],
-        "Race": "Dragon",
-        "Class": "Monstrosity",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Aidan",
-            "Bastian",
-            "Darius",
-            "Jove",
-            "Tavian"
-        ],
-        "5 Common Last Names": [
-            "Agleos",
-            "Bronzefire",
-            "Goldoriel",
-            "Silverwing",
-            "Vaynessa"
         ]
     },
-    "Adult_Green_Dragon": {
+    "Adult-Green-Dragon": {
         "Name": "Adult Green Dragon",
         "Type": "Huge dragon (Chromatic)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "207 (18d12 + 90)",
         "Speed": "40 ft., fly 80 ft., swim 40 ft.",
@@ -1353,7 +1165,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed."
         ],
-        "Features": [
+        "features": [
             "Amphibious. The dragon can breathe air and water.",
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
@@ -1436,29 +1248,12 @@ dnd_monsters = {
             "Magical armor",
             "Healing potions",
             "Mystic scrolls"
-        ],
-        "Race": "Dragon",
-        "Class": "Reptile",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Maeloc",
-            "Ornael",
-            "Brannor",
-            "Dhrall",
-            "Taryon"
-        ],
-        "5 Common Last Names": [
-            "Falconguard",
-            "Greenscales",
-            "Silvertongue",
-            "Stormeye",
-            "Woodward"
         ]
     },
-    "Adult_Red_Dragon": {
+    "Adult-Red-Dragon": {
         "Name": "Adult Red Dragon",
         "Type": "Huge dragon (Chromatic)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "256 (19d12 + 133)",
         "Speed": "40 ft., climb 40 ft., fly 80 ft.",
@@ -1480,7 +1275,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed."
         ],
-        "Features": [
+        "features": [
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
         "Actions": [
@@ -1555,29 +1350,12 @@ dnd_monsters = {
             "Magical Artifacts",
             "Magical Weapons",
             "Rarity Scrolls"
-        ],
-        "Race": "Dragon",
-        "Class": "Creature",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Asterax",
-            "Thrax",
-            "Karanak",
-            "Tyrra",
-            "Vosur"
-        ],
-        "5 Common Last Names": [
-            "Breathbane",
-            "Firefume",
-            "Furywing",
-            "Scalecaver",
-            "Tailsting"
         ]
     },
-    "Adult_Silver_Dragon": {
+    "Adult-Silver-Dragon": {
         "Name": "Adult Silver Dragon",
         "Type": "Huge dragon (Metallic)",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "243 (18d12 + 126)",
         "Speed": "40 ft., fly 80 ft.",
@@ -1599,7 +1377,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 21 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying Speed."
         ],
-        "Features": [
+        "features": [
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
         "Actions": [
@@ -1684,29 +1462,12 @@ dnd_monsters = {
             "Gold coins",
             "Art Objects",
             "Rare plants and herbs"
-        ],
-        "Race": "Dragon",
-        "Class": "Draconic Creature",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Valens",
-            "Diamond",
-            "Silver",
-            "Luna",
-            "Gem"
-        ],
-        "5 Common Last Names": [
-            "Cloudsteel",
-            "Crownshadow",
-            "Nightfall",
-            "Oceanshine",
-            "Queenrage"
         ]
     },
-    "Adult_White_Dragon": {
+    "Adult-White-Dragon": {
         "Name": "Adult White Dragon",
         "Type": "Huge dragon (Chromatic)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "18 (natural armor)",
         "Hit Points": "200 (16d12 + 96)",
         "Speed": "40 ft., burrow 30 ft., fly 80 ft., swim 40 ft.",
@@ -1728,7 +1489,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed."
         ],
-        "Features": [
+        "features": [
             "Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment.",
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
@@ -1815,29 +1576,12 @@ dnd_monsters = {
             "Cold Potion",
             "Frosted Helm",
             "Frozen Shield"
-        ],
-        "Race": "Dragon",
-        "Class": "Magical Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Hrodwulf",
-            "Vili",
-            "Thugr",
-            "Taarvik",
-            "Grani"
-        ],
-        "5 Common Last Names": [
-            "Snow Raven",
-            "Frost Destruction",
-            "Ice Breaker",
-            "Frosthunter",
-            "Whitehunter"
         ]
     },
-    "Air_Elemental": {
+    "Air-Elemental": {
         "Name": "Air Elemental",
         "Type": "Large elemental",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "15",
         "Hit Points": "90 (12d10 + 24)",
         "Speed": "0 ft., fly 90 ft. (hover)",
@@ -1853,7 +1597,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "10 (+0)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Air Form. The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
         ],
         "Actions": [
@@ -1930,29 +1674,12 @@ dnd_monsters = {
             "Air Elemental Essence",
             "Ritual Armor from the Elemental Plane of Air",
             "Gemstones"
-        ],
-        "Race": "Elemental",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Breeze",
-            "Airi",
-            "Skye",
-            "Susurrus",
-            "Zephyr"
-        ],
-        "5 Common Last Names": [
-            "Airborne",
-            "Weathersphere",
-            "Airbender",
-            "Stormbringer",
-            "Skywalker"
         ]
     },
     "Allosaurus": {
         "Name": "Allosaurus",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "51 (6d10 + 18)",
         "Speed": "60 ft.",
@@ -1966,7 +1693,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Pounce. If the allosaurus moves at least 30 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the allosaurus can make one bite attack against it as a bonus action."
         ],
         "Actions": [
@@ -2034,29 +1761,12 @@ dnd_monsters = {
             "Theropod bone fragments",
             "Chromatic scales",
             "Monster claw from a previous hunt"
-        ],
-        "Race": "Dinosaur",
-        "Class": "Behemoth",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Thall",
-            "Belle",
-            "Corr",
-            "Arne",
-            "Korul"
-        ],
-        "5 Common Last Names": [
-            "Tailbiter",
-            "Foulclaw",
-            "Scavenger",
-            "Thundergut",
-            "Skullcleaver"
         ]
     },
-    "Ancient_Black_Dragon": {
+    "Ancient-Black-Dragon": {
         "Name": "Ancient Black Dragon",
         "Type": "Gargantuan dragon (Chromatic)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "22 (natural armor)",
         "Hit Points": "367 (21d20 + 147)",
         "Speed": "40 ft., fly 80 ft., swim 40 ft.",
@@ -2078,7 +1788,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying Speed."
         ],
-        "Features": [
+        "features": [
             "Amphibious. The dragon can breathe air and water.",
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
@@ -2152,29 +1862,12 @@ dnd_monsters = {
             "Coins of Rare Metals",
             "Rare Artifacts",
             "Magical Weapons/Armor"
-        ],
-        "Race": "Dragon",
-        "Class": "Dracolich",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Tyrrahk",
-            "Tsuvahr",
-            "Glaazac",
-            "Vrexhear",
-            "Craahl"
-        ],
-        "5 Common Last Names": [
-            "Vegaar",
-            "Trentharos",
-            "Byair",
-            "Kahl",
-            "Armenstok"
         ]
     },
-    "Ancient_Blue_Dragon": {
+    "Ancient-Blue-Dragon": {
         "Name": "Ancient Blue Dragon",
         "Type": "Gargantuan dragon (Chromatic)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "22 (natural armor)",
         "Hit Points": "481 (26d20 + 208)",
         "Speed": "40 ft., burrow 40 ft., fly 80 ft.",
@@ -2196,7 +1889,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying Speed."
         ],
-        "Features": [
+        "features": [
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
         "Actions": [
@@ -2275,29 +1968,12 @@ dnd_monsters = {
             "Rare and powerful weapons",
             "Exquisite art pieces",
             "Lore and ancient secrets"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Bluver",
-            "Gurreim",
-            "Neilic",
-            "Saeign",
-            "Vattu"
-        ],
-        "5 Common Last Names": [
-            "Saeyerth",
-            "Foryctr",
-            "Larenth",
-            "Eorlhaen",
-            "Bransae"
         ]
     },
-    "Ancient_Brass_Dragon": {
+    "Ancient-Brass-Dragon": {
         "Name": "Ancient Brass Dragon",
         "Type": "Gargantuan dragon (Metallic)",
-        "Alignment": "chaotic good",
+        "alignment": "chaotic good",
         "Armor Class": "20 (natural armor)",
         "Hit Points": "297 (17d20 + 119)",
         "Speed": "40 ft., burrow 40 ft., fly 80 ft.",
@@ -2319,7 +1995,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying Speed."
         ],
-        "Features": [
+        "features": [
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
         "Actions": [
@@ -2401,29 +2077,12 @@ dnd_monsters = {
             "Magical scrolls",
             "Treasure chests full of gold and gems",
             "Gems of great power"
-        ],
-        "Race": "Dragon",
-        "Class": "None",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Gormant",
-            "Eldamir",
-            "Tudeleos",
-            "Baelnaer",
-            "Nimdrultan"
-        ],
-        "5 Common Last Names": [
-            "The Bronze",
-            "The Proud",
-            "The Diamondwing",
-            "The Unyielding",
-            "The Glorious"
         ]
     },
-    "Ancient_Bronze_Dragon": {
+    "Ancient-Bronze-Dragon": {
         "Name": "Ancient Bronze Dragon",
         "Type": "Gargantuan dragon (Metallic)",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "22 (natural armor)",
         "Hit Points": "444 (24d20 + 192)",
         "Speed": "40 ft., fly 80 ft., swim 40 ft.",
@@ -2445,7 +2104,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying Speed."
         ],
-        "Features": [
+        "features": [
             "Amphibious. The dragon can breathe air and water.",
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
@@ -2528,29 +2187,12 @@ dnd_monsters = {
             "Mithril Plate Armor",
             "Adamantine Armor",
             "Wands of Lightning Bolt"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Agnorseth",
-            "Githaranoth",
-            "Ligarth",
-            "Mithrorith",
-            "Porthannoth"
-        ],
-        "5 Common Last Names": [
-            "Anguillave",
-            "Coilshadow",
-            "Gildedscale",
-            "Roarhawk",
-            "Stalemantle"
         ]
     },
-    "Ancient_Copper_Dragon": {
+    "Ancient-Copper-Dragon": {
         "Name": "Ancient Copper Dragon",
         "Type": "Gargantuan dragon (Metallic)",
-        "Alignment": "chaotic good",
+        "alignment": "chaotic good",
         "Armor Class": "21 (natural armor)",
         "Hit Points": "350 (20d20 + 140)",
         "Speed": "40 ft., climb 40 ft., fly 80 ft.",
@@ -2572,7 +2214,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying Speed."
         ],
-        "Features": [
+        "features": [
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
         "Actions": [
@@ -2649,29 +2291,12 @@ dnd_monsters = {
             "Gems",
             "Rare books or scrolls",
             "Magical weapons/items"
-        ],
-        "Race": "Dragon",
-        "Class": "Monstrosity",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Aurum",
-            "Boreas",
-            "Dunstan",
-            "Xanthius",
-            "Ysabel"
-        ],
-        "5 Common Last Names": [
-            "Copperhoard",
-            "Bronzefist",
-            "Goldslayer",
-            "Metalthroat",
-            "Tarnscale"
         ]
     },
-    "Ancient_Gold_Dragon": {
+    "Ancient-Gold-Dragon": {
         "Name": "Ancient Gold Dragon",
         "Type": "Gargantuan dragon (Metallic)",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "22 (natural armor)",
         "Hit Points": "546 (28d20 + 252)",
         "Speed": "40 ft., fly 80 ft., swim 40 ft.",
@@ -2693,7 +2318,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying Speed."
         ],
-        "Features": [
+        "features": [
             "Amphibious. The dragon can breathe air and water.",
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
@@ -2772,29 +2397,12 @@ dnd_monsters = {
             "Mounds of Gold and Precious Gems",
             "Artifacts of Great Power",
             "Enchanted Armor and Jewelry"
-        ],
-        "Race": "Dragon",
-        "Class": "Creature",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Chendera",
-            "Glora",
-            "Mogina",
-            "Miricha",
-            "Artoria"
-        ],
-        "5 Common Last Names": [
-            "Goldfyre",
-            "Dragontamer",
-            "Pyrefly",
-            "Armorwyrm",
-            "Mountaindweller"
         ]
     },
-    "Ancient_Green_Dragon": {
+    "Ancient-Green-Dragon": {
         "Name": "Ancient Green Dragon",
         "Type": "Gargantuan dragon (Chromatic)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "21 (natural armor)",
         "Hit Points": "385 (22d20 + 154)",
         "Speed": "40 ft., fly 80 ft., swim 40 ft.",
@@ -2817,7 +2425,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying Speed."
         ],
-        "Features": [
+        "features": [
             "Amphibious. The dragon can breathe air and water.",
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
@@ -2901,29 +2509,12 @@ dnd_monsters = {
             "Gold coins",
             "Magical artifacts",
             "Rings, gems, and other jewelry"
-        ],
-        "Race": "Dragon",
-        "Class": "Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Arrnthorr",
-            "Jartek",
-            "Krordrim",
-            "Thunderbreath",
-            "Swamplord"
-        ],
-        "5 Common Last Names": [
-            "Treacharous",
-            "Silvertongue",
-            "Stormwyrm",
-            "Scalebane",
-            "Gladeheart"
         ]
     },
-    "Ancient_Red_Dragon": {
+    "Ancient-Red-Dragon": {
         "Name": "Ancient Red Dragon",
         "Type": "Gargantuan dragon (Chromatic)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "22 (natural armor)",
         "Hit Points": "546 (28d20 + 252)",
         "Speed": "40 ft., climb 40 ft., fly 80 ft.",
@@ -2945,7 +2536,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed."
         ],
-        "Features": [
+        "features": [
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
         "Actions": [
@@ -3021,29 +2612,12 @@ dnd_monsters = {
             "Weapons",
             "Armor",
             "Gold coins"
-        ],
-        "Race": "Dragon",
-        "Class": "Monster",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Donamarie",
-            "Sable",
-            "Adair",
-            "Bedivere",
-            "Cordelia"
-        ],
-        "5 Common Last Names": [
-            "Vendirvurth",
-            "Kazdun",
-            "Cullfield",
-            "Tuule",
-            "Stromme"
         ]
     },
-    "Ancient_Silver_Dragon": {
+    "Ancient-Silver-Dragon": {
         "Name": "Ancient Silver Dragon",
         "Type": "Gargantuan dragon (Metallic)",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "22 (natural armor)",
         "Hit Points": "487 (25d20 + 225)",
         "Speed": "40 ft., fly 80 ft.",
@@ -3065,7 +2639,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying Speed."
         ],
-        "Features": [
+        "features": [
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
         "Actions": [
@@ -3140,29 +2714,12 @@ dnd_monsters = {
             "Gold and silver coins",
             "Mystical artifacts",
             "Books written in Ancient Silver Dragon tongue"
-        ],
-        "Race": "dragon",
-        "Class": "--",
-        "Size": "gargantuan",
-        "5 Common First Names": [
-            "Kimarah",
-            "Vallant",
-            "Fortuna",
-            "Amaranth",
-            "Calantha"
-        ],
-        "5 Common Last Names": [
-            "Wyrmfang",
-            "Steelhoard",
-            "Fangsilver",
-            "Hollowscale",
-            "Shieldsteel"
         ]
     },
-    "Ancient_White_Dragon": {
+    "Ancient-White-Dragon": {
         "Name": "Ancient White Dragon",
         "Type": "Gargantuan dragon (Chromatic)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "20 (natural armor)",
         "Hit Points": "333 (18d20 + 144)",
         "Speed": "40 ft., burrow 40 ft., fly 80 ft., swim 40 ft.",
@@ -3184,7 +2741,7 @@ dnd_monsters = {
             "Tail Attack. The dragon makes a tail attack.",
             "Wing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying Speed."
         ],
-        "Features": [
+        "features": [
             "Ice Walk. The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment.",
             "Legendary Resistance (3/Day). If the dragon fails a saving throw, it can choose to succeed instead."
         ],
@@ -3261,29 +2818,12 @@ dnd_monsters = {
             "Ice-Forged Armor",
             "Evercold Ring",
             "Frostweave Robes"
-        ],
-        "Race": "Dragon",
-        "Class": "Magical Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Valkrist",
-            "Valyria",
-            "Yezzan",
-            "Ulfric",
-            "Shela"
-        ],
-        "5 Common Last Names": [
-            "Horrsk",
-            "Kelarr",
-            "Korrsk",
-            "Lacvosk",
-            "Vensk"
         ]
     },
     "Androsphinx": {
         "Name": "Androsphinx",
         "Type": "Large monstrosity",
-        "Alignment": "lawful neutral",
+        "alignment": "lawful neutral",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "199 (19d10 + 95)",
         "Speed": "40 ft., fly 60 ft.",
@@ -3306,7 +2846,7 @@ dnd_monsters = {
             "Teleport (Costs 2 Actions). The sphinx magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.",
             "Cast a Spell (Costs 3 Actions). The sphinx casts a spell from its list of prepared spells, using a spell slot as normal."
         ],
-        "Features": [
+        "features": [
             "Inscrutable. The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage.",
             "Magic Weapons. The sphinx's weapon attacks are magical.",
             "Spellcasting. The sphinx is a 12th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following cleric spells prepared:"
@@ -3384,29 +2924,12 @@ dnd_monsters = {
             "Scrolls of Prophecy",
             "Amulets of Clairvoyance",
             "Jeweled Statues of the Androsphinx"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Ajmal",
-            "Bakari",
-            "Khanda",
-            "Kefu",
-            "Ramyar"
-        ],
-        "5 Common Last Names": [
-            "Namad",
-            "Ahmose",
-            "Khashab",
-            "Najib",
-            "Izz-Al-Din"
         ]
     },
-    "Animated_Armor": {
+    "Animated-Armor": {
         "Name": "Animated Armor",
         "Type": "Medium construct",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "18 (natural armor)",
         "Hit Points": "33 (6d8 + 6)",
         "Speed": "25 ft.",
@@ -3421,7 +2944,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "3 (-4)",
         "CHA": "1 (-5)",
-        "Features": [
+        "features": [
             "Antimagic Susceptibility. The armor is incapacitated while in the area of anantimagic field. If targeted bydispel magic, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.",
             "False. Appearance. While the armor remains motionless, it is indistinguishable from a normal suit of armor."
         ],
@@ -3497,29 +3020,12 @@ dnd_monsters = {
             "Artwork And Other Valuables",
             "Magical Scrolls And Potions",
             "Rare Spell Components"
-        ],
-        "Race": "Construct",
-        "Class": "Medium Construct",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Armordrake",
-            "Adamantknight",
-            "Steelghast",
-            "Stalware",
-            "Chainwraith"
-        ],
-        "5 Common Last Names": [
-            "Hexsteel",
-            "Rivereaper",
-            "Guardworker",
-            "Gauntletbone",
-            "Silverbone"
         ]
     },
     "Ankheg": {
         "Name": "Ankheg",
         "Type": "Large monstrosity",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "14 (natural armor), 11 while prone",
         "Hit Points": "39 (6d10 + 6)",
         "Speed": "30 ft., burrow 10 ft.",
@@ -3532,7 +3038,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "13 (+1)",
         "CHA": "6 (-2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +5 to hit, reach 5 ft., one target.Hit: 10 (2d6 + 3) slashing damage plus 3 (1d6) acid damage. If the target is a Large or smaller creature, it is grappled (escape DC 13). Until this grapple ends, the ankheg can bite only the grappled creature and has advantage on attack rolls to do so.",
             "Acid Spray (Recharge 6). The ankheg spits acid in a line that is 30 feet long and 5 feet wide, provided that it has no creature grappled. Each creature in that line must make a DC 13 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one."
@@ -3601,29 +3107,12 @@ dnd_monsters = {
             "Rare Herbs",
             "Chitin Shards",
             "Magical Items"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Borris",
-            "Irzak",
-            "Ymmyg",
-            "Fenthir",
-            "Aluriak"
-        ],
-        "5 Common Last Names": [
-            "Uluth",
-            "Chasmal",
-            "Uros",
-            "Marza",
-            "Orthuk"
         ]
     },
     "Ankylosaurus": {
         "Name": "Ankylosaurus",
         "Type": "Huge beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "68 (8d12 + 16)",
         "Speed": "30 ft.",
@@ -3636,7 +3125,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "5 (-3)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Tail.Melee Weapon Attack: +7 to hit, reach 10 ft., one target.Hit: 18 (4d6 + 4) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone."
         ],
@@ -3705,29 +3194,12 @@ dnd_monsters = {
             "Gems & Jewellery",
             "Scrolls & Books",
             "Potion & Elixirs"
-        ],
-        "Race": "Reptile",
-        "Class": "Medium Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Chulayo",
-            "Sankofa",
-            "Tafari",
-            "Chuma",
-            "Aina"
-        ],
-        "5 Common Last Names": [
-            "Monevato",
-            "Dorogo",
-            "Kunala",
-            "Sontina",
-            "Sarima"
         ]
     },
     "Ape": {
         "Name": "Ape",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "19 (3d8 + 6)",
         "Speed": "30 ft., climb 30 ft.",
@@ -3741,7 +3213,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "12 (+1)",
         "CHA": "7 (-2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Multiattack. The ape makes two fist attacks.",
             "Fist.Melee Weapon Attack: +5 to hit, reach 5 ft., one target.Hit: 6 (1d6 + 3) bludgeoning damage.",
@@ -3818,29 +3290,12 @@ dnd_monsters = {
             "Rings",
             "Artefacts",
             "Magical Weapons"
-        ],
-        "Race": "Beast",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Cracko",
-            "Hooey",
-            "Lokee",
-            "Slap",
-            "Taco"
-        ],
-        "5 Common Last Names": [
-            "Apelyon",
-            "Baboon",
-            "Gorillo",
-            "Macaqua",
-            "Simian"
         ]
     },
     "Arcanaloth": {
         "Name": "Arcanaloth",
         "Type": "Medium fiend (Yugoloth)",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "104 (16d8 + 32)",
         "Speed": "30 ft., fly 30 ft.",
@@ -3858,7 +3313,7 @@ dnd_monsters = {
         "INT": "20 (+5)",
         "WIS": "16 (+3)",
         "CHA": "17 (+3)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -3931,29 +3386,12 @@ dnd_monsters = {
             "Potion of Resistance",
             "Scroll of Protection",
             "Amulet of Spell Resistance"
-        ],
-        "Race": "Yugoloth",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Kryoz",
-            "Cidos",
-            "Rithrios",
-            "Valkem",
-            "Kuulos"
-        ],
-        "5 Common Last Names": [
-            "Felltreacher",
-            "Devillustrator",
-            "Lustrae",
-            "Shadowborn",
-            "Helvexis"
         ]
     },
     "Archmage": {
         "Name": "Archmage",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any alignment",
+        "alignment": "any alignment",
         "Armor Class": "12 (15 with",
         "Hit Points": "99 (18d8 + 18)",
         "Speed": "30 ft.",
@@ -3969,7 +3407,7 @@ dnd_monsters = {
         "INT": "20 (+5)",
         "WIS": "15 (+2)",
         "CHA": "16 (+3)",
-        "Features": [
+        "features": [
             "Magic Resistance. The archmage has advantage on saving throws against spells and other magical effects.",
             "Spellcasting. The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can castdisguise selfandinvisibilityat will and has the following wizard spells prepared:"
         ],
@@ -4051,29 +3489,12 @@ dnd_monsters = {
             "Magical Weapons",
             "Tomes of Knowledge",
             "Trinkets of Power"
-        ],
-        "Race": "Human",
-        "Class": "Wizard",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Jurden",
-            "Emmeline",
-            "Maijun",
-            "Silvera",
-            "Everard"
-        ],
-        "5 Common Last Names": [
-            "Nalistan",
-            "Jansynor",
-            "Rinford",
-            "Draydon",
-            "Rivard"
         ]
     },
     "Assassin": {
         "Name": "Assassin",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any non-good alignment",
+        "alignment": "any non-good alignment",
         "Armor Class": "15 (studded leather)",
         "Hit Points": "78 (12d8 + 24)",
         "Speed": "30 ft.",
@@ -4089,7 +3510,7 @@ dnd_monsters = {
         "INT": "13 (+1)",
         "WIS": "11 (+0)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Assassinate. During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit.",
             "Evasion. If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.",
             "Sneak Attack. Once per turn, the assassin deals an extra 14 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't incapacitated and the assassin doesn't have disadvantage on the attack roll."
@@ -4171,29 +3592,12 @@ dnd_monsters = {
             "Masks or Hoods",
             "Throwing Knives",
             "Climbing Gear"
-        ],
-        "Race": "Humanoid",
-        "Class": "Rogue",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Grim",
-            "Malik",
-            "Mord",
-            "Severus",
-            "Pasha"
-        ],
-        "5 Common Last Names": [
-            "Blackblade",
-            "Bones",
-            "Crow",
-            "Dagger",
-            "Scourge"
         ]
     },
-    "Awakened_Shrub": {
+    "Awakened-Shrub": {
         "Name": "Awakened Shrub",
         "Type": "Small plant",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "9",
         "Hit Points": "10 (3d6)",
         "Speed": "20 ft.",
@@ -4208,7 +3612,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "10 (+0)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "False Appearance. While the shrub remains motionless, it is indistinguishable from a normal shrub."
         ],
         "Actions": [
@@ -4276,29 +3680,12 @@ dnd_monsters = {
             "Finely Woven Rope",
             "Small Amulet",
             "Scroll of Protection"
-        ],
-        "Race": "Plant",
-        "Class": "Plant",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Bramble",
-            "Thorn",
-            "Root",
-            "Briar",
-            "Vine"
-        ],
-        "5 Common Last Names": [
-            "Sprout",
-            "Leaf",
-            "Bloom",
-            "Sap",
-            "Petal"
         ]
     },
-    "Awakened_Tree": {
+    "Awakened-Tree": {
         "Name": "Awakened Tree",
         "Type": "Huge plant",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "59 (7d12 + 14)",
         "Speed": "20 ft.",
@@ -4313,7 +3700,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "10 (+0)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "False Appearance. While the tree remains motionless, it is indistinguishable from a normal tree."
         ],
         "Actions": [
@@ -4383,29 +3770,12 @@ dnd_monsters = {
             "Lumber",
             "Leather",
             "Coin"
-        ],
-        "Race": "Plant",
-        "Class": "Monstrosity",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Rysilarh",
-            "Myshoje",
-            "Gashteyn",
-            "Ziiol",
-            "Phaerla"
-        ],
-        "5 Common Last Names": [
-            "Shroomkin",
-            "Oakstump",
-            "Rootlar",
-            "Boargrove",
-            "Fungripper"
         ]
     },
-    "Axe_Beak": {
+    "Axe-Beak": {
         "Name": "Axe Beak",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11",
         "Hit Points": "19 (3d10 + 3)",
         "Speed": "50 ft.",
@@ -4418,7 +3788,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "10 (+0)",
         "CHA": "5 (-3)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Beak.Melee Weapon Attack: +4 to hit, reach 5 ft., one target.Hit: 6 (1d8 + 2) slashing damage."
         ],
@@ -4485,29 +3855,12 @@ dnd_monsters = {
             "Small Animal Pelts",
             "Low Quality Leather",
             "Axe Beak Feathers"
-        ],
-        "Race": "Avian",
-        "Class": "Animal",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Cackle",
-            "Peck",
-            "Screech",
-            "Shriek",
-            "Tikki"
-        ],
-        "5 Common Last Names": [
-            "Beak",
-            "Claw",
-            "Feather",
-            "Gizzard",
-            "Wing"
         ]
     },
     "Azer": {
         "Name": "Azer",
         "Type": "Medium elemental",
-        "Alignment": "lawful neutral",
+        "alignment": "lawful neutral",
         "Armor Class": "17 (natural armor, shield)",
         "Hit Points": "39 (6d8 + 12)",
         "Speed": "30 ft.",
@@ -4523,7 +3876,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "13 (+1)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Heated Body. A creature that touches the azer or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage.",
             "Heated Weapons. When the azer hits with a metal melee weapon, it deals an extra 3 (1d6) fire damage (included in the attack).",
             "Illumination. The azer sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
@@ -4598,29 +3951,12 @@ dnd_monsters = {
             "amber gems",
             "fire arrows",
             "bejeweled brass rods"
-        ],
-        "Race": "Elemental",
-        "Class": "Caster",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Amal",
-            "Durax",
-            "kirviter",
-            "Nostrom",
-            "Zefir"
-        ],
-        "5 Common Last Names": [
-            "Dymethorn",
-            "Griffinhost",
-            "Marzathen",
-            "Razortor",
-            "Soulbend"
         ]
     },
     "Baboon": {
         "Name": "Baboon",
         "Type": "Small beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "3 (1d6)",
         "Speed": "30 ft., climb 30 ft.",
@@ -4633,7 +3969,7 @@ dnd_monsters = {
         "INT": "4 (-3)",
         "WIS": "12 (+1)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Pack Tactics. The baboon has advantage on an attack roll against a creature if at least one of the baboon's allies is within 5 feet of the creature and the ally isn't incapacitated."
         ],
         "Actions": [
@@ -4703,29 +4039,12 @@ dnd_monsters = {
             "Animal Teeth",
             "Beads",
             "Gems"
-        ],
-        "Race": "Beast",
-        "Class": "N/A",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Teller",
-            "Mander",
-            "Banger",
-            "Danger",
-            "Finger"
-        ],
-        "5 Common Last Names": [
-            "Gibber",
-            "Chatter",
-            "Caper",
-            "Sneer",
-            "Yowl"
         ]
     },
     "Badger": {
         "Name": "Badger",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "10",
         "Hit Points": "3 (1d4 + 1)",
         "Speed": "20 ft., burrow 5 ft.",
@@ -4738,7 +4057,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Keen Smell. The badger has advantage on Wisdom (Perception) checks that rely on smell."
         ],
         "Actions": [
@@ -4804,29 +4123,12 @@ dnd_monsters = {
             "Badger teeth",
             "Small amounts of gold and gems",
             "Magical trinkets and other items"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Badger",
-            "Burrow",
-            "Creek",
-            "Digger",
-            "Tunnel"
-        ],
-        "5 Common Last Names": [
-            "Muzzle",
-            "Scratch",
-            "Snout",
-            "Tails",
-            "Whisker"
         ]
     },
     "Balor": {
         "Name": "Balor",
         "Type": "Huge fiend (Demon)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "262 (21d12 + 126)",
         "Speed": "40 ft., fly 80 ft.",
@@ -4843,7 +4145,7 @@ dnd_monsters = {
         "INT": "20 (+5)",
         "WIS": "16 (+3)",
         "CHA": "22 (+6)",
-        "Features": [
+        "features": [
             "Death Throes. When the balor dies, it explodes, and each creature within 30 feet of it must make a DC 20 Dexterity saving throw, taking 70 (20d6) fire damage on a failed save, or half as much damage on a successful one. The explosion ignites flammable objects in that area that aren't being worn or carried, and it destroys the balor's weapons.",
             "Fire Aura. At the start of each of the balor's turns, each creature within 5 feet of it takes 10 (3d6) fire damage, and flammable objects in the aura that aren't being worn or carried ignite. A creature that touches the balor or hits it with a melee attack while within 5 feet of it takes 10 (3d6) fire damage.",
             "Magic Resistance. The balor has advantage on saving throws against spells and other magical effects.",
@@ -4918,29 +4220,12 @@ dnd_monsters = {
             "Magical Artifacts",
             "Vorpal Sword",
             "Rare and Exotic Weapons"
-        ],
-        "Race": "Fiend",
-        "Class": "Demon",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Laskar",
-            "Kahlor",
-            "Haephast",
-            "Agryos",
-            "Darastrix"
-        ],
-        "5 Common Last Names": [
-            "Kriggot",
-            "Kelmri",
-            "Krafnar",
-            "Karshak",
-            "Lorrimer"
         ]
     },
     "Bandit": {
         "Name": "Bandit",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any non-lawful alignment",
+        "alignment": "any non-lawful alignment",
         "Armor Class": "12 (leather armor)",
         "Hit Points": "11 (2d8 + 2)",
         "Speed": "30 ft.",
@@ -4953,7 +4238,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "10 (+0)",
         "CHA": "10 (+0)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Scimitar.Melee Weapon Attack: +3 to hit, reach 5 ft., one target.Hit: 4 (1d6 + 1) slashing damage.",
             "Light Crossbow.Ranged Weapon Attack: +3 to hit, range 80 ft./320 ft., one target.Hit: 5 (1d8 + 1) piercing damage."
@@ -5029,29 +4314,12 @@ dnd_monsters = {
             "Weapons and Armor",
             "magical Items",
             "Rare Books or Writings"
-        ],
-        "Race": "Human",
-        "Class": "Rogue",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Burt",
-            "John",
-            "Al",
-            "Mick",
-            "Jake"
-        ],
-        "5 Common Last Names": [
-            "Duckworth",
-            "Shrewd",
-            "Kidd",
-            "McGoldrick",
-            "Cutpurse"
         ]
     },
-    "Bandit_Captain": {
+    "Bandit-Captain": {
         "Name": "Bandit Captain",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any non-lawful alignment",
+        "alignment": "any non-lawful alignment",
         "Armor Class": "15 (studded leather)",
         "Hit Points": "65 (10d8 + 20)",
         "Speed": "30 ft.",
@@ -5066,7 +4334,7 @@ dnd_monsters = {
         "INT": "14 (+2)",
         "WIS": "11 (+0)",
         "CHA": "14 (+2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Multiattack. The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers.",
             "Scimitar.Melee Weapon Attack: +5 to hit, reach 5 ft., one target.Hit: 6 (1d6 + 3) slashing damage.",
@@ -5146,29 +4414,12 @@ dnd_monsters = {
             "Jewelry",
             "Silverware",
             "Spices"
-        ],
-        "Race": "Human",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Jed",
-            "Harley",
-            "Jade",
-            "Chastity",
-            "Brigette"
-        ],
-        "5 Common Last Names": [
-            "Sharpe",
-            "Rivera",
-            "Fletcher",
-            "Blackman",
-            "Hayes"
         ]
     },
     "Banshee": {
         "Name": "Banshee",
         "Type": "Medium undead",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "12",
         "Hit Points": "58 (13d8)",
         "Speed": "0 ft., fly 40 ft. (hover)",
@@ -5185,7 +4436,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "11 (+0)",
         "CHA": "17 (+3)",
-        "Features": [
+        "features": [
             "Detect Life. The banshee can magically sense the presence of creatures up to 5 miles away that aren't undead or constructs. She knows the general direction they're in but not their exact locations.",
             "Incorporeal Movement. The banshee can move through other creatures and objects as if they were difficult terrain. She takes 5 (1d10) force damage if she ends her turn inside an object."
         ],
@@ -5256,29 +4507,12 @@ dnd_monsters = {
             "Potion of Healing",
             "Scrolls",
             "Magic Weapons"
-        ],
-        "Race": "Fey",
-        "Class": "Undead",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Doireann",
-            "Maire",
-            "Dysania",
-            "Aoife",
-            "Caitee"
-        ],
-        "5 Common Last Names": [
-            "Blazhevich",
-            "Vieites",
-            "Stirone",
-            "Rigantona",
-            "Karuna"
         ]
     },
-    "Barbed_Devil": {
+    "Barbed-Devil": {
         "Name": "Barbed Devil",
         "Type": "Medium fiend (Devil)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "110 (13d8 + 52)",
         "Speed": "30 ft.",
@@ -5296,7 +4530,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "14 (+2)",
         "CHA": "14 (+2)",
-        "Features": [
+        "features": [
             "Barbed Hide. At the start of each of its turns, the barbed devil deals 5 (1d10) piercing damage to any creature grappling it.",
             "Devil's Sight. Magical darkness doesn't impede the devil's darkvision.",
             "Magic Resistance. The devil has advantage on saving throws against spells and other magical effects."
@@ -5374,29 +4608,12 @@ dnd_monsters = {
             "Magical items",
             "Gold coins",
             "Art Objects"
-        ],
-        "Race": "Devil",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Lempo",
-            "Kontio",
-            "Perkele",
-            "Tonttu",
-            "Tupris"
-        ],
-        "5 Common Last Names": [
-            "Zogoth",
-            "Azerage",
-            "Gravnine",
-            "Sporlawl",
-            "Exzifges"
         ]
     },
     "Barlgura": {
         "Name": "Barlgura",
         "Type": "Large fiend (Demon)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "68 (8d10 + 24)",
         "Speed": "40 ft., climb 40 ft.",
@@ -5414,7 +4631,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "14 (+2)",
         "CHA": "9 (-1)",
-        "Features": [
+        "features": [
             "Innate Spellcasting. The barlgura's spellcasting ability is Wisdom (spell save DC 13). The barlgura can innately cast the following spells, requiring no material components:",
             "Reckless. At the start of its turn, the barlgura can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn.",
             "Running Leap. The barlgura's long jump is up to 40 feet and its high jump is up to 20 feet when it has a running start."
@@ -5488,29 +4705,12 @@ dnd_monsters = {
             "Large pieces of raw meat or fur",
             "Dark artifacts",
             "Ancient scrolls"
-        ],
-        "Race": "Demon",
-        "Class": "Fiend",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Gorrum",
-            "Kurzol",
-            "Roam",
-            "Xailomar",
-            "Yernork"
-        ],
-        "5 Common Last Names": [
-            "Kulgrath",
-            "Mumrith",
-            "Storrim",
-            "Urbidonk",
-            "Verrish"
         ]
     },
     "Basilisk": {
         "Name": "Basilisk",
         "Type": "Medium monstrosity",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "52 (8d8 + 16)",
         "Speed": "20 ft.",
@@ -5523,7 +4723,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "8 (-1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Petrifying Gaze. If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by thegreater restorationspell or other magic. A creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save. If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze."
         ],
         "Actions": [
@@ -5581,29 +4781,12 @@ dnd_monsters = {
             "Magical Potions",
             "Rare Herbs",
             "Spinal Fluids"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ceratus",
-            "Vulcana",
-            "Vitulus",
-            "Iceran",
-            "Gulgareth"
-        ],
-        "5 Common Last Names": [
-            "Jormugar",
-            "Mazzranache",
-            "Kleethos",
-            "Graaliik",
-            "Azkalar"
         ]
     },
     "Bat": {
         "Name": "Bat",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "1 (1d4 - 1)",
         "Speed": "5 ft., fly 30 ft.",
@@ -5616,7 +4799,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "4 (-3)",
-        "Features": [
+        "features": [
             "Echolocation. The bat can't use its blindsight while deafened.",
             "Keen Hearing. The bat has advantage on Wisdom (Perception) checks that rely on hearing."
         ],
@@ -5686,29 +4869,12 @@ dnd_monsters = {
             "Insects/insect parts",
             "Small animal carcass parts",
             "Small amounts of coins"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Flitter",
-            "Screech",
-            "Wing",
-            "Fang",
-            "Scratch"
-        ],
-        "5 Common Last Names": [
-            "Batwing",
-            "Fang",
-            "Batbolt",
-            "Flitterfleet",
-            "Sharpstone"
         ]
     },
-    "Bearded_Devil": {
+    "Bearded-Devil": {
         "Name": "Bearded Devil",
         "Type": "Medium fiend (Devil)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "52 (8d8 + 16)",
         "Speed": "30 ft.",
@@ -5725,7 +4891,7 @@ dnd_monsters = {
         "INT": "9 (-1)",
         "WIS": "11 (+0)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "Devil's Sight. Magical darkness doesn't impede the devil's darkvision.",
             "Magic Resistance. The devil has advantage on saving throws against spells and other magical effects.",
             "Steadfast. The devil can't be frightened while it can see an allied creature within 30 feet of it."
@@ -5806,29 +4972,12 @@ dnd_monsters = {
             "Silver Coins",
             "Gemstones",
             "Plate Mail Armor"
-        ],
-        "Race": "Devil",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Mammon",
-            "Bel",
-            "Geryon",
-            "Amy",
-            "Amon"
-        ],
-        "5 Common Last Names": [
-            "Mephistopheles",
-            "Beelzebub",
-            "Asmodeus",
-            "Belial",
-            "Azazel"
         ]
     },
     "Behir": {
         "Name": "Behir",
         "Type": "Huge monstrosity",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "168 (16d12 + 64)",
         "Speed": "50 ft., climb 40 ft.",
@@ -5843,7 +4992,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "14 (+2)",
         "CHA": "12 (+1)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Multiattack. The behir makes two attacks: one with its bite and one to constrict.",
             "Bite.Melee Weapon Attack: +10 to hit, reach 10 ft., one target.Hit: 22 (3d10 + 6) piercing damage.",
@@ -5912,29 +5061,12 @@ dnd_monsters = {
             "Magic weapons",
             "Magic items",
             "Art objects"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Vaiqes",
-            "Xazom",
-            "Irqest",
-            "Gavqen",
-            "Prhrust"
-        ],
-        "5 Common Last Names": [
-            "Scalefender",
-            "Fangbreaker",
-            "Shimmerdarter",
-            "Skystrider",
-            "Stormhunter"
         ]
     },
     "Beholder": {
         "Name": "Beholder",
         "Type": "Large aberration",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "18 (natural armor)",
         "Hit Points": "180 (19d10 + 76)",
         "Speed": "0 ft., fly 20 ft. (hover)",
@@ -5953,7 +5085,7 @@ dnd_monsters = {
         "Legendary actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
-        "Features": [],
+        "features": [],
         "Actions": [],
         "Description": "A terrifying creature, appearing as a floating head with one large central eye surrounded by 10 smaller eyes on long stalks, a Beholder is a creature with innate magical powers and a fiercely xenophobic outlook. It uses its immense array of eye stalks to detect potential threats and immobilize foes.",
         "Narrative": "Beholders are often seen as harbingers of doom, as few beings have the courage and might to stand against their powerful magical attacks and brute strength. Most who have witnessed a Beholder's power flee in terror, while tales of those who faced a Beholder and emerged victorious are treated as legendary among adventurers.",
@@ -6025,29 +5157,12 @@ dnd_monsters = {
             "Magic Items",
             "Magical Weapons",
             "Miscellaneous Artifacts"
-        ],
-        "Race": "Aberration",
-        "Class": "None",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Eylzi",
-            "Gzor",
-            "Kryhg",
-            "Qazsh",
-            "Zooto"
-        ],
-        "5 Common Last Names": [
-            "Redtentacle",
-            "Cyclopsmane",
-            "Spinehorn",
-            "Eyehook",
-            "Eyelessring"
         ]
     },
-    "Beholder_Zombie": {
+    "Beholder-Zombie": {
         "Name": "Beholder Zombie",
         "Type": "Large undead",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "93 (11d10 + 33)",
         "Speed": "0 ft., fly 20 ft. (hover)",
@@ -6063,7 +5178,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "8 (-1)",
         "CHA": "5 (-3)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -6132,29 +5247,12 @@ dnd_monsters = {
             "Gems and jewelry",
             "Magical artifacts",
             "Scrolls of powerful magic"
-        ],
-        "Race": "Undead",
-        "Class": "Zombie types",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Lazorus",
-            "Icchan",
-            "Carlescia",
-            "Azarudar",
-            "Kezam"
-        ],
-        "5 Common Last Names": [
-            "Starear",
-            "Gazulnaught",
-            "Stabskull",
-            "Horrorstar",
-            "Tentaeye"
         ]
     },
     "Berserker": {
         "Name": "Berserker",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any chaotic alignment",
+        "alignment": "any chaotic alignment",
         "Armor Class": "13 (hide armor)",
         "Hit Points": "67 (9d8 + 27)",
         "Speed": "30 ft.",
@@ -6167,7 +5265,7 @@ dnd_monsters = {
         "INT": "9 (-1)",
         "WIS": "11 (+0)",
         "CHA": "9 (-1)",
-        "Features": [
+        "features": [
             "Reckless. At the start of its turn, the berserker can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
         ],
         "Actions": [
@@ -6244,29 +5342,12 @@ dnd_monsters = {
             "Magic weapons",
             "Magic armor",
             "Magical scrolls"
-        ],
-        "Race": "Humanoid",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ulfbar",
-            "Drengarr",
-            "Anderr",
-            "Brynri",
-            "Hakon"
-        ],
-        "5 Common Last Names": [
-            "Ironfist",
-            "Frostbeard",
-            "Firehand",
-            "Thegn",
-            "Berserkir"
         ]
     },
-    "Black_Bear": {
+    "Black-Bear": {
         "Name": "Black Bear",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11 (natural armor)",
         "Hit Points": "19 (3d8 + 6)",
         "Speed": "40 ft., climb 30 ft.",
@@ -6280,7 +5361,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Keen Smell. The bear has advantage on Wisdom (Perception) checks that rely on smell."
         ],
         "Actions": [
@@ -6354,29 +5435,12 @@ dnd_monsters = {
             "Black bear teeth",
             "Black bear berry preserves",
             "Mushrooms and nuts gathered by the black bear"
-        ],
-        "Race": "Beast",
-        "Class": "Animal",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Mog",
-            "Bruin",
-            "Grumble",
-            "Muckle",
-            "Ursos"
-        ],
-        "5 Common Last Names": [
-            "Cubsack",
-            "Rootclaws",
-            "Longtooth",
-            "Clawhame",
-            "Greyfur"
         ]
     },
-    "Black_Dragon_Wyrmling": {
+    "Black-Dragon-Wyrmling": {
         "Name": "Black Dragon Wyrmling",
         "Type": "Medium dragon (Chromatic)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "33 (6d8 + 6)",
         "Speed": "30 ft., fly 60 ft., swim 30 ft.",
@@ -6392,7 +5456,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "11 (+0)",
         "CHA": "13 (+1)",
-        "Features": [
+        "features": [
             "Amphibious. The dragon can breathe air and water."
         ],
         "Actions": [
@@ -6467,29 +5531,12 @@ dnd_monsters = {
             "Magical relics",
             "Elixir of life",
             "Weapons and armor"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Gem",
-            "Ash",
-            "Riga",
-            "Claw",
-            "Ryker"
-        ],
-        "5 Common Last Names": [
-            "Streaks",
-            "Scale",
-            "Tail",
-            "Hover",
-            "Wings"
         ]
     },
-    "Black_Pudding": {
+    "Black-Pudding": {
         "Name": "Black Pudding",
         "Type": "Large ooze",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "7",
         "Hit Points": "85 (10d10 + 30)",
         "Speed": "20 ft., climb 20 ft.",
@@ -6507,7 +5554,7 @@ dnd_monsters = {
         "Reactions": [
             "Split. When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding."
         ],
-        "Features": [
+        "features": [
             "Amorphous. The pudding can move through a space as narrow as 1 inch wide without squeezing.",
             "Corrosive Form. A creature that touches the pudding or hits it with a melee attack while within 5 feet of it takes 4 (1d8) acid damage. Any nonmagical weapon made of metal or wood that hits the pudding corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits the pudding is destroyed after dealing damage. The pudding can eat through 2-inch-thick, nonmagical wood or metal in 1 round.",
             "Spider Climb. The pudding can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
@@ -6575,29 +5622,12 @@ dnd_monsters = {
             "Potions",
             "Gems",
             "Gold coins"
-        ],
-        "Race": "Amorphous Aberration",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Sluggy",
-            "Glock",
-            "Gelmoriah",
-            "Icy",
-            "Tentacus"
-        ],
-        "5 Common Last Names": [
-            "Fluidgore",
-            "Lakenscope",
-            "Slickreap",
-            "Venomseed",
-            "Plaguegrip"
         ]
     },
-    "Blink_Dog": {
+    "Blink-Dog": {
         "Name": "Blink Dog",
         "Type": "Medium fey",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "13",
         "Hit Points": "22 (4d8 + 4)",
         "Speed": "40 ft.",
@@ -6611,7 +5641,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "13 (+1)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "Keen Hearing and Smell. The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell."
         ],
         "Actions": [
@@ -6679,29 +5709,12 @@ dnd_monsters = {
             "Fey whistle necklace",
             "Teleportation Ring",
             "Yttrium Eye-of-Teleportation Shard"
-        ],
-        "Race": "Fey",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Razer",
-            "Barker",
-            "Flash",
-            "Arf",
-            "Bristle"
-        ],
-        "5 Common Last Names": [
-            "Whisker",
-            "Boulder",
-            "Bow",
-            "Tail",
-            "Fang"
         ]
     },
-    "Blood_Hawk": {
+    "Blood-Hawk": {
         "Name": "Blood Hawk",
         "Type": "Small beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "7 (2d6)",
         "Speed": "10 ft., fly 60 ft.",
@@ -6715,7 +5728,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "14 (+2)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Keen Sight. The hawk has advantage on Wisdom (Perception) checks that rely on sight.",
             "Pack Tactics. The hawk has advantage on an attack roll against a creature if at least one of the hawk's allies is within 5 feet of the creature and the ally isn't incapacitated."
         ],
@@ -6786,29 +5799,12 @@ dnd_monsters = {
             "Art objects",
             "Magic feathers",
             "Magical artifacts"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Gorp",
-            "Talon",
-            "Claw",
-            "Fang",
-            "Screech"
-        ],
-        "5 Common Last Names": [
-            "Flyer",
-            "Soar",
-            "Dive",
-            "Hunter",
-            "Scout"
         ]
     },
-    "Blue_Dragon_Wyrmling": {
+    "Blue-Dragon-Wyrmling": {
         "Name": "Blue Dragon Wyrmling",
         "Type": "Medium dragon (Chromatic)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "52 (8d8 + 16)",
         "Speed": "30 ft., burrow 15 ft., fly 60 ft.",
@@ -6824,7 +5820,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "11 (+0)",
         "CHA": "15 (+2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +5 to hit, reach 5 ft., one target.Hit: 8 (1d10 + 3) piercing damage plus 3 (1d6) lightning damage.",
             "Lightning Breath (Recharge 5-6). The dragon exhales lightning in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 22 (4d10) lightning damage on a failed save, or half as much damage on a successful one."
@@ -6905,29 +5901,12 @@ dnd_monsters = {
             "Frostmaul Weapons",
             "Ice Elementium",
             "Scrolls of the Cold Wind"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Azaghal",
-            "Churka",
-            "Kershka",
-            "Malkazarn",
-            "Tiamat"
-        ],
-        "5 Common Last Names": [
-            "Linnormgut",
-            "Einhander",
-            "Nippytail",
-            "Herpesscalp",
-            "Murkbringer"
         ]
     },
-    "Blue_Slaad": {
+    "Blue-Slaad": {
         "Name": "Blue Slaad",
         "Type": "Large aberration",
-        "Alignment": "chaotic neutral",
+        "alignment": "chaotic neutral",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "123 (13d10 + 52)",
         "Speed": "30 ft.",
@@ -6942,7 +5921,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "7 (-2)",
         "CHA": "9 (-1)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -7007,29 +5986,12 @@ dnd_monsters = {
             "Tooth of the Slaad",
             "Amulet of Greed",
             "Unstable Limestone of Chaos"
-        ],
-        "Race": "Slaad",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Klevoh",
-            "Kokskrak",
-            "Golaar",
-            "Kelthok",
-            "Hool"
-        ],
-        "5 Common Last Names": [
-            "Pazobut",
-            "Zloglaar",
-            "Synnasoab",
-            "Fomkov",
-            "Ibux"
         ]
     },
     "Boar": {
         "Name": "Boar",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11 (natural armor)",
         "Hit Points": "11 (2d8 + 2)",
         "Speed": "40 ft.",
@@ -7042,7 +6004,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "9 (-1)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Charge. If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 3 (1d6) slashing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
             "Relentless (Recharges after a Short or Long Rest). If the boar takes 7 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
         ],
@@ -7115,29 +6077,12 @@ dnd_monsters = {
             "Boar Meat",
             "Boar Claw",
             "Boar Ivy Leaf"
-        ],
-        "Race": "Beast",
-        "Class": "Wild Boar",
-        "Size": "Medium",
-        "5 Common First Names Specific Of This Monster": [
-            "Grunter",
-            "Sawtusk",
-            "Snuffle",
-            "Snort",
-            "Tusk"
-        ],
-        "5 Common Last Names": [
-            "Bristlerun",
-            "Clovenhoof",
-            "Tusk",
-            "Tusksnort",
-            "Tusktracker"
         ]
     },
-    "Bone_Devil": {
+    "Bone-Devil": {
         "Name": "Bone Devil",
         "Type": "Large fiend (Devil)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "142 (15d10 + 60)",
         "Speed": "40 ft., fly 40 ft.",
@@ -7155,7 +6100,7 @@ dnd_monsters = {
         "INT": "13 (+1)",
         "WIS": "14 (+2)",
         "CHA": "16 (+3)",
-        "Features": [
+        "features": [
             "Devil's Sight. Magical darkness doesn't impede the devil's darkvision.",
             "Magic Resistance. The devil has advantage on saving throws against spells and other magical effects."
         ],
@@ -7231,29 +6176,12 @@ dnd_monsters = {
             "Lamiae eyes",
             "Demonhide armor",
             "Wandermaw blades"
-        ],
-        "Race": "Devil",
-        "Class": "Fiend",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Morthos",
-            "Andros",
-            "Vorvis",
-            "Tavalak",
-            "Arazni"
-        ],
-        "5 Common Last Names": [
-            "Krosis",
-            "Barakas",
-            "Thoxus",
-            "Sthenelon",
-            "Lamareth"
         ]
     },
-    "Bone_Naga": {
+    "Bone-Naga": {
         "Name": "Bone Naga",
         "Type": "Large undead",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "58 (9d10 + 9)",
         "Speed": "30 ft.",
@@ -7268,7 +6196,7 @@ dnd_monsters = {
         "INT": "15 (+2)",
         "WIS": "15 (+2)",
         "CHA": "16 (+3)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -7337,29 +6265,12 @@ dnd_monsters = {
             "Soul-filled Crystal",
             "Mysterious Skull",
             "Glow-in-the-Dark Bones"
-        ],
-        "Race": "Undead",
-        "Class": "Monster",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Donor",
-            "Kharn",
-            "Banshee",
-            "Kaal",
-            "Tish"
-        ],
-        "5 Common Last Names": [
-            "Coldkin",
-            "Omhroth",
-            "Silenius",
-            "Polymath",
-            "Drudgeon"
         ]
     },
-    "Brass_Dragon_Wyrmling": {
+    "Brass-Dragon-Wyrmling": {
         "Name": "Brass Dragon Wyrmling",
         "Type": "Medium dragon (Metallic)",
-        "Alignment": "chaotic good",
+        "alignment": "chaotic good",
         "Armor Class": "16 (natural armor)",
         "Hit Points": "16 (3d8 + 3)",
         "Speed": "30 ft., burrow 15 ft., fly 60 ft.",
@@ -7375,7 +6286,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "11 (+0)",
         "CHA": "13 (+1)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +4 to hit, reach 5 ft., one target.Hit: 7 (1d10 + 2) piercing damage.",
             "Breath Weapons (Recharge 5-6). The dragon uses one of the following breath weapons.",
@@ -7442,29 +6353,12 @@ dnd_monsters = {
             "Gems",
             "Jewelry",
             "Artifacts"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Azaza",
-            "Daladith",
-            "Heskel",
-            "Kalek",
-            "Vinuth"
-        ],
-        "5 Common Last Names": [
-            "Goldsun",
-            "Mountainpeak",
-            "Silverscales",
-            "Skyroar",
-            "Starbreak"
         ]
     },
-    "Bronze_Dragon_Wyrmling": {
+    "Bronze-Dragon-Wyrmling": {
         "Name": "Bronze Dragon Wyrmling",
         "Type": "Medium dragon (Metallic)",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "32 (5d8 + 10)",
         "Speed": "30 ft., fly 60 ft., swim 30 ft.",
@@ -7480,7 +6374,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "11 (+0)",
         "CHA": "15 (+2)",
-        "Features": [
+        "features": [
             "Amphibious. The dragon can breathe air and water."
         ],
         "Actions": [
@@ -7559,29 +6453,12 @@ dnd_monsters = {
             "Magic Weapons",
             "Magical Artifacts",
             "Legendary Relics"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Bahet",
-            "Cazul",
-            "Fantor",
-            "Oria",
-            "Sandar"
-        ],
-        "5 Common Last Names": [
-            "Azzir",
-            "Gor",
-            "Mordam",
-            "Shizar",
-            "Tolmor"
         ]
     },
-    "Brown_Bear": {
+    "Brown-Bear": {
         "Name": "Brown Bear",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11 (natural armor)",
         "Hit Points": "34 (4d10 + 12)",
         "Speed": "40 ft., climb 30 ft.",
@@ -7595,7 +6472,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "13 (+1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Keen Smell. The bear has advantage on Wisdom (Perception) checks that rely on smell."
         ],
         "Actions": [
@@ -7666,29 +6543,12 @@ dnd_monsters = {
             "Small teeth",
             "Berries",
             "Fish remains"
-        ],
-        "Race": "Beast",
-        "Class": "Mammal",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Berry",
-            "Judy",
-            "Flynn",
-            "Chester",
-            "\u200dUrsa"
-        ],
-        "5 Common Last Names": [
-            "Grizzly",
-            "Shaggy",
-            "Honey",
-            "Coastal",
-            "Mountain"
         ]
     },
     "Bugbear": {
         "Name": "Bugbear",
         "Type": "Medium humanoid (Goblinoid)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "16 (hide armor, shield)",
         "Hit Points": "27 (5d8 + 5)",
         "Speed": "30 ft.",
@@ -7702,7 +6562,7 @@ dnd_monsters = {
         "INT": "8 (-1)",
         "WIS": "11 (+0)",
         "CHA": "9 (-1)",
-        "Features": [
+        "features": [
             "Brute. A melee weapon deals one extra die of its damage when the bugbear hits with it (included in the attack).",
             "Surprise Attack. If the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack."
         ],
@@ -7778,29 +6638,12 @@ dnd_monsters = {
             "Tarnished armor",
             "Curious trinkets",
             "Magical artifacts"
-        ],
-        "Race": "Humanoid",
-        "Class": "Warrior",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Grug",
-            "Graul",
-            "Otgrug",
-            "Sog",
-            "Urdruk"
-        ],
-        "5 Common Last Names": [
-            "Thistlehorn",
-            "Frothinater",
-            "Blackspine",
-            "Rumblepit",
-            "Foulswill"
         ]
     },
-    "Bugbear_Chief": {
+    "Bugbear-Chief": {
         "Name": "Bugbear Chief",
         "Type": "Medium humanoid (Goblinoid)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "17 (chain shirt, shield)",
         "Hit Points": "65 (10d8 + 20)",
         "Speed": "30 ft.",
@@ -7814,7 +6657,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "12 (+1)",
         "CHA": "11 (+0)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -7888,29 +6731,12 @@ dnd_monsters = {
             "Magical Items",
             "Potions",
             "Scrolls"
-        ],
-        "Race": "Bugbear",
-        "Class": "Leader",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Grak",
-            "Hragk",
-            "Krak",
-            "Vragk",
-            "Yragk"
-        ],
-        "5 Common Last Names": [
-            "Barkelbow",
-            "Brokenbrow",
-            "Mournshield",
-            "Sparkhollow",
-            "Wildhelm"
         ]
     },
     "Bulette": {
         "Name": "Bulette",
         "Type": "Large monstrosity",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "94 (9d10 + 45)",
         "Speed": "40 ft., burrow 40 ft.",
@@ -7924,7 +6750,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "10 (+0)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Standing Leap. The bulette's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start."
         ],
         "Actions": [
@@ -7994,29 +6820,12 @@ dnd_monsters = {
             "Gems",
             "Coins",
             "Magical Items"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Truckle",
-            "Mordecai",
-            "Percival",
-            "Zaphod",
-            "Beleth"
-        ],
-        "5 Common Last Names": [
-            "Clawgut",
-            "Thresher",
-            "Terrordoom",
-            "VMcCreep",
-            "Terrafang"
         ]
     },
     "Bullywug": {
         "Name": "Bullywug",
         "Type": "Medium humanoid (Bullywug)",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "15 (hide armor, shield)",
         "Hit Points": "11 (2d8 + 2)",
         "Speed": "20 ft., swim 40 ft.",
@@ -8030,7 +6839,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "10 (+0)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Amphibious. The bullywug can breathe air and water.",
             "Speak with Frogs and Toads. The bullywug can communicate simple concepts to frogs and toads when it speaks in Bullywug.",
             "Swamp Camouflage. The bullywug has advantage on Dexterity (Stealth) checks made to hide in swampy terrain.",
@@ -8111,29 +6920,12 @@ dnd_monsters = {
             "Salvaged weapons and armor",
             "Food and supplies",
             "Mystical Ingredients"
-        ],
-        "Race": "Reptilian",
-        "Class": "Humanoid",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Dringlo",
-            "Gimbu",
-            "Hanlo",
-            "Tillic",
-            "Vulmug"
-        ],
-        "5 Common Last Names": [
-            "Umpaindle",
-            "Uloragath",
-            "Grintok",
-            "Pashana",
-            "Lurpraunt"
         ]
     },
     "Cambion": {
         "Name": "Cambion",
         "Type": "Medium fiend",
-        "Alignment": "any evil alignment",
+        "alignment": "any evil alignment",
         "Armor Class": "19 (scale mail)",
         "Hit Points": "82 (11d8 + 33)",
         "Speed": "30 ft., fly 60 ft.",
@@ -8149,7 +6941,7 @@ dnd_monsters = {
         "INT": "14 (+2)",
         "WIS": "12 (+1)",
         "CHA": "16 (+3)",
-        "Features": [
+        "features": [
             "Fiendish Blessing. The AC of the cambion includes its Charisma bonus.",
             "Innate Spellcasting. The cambion's spellcasting ability is Charisma (spell save DC 14). The cambion can innately cast the following spells, requiring no material components:"
         ],
@@ -8232,29 +7024,12 @@ dnd_monsters = {
             "Amulets or Charms (providing protection or enhancing abilities)",
             "Treasure Hoard (coins, gems, valuable trinkets)",
             "Infernal Knowledge (tomes, scrolls with infernal rituals and secrets)"
-        ],
-        "Race": "Fiend",
-        "Class": "Humanoid",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Azazel",
-            "Baalphegor",
-            "Belial",
-            "Belphegor",
-            "Beelzebub"
-        ],
-        "5 Common Last Names": [
-            "D'Vorvan",
-            "Despana",
-            "Galdrum",
-            "Voligstod",
-            "Zsampley"
         ]
     },
     "Camel": {
         "Name": "Camel",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "9",
         "Hit Points": "15 (2d10 + 4)",
         "Speed": "50 ft.",
@@ -8267,7 +7042,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "8 (-1)",
         "CHA": "5 (-3)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +5 to hit, reach 5 ft., one target.Hit: 2 (1d4) bludgeoning damage."
         ],
@@ -8337,29 +7112,12 @@ dnd_monsters = {
             "Animal Bones",
             "Animal Teeth",
             "Animal Fur"
-        ],
-        "Race": "Animal",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Al",
-            "Curt",
-            "Willa",
-            "Rick",
-            "Rico"
-        ],
-        "5 Common Last Names": [
-            "Watts",
-            "Hoover",
-            "Gentry",
-            "Tucker",
-            "Hudson"
         ]
     },
-    "Carrion_Crawler": {
+    "Carrion-Crawler": {
         "Name": "Carrion Crawler",
         "Type": "Large monstrosity",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "51 (6d10 + 18)",
         "Speed": "30 ft., climb 30 ft.",
@@ -8373,7 +7131,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "12 (+1)",
         "CHA": "5 (-3)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -8439,29 +7197,12 @@ dnd_monsters = {
             "Silver Coin",
             "Gemstone",
             "Scroll of Protection"
-        ],
-        "Race": "Aberration",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Hessk'K",
-            "Pussk'd",
-            "Kesssk'd",
-            "Tassk'd",
-            "Dussk'd"
-        ],
-        "5 Common Last Names": [
-            "Kesss",
-            "Tisss",
-            "Lasss",
-            "Kasss",
-            "Gusss"
         ]
     },
     "Cat": {
         "Name": "Cat",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "2 (1d4)",
         "Speed": "40 ft., climb 30 ft.",
@@ -8475,7 +7216,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "12 (+1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Keen Smell. The cat has advantage on Wisdom (Perception) checks that rely on smell."
         ],
         "Actions": [
@@ -8544,29 +7285,12 @@ dnd_monsters = {
             "Small mammal skulls",
             "Pieces of wool",
             "Catnip"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Charles",
-            "Mittens",
-            "Felix",
-            "Garfield",
-            "Morris"
-        ],
-        "5 Common Last Names": [
-            "Paws",
-            "Meow",
-            "Whiskers",
-            "Furr",
-            "Purr"
         ]
     },
     "Centaur": {
         "Name": "Centaur",
         "Type": "Large monstrosity",
-        "Alignment": "neutral good",
+        "alignment": "neutral good",
         "Armor Class": "12",
         "Hit Points": "45 (6d10 + 12)",
         "Speed": "50 ft.",
@@ -8580,7 +7304,7 @@ dnd_monsters = {
         "INT": "9 (-1)",
         "WIS": "13 (+1)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "Charge. If the centaur moves at least 30 feet straight toward a target and then hits it with a pike attack on the same turn, the target takes an extra 10 (3d6) piercing damage."
         ],
         "Actions": [
@@ -8661,29 +7385,12 @@ dnd_monsters = {
             "Hide boots",
             "Scale armor pieces",
             "Tribal items"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Galloping Combatant",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Apelios",
-            "Videnos",
-            "Heraeles",
-            "Logous",
-            "Aristaios"
-        ],
-        "5 Common Last Names": [
-            "Axilonus",
-            "Oronthas",
-            "Thothesos",
-            "Elaros",
-            "Hippomanes"
         ]
     },
-    "Chain_Devil": {
+    "Chain-Devil": {
         "Name": "Chain Devil",
         "Type": "Medium fiend (Devil)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "16 (natural armor)",
         "Hit Points": "85 (10d8 + 40)",
         "Speed": "30 ft.",
@@ -8703,7 +7410,7 @@ dnd_monsters = {
         "Reactions": [
             "Unnerving Mask. When a creature the devil can see starts its turn within 30 feet of the devil, the devil can create the illusion that it looks like one of the creature's departed loved ones or bitter enemies. If the creature can see the devil, it must succeed on a DC 14 Wisdom saving throw or be frightened until the end of its turn."
         ],
-        "Features": [
+        "features": [
             "Devil's Sight. Magical darkness doesn't impede the devil's darkvision.",
             "Magic Resistance. The devil has advantage on saving throws against spells and other magical effects."
         ],
@@ -8780,29 +7487,12 @@ dnd_monsters = {
             "Scrolls",
             "Wands",
             "Magical Artifacts"
-        ],
-        "Race": "Devil",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Pyro",
-            "Klinker",
-            "Edzel",
-            "Ymenek",
-            "Drozd"
-        ],
-        "5 Common Last Names": [
-            "Khemme",
-            "Crackbinder",
-            "Spearman",
-            "Fetterwright",
-            "Fetter-Smith/Fetter-Smyth"
         ]
     },
     "Chasme": {
         "Name": "Chasme",
         "Type": "Large fiend (Demon)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "84 (13d10 + 13)",
         "Speed": "20 ft., fly 60 ft.",
@@ -8820,7 +7510,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "14 (+2)",
         "CHA": "10 (+0)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -8890,29 +7580,12 @@ dnd_monsters = {
             "Magical Artifacts",
             "Weapons and Armor",
             "Potions and Scrolls"
-        ],
-        "Race": "Demon",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Mephistopheles",
-            "Barbas",
-            "Leraje",
-            "Vapula",
-            "Decarabia"
-        ],
-        "5 Common Last Names": [
-            "Gargouille",
-            "Beelzebub",
-            "Smoothtalker",
-            "Thornback",
-            "Nightcaller"
         ]
     },
     "Chimera": {
         "Name": "Chimera",
         "Type": "Large monstrosity",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "114 (12d10 + 48)",
         "Speed": "30 ft., fly 60 ft.",
@@ -8926,7 +7599,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "14 (+2)",
         "CHA": "10 (+0)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Multiattack. The chimera makes three attacks: one with its bite, one with its horns, and one with its claws. When its fire breath is available, it can use the breath in place of its bite or horns.",
             "Bite.Melee Weapon Attack: +7 to hit, reach 5 ft., one target.Hit: 11 (2d6 + 4) piercing damage.",
@@ -8998,29 +7671,12 @@ dnd_monsters = {
             "Dragon Fang Necklace",
             "Gilded Lion Boot",
             "Cheetah Skin Belt"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Uemar",
-            "Okaar",
-            "Maram",
-            "Maelar",
-            "Roele"
-        ],
-        "5 Common Last Names": [
-            "Alkyon",
-            "Oinaea",
-            "Sido",
-            "Tigris",
-            "Lynges"
         ]
     },
     "Chuul": {
         "Name": "Chuul",
         "Type": "Large aberration",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "16 (natural armor)",
         "Hit Points": "93 (11d10 + 33)",
         "Speed": "30 ft., swim 30 ft.",
@@ -9036,7 +7692,7 @@ dnd_monsters = {
         "INT": "5 (-3)",
         "WIS": "11 (+0)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Amphibious. The chuul can breathe air and water.",
             "Sense Magic. The chuul senses magic within 120 feet of it at will. This trait otherwise works like thedetect magicspell but isn't itself magical."
         ],
@@ -9108,29 +7764,12 @@ dnd_monsters = {
             "Gold coins",
             "Silver coins",
             "Aquatic trinkets"
-        ],
-        "Race": "Aberration",
-        "Class": "Large Aberration",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Rhump",
-            "Khamar",
-            "Yangal",
-            "Khass",
-            "Izza"
-        ],
-        "5 Common Last Names": [
-            "Sozzenar",
-            "Hoodshrike",
-            "Clomring",
-            "Jaaruskor",
-            "Krusshrak"
         ]
     },
-    "Clay_Golem": {
+    "Clay-Golem": {
         "Name": "Clay Golem",
         "Type": "Large construct",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "133 (14d10 + 56)",
         "Speed": "20 ft.",
@@ -9145,7 +7784,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "8 (-1)",
         "CHA": "1 (-5)",
-        "Features": [
+        "features": [
             "Acid Absorption. Whenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt.",
             "Berserk. Whenever the golem starts its turn with 60 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points.",
             "Immutable Form. The golem is immune to any spell or effect that would alter its form.",
@@ -9222,29 +7861,12 @@ dnd_monsters = {
             "Crudely Made Clay Armor",
             "Magical Weapons",
             "Magical Scrolls"
-        ],
-        "Race": "Construct",
-        "Class": "Golem",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Rock",
-            "Mud",
-            "Stone",
-            "Sand",
-            "Ceramic"
-        ],
-        "5 Common Last Names": [
-            "Sculpture",
-            "Totem",
-            "Clay",
-            "Statue",
-            "Artifice"
         ]
     },
     "Cloaker": {
         "Name": "Cloaker",
         "Type": "Large aberration",
-        "Alignment": "chaotic neutral",
+        "alignment": "chaotic neutral",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "78 (12d10 + 12)",
         "Speed": "10 ft., fly 40 ft.",
@@ -9258,7 +7880,7 @@ dnd_monsters = {
         "INT": "13 (+1)",
         "WIS": "12 (+1)",
         "CHA": "14 (+2)",
-        "Features": [
+        "features": [
             "Damage Transfer. While attached to a creature, the cloaker takes only half the damage dealt to it (rounded down), and that creature takes the other half.",
             "False Appearance. While the cloaker remains motionless without its underside exposed, it is indistinguishable from a dark leather cloak.",
             "Light Sensitivity. While in bright light, the cloaker has disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight."
@@ -9337,29 +7959,12 @@ dnd_monsters = {
             "Magic items",
             "Scrolls",
             "Potions"
-        ],
-        "Race": "Aberration",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Kraa",
-            "Dusk",
-            "Moath",
-            "Vhalt",
-            "Ghail"
-        ],
-        "5 Common Last Names": [
-            "Salvare",
-            "Unhallo",
-            "Tselest",
-            "Forskor",
-            "Anask"
         ]
     },
-    "Cloud_Giant": {
+    "Cloud-Giant": {
         "Name": "Cloud Giant",
         "Type": "Huge giant",
-        "Alignment": "neutral good (50 %) or neutral evil (50 %)",
+        "alignment": "neutral good (50 %) or neutral evil (50 %)",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "200 (16d12 + 96)",
         "Speed": "40 ft.",
@@ -9374,7 +7979,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "16 (+3)",
         "CHA": "16 (+3)",
-        "Features": [
+        "features": [
             "Keen Smell. The giant has advantage on Wisdom (Perception) checks that rely on smell.",
             "InnateSpellcasting. The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:"
         ],
@@ -9452,29 +8057,12 @@ dnd_monsters = {
             "Potions of healing",
             "Scrolls of summoning",
             "Runes of power"
-        ],
-        "Race": "giant",
-        "Class": "none",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Tosty",
-            "Heward",
-            "Kelby",
-            "Dillon",
-            "Illa"
-        ],
-        "5 Common Last Names": [
-            "Stormhaps",
-            "Mudonshield",
-            "Skyrist",
-            "Thundersplitter",
-            "Windrider"
         ]
     },
     "Cockatrice": {
         "Name": "Cockatrice",
         "Type": "Small monstrosity",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11",
         "Hit Points": "27 (6d6 + 6)",
         "Speed": "20 ft., fly 40 ft.",
@@ -9487,7 +8075,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "13 (+1)",
         "CHA": "5 (-3)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +3 to hit, reach 5 ft., one creature.Hit: 3 (1d4 + 1) piercing damage, and the target must succeed on a DC 11 Constitution saving throw against being magically petrified. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified for 24 hours."
         ],
@@ -9553,29 +8141,12 @@ dnd_monsters = {
             "Potions of Invulnerability",
             "Magical Weapons",
             "Rare Gems"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Kert",
-            "Bobb",
-            "Gob",
-            "Fenvil",
-            "Jal"
-        ],
-        "5 Common Last Names": [
-            "Grackle",
-            "Tailor",
-            "Cockrell",
-            "Featherstrut",
-            "RootWalker"
         ]
     },
     "Commoner": {
         "Name": "Commoner",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any alignment",
+        "alignment": "any alignment",
         "Armor Class": "10",
         "Hit Points": "4 (1d8)",
         "Speed": "30 ft.",
@@ -9588,7 +8159,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "10 (+0)",
         "CHA": "10 (+0)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Club.Melee Weapon Attack: +2 to hit, reach 5 ft., one target.Hit: 2 (1d4) bludgeoning damage."
         ],
@@ -9652,29 +8223,12 @@ dnd_monsters = {
             "Simple Weapons and Tools",
             "Household Goods and Supplies",
             "Clothes and Linens"
-        ],
-        "Race": "Human",
-        "Class": "Villager",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "John",
-            "Jane",
-            "Jack",
-            "Mary",
-            "Fred"
-        ],
-        "5 Common Last Names": [
-            "Smith",
-            "Johnson",
-            "Williams",
-            "Brown",
-            "Jones"
         ]
     },
-    "Constrictor_Snake": {
+    "Constrictor-Snake": {
         "Name": "Constrictor Snake",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "13 (2d10 + 2)",
         "Speed": "30 ft., swim 30 ft.",
@@ -9687,7 +8241,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "10 (+0)",
         "CHA": "3 (-4)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +4 to hit, reach 5 ft., one creature.Hit: 5 (1d6 + 2) piercing damage.",
             "Constrict.Melee Weapon Attack: +4 to hit, reach 5 ft., one creature.Hit: 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target."
@@ -9744,29 +8298,12 @@ dnd_monsters = {
             "Jewelry",
             "Magic potions",
             "Amulets"
-        ],
-        "Race": "Reptile",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Hoel",
-            "Uduv",
-            "Sirac",
-            "Mirim",
-            "Bialon"
-        ],
-        "5 Common Last Names": [
-            "Shed-Skin",
-            "Constant-Coil",
-            "Smooth-Scale",
-            "Heavy-Belly",
-            "Sand-Biter"
         ]
     },
-    "Copper_Dragon_Wyrmling": {
+    "Copper-Dragon-Wyrmling": {
         "Name": "Copper Dragon Wyrmling",
         "Type": "Medium dragon (Metallic)",
-        "Alignment": "chaotic good",
+        "alignment": "chaotic good",
         "Armor Class": "16 (natural armor)",
         "Hit Points": "22 (4d8 + 4)",
         "Speed": "30 ft., climb 30 ft., fly 60 ft.",
@@ -9782,7 +8319,7 @@ dnd_monsters = {
         "INT": "14 (+2)",
         "WIS": "11 (+0)",
         "CHA": "13 (+1)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +4 to hit, reach 5 ft., one target.Hit: 7 (1d10 + 2) piercing damage.",
             "Breath Weapons (Recharge 5-6). The dragon uses one of the following breath weapons.",
@@ -9861,29 +8398,12 @@ dnd_monsters = {
             "Magical items such as wands, magic armor, and spells",
             "Wyvern-shaped figurines made of copper plated gold",
             "Large copper barrels"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Aloest",
-            "Fort",
-            "Kuren",
-            "Orri",
-            "Sihr"
-        ],
-        "5 Common Last Names": [
-            "Astraacher",
-            "Poxfinder",
-            "Resourcemonger",
-            "Scopp",
-            "Troubleshaper"
         ]
     },
     "Couatl": {
         "Name": "Couatl",
         "Type": "Medium celestial",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "97 (13d8 + 39)",
         "Speed": "30 ft., fly 90 ft.",
@@ -9899,7 +8419,7 @@ dnd_monsters = {
         "INT": "18 (+4)",
         "WIS": "20 (+5)",
         "CHA": "18 (+4)",
-        "Features": [
+        "features": [
             "Innate Spellcasting. The couatl's spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:",
             "Magic Weapons. The couatl's weapon attacks are magical.",
             "Shielded Mind. The couatl is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location."
@@ -9978,29 +8498,12 @@ dnd_monsters = {
             "Runes",
             "Gold",
             "Rare Herbs"
-        ],
-        "Race": "Celestial",
-        "Class": "Celestial",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Iuhax",
-            "Uyanh",
-            "Yaxil",
-            "Ouxul",
-            "Pephl"
-        ],
-        "5 Common Last Names": [
-            "Xuyca",
-            "Rancun",
-            "Tuzah",
-            "Oxtal",
-            "Pechen"
         ]
     },
     "Crab": {
         "Name": "Crab",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11 (natural armor)",
         "Hit Points": "2 (1d4)",
         "Speed": "20 ft., swim 20 ft.",
@@ -10014,7 +8517,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "8 (-1)",
         "CHA": "2 (-4)",
-        "Features": [
+        "features": [
             "Amphibious. The crab can breathe air and water."
         ],
         "Actions": [
@@ -10084,29 +8587,12 @@ dnd_monsters = {
             "Coral chunks",
             "Limpets",
             "Bezoar stones"
-        ],
-        "Race": "Beast",
-        "Class": "Aquatic Creature",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Snap",
-            "Claw",
-            "Shell",
-            "Chatter",
-            "Scuttle"
-        ],
-        "5 Common Last Names": [
-            "Pincer",
-            "Crusher",
-            "Dragger",
-            "Grasper",
-            "Clawer"
         ]
     },
-    "Crawling_Claw": {
+    "Crawling-Claw": {
         "Name": "Crawling Claw",
         "Type": "Tiny undead",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "12",
         "Hit Points": "2 (1d4)",
         "Speed": "20 ft., climb 20 ft.",
@@ -10121,7 +8607,7 @@ dnd_monsters = {
         "INT": "5 (-3)",
         "WIS": "10 (+0)",
         "CHA": "4 (-3)",
-        "Features": [
+        "features": [
             "Turn Immunity. The claw is immune to effects that turn undead."
         ],
         "Actions": [
@@ -10193,29 +8679,12 @@ dnd_monsters = {
             "Gems",
             "Magical Items",
             "Artifacts"
-        ],
-        "Race": " Construct",
-        "Class": "Undead",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Clawly",
-            "Scrappy",
-            "Ratty",
-            "Grabby",
-            "Sticky"
-        ],
-        "5 Common Last Names": [
-            "Crawler",
-            "Scrapper",
-            "Rattler",
-            "Grabbers",
-            "Stickler"
         ]
     },
     "Crocodile": {
         "Name": "Crocodile",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12 (natural armor)",
         "Hit Points": "19 (3d10 + 3)",
         "Speed": "20 ft., swim 30 ft.",
@@ -10229,7 +8698,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "10 (+0)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Hold Breath. The crocodile can hold its breath for 15 minutes."
         ],
         "Actions": [
@@ -10306,29 +8775,12 @@ dnd_monsters = {
             "Gems",
             "Armor",
             "Weapons"
-        ],
-        "Race": "Beast",
-        "Class": "N/A",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Gator",
-            "Sly",
-            "Basil",
-            "Croak",
-            "Mud"
-        ],
-        "5 Common Last Names": [
-            "Hunter",
-            "Croc",
-            "Jaws",
-            "Tooth",
-            "Reef"
         ]
     },
-    "Cult_Fanatic": {
+    "Cult-Fanatic": {
         "Name": "Cult Fanatic",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any non-good alignment",
+        "alignment": "any non-good alignment",
         "Armor Class": "13 (leather armor)",
         "Hit Points": "33 (6d8 + 6)",
         "Speed": "30 ft.",
@@ -10342,7 +8794,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "13 (+1)",
         "CHA": "14 (+2)",
-        "Features": [
+        "features": [
             "Dark Devotion. The fanatic has advantage on saving throws against being charmed or frightened.",
             "Spellcasting. The fanatic is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The fanatic has the following cleric spells prepared:"
         ],
@@ -10424,29 +8876,12 @@ dnd_monsters = {
             "Precious gems",
             "Rare books",
             "Magical artifacts"
-        ],
-        "Race": "Humanoid",
-        "Class": "Cleric",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Rikon",
-            "Yamah",
-            "Iorwa",
-            "Adster",
-            "Farnio"
-        ],
-        "5 Common Last Names": [
-            "Ravenblood",
-            "Sunbright",
-            "Lantern",
-            "Skycaller",
-            "Shadowweaver"
         ]
     },
     "Cultist": {
         "Name": "Cultist",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any non-good alignment",
+        "alignment": "any non-good alignment",
         "Armor Class": "12 (leather armor)",
         "Hit Points": "9 (2d8)",
         "Speed": "30 ft.",
@@ -10460,7 +8895,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "11 (+0)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Dark Devotion. The cultist has advantage on saving throws against being charmed or frightened."
         ],
         "Actions": [
@@ -10540,29 +8975,12 @@ dnd_monsters = {
             "Enchanted weapons and armor",
             "Precious gems and stones",
             "Magical artifacts and potions"
-        ],
-        "Race": "Humanoid",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Furmorg",
-            "Morbel",
-            "Gorbet",
-            "Urgorn",
-            "Lorgen"
-        ],
-        "5 Common Last Names": [
-            "Yishgar",
-            "Novgor",
-            "Schwamme",
-            "Semmow",
-            "Grevleck"
         ]
     },
     "Cyclops": {
         "Name": "Cyclops",
         "Type": "Huge giant",
-        "Alignment": "chaotic neutral",
+        "alignment": "chaotic neutral",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "138 (12d12 + 60)",
         "Speed": "30 ft.",
@@ -10575,7 +8993,7 @@ dnd_monsters = {
         "INT": "8 (-1)",
         "WIS": "6 (-2)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Poor Depth Perception. The cyclops has disadvantage on any attack roll against a target more than 30 feet away."
         ],
         "Actions": [
@@ -10651,29 +9069,12 @@ dnd_monsters = {
             "Gem",
             "Amulet",
             "Potion of Strength"
-        ],
-        "Race": "Giant",
-        "Class": "Barbarian",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Bruuk",
-            "Cragnor",
-            "Kran",
-            "Thokk",
-            "Varr"
-        ],
-        "5 Common Last Names": [
-            "Cloudsplitter",
-            "Earthshaker",
-            "Stormbreaker",
-            "Thunderborn",
-            "Windcaller"
         ]
     },
     "Dao": {
         "Name": "Dao",
         "Type": "Large elemental",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "18 (natural armor)",
         "Hit Points": "187 (15d10 + 105)",
         "Speed": "30 ft., burrow 30 ft., fly 30 ft.",
@@ -10688,7 +9089,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "13 (+1)",
         "CHA": "14 (+2)",
-        "Features": [
+        "features": [
             "Earth Glide. The dao can burrow through nonmagical, unworked earth and stone. While doing so, the dao doesn't disturb the material it moves through.",
             "Elemental Demise. If the dao dies, its body disintegrates into crystalline powder, leaving behind only equipment the dao was wearing or carrying.",
             "Innate Spellcasting. The dao's innate spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It can innately cast the following spells, requiring no material components:",
@@ -10763,29 +9164,12 @@ dnd_monsters = {
             "Arcane foci",
             "Gold coins",
             "Earth or stone statues"
-        ],
-        "Race": "Elemental",
-        "Class": "Greater Elemental",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Hang",
-            "Ze",
-            "Kang",
-            "Shan",
-            "Lan"
-        ],
-        "5 Common Last Names": [
-            "Bahamir",
-            "Dreus",
-            "Geshai",
-            "Janaz",
-            "Ursen"
         ]
     },
     "Darkmantle": {
         "Name": "Darkmantle",
         "Type": "Small monstrosity",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11",
         "Hit Points": "22 (5d6 + 5)",
         "Speed": "10 ft., fly 30 ft.",
@@ -10799,7 +9183,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "10 (+0)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Echolocation. The darkmantle can't use its blindsight while deafened.",
             "False Appearance. While the darkmantle remains motionless, it is indistinguishable from a cave formation such as a stalactite or stalagmite."
         ],
@@ -10872,29 +9256,12 @@ dnd_monsters = {
             "Magical Artifacts",
             "Rare Herbs",
             "Potions of Healing"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Aberration",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Shrike",
-            "Krohan",
-            "Fallo",
-            "Italor",
-            "Arohk"
-        ],
-        "5 Common Last Names": [
-            "Stoneshadow",
-            "Darkfall",
-            "Tunnelshriek",
-            "Underdeep",
-            "Cuttungeons"
         ]
     },
-    "Death_Dog": {
+    "Death-Dog": {
         "Name": "Death Dog",
         "Type": "Medium monstrosity",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "12",
         "Hit Points": "39 (6d8 + 12)",
         "Speed": "40 ft.",
@@ -10908,7 +9275,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "13 (+1)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Two-Headed. The dog has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious."
         ],
         "Actions": [
@@ -10983,29 +9350,12 @@ dnd_monsters = {
             "Spears",
             "Potions",
             "Wands"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Akezar",
-            "Eagran",
-            "Hacome",
-            "Kroma",
-            "Murjak"
-        ],
-        "5 Common Last Names": [
-            "Nispar",
-            "Ahatmah",
-            "Fhurdyk",
-            "Eep lag",
-            "Yithoo"
         ]
     },
-    "Death_Knight": {
+    "Death-Knight": {
         "Name": "Death Knight",
         "Type": "Medium undead",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "20 (plate, shield)",
         "Hit Points": "180 (19d8 + 95)",
         "Speed": "30 ft.",
@@ -11024,7 +9374,7 @@ dnd_monsters = {
         "Reactions": [
             "Parry. The death knight adds 6 to its AC against one melee attack that would hit it. To do so, the death knight must see the attacker and be wielding a melee weapon."
         ],
-        "Features": [
+        "features": [
             "Magic Resistance. The death knight has advantage on saving throws against spells and other magical effects.",
             "Marshal Undead. Unless the death knight is incapacitated, it and undead creatures of its choice within 60 feet of it have advantage on saving throws against features that turn undead.",
             "Spellcasting. The death knight is a 19th-level spell caster. Its spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). It has the following paladin spells prepared:"
@@ -11102,29 +9452,12 @@ dnd_monsters = {
             "Scrolls of Protection",
             "Tome of Necromancy",
             "Rune-inscribed Armor"
-        ],
-        "Race": "Undead",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Eugord",
-            "Feramus",
-            "Iathrax",
-            "Khaloros",
-            "Ravon"
-        ],
-        "5 Common Last Names": [
-            "Argentblade",
-            "Deathbringer",
-            "Darkfury",
-            "Fellrider",
-            "Winchester"
         ]
     },
-    "Death_Slaad": {
+    "Death-Slaad": {
         "Name": "Death Slaad",
         "Type": "Medium aberration (Shapechanger)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "18 (natural armor)",
         "Hit Points": "170 (20d8 + 80)",
         "Speed": "30 ft.",
@@ -11139,7 +9472,7 @@ dnd_monsters = {
         "INT": "15 (+2)",
         "WIS": "10 (+0)",
         "CHA": "16 (+3)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -11212,29 +9545,12 @@ dnd_monsters = {
             "Gems and jewelry",
             "Loot collected from fallen enemies",
             "Immortalized remains of fiends or creatures they've slain"
-        ],
-        "Race": "aberration",
-        "Class": "none",
-        "Size": "large",
-        "5 Common First Names": [
-            "Ggorothh",
-            "Chaax",
-            "Syyke",
-            "Throgx",
-            "Munnega"
-        ],
-        "5 Common Last Names": [
-            "Kizgraak",
-            "Fhrintun",
-            "Throcktt",
-            "Larkiron",
-            "Temkaarg"
         ]
     },
-    "Death_Tyrant": {
+    "Death-Tyrant": {
         "Name": "Death Tyrant",
         "Type": "Large undead",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "187 (25d10 + 50)",
         "Speed": "0 ft., fly 20 ft. (hover)",
@@ -11254,7 +9570,7 @@ dnd_monsters = {
         "Legendary actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
-        "Features": [],
+        "features": [],
         "Actions": [],
         "Description": "Death tyrants are large suspended creatures that can range in color from black to bright yellow. They have two compound eyes and a spiky carapace that resembles a coffin. Its legs are covered with hard ridges, and its four arms end in powerful claws. Its mouth is filled with razor-sharp teeth.",
         "Narrative": "Death tyrants are little known to most adventurers, as they are usually found in remote regions inhabiting sunken ruins or long forgotten underground fortresses. They are fiercely territorial, and will attack any intruder on sight. Death tyrants have an insatiable appetite and will consume nearly anything that moves, although they do show a certain preference for humanoid flesh and blood. Likewise, death tyrants reproduce quickly and will rarely leave survivors from attacks.",
@@ -11326,7 +9642,7 @@ dnd_monsters = {
     "Deer": {
         "Name": "Deer",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13",
         "Hit Points": "4 (1d8)",
         "Speed": "50 ft.",
@@ -11339,7 +9655,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "14 (+2)",
         "CHA": "5 (-3)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +2 to hit, reach 5 ft., one target.Hit: 2 (1d4) piercing damage."
         ],
@@ -11406,29 +9722,12 @@ dnd_monsters = {
             "Smoked venison jerky",
             "Deer bone tools",
             "Rare antlers"
-        ],
-        "Race": "Beast",
-        "Class": "Acephalous",
-        "Size": "Small/Medium",
-        "5 Common First Names": [
-            "Frieda",
-            "Mae",
-            "Dewy",
-            "Leafy",
-            "andria"
-        ],
-        "5 Common Last Names": [
-            "Spottedtail",
-            "Boundinglegs",
-            "Prancinghooves",
-            "Silvertine",
-            "Whiteheart"
         ]
     },
     "Demilich": {
         "Name": "Demilich",
         "Type": "Tiny undead",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "20 (natural armor)",
         "Hit Points": "80 (32d4)",
         "Speed": "0 ft., fly 30 ft. (hover)",
@@ -11448,7 +9747,7 @@ dnd_monsters = {
         "Legendary actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
-        "Features": [],
+        "features": [],
         "Actions": [],
         "Description": "Demiliches are undead creatures that appear as a human skull imbued with immense magical power. They are often found within dungeons and other places of great magical importance.",
         "Narrative": "Many years ago, a powerful lich known as the Dread Lord descended upon the kingdom of Eona, casting terror and destruction on its people. In desperation, the kingdom's strongest and bravest warriors marched out to face the lich, only to be crushed under the weight of its magical power. In the end, the only thing the brave warriors managed to do was to banish the Dread Lord from Eona. Though gone, the Dread Lord had left in its wake something far more sinister: a cursed skull, known as the Demilich. As the legend goes, anyone who looks upon the Demilich and fails to resist its power will become cursed and turned into an undead servant. Those fortunate enough to resist the Demilich's power will find that great rewards await them in the form of powerful magical artifacts.",
@@ -11516,29 +9815,12 @@ dnd_monsters = {
             "Scrolls of Invulnerability",
             "Soul Stones",
             "Undead Curses"
-        ],
-        "Race": "Undead",
-        "Class": "Lich",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Akoron",
-            "Fyllijan",
-            "Jannalor",
-            "Mortrook",
-            "Vostelok"
-        ],
-        "5 Common Last Names": [
-            "Evershard",
-            "Hailwarp",
-            "Screamshield",
-            "Spinewail",
-            "Treader"
         ]
     },
     "Deva": {
         "Name": "Deva",
         "Type": "Medium celestial",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "136 (16d8 + 64)",
         "Speed": "30 ft., fly 90 ft.",
@@ -11555,7 +9837,7 @@ dnd_monsters = {
         "INT": "17 (+3)",
         "WIS": "20 (+5)",
         "CHA": "20 (+5)",
-        "Features": [
+        "features": [
             "Angelic Weapons. The deva's weapon attacks are magical. When the deva hits with any weapon, the weapon deals an extra 4d8 radiant damage (included in the attack).",
             "Innate Spellcasting. The deva's spellcasting ability is Charisma (spell save DC 17). The deva can innately cast the following spells, requiring only verbal components:",
             "Magic Resistance. The deva has advantage on saving throws against spells and other magical effects."
@@ -11634,29 +9916,12 @@ dnd_monsters = {
             "Vials of Holy water",
             "Diamond dust",
             "Holy symbols"
-        ],
-        "Race": "Celestial",
-        "Class": "Cleric",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ura",
-            "Amin",
-            "Meja",
-            "Nehebkau",
-            "Anhur"
-        ],
-        "5 Common Last Names": [
-            "Fandora",
-            "Chekecha",
-            "Sirantha",
-            "Umaethon",
-            "Xanothos"
         ]
     },
-    "Dire_Wolf": {
+    "Dire-Wolf": {
         "Name": "Dire Wolf",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "37 (5d10 + 10)",
         "Speed": "50 ft.",
@@ -11670,7 +9935,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "12 (+1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Keen Hearing and Smell. The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
             "Pack Tactics. The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated."
         ],
@@ -11739,29 +10004,12 @@ dnd_monsters = {
             "Pelt of the Dire Wolf",
             "Knowledge of the Hunting Pack",
             "Heart of the Wolf"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Fang",
-            "Howl",
-            "Grey",
-            "White",
-            "Shadow"
-        ],
-        "5 Common Last Names": [
-            "Hunter",
-            "Runner",
-            "Chaser",
-            "Killer",
-            "Rogue"
         ]
     },
-    "Displacer_Beast": {
+    "Displacer-Beast": {
         "Name": "Displacer Beast",
         "Type": "Large monstrosity",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "85 (10d10 + 30)",
         "Speed": "40 ft.",
@@ -11774,7 +10022,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "12 (+1)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Avoidance. If the displacer beast is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.",
             "Displacement. The displacer beast projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the displacer beast is incapacitated or has a speed of 0."
         ],
@@ -11845,29 +10093,12 @@ dnd_monsters = {
             "Rare Herbs",
             "Alchemical Ingredients",
             "Magical Furs"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Mysti",
-            "Warai",
-            "Kasso",
-            "Korgus",
-            "Kragus"
-        ],
-        "5 Common Last Names": [
-            "Starfang",
-            "Furryhide",
-            "Grassfur",
-            "Blossomhorn",
-            "Plainspaw"
         ]
     },
     "Djinni": {
         "Name": "Djinni",
         "Type": "Large elemental",
-        "Alignment": "chaotic good",
+        "alignment": "chaotic good",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "161 (14d10 + 84)",
         "Speed": "30 ft., fly 90 ft.",
@@ -11882,7 +10113,7 @@ dnd_monsters = {
         "INT": "15 (+2)",
         "WIS": "16 (+3)",
         "CHA": "20 (+5)",
-        "Features": [
+        "features": [
             "Elemental Demise. If the djinni dies, its body disintegrates into a warm breeze, leaving behind only equipment the djinni was wearing or carrying.",
             "Innate Spellcasting. The djinni's innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
         ],
@@ -11964,29 +10195,12 @@ dnd_monsters = {
             "Scrolls",
             "Runes",
             "Crystals"
-        ],
-        "Race": "Genie",
-        "Class": "Elemental",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Marid",
-            "Raqim",
-            "Efreet",
-            "Jann",
-            "Ghul"
-        ],
-        "5 Common Last Names": [
-            "Demaan",
-            "Aamir",
-            "Salaam",
-            "Rameed",
-            "Dahab"
         ]
     },
     "Doppelganger": {
         "Name": "Doppelganger",
         "Type": "Medium monstrosity (Shapechanger)",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "14",
         "Hit Points": "52 (8d8 + 16)",
         "Speed": "30 ft.",
@@ -12001,7 +10215,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "12 (+1)",
         "CHA": "14 (+2)",
-        "Features": [
+        "features": [
             "Shapechanger. The doppelganger can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
             "Ambusher. In the first round of a combat, the doppelganger has advantage on attack rolls against any creature it surprised.",
             "Surprise Attack. If the doppelganger surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 (3d6) damage from the attack."
@@ -12063,29 +10277,12 @@ dnd_monsters = {
             "Magical Weapons",
             "Magical Armor",
             "Rare Artifacts"
-        ],
-        "Race": "Shapechanger",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Bryn",
-            "Lora",
-            "Arno",
-            "Carold",
-            "Jovic"
-        ],
-        "5 Common Last Names": [
-            "Dramme",
-            "Kendings",
-            "Ganner",
-            "Stryzal",
-            "Veeck"
         ]
     },
-    "Draft_Horse": {
+    "Draft-Horse": {
         "Name": "Draft Horse",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "10",
         "Hit Points": "19 (3d10 + 3)",
         "Speed": "40 ft.",
@@ -12098,7 +10295,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "11 (+0)",
         "CHA": "7 (-2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Hooves.Melee Weapon Attack: +6 to hit, reach 5 ft., one target.Hit: 9 (2d4 + 4) bludgeoning damage."
         ],
@@ -12175,29 +10372,12 @@ dnd_monsters = {
             "Gold Coins",
             "Pearls",
             "Gems"
-        ],
-        "Race": "Equine",
-        "Class": "Animal",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Suzy",
-            "Alyonka",
-            "Duchess",
-            "Jasper",
-            "Orca"
-        ],
-        "5 Common Last Names": [
-            "Champion",
-            "MacArthur",
-            "Pippin",
-            "Speedster",
-            "Dasher"
         ]
     },
-    "Dragon_Turtle": {
+    "Dragon-Turtle": {
         "Name": "Dragon Turtle",
         "Type": "Gargantuan dragon",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "20 (natural armor)",
         "Hit Points": "341 (22d20 + 110)",
         "Speed": "20 ft., swim 40 ft.",
@@ -12212,7 +10392,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "12 (+1)",
         "CHA": "12 (+1)",
-        "Features": [
+        "features": [
             "Amphibious. The dragon turtle can breathe air and water."
         ],
         "Actions": [
@@ -12285,29 +10465,12 @@ dnd_monsters = {
             "Gold Coins",
             "Silver Coins",
             "Gemstones"
-        ],
-        "Race": "Dragon",
-        "Class": "Reptile",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Ebere",
-            "Neikko",
-            "Faruvi",
-            "Vaine",
-            "Turiu"
-        ],
-        "5 Common Last Names": [
-            "Dragtortle",
-            "Turttlesaur",
-            "Turtletank",
-            "Shellomp",
-            "Behemourse"
         ]
     },
     "Dretch": {
         "Name": "Dretch",
         "Type": "Small fiend (Demon)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "11 (natural armor)",
         "Hit Points": "18 (4d6 + 4)",
         "Speed": "20 ft.",
@@ -12323,7 +10486,7 @@ dnd_monsters = {
         "INT": "5 (-3)",
         "WIS": "8 (-1)",
         "CHA": "3 (-4)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Multiattack. The dretch makes two attacks: one with its bite and one with its claws.",
             "Bite.Melee Weapon Attack: +2 to hit, reach 5 ft., one target.Hit: 3 (1d6) piercing damage.",
@@ -12397,29 +10560,12 @@ dnd_monsters = {
             "Weapons",
             "Magical items",
             "Jewelry"
-        ],
-        "Race": "Fiend",
-        "Class": "Demon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Nurgal",
-            "Thasog",
-            "Maragtuta",
-            "Otgloig",
-            "Il-Shokasah"
-        ],
-        "5 Common Last Names": [
-            "Joyshriek",
-            "Cellarwheezer",
-            "Fleshlurker",
-            "Consumeblood",
-            "Screamtongue"
         ]
     },
     "Drider": {
         "Name": "Drider",
         "Type": "Large monstrosity",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "123 (13d10 + 52)",
         "Speed": "30 ft., climb 30 ft.",
@@ -12433,7 +10579,7 @@ dnd_monsters = {
         "INT": "13 (+1)",
         "WIS": "14 (+2)",
         "CHA": "12 (+1)",
-        "Features": [
+        "features": [
             "Fey Ancestry. The drider has advantage on saving throws against being charmed, and magic can't put the drider to sleep.",
             "Innate Spellcasting. The drider's innate spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:",
             "Spider Climb. The drider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
@@ -12523,29 +10669,12 @@ dnd_monsters = {
             "Magical Wands/Items",
             "Gems and Coins",
             "Magic Weapons and Armor"
-        ],
-        "Race": "Aberration",
-        "Class": "Monstrous Creature",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Gressill",
-            "Telthir",
-            "Sruss",
-            "Hriek",
-            "Chs'uthpillar"
-        ],
-        "5 Common Last Names": [
-            "Meiromph",
-            "Thraxxaril",
-            "Clautharic",
-            "Holosuth",
-            "Xailiikin"
         ]
     },
     "Drow": {
         "Name": "Drow",
         "Type": "Medium humanoid (Elf)",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "15 (chain shirt)",
         "Hit Points": "13 (3d8)",
         "Speed": "30 ft.",
@@ -12559,7 +10688,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "11 (+0)",
         "CHA": "12 (+1)",
-        "Features": [
+        "features": [
             "Fey Ancestry. The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep.",
             "Innate Spellcasting. The drow's spellcasting ability is Charisma (spell save DC 11). It can innately cast the following spells, requiring no material components:",
             "Sunlight Sensitivity. While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
@@ -12642,29 +10771,12 @@ dnd_monsters = {
             "Daggers of venom",
             "Rings of protection",
             "Sacrifices to Lolth"
-        ],
-        "Race": "Elf",
-        "Class": "Humanoid",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Sharlotta",
-            "Daffid",
-            "Jorlan",
-            "Dorella",
-            "Vesz'aun"
-        ],
-        "5 Common Last Names": [
-            "Kbanon",
-            "Kethzun",
-            "Mizzrym",
-            "Vir Reynolds",
-            "Zilvreen"
         ]
     },
-    "Drow_Elite_Warrior": {
+    "Drow-Elite-Warrior": {
         "Name": "Drow Elite Warrior",
         "Type": "Medium humanoid (Elf)",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "18 (studded leather, shield)",
         "Hit Points": "71 (11d8 + 22)",
         "Speed": "30 ft.",
@@ -12682,7 +10794,7 @@ dnd_monsters = {
         "Reactions": [
             "This full creature's stat block is not available (not OGL)."
         ],
-        "Features": [],
+        "features": [],
         "Actions": [],
         "Description": "Drow Elite Soldiers are some of the most elite soldiers of the drow. Standing over 6 feet tall with dark brown skin, inky black hair usually tied into ponytails and bright white eyes, they often wear armor crafted with superior materials. A cape and cape-like clothing typically embellish their armor and they usually carry weapons forged from special metals.",
         "Narrative": "Drow Elite Warriors are feared amongst the drow and the entire Underdark. It is said that even the strongest of foes cannot stand against them in battle. Their cunning and strength make them formidable warriors, and they have become the elite soldiers of the drow. Legends have it that they have a mysterious magical prowess in battle, further enhancing their capabilities.",
@@ -12760,29 +10872,12 @@ dnd_monsters = {
             "Crossbow",
             "Scrolls of Protection",
             "Leather Armor"
-        ],
-        "Race": "Drow",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Maladom",
-            "Sildar",
-            "Zalantar",
-            "Vinin",
-            "Beldar"
-        ],
-        "5 Common Last Names": [
-            "Dhaevizn",
-            "Paeliir",
-            "Tzarrin",
-            "Phaervor",
-            "Auvryn"
         ]
     },
-    "Drow_Mage": {
+    "Drow-Mage": {
         "Name": "Drow Mage",
         "Type": "Medium humanoid (Elf)",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "12 (15 with",
         "Hit Points": "45 (10d8)",
         "Speed": "30 ft.",
@@ -12796,7 +10891,7 @@ dnd_monsters = {
         "INT": "17 (+3)",
         "WIS": "13 (+1)",
         "CHA": "12 (+1)",
-        "Features": [
+        "features": [
             "Fey Ancestry. The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep.",
             "Innate Spellcasting. The drow's innate spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring no material components:",
             "Spellcasting. The drow is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The drow has the following wizard spells prepared:",
@@ -12875,29 +10970,12 @@ dnd_monsters = {
             "Scrolls of Divination",
             "Wands of Power",
             "Daggers of Disruption"
-        ],
-        "Race": "Elf (Drow)",
-        "Class": "Spellcaster",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ildrann",
-            "Lialdhra",
-            "Gauthix",
-            "Vaela",
-            "Trelana"
-        ],
-        "5 Common Last Names": [
-            "Xuterrt",
-            "Gelhirr",
-            "Ghinn",
-            "Yharim",
-            "Follasti"
         ]
     },
-    "Drow_Priestess_of_Lolth": {
+    "Drow-Priestess-of-Lolth": {
         "Name": "Drow Priestess of Lolth",
         "Type": "Medium humanoid (Elf)",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "16 (scale mail)",
         "Hit Points": "71 (13d8 + 13)",
         "Speed": "30 ft.",
@@ -12912,7 +10990,7 @@ dnd_monsters = {
         "INT": "13 (+1)",
         "WIS": "17 (+3)",
         "CHA": "18 (+4)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -12989,29 +11067,12 @@ dnd_monsters = {
             "Enchanted weapons",
             "Dark totems of Lolth",
             "Scrolls of dark knowledge"
-        ],
-        "Race": "Drow",
-        "Class": "Cleric",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Tari",
-            "Riz'tan",
-            "Nivv",
-            "Kivvi",
-            "Amin"
-        ],
-        "5 Common Last Names": [
-            "T'Luareth",
-            "Numbers",
-            "Uthestra",
-            "Vadra",
-            "Maeh'rith"
         ]
     },
     "Druid": {
         "Name": "Druid",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any alignment",
+        "alignment": "any alignment",
         "Armor Class": "11 (16 with",
         "Hit Points": "27 (5d8 + 5)",
         "Speed": "30 ft.",
@@ -13025,7 +11086,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "15 (+2)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "Spellcasting. The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared:"
         ],
         "Actions": [
@@ -13101,29 +11162,12 @@ dnd_monsters = {
             "Magical scrolls and tomes",
             "Magical weapons and armor",
             "Gems or jewelry"
-        ],
-        "Race": "Humanoid",
-        "Class": "Cleric, Ranger or Wizard",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Olavn",
-            "Elinora",
-            "Sara",
-            "Dale",
-            "Eluned"
-        ],
-        "5 Common Last Names": [
-            "Merrowloch",
-            "Geyer",
-            "Treyford",
-            "Roe",
-            "Hayes"
         ]
     },
     "Dryad": {
         "Name": "Dryad",
         "Type": "Medium fey",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "11 (16 with",
         "Hit Points": "22 (5d8)",
         "Speed": "30 ft.",
@@ -13137,7 +11181,7 @@ dnd_monsters = {
         "INT": "14 (+2)",
         "WIS": "15 (+2)",
         "CHA": "18 (+4)",
-        "Features": [
+        "features": [
             "Innate Spellcasting. The dryad's innate spellcasting ability is Charisma (spell save DC 14). The dryad can innately cast the following spells, requiring no material components:",
             "Magic Resistance. The dryad has advantage on saving throws against spells and other magical effects.",
             "Speak with Beasts and Plants. The dryad can communicate with beasts and plants as if they shared a language.",
@@ -13214,29 +11258,12 @@ dnd_monsters = {
             "Vial of Liquid Amber",
             "Bag of Fae Dust",
             "Songbird Feather"
-        ],
-        "Race": "Fey",
-        "Class": "N/A",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Tiana",
-            "Dryandra",
-            "Kalani",
-            "Lizette",
-            "Lilith"
-        ],
-        "5 Common Last Names": [
-            "Oakenwood",
-            "Willowshade",
-            "Leprechaunhoof",
-            "Enchantedwood",
-            "Oakmystery"
         ]
     },
     "Duergar": {
         "Name": "Duergar",
         "Type": "Medium humanoid (Dwarf)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "16 (scale mail, shield)",
         "Hit Points": "26 (4d8 + 8)",
         "Speed": "25 ft.",
@@ -13250,7 +11277,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "10 (+0)",
         "CHA": "9 (-1)",
-        "Features": [
+        "features": [
             "Duergar Resilience. The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed.",
             "Sunlight Sensitivity. While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
         ],
@@ -13330,29 +11357,12 @@ dnd_monsters = {
             "Gems",
             "Jewelry",
             "Weapons"
-        ],
-        "Race": "Gray Dwarf",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Gryll",
-            "Nym",
-            "Berrol",
-            "Vig",
-            "Brak"
-        ],
-        "5 Common Last Names": [
-            "Morgar",
-            "Rugar",
-            "Haren",
-            "Borl",
-            "Oskren"
         ]
     },
     "Duodrone": {
         "Name": "Duodrone",
         "Type": "Medium construct",
-        "Alignment": "lawful neutral",
+        "alignment": "lawful neutral",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "11 (2d8 + 2)",
         "Speed": "30 ft.",
@@ -13365,7 +11375,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "10 (+0)",
         "CHA": "7 (-2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -13431,29 +11441,12 @@ dnd_monsters = {
             "Insectoid parts",
             "Gems and jewels",
             "Scroll of communication"
-        ],
-        "Race": "Construct",
-        "Class": "Clockwork",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Tik-tok",
-            "Zik",
-            "Ticktok",
-            "Klockwerk",
-            "Glowtick"
-        ],
-        "5 Common Last Names": [
-            "Fortress",
-            "Machineworks",
-            "Cogworn",
-            "Claker",
-            "Clicksilver"
         ]
     },
-    "Dust_Mephit": {
+    "Dust-Mephit": {
         "Name": "Dust Mephit",
         "Type": "Small elemental",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "12",
         "Hit Points": "17 (5d6)",
         "Speed": "30 ft., fly 30 ft.",
@@ -13470,7 +11463,7 @@ dnd_monsters = {
         "INT": "9 (-1)",
         "WIS": "11 (+0)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Death Burst. When the mephit dies, it explodes in a burst of dust. Each creature within 5 feet of it must then succeed on a DC 10 Constitution saving throw or be blinded for 1 minute. A blinded creature can repeat the saving throw on each of its turns, ending the effect on itself on a success.",
             "Innate Spellcasting (1/Day). The mephit can innately castsleep, requiring no material components. Its innate spellcasting ability is Charisma."
         ],
@@ -13547,29 +11540,12 @@ dnd_monsters = {
             "Rocks",
             "Bones",
             "Magical trinkets"
-        ],
-        "Race": "Elemental",
-        "Class": "",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Vyaash",
-            "Vikas",
-            "Dnyanesh",
-            "Shiv",
-            "Shankar"
-        ],
-        "5 Common Last Names": [
-            "Blown",
-            "Powdery",
-            "Airy",
-            "Colored",
-            "Tantalizing"
         ]
     },
     "Eagle": {
         "Name": "Eagle",
         "Type": "Small beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "3 (1d6)",
         "Speed": "10 ft., fly 60 ft.",
@@ -13583,7 +11559,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "14 (+2)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Keen Sight. The eagle has advantage on Wisdom (Perception) checks that rely on sight."
         ],
         "Actions": [
@@ -13651,29 +11627,12 @@ dnd_monsters = {
             "Eggs",
             "Bones",
             "Raw meat"
-        ],
-        "Race": "Animal",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Gwilson",
-            "Rhorton",
-            "Tkline",
-            "Ramsey",
-            "Treynolds"
-        ],
-        "5 Common Last Names": [
-            "Wgular",
-            "Kruff",
-            "Wilwin",
-            "Gnatman",
-            "Ushner"
         ]
     },
-    "Earth_Elemental": {
+    "Earth-Elemental": {
         "Name": "Earth Elemental",
         "Type": "Large elemental",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "126 (12d10 + 60)",
         "Speed": "30 ft., burrow 30 ft.",
@@ -13690,7 +11649,7 @@ dnd_monsters = {
         "INT": "5 (-3)",
         "WIS": "10 (+0)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Earth Glide. The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.",
             "Siege Monster. The elemental deals double damage to objects and structures."
         ],
@@ -13760,29 +11719,12 @@ dnd_monsters = {
             "Magical Artifacts",
             "Mystical Power Stones",
             "Cursed Weapons"
-        ],
-        "Race": "Elemental",
-        "Class": "Outsider",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Earthenia",
-            "Golem",
-            "Mudburl",
-            "Tecton",
-            "Terra"
-        ],
-        "5 Common Last Names": [
-            "Cairn",
-            "McErde",
-            "Rockshield",
-            "Stonestomp",
-            "TheMudlord"
         ]
     },
     "Efreeti": {
         "Name": "Efreeti",
         "Type": "Large elemental",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "200 (16d10 + 112)",
         "Speed": "40 ft., fly 60 ft.",
@@ -13797,7 +11739,7 @@ dnd_monsters = {
         "INT": "16 (+3)",
         "WIS": "15 (+2)",
         "CHA": "16 (+3)",
-        "Features": [
+        "features": [
             "Elemental Demise. If the efreeti dies, its body disintegrates in a flash of fire and puff of smoke, leaving behind only equipment the efreeti was wearing or carrying.",
             "Innate Spellcasting. The efreeti's innate spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
         ],
@@ -13878,29 +11820,12 @@ dnd_monsters = {
             "Elemental Essence",
             "Smoke Bombs",
             "Magical Scroll"
-        ],
-        "Race": "Genie",
-        "Class": "Elemental",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Rashid",
-            "MALIK",
-            "JAHI",
-            "NAAL",
-            "DAMAR"
-        ],
-        "5 Common Last Names": [
-            "FAHAD",
-            "ALPHA",
-            "ASIF",
-            "JAMEEL",
-            "ZAHIR"
         ]
     },
     "Elephant": {
         "Name": "Elephant",
         "Type": "Huge beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12 (natural armor)",
         "Hit Points": "76 (8d12 + 24)",
         "Speed": "40 ft.",
@@ -13913,7 +11838,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "11 (+0)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Trampling Charge. If the elephant moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the elephant can make one stomp attack against it as a bonus action."
         ],
         "Actions": [
@@ -13985,29 +11910,12 @@ dnd_monsters = {
             "Tusks carvings",
             "Large Bones",
             "Wool or hair"
-        ],
-        "Race": "Beast",
-        "Class": "Animal",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Tuskor",
-            "Trunkon",
-            "Tley",
-            "Daubor",
-            "Konar"
-        ],
-        "5 Common Last Names": [
-            "Ramhorn",
-            "Tuskwalker",
-            "Hoofdancer",
-            "Tailender",
-            "Trunkhold"
         ]
     },
     "Elk": {
         "Name": "Elk",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "10",
         "Hit Points": "13 (2d10 + 2)",
         "Speed": "50 ft.",
@@ -14020,7 +11928,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "10 (+0)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Charge. If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
         ],
         "Actions": [
@@ -14093,29 +12001,12 @@ dnd_monsters = {
             "Elk Teeth",
             "Elk Tallow",
             "Elk Horn"
-        ],
-        "Race": "Beast",
-        "Class": "Animal",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Runs-with-Antlers",
-            "Dances-in-the-Trees",
-            "Dawn-Stomper",
-            "Legs-of-Lightning",
-            "Pace-of-the-Leaves"
-        ],
-        "5 Common Last Names": [
-            "of-the-High-Woods",
-            "of-Greenskin-Ridge",
-            "of-the-Gale-Forrest",
-            "of-Distant-Lands",
-            "of-the-Still-Lakes"
         ]
     },
     "Empyrean": {
         "Name": "Empyrean",
         "Type": "Huge celestial (Titan)",
-        "Alignment": "chaotic good (75 %) or neutral evil (25 %)",
+        "alignment": "chaotic good (75 %) or neutral evil (25 %)",
         "Armor Class": "22 (natural armor)",
         "Hit Points": "313 (19d12 + 190)",
         "Speed": "50 ft., fly 50 ft., swim 50 ft.",
@@ -14134,7 +12025,7 @@ dnd_monsters = {
         "Legendary actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
-        "Features": [],
+        "features": [],
         "Actions": [],
         "Description": "Empyrean are powerful immortal beings that can appear in many forms throughout the planes. They are known to be divine messengers of the gods and guardians of the multiverse.",
         "Narrative": "The Empyrean are powerful, immortal celestial beings that are known to roam the planes. It is said that these mysterious entities are the messengers of the gods and the guardians of the multiverse. They appear in many forms, often traveling in pairs or in small groups. The Empyrean are capable of both great power and immense wisdom, and can be found in many places throughout the multiverse.",
@@ -14203,29 +12094,12 @@ dnd_monsters = {
             "Pearls",
             "Magic Weapons",
             "Spell Scrolls"
-        ],
-        "Race": "Celestial",
-        "Class": "Divine Being",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Basil",
-            "Cassiel",
-            "Michael",
-            "Raphael",
-            "Uriel"
-        ],
-        "5 Common Last Names": [
-            "Acierite",
-            "Aetha",
-            "Deivael",
-            "Herran",
-            "Kalliope"
         ]
     },
     "Erinyes": {
         "Name": "Erinyes",
         "Type": "Medium fiend (Devil)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "18 (plate)",
         "Hit Points": "153 (18d8 + 72)",
         "Speed": "30 ft., fly 60 ft.",
@@ -14245,7 +12119,7 @@ dnd_monsters = {
         "Reactions": [
             "Parry. The erinyes adds 4 to its AC against one melee attack that would hit it. To do so, the erinyes must see the attacker and be wielding a melee weapon."
         ],
-        "Features": [
+        "features": [
             "Hellish Weapons. The erinyes's weapon attacks are magical and deal an extra 13 (3d8) poison damage on a hit (included in the attacks).",
             "Magic Resistance. The erinyes has advantage on saving throws against spells and other magical effects."
         ],
@@ -14322,29 +12196,12 @@ dnd_monsters = {
             "Magic weapons and armor",
             "Gems and coins",
             "Artifacts of divine origin"
-        ],
-        "Race": "Devil",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Zepar",
-            "Berith",
-            "Femabeth",
-            "Vassago",
-            "Sealas"
-        ],
-        "5 Common Last Names": [
-            "Baall",
-            "Thamuz",
-            "Glasya",
-            "Fahhamut",
-            "Asmoday"
         ]
     },
     "Ettercap": {
         "Name": "Ettercap",
         "Type": "Medium monstrosity",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "44 (8d8 + 8)",
         "Speed": "30 ft., climb 30 ft.",
@@ -14358,7 +12215,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "12 (+1)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Spider Climb. The ettercap can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
             "Web Sense. While in contact with a web, the ettercap knows the exact location of any other creature in contact with the same web.",
             "Web Walker. The ettercap ignores movement restrictions caused by webbing."
@@ -14432,29 +12289,12 @@ dnd_monsters = {
             "Rare spices and herbs",
             "Potions and elixirs",
             "Coins and other valuables"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Tam",
-            "Fustel",
-            "Sturtura",
-            "Yoddish",
-            "Kaula"
-        ],
-        "5 Common Last Names": [
-            "Goboloca",
-            "lurkio",
-            "zarnoza",
-            "Wantersnab",
-            "Kimskrool"
         ]
     },
     "Ettin": {
         "Name": "Ettin",
         "Type": "Large giant",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "12 (natural armor)",
         "Hit Points": "85 (10d10 + 30)",
         "Speed": "40 ft.",
@@ -14468,7 +12308,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "10 (+0)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Two Heads. The ettin has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned and knocked unconscious.",
             "Wakeful. When one of the ettin's heads is asleep, its other head is awake."
         ],
@@ -14545,25 +12385,12 @@ dnd_monsters = {
             "Copper Coins",
             "Gems",
             "Magical Weapons"
-        ],
-        "Race": "Giant",
-        "Class": "Divine Trickster",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Hengral",
-            "Grekken",
-            "StokkolFrenngalMahoug"
-        ],
-        "5 Common Last Names": [
-            "Double-Axe",
-            "CrushingFist",
-            "BlackbeardSaltpileHippocampus"
         ]
     },
-    "Faerie_Dragon": {
+    "Faerie-Dragon": {
         "Name": "Faerie Dragon",
         "Type": "Tiny dragon",
-        "Alignment": "chaotic good",
+        "alignment": "chaotic good",
         "Armor Class": "15",
         "Hit Points": "14 (4d4 + 4)",
         "Speed": "10 ft., fly 60 ft.",
@@ -14577,7 +12404,7 @@ dnd_monsters = {
         "INT": "14 (+2)",
         "WIS": "12 (+1)",
         "CHA": "16 (+3)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -14652,10 +12479,10 @@ dnd_monsters = {
             "Small pieces of Feygold"
         ]
     },
-    "Fire_Elemental": {
+    "Fire-Elemental": {
         "Name": "Fire Elemental",
         "Type": "Large elemental",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "13",
         "Hit Points": "102 (12d10 + 36)",
         "Speed": "50 ft.",
@@ -14671,7 +12498,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "10 (+0)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Fire Form. The elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage. In addition, the elemental can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 5 (1d10) fire damage and catches fire; until someone takes an action to douse the fire, the creature takes 5 (1d10) fire damage at the start of each of its turns.",
             "Illumination. The elemental sheds bright light in a 30-foot radius and dim light in an additional 30 feet.",
             "Water Susceptibility. For every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage."
@@ -14751,29 +12578,12 @@ dnd_monsters = {
             "Flaming Gauntlet",
             "Fire Whip",
             "Lamp of Endless Fire"
-        ],
-        "Race": "Elemental",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Ignus",
-            "Embers",
-            "Vulcan",
-            "Infernus",
-            "Ace"
-        ],
-        "5 Common Last Names": [
-            "Flament",
-            "Pyre",
-            "Furnace",
-            "Scorch",
-            "Burnout"
         ]
     },
-    "Fire_Giant": {
+    "Fire-Giant": {
         "Name": "Fire Giant",
         "Type": "Huge giant",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "18 (plate)",
         "Hit Points": "162 (13d12 + 78)",
         "Speed": "30 ft.",
@@ -14789,7 +12599,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "14 (+2)",
         "CHA": "13 (+1)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Multiattack. The giant makes two greatsword attacks.",
             "Greatsword.Melee Weapon Attack: +11 to hit, reach 10 ft., one target.Hit: 28 (6d6 + 7) slashing damage.",
@@ -14864,10 +12674,10 @@ dnd_monsters = {
             "Gauntlets of Fire Giant Strength"
         ]
     },
-    "Fire_Snake": {
+    "Fire-Snake": {
         "Name": "Fire Snake",
         "Type": "Medium elemental",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "22 (5d8)",
         "Speed": "30 ft.",
@@ -14883,7 +12693,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "10 (+0)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Heated Body. A creature that touches the snake or hits it with a melee attack while within 5 feet of it takes 3 (1d6) fire damage."
         ],
         "Actions": [
@@ -14960,7 +12770,7 @@ dnd_monsters = {
     "Flameskull": {
         "Name": "Flameskull",
         "Type": "Tiny undead",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "13",
         "Hit Points": "40 (9d4 + 18)",
         "Speed": "0 ft., fly 40 ft. (hover)",
@@ -14977,7 +12787,7 @@ dnd_monsters = {
         "INT": "16 (+3)",
         "WIS": "10 (+0)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "Illumination. The flameskull sheds either dim light in a 15-foot radius, or bright light in a 15-foot radius and dim light for an additional 15 feet. It can switch between the options as an action.",
             "Magic Resistance. The flameskull has advantage on saving throws against spells and other magical effects.",
             "Rejuvenation. If the flameskull is destroyed, it regains all its hit points in 1 hour unless holy water is sprinkled on its remains or adispel magicorremove cursespell is cast on them.",
@@ -15053,29 +12863,12 @@ dnd_monsters = {
             "Magical tomes and scrolls",
             "Cursed Items",
             "Wands and Staves"
-        ],
-        "Race": "Undead",
-        "Class": "Monstrosity",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Ignas",
-            "Volut",
-            "Tortos",
-            "Zerius",
-            "Haerut"
-        ],
-        "5 Common Last Names": [
-            "Vates",
-            "Cedex",
-            "Ramirus",
-            "Hatral",
-            "Fedek"
         ]
     },
-    "Flesh_Golem": {
+    "Flesh-Golem": {
         "Name": "Flesh Golem",
         "Type": "Medium construct",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "9",
         "Hit Points": "93 (11d8 + 44)",
         "Speed": "30 ft.",
@@ -15090,7 +12883,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "10 (+0)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Berserk. Whenever the golem starts its turn with 40 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points. The golem's creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. The golem must be able to hear its creator, who must take an action to make a DC 15 Charisma (Persuasion) check. If the check succeeds, the golem ceases being berserk. If it takes damage while still at 40 hit points or fewer, the golem might go berserk again.",
             "Aversion of Fire. If the golem takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn.",
             "Immutable Form. The golem is immune to any spell or effect that would alter its form.",
@@ -15172,29 +12965,12 @@ dnd_monsters = {
             "Minor Magical Weapons",
             "Minor Magical Items",
             "Gems and Coins"
-        ],
-        "Race": "Construct",
-        "Class": "None",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Raise",
-            "Reanimate",
-            "Animate",
-            "Form",
-            "Alt"
-        ],
-        "5 Common Last Names": [
-            "Flesh",
-            "Life",
-            "Fleshman",
-            "Body",
-            "Clay"
         ]
     },
     "Flumph": {
         "Name": "Flumph",
         "Type": "Small aberration",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "12",
         "Hit Points": "7 (2d6)",
         "Speed": "5 ft., fly 30 ft.",
@@ -15209,7 +12985,7 @@ dnd_monsters = {
         "INT": "14 (+2)",
         "WIS": "14 (+2)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "Advanced Telepathy. The flumph can perceive the content of any telepathic communication used within 60 feet of it, and it can't be surprised by creatures with any form of telepathy.",
             "Prone Deficiency. If the flumph is knocked prone, roll a die. On an odd result, the flumph lands upside-down and is in capacitated. At the end of each of its turns, the flumph can make a DC 10 Dexterity saving throw, righting itself and ending the incapacitated condition if it succeeds.",
             "Telepathic Shroud. The flumph is immune to any effect that would sense its emotions or read its thoughts, as well as all divination spells."
@@ -15282,29 +13058,12 @@ dnd_monsters = {
             "Gems and jewels",
             "Magical items",
             "Strange artifacts"
-        ],
-        "Race": "Aberration",
-        "Class": "Monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Cleavis",
-            "Snorom",
-            "Lishane",
-            "Neiday",
-            "Rimmar"
-        ],
-        "5 Common Last Names": [
-            "Blissvine",
-            "Flightfloat",
-            "Bluetoe",
-            "Skimmerflight",
-            "Lipthrift"
         ]
     },
-    "Flying_Snake": {
+    "Flying-Snake": {
         "Name": "Flying Snake",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "14",
         "Hit Points": "5 (2d4)",
         "Speed": "30 ft., fly 60 ft., swim 30 ft.",
@@ -15317,7 +13076,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Flyby. The snake doesn't provoke opportunity attacks when it flies out of an enemy's reach."
         ],
         "Actions": [
@@ -15386,29 +13145,12 @@ dnd_monsters = {
             "Magic Scrolls",
             "Potions",
             "Rare Artifacts"
-        ],
-        "Race": "Reptilian",
-        "Class": "Dragon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Slither",
-            "Coil",
-            "Slyther",
-            "Clevser",
-            "Growl"
-        ],
-        "5 Common Last Names": [
-            "Spieser",
-            "Slipser",
-            "Scaleser",
-            "Slyser",
-            "Rattleer"
         ]
     },
-    "Flying_Sword": {
+    "Flying-Sword": {
         "Name": "Flying Sword",
         "Type": "Small construct",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "17 (5d6)",
         "Speed": "0 ft., fly 50 ft. (hover)",
@@ -15424,7 +13166,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "5 (-3)",
         "CHA": "1 (-5)",
-        "Features": [
+        "features": [
             "Antimagic Susceptibility. The sword is incapacitated while in the area of anantimagic field. If targeted bydispel magic, the sword must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.",
             "False Appearance. While the sword remains motionless and isn't flying, it is indistinguishable from a normal sword."
         ],
@@ -15494,29 +13236,12 @@ dnd_monsters = {
             "Magic ring",
             "Greek fire flask",
             "Weapon enchantment scroll"
-        ],
-        "Race": "Construct",
-        "Class": "Undead",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Zander",
-            "Gattor",
-            "Godfrey",
-            "Golam",
-            "Uriel"
-        ],
-        "5 Common Last Names": [
-            "Swordshaper",
-            "Bladebinder",
-            "Flagelant",
-            "Windslinger",
-            "Steelguard"
         ]
     },
     "Fomorian": {
         "Name": "Fomorian",
         "Type": "Huge giant",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "149 (13d12 + 65)",
         "Speed": "30 ft.",
@@ -15530,7 +13255,7 @@ dnd_monsters = {
         "INT": "9 (-1)",
         "WIS": "14 (+2)",
         "CHA": "6 (-2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -15602,29 +13327,12 @@ dnd_monsters = {
             "Jewelry",
             "Mundane weapons",
             "Potions"
-        ],
-        "Race": "Giant",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Borraug",
-            "Ebthon",
-            "Ichinn",
-            "Koro",
-            "Makon"
-        ],
-        "5 Common Last Names": [
-            "Gronael",
-            "Ymonn",
-            "Tuth",
-            "Lhan",
-            "Eckmiel"
         ]
     },
     "Frog": {
         "Name": "Frog",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11",
         "Hit Points": "1 (1d4 - 1)",
         "Speed": "20 ft., swim 20 ft.",
@@ -15638,7 +13346,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "8 (-1)",
         "CHA": "3 (-4)",
-        "Features": [
+        "features": [
             "Amphibious. The frog can breathe air and water.",
             "Standing Leap. The frog's long jump is up to 10 feet and its high jump is up to 5 feet, with or without a running start."
         ],
@@ -15707,29 +13415,12 @@ dnd_monsters = {
             "Potion of healing",
             "Scroll of magic missile",
             "Potion of water breathing"
-        ],
-        "Race": "Animal",
-        "Class": "Beast",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Froggy",
-            "Hoppy",
-            "Leppy",
-            "Polly",
-            "Thumpy"
-        ],
-        "5 Common Last Names": [
-            "Frogger",
-            "Lepper",
-            "Croaker",
-            "Splasher",
-            "Leaper"
         ]
     },
-    "Frost_Giant": {
+    "Frost-Giant": {
         "Name": "Frost Giant",
         "Type": "Huge giant",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "15 (patchwork armor)",
         "Hit Points": "138 (12d12 + 60)",
         "Speed": "40 ft.",
@@ -15745,7 +13436,7 @@ dnd_monsters = {
         "INT": "9 (-1)",
         "WIS": "10 (+0)",
         "CHA": "12 (+1)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Multiattack. The giant makes two greataxe attacks.",
             "Greataxe.Melee Weapon Attack: +9 to hit, reach 10 ft., one target.Hit: 25 (3d12 + 6) slashing damage.",
@@ -15820,29 +13511,12 @@ dnd_monsters = {
             "Weapons",
             "Armor",
             "Magic Items"
-        ],
-        "Race": "Giant",
-        "Class": "Openly Barbarian or Fighter",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Agmar",
-            "Dargul",
-            "Harald",
-            "Tuk",
-            "Ulf"
-        ],
-        "5 Common Last Names": [
-            "Agmundr",
-            "Angrbrek",
-            "Murdskald",
-            "Sturmfist",
-            "Valdskald"
         ]
     },
-    "Galeb_Duhr": {
+    "Galeb-Duhr": {
         "Name": "Galeb Duhr",
         "Type": "Medium elemental",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "16 (natural armor)",
         "Hit Points": "85 (9d8 + 45)",
         "Speed": "15 ft. (30 ft. when rolling, 60 ft. rolling downhill)",
@@ -15858,7 +13532,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "12 (+1)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "False Appearance. While the galeb duhr remains motionless, it is indistinguishable from a normal boulder.",
             "Rolling Charge. If the galeb duhr rolls at least 20 feet straight toward a target and then hits it with a slam attack on the same turn, the target takes an extra 7 (2d6) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be knocked prone."
         ],
@@ -15936,29 +13610,12 @@ dnd_monsters = {
             "Runes of Warding",
             "Gems and Jewels",
             "Magic Weapons and Armor"
-        ],
-        "Race": "earth elemental",
-        "Class": "monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Rocky",
-            "Ezra",
-            "Stone",
-            "Wilson",
-            "Rockwell"
-        ],
-        "5 Common Last Names": [
-            "Rumbletum",
-            "Tumblebop",
-            "Rockdust",
-            "Rockbottom",
-            "Tumblestump"
         ]
     },
     "Gargoyle": {
         "Name": "Gargoyle",
         "Type": "Medium elemental",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "52 (7d8 + 21)",
         "Speed": "30 ft., fly 60 ft.",
@@ -15974,7 +13631,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "11 (+0)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "False Appearance. While the gargoyle remains motionless, it is indistinguishable from an inanimate statue."
         ],
         "Actions": [
@@ -16047,29 +13704,12 @@ dnd_monsters = {
             "Potions",
             "Scrolls",
             "Gems"
-        ],
-        "Race": "Elemental",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Veldrak",
-            "Hawr",
-            "Ketar",
-            "Kreg",
-            "Faelar"
-        ],
-        "5 Common Last Names": [
-            "Korladur",
-            "Lerok",
-            "Nargalur",
-            "Tebalad",
-            "Shand"
         ]
     },
-    "Gas_Spore": {
+    "Gas-Spore": {
         "Name": "Gas Spore",
         "Type": "Large plant",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "5",
         "Hit Points": "1 (1d10 - 4)",
         "Speed": "0 ft., fly 10 ft. (hover)",
@@ -16084,7 +13724,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "1 (-5)",
         "CHA": "1 (-5)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -16157,29 +13797,12 @@ dnd_monsters = {
             "Scrolls of Protection",
             "Minor Magical Items",
             "Gems and Jewels"
-        ],
-        "Race": "Fungus",
-        "Class": "Behemoth",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Vacuol",
-            "Chloroplaz",
-            "Septoz",
-            "Stalkon",
-            "Gamspor"
-        ],
-        "5 Common Last Names": [
-            "Floater",
-            "Gasser",
-            "Mistery",
-            "Cleaner",
-            "Bstalker"
         ]
     },
-    "Gelatinous_Cube": {
+    "Gelatinous-Cube": {
         "Name": "Gelatinous Cube",
         "Type": "Large ooze",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "6",
         "Hit Points": "84 (8d10 + 40)",
         "Speed": "15 ft.",
@@ -16193,7 +13816,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "6 (-2)",
         "CHA": "1 (-5)",
-        "Features": [
+        "features": [
             "Ooze Cube. The cube takes up its entire space. Other creatures can enter the space, but a creature that does so is subjected to the cube's Engulf and has disadvantage on the saving throw. Creatures inside the cube can be seen but have total cover. A creature within 5 feet of the cube can take an action to pull a creature or object out of the cube. Doing so requires a successful DC 12 Strength check, and the creature making the attempt takes 10 (3d6) acid damage. The cube can hold only one Large creature or up to four Medium or smaller creatures inside it at a time.",
             "Transparent. Even when the cube is in plain sight, it takes a successful DC 15 Wisdom (Perception) check to spot a cube that has neither moved nor attacked. A creature that tries to enter the cube's space while unaware of the cube is surprised by the cube."
         ],
@@ -16269,29 +13892,12 @@ dnd_monsters = {
             "Magical items",
             "Artifacts",
             "Mysterious ooze"
-        ],
-        "Race": "Ooze",
-        "Class": "Cube",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Slippy",
-            "Drippy",
-            "Gloop",
-            "Oozle",
-            "Blurp"
-        ],
-        "5 Common Last Names": [
-            "Cube",
-            "Slime",
-            "Slimer",
-            "Jiggly",
-            "Gooey"
         ]
     },
     "Ghast": {
         "Name": "Ghast",
         "Type": "Medium undead",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "13",
         "Hit Points": "36 (8d8)",
         "Speed": "30 ft.",
@@ -16307,7 +13913,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "10 (+0)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Stench. Any creature that starts its turn within 5 feet of the ghast must succeed on a DC 10 Constitution saving throw or be poisoned until the start of its next turn. On a successful saving throw, the creature is immune to the ghast's Stench for 24 hours.",
             "Turning Defiance. The ghast and any ghouls within 30 feet of it have advantage on saving throws against effects that turn undead."
         ],
@@ -16381,29 +13987,12 @@ dnd_monsters = {
             "Grimoires of necromantic magic",
             "Pendants infused with necromantic energy",
             "Necromantically-crafted weapons and armor"
-        ],
-        "Race": "Undead",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ghaash",
-            "Gletsch",
-            "Gorph",
-            "Ghul",
-            "Graff"
-        ],
-        "5 Common Last Names": [
-            "Grim",
-            "Zorg",
-            "Lurg",
-            "Slurk",
-            "Shraak"
         ]
     },
     "Ghost": {
         "Name": "Ghost",
         "Type": "Medium undead",
-        "Alignment": "any alignment",
+        "alignment": "any alignment",
         "Armor Class": "11",
         "Hit Points": "45 (10d8)",
         "Speed": "0 ft., fly 40 ft. (hover)",
@@ -16419,7 +14008,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "12 (+1)",
         "CHA": "17 (+3)",
-        "Features": [
+        "features": [
             "Ethereal Sight. The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa.",
             "Incorporeal Movement. The ghost can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
         ],
@@ -16489,29 +14078,12 @@ dnd_monsters = {
             "Magical weapons and armor.",
             "Relic or talisman.",
             "Scrolls or books of knowledge."
-        ],
-        "Race": "Undead",
-        "Class": "Spirit",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Theophilus",
-            "Tabitha",
-            "Abezil",
-            "McKenzie",
-            "Gideon"
-        ],
-        "5 Common Last Names": [
-            "Holloway",
-            "Ripperton",
-            "Kline",
-            "Cunningham",
-            "Fetedo"
         ]
     },
     "Ghoul": {
         "Name": "Ghoul",
         "Type": "Medium undead",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "12",
         "Hit Points": "22 (5d8)",
         "Speed": "30 ft.",
@@ -16526,7 +14098,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "10 (+0)",
         "CHA": "6 (-2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +2 to hit, reach 5 ft., one creature.Hit: 9 (2d6 + 2) piercing damage.",
             "Claws.Melee Weapon Attack: +4 to hit, reach 5 ft., one target.Hit: 7 (2d4 + 2) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
@@ -16596,29 +14168,12 @@ dnd_monsters = {
             "Gems",
             "Ancient artifacts",
             "Magic items"
-        ],
-        "Race": "Undead",
-        "Class": "Monster",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Erik",
-            "Agnes",
-            "Talia",
-            "Konstanz",
-            "Tim"
-        ],
-        "5 Common Last Names": [
-            "Jorgensen",
-            "Nevels",
-            "Amadio",
-            "D'Ablemont",
-            "Tinholt"
         ]
     },
-    "Giant_Ape": {
+    "Giant-Ape": {
         "Name": "Giant Ape",
         "Type": "Huge beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "157 (15d12 + 60)",
         "Speed": "40 ft., climb 40 ft.",
@@ -16632,7 +14187,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "12 (+1)",
         "CHA": "7 (-2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Multiattack. The ape makes two fist attacks.",
             "Fist.Melee Weapon Attack: +9 to hit, reach 10 ft., one target.Hit: 22 (3d10 + 6) bludgeoning damage.",
@@ -16707,29 +14262,12 @@ dnd_monsters = {
             "Gems",
             "Coins",
             "Jeweled Artifacts"
-        ],
-        "Race": "Primordial",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Gogogo",
-            "Krusk",
-            "Koda",
-            "Ooklah",
-            "Tulkas"
-        ],
-        "5 Common Last Names": [
-            "Frostjaw",
-            "Suumasii",
-            "Gorakk",
-            "Mogokk",
-            "Kaankii"
         ]
     },
-    "Giant_Badger": {
+    "Giant-Badger": {
         "Name": "Giant Badger",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "10",
         "Hit Points": "13 (2d8 + 4)",
         "Speed": "30 ft., burrow 10 ft.",
@@ -16742,7 +14280,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Keen Smell. The badger has advantage on Wisdom (Perception) checks that rely on smell."
         ],
         "Actions": [
@@ -16813,29 +14351,12 @@ dnd_monsters = {
             "Insect carapaces",
             "Rare herbs and mushrooms",
             "Small trinkets lost by previous explorers"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Grunter",
-            "Snuffler",
-            "Rooter",
-            "Clawer",
-            "Whinny"
-        ],
-        "5 Common Last Names": [
-            "Burrower",
-            "Snarer",
-            "Furrier",
-            "Sniffer",
-            "Furry"
         ]
     },
-    "Giant_Bat": {
+    "Giant-Bat": {
         "Name": "Giant Bat",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13",
         "Hit Points": "22 (4d10)",
         "Speed": "10 ft., fly 60 ft.",
@@ -16848,7 +14369,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Echolocation. The bat can't use its blindsight while deafened.",
             "Keen Hearing. The bat has advantage on Wisdom (Perception) checks that rely on hearing."
         ],
@@ -16918,29 +14439,12 @@ dnd_monsters = {
             "Bat fur",
             "Small gems",
             "Rare herbs"
-        ],
-        "Race": "Beast",
-        "Class": "N/A",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Fang",
-            "Talon",
-            "Batshka",
-            "Sharptooth",
-            "Ulthar"
-        ],
-        "5 Common Last Names": [
-            "Ripper",
-            "Howler",
-            "Screamer",
-            "Shrieker",
-            "Flitter"
         ]
     },
-    "Giant_Boar": {
+    "Giant-Boar": {
         "Name": "Giant Boar",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12 (natural armor)",
         "Hit Points": "42 (5d10 + 15)",
         "Speed": "40 ft.",
@@ -16953,7 +14457,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "7 (-2)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Charge. If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
             "Relentless (Recharges after a Short or Long Rest). If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
         ],
@@ -17026,29 +14530,12 @@ dnd_monsters = {
             "Boar Hide",
             "Boar Bones",
             "Boar Meat"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Shar",
-            "Mork",
-            "Rav",
-            "Urg",
-            "Ulf"
-        ],
-        "5 Common Last Names": [
-            "Tuskhorn",
-            "Carrun",
-            "Bellowchomp",
-            "Grontooth",
-            "Warbrush"
         ]
     },
-    "Giant_Centipede": {
+    "Giant-Centipede": {
         "Name": "Giant Centipede",
         "Type": "Small beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "4 (1d6 + 1)",
         "Speed": "30 ft., climb 30 ft.",
@@ -17061,7 +14548,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "7 (-2)",
         "CHA": "3 (-4)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +4 to hit, reach 5 ft., one creature.Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
         ],
@@ -17127,29 +14614,12 @@ dnd_monsters = {
             "Mystical scrolls",
             "Rare potions",
             "Spell components"
-        ],
-        "Race": "Vermin",
-        "Class": "Monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Chitra",
-            "Hiska",
-            "Mgarr",
-            "Soprina",
-            "Vikram"
-        ],
-        "5 Common Last Names": [
-            "Badhku",
-            "Gulshan",
-            "Laikti",
-            "Shyamala",
-            "Uttana"
         ]
     },
-    "Giant_Constrictor_Snake": {
+    "Giant-Constrictor-Snake": {
         "Name": "Giant Constrictor Snake",
         "Type": "Huge beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "60 (8d12 + 8)",
         "Speed": "30 ft., swim 30 ft.",
@@ -17163,7 +14633,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "10 (+0)",
         "CHA": "3 (-4)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +6 to hit, reach 10 ft., one creature.Hit: 11 (2d6 + 4) piercing damage.",
             "Constrict.Melee Weapon Attack: +6 to hit, reach 5 ft., one creature.Hit: 13 (2d8 + 4) bludgeoning damage, and the target is grappled (escape DC 16). Until this grapple ends, the creature is restrained, and the snake can't constrict another target."
@@ -17220,29 +14690,12 @@ dnd_monsters = {
             "Gems",
             "Potions of healing",
             "Scrolls of knowledge"
-        ],
-        "Race": "Reptile",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Grim",
-            "Ghostly",
-            "Vengeful",
-            "Coiling",
-            "Slithering"
-        ],
-        "5 Common Last Names": [
-            "Wyrm",
-            "Serpent",
-            "Viper",
-            "Anaconda",
-            "Cobra"
         ]
     },
-    "Giant_Crab": {
+    "Giant-Crab": {
         "Name": "Giant Crab",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "13 (3d8)",
         "Speed": "30 ft., swim 30 ft.",
@@ -17256,7 +14709,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "9 (-1)",
         "CHA": "3 (-4)",
-        "Features": [
+        "features": [
             "Amphibious. The crab can breathe air and water."
         ],
         "Actions": [
@@ -17332,29 +14785,12 @@ dnd_monsters = {
             "Gold coins",
             "Fish scales",
             "Seashells"
-        ],
-        "Race": "Beast",
-        "Class": "Giant Crab",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Duran",
-            "Cranak",
-            "Jarrar",
-            "Sealga",
-            "Korrak"
-        ],
-        "5 Common Last Names": [
-            "Snapclaw",
-            "Spearclaw",
-            "Footclaw",
-            "Shellorak",
-            "Stomper"
         ]
     },
-    "Giant_Crocodile": {
+    "Giant-Crocodile": {
         "Name": "Giant Crocodile",
         "Type": "Huge beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "85 (9d12 + 27)",
         "Speed": "30 ft., swim 50 ft.",
@@ -17368,7 +14804,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "10 (+0)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Hold Breath. The crocodile can hold its breath for 30 minutes."
         ],
         "Actions": [
@@ -17441,29 +14877,12 @@ dnd_monsters = {
             "Rare metals",
             "Gems",
             "Potions"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Tolaya",
-            "Gargool",
-            "Krtas",
-            "Igrip",
-            "Krutls"
-        ],
-        "5 Common Last Names": [
-            "Gatorbite",
-            "Mudslides",
-            "Tailswipe",
-            "Tenacious",
-            "Swamplurk"
         ]
     },
-    "Giant_Eagle": {
+    "Giant-Eagle": {
         "Name": "Giant Eagle",
         "Type": "Large beast",
-        "Alignment": "neutral good",
+        "alignment": "neutral good",
         "Armor Class": "13",
         "Hit Points": "26 (4d10 + 4)",
         "Speed": "10 ft., fly 80 ft.",
@@ -17477,7 +14896,7 @@ dnd_monsters = {
         "INT": "8 (-1)",
         "WIS": "14 (+2)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Keen Sight. The eagle has advantage on Wisdom (Perception) checks that rely on sight."
         ],
         "Actions": [
@@ -17548,29 +14967,12 @@ dnd_monsters = {
             "Eagle claws",
             "Eagle eye gems",
             "Eagle-shaped jewelry"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Sky",
-            "Dash",
-            "Fjord",
-            "Walter",
-            "Deaton"
-        ],
-        "5 Common Last Names": [
-            "Seabird",
-            "Feathers",
-            "Skystorm",
-            "Flightz",
-            "Roar"
         ]
     },
-    "Giant_Elk": {
+    "Giant-Elk": {
         "Name": "Giant Elk",
         "Type": "Huge beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "42 (5d12 + 10)",
         "Speed": "60 ft.",
@@ -17584,7 +14986,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "14 (+2)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Charge. If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone."
         ],
         "Actions": [
@@ -17657,29 +15059,12 @@ dnd_monsters = {
             "Hide Armor",
             "Elk Horn Drums",
             "Elk Horn Spear"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Calia",
-            "Kaira",
-            "Uri",
-            "Delphi",
-            "Lorikeet"
-        ],
-        "5 Common Last Names": [
-            "Lancier",
-            "Hart",
-            "Roan",
-            "Crag",
-            "Vigil"
         ]
     },
-    "Giant_Fire_Beetle": {
+    "Giant-Fire-Beetle": {
         "Name": "Giant Fire Beetle",
         "Type": "Small beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "4 (1d6 + 1)",
         "Speed": "30 ft.",
@@ -17692,7 +15077,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "7 (-2)",
         "CHA": "3 (-4)",
-        "Features": [
+        "features": [
             "Illumination. The beetle sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
         ],
         "Actions": [
@@ -17760,29 +15145,12 @@ dnd_monsters = {
             "Beetle mandibles",
             "Glow crystals",
             "Glowwater"
-        ],
-        "Race": "Beetle",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Bur checked",
-            "Forarcher",
-            "Fuegrinder",
-            "Flamewing",
-            "Goraner"
-        ],
-        "5 Common Last Names": [
-            "Firespitter",
-            "Burnstrike",
-            "Tindsting",
-            "Griddletoast",
-            "Forgeguarder"
         ]
     },
-    "Giant_Frog": {
+    "Giant-Frog": {
         "Name": "Giant Frog",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11",
         "Hit Points": "18 (4d8)",
         "Speed": "30 ft., swim 30 ft.",
@@ -17796,7 +15164,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "10 (+0)",
         "CHA": "3 (-4)",
-        "Features": [
+        "features": [
             "Amphibious. The frog can breathe air and water.",
             "Standing Leap. The frog's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
         ],
@@ -17866,29 +15234,12 @@ dnd_monsters = {
             "Pearls",
             "Ancient coins",
             "Mysterious objects"
-        ],
-        "Race": "Beast",
-        "Class": "Huge Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Croako",
-            "Kermat",
-            "Bubba",
-            "Gumbo",
-            "Toes"
-        ],
-        "5 Common Last Names": [
-            "Ribbit",
-            "Boing",
-            "Paddler",
-            "Bubblestream",
-            "Leaper"
         ]
     },
-    "Giant_Goat": {
+    "Giant-Goat": {
         "Name": "Giant Goat",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11 (natural armor)",
         "Hit Points": "19 (3d10 + 3)",
         "Speed": "40 ft.",
@@ -17901,7 +15252,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "12 (+1)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Charge. If the goat moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 (2d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
             "Sure-Footed. The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
         ],
@@ -17975,29 +15326,12 @@ dnd_monsters = {
             "Large thick hooves",
             "Rare herbs and plants",
             "Gold or precious gems"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Buttercup",
-            "Heather",
-            "Bramble",
-            "Daisy",
-            "Honey"
-        ],
-        "5 Common Last Names": [
-            "Hornhallow",
-            "Hornedfield",
-            "Clovendon",
-            "Velzey",
-            "Fellfield"
         ]
     },
-    "Giant_Hyena": {
+    "Giant-Hyena": {
         "Name": "Giant Hyena",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "45 (6d10 + 12)",
         "Speed": "50 ft.",
@@ -18011,7 +15345,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Rampage. When the hyena reduces a creature to 0 hit points with a melee attack on its turn, the hyena can take a bonus action to move up to half its speed and make a bite attack."
         ],
         "Actions": [
@@ -18080,29 +15414,12 @@ dnd_monsters = {
             "Polished gems and stones",
             "Rare animal pelts and hides",
             "Small piles of coins and jewelry"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Hakim",
-            "Karim",
-            "Juma",
-            "Tawheed",
-            "Fahd"
-        ],
-        "5 Common Last Names": [
-            "Musaramba",
-            "Naromurinyi",
-            "Gokora",
-            "Kushaba",
-            "Salimu"
         ]
     },
-    "Giant_Lizard": {
+    "Giant-Lizard": {
         "Name": "Giant Lizard",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12 (natural armor)",
         "Hit Points": "19 (3d10 + 3)",
         "Speed": "30 ft., climb 30 ft.",
@@ -18115,7 +15432,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "10 (+0)",
         "CHA": "5 (-3)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +4 to hit, reach 5 ft., one target.Hit: 6 (1d8 + 2) piercing damage."
         ],
@@ -18182,29 +15499,12 @@ dnd_monsters = {
             "Giant Lizard Claw",
             "Giant Lizard Scale",
             "Giant Lizard Tooth"
-        ],
-        "Race": "Reptile",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Etamor",
-            "Igagor",
-            "Levixu",
-            "Mulorv",
-            "Vahati"
-        ],
-        "5 Common Last Names": [
-            "Scaledfang",
-            "Swiftclaw",
-            "Sharpstone",
-            "Hidescale",
-            "Stoneskull"
         ]
     },
-    "Giant_Octopus": {
+    "Giant-Octopus": {
         "Name": "Giant Octopus",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11",
         "Hit Points": "52 (8d10 + 8)",
         "Speed": "10 ft., swim 60 ft.",
@@ -18218,7 +15518,7 @@ dnd_monsters = {
         "INT": "4 (-3)",
         "WIS": "10 (+0)",
         "CHA": "4 (-3)",
-        "Features": [
+        "features": [
             "Hold Breath. While out of water, the octopus can hold its breath for 1 hour.",
             "Underwater Camouflage. The octopus has advantage on Dexterity (Stealth) checks made while underwater.",
             "Water Breathing. The octopus can breathe only underwater."
@@ -18279,29 +15579,12 @@ dnd_monsters = {
             "Pearls",
             "Sea glass",
             "Tentacles"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Arazzi",
-            "Krakko",
-            "Blipp",
-            "Klop",
-            "Lop"
-        ],
-        "5 Common Last Names": [
-            "Gill-maker",
-            "Watersong",
-            "The Tentacled",
-            "Tintamare",
-            "Fated Feather"
         ]
     },
-    "Giant_Owl": {
+    "Giant-Owl": {
         "Name": "Giant Owl",
         "Type": "Large beast",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "12",
         "Hit Points": "19 (3d10 + 3)",
         "Speed": "5 ft., fly 60 ft.",
@@ -18315,7 +15598,7 @@ dnd_monsters = {
         "INT": "8 (-1)",
         "WIS": "13 (+1)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Flyby. The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach.",
             "Keen Hearing and Sight. The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight."
         ],
@@ -18385,29 +15668,12 @@ dnd_monsters = {
             "Books and scrolls on nature and the forest.",
             "Musical instruments crafted from wood.",
             "Potions and elixirs related to nature."
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Hooton",
-            "Arpio",
-            "Nyctea",
-            "Thekla",
-            "Hubris"
-        ],
-        "5 Common Last Names": [
-            "Talon",
-            "Fetters",
-            "Calyx",
-            "Fledge",
-            "Glidesail"
         ]
     },
-    "Giant_Poisonous_Snake": {
+    "Giant-Poisonous-Snake": {
         "Name": "Giant Poisonous Snake",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "14",
         "Hit Points": "11 (2d8 + 2)",
         "Speed": "30 ft., swim 30 ft.",
@@ -18421,7 +15687,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "10 (+0)",
         "CHA": "3 (-4)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +6 to hit, reach 10 ft., one target.Hit: 6 (1d4 + 4) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one."
         ],
@@ -18487,29 +15753,12 @@ dnd_monsters = {
             "Snake Scales",
             "Snake Venom",
             "Snake Pouch"
-        ],
-        "Race": "Reptiles and Amphibians",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Slither",
-            "Rattle",
-            "Asp",
-            "Cobra",
-            "Viper"
-        ],
-        "5 Common Last Names": [
-            "Hisser",
-            "Biter",
-            "Stygian",
-            "Tailer",
-            "Striker"
         ]
     },
-    "Giant_Rat": {
+    "Giant-Rat": {
         "Name": "Giant Rat",
         "Type": "Small beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "7 (2d6)",
         "Speed": "30 ft.",
@@ -18522,7 +15771,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "10 (+0)",
         "CHA": "4 (-3)",
-        "Features": [
+        "features": [
             "Keen Smell. The rat has advantage on Wisdom (Perception) checks that rely on smell.",
             "Pack Tactics. The rat has advantage on an attack roll against a creature if at least one of the rat's allies is within 5 feet of the creature and the ally isn't incapacitated."
         ],
@@ -18593,29 +15842,12 @@ dnd_monsters = {
             "a pair of dice",
             "a piece of cloth ",
             "a broken vial"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Squeak",
-            "Fang",
-            "Tooth",
-            "Bite",
-            "Cheese"
-        ],
-        "5 Common Last Names": [
-            "Furr",
-            "Sniffer",
-            "Taster",
-            "Ripclaw",
-            "Scurry"
         ]
     },
-    "Giant_Scorpion": {
+    "Giant-Scorpion": {
         "Name": "Giant Scorpion",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "52 (7d10 + 14)",
         "Speed": "40 ft.",
@@ -18628,7 +15860,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "9 (-1)",
         "CHA": "3 (-4)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Multiattack. The scorpion makes three attacks: two with its claws and one with its sting.",
             "Claw.Melee Weapon Attack: +4 to hit, reach 5 ft., one target.Hit: 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 12). The scorpion has two claws, each of which can grapple only one target.",
@@ -18693,29 +15925,12 @@ dnd_monsters = {
             "Scroll of Protection",
             "Elixir of Poison Resistance",
             "Potion of Healing"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Solivar",
-            "Skaylar",
-            "Tukvahn",
-            "Xethan",
-            "Yurick"
-        ],
-        "5 Common Last Names": [
-            "Krell",
-            "Neffen",
-            "Sehn",
-            "Snen",
-            "Tilman"
         ]
     },
-    "Giant_Sea_Horse": {
+    "Giant-Sea-Horse": {
         "Name": "Giant Sea Horse",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "16 (3d10)",
         "Speed": "0 ft., swim 40 ft.",
@@ -18728,7 +15943,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Charge. If the sea horse moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) bludgeoning damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
             "Water Breathing. The sea horse can breathe only underwater."
         ],
@@ -18803,29 +16018,12 @@ dnd_monsters = {
             "Rare Fish",
             "Sea Explorers' Kit",
             "Giant Sea Horse Saddle"
-        ],
-        "Race": "Celestial",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Flipper",
-            "Prancer",
-            "Jumper",
-            "Salty",
-            "Neptune"
-        ],
-        "5 Common Last Names": [
-            "Fin",
-            "Mane",
-            "Tide",
-            "Fishtail",
-            "Hoof"
         ]
     },
-    "Giant_Shark": {
+    "Giant-Shark": {
         "Name": "Giant Shark",
         "Type": "Huge beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "126 (11d12 + 55)",
         "Speed": "0 ft., swim 50 ft.",
@@ -18839,7 +16037,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "10 (+0)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Blood Frenzy. The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
             "Water Breathing. The shark can breathe only underwater."
         ],
@@ -18909,29 +16107,12 @@ dnd_monsters = {
             "Pearl Necklace",
             "Shark Fin",
             "Tusk"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Gulo",
-            "Ripper",
-            "Tsung",
-            "Krahk",
-            "Muish"
-        ],
-        "5 Common Last Names": [
-            "Finroar",
-            "Scaletooth",
-            "Deathsnout",
-            "Sandscream",
-            "Steelpalm"
         ]
     },
-    "Giant_Spider": {
+    "Giant-Spider": {
         "Name": "Giant Spider",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "26 (4d10 + 4)",
         "Speed": "30 ft., climb 30 ft.",
@@ -18945,7 +16126,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "11 (+0)",
         "CHA": "4 (-3)",
-        "Features": [
+        "features": [
             "Spider Climb. The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
             "Web Sense. While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.",
             "Web Walker. The spider ignores movement restrictions caused by webbing."
@@ -19017,29 +16198,12 @@ dnd_monsters = {
             "Small magical trinkets",
             "Hides and teeth from smaller animals",
             "Rare herbs found within webs"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Charlotte",
-            "Shaneeqa",
-            "Jennifer",
-            "Anansi",
-            "Aragog"
-        ],
-        "5 Common Last Names": [
-            "Webster",
-            "Crawford",
-            "Legspin",
-            "Evans",
-            "Prescott"
         ]
     },
-    "Giant_Toad": {
+    "Giant-Toad": {
         "Name": "Giant Toad",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11",
         "Hit Points": "39 (6d10 + 6)",
         "Speed": "20 ft., swim 40 ft.",
@@ -19052,7 +16216,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "10 (+0)",
         "CHA": "3 (-4)",
-        "Features": [
+        "features": [
             "Amphibious. The toad can breathe air and water.",
             "Standing Leap. The toad's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
         ],
@@ -19125,29 +16289,12 @@ dnd_monsters = {
             "Giant Toad Slime (used in potions)",
             "Giant Toad Liquor (used in alchemy)",
             "Giant Toad Warts (used in charms)"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Croaker",
-            "Hopper",
-            "Kevok",
-            "Thib",
-            "Row"
-        ],
-        "5 Common Last Names": [
-            "Tadpole",
-            "Kelp",
-            "Muck",
-            "Hop",
-            "Splay"
         ]
     },
-    "Giant_Vulture": {
+    "Giant-Vulture": {
         "Name": "Giant Vulture",
         "Type": "Large beast",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "10",
         "Hit Points": "22 (3d10 + 6)",
         "Speed": "10 ft., fly 60 ft.",
@@ -19161,7 +16308,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "12 (+1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Keen Sight and Smell. The vulture has advantage on Wisdom (Perception) checks that rely on sight or smell.",
             "Pack Tactics. The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally isn't incapacitated."
         ],
@@ -19235,29 +16382,12 @@ dnd_monsters = {
             "Rare herbs and plants",
             "Shiny trinkets and baubles",
             "Gems and precious metals"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Axe",
-            "Bill",
-            "John",
-            "Ozzy",
-            "Pete"
-        ],
-        "5 Common Last Names": [
-            "Beak",
-            "Gnarler",
-            "Kite",
-            "Plumage",
-            "Talon"
         ]
     },
-    "Giant_Wasp": {
+    "Giant-Wasp": {
         "Name": "Giant Wasp",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "13 (3d8)",
         "Speed": "10 ft., fly 50 ft.",
@@ -19270,7 +16400,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "10 (+0)",
         "CHA": "3 (-4)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Sting.Melee Weapon Attack: +4 to hit, reach 5 ft., one creature.Hit: 5 (1d6 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
         ],
@@ -19333,29 +16463,12 @@ dnd_monsters = {
             "Large insect wings",
             "Abdomen chitin plates",
             "Bones of small prey animals"
-        ],
-        "Race": "Beasts",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Bees",
-            "Swarm",
-            "Hive",
-            "Parasite",
-            "Venom"
-        ],
-        "5 Common Last Names": [
-            "Blade",
-            "Jamess",
-            "Kuchaen",
-            "Raphson",
-            "Lotz"
         ]
     },
-    "Giant_Weasel": {
+    "Giant-Weasel": {
         "Name": "Giant Weasel",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13",
         "Hit Points": "9 (2d8)",
         "Speed": "40 ft.",
@@ -19369,7 +16482,7 @@ dnd_monsters = {
         "INT": "4 (-3)",
         "WIS": "12 (+1)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Keen Hearing and Smell. The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell."
         ],
         "Actions": [
@@ -19441,29 +16554,12 @@ dnd_monsters = {
             "String of teeth",
             "Poisonous plants",
             "Random potions"
-        ],
-        "Race": "Beast",
-        "Class": "none",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Elfin",
-            "Fen",
-            "Mustard",
-            "Tod",
-            "Weezle"
-        ],
-        "5 Common Last Names": [
-            "Brindle",
-            "Stoat",
-            "Vixen",
-            "Buck",
-            "Fitch"
         ]
     },
-    "Giant_Wolf_Spider": {
+    "Giant-Wolf-Spider": {
         "Name": "Giant Wolf Spider",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13",
         "Hit Points": "11 (2d8 + 2)",
         "Speed": "40 ft., climb 40 ft.",
@@ -19477,7 +16573,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "12 (+1)",
         "CHA": "4 (-3)",
-        "Features": [
+        "features": [
             "Spider Climb. The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
             "Web Sense. While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.",
             "Web Walker. The spider ignores movement restrictions caused by webbing."
@@ -19553,29 +16649,12 @@ dnd_monsters = {
             "Bag of Spider Legs",
             "Bag of Spider Silk",
             "Small Totem of a Giant Wolf Spider"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Leger",
-            "Gretel",
-            "Jorakh",
-            "Perina",
-            "Moresco"
-        ],
-        "5 Common Last Names": [
-            "Oples",
-            "Lenury",
-            "Penhook",
-            "Yurmin",
-            "Arenel"
         ]
     },
-    "Gibbering_Mouther": {
+    "Gibbering-Mouther": {
         "Name": "Gibbering Mouther",
         "Type": "Medium aberration",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "9",
         "Hit Points": "67 (9d8 + 27)",
         "Speed": "10 ft., swim 10 ft.",
@@ -19589,7 +16668,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "10 (+0)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Aberrant Ground. The ground in a 10-foot radius around the mouther is doughlike difficult terrain. Each creature that starts its turn in that area must succeed on a DC 10 Strength saving throw or have its",
             "Gibbering. The mouther babbles incoherently while it can see any creature and isn't incapacitated. Each creature that starts its turn within 20 feet of the mouther and can hear the gibbering must succeed on a DC 10 Wisdom saving throw. On a failure, the creature can't take reactions until the start of its next turn and rolls a d8 to determine what it does during its turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. On a 7 or 8, the creature makes a melee attack against a randomly determined creature within its reach or does nothing if it can't make such an attack."
         ],
@@ -19658,29 +16737,12 @@ dnd_monsters = {
             "Jewelry",
             "Gems",
             "Magic items and spell scrolls"
-        ],
-        "Race": "Aberration",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Gibba",
-            "Bababa",
-            "Bubber",
-            "Soser",
-            "Goobly"
-        ],
-        "5 Common Last Names": [
-            "Mumbler",
-            "Mouthy",
-            "Gibberman",
-            "Speaker",
-            "Bumpali"
         ]
     },
     "Glabrezu": {
         "Name": "Glabrezu",
         "Type": "Large fiend (Demon)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "157 (15d10 + 75)",
         "Speed": "40 ft.",
@@ -19697,7 +16759,7 @@ dnd_monsters = {
         "INT": "19 (+4)",
         "WIS": "17 (+3)",
         "CHA": "16 (+3)",
-        "Features": [
+        "features": [
             "Innate Spellcasting. The glabrezu's spellcasting ability is Intelligence (spell save DC 16). The glabrezu can innately cast the following spells, requiring no material components:",
             "Magic Resistance. The glabrezu has advantage on saving throws against spells and other magical effects."
         ],
@@ -19770,29 +16832,12 @@ dnd_monsters = {
             "Magical Items",
             "Valuable Artifacts",
             "Powerful Magic Items"
-        ],
-        "Race": "Demon",
-        "Class": "Fiend",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Kel'thalas",
-            "Math'alas",
-            "Nye'kol",
-            "Ees'alas",
-            "Sih'zil"
-        ],
-        "5 Common Last Names": [
-            "Grammaks",
-            "Krabarus",
-            "Baneratus",
-            "Jacobrath",
-            "Vrakarentos"
         ]
     },
     "Gladiator": {
         "Name": "Gladiator",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any alignment",
+        "alignment": "any alignment",
         "Armor Class": "16 (studded leather, shield)",
         "Hit Points": "112 (15d8 + 45)",
         "Speed": "30 ft.",
@@ -19810,7 +16855,7 @@ dnd_monsters = {
         "Reactions": [
             "Parry. The gladiator adds 3 to its AC against one melee attack that would hit it. To do so, the gladiator must see the attacker and be wielding a melee weapon."
         ],
-        "Features": [
+        "features": [
             "Brave. The gladiator has advantage on saving throws against being frightened.",
             "Brute. A melee weapon deals one extra die of its damage when the gladiator hits with it (included in the attack)."
         ],
@@ -19888,29 +16933,12 @@ dnd_monsters = {
             "Magical weapons",
             "Potions of healing",
             "Scrolls of protection"
-        ],
-        "Race": "Human",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Maximos",
-            "Gaius",
-            "Quintus",
-            "Claudius",
-            "Aurelius"
-        ],
-        "5 Common Last Names": [
-            "Fulvius",
-            "Aemilius",
-            "Plautus",
-            "Fabius",
-            "Valerianus"
         ]
     },
     "Gnoll": {
         "Name": "Gnoll",
         "Type": "Medium humanoid (Gnoll)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "15 (hide armor, shield)",
         "Hit Points": "22 (5d8)",
         "Speed": "30 ft.",
@@ -19923,7 +16951,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "10 (+0)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Rampage. When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
         ],
         "Actions": [
@@ -20001,29 +17029,12 @@ dnd_monsters = {
             "Scraps of leather armor",
             "Scavenged trinkets",
             "Herbs and potions"
-        ],
-        "Race": "Humanoid (Gnoll)",
-        "Class": "Warrior",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Yeenoghu",
-            "Ahconomo",
-            "Gnarsh",
-            "Thren",
-            "Zudock"
-        ],
-        "5 Common Last Names": [
-            "Hyena Claw",
-            "Ragebite",
-            "Gorefang",
-            "Gnoll Fang",
-            "Axe-Skull"
         ]
     },
-    "Gnoll_Fang_of_Yeenoghu": {
+    "Gnoll-Fang-of-Yeenoghu": {
         "Name": "Gnoll Fang of Yeenoghu",
         "Type": "Medium fiend (Gnoll)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "14 (hide armor)",
         "Hit Points": "65 (10d8 + 20)",
         "Speed": "30 ft.",
@@ -20037,7 +17048,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "11 (+0)",
         "CHA": "13 (+1)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -20110,29 +17121,12 @@ dnd_monsters = {
             "Magical Items",
             "Splintered Shields",
             "Amulets"
-        ],
-        "Race": "Gnoll",
-        "Class": "Fang of Yeenoghu",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Grancheffa",
-            "Baka",
-            "Ugral",
-            "Ulbag",
-            "Oghrin"
-        ],
-        "5 Common Last Names": [
-            "Yeenoghuards",
-            "Church Bashers",
-            "Scourges",
-            "Hurrells",
-            "Reavers"
         ]
     },
-    "Gnoll_Pack_Lord": {
+    "Gnoll-Pack-Lord": {
         "Name": "Gnoll Pack Lord",
         "Type": "Medium humanoid (Gnoll)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "15 (chain shirt)",
         "Hit Points": "49 (9d8 + 9)",
         "Speed": "30 ft.",
@@ -20145,7 +17139,7 @@ dnd_monsters = {
         "INT": "8 (-1)",
         "WIS": "11 (+0)",
         "CHA": "9 (-1)",
-        "Features": [
+        "features": [
             "Rampage. When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
         ],
         "Actions": [
@@ -20225,29 +17219,12 @@ dnd_monsters = {
             "Pieces of armor",
             "Weapons",
             "Random trinkets"
-        ],
-        "Race": "Gnoll",
-        "Class": "Pack Lord",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Kylik",
-            "Kirtok",
-            "Kurthok",
-            "Kalphac",
-            "Korik"
-        ],
-        "5 Common Last Names": [
-            "Brokenskull",
-            "Crazymane",
-            "Ragelord",
-            "Gorefang",
-            "Maliciousblood"
         ]
     },
     "Goat": {
         "Name": "Goat",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "10",
         "Hit Points": "4 (1d8)",
         "Speed": "40 ft.",
@@ -20260,7 +17237,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "10 (+0)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Charge. If the goat moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 2 (1d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 10 Strength saving throw or be knocked prone.",
             "Sure-Footed. The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
         ],
@@ -20328,29 +17305,12 @@ dnd_monsters = {
             "Horn",
             "Raw goat meat",
             "Goat milk"
-        ],
-        "Race": "Animal",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Buttercup",
-            "Billy",
-            "Brash",
-            "Billyjo",
-            "Brianna"
-        ],
-        "5 Common Last Names": [
-            "Buckers",
-            "Barnes",
-            "Bleaters",
-            "Brown-Fur",
-            "Baaaa"
         ]
     },
     "Goblin": {
         "Name": "Goblin",
         "Type": "Small humanoid (Goblinoid)",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "15 (leather armor, shield)",
         "Hit Points": "7 (2d6)",
         "Speed": "30 ft.",
@@ -20364,7 +17324,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "8 (-1)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Nimble Escape. The goblin can take the Disengage or Hide action as a bonus action on each of its turns."
         ],
         "Actions": [
@@ -20439,29 +17399,12 @@ dnd_monsters = {
             "Rations",
             "Potion of Healing",
             "Surprise Badges"
-        ],
-        "Race": "Humanoid (Goblinoid)",
-        "Class": "Rogue",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Gog",
-            "Gork",
-            "Gorg",
-            "Grot",
-            "Grit"
-        ],
-        "5 Common Last Names": [
-            "Gobblefink",
-            "Gubbleums",
-            "Tricklenose",
-            "Spitelip",
-            "Muckfoot"
         ]
     },
-    "Goblin_Boss": {
+    "Goblin-Boss": {
         "Name": "Goblin Boss",
         "Type": "Small humanoid (Goblinoid)",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "17 (chain shirt, shield)",
         "Hit Points": "21 (6d6)",
         "Speed": "30 ft.",
@@ -20478,7 +17421,7 @@ dnd_monsters = {
         "Reactions": [
             "Redirect Attack. When a creature the goblin can see targets it with an attack, the goblin chooses another goblin within 5 feet of it. The two goblins swap places, and the chosen goblin becomes the target instead."
         ],
-        "Features": [
+        "features": [
             "Nimble Escape. The goblin can take the Disengage or Hide action as a bonus action on each of its turns."
         ],
         "Actions": [
@@ -20558,29 +17501,12 @@ dnd_monsters = {
             "Gems and jewelry",
             "Potions and scrolls",
             "Rare artifacts"
-        ],
-        "Race": "Goblin",
-        "Class": "Warrior",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Grog",
-            "Grok",
-            "Grub",
-            "Galt",
-            "Goth"
-        ],
-        "5 Common Last Names": [
-            "Runecutter",
-            "Logsplitter",
-            "Goblinblood",
-            "Stonebinder",
-            "Ogresmasher"
         ]
     },
-    "Gold_Dragon_Wyrmling": {
+    "Gold-Dragon-Wyrmling": {
         "Name": "Gold Dragon Wyrmling",
         "Type": "Medium dragon (Metallic)",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "60 (8d8 + 24)",
         "Speed": "30 ft., fly 60 ft., swim 30 ft.",
@@ -20596,7 +17522,7 @@ dnd_monsters = {
         "INT": "14 (+2)",
         "WIS": "11 (+0)",
         "CHA": "16 (+3)",
-        "Features": [
+        "features": [
             "Amphibious. The dragon can breathe air and water."
         ],
         "Actions": [
@@ -20671,29 +17597,12 @@ dnd_monsters = {
             "Magical artifacts",
             "Finely crafted weapons and armor",
             "Potion and scrolls"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Sor\u00e9l",
-            "Galizur",
-            "sanuar",
-            "Arakshil",
-            "Lucan"
-        ],
-        "5 Common Last Names": [
-            "Shimmerwing",
-            "Goldenhorn",
-            "Starbrow",
-            "Goldflight",
-            "Sunhorn"
         ]
     },
     "Gorgon": {
         "Name": "Gorgon",
         "Type": "Large monstrosity",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "114 (12d10 + 48)",
         "Speed": "40 ft.",
@@ -20708,7 +17617,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Trampling Charge. If the gorgon moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 16 Strength saving throw or be knocked prone. If the target is prone, the gorgon can make one attack with its hooves against it as a bonus action."
         ],
         "Actions": [
@@ -20779,29 +17688,12 @@ dnd_monsters = {
             "Finely crafted weapons and armor.",
             "Rarely, a powerful magical relic.",
             "Small trinkets of luck or protection."
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Kallisto",
-            "Medusa",
-            "Stheno",
-            "Euryale",
-            "Eurymedon"
-        ],
-        "5 Common Last Names": [
-            "Petraeus",
-            "Agaetes",
-            "Ophios",
-            "Ophis",
-            "Gorgos"
         ]
     },
-    "Gray_Ooze": {
+    "Gray-Ooze": {
         "Name": "Gray Ooze",
         "Type": "Medium ooze",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "8",
         "Hit Points": "22 (3d8 + 9)",
         "Speed": "10 ft., climb 10 ft.",
@@ -20817,7 +17709,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "6 (-2)",
         "CHA": "2 (-4)",
-        "Features": [
+        "features": [
             "Amorphous. The ooze can move through a space as narrow as 1 inch wide without squeezing.",
             "Corrode Metal. Any nonmagical weapon made of metal that hits the ooze corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal that hits the ooze is destroyed after dealing damage.",
             "False Appearance. While the ooze remains motionless, it is indistinguishable from an oily pool or wet rock."
@@ -20892,10 +17784,10 @@ dnd_monsters = {
             "Rare herbs and plants"
         ]
     },
-    "Green_Dragon_Wyrmling": {
+    "Green-Dragon-Wyrmling": {
         "Name": "Green Dragon Wyrmling",
         "Type": "Medium dragon (Chromatic)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "38 (7d8 + 7)",
         "Speed": "30 ft., fly 60 ft., swim 30 ft.",
@@ -20912,7 +17804,7 @@ dnd_monsters = {
         "INT": "14 (+2)",
         "WIS": "11 (+0)",
         "CHA": "13 (+1)",
-        "Features": [
+        "features": [
             "Amphibious. The dragon can breathe air and water."
         ],
         "Actions": [
@@ -20985,29 +17877,12 @@ dnd_monsters = {
             "Green dragon's eye gemstone",
             "Green dragon eggs",
             "Green dragon's breath elixir"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragonborn",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Esgauth",
-            "Jeetla",
-            "Ossel",
-            "Quarith",
-            "Vserkin"
-        ],
-        "5 Common Last Names": [
-            "Greenblade",
-            "Greenfang",
-            "Greentooth",
-            "Greenwing",
-            "Scalebane"
         ]
     },
-    "Green_Hag": {
+    "Green-Hag": {
         "Name": "Green Hag",
         "Type": "Medium fey",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "82 (11d8 + 33)",
         "Speed": "30 ft.",
@@ -21021,7 +17896,7 @@ dnd_monsters = {
         "INT": "13 (+1)",
         "WIS": "14 (+2)",
         "CHA": "14 (+2)",
-        "Features": [
+        "features": [
             "Amphibious. The hag can breathe air and water.",
             "Innate Spellcasting. The hag's innate spellcasting ability is Charisma (spell save DC 12). She can innately cast the following spells, requiring no material components:",
             "Mimicry. The hag can mimic animal sounds and humanoid voices. A creature that hears the sounds can tell they are imitations with a successful DC 14 Wisdom (Insight) check."
@@ -21105,7 +17980,7 @@ dnd_monsters = {
     "Griffon": {
         "Name": "Griffon",
         "Type": "Large monstrosity",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "59 (7d10 + 21)",
         "Speed": "30 ft., fly 80 ft.",
@@ -21119,7 +17994,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "13 (+1)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Keen Sight. The griffon has advantage on Wisdom (Perception) checks that rely on sight."
         ],
         "Actions": [
@@ -21193,29 +18068,12 @@ dnd_monsters = {
             "Silver ring with griffon head",
             "Griffon talon",
             "Potion of strength/courage"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Magnus",
-            "Matilda",
-            "Maximus",
-            "Maya",
-            "Monty"
-        ],
-        "5 Common Last Names": [
-            "Skywhiskers",
-            "Cloudbound",
-            "Windvelocity",
-            "Skytalon",
-            "Cloudsurfer"
         ]
     },
     "Grimlock": {
         "Name": "Grimlock",
         "Type": "Medium humanoid (Grimlock)",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "11",
         "Hit Points": "11 (2d8 + 2)",
         "Speed": "30 ft.",
@@ -21230,7 +18088,7 @@ dnd_monsters = {
         "INT": "9 (-1)",
         "WIS": "8 (-1)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Blind Senses. The grimlock can't use its blindsight while deafened and unable to smell.",
             "Keen Hearing and Smell. The grimlock has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
             "Stone Camouflage. The grimlock has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
@@ -21305,29 +18163,12 @@ dnd_monsters = {
             "Magical weapons and armor",
             "Potions",
             "Scrolls"
-        ],
-        "Race": "Humanoid",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Uzgog",
-            "Grurk",
-            "Skurv",
-            "Xuglorg",
-            "Urk"
-        ],
-        "5 Common Last Names": [
-            "Glargh",
-            "Winglor",
-            "Xoogity",
-            "Furggeny",
-            "Crubgull"
         ]
     },
     "Guard": {
         "Name": "Guard",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any alignment",
+        "alignment": "any alignment",
         "Armor Class": "16 (chain shirt, shield)",
         "Hit Points": "11 (2d8 + 2)",
         "Speed": "30 ft.",
@@ -21341,7 +18182,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "11 (+0)",
         "CHA": "10 (+0)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Spear.Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target.Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack."
         ],
@@ -21419,29 +18260,12 @@ dnd_monsters = {
             "Potions",
             "Jewelry",
             "Weapon Parts"
-        ],
-        "Race": "Human",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Aldo",
-            "Carlos",
-            "Eddie",
-            "Fernando",
-            "Giovanni"
-        ],
-        "5 Common Last Names": [
-            "Robles",
-            "Trujillo",
-            "Romero",
-            "Ortega",
-            "Flores"
         ]
     },
-    "Guardian_Naga": {
+    "Guardian-Naga": {
         "Name": "Guardian Naga",
         "Type": "Large monstrosity",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "18 (natural armor)",
         "Hit Points": "127 (15d10 + 45)",
         "Speed": "40 ft.",
@@ -21457,7 +18281,7 @@ dnd_monsters = {
         "INT": "16 (+3)",
         "WIS": "19 (+4)",
         "CHA": "18 (+4)",
-        "Features": [
+        "features": [
             "Rejuvenation. If it dies, the naga returns to life in 1d6 days and regains all its hit points. Only awishspell can prevent this trait from functioning.",
             "Spellcasting. The naga is an 11th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following cleric spells prepared:"
         ],
@@ -21532,29 +18356,12 @@ dnd_monsters = {
             "Magical artifacts and items",
             "Gems and jewels",
             "Enchanted armors and weapons"
-        ],
-        "Race": "Monstrosity",
-        "Class": "N/A",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Zulist",
-            "Gwemlix",
-            "Theora",
-            "Estiva",
-            "Nataro"
-        ],
-        "5 Common Last Names": [
-            "Krilver",
-            "Marnise",
-            "Fazonn",
-            "Vyelv",
-            "Dedric"
         ]
     },
     "Gynosphinx": {
         "Name": "Gynosphinx",
         "Type": "Large monstrosity",
-        "Alignment": "lawful neutral",
+        "alignment": "lawful neutral",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "136 (16d10 + 48)",
         "Speed": "40 ft., fly 60 ft.",
@@ -21577,7 +18384,7 @@ dnd_monsters = {
             "Teleport (Costs 2 Actions). The sphinx magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.",
             "Cast a Spell (Costs 3 Actions). The sphinx casts a spell from its list of prepared spells, using a spell slot as normal."
         ],
-        "Features": [
+        "features": [
             "Inscrutable. The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage.",
             "Magic Weapons. The sphinx's weapon attacks are magical.",
             "Spellcasting. The sphinx is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following wizard spells prepared:"
@@ -21652,29 +18459,12 @@ dnd_monsters = {
             "Mystical artifacts",
             "Divine artifacts",
             "Illusionary magic potions"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Amorette",
-            "Dazzare",
-            "Farrarre",
-            "Gitesh",
-            "Kriyam"
-        ],
-        "5 Common Last Names": [
-            "Angkor",
-            "Charnie",
-            "Illaam",
-            "Quoram",
-            "Vivred"
         ]
     },
-    "Half_Red_Dragon_Veteran": {
+    "Half-Red-Dragon-Veteran": {
         "Name": "Half-Red Dragon Veteran",
         "Type": "Medium humanoid (Human)",
-        "Alignment": "any alignment",
+        "alignment": "any alignment",
         "Armor Class": "18 (plate)",
         "Hit Points": "65 (10d8 + 20)",
         "Speed": "30 ft.",
@@ -21689,7 +18479,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "11 (+0)",
         "CHA": "10 (+0)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Multiattack. The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack.",
             "Longsword.Melee Weapon Attack: +5 to hit, reach 5 ft., one target.Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands.",
@@ -21772,7 +18562,7 @@ dnd_monsters = {
     "Harpy": {
         "Name": "Harpy",
         "Type": "Medium monstrosity",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "11",
         "Hit Points": "38 (7d8 + 7)",
         "Speed": "20 ft., fly 40 ft.",
@@ -21785,7 +18575,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "10 (+0)",
         "CHA": "13 (+1)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Multiattack. The harpy makes two attacks: one with its claws and one with its club.",
             "Claws.Melee Weapon Attack: +3 to hit, reach 5 ft., one target.Hit: 6 (2d4 + 1) slashing damage.",
@@ -21856,29 +18646,12 @@ dnd_monsters = {
             "Magical Weapons",
             "Magical Armor",
             "Magic Items"
-        ],
-        "Race": "Monstrosity",
-        "Class": "No Class",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Athelia",
-            "Clovia",
-            "Ilythia",
-            "Lonnia",
-            "Mervia"
-        ],
-        "5 Common Last Names": [
-            "Crowfeather",
-            "Crossbeak",
-            "Volbayre",
-            "Windcaller",
-            "Webberson"
         ]
     },
     "Hawk": {
         "Name": "Hawk",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13",
         "Hit Points": "1 (1d4 - 1)",
         "Speed": "10 ft., fly 60 ft.",
@@ -21892,7 +18665,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "14 (+2)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Keen Sight. The hawk has advantage on Wisdom (Perception) checks that rely on sight."
         ],
         "Actions": [
@@ -21962,29 +18735,12 @@ dnd_monsters = {
             "Hawk Talons",
             "Eggs",
             "Eggshells"
-        ],
-        "Race": "Animal",
-        "Class": "Beast",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Aki",
-            "Rook",
-            "Kite",
-            "Frye",
-            "Kester"
-        ],
-        "5 Common Last Names": [
-            "Wingfield",
-            "Skye",
-            "Sparrow",
-            "Featherstone",
-            "Flynn"
         ]
     },
     "Hezrou": {
         "Name": "Hezrou",
         "Type": "Large fiend (Demon)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "16 (natural armor)",
         "Hit Points": "136 (13d10 + 65)",
         "Speed": "30 ft.",
@@ -22001,7 +18757,7 @@ dnd_monsters = {
         "INT": "5 (-3)",
         "WIS": "12 (+1)",
         "CHA": "13 (+1)",
-        "Features": [
+        "features": [
             "Magic Resistance. The hezrou has advantage on saving throws against spells and other magical effects.",
             "Stench. Any creature that starts its turn within 10 feet of the hezrou must succeed on a DC 14 Constitution saving throw or be poisoned until the start of its next turn. On a successful saving throw, the creature is immune to the hezrou's stench for 24 hours."
         ],
@@ -22078,29 +18834,12 @@ dnd_monsters = {
             "Gems",
             "Magic Weapons",
             "Potions"
-        ],
-        "Race": "Demon",
-        "Class": "Fiend",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Pluto",
-            "Oriax",
-            "Naberus",
-            "Gomory",
-            "Amon"
-        ],
-        "5 Common Last Names": [
-            "Gargouille",
-            "Euryale",
-            "Harpyia",
-            "Chimera",
-            "Stymphaliae"
         ]
     },
-    "Hill_Giant": {
+    "Hill-Giant": {
         "Name": "Hill Giant",
         "Type": "Huge giant",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "105 (10d12 + 40)",
         "Speed": "40 ft.",
@@ -22114,7 +18853,7 @@ dnd_monsters = {
         "INT": "5 (-3)",
         "WIS": "9 (-1)",
         "CHA": "6 (-2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Multiattack. The giant makes two greatclub attacks.",
             "Greatclub.Melee Weapon Attack: +8 to hit, reach 10 ft., one target.Hit: 18 (3d8 + 5) bludgeoning damage.",
@@ -22188,29 +18927,12 @@ dnd_monsters = {
             "gemstones",
             "flintlock rifles and ammunition",
             "leather armor and hide armor"
-        ],
-        "Race": "Giant",
-        "Class": "None",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Tharrak",
-            "Krolm",
-            "Uzgor",
-            "Furgo",
-            "Yurk"
-        ],
-        "5 Common Last Names": [
-            "Stonecrusher",
-            "Thunderslam",
-            "Turniptoes",
-            "Hillcrusher",
-            "Ironfist"
         ]
     },
     "Hippogriff": {
         "Name": "Hippogriff",
         "Type": "Large monstrosity",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11",
         "Hit Points": "19 (3d10 + 3)",
         "Speed": "40 ft., fly 60 ft.",
@@ -22224,7 +18946,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Keen Sight. The hippogriff has advantage on Wisdom (Perception) checks that rely on sight."
         ],
         "Actions": [
@@ -22295,29 +19017,12 @@ dnd_monsters = {
             "Eagle Claws",
             "Horse Bones",
             "Horse Hair"
-        ],
-        "Race": "Magical Beast",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Lariska",
-            "Thairon",
-            "Kereck",
-            "Fendrik",
-            "Eddan"
-        ],
-        "5 Common Last Names": [
-            "Hawkrider",
-            "Squallhowl",
-            "Grimdawn",
-            "Skystalker",
-            "Wyvern"
         ]
     },
     "Hobgoblin": {
         "Name": "Hobgoblin",
         "Type": "Medium humanoid (Goblinoid)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "18 (chain mail, shield)",
         "Hit Points": "11 (2d8 + 2)",
         "Speed": "30 ft.",
@@ -22330,7 +19035,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "10 (+0)",
         "CHA": "9 (-1)",
-        "Features": [
+        "features": [
             "Martial Advantage. Once per turn, the hobgoblin can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated."
         ],
         "Actions": [
@@ -22404,29 +19109,12 @@ dnd_monsters = {
             "Gems",
             "Plate Armor",
             "Crossbow"
-        ],
-        "Race": "Humanoid",
-        "Class": "Warrior",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Azzakh",
-            "Karno",
-            "Sabgok",
-            "Uglamore",
-            "Zogmugot"
-        ],
-        "5 Common Last Names": [
-            "Cutthroat",
-            "Hammerfist",
-            "Ironblade",
-            "Shieldbiter",
-            "Wolfkiller"
         ]
     },
-    "Hobgoblin_Captain": {
+    "Hobgoblin-Captain": {
         "Name": "Hobgoblin Captain",
         "Type": "Medium humanoid (Goblinoid)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "17 (half plate)",
         "Hit Points": "39 (6d8 + 12)",
         "Speed": "30 ft.",
@@ -22439,7 +19127,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "10 (+0)",
         "CHA": "13 (+1)",
-        "Features": [
+        "features": [
             "Martial Advantage. Once per turn, the hobgoblin can deal an extra 10 (3d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated."
         ],
         "Actions": [
@@ -22519,10 +19207,10 @@ dnd_monsters = {
             "Jewelry or trinkets of high value"
         ]
     },
-    "Hobgoblin_Warlord": {
+    "Hobgoblin-Warlord": {
         "Name": "Hobgoblin Warlord",
         "Type": "Medium humanoid (Goblinoid)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "20 (plate, shield)",
         "Hit Points": "97 (13d8 + 39)",
         "Speed": "30 ft.",
@@ -22539,7 +19227,7 @@ dnd_monsters = {
         "Reactions": [
             "Parry. The hobgoblin adds 3 to its AC against one melee attack that would hit it. To do so, the hobgoblin must see the attacker and be wielding a melee weapon."
         ],
-        "Features": [
+        "features": [
             "Martial Advantage. Once per turn, the hobgoblin can deal an extra 14 (4d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated."
         ],
         "Actions": [
@@ -22629,7 +19317,7 @@ dnd_monsters = {
     "Homunculus": {
         "Name": "Homunculus",
         "Type": "Tiny construct",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "5 (2d4)",
         "Speed": "20 ft., fly 40 ft.",
@@ -22644,7 +19332,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "10 (+0)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Telepathic Bond. While the homunculus is on the same plane of existence as its master, it can magically convey what it senses to its master, and the two can communicate telepathically."
         ],
         "Actions": [
@@ -22718,29 +19406,12 @@ dnd_monsters = {
             "Gems",
             "Potions & elixirs",
             "Magical items"
-        ],
-        "Race": "Construct",
-        "Class": "Unknown",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Hob",
-            "Bug",
-            "Max",
-            "Bob",
-            "John"
-        ],
-        "5 Common Last Names": [
-            "Buttons",
-            "Gears",
-            "Bolts",
-            "Springs",
-            "Wires"
         ]
     },
-    "Horned_Devil": {
+    "Horned-Devil": {
         "Name": "Horned Devil",
         "Type": "Large fiend (Devil)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "18 (natural armor)",
         "Hit Points": "178 (17d10 + 85)",
         "Speed": "20 ft., fly 60 ft.",
@@ -22757,7 +19428,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "16 (+3)",
         "CHA": "17 (+3)",
-        "Features": [
+        "features": [
             "Devil's Sight. Magical darkness doesn't impede the devil's darkvision.",
             "Magic Resistance. The devil has advantage on saving throws against spells and other magical effects."
         ],
@@ -22840,29 +19511,12 @@ dnd_monsters = {
             "magical artifacts",
             "gems and precious metals",
             "golems and constructs"
-        ],
-        "Race": "Devil",
-        "Class": "Fiend",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Infernus",
-            "Krezk",
-            "Verik",
-            "Malebog",
-            "Crest"
-        ],
-        "5 Common Last Names": [
-            "Maelfel",
-            "Serpentari",
-            "Comiren",
-            "Hornseeker",
-            "Silverhorn"
         ]
     },
-    "Hunter_Shark": {
+    "Hunter-Shark": {
         "Name": "Hunter Shark",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12 (natural armor)",
         "Hit Points": "45 (6d10 + 12)",
         "Speed": "0 ft., swim 40 ft.",
@@ -22876,7 +19530,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "10 (+0)",
         "CHA": "4 (-3)",
-        "Features": [
+        "features": [
             "Blood Frenzy. The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
             "Water Breathing. The shark can breathe only underwater."
         ],
@@ -22949,29 +19603,12 @@ dnd_monsters = {
             "Shark fin",
             "Shark liver oil",
             "Shark vertebrae"
-        ],
-        "Race": "Beast",
-        "Class": "Aquatic Creature",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Sam",
-            "Mako",
-            "Fin",
-            "Tuna",
-            "Angel"
-        ],
-        "5 Common Last Names": [
-            "Sharktooth",
-            "Bloodjaw",
-            "Ripper",
-            "Teeth",
-            "Striker"
         ]
     },
     "Hydra": {
         "Name": "Hydra",
         "Type": "Huge monstrosity",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "172 (15d12 + 75)",
         "Speed": "30 ft., swim 30 ft.",
@@ -22985,7 +19622,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "10 (+0)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Hold Breath. The hydra can hold its breath for 1 hour.",
             "Multiple Heads. The hydra has five heads. While it has more than one head, the hydra has advantage on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious. Whenever the hydra takes 25 or more damage in a single turn, one of its heads dies. If all its heads die, the hydra dies. At the end of its turn, it grows two heads for each of its heads that died since its last turn, unless it has taken fire damage since its last turn. The hydra regains 10 hit points for each head regrown in this way.",
             "Reactive Heads. For each head the hydra has beyond one, it gets an extra reaction that can be used only for opportunity attacks.",
@@ -23066,29 +19703,12 @@ dnd_monsters = {
             "Potions",
             "Gems and jewelry",
             "Art objects"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Callin",
-            "Cephalus",
-            "Evander",
-            "Gillan",
-            "Eurypyle"
-        ],
-        "5 Common Last Names": [
-            "Hydrium",
-            "Hydrak",
-            "Hydraiss",
-            "Hydrul",
-            "Hydrakis"
         ]
     },
     "Hyena": {
         "Name": "Hyena",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11",
         "Hit Points": "5 (1d8 + 1)",
         "Speed": "50 ft.",
@@ -23102,7 +19722,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Pack Tactics. The hyena has advantage on an attack roll against a creature if at least one of the hyena's allies is within 5 feet of the creature and the ally isn't incapacitated."
         ],
         "Actions": [
@@ -23171,29 +19791,12 @@ dnd_monsters = {
             "Scavenged Hide",
             "Hyena Tooth Necklace",
             "Mystic Stones"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Lazuli",
-            "Kai",
-            "Chang",
-            "Shamir",
-            "Nimbus"
-        ],
-        "5 Common Last Names": [
-            "Goldenfur",
-            "Lightchaser",
-            "Ravencrest",
-            "Nightmane",
-            "Starborne"
         ]
     },
-    "Ice_Devil": {
+    "Ice-Devil": {
         "Name": "Ice Devil",
         "Type": "Large fiend (Devil)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "18 (natural armor)",
         "Hit Points": "180 (19d10 + 76)",
         "Speed": "40 ft.",
@@ -23210,7 +19813,7 @@ dnd_monsters = {
         "INT": "18 (+4)",
         "WIS": "15 (+2)",
         "CHA": "18 (+4)",
-        "Features": [
+        "features": [
             "Devil's Sight. Magical darkness doesn't impede the devil's darkvision.",
             "Magic Resistance. The devil has advantage on saving throws against spells and other magical effects."
         ],
@@ -23289,29 +19892,12 @@ dnd_monsters = {
             "Frozen Potions",
             "Ice Amulet",
             "Icy Chain Mail"
-        ],
-        "Race": "Devil",
-        "Class": "Fiend",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Frost",
-            "Shard",
-            "Chill",
-            "Chillbane",
-            "Cryos"
-        ],
-        "5 Common Last Names": [
-            "Coldrender",
-            "Frostmare",
-            "Glacialheart",
-            "Frozenflame",
-            "Iceguardian"
         ]
     },
-    "Ice_Mephit": {
+    "Ice-Mephit": {
         "Name": "Ice Mephit",
         "Type": "Small elemental",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "11",
         "Hit Points": "21 (6d6)",
         "Speed": "30 ft., fly 30 ft.",
@@ -23328,7 +19914,7 @@ dnd_monsters = {
         "INT": "9 (-1)",
         "WIS": "11 (+0)",
         "CHA": "12 (+1)",
-        "Features": [
+        "features": [
             "Death Burst. When the mephit dies, it explodes in a burst of jagged ice. Each creature within 5 feet of it must make a DC 10 Dexterity saving throw, taking 4 (1d8) slashing damage on a failed save, or half as much damage on a successful one.",
             "False Appearance. While the mephit remains motionless, it is indistinguishable from an ordinary shard of ice.",
             "Innate Spellcasting (1/Day). The mephit can innately castfog cloud, requiring no material components. Its innate spellcasting ability is Charisma."
@@ -23403,29 +19989,12 @@ dnd_monsters = {
             "Vest of Snow and Ice",
             "Ice Shards",
             "Ice Sword"
-        ],
-        "Race": "Elemental",
-        "Class": "Mephit",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Frost",
-            "Boreal",
-            "Glacial",
-            "Chill",
-            "Fimbul"
-        ],
-        "5 Common Last Names": [
-            "Heartsmith",
-            "Frostclaw",
-            "Borespark",
-            "Chillflicker",
-            "Icerage"
         ]
     },
     "Imp": {
         "Name": "Imp",
         "Type": "Tiny fiend (Devil",
-        "Alignment": "Shapechanger), lawful evil",
+        "alignment": "Shapechanger), lawful evil",
         "Armor Class": "13",
         "Hit Points": "10 (3d4 + 3)",
         "Speed": "20 ft., fly 40 ft.",
@@ -23442,7 +20011,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "12 (+1)",
         "CHA": "14 (+2)",
-        "Features": [
+        "features": [
             "Shapechanger. The imp can use its action to polymorph into a beast form that resembles a rat (speed 20 ft.), a raven (20 ft., fly 60 ft.), or a spider (20 ft., climb 20 ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
             "Devil's Sight. Magical darkness doesn't impede the imp's darkvision.",
             "Magic Resistance. The imp has advantage on saving throws against spells and other magical effects."
@@ -23521,29 +20090,12 @@ dnd_monsters = {
             "Gems",
             "Magical Items",
             "Scrolls"
-        ],
-        "Race": "Fiend",
-        "Class": "Demon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Gommy",
-            "Scruffy",
-            "Ibble",
-            "Nibbit",
-            "Squibble"
-        ],
-        "5 Common Last Names": [
-            "Pillich",
-            "Gibblet",
-            "Meeplar",
-            "Ickity",
-            "Diz"
         ]
     },
-    "Intellect_Devourer": {
+    "Intellect-Devourer": {
         "Name": "Intellect Devourer",
         "Type": "Tiny aberration",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "12",
         "Hit Points": "21 (6d4 + 6)",
         "Speed": "40 ft.",
@@ -23559,7 +20111,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "11 (+0)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Detect Sentience. The intellect devourer can sense the presence and location of any creature within 300 feet of it that has an Intelligence of 3 or higher, regardless of interposing barriers, unless the creature is protected by amind blankspell."
         ],
         "Actions": [
@@ -23632,29 +20184,12 @@ dnd_monsters = {
             "Magical Scrolls",
             "Magical Books & Tomes",
             "Rare Artifacts"
-        ],
-        "Race": "aberration",
-        "Class": "monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Geth",
-            "Jhon",
-            "Orak",
-            "Zenith",
-            "Gareth"
-        ],
-        "5 Common Last Names": [
-            "Strokato",
-            "Haloster",
-            "Lounel",
-            "Creeness",
-            "Ardesey"
         ]
     },
-    "Invisible_Stalker": {
+    "Invisible-Stalker": {
         "Name": "Invisible Stalker",
         "Type": "Medium elemental",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "14",
         "Hit Points": "104 (16d8 + 32)",
         "Speed": "50 ft., fly 50 ft. (hover)",
@@ -23671,7 +20206,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "15 (+2)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "Invisibility. The stalker is invisible.",
             "Faultless Tracker. The stalker is given a quarry by its summoner. The stalker knows the direction and distance to its quarry as long as the two of them are on the same plane of existence. The stalker also knows the location of its summoner."
         ],
@@ -23733,10 +20268,10 @@ dnd_monsters = {
             "Mysterious objects"
         ]
     },
-    "Iron_Golem": {
+    "Iron-Golem": {
         "Name": "Iron Golem",
         "Type": "Large construct",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "20 (natural armor)",
         "Hit Points": "210 (20d10 + 100)",
         "Speed": "30 ft.",
@@ -23751,7 +20286,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "11 (+0)",
         "CHA": "1 (-5)",
-        "Features": [
+        "features": [
             "Fire Absorption. Whenever the golem is subjected to fire damage, it takes no damage and instead regains a number of hit points equal to the fire damage dealt.",
             "Immutable Form. The golem is immune to any spell or effect that would alter its form.",
             "Magic Resistance. The golem has advantage on saving throws against spells and other magical effects.",
@@ -23831,29 +20366,12 @@ dnd_monsters = {
             "Rare Weapons",
             "Highly Valuable Metals",
             "Rare Armors"
-        ],
-        "Race": "Construct",
-        "Class": "Elemental",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Whirr",
-            "Chink",
-            "Chonk",
-            "Clink",
-            "Clank"
-        ],
-        "5 Common Last Names": [
-            "Thump",
-            "Flex",
-            "Mender",
-            "Smith",
-            "Gears"
         ]
     },
     "Jackal": {
         "Name": "Jackal",
         "Type": "Small beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "3 (1d6)",
         "Speed": "40 ft.",
@@ -23867,7 +20385,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "12 (+1)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Keen Hearing and Smell. The jackal has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
             "Pack Tactics. The jackal has advantage on an attack roll against a creature if at least one of the jackal's allies is within 5 feet of the creature and the ally isn't incapacitated."
         ],
@@ -23937,29 +20455,12 @@ dnd_monsters = {
             "Jackal teeth",
             "Jackal skulls",
             "Jackal bones"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Kallik",
-            "Nikita",
-            "Jahkim",
-            "Antinua",
-            "Zeben"
-        ],
-        "5 Common Last Names": [
-            "Packmaster",
-            "Huntclaw",
-            "Skyroc",
-            "Uprib",
-            "Scavenger"
         ]
     },
-    "Killer_Whale": {
+    "Killer-Whale": {
         "Name": "Killer Whale",
         "Type": "Huge beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12 (natural armor)",
         "Hit Points": "90 (12d12 + 12)",
         "Speed": "0 ft., swim 60 ft.",
@@ -23973,7 +20474,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "12 (+1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Echolocation. The whale can't use its blindsight while deafened.",
             "Hold Breath. The whale can hold its breath for 30 minutes.",
             "Keen Hearing. The whale has advantage on Wisdom (Perception) checks that rely on hearing."
@@ -24048,29 +20549,12 @@ dnd_monsters = {
             "Kraken's Teeth Necklace",
             "Sunken Chest",
             "Glimmerroot Herbs"
-        ],
-        "Race": "Animal",
-        "Class": "Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Thula",
-            "Grindy",
-            "Templeton",
-            "Timote",
-            "William"
-        ],
-        "5 Common Last Names": [
-            "Caddell",
-            "Hermanns",
-            "Madigan",
-            "Streeper",
-            "Carozza"
         ]
     },
     "Knight": {
         "Name": "Knight",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any alignment",
+        "alignment": "any alignment",
         "Armor Class": "18 (plate)",
         "Hit Points": "52 (8d8 + 16)",
         "Speed": "30 ft.",
@@ -24087,7 +20571,7 @@ dnd_monsters = {
         "Reactions": [
             "Parry. The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon."
         ],
-        "Features": [
+        "features": [
             "Brave. The knight has advantage on saving throws against being frightened."
         ],
         "Actions": [
@@ -24165,29 +20649,12 @@ dnd_monsters = {
             "Armor",
             "Helmet",
             "Longbow"
-        ],
-        "Race": "Human",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Giles",
-            "Barry",
-            "Edward",
-            "Matthew",
-            "Lancelot"
-        ],
-        "5 Common Last Names": [
-            "Marshall",
-            "Corwin",
-            "Stanwick",
-            "Cullen",
-            "Ironside"
         ]
     },
     "Kobold": {
         "Name": "Kobold",
         "Type": "Small humanoid (Kobold)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "12",
         "Hit Points": "5 (2d6 - 2)",
         "Speed": "30 ft.",
@@ -24200,7 +20667,7 @@ dnd_monsters = {
         "INT": "8 (-1)",
         "WIS": "7 (-2)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Sunlight Sensitivity. While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.",
             "Pack Tactics. The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't incapacitated."
         ],
@@ -24280,29 +20747,12 @@ dnd_monsters = {
             "Magic Scrolls/Items",
             "Trap Components",
             "Heavy Iron Keys"
-        ],
-        "Race": "Humanoid, Dragonborn",
-        "Class": "Warrior, Wizard",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Cross",
-            "Wizened",
-            "Kobl",
-            "Rax",
-            "Yor,"
-        ],
-        "5 Common Last Names": [
-            "Tix",
-            "Xor",
-            "Krum",
-            "Jesk",
-            "Ulix"
         ]
     },
     "Kraken": {
         "Name": "Kraken",
         "Type": "Gargantuan monstrosity (Titan)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "18 (natural armor)",
         "Hit Points": "472 (27d20 + 189)",
         "Speed": "20 ft., swim 60 ft.",
@@ -24324,7 +20774,7 @@ dnd_monsters = {
             "Lightning Storm (Costs 2 Actions). The kraken uses Lightning Storm.",
             "Ink Cloud (Costs 3 Actions). While underwater, the kraken expels an ink cloud in a 60-foot radius. The cloud spreads around corners, and that area is heavily obscured to creatures other than the kraken. Each creature other than the kraken that ends its turn there must succeed on a DC 23 Constitution saving throw, taking 16 (3d10) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears at the end of the kraken's next turn."
         ],
-        "Features": [
+        "features": [
             "Amphibious. The kraken can breathe air and water.",
             "Freedom of Movement. The kraken ignores difficult terrain, and magical effects can't reduce its speed or cause it to be restrained. It can spend 5 feet of movement to escape from nonmagical restraints or being grappled.",
             "Siege Monster. The kraken deals double damage to objects and structures."
@@ -24404,29 +20854,12 @@ dnd_monsters = {
             "Encrusted Pearl Necklaces",
             "Gemstones",
             "Coin Purses filled with Silver and Gold Coins"
-        ],
-        "Race": "Giant",
-        "Class": "Monstrosity",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Krask",
-            "Gorg",
-            "Parus",
-            "Myrh",
-            "Thalamo"
-        ],
-        "5 Common Last Names": [
-            "Grumph",
-            "Iberus",
-            "Tilos",
-            "Yamam",
-            "Charyb"
         ]
     },
     "Lamia": {
         "Name": "Lamia",
         "Type": "Large monstrosity",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "97 (13d10 + 26)",
         "Speed": "30 ft.",
@@ -24440,7 +20873,7 @@ dnd_monsters = {
         "INT": "14 (+2)",
         "WIS": "15 (+2)",
         "CHA": "16 (+3)",
-        "Features": [
+        "features": [
             "Innate Spellcasting. The lamia's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components."
         ],
         "Actions": [
@@ -24516,29 +20949,12 @@ dnd_monsters = {
             "Magical Talismans",
             "Ancient artifacts",
             "Mystic potion"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Gikua",
-            "Pherenike",
-            "Khanusra",
-            "Antigone",
-            "Nafaar"
-        ],
-        "5 Common Last Names": [
-            "Salencis",
-            "Tantalous",
-            "Damalis",
-            "Timarete",
-            "Kleopatra"
         ]
     },
     "Lemure": {
         "Name": "Lemure",
         "Type": "Medium fiend (Devil)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "7",
         "Hit Points": "13 (3d8)",
         "Speed": "15 ft.",
@@ -24554,7 +20970,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "11 (+0)",
         "CHA": "3 (-4)",
-        "Features": [
+        "features": [
             "Devil's Sight. Magical darkness doesn't impede the lemure's darkvision.",
             "Hellish Rejuvenation. A lemure that dies in the Nine Hells comes back to life with all its hit points in 1d10 days unless it is killed by a good-aligned creature with ablessspell cast on that creature or its remains are sprinkled with holy water."
         ],
@@ -24629,29 +21045,12 @@ dnd_monsters = {
             "Magic weapons",
             "Magic armor",
             "Jewelry"
-        ],
-        "Race": "Devil",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Gyfer",
-            "Fistrill",
-            "Hashtooth",
-            "Tembloon",
-            "Moldoo"
-        ],
-        "5 Common Last Names": [
-            "Gutlick",
-            "Gravist",
-            "Grimbol",
-            "Finnarr",
-            "Haggish"
         ]
     },
     "Lich": {
         "Name": "Lich",
         "Type": "Medium undead",
-        "Alignment": "any evil alignment",
+        "alignment": "any evil alignment",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "135 (18d8 + 54)",
         "Speed": "30 ft.",
@@ -24676,7 +21075,7 @@ dnd_monsters = {
             "Frightening Gaze (Costs 2 Actions). The lich fixes its gaze on one creature it can see within 10 feet of it. The target must succeed on a DC 18 Wisdom saving throw against this magic or become frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the lich's gaze for the next 24 hours.",
             "Disrupt Life (Costs 3 Actions). Each non\u2010undead creature within 20 feet of the lich must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one."
         ],
-        "Features": [
+        "features": [
             "Legendary Resistance (3/Day). If the lich fails a saving throw, it can choose to succeed instead.",
             "Rejuvenation. If it has a phylactery, a destroyed lich gains a new body in 1d10 days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the phylactery.",
             "Spellcasting. The lich is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). The lich has the following wizard spells prepared:",
@@ -24759,29 +21158,12 @@ dnd_monsters = {
             "Potions of power",
             "Gems and jewelry",
             "Gold coins"
-        ],
-        "Race": "Undead",
-        "Class": "Spellcaster",
-        "Size": "Medium",
-        "5_Common_First_Names_Specific_To_This_Monster": [
-            "Rahvin",
-            "Uzot",
-            "Mordai",
-            "Tolman",
-            "Lokossa"
-        ],
-        "5_Common_Last_Names_Specific_To_This_Monster": [
-            "Nameless",
-            "the Wise",
-            "the Vengeful",
-            "of Avernus",
-            "the Eternal"
         ]
     },
     "Lizard": {
         "Name": "Lizard",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "10",
         "Hit Points": "2 (1d4)",
         "Speed": "20 ft., climb 20 ft.",
@@ -24794,7 +21176,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "8 (-1)",
         "CHA": "3 (-4)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +0 to hit, reach 5 ft., one target.Hit: 1 piercing damage."
         ],
@@ -24860,29 +21242,12 @@ dnd_monsters = {
             "Lizard hide used for armor",
             "Pouch containing lizard teeth or claws",
             "Snake oil with healing properties"
-        ],
-        "Race": "Reptilian",
-        "Class": "Monstrosity",
-        "Size": "Small to Medium",
-        "5 Common First Names": [
-            "Tep",
-            "Alp",
-            "Spit",
-            "Snap",
-            "Kree"
-        ],
-        "5 Common Last Names": [
-            "Krik",
-            "Krack",
-            "Vlak",
-            "Hiss",
-            "Jeer"
         ]
     },
     "Lizardfolk": {
         "Name": "Lizardfolk",
         "Type": "Medium humanoid (Lizardfolk)",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "15 (natural armor, shield)",
         "Hit Points": "22 (4d8 + 4)",
         "Speed": "30 ft., swim 30 ft.",
@@ -24896,7 +21261,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "12 (+1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Hold Breath. The lizardfolk can hold its breath for 15 minutes."
         ],
         "Actions": [
@@ -24975,29 +21340,12 @@ dnd_monsters = {
             "Totems",
             "Leather Armor",
             "Spears"
-        ],
-        "Race": "Reptilian",
-        "Class": "Warrior",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Udak",
-            "Shatak",
-            "Arotak",
-            "Qagri",
-            "Tomak"
-        ],
-        "5 Common Last Names": [
-            "Stonebight",
-            "Stillstream",
-            "Deepscale",
-            "Friarback",
-            "Trueluck"
         ]
     },
-    "Lizardfolk_Shaman": {
+    "Lizardfolk-Shaman": {
         "Name": "Lizardfolk Shaman",
         "Type": "Medium humanoid (Lizardfolk)",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "27 (5d8 + 5)",
         "Speed": "30 ft., swim 30 ft.",
@@ -25011,7 +21359,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "15 (+2)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Hold Breath. The lizardfolk can hold its breath for 15 minutes.",
             "Spellcasting (Lizardfolk Form Only). The lizardfolk is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The lizardfolk has the following druid spells prepared:"
         ],
@@ -25094,29 +21442,12 @@ dnd_monsters = {
             "Gems and Jewels",
             "Ritual Tools",
             "Carved Totems"
-        ],
-        "Race": "Lizardfolk",
-        "Class": "Shaman",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Aeskar",
-            "Fashok",
-            "Garok",
-            "Kaski",
-            "Kesh"
-        ],
-        "5 Common Last Names": [
-            "Eelbraid",
-            "Crocstabber",
-            "Mudtreader",
-            "Swampcaller",
-            "Wetfoot"
         ]
     },
     "Mage": {
         "Name": "Mage",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any alignment",
+        "alignment": "any alignment",
         "Armor Class": "12 (15 with",
         "Hit Points": "40 (9d8)",
         "Speed": "30 ft.",
@@ -25131,7 +21462,7 @@ dnd_monsters = {
         "INT": "17 (+3)",
         "WIS": "12 (+1)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "Spellcasting. The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage has the following wizard spells prepared:"
         ],
         "Actions": [
@@ -25205,29 +21536,12 @@ dnd_monsters = {
             "Magical Scrolls",
             "Mystical Gems",
             "Magical Potions"
-        ],
-        "Race": "Human",
-        "Class": "Mage",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Garrick",
-            "Jaspar",
-            "Mardren",
-            "Claudia",
-            "Ludwig"
-        ],
-        "5 Common Last Names": [
-            "Marcurio",
-            "Ugoreth",
-            "Blazedrake",
-            "Azurehearth",
-            "Dawnfire"
         ]
     },
-    "Magma_Mephit": {
+    "Magma-Mephit": {
         "Name": "Magma Mephit",
         "Type": "Small elemental",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "11",
         "Hit Points": "22 (5d6 + 5)",
         "Speed": "30 ft., fly 30 ft.",
@@ -25244,7 +21558,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "10 (+0)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Death Burst. When the mephit dies, it explodes in a burst of lava. Each creature within 5 feet of it must make a DC 11 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one.",
             "False Appearance. While the mephit remains motionless, it is indistinguishable from an ordinary mound of magma.",
             "Innate Spellcasting (1/Day). The mephit can innately castheat metal(spell save DC 10), requiring no material components. Its innate spellcasting ability is Charisma."
@@ -25319,29 +21633,12 @@ dnd_monsters = {
             "Scorched Coins",
             "Smoke Pouches",
             "Volcanic Crystal"
-        ],
-        "Race": "Elemental",
-        "Class": "Mephit",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Bunsen",
-            "Forgey",
-            "Fiero",
-            "Glitterflame",
-            "Firefly"
-        ],
-        "5 Common Last Names": [
-            "Crackleflame",
-            "Heatscar",
-            "Magmist",
-            "Thumbstone",
-            "Lavaflow"
         ]
     },
     "Magmin": {
         "Name": "Magmin",
         "Type": "Small elemental",
-        "Alignment": "chaotic neutral",
+        "alignment": "chaotic neutral",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "9 (2d6 + 2)",
         "Speed": "30 ft.",
@@ -25356,7 +21653,7 @@ dnd_monsters = {
         "INT": "8 (-1)",
         "WIS": "11 (+0)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Death Burst. When the magmin dies, it explodes in a burst of fire and magma. Each creature within 10 feet of it must make a DC 11 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one. Flammable objects that aren't being worn or carried in that area are ignited.",
             "Ignited Illumination. As a bonus action, the magmin can set itself ablaze or extinguish its flames. While ablaze, the magmin sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
         ],
@@ -25427,29 +21724,12 @@ dnd_monsters = {
             "Magical Fire-Elemental Weapons",
             "Magical Armor",
             "Magical Amulet of Fire Resistance"
-        ],
-        "Race": "Elemental",
-        "Class": "Monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Damstra",
-            "Joren",
-            "Gurney",
-            "Hitalda",
-            "Ren"
-        ],
-        "5 Common Last Names": [
-            "Magrobe",
-            "Varius",
-            "Vestin",
-            "Orozax",
-            "Byro"
         ]
     },
     "Mammoth": {
         "Name": "Mammoth",
         "Type": "Huge beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "126 (11d12 + 55)",
         "Speed": "40 ft.",
@@ -25462,7 +21742,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "11 (+0)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Trampling Charge. If the mammoth moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 18 Strength saving throw or be knocked prone. If the target is prone, the mammoth can make one stomp attack against it as a bonus action."
         ],
         "Actions": [
@@ -25532,29 +21812,12 @@ dnd_monsters = {
             "Ivory Shards",
             "Rawhide",
             "Teeth"
-        ],
-        "Race": "Beast",
-        "Class": " -- ",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Drome",
-            "Hugh",
-            "Hildar",
-            "Vandan",
-            "Urian"
-        ],
-        "5 Common Last Names": [
-            "Thrumbolt",
-            "Bellowhorn",
-            "Crushstone",
-            "Tusktreader",
-            "Tuskwell"
         ]
     },
     "Manticore": {
         "Name": "Manticore",
         "Type": "Large monstrosity",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "68 (8d10 + 24)",
         "Speed": "30 ft., fly 50 ft.",
@@ -25567,7 +21830,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "12 (+1)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Tail Spike Regrowth. The manticore has twenty-four tail spikes. Used spikes regrow when the manticore finishes a long rest."
         ],
         "Actions": [
@@ -25641,29 +21904,12 @@ dnd_monsters = {
             "Sharp claws and tusks",
             "Leather hide armor",
             "Gems"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Haralan",
-            "Malagon",
-            "Ghorlan",
-            "Coran",
-            "Othlon"
-        ],
-        "5 Common Last Names": [
-            "Wyrmsbreath",
-            "Heronshield",
-            "Scalebender",
-            "Stingtail",
-            "Stonescream"
         ]
     },
     "Marilith": {
         "Name": "Marilith",
         "Type": "Large fiend (Demon)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "18 (natural armor)",
         "Hit Points": "189 (18d10 + 90)",
         "Speed": "40 ft.",
@@ -25683,7 +21929,7 @@ dnd_monsters = {
         "Reactions": [
             "Parry. The marilith adds 5 to its AC against one melee attack that would hit it. To do so, the marilith must see the attacker and be wielding a melee weapon."
         ],
-        "Features": [
+        "features": [
             "Magic Resistance. The marilith has advantage on saving throws against spells and other magical effects.",
             "Magic Weapons. The marilith's weapon attacks are magical.",
             "Reactive. The marilith can take one reaction on every turn in a combat."
@@ -25764,29 +22010,12 @@ dnd_monsters = {
             "Magical Artifacts",
             "Gems and Jewelry",
             "Rare Ingredients"
-        ],
-        "Race": "Demon",
-        "Class": "Fiend",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Cibilien",
-            "Lajaya",
-            "Manibozho",
-            "Novzala",
-            "Yune"
-        ],
-        "5 Common Last Names": [
-            "Cawikas",
-            "Edeprat",
-            "Fennid",
-            "Gastetrix",
-            "Yalrael"
         ]
     },
     "Mastiff": {
         "Name": "Mastiff",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "5 (1d8 + 1)",
         "Speed": "40 ft.",
@@ -25800,7 +22029,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "12 (+1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Keen Hearing and Smell. The mastiff has advantage on Wisdom (Perception) checks that rely on hearing or smell."
         ],
         "Actions": [
@@ -25873,29 +22102,12 @@ dnd_monsters = {
             "Gems",
             "Weapons",
             "Armor"
-        ],
-        "Race": "Animal",
-        "Class": "Monster",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Mighty",
-            "Brave",
-            "Fearless",
-            "Gentle",
-            "Loyal"
-        ],
-        "5 Common Last Names": [
-            "Fang",
-            "Ruff",
-            "Bite",
-            "Growl",
-            "Sprint"
         ]
     },
     "Medusa": {
         "Name": "Medusa",
         "Type": "Medium monstrosity",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "127 (17d8 + 51)",
         "Speed": "30 ft.",
@@ -25909,7 +22121,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "13 (+1)",
         "CHA": "15 (+2)",
-        "Features": [
+        "features": [
             "Petrifying Gaze. When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a DC 14 Constitution saving throw if the medusa isn't incapacitated and can see the creature. If the saving throw fails by 5 or more, the creature is instantly petrified. Otherwise, a creature that fails the save begins to turn to stone and is restrained. The restrained creature must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the creature is freed by thegreater restorationspell or other magic. Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save. If the medusa sees itself reflected on a polished surface within 30 feet of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze."
         ],
         "Actions": [
@@ -25970,29 +22182,12 @@ dnd_monsters = {
             "Magic weapons",
             "Magic armor",
             "Rare magical items"
-        ],
-        "Race": "Gorgon",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Medus",
-            "Styx",
-            "Leon",
-            "Mercy",
-            "Onyx"
-        ],
-        "5 Common Last Names": [
-            "Viper",
-            "Snake",
-            "Coil",
-            "Stony",
-            "Glare"
         ]
     },
     "Merfolk": {
         "Name": "Merfolk",
         "Type": "Medium humanoid (Merfolk)",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "11",
         "Hit Points": "11 (2d8 + 2)",
         "Speed": "10 ft., swim 40 ft.",
@@ -26006,7 +22201,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "11 (+0)",
         "CHA": "12 (+1)",
-        "Features": [
+        "features": [
             "Amphibious. The merfolk can breathe air and water."
         ],
         "Actions": [
@@ -26081,29 +22276,12 @@ dnd_monsters = {
             "Gems",
             "Magical scrolls",
             "Rare gems"
-        ],
-        "Race": "Humaniod",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Blaise",
-            "Coral",
-            "Mateo",
-            "Taryn",
-            "Vania"
-        ],
-        "5 Common Last Names": [
-            "Coralbeard",
-            "Sarlocker",
-            "Finlanger",
-            "Wildshigh",
-            "Waverunner"
         ]
     },
     "Merrow": {
         "Name": "Merrow",
         "Type": "Large monstrosity",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "45 (6d10 + 12)",
         "Speed": "10 ft., swim 40 ft.",
@@ -26116,7 +22294,7 @@ dnd_monsters = {
         "INT": "8 (-1)",
         "WIS": "10 (+0)",
         "CHA": "9 (-1)",
-        "Features": [
+        "features": [
             "Amphibious. The merrow can breathe air and water."
         ],
         "Actions": [
@@ -26189,29 +22367,12 @@ dnd_monsters = {
             "Seaweed",
             "Gold Coins",
             "Jewelry"
-        ],
-        "Race": "Giant",
-        "Class": "Aquatic Monstrous Humanoid",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Dorrin",
-            "Lochmar",
-            "Suuzan",
-            "Froon",
-            "Kraal"
-        ],
-        "5 Common Last Names": [
-            "Kelpbeard",
-            "Seaheaver",
-            "Umberclaw",
-            "Stonescale",
-            "Shorecrusher"
         ]
     },
     "Mezzoloth": {
         "Name": "Mezzoloth",
         "Type": "Medium fiend (Yugoloth)",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "18 (natural armor)",
         "Hit Points": "75 (10d8 + 30)",
         "Speed": "40 ft.",
@@ -26228,7 +22389,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "10 (+0)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "Innate Spellcasting. The mezzoloth's innate spellcasting ability is Charisma (spell save DC 11). The mezzoloth can innately cast the following spells, requiring no material components:",
             "Magic Resistance. The mezzoloth has advantage on saving throws against spells and other magical effects.",
             "Magic Weapons. The mezzoloth's weapon attacks are magical."
@@ -26310,29 +22471,12 @@ dnd_monsters = {
             "Armor of protection",
             "Scrolls of magical protection",
             "Enchanted jewelry"
-        ],
-        "Race": "Yugoloth",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Darazaq",
-            "Hadarai",
-            "Ixtab",
-            "Maganon",
-            "Raxivort"
-        ],
-        "5 Common Last Names": [
-            "Gulvox",
-            "Hezrou",
-            "Mu'Rakath",
-            "Syssarian",
-            "Vroxath"
         ]
     },
     "Mimic": {
         "Name": "Mimic",
         "Type": "Medium monstrosity (Shapechanger)",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "12 (natural armor)",
         "Hit Points": "58 (9d8 + 18)",
         "Speed": "15 ft.",
@@ -26348,7 +22492,7 @@ dnd_monsters = {
         "INT": "5 (-3)",
         "WIS": "13 (+1)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Shapechanger. The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
             "Adhesive (Object Form Only). The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also grappled by it (escape DC 13). Ability checks made to escape this grapple have disadvantage.",
             "False Appearance (Object Form Only). While the mimic remains motionless, it is indistinguishable from an ordinary object.",
@@ -26422,29 +22566,12 @@ dnd_monsters = {
             "Magic items",
             "Armour pieces",
             "Weapons"
-        ],
-        "Race": "Construct",
-        "Class": "Aberration",
-        "Size": "Various",
-        "5 Common First Names": [
-            "Closer",
-            "Lurker",
-            "Athena",
-            "Pretender",
-            "TrapJaw"
-        ],
-        "5 Common Last Names": [
-            "Shapeshifter",
-            "Mutator",
-            "Doommaker",
-            "Deceiver",
-            "Pretense"
         ]
     },
     "Minotaur": {
         "Name": "Minotaur",
         "Type": "Large monstrosity",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "76 (9d10 + 27)",
         "Speed": "40 ft.",
@@ -26458,7 +22585,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "16 (+3)",
         "CHA": "9 (-1)",
-        "Features": [
+        "features": [
             "Charge. If the minotaur moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone.",
             "Labyrinthine Recall. The minotaur can perfectly recall any path it has traveled.",
             "Reckless. At the start of its turn, the minotaur can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
@@ -26535,29 +22662,12 @@ dnd_monsters = {
             "Arms and Armor",
             "Spices and Potions",
             "Other Valuables"
-        ],
-        "Race": "monstrosity",
-        "Class": "none",
-        "Size": "large",
-        "5 Common First Names": [
-            "Korag",
-            "Raum",
-            "Yezer",
-            "Dorak",
-            "Ulukin"
-        ],
-        "5 Common Last Names": [
-            "Bloodhorn",
-            "Stormhoof",
-            "Greataxe",
-            "Bonecrusher",
-            "Morninghide"
         ]
     },
-    "Minotaur_Skeleton": {
+    "Minotaur-Skeleton": {
         "Name": "Minotaur Skeleton",
         "Type": "Large undead",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "12 (natural armor)",
         "Hit Points": "67 (9d10 + 18)",
         "Speed": "40 ft.",
@@ -26573,7 +22683,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "8 (-1)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Charge. If the skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone."
         ],
         "Actions": [
@@ -26643,29 +22753,12 @@ dnd_monsters = {
             "Set of Silver Cutlery",
             "Tarnished Bronze Helmet",
             "Torn Leather Armor"
-        ],
-        "Race": "Undead",
-        "Class": "Skeleton",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Aeldar",
-            "Dathras",
-            "Horgar",
-            "Kadar",
-            "Naros"
-        ],
-        "5 Common Last Names": [
-            "Crenchom",
-            "Daggar",
-            "Gruntheran",
-            "Fanchom",
-            "Thindor"
         ]
     },
     "Mule": {
         "Name": "Mule",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "10",
         "Hit Points": "11 (2d8 + 2)",
         "Speed": "40 ft.",
@@ -26678,7 +22771,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "10 (+0)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Beast of Burden. The mule is considered to be a Large animal for the purpose of determining its carrying capacity.",
             "Sure-Footed. The mule has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
         ],
@@ -26747,29 +22840,12 @@ dnd_monsters = {
             "Pottery",
             "Small trinkets",
             "Horse/Mule gear"
-        ],
-        "Race": "Beast",
-        "Class": "Non-Player Character",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Murray",
-            "Maximus",
-            "Moose",
-            "Moses",
-            "Maverick"
-        ],
-        "5 Common Last Names": [
-            "Maneuver",
-            "Mane",
-            "Marathon",
-            "Mountain",
-            "Muscle"
         ]
     },
     "Mummy": {
         "Name": "Mummy",
         "Type": "Medium undead",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "11 (natural armor)",
         "Hit Points": "58 (9d8 + 18)",
         "Speed": "20 ft.",
@@ -26787,7 +22863,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "10 (+0)",
         "CHA": "12 (+1)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Multiattack. The mummy can use its Dreadful Glare and makes one attack with its rotting fist.",
             "Rotting Fist.Melee Weapon Attack: +5 to hit, reach 5 ft., one target.Hit: 10 (2d6 + 3) bludgeoning damage plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by theremove cursespell or other magic.",
@@ -26863,29 +22939,12 @@ dnd_monsters = {
             "Holy Relics",
             "Cursed Blades",
             "Banishing Charms"
-        ],
-        "Race": "Undead",
-        "Class": "Monster",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Anubis",
-            "Horus",
-            "Nefertiti",
-            "Senet",
-            "Tutankhamen"
-        ],
-        "5 Common Last Names": [
-            "Ben-Amun",
-            "Hapu",
-            "Ka-Ra",
-            "Mahlah",
-            "Shepsi"
         ]
     },
-    "Mummy_Lord": {
+    "Mummy-Lord": {
         "Name": "Mummy Lord",
         "Type": "Medium undead",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "97 (13d8 + 39)",
         "Speed": "20 ft.",
@@ -26911,7 +22970,7 @@ dnd_monsters = {
             "Channel Negative Energy (Costs 2 Actions). The mummy lord magically unleashes negative energy. Creatures within 60 feet of the mummy lord, including ones behind barriers and around corners, can't regain hit points until the end of the mummy lord's next turn.",
             "Whirlwind of Sand (Costs 2 Actions). The mummy lord magically transforms into a whirlwind of sand, moves up to 60 feet, and reverts to its normal form. While in whirlwind form, the mummy lord is immune to all damage, and it can't be grappled, petrified, knocked prone, restrained, or stunned. Equipment worn or carried by the mummy lord remain in its possession."
         ],
-        "Features": [
+        "features": [
             "Magic Resistance. The mummy lord has advantage on saving throws against spells and other magical effects.",
             "Rejuvenation. A destroyed mummy lord gains a new body in 24 hours if its heart is intact, regaining all its hit points and becoming active again. The new body appears within 5 feet of the mummy lord's heart.",
             "Spellcasting. The mummy lord is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). The mummy lord has the following cleric spells prepared:"
@@ -26991,29 +23050,12 @@ dnd_monsters = {
             "Mystical Trinkets",
             "Tomes of Necromancy",
             "Gold Coins"
-        ],
-        "Race": "Undead",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Mizimar",
-            "Barltekh",
-            "Amonhar",
-            "Ramsingh",
-            "Ninthara"
-        ],
-        "5 Common Last Names": [
-            "Anka",
-            "Isthaf",
-            "Atum",
-            "Mesingeh",
-            "Nefertem"
         ]
     },
-    "Myconid_adult": {
+    "Myconid-adult": {
         "Name": "Myconid adult",
         "Type": "Medium plant",
-        "Alignment": "lawful neutral",
+        "alignment": "lawful neutral",
         "Armor Class": "12 (natural armor)",
         "Hit Points": "22 (4d8 + 4)",
         "Speed": "20 ft.",
@@ -27026,15 +23068,15 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "13 (+1)",
         "CHA": "7 (-2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ]
     },
-    "Myconid_Sovereign": {
+    "Myconid-Sovereign": {
         "Name": "Myconid Sovereign",
         "Type": "Large plant",
-        "Alignment": "lawful neutral",
+        "alignment": "lawful neutral",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "60 (8d10 + 16)",
         "Speed": "30 ft.",
@@ -27047,7 +23089,7 @@ dnd_monsters = {
         "INT": "13 (+1)",
         "WIS": "15 (+2)",
         "CHA": "10 (+0)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -27120,29 +23162,12 @@ dnd_monsters = {
             "Potions of Regeneration",
             "Scrolls of Power Word: Kill",
             "Spore Cap of Clarity"
-        ],
-        "Race": "Fungus",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Strophor",
-            "Strompur",
-            "Strolom",
-            "Gustrom",
-            "Nulossem"
-        ],
-        "5 Common Last Names": [
-            "Loyram",
-            "Voylem",
-            "Gruarm",
-            "Vresharm",
-            "Gestrell"
         ]
     },
-    "Myconid_sprout": {
+    "Myconid-sprout": {
         "Name": "Myconid sprout",
         "Type": "Small plant",
-        "Alignment": "lawful neutral",
+        "alignment": "lawful neutral",
         "Armor Class": "10",
         "Hit Points": "7 (2d6)",
         "Speed": "10 ft.",
@@ -27155,7 +23180,7 @@ dnd_monsters = {
         "INT": "8 (-1)",
         "WIS": "11 (+0)",
         "CHA": "5 (-3)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ]
@@ -27163,7 +23188,7 @@ dnd_monsters = {
     "Nalfeshnee": {
         "Name": "Nalfeshnee",
         "Type": "Large fiend (Demon)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "18 (natural armor)",
         "Hit Points": "184 (16d10 + 96)",
         "Speed": "20 ft., fly 30 ft.",
@@ -27180,7 +23205,7 @@ dnd_monsters = {
         "INT": "19 (+4)",
         "WIS": "12 (+1)",
         "CHA": "15 (+2)",
-        "Features": [
+        "features": [
             "Magic Resistance. The nalfeshnee has advantage on saving throws against spells and other magical effects."
         ],
         "Actions": [
@@ -27258,29 +23283,12 @@ dnd_monsters = {
             "Magical weapons",
             "Magical armor",
             "Scrolls and potions"
-        ],
-        "Race": "Demon",
-        "Class": "Great Old One",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Hethkor",
-            "Aka-Shem",
-            "Xetiran",
-            "Magrin",
-            "Tiri-Many"
-        ],
-        "5 Common Last Names": [
-            "Glubrax",
-            "Vezravon",
-            "Awngidor",
-            "Yethrieh",
-            "Goldumel"
         ]
     },
     "Noble": {
         "Name": "Noble",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any alignment",
+        "alignment": "any alignment",
         "Armor Class": "15 (breastplate)",
         "Hit Points": "9 (2d8)",
         "Speed": "30 ft.",
@@ -27297,7 +23305,7 @@ dnd_monsters = {
         "Reactions": [
             "Parry. The noble adds 2 to its AC against one melee attack that would hit it. To do so, the noble must see the attacker and be wielding a melee weapon."
         ],
-        "Features": [],
+        "features": [],
         "Actions": [
             "Rapier.Melee Weapon Attack: +3 to hit, reach 5 ft., one target.Hit: 5 (1d8 + 1) piercing damage."
         ],
@@ -27375,29 +23383,12 @@ dnd_monsters = {
             "Rare books and scrolls",
             "Coins",
             "Weapons"
-        ],
-        "Race": "Human",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ophra",
-            "Olan",
-            "Milo",
-            "Harlen",
-            "Mara"
-        ],
-        "5 Common Last Names": [
-            "Kenting",
-            "Topper",
-            "Biddle",
-            "Tann",
-            "Grenn"
         ]
     },
-    "Ochre_Jelly": {
+    "Ochre-Jelly": {
         "Name": "Ochre Jelly",
         "Type": "Large ooze",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "8",
         "Hit Points": "45 (6d10 + 12)",
         "Speed": "10 ft., climb 10 ft.",
@@ -27416,35 +23407,18 @@ dnd_monsters = {
         "Reactions": [
             "Split. When a jelly that is Medium or larger is subjected to lightning or slashing damage, it splits into two new jellies if it has at least 10 hit points. Each new jelly has hit points equal to half the original jelly's, rounded down. New jellies are one size smaller than the original jelly."
         ],
-        "Features": [
+        "features": [
             "Amorphous. The jelly can move through a space as narrow as 1 inch wide without squeezing.",
             "Spider Climb. The jelly can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
         ],
         "Actions": [
             "Pseudopod.Melee Weapon Attack: +4 to hit, reach 5 ft., one target.Hit: 9 (2d6 + 2) bludgeoning damage plus 3 (1d6) acid damage."
-        ],
-        "Race": "Ooze",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Jimirr",
-            "Amere",
-            "Yazen",
-            "Saverre",
-            "Chimme"
-        ],
-        "5 Common Last Names": [
-            "Slime",
-            "Muck",
-            "Glompkin",
-            "Gloop",
-            "Grummle"
         ]
     },
     "Octopus": {
         "Name": "Octopus",
         "Type": "Small beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "3 (1d6)",
         "Speed": "5 ft., swim 30 ft.",
@@ -27458,7 +23432,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "10 (+0)",
         "CHA": "4 (-3)",
-        "Features": [
+        "features": [
             "Hold Breath. While out of water, the octopus can hold its breath for 30 minutes.",
             "Underwater Camouflage. The octopus has advantage on Dexterity (Stealth) checks made while underwater.",
             "Water Breathing. The octopus can breathe only underwater."
@@ -27532,29 +23506,12 @@ dnd_monsters = {
             "Octopus tooth necklace (sprite attractor/luck charm)",
             "Octopus hide breastplate (light armor)",
             "Octopus tentacle lasso (weapon)"
-        ],
-        "Race": "Beast",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Lomol",
-            "Grogog",
-            "Mollym",
-            "Hoggo",
-            "Tagi"
-        ],
-        "5 Common Last Names": [
-            "Tentaclebeard",
-            "Squidbreath",
-            "Krakel",
-            "Coralwhiskers",
-            "Pecbuster"
         ]
     },
     "Ogre": {
         "Name": "Ogre",
         "Type": "Large giant",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "11 (hide armor)",
         "Hit Points": "59 (7d10 + 21)",
         "Speed": "40 ft.",
@@ -27567,7 +23524,7 @@ dnd_monsters = {
         "INT": "5 (-3)",
         "WIS": "7 (-2)",
         "CHA": "7 (-2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Greatclub.Melee Weapon Attack: +6 to hit, reach 5 ft., one target.Hit: 13 (2d8 + 4) bludgeoning damage.",
             "Javelin.Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target.Hit: 11 (2d6 + 4) piercing damage."
@@ -27647,29 +23604,12 @@ dnd_monsters = {
             "Magic Weapons",
             "Magical Scrolls",
             "Potions"
-        ],
-        "Race": "Giant",
-        "Class": "Fighter",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Grunth",
-            "Ulfgar",
-            "Har'eth",
-            "Bleth",
-            "Ghrum"
-        ],
-        "5 Common Last Names": [
-            "Daarmak",
-            "Nargu",
-            "Gorga",
-            "Gul'thok",
-            "Mak'morn"
         ]
     },
-    "Ogre_Zombie": {
+    "Ogre-Zombie": {
         "Name": "Ogre Zombie",
         "Type": "Large undead",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "8",
         "Hit Points": "85 (9d10 + 36)",
         "Speed": "30 ft.",
@@ -27685,7 +23625,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "6 (-2)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Undead Fortitude. If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
         ],
         "Actions": [
@@ -27756,29 +23696,12 @@ dnd_monsters = {
             "Magic weapons",
             "Potions",
             "Spell scrolls"
-        ],
-        "Race": "Undead",
-        "Class": "Monster",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Grundle",
-            "Munkh",
-            "Ungro",
-            "Thokk",
-            "Sorg"
-        ],
-        "5 Common Last Names": [
-            "Crusher",
-            "Mangler",
-            "Crusher",
-            "Mauler",
-            "Trample"
         ]
     },
     "Oni": {
         "Name": "Oni",
         "Type": "Large giant",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "16 (chain mail)",
         "Hit Points": "110 (13d10 + 39)",
         "Speed": "30 ft., fly 30 ft.",
@@ -27793,7 +23716,7 @@ dnd_monsters = {
         "INT": "14 (+2)",
         "WIS": "12 (+1)",
         "CHA": "15 (+2)",
-        "Features": [
+        "features": [
             "Innate Spellcasting. The oni's innate spellcasting ability is Charisma (spell save DC 13). The oni can innately cast the following spells, requiring no material components:",
             "Magic Weapons. The oni's weapon attacks are magical.",
             "Regeneration. The oni regains 10 hit points at the start of its turn if it has at least 1 hit point."
@@ -27871,29 +23794,12 @@ dnd_monsters = {
             "Spell Scrolls",
             "Rare Metals",
             "Gems and Jewelry"
-        ],
-        "Race": "Outsider (Yokai)",
-        "Class": "Fighter or Warlock",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Himiko",
-            "Kanbiko",
-            "Motoshi",
-            "Hokago",
-            "Kazuhiro"
-        ],
-        "5 Common Last Names": [
-            "Kazakura",
-            "Yamato",
-            "Umemiya",
-            "Okami",
-            "Yoguchi"
         ]
     },
     "Orc": {
         "Name": "Orc",
         "Type": "Medium humanoid (Orc)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "13 (hide armor)",
         "Hit Points": "15 (2d8 + 6)",
         "Speed": "30 ft.",
@@ -27907,7 +23813,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "11 (+0)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Aggressive. As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
         ],
         "Actions": [
@@ -27986,29 +23892,12 @@ dnd_monsters = {
             "Weapons and Armor",
             "Gems",
             "Mystical Orbs or Relics"
-        ],
-        "Race": "Humanoid",
-        "Class": "Fighter Ranger Warlord Barbarian Paladin Martial Artist",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Goru",
-            "Golu",
-            "Drog",
-            "Dorm",
-            "Bolu"
-        ],
-        "5 Common Last Names": [
-            "Lagruk",
-            "Barhammer",
-            "Ironfist",
-            "Dornsmasher",
-            "Gwharthog"
         ]
     },
     "Orog": {
         "Name": "Orog",
         "Type": "Medium humanoid (Orc)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "18 (plate)",
         "Hit Points": "42 (5d8 + 20)",
         "Speed": "30 ft.",
@@ -28022,7 +23911,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "11 (+0)",
         "CHA": "12 (+1)",
-        "Features": [
+        "features": [
             "Aggressive. As a bonus action, the orog can move up to its speed toward a hostile creature that it can see."
         ],
         "Actions": [
@@ -28100,29 +23989,12 @@ dnd_monsters = {
             "Weapons",
             "Armor",
             "Tools"
-        ],
-        "Race": "Goblinoid",
-        "Class": "Warrior",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Kurbo",
-            "Tsheeg",
-            "Clorg",
-            "Mersha",
-            "Gostor"
-        ],
-        "5 Common Last Names": [
-            "Bellowsbreath",
-            "Bonebreaker",
-            "Echoaxe",
-            "Ironheart",
-            "Rotmaw"
         ]
     },
     "Otyugh": {
         "Name": "Otyugh",
         "Type": "Large aberration",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "114 (12d10 + 48)",
         "Speed": "30 ft.",
@@ -28136,7 +24008,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "13 (+1)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Limited Telepathy. The otyugh can magically transmit simple messages and images to any creature within 120 feet of it that can understand a language. This form of telepathy doesn't allow the receiving creature to telepathically respond."
         ],
         "Actions": [
@@ -28210,29 +24082,12 @@ dnd_monsters = {
             "Magical scrolls",
             "Rare herbs",
             "Healing potions"
-        ],
-        "Race": "Aberration",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Otrig",
-            "Uthol",
-            "Thonart",
-            "Rutheg",
-            "Duric"
-        ],
-        "5 Common Last Names": [
-            "Mireclaw",
-            "Stenchhoof",
-            "Rotfeather",
-            "Gutrender",
-            "Ructionspew"
         ]
     },
     "Owl": {
         "Name": "Owl",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11",
         "Hit Points": "1 (1d4 - 1)",
         "Speed": "5 ft., fly 60 ft.",
@@ -28246,7 +24101,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Flyby. The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach.",
             "Keen Hearing and Sight. The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight."
         ],
@@ -28317,29 +24172,12 @@ dnd_monsters = {
             "Eyes of the Owl",
             "Beak of the Owl",
             "Owl Statuette"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Hoot",
-            "Screech",
-            "Feathered",
-            "Wise",
-            "Gabby"
-        ],
-        "5 Common Last Names": [
-            "Owlwing",
-            "Marin",
-            "Owlfeather",
-            "Nightwatch",
-            "Nocturne"
         ]
     },
     "Owlbear": {
         "Name": "Owlbear",
         "Type": "Large monstrosity",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "59 (7d10 + 21)",
         "Speed": "40 ft.",
@@ -28353,7 +24191,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "12 (+1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Keen Sight and Smell. The owlbear has advantage on Wisdom (Perception) checks that rely on sight or smell."
         ],
         "Actions": [
@@ -28424,29 +24262,12 @@ dnd_monsters = {
             "Potions",
             "Armor/ Weapon Components",
             "Magical Items"
-        ],
-        "Race": "Magical Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Gutr",
-            "Snurg",
-            "Gowg",
-            "Warg",
-            "Varv"
-        ],
-        "5 Common Last Names": [
-            "Gnashclaws",
-            "Roarfoot",
-            "Talonstrike",
-            "Beakbrand",
-            "Clawskinner"
         ]
     },
     "Pegasus": {
         "Name": "Pegasus",
         "Type": "Large celestial",
-        "Alignment": "chaotic good",
+        "alignment": "chaotic good",
         "Armor Class": "12",
         "Hit Points": "59 (7d10 + 21)",
         "Speed": "60 ft., fly 90 ft.",
@@ -28461,7 +24282,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "15 (+2)",
         "CHA": "13 (+1)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Hooves.Melee Weapon Attack: +6 to hit, reach 5 ft., one target.Hit: 11 (2d6 + 4) bludgeoning damage."
         ],
@@ -28532,29 +24353,12 @@ dnd_monsters = {
             "Pegasus Armor",
             "Horseshoes of Protection",
             "Keratin protection charms"
-        ],
-        "Race": "Celestial",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Aleon",
-            "Aetheria",
-            "Brinon",
-            "Hespera",
-            "Kreon"
-        ],
-        "5 Common Last Names": [
-            "Angelwing",
-            "Cloudrider",
-            "Heavensteed",
-            "Nightflyer",
-            "Stormrunner"
         ]
     },
     "Pentadrone": {
         "Name": "Pentadrone",
         "Type": "Large construct",
-        "Alignment": "lawful neutral",
+        "alignment": "lawful neutral",
         "Armor Class": "16 (natural armor)",
         "Hit Points": "32 (5d10 + 5)",
         "Speed": "40 ft.",
@@ -28568,7 +24372,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "10 (+0)",
         "CHA": "13 (+1)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -28636,29 +24440,12 @@ dnd_monsters = {
             "A small vial of a pale blue liquid.",
             "A handcrafted dagger made of a unique metal.",
             "A scrap of parchment with an ancient rune etched on it."
-        ],
-        "Race": "Construct",
-        "Class": "Drone",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Cyberial",
-            "Arcturius",
-            "Cogmon",
-            "Terti-un",
-            "Betamax"
-        ],
-        "5 Common Last Names": [
-            "Beta-3",
-            "G-7T24",
-            "Gentro-2",
-            "Terramox",
-            "Omega-K2"
         ]
     },
     "Peryton": {
         "Name": "Peryton",
         "Type": "Medium monstrosity",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "33 (6d8 + 6)",
         "Speed": "20 ft., fly 60 ft.",
@@ -28673,7 +24460,7 @@ dnd_monsters = {
         "INT": "9 (-1)",
         "WIS": "12 (+1)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Dive Attack. If the peryton is flying and dives at least 30 feet straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 9 (2d8) damage to the target.",
             "Flyby. The peryton doesn't provoke an opportunity attack when it flies out of an enemy's reach.",
             "Keen Sight and Smell. The peryton has advantage on Wisdom (Perception) checks that rely on sight or smell."
@@ -28748,29 +24535,12 @@ dnd_monsters = {
             "Glossy black beak",
             "Shiny black talon",
             "Large peryton feathers"
-        ],
-        "Race": "Monstrosity",
-        "Class": "N/A",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Anki",
-            "Geron",
-            "Oluf",
-            "Sarvos",
-            "Yngvi"
-        ],
-        "5 Common Last Names": [
-            "Bjorvil",
-            "Svennir",
-            "Thv\u0446r",
-            "Ulve",
-            "Vemund"
         ]
     },
     "Pirate": {
         "Name": "Pirate",
         "Type": "Medium humanoid",
-        "Alignment": "chaotic neutral",
+        "alignment": "chaotic neutral",
         "Armor Class": "12 (leather armor)",
         "Hit Points": "22 (5d8)",
         "Speed": "30 ft.",
@@ -28870,29 +24640,12 @@ dnd_monsters = {
             "Jewels",
             "Weapons",
             "Furs"
-        ],
-        "Race": "Human",
-        "Class": "Any",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Bill",
-            "Bob",
-            "Jack",
-            "Anne",
-            "Sam"
-        ],
-        "5 Common Last Names": [
-            "Hook",
-            "Blackheart",
-            "Rumrunner",
-            "Cutloose",
-            "Savage"
         ]
     },
     "Pixie": {
         "Name": "Pixie",
         "Type": "Tiny fey",
-        "Alignment": "neutral good",
+        "alignment": "neutral good",
         "Armor Class": "15",
         "Hit Points": "1 (1d4 - 1)",
         "Speed": "10 ft., fly 30 ft.",
@@ -28906,7 +24659,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "14 (+2)",
         "CHA": "15 (+2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -28978,29 +24731,12 @@ dnd_monsters = {
             "Mystical Weapons",
             "Glamours",
             "Magical scrolls"
-        ],
-        "Race": "Fey",
-        "Class": "Wild Magic Sorcerer",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Elli",
-            "Iyach",
-            "Kiribar",
-            "Gandoil",
-            "Blee"
-        ],
-        "5 Common Last Names": [
-            "Tinklesocks",
-            "Spr DEWdrop",
-            "Blossomflutter",
-            "Pondripple",
-            "Luchasparkle"
         ]
     },
     "Planetar": {
         "Name": "Planetar",
         "Type": "Large celestial",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "200 (16d10 + 112)",
         "Speed": "40 ft., fly 120 ft.",
@@ -29017,7 +24753,7 @@ dnd_monsters = {
         "INT": "19 (+4)",
         "WIS": "22 (+6)",
         "CHA": "25 (+7)",
-        "Features": [
+        "features": [
             "Angelic Weapons. The planetar's weapon attacks are magical. When the planetar hits with any weapon, the weapon deals an extra 5d8 radiant damage (included in the attack).",
             "Divine Awareness. The planetar knows if it hears a lie.",
             "Innate Spellcasting. The planetar's spellcasting ability is Charisma (spell save DC 20). The planetar can innately cast the following spells, requiring no material components:",
@@ -29099,29 +24835,12 @@ dnd_monsters = {
             "Healing Rod",
             "Divine Arrows",
             "Divine Scroll"
-        ],
-        "Race": "Celestial",
-        "Class": "Outsider",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Asar",
-            "Dabari",
-            "Hemla",
-            "Omer",
-            "Tariel"
-        ],
-        "5 Common Last Names": [
-            "Helohim",
-            "Liop",
-            "Memfis",
-            "Azh",
-            "Raziel"
         ]
     },
     "Plesiosaurus": {
         "Name": "Plesiosaurus",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "68 (8d10 + 24)",
         "Speed": "20 ft., swim 40 ft.",
@@ -29135,7 +24854,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Hold Breath. The plesiosaurus can hold its breath for 1 hour."
         ],
         "Actions": [
@@ -29207,29 +24926,12 @@ dnd_monsters = {
             "Shark Gems",
             "Sea Tortoiseshells",
             "Ambergris"
-        ],
-        "Race": "Reptile",
-        "Class": "Aquatic, Beast",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Domo",
-            "Myta",
-            "Lon",
-            "Gurus",
-            "Xuk"
-        ],
-        "5 Common Last Names": [
-            "Alon",
-            "Kuno",
-            "Nenged",
-            "Gomog",
-            "Baimun"
         ]
     },
-    "Poisonous_Snake": {
+    "Poisonous-Snake": {
         "Name": "Poisonous Snake",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13",
         "Hit Points": "2 (1d4)",
         "Speed": "30 ft., swim 30 ft.",
@@ -29242,7 +24944,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "10 (+0)",
         "CHA": "3 (-4)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +5 to hit, reach 5 ft., one target.Hit: 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one."
         ],
@@ -29308,29 +25010,12 @@ dnd_monsters = {
             "Magical items",
             "Rare herbs",
             "Potions of healing"
-        ],
-        "Race": "Reptile",
-        "Class": "Beast",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Single",
-            "Tricky",
-            "Rapacious",
-            "Vicious",
-            "Spectral"
-        ],
-        "5 Common Last Names": [
-            "Slayer",
-            "collection",
-            "Crawler",
-            "Wriggler",
-            "Hisser"
         ]
     },
-    "Polar_Bear": {
+    "Polar-Bear": {
         "Name": "Polar Bear",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12 (natural armor)",
         "Hit Points": "42 (5d10 + 15)",
         "Speed": "40 ft., swim 30 ft.",
@@ -29344,7 +25029,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "13 (+1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Keen Smell. The bear has advantage on Wisdom (Perception) checks that rely on smell."
         ],
         "Actions": [
@@ -29415,29 +25100,12 @@ dnd_monsters = {
             "Fish",
             "Sealskin",
             "Raw Meat"
-        ],
-        "Race": "Creature",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Husky",
-            "Frosty",
-            "Suluqsi",
-            "Snowball",
-            "Siku"
-        ],
-        "5 Common Last Names": [
-            "the North Wind",
-            "the Whitecoat",
-            "by the Sleet",
-            "the Arctic Kings",
-            "the Frozen Moon"
         ]
     },
     "Pony": {
         "Name": "Pony",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "10",
         "Hit Points": "11 (2d8 + 2)",
         "Speed": "40 ft.",
@@ -29450,7 +25118,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "11 (+0)",
         "CHA": "7 (-2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Hooves.Melee Weapon Attack: +4 to hit, reach 5 ft., one target.Hit: 7 (2d4 + 2) bludgeoning damage."
         ],
@@ -29523,29 +25191,12 @@ dnd_monsters = {
             "Mystical horsetail hair",
             "Saddle bags filled with coins or precious metals",
             "Magical armor or weapons tailored to the pony's size"
-        ],
-        "Race": "Beast",
-        "Class": "Animal Companion",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Tiny",
-            "Dusty",
-            "Goldie",
-            "Dancer",
-            "Pebble"
-        ],
-        "5 Common Last Names": [
-            "Foal",
-            "Gambler",
-            "Friendship",
-            "Hope",
-            "Patience"
         ]
     },
     "Priest": {
         "Name": "Priest",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any alignment",
+        "alignment": "any alignment",
         "Armor Class": "13 (chain shirt)",
         "Hit Points": "27 (5d8 + 5)",
         "Speed": "30 ft.",
@@ -29559,7 +25210,7 @@ dnd_monsters = {
         "INT": "13 (+1)",
         "WIS": "16 (+3)",
         "CHA": "13 (+1)",
-        "Features": [
+        "features": [
             "Divine Eminence. As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.",
             "Spellcasting. The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The priest has the following cleric spells prepared:"
         ],
@@ -29636,29 +25287,12 @@ dnd_monsters = {
             "Holy symbols and enchanted weapons.",
             "Gems and jewelry.",
             "Exotic materials and tomes."
-        ],
-        "Race": "Human",
-        "Class": "Cleric",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Josephine",
-            "Geoffrey",
-            "Gregory",
-            "Giselle",
-            "Gaston"
-        ],
-        "5 Common Last Names": [
-            "Bishop",
-            "Priest",
-            "Niryn",
-            "Pilgrim",
-            "Preacher"
         ]
     },
     "Pseudodragon": {
         "Name": "Pseudodragon",
         "Type": "Tiny dragon",
-        "Alignment": "neutral good",
+        "alignment": "neutral good",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "7 (2d4 + 2)",
         "Speed": "15 ft., fly 60 ft.",
@@ -29672,7 +25306,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "12 (+1)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Keen Senses. The pseudodragon has advantage on Wisdom (Perception) checks that rely on sight, hearing, or smell.",
             "Magic Resistance. The pseudodragon has advantage on saving throws against spells and other magical effects.",
             "Limited Telepathy. The pseudodragon can magically communicate simple ideas, emotions, and images telepathically with any creature within 100 feet of it that can understand a language."
@@ -29747,29 +25381,12 @@ dnd_monsters = {
             "Weapons imbued with magical energy.",
             "Atherical orbs, used for arcane casting.",
             "Rare books, often filled with secret knowledge."
-        ],
-        "Race": "Dragon",
-        "Class": "Magical Beast",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Smokey",
-            "Sooty",
-            "Scaley",
-            "Rusty",
-            "Sparky"
-        ],
-        "5 Common Last Names": [
-            "Rivenwing",
-            "Twinstrike",
-            "Fangfire",
-            "Mistfall",
-            "Sparkflight"
         ]
     },
-    "Purple_Worm": {
+    "Purple-Worm": {
         "Name": "Purple Worm",
         "Type": "Gargantuan monstrosity",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "18 (natural armor)",
         "Hit Points": "247 (15d20 + 90)",
         "Speed": "50 ft., burrow 30 ft.",
@@ -29783,7 +25400,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "8 (-1)",
         "CHA": "4 (-3)",
-        "Features": [
+        "features": [
             "Tunneler. The worm can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake."
         ],
         "Actions": [
@@ -29859,29 +25476,12 @@ dnd_monsters = {
             "Small Art Objects",
             "Gems",
             "Gold"
-        ],
-        "Race": "Giant Vermin",
-        "Class": "Worm",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Gormos",
-            "Lenshurl",
-            "Dalufaryn",
-            "Kinashul",
-            "Kenburl"
-        ],
-        "5 Common Last Names": [
-            "Gormasfel",
-            "Mohafe",
-            "Dastabur",
-            "Mallarm",
-            "Roskenhal"
         ]
     },
     "Quasit": {
         "Name": "Quasit",
         "Type": "Tiny Fiend (Demon",
-        "Alignment": "Shapechanger), chaotic evil",
+        "alignment": "Shapechanger), chaotic evil",
         "Armor Class": "13",
         "Hit Points": "7 (3d4)",
         "Speed": "40 ft.",
@@ -29898,7 +25498,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "10 (+0)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Shapechanger. The quasit can use its action to polymorph into a beast form that resembles a bat (speed 10 ft. fly 40 ft.), a centipede (40 ft., climb 40 ft.), or a toad (40 ft., swim 40 ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
             "Magic Resistance. The quasit has advantage on saving throws against spells and other magical effects."
         ],
@@ -29973,29 +25573,12 @@ dnd_monsters = {
             "Gold coins",
             "Gems or jewelry",
             "Magical components or reagents"
-        ],
-        "Race": "Fiend (Demon)",
-        "Class": "Demon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Gimuar",
-            "Shadrad",
-            "Nimbur",
-            "Tigdar",
-            "Vonthar"
-        ],
-        "5 Common Last Names": [
-            "Lahumil",
-            "Narajuar",
-            "Puahur",
-            "Jedigar",
-            "Utharog"
         ]
     },
     "Quipper": {
         "Name": "Quipper",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13",
         "Hit Points": "1 (1d4 - 1)",
         "Speed": "0 ft., swim 40 ft.",
@@ -30008,7 +25591,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "7 (-2)",
         "CHA": "2 (-4)",
-        "Features": [
+        "features": [
             "Blood Frenzy. The quipper has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
             "Water Breathing. The quipper can breathe only underwater."
         ],
@@ -30078,29 +25661,12 @@ dnd_monsters = {
             "Fish Scales",
             "Fish Bones",
             "Potion Ingredients"
-        ],
-        "Race": "Fish",
-        "Class": "Beast",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Bob",
-            "Shelly",
-            "Finny",
-            "Jaws",
-            "Sammy"
-        ],
-        "5 Common Last Names": [
-            "Sailfish",
-            "Barracuda",
-            "Cod",
-            "Claw",
-            "Gulper"
         ]
     },
     "Rakshasa": {
         "Name": "Rakshasa",
         "Type": "Medium fiend",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "16 (natural armor)",
         "Hit Points": "110 (13d8 + 52)",
         "Speed": "40 ft.",
@@ -30116,7 +25682,7 @@ dnd_monsters = {
         "INT": "13 (+1)",
         "WIS": "16 (+3)",
         "CHA": "20 (+5)",
-        "Features": [
+        "features": [
             "Limited Magic Immunity. The rakshasa can't be affected or detected by spells of 6th level or lower unless it wishes to be. It has advantage on saving throws against all other spells and magical effects.",
             "Innate Spellcasting. The rakshasa's innate spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). The rakshasa can innately cast the following spells, requiring no material components:"
         ],
@@ -30189,29 +25755,12 @@ dnd_monsters = {
             "Elixirs and Poisons",
             "Gems and Coins",
             "Mystic Scrolls"
-        ],
-        "Race": "Fiend",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Pharun",
-            "Shan",
-            "Aja",
-            "Uman",
-            "Ehak"
-        ],
-        "5 Common Last Names": [
-            "Mahan",
-            "Uvatha",
-            "Ghul",
-            "Makha",
-            "Banda"
         ]
     },
     "Rat": {
         "Name": "Rat",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "10",
         "Hit Points": "1 (1d4 - 1)",
         "Speed": "20 ft.",
@@ -30224,7 +25773,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "10 (+0)",
         "CHA": "4 (-3)",
-        "Features": [
+        "features": [
             "Keen Smell. The rat has advantage on Wisdom (Perception) checks that rely on smell."
         ],
         "Actions": [
@@ -30292,29 +25841,12 @@ dnd_monsters = {
             "gems",
             "jewelry",
             "small trinkets"
-        ],
-        "Race": "Beast",
-        "Class": "None",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Squeak",
-            "Scamper",
-            "Grubbing",
-            "Cheechee",
-            "Chitter"
-        ],
-        "5 Common Last Names": [
-            "Gigglesnout",
-            "Tailspinner",
-            "Bobtail",
-            "Tailbanger",
-            "Bellychaser"
         ]
     },
     "Raven": {
         "Name": "Raven",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "1 (1d4 - 1)",
         "Speed": "10 ft., fly 50 ft.",
@@ -30328,7 +25860,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Mimicry. The raven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful DC 10 Wisdom (Insight) check."
         ],
         "Actions": [
@@ -30396,29 +25928,12 @@ dnd_monsters = {
             "Iron Headpiece",
             "Silver Clasp",
             "Bronze Buckle"
-        ],
-        "Race": "Beast",
-        "Class": "Bird of Prey",
-        "Size": "small (6-10 in head to body)",
-        "5 Common First Names": [
-            "Feather",
-            "Nero",
-            "Corvus",
-            "Poe",
-            "Loki"
-        ],
-        "5 Common Last Names": [
-            "Crow",
-            "Wing",
-            "Flock",
-            "Flight",
-            "Sky"
         ]
     },
-    "Red_Dragon_Wyrmling": {
+    "Red-Dragon-Wyrmling": {
         "Name": "Red Dragon Wyrmling",
         "Type": "Medium dragon (Chromatic)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "75 (10d8 + 30)",
         "Speed": "30 ft., climb 30 ft., fly 60 ft.",
@@ -30434,7 +25949,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "11 (+0)",
         "CHA": "15 (+2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +6 to hit, reach 5 ft., one target.Hit: 9 (1d10 + 4) piercing damage plus 3 (1d6) fire damage.",
             "Fire Breath (Recharge 5-6). The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one."
@@ -30505,29 +26020,12 @@ dnd_monsters = {
             "Potions and elixirs",
             "Jewelry and gems",
             "Rare herbs and spices"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Crackle",
-            "Sizzle",
-            "Burne",
-            "Corona",
-            "Char"
-        ],
-        "5 Common Last Names": [
-            "Ignas",
-            "Igniss",
-            "Ignem",
-            "Sulfurspell",
-            "Firebursts"
         ]
     },
-    "Reef_Shark": {
+    "Reef-Shark": {
         "Name": "Reef Shark",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12 (natural armor)",
         "Hit Points": "22 (4d8 + 4)",
         "Speed": "0 ft., swim 40 ft.",
@@ -30541,7 +26039,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "10 (+0)",
         "CHA": "4 (-3)",
-        "Features": [
+        "features": [
             "Pack Tactics. The shark has advantage on an attack roll against a creature if at least one of the shark's allies is within 5 feet of the creature and the ally isn't incapacitated.",
             "Water Breathing. The shark can breathe only underwater."
         ],
@@ -30611,29 +26109,12 @@ dnd_monsters = {
             "Reef Coral",
             "Pearls",
             "Gems"
-        ],
-        "Race": "Animal",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Finley",
-            "Midas",
-            "Laney",
-            "Willamina",
-            "Lotus"
-        ],
-        "5 Common Last Names": [
-            "Finn",
-            "Jaws",
-            "Finman",
-            "Sea-Bite",
-            "Swell"
         ]
     },
     "Remorhaz": {
         "Name": "Remorhaz",
         "Type": "Huge monstrosity",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "195 (17d12 + 85)",
         "Speed": "30 ft., burrow 20 ft.",
@@ -30647,7 +26128,7 @@ dnd_monsters = {
         "INT": "4 (-3)",
         "WIS": "10 (+0)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Heated Body. A creature that touches the remorhaz or hits it with a melee attack while within 5 feet of it takes 10 (3d6) fire damage."
         ],
         "Actions": [
@@ -30714,29 +26195,12 @@ dnd_monsters = {
             "Remorhaz Tail Plate",
             "Remorhaz Hide",
             "Remorhaz Fang"
-        ],
-        "Race": "Magical Beast",
-        "Class": "Monstrosity",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Spaunn",
-            "Fron",
-            "Karrgo",
-            "Srumb",
-            "Freyf"
-        ],
-        "5 Common Last Names": [
-            "Clawburner",
-            "Snowstalker",
-            "Ashwhisker",
-            "Stampeder",
-            "Frostbite"
         ]
     },
     "Rhinoceros": {
         "Name": "Rhinoceros",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11 (natural armor)",
         "Hit Points": "45 (6d10 + 12)",
         "Speed": "40 ft.",
@@ -30749,7 +26213,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Charge. If the rhinoceros moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone."
         ],
         "Actions": [
@@ -30819,29 +26283,12 @@ dnd_monsters = {
             "Rare herbs",
             "Rhinoceros teeth",
             "Mystical scrolls"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Boone",
-            "Bran",
-            "Brea",
-            "Brey",
-            "Bri"
-        ],
-        "5 Common Last Names": [
-            "Lash",
-            "Sinon",
-            "Clymer",
-            "Faun",
-            "Octavian"
         ]
     },
-    "Riding_Horse": {
+    "Riding-Horse": {
         "Name": "Riding Horse",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "10",
         "Hit Points": "13 (2d10 + 2)",
         "Speed": "60 ft.",
@@ -30854,7 +26301,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "11 (+0)",
         "CHA": "7 (-2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Hooves.Melee Weapon Attack: +5 to hit, reach 5 ft., one target.Hit: 8 (2d4 + 3) bludgeoning damage."
         ],
@@ -30914,29 +26361,12 @@ dnd_monsters = {
             "Whip",
             "Bit and Bridle",
             "Feedbag"
-        ],
-        "Race": "Equidae",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Henry",
-            "Jade",
-            "Jack",
-            "Mack",
-            "Sunny"
-        ],
-        "5 Common Last Names": [
-            "Tempest",
-            "Copper",
-            "Cottage",
-            "Upland",
-            "Frost"
         ]
     },
     "Roc": {
         "Name": "Roc",
         "Type": "Gargantuan monstrosity",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "248 (16d20 + 80)",
         "Speed": "20 ft., fly 120 ft.",
@@ -30951,7 +26381,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "10 (+0)",
         "CHA": "9 (-1)",
-        "Features": [
+        "features": [
             "Keen Sight. The roc has advantage on Wisdom (Perception) checks that rely on sight."
         ],
         "Actions": [
@@ -31022,29 +26452,12 @@ dnd_monsters = {
             "Jewelry",
             "Small weapons and armor",
             "Rare herbs and plants"
-        ],
-        "Race": "Giant",
-        "Class": "Beast",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Feather",
-            "Siu",
-            "Sang",
-            "Sovna",
-            "Norl"
-        ],
-        "5 Common Last Names": [
-            "Plume",
-            "Viga",
-            "Wing",
-            "Riker",
-            "Eagle"
         ]
     },
     "Roper": {
         "Name": "Roper",
         "Type": "Large monstrosity",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "20 (natural armor)",
         "Hit Points": "93 (11d10 + 33)",
         "Speed": "10 ft., climb 10 ft.",
@@ -31058,7 +26471,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "16 (+3)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "False Appearance. While the roper remains motionless, it is indistinguishable from a normal cave formation, such as a stalagmite.",
             "Grasping Tendrils. The roper can have up to six tendrils at a time. Each tendril can be attacked (AC 20; 10 hit points; immunity to poison and psychic damage). Destroying a tendril deals no damage to the roper, which can extrude a replacement tendril on its next turn. A tendril can also be broken if a creature takes an action and succeeds on a DC 15 Strength check against it.",
             "Spider Climb. The roper can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
@@ -31134,29 +26547,12 @@ dnd_monsters = {
             "Mysterious artifacts",
             "Unknown scrolls",
             "Essence of fear"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Magical beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Sogg",
-            "Flol",
-            "Zarg",
-            "Kreeg",
-            "Brunn"
-        ],
-        "5 Common Last Names": [
-            "Tooker",
-            "Rotgut",
-            "Gulper",
-            "Grubber",
-            "Leggin"
         ]
     },
-    "Rug_of_Smothering": {
+    "Rug-of-Smothering": {
         "Name": "Rug of Smothering",
         "Type": "Large construct",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "33 (6d10)",
         "Speed": "10 ft.",
@@ -31171,7 +26567,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "3 (-4)",
         "CHA": "1 (-5)",
-        "Features": [
+        "features": [
             "Antimagic Susceptibility. The rug is incapacitated while in the area of anantimagic field. If targeted bydispel magic, the rug must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.",
             "Damage Transfer. While it is grappling a creature, the rug takes only half the damage dealt to it, and the creature grappled by the rug takes the other half.",
             "False Appearance. While the rug remains motionless, it is indistinguishable from a normal rug."
@@ -31231,29 +26627,12 @@ dnd_monsters = {
             "Magical Amulet",
             "Potion of Healing",
             "Ring of Protection"
-        ],
-        "Race": "Construct",
-        "Class": "Magical",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Stow",
-            "Gorg",
-            "Devour",
-            "Snug",
-            "Spread"
-        ],
-        "5 Common Last Names": [
-            "Misery",
-            "Silence",
-            "Novacule",
-            "Surge",
-            "Suffocation"
         ]
     },
-    "Rust_Monster": {
+    "Rust-Monster": {
         "Name": "Rust Monster",
         "Type": "Medium monstrosity",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "27 (5d8 + 5)",
         "Speed": "40 ft",
@@ -31266,7 +26645,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "13 (+1)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Iron Scent. The rust monster can pinpoint, by scent, the location of ferrous metal within 30 feet of it.",
             "Rust Metal. Any nonmagical weapon made of metal that hits the rust monster corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal that hits the rust monster is destroyed after dealing damage."
         ],
@@ -31345,29 +26724,12 @@ dnd_monsters = {
             "Silver Pieces",
             "Gems",
             "Pearls"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Skrotchh",
-            "Lodhar",
-            "Grauitz",
-            "Sogrip",
-            "Fustrarg"
-        ],
-        "5 Common Last Names": [
-            "Ironjaw",
-            "Grelbaff",
-            "Scrapmouth",
-            "Crozkaff",
-            "Gafftooth"
         ]
     },
-    "Saber_Toothed_Tiger": {
+    "Saber-Toothed-Tiger": {
         "Name": "Saber-Toothed Tiger",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "52 (7d10 + 14)",
         "Speed": "40 ft.",
@@ -31381,7 +26743,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "12 (+1)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Keen Smell. The tiger has advantage on Wisdom (Perception) checks that rely on smell.",
             "Pounce. If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action."
         ],
@@ -31454,7 +26816,7 @@ dnd_monsters = {
     "Sahuagin": {
         "Name": "Sahuagin",
         "Type": "Medium humanoid (Sahuagin)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "12 (natural armor)",
         "Hit Points": "22 (4d8 + 4)",
         "Speed": "30 ft., swim 40 ft.",
@@ -31468,7 +26830,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "13 (+1)",
         "CHA": "9 (-1)",
-        "Features": [
+        "features": [
             "Blood Frenzy. The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
             "Limited Amphibiousness. The sahuagin can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating.",
             "Shark Telepathy. The sahuagin can magically command any shark within 120 feet of it, using a limited telepathy."
@@ -31546,29 +26908,12 @@ dnd_monsters = {
             "Gems",
             "Jewelry",
             "Magic Items"
-        ],
-        "Race": "Humanoid",
-        "Class": "Monster",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Kessish",
-            "Tasjak",
-            "Glekis",
-            "Lupka",
-            "Agerak"
-        ],
-        "5 Common Last Names": [
-            "Slukshuk",
-            "Vortish",
-            "Goboltok",
-            "Jugorash",
-            "Mugsnurk"
         ]
     },
-    "Sahuagin_Baron": {
+    "Sahuagin-Baron": {
         "Name": "Sahuagin Baron",
         "Type": "Large humanoid (Sahuagin)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "16 (breastplate)",
         "Hit Points": "76 (9d10 + 27)",
         "Speed": "30 ft., swim 50 ft.",
@@ -31583,7 +26928,7 @@ dnd_monsters = {
         "INT": "14 (+2)",
         "WIS": "13 (+1)",
         "CHA": "17 (+3)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -31659,10 +27004,10 @@ dnd_monsters = {
             "Magical Weapons"
         ]
     },
-    "Sahuagin_Priestess": {
+    "Sahuagin-Priestess": {
         "Name": "Sahuagin Priestess",
         "Type": "Medium humanoid (Sahuagin)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "12 (natural armor)",
         "Hit Points": "33 (6d8 + 6)",
         "Speed": "30 ft., swim 40 ft.",
@@ -31676,7 +27021,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "14 (+2)",
         "CHA": "13 (+1)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -31751,29 +27096,12 @@ dnd_monsters = {
             "Scroll of Water Mimicry",
             "Silk Robe of the Sea",
             "Amulet of Adaptation"
-        ],
-        "Race": "Sahuagin",
-        "Class": "Cleric",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ralzak",
-            "Zerezca",
-            "Seltyorz",
-            "Venkara",
-            "Dozala"
-        ],
-        "5 Common Last Names": [
-            "Slithikor",
-            "Unelanta",
-            "Ruletzoe",
-            "Slithithr",
-            "L'alune"
         ]
     },
     "Salamander": {
         "Name": "Salamander",
         "Type": "Large elemental",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "90 (12d10 + 24)",
         "Speed": "30 ft.",
@@ -31789,7 +27117,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "10 (+0)",
         "CHA": "12 (+1)",
-        "Features": [
+        "features": [
             "Heated Body. A creature that touches the salamander or hits it with a melee attack while within 5 feet of it takes 7 (2d6) fire damage.",
             "Heated Weapons. Any metal melee weapon the salamander wields deals an extra 3 (1d6) fire damage on a hit (included in the attack)."
         ],
@@ -31866,29 +27194,12 @@ dnd_monsters = {
             "Scrolls and Potions",
             "Gems and Jewels",
             "Magic Weapons and Armor"
-        ],
-        "Race": "Elemental",
-        "Class": "Fey",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Razerun",
-            "Eklomar",
-            "Terragon",
-            "Fefnir",
-            "Serelion"
-        ],
-        "5 Common Last Names": [
-            "Salamasend",
-            "Vijular",
-            "Metalor",
-            "Stonefire",
-            "Celatine"
         ]
     },
     "Satyr": {
         "Name": "Satyr",
         "Type": "Medium fey",
-        "Alignment": "chaotic neutral",
+        "alignment": "chaotic neutral",
         "Armor Class": "14 (leather armor)",
         "Hit Points": "31 (7d8)",
         "Speed": "40 ft.",
@@ -31902,7 +27213,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "10 (+0)",
         "CHA": "14 (+2)",
-        "Features": [
+        "features": [
             "Magic Resistance. The satyr has advantage on saving throws against spells and other magical effects."
         ],
         "Actions": [
@@ -31978,29 +27289,12 @@ dnd_monsters = {
             "Musical instruments",
             "Gold necklaces and brooches",
             "Magical items related to nature"
-        ],
-        "Race": "Fey",
-        "Class": "Humanoid",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Baphor",
-            "Faunus",
-            "Moros",
-            "Pan",
-            "Silenus"
-        ],
-        "5 Common Last Names": [
-            "Eupalinos",
-            "Fangthorn",
-            "Kelkro",
-            "Loretron",
-            "Timdarch"
         ]
     },
     "Scorpion": {
         "Name": "Scorpion",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11 (natural armor)",
         "Hit Points": "1 (1d4 - 1)",
         "Speed": "10 ft.",
@@ -32013,7 +27307,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "8 (-1)",
         "CHA": "2 (-4)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Sting.Melee Weapon Attack: +2 to hit, reach 5 ft., one creature.Hit: 1 piercing damage, and the target must make a DC 9 Constitution saving throw, taking 4 (1d8) poison damage on a failed save, or half as much damage on a successful one."
         ],
@@ -32080,29 +27374,12 @@ dnd_monsters = {
             "Potion of Healing",
             "Scroll of Summoning",
             "Potion of Animal Control"
-        ],
-        "Race": "Beast",
-        "Class": "Monster",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Pincer",
-            "Stinger",
-            "Mantis",
-            "Lasher",
-            "Scuttle"
-        ],
-        "5 Common Last Names": [
-            "Claw",
-            "Pincer",
-            "Striker",
-            "Biter",
-            "Strider"
         ]
     },
     "Scout": {
         "Name": "Scout",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any alignment",
+        "alignment": "any alignment",
         "Armor Class": "13 (leather armor)",
         "Hit Points": "16 (3d8 + 3)",
         "Speed": "30 ft.",
@@ -32116,7 +27393,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "13 (+1)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "Keen Hearing and Sight. The scout has advantage on Wisdom (Perception) checks that rely on hearing or sight."
         ],
         "Actions": [
@@ -32198,29 +27475,12 @@ dnd_monsters = {
             "Gems and jewelry",
             "Potions and scrolls",
             "Rare and magical items"
-        ],
-        "Race": "Humanoid",
-        "Class": "Rogue",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Corin",
-            "Gwenn",
-            "Keyle",
-            "Raleen",
-            "Tristan"
-        ],
-        "5 Common Last Names": [
-            "Alehandro",
-            "Kevlane",
-            "McDuill",
-            "Oakwood",
-            "Swaringen"
         ]
     },
-    "Sea_Hag": {
+    "Sea-Hag": {
         "Name": "Sea Hag",
         "Type": "Medium fey",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "52 (7d8 + 21)",
         "Speed": "30 ft., swim 40 ft.",
@@ -32233,7 +27493,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "12 (+1)",
         "CHA": "13 (+1)",
-        "Features": [
+        "features": [
             "Amphibious. The hag can breathe air and water.",
             "Horrific Appearance. Any humanoid that starts its turn within 30 feet of the hag and can see the hag's true form must make a DC 11 Wisdom saving throw. On a failed save, the creature is frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the hag is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hag's Horrific Appearance for the next 24 hours. Unless the target is surprised or the revelation of the hag's true form is sudden, the target can avert its eyes and avoid making the initial saving throw. Until the start of its next turn, a creature that averts its eyes has disadvantage on attack rolls against the hag."
         ],
@@ -32307,29 +27567,12 @@ dnd_monsters = {
             "Magical trinkets",
             "Artifacts from other sea creatures",
             "Ancient relics"
-        ],
-        "Race": "Fiend",
-        "Class": "Humanoid",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Aella",
-            "Lilith",
-            "Mala",
-            "Mesemna",
-            "Verellis"
-        ],
-        "5 Common Last Names": [
-            "Sea Witch",
-            "Fishwife",
-            "Tide-Caller",
-            "Cove-Talker",
-            "Seaborn"
         ]
     },
-    "Sea_Horse": {
+    "Sea-Horse": {
         "Name": "Sea Horse",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11",
         "Hit Points": "1 (1d4 - 1)",
         "Speed": "0 ft., swim 20 ft.",
@@ -32342,7 +27585,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "10 (+0)",
         "CHA": "2 (-4)",
-        "Features": [
+        "features": [
             "Water Breathing. The sea horse can breathe only underwater."
         ],
         "Description": "The sea horse is a small fish with a head and neck resembling a horse's, an elongated snout, and a curled tail. It typically has coloration ranging from light brown to yellow and has a maximum size of 12 inches.",
@@ -32408,29 +27651,12 @@ dnd_monsters = {
             "Mermaid Scale Shards",
             "Gemstones",
             "Gold Coins"
-        ],
-        "Race": "Celestial",
-        "Class": "Beast",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Lightning",
-            "Glimmer",
-            "Sparkle",
-            "Glitter",
-            "Moonbeam"
-        ],
-        "5 Common Last Names": [
-            "Fetterless",
-            "Striker",
-            "Dashing",
-            "Loudwater",
-            "Crestsplash"
         ]
     },
     "Shadow": {
         "Name": "Shadow",
         "Type": "Medium undead",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "12",
         "Hit Points": "16 (3d8 + 3)",
         "Speed": "40 ft.",
@@ -32448,7 +27674,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "10 (+0)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Amorphous. The shadow can move through a space as narrow as 1 inch wide without squeezing.",
             "Shadow Stealth. While in dim light or darkness, the shadow can take the Hide action as a bonus action.",
             "Sunlight Weakness. While in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws."
@@ -32515,29 +27741,12 @@ dnd_monsters = {
             "Magic Weapons and Items",
             "Mystical Scrolls",
             "Ancient Relics"
-        ],
-        "Race": "Shade",
-        "Class": "Undead",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Shadow",
-            "Thorn",
-            "Raven",
-            "Night",
-            "Doom"
-        ],
-        "5 Common Last Names": [
-            "Walker",
-            "Pain",
-            "Feather",
-            "Stalker",
-            "Soul"
         ]
     },
-    "Shambling_Mound": {
+    "Shambling-Mound": {
         "Name": "Shambling Mound",
         "Type": "Large plant",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "136 (16d10 + 48)",
         "Speed": "20 ft., swim 20 ft.",
@@ -32554,7 +27763,7 @@ dnd_monsters = {
         "INT": "5 (-3)",
         "WIS": "10 (+0)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Lightning Absorption. Whenever the shambling mound is subjected to lightning damage, it takes no damage and regains a number of hit points equal to the lightning damage dealt."
         ],
         "Actions": [
@@ -32627,29 +27836,12 @@ dnd_monsters = {
             "Gems",
             "Potions",
             "Magic Weapons"
-        ],
-        "Race": "Plant",
-        "Class": "Monster",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Chortle",
-            "Humphrey",
-            "Bogel",
-            "McMurphy",
-            "Arlyn"
-        ],
-        "5 Common Last Names": [
-            "Mounds",
-            "Girdle",
-            "Hanks",
-            "Scuttles",
-            "Oakenwoods"
         ]
     },
-    "Shield_Guardian": {
+    "Shield-Guardian": {
         "Name": "Shield Guardian",
         "Type": "Large construct",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "142 (15d10 + 60)",
         "Speed": "30 ft.",
@@ -32667,7 +27859,7 @@ dnd_monsters = {
         "Reactions": [
             "Shield. When a creature makes an attack against the wearer of the guardian's amulet, the guardian grants a +2 bonus to the wearer's AC if the guardian is within 5 feet of the wearer."
         ],
-        "Features": [
+        "features": [
             "Bound. The shield guardian is magically bound to an amulet. As long as the guardian and its amulet are on the same plane of existence, the amulet's wearer can telepathically call the guardian to travel to it, and the guardian knows the distance and direction to the amulet. If the guardian is within 60 feet of the amulet's wearer, half of any damage the wearer takes (rounded up) is transferred to the guardian.",
             "Regeneration. The shield guardian regains 10 hit points at the start of its turn if it has at least 1 hit point.",
             "Spell Storing. A spellcaster who wears the shield guardian's amulet can cause the guardian to store one spell of 4th level or lower. To do so, the wearer must cast the spell on the guardian. The spell has no effect but is stored within the guardian. When commanded to do so by the wearer or when a situation arises that was predefined by the spellcaster, the guardian casts the stored spell with any parameters set by the original caster, requiring no components. When the spell is cast or a new spell is stored, any previously stored spell is lost."
@@ -32741,29 +27933,12 @@ dnd_monsters = {
             "Rune stones used to control the Shield Guardian",
             "Valuable gems and jewelry stolen from the Guardian's targets",
             "Exquisite works of art taken from its victims"
-        ],
-        "Race": "Construct",
-        "Class": "Outsider",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Bosonival",
-            "Arben",
-            "Karsten",
-            "Gustav",
-            "Gereon"
-        ],
-        "5 Common Last Names": [
-            "The Builder",
-            "Hearthsworn",
-            "The Smith",
-            "The Forgemaster",
-            "Of Stone and Steel"
         ]
     },
     "Shrieker": {
         "Name": "Shrieker",
         "Type": "Medium plant",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "5",
         "Hit Points": "13 (3d8)",
         "Speed": "0 ft.",
@@ -32777,7 +27952,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "3 (-4)",
         "CHA": "1 (-5)",
-        "Features": [
+        "features": [
             "False Appearance. While the shrieker remains motionless, it is indistinguishable from an ordinary fungus.",
             "Shriek. When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for 1d4 of the shrieker's turns afterward."
         ],
@@ -32843,29 +28018,12 @@ dnd_monsters = {
             "Food rations",
             "Torches",
             "Magic scrolls"
-        ],
-        "Race": "Fungus",
-        "Class": "Plant",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Fung",
-            "Gurk",
-            "Zorc",
-            "Shroom",
-            "Rot"
-        ],
-        "5 Common Last Names": [
-            "Spore",
-            "Grower",
-            "Cryer",
-            "Screamer",
-            "Shrieker"
         ]
     },
-    "Silver_Dragon_Wyrmling": {
+    "Silver-Dragon-Wyrmling": {
         "Name": "Silver Dragon Wyrmling",
         "Type": "Medium dragon (Metallic)",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "45 (6d8 + 18)",
         "Speed": "30 ft., fly 60 ft.",
@@ -32881,7 +28039,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "11 (+0)",
         "CHA": "15 (+2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +6 to hit, reach 5 ft., one target.Hit: 9 (1d10 + 4) piercing damage.",
             "Breath Weapons (Recharge 5-6). The dragon uses one of the following breath weapons.",
@@ -32951,29 +28109,12 @@ dnd_monsters = {
             "Potions and elixirs.",
             "Gems and jewels.",
             "Taxidermy trophies."
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Silveria",
-            "Silvern",
-            "Sulara",
-            "Saryssa",
-            "Silvershine"
-        ],
-        "5 Common Last Names": [
-            "Silvercloud",
-            "Silvertongue",
-            "Silverscale",
-            "Moonstone",
-            "Brightclaw"
         ]
     },
     "Skeleton": {
         "Name": "Skeleton",
         "Type": "Medium undead",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "13 (armor scraps)",
         "Hit Points": "13 (2d8 + 4)",
         "Speed": "30 ft.",
@@ -32989,7 +28130,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "8 (-1)",
         "CHA": "5 (-3)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Shortsword.Melee Weapon Attack: +4 to hit, reach 5 ft., one target.Hit: 5 (1d6 + 2) piercing damage.",
             "Shortbow.Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target.Hit: 5 (1d6 + 2) piercing damage."
@@ -33069,29 +28210,12 @@ dnd_monsters = {
             "Scrolls",
             "Rare herbs and ingredients for magical potions",
             "Rare books"
-        ],
-        "Race": "Undead",
-        "Class": "Undead",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Randy",
-            "Grimm",
-            "Karel",
-            "Norton",
-            "Remmy"
-        ],
-        "5 Common Last Names": [
-            "Rattlebones",
-            "Bonechill",
-            "Starknuckle",
-            "Deathsap",
-            "Mortarmane"
         ]
     },
     "Solar": {
         "Name": "Solar",
         "Type": "Large celestial",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "21 (natural armor)",
         "Hit Points": "243 (18d10 + 144)",
         "Speed": "50 ft., fly 150 ft.",
@@ -33115,7 +28239,7 @@ dnd_monsters = {
             "Searing Burst (Costs 2 Actions). The solar emits magical, divine energy. Each creature of its choice in a 10-foot radius must make a DC 23 Dexterity saving throw, taking 14 (4d6) fire damage plus 14 (4d6) radiant damage on a failed save, or half as much damage on a successful one.",
             "Blinding Gaze (Costs 3 Actions). The solar targets one creature it can see within 30 feet of it. If the target can see it, the target must succeed on a DC 15 Constitution saving throw or be blinded until magic such as thelesser restorationspell removes the blindness."
         ],
-        "Features": [
+        "features": [
             "Angelic Weapons. The solar's weapon attacks are magical. When the solar hits with any weapon, the weapon deals an extra 6d8 radiant damage (included in the attack).",
             "Divine Awareness. The solar knows if it hears a lie.",
             "Innate Spellcasting. The solar's spellcasting ability is Charisma (spell save DC 25). It can innately cast the following spells, requiring no material components:",
@@ -33197,29 +28321,12 @@ dnd_monsters = {
             "Magic Armor",
             "Gold",
             "Precious Stones"
-        ],
-        "Race": "Celestial",
-        "Class": "Outsider",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Diana",
-            "Apollo",
-            "Helios",
-            "Teucer",
-            "Ladon"
-        ],
-        "5 Common Last Names": [
-            "Haloed",
-            "Light",
-            "Radiant",
-            "Brilliant",
-            "Celestian"
         ]
     },
     "Specter": {
         "Name": "Specter",
         "Type": "Medium undead",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "12",
         "Hit Points": "22 (5d8)",
         "Speed": "0 ft., fly 50 ft. (hover)",
@@ -33235,7 +28342,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "10 (+0)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "Incorporeal Movement. The specter can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.",
             "Sunlight Sensitivity. While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
         ],
@@ -33305,29 +28412,12 @@ dnd_monsters = {
             "Silver blade",
             "Divine scroll or book",
             "Gemstone imbued with powerful necromantic magics"
-        ],
-        "Race": "Undead",
-        "Class": "Ghost",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Atropos",
-            "Gorlag",
-            "Thalgent",
-            "Vogren",
-            "Xanthos"
-        ],
-        "5 Common Last Names": [
-            "The Stern",
-            "The Soothing Shadow",
-            "The Frosty Maw",
-            "The Burning Ember",
-            "The Silent Stalker"
         ]
     },
     "Spider": {
         "Name": "Spider",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "1 (1d4 - 1)",
         "Speed": "20 ft., climb 20 ft.",
@@ -33341,7 +28431,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "10 (+0)",
         "CHA": "2 (-4)",
-        "Features": [
+        "features": [
             "Spider Climb. The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
             "Web Sense. While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.",
             "Web Walker. The spider ignores movement restrictions caused by webbing."
@@ -33416,29 +28506,12 @@ dnd_monsters = {
             "Jewelry",
             "Gems",
             "Trinkets"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Creep",
-            "Crawl",
-            "Leap",
-            "Spin",
-            "Stalk"
-        ],
-        "5 Common Last Names": [
-            "Weaver",
-            "Silks",
-            "Eggsack",
-            "Legger",
-            "Hunter"
         ]
     },
-    "Spirit_Naga": {
+    "Spirit-Naga": {
         "Name": "Spirit Naga",
         "Type": "Large monstrosity",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "75 (10d10 + 20)",
         "Speed": "40 ft.",
@@ -33454,7 +28527,7 @@ dnd_monsters = {
         "INT": "16 (+3)",
         "WIS": "15 (+2)",
         "CHA": "16 (+3)",
-        "Features": [
+        "features": [
             "Rejuvenation. If it dies, the naga returns to life in 1d6 days and regains all its hit points. Only awishspell can prevent this trait from functioning.",
             "Spellcasting. The naga is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following wizard spells prepared:"
         ],
@@ -33521,29 +28594,12 @@ dnd_monsters = {
             "Silver coins",
             "Magical items",
             "Secrets and ancient texts"
-        ],
-        "Race": "Naga",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Azeret",
-            "Malzaketh",
-            "Nalanyr",
-            "Raamer",
-            "Vaanya"
-        ],
-        "5 Common Last Names": [
-            "Bloodbinder",
-            "Celestis",
-            "Diviner",
-            "Geomancer",
-            "Maleficarum"
         ]
     },
     "Sprite": {
         "Name": "Sprite",
         "Type": "Tiny fey",
-        "Alignment": "neutral good",
+        "alignment": "neutral good",
         "Armor Class": "15 (leather armor)",
         "Hit Points": "2 (1d4)",
         "Speed": "10 ft., fly 40 ft.",
@@ -33557,7 +28613,7 @@ dnd_monsters = {
         "INT": "14 (+2)",
         "WIS": "13 (+1)",
         "CHA": "11 (+0)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Longsword.Melee Weapon Attack: +2 to hit, reach 5 ft., one target.Hit: 1 slashing damage.",
             "Shortbow.Ranged Weapon Attack: +6 to hit, range 40/160 ft., one target.Hit: 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or become poisoned for 1 minute. If its saving throw result is 5 or lower, the poisoned target falls unconscious for the same duration, or until it takes damage or another creature takes an action to shake it awake.",
@@ -33636,29 +28692,12 @@ dnd_monsters = {
             "Glimmering Coins",
             "Mystical Charms",
             "Shiny Stones"
-        ],
-        "Race": "Fey",
-        "Class": "Feywild",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Willow",
-            "Rill",
-            "Teal",
-            "Thorn",
-            "River"
-        ],
-        "5 Common Last Names": [
-            "Fern",
-            "Briar",
-            "Glow",
-            "Whistle",
-            "Spark"
         ]
     },
     "Spy": {
         "Name": "Spy",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any alignment",
+        "alignment": "any alignment",
         "Armor Class": "12",
         "Hit Points": "27 (6d8)",
         "Speed": "30 ft.",
@@ -33672,7 +28711,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "14 (+2)",
         "CHA": "16 (+3)",
-        "Features": [
+        "features": [
             "Cunning Action. On each of its turns, the spy can use a bonus action to take the Dash, Disengage, or Hide action.",
             "Sneak Attack (1/Turn). The spy deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the spy that isn't incapacitated and the spy doesn't have disadvantage on the attack roll."
         ],
@@ -33751,29 +28790,12 @@ dnd_monsters = {
             "Gold Bars",
             "Lock-Picks",
             "Spyglass"
-        ],
-        "Race": "Human",
-        "Class": "Rogue",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ash",
-            "Ezra",
-            "Jace",
-            "Isobel",
-            "Hale"
-        ],
-        "5 Common Last Names": [
-            "Kane",
-            "Foster",
-            "Graves",
-            "Wren",
-            "DeLuca"
         ]
     },
-    "Steam_Mephit": {
+    "Steam-Mephit": {
         "Name": "Steam Mephit",
         "Type": "Small elemental",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "10",
         "Hit Points": "21 (6d6)",
         "Speed": "30 ft., fly 30 ft.",
@@ -33788,7 +28810,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "10 (+0)",
         "CHA": "12 (+1)",
-        "Features": [
+        "features": [
             "Death Burst. When the mephit dies, it explodes in a cloud of steam. Each creature within 5 feet of the mephit must succeed on a DC 10 Dexterity saving throw or take 4 (1d8) fire damage.",
             "Innate Spellcasting (1/Day). The mephit can innately castblur, requiring no material components. Its innate spellcasting ability is Charisma."
         ],
@@ -33859,29 +28881,12 @@ dnd_monsters = {
             "Magic items related to steam or smoke",
             "Thin cloth armor",
             "Small blades"
-        ],
-        "Race": "Elemental",
-        "Class": "None",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Hotaru",
-            "Fuego",
-            "Hontan",
-            "Budo",
-            "Ikazuchi"
-        ],
-        "5 Common Last Names": [
-            "Plumes",
-            "Steamvents",
-            "Smokescales",
-            "Geysers",
-            "Fumaroles"
         ]
     },
     "Stirge": {
         "Name": "Stirge",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "2 (1d4)",
         "Speed": "10 ft., fly 40 ft.",
@@ -33894,7 +28899,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "8 (-1)",
         "CHA": "6 (-2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Blood Drain.Melee Weapon Attack: +5 to hit, reach 5 ft., one creature.Hit: 5 (1d4 + 3) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss. The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge."
         ],
@@ -33961,29 +28966,12 @@ dnd_monsters = {
             "Pieces of jewelry",
             "Small pieces of silver",
             "Gems (large and small)"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Chomper",
-            "Fweep",
-            "Stabber",
-            "Buzzo",
-            "Scooper"
-        ],
-        "5 Common Last Names": [
-            "Swarm",
-            "Tick",
-            "Lasher",
-            "Gnawer",
-            "Bitepest"
         ]
     },
-    "Stone_Giant": {
+    "Stone-Giant": {
         "Name": "Stone Giant",
         "Type": "Huge giant",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "126 (11d12 + 55)",
         "Speed": "40 ft.",
@@ -34001,7 +28989,7 @@ dnd_monsters = {
         "Reactions": [
             "Rock Catching. If a rock or similar object is hurled at the giant, the giant can, with a successful DC 10 Dexterity saving throw, catch the missile and take no bludgeoning damage from it."
         ],
-        "Features": [
+        "features": [
             "Stone Camouflage. The giant has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
         ],
         "Actions": [
@@ -34076,29 +29064,12 @@ dnd_monsters = {
             "Potion of Giant Growth",
             "Gems and Jewels",
             "Magic Items associated with Stone-related powers"
-        ],
-        "Race": "Giant",
-        "Class": "Fighter",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Stronar",
-            "Gronuk",
-            "Gorim",
-            "Thorgrim",
-            "Vondar"
-        ],
-        "5 Common Last Names": [
-            "Stoukis",
-            "Dornick",
-            "Roklom",
-            "Becklar",
-            "Lekkis"
         ]
     },
-    "Stone_Golem": {
+    "Stone-Golem": {
         "Name": "Stone Golem",
         "Type": "Large construct",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "17 (natural armor)",
         "Hit Points": "178 (17d10 + 85)",
         "Speed": "30 ft.",
@@ -34113,7 +29084,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "11 (+0)",
         "CHA": "1 (-5)",
-        "Features": [
+        "features": [
             "Immutable Form. The golem is immune to any spell or effect that would alter its form.",
             "Magic Resistance. The golem has advantage on saving throws against spells and other magical effects.",
             "Magic Weapons. The golem's weapon attacks are magical."
@@ -34185,29 +29156,12 @@ dnd_monsters = {
             "Potions",
             "Gems and jewelry",
             "Rare materials"
-        ],
-        "Race": "Construct",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Hob",
-            "Chuf",
-            "Whin",
-            "Drak",
-            "Ston"
-        ],
-        "5 Common Last Names": [
-            "Clack",
-            "Lump",
-            "Forge",
-            "Granite",
-            "Strate"
         ]
     },
-    "Storm_Giant": {
+    "Storm-Giant": {
         "Name": "Storm Giant",
         "Type": "Huge giant",
-        "Alignment": "chaotic good",
+        "alignment": "chaotic good",
         "Armor Class": "16 (scale mail)",
         "Hit Points": "230 (20d12 + 100)",
         "Speed": "50 ft., swim 50 ft.",
@@ -34224,7 +29178,7 @@ dnd_monsters = {
         "INT": "16 (+3)",
         "WIS": "18 (+4)",
         "CHA": "18 (+4)",
-        "Features": [
+        "features": [
             "Amphibious. The giant can breathe air and water.",
             "Innate Spellcasting. The giant's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components:"
         ],
@@ -34303,23 +29257,6 @@ dnd_monsters = {
             "Weather Stones",
             "Lightning Bolts",
             "Plate Armor"
-        ],
-        "Race": "Giant",
-        "Class": "Fighter",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Orsik",
-            "Ultherm",
-            "Olarrow",
-            "Vigart",
-            "Umion"
-        ],
-        "5 Common Last Names": [
-            "Stormhammer",
-            "Cloudbreaker",
-            "Thundergale",
-            "Cloudchaser",
-            "Stormbringer"
         ]
     },
     "Succubus/Incubus": {
@@ -34429,29 +29366,12 @@ dnd_monsters = {
             "Gold Coins",
             "Gems",
             "Fancy Clothing"
-        ],
-        "Race": "Demon",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Arum",
-            "Dahlia",
-            "Jahi",
-            "Manna",
-            "Turel"
-        ],
-        "5 Common Last Names": [
-            "Greaves",
-            "Ironsmith",
-            "Laroux",
-            "Verinth",
-            "Yuston"
         ]
     },
-    "Swarm_of_Bats": {
+    "Swarm-of-Bats": {
         "Name": "Swarm of Bats",
         "Type": "Medium Swarm of Tiny Beasts",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "22 (5d8)",
         "Speed": "0 ft., fly 30 ft.",
@@ -34466,7 +29386,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "4 (-3)",
-        "Features": [
+        "features": [
             "Echolocation. The swarm can't use its blindsight while deafened.",
             "Keen Hearing. The swarm has advantage on Wisdom (Perception) checks that rely on hearing.",
             "Swarm. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can't regain hit points or gain temporary hit points."
@@ -34536,26 +29456,9 @@ dnd_monsters = {
             "Bat tooth",
             "Bat wings",
             "Bat claws"
-        ],
-        "Race": "Beast",
-        "Class": "Swarm",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Sterling",
-            "Morgana",
-            "Bonaire",
-            "Cecily",
-            "Alana"
-        ],
-        "5 Common Last Names": [
-            "Bogensvogel",
-            "Vesperian",
-            "Odaki",
-            "Tkachev",
-            "Ederlein"
         ]
     },
-    "Swarm_of_Bees": {
+    "Swarm-of-Bees": {
         "Name": "Swarm of Bees",
         "Type": "Tiny beast",
         "Alignment": "Unaligned",
@@ -34647,26 +29550,9 @@ dnd_monsters = {
             "Venom",
             "Bee Antennae",
             "Bee Stinger"
-        ],
-        "Race": "Vermin",
-        "Class": "Swarm",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Beezle",
-            "Buzzo",
-            "Swarmy",
-            "Bozz",
-            "Bizzles"
-        ],
-        "5 Common Last Names": [
-            "Bumble",
-            "Bee",
-            "Hive",
-            "Stinger",
-            "Killer"
         ]
     },
-    "Swarm_of_Centipedes": {
+    "Swarm-of-Centipedes": {
         "Name": "Swarm of Centipedes",
         "Type": "Swarm of Tiny beasts",
         "Alignment": "Unaligned",
@@ -34745,29 +29631,12 @@ dnd_monsters = {
             "Insect wings",
             "Insect stingers",
             "Insect eggs"
-        ],
-        "Race": "Beast",
-        "Class": "Vermin",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Fiddy",
-            "Ceba",
-            "Milli",
-            "Kem",
-            "Skal"
-        ],
-        "5 Common Last Names": [
-            "Gume",
-            "Ventur",
-            "Crust",
-            "Larv",
-            "Tarsi"
         ]
     },
-    "Swarm_of_Insects": {
+    "Swarm-of-Insects": {
         "Name": "Swarm of Insects",
         "Type": "Medium Swarm of Tiny Beasts",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12 (natural armor)",
         "Hit Points": "22 (5d8)",
         "Speed": "20 ft., climb 20 ft.",
@@ -34782,7 +29651,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "7 (-2)",
         "CHA": "1 (-5)",
-        "Features": [
+        "features": [
             "Swarm. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points."
         ],
         "Actions": [
@@ -34864,29 +29733,12 @@ dnd_monsters = {
             "Potions",
             "Scrolls of Protection",
             "Minor Magic Items"
-        ],
-        "Race": "Swarm",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Buzz",
-            "Scuttle",
-            "Crawler",
-            "Chirper",
-            "Bitey"
-        ],
-        "5 Common Last Names": [
-            "Beepers",
-            "Hoppers",
-            "Flutterers",
-            "Chompers",
-            "Stinkers"
         ]
     },
-    "Swarm_of_Poisonous_Snakes": {
+    "Swarm-of-Poisonous-Snakes": {
         "Name": "Swarm of Poisonous Snakes",
         "Type": "Medium Swarm of Tiny Beasts",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "14",
         "Hit Points": "36 (8d8)",
         "Speed": "30 ft., swim 30 ft.",
@@ -34901,7 +29753,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "10 (+0)",
         "CHA": "3 (-4)",
-        "Features": [
+        "features": [
             "Swarm. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can't regain hit points or gain temporary hit points."
         ],
         "Actions": [
@@ -34970,29 +29822,12 @@ dnd_monsters = {
             "Venom Sacs",
             "Venomous Snake Venom",
             "Venomous Snake Scales"
-        ],
-        "Race": "Vermin",
-        "Class": "Animal",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Vish",
-            "Marisa",
-            "Sly",
-            "Pelop",
-            "Raja"
-        ],
-        "5 Common Last Names": [
-            "inx",
-            "iskr",
-            "ides",
-            "teon",
-            "opel"
         ]
     },
-    "Swarm_of_Quippers": {
+    "Swarm-of-Quippers": {
         "Name": "Swarm of Quippers",
         "Type": "Medium Swarm of Tiny Beasts",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13",
         "Hit Points": "28 (8d8 - 8)",
         "Speed": "0 ft., swim 40 ft.",
@@ -35007,7 +29842,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "7 (-2)",
         "CHA": "2 (-4)",
-        "Features": [
+        "features": [
             "Blood Frenzy. The swarm has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
             "Swarm. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny quipper. The swarm can't regain hit points or gain temporary hit points.",
             "Water Breathing. The swarm can breathe only underwater."
@@ -35083,29 +29918,12 @@ dnd_monsters = {
             "Gold Earring",
             "Bronze Dagger",
             "Precious Stones"
-        ],
-        "Race": "Aquatic Beast Fiend",
-        "Class": "None",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Skittering",
-            "Grinning",
-            "Quarrelsome",
-            "Chittering",
-            "Ripping"
-        ],
-        "5 Common Last Names": [
-            "Quip",
-            "Snipper",
-            "Nipper",
-            "Gnash",
-            "Bite"
         ]
     },
-    "Swarm_of_Rats": {
+    "Swarm-of-Rats": {
         "Name": "Swarm of Rats",
         "Type": "Medium Swarm of Tiny Beasts",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "10",
         "Hit Points": "24 (7d8 - 7)",
         "Speed": "30 ft.",
@@ -35120,7 +29938,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "10 (+0)",
         "CHA": "3 (-4)",
-        "Features": [
+        "features": [
             "Keen Smell. The swarm has advantage on Wisdom (Perception) checks that rely on smell.",
             "Swarm. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain hit points or gain temporary hit points."
         ],
@@ -35192,29 +30010,12 @@ dnd_monsters = {
             "Wheat",
             "Small Gems",
             "Animal Remains"
-        ],
-        "Race": "Animated Vermin",
-        "Class": "Beast",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Squeeze",
-            "Skitter",
-            "Scurry",
-            "Sniff",
-            "Scratch"
-        ],
-        "5 Common Last Names": [
-            "Rattus",
-            "Murinae",
-            "Vespertilionidae",
-            "Rodentia",
-            "Muroidea"
         ]
     },
-    "Swarm_of_Ravens": {
+    "Swarm-of-Ravens": {
         "Name": "Swarm of Ravens",
         "Type": "Medium Swarm of Tiny Beasts",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "24 (7d8 - 7)",
         "Speed": "10 ft., fly 50 ft.",
@@ -35230,7 +30031,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "12 (+1)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Swarm. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny raven. The swarm can't regain hit points or gain temporary hit points."
         ],
         "Actions": [
@@ -35302,26 +30103,9 @@ dnd_monsters = {
             "Jewelry",
             "Magic items",
             "Rare books"
-        ],
-        "Race": "Swarm",
-        "Class": "Beast",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Cawthorne",
-            "Kraak",
-            "Corvus",
-            "Carax",
-            "Naira"
-        ],
-        "5 Common Last Names": [
-            "Duskwing",
-            "Emberwing",
-            "Vandalore",
-            "Flockfeather",
-            "Wrygrin"
         ]
     },
-    "Swarm_of_Spiders": {
+    "Swarm-of-Spiders": {
         "Name": "Swarm of Spiders",
         "Type": "Medium swarm of tiny beasts",
         "Alignment": "Unaligned",
@@ -35411,26 +30195,9 @@ dnd_monsters = {
             "Mandrake Root",
             "Wyrmsbane",
             "Spider Silk Armor"
-        ],
-        "Race": "Vermin",
-        "Class": "Swarm",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Scuttler",
-            "Terrant",
-            "Gloat",
-            "Rend",
-            "Venom"
-        ],
-        "5 Common Last Names": [
-            "Webber",
-            "Crawler",
-            "Nipper",
-            "Leaper",
-            "Lurker"
         ]
     },
-    "Swarm_of_Wasps": {
+    "Swarm-of-Wasps": {
         "Name": "Swarm of Wasps",
         "Type": "Medium swarm of Tiny beasts",
         "Alignment": "Unaligned",
@@ -35517,29 +30284,12 @@ dnd_monsters = {
             "Gold Coins",
             "Artifacts",
             "Potions"
-        ],
-        "Race": "Insect",
-        "Class": "Swarm",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Wes",
-            "Hass",
-            "Bess",
-            "Les",
-            "Vess"
-        ],
-        "5 Common Last Names": [
-            "Flier",
-            "Stinger",
-            "Droner",
-            "Biter",
-            "Mourn"
         ]
     },
     "Tarrasque": {
         "Name": "Tarrasque",
         "Type": "Gargantuan monstrosity (Titan)",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "25 (natural armor)",
         "Hit Points": "676 (33d20 + 330)",
         "Speed": "40 ft.",
@@ -35561,7 +30311,7 @@ dnd_monsters = {
             "Move. The tarrasque moves up to half its speed.",
             "Chomp (Costs 2 Actions). The tarrasque makes one bite attack or uses its Swallow."
         ],
-        "Features": [
+        "features": [
             "Legendary Resistance (3/Day). If the tarrasque fails a saving throw, it can choose to succeed instead.",
             "Magic Resistance. The tarrasque has advantage on saving throws against spells and other magical effects.",
             "Reflective Carapace. Any time the tarrasque is targeted by amagic missilespell, a line spell, or a spell that requires a ranged attack roll, roll a d6. On a 1 to 5, the tarrasque is unaffected. On a 6, the tarrasque is unaffected, and the effect is reflected back at the caster as though it originated from the tarrasque, turning the caster into the target.",
@@ -35636,29 +30386,12 @@ dnd_monsters = {
             "Ancient Artifacts",
             "Gold and Silver Coins",
             "Magical Scrolls and Tomes"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Gargantuan",
-        "5 Common First Names": [
-            "Gorr",
-            "Raj",
-            "Deekin",
-            "Ugluk",
-            "Kurr"
-        ],
-        "5 Common Last Names": [
-            "Smash",
-            "Stomp",
-            "Maul",
-            "Charge",
-            "Rampage"
         ]
     },
     "Thug": {
         "Name": "Thug",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any non-good alignment",
+        "alignment": "any non-good alignment",
         "Armor Class": "11 (leather armor)",
         "Hit Points": "32 (5d8 + 10)",
         "Speed": "30 ft.",
@@ -35672,7 +30405,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "10 (+0)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "Pack Tactics. The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally isn't incapacitated."
         ],
         "Actions": [
@@ -35748,29 +30481,12 @@ dnd_monsters = {
             "Jewelry",
             "Relics",
             "Potions"
-        ],
-        "Race": "Human",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Jarl",
-            "Brynja",
-            "Thorgrim",
-            "Eirik",
-            "Raegar"
-        ],
-        "5 Common Last Names": [
-            "Greystone",
-            "Skaterwick",
-            "Galegrinder",
-            "Markus",
-            "Kneebiter"
         ]
     },
     "Tiger": {
         "Name": "Tiger",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "12",
         "Hit Points": "37 (5d10 + 10)",
         "Speed": "40 ft.",
@@ -35784,7 +30500,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "12 (+1)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Keen Smell. The tiger has advantage on Wisdom (Perception) checks that rely on smell.",
             "Pounce. If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action."
         ],
@@ -35857,29 +30573,12 @@ dnd_monsters = {
             "Animal pelts",
             "Animal bones",
             "Rare spices"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Sheba",
-            "Kiki",
-            "Tiger",
-            "Leo",
-            "Saber"
-        ],
-        "5 Common Last Names": [
-            "Stripes",
-            "Tails",
-            "The Great",
-            "King",
-            "Hunter"
         ]
     },
     "Treant": {
         "Name": "Treant",
         "Type": "Huge plant",
-        "Alignment": "chaotic good",
+        "alignment": "chaotic good",
         "Armor Class": "16 (natural armor)",
         "Hit Points": "138 (12d12 + 60)",
         "Speed": "30 ft.",
@@ -35894,7 +30593,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "16 (+3)",
         "CHA": "12 (+1)",
-        "Features": [
+        "features": [
             "False Appearance. While the treant remains motionless, it is indistinguishable from a normal tree.",
             "Siege Monster. The treant deals double damage to objects and structures."
         ],
@@ -35971,29 +30670,12 @@ dnd_monsters = {
             "Herbs/spices",
             "Nuts/berries",
             "Gems/Gold"
-        ],
-        "Race": "Plant",
-        "Class": "Monstrosity",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Ashe",
-            "Korina",
-            "Orsil",
-            "Brinell",
-            "Nalain"
-        ],
-        "5 Common Last Names": [
-            "Woodroot",
-            "Oaklimb",
-            "Fallowbough",
-            "Greenbranch",
-            "Wildwood"
         ]
     },
-    "Tribal_Warrior": {
+    "Tribal-Warrior": {
         "Name": "Tribal Warrior",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any alignment",
+        "alignment": "any alignment",
         "Armor Class": "12 (hide armor)",
         "Hit Points": "11 (2d8 + 2)",
         "Speed": "30 ft.",
@@ -36006,7 +30688,7 @@ dnd_monsters = {
         "INT": "8 (-1)",
         "WIS": "11 (+0)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Pack Tactics. The warrior has advantage on an attack roll against a creature if at least one of the warrior's allies is within 5 feet of the creature and the ally isn't incapacitated."
         ],
         "Actions": [
@@ -36083,29 +30765,12 @@ dnd_monsters = {
             "Jewelry",
             "Cloth Wraps",
             "Equipment or Weapons"
-        ],
-        "Race": "Human",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Kaya",
-            "Nathaniel",
-            "Alexandra",
-            "Makena",
-            "Ethan"
-        ],
-        "5 Common Last Names": [
-            "Silvermane",
-            "Hooktooth",
-            "Shieldfist",
-            "Moonbreather",
-            "Ridgehorn"
         ]
     },
     "Triceratops": {
         "Name": "Triceratops",
         "Type": "Huge beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "95 (10d12 + 30)",
         "Speed": "50 ft.",
@@ -36118,7 +30783,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "11 (+0)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Trampling Charge. If the triceratops moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the triceratops can make one stomp attack against it as a bonus action."
         ],
         "Actions": [
@@ -36190,29 +30855,12 @@ dnd_monsters = {
             "Plants Fibres",
             "Leather Scraps",
             "Tail Plates"
-        ],
-        "Race": "Monstrosity",
-        "Class": "Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Burrdon",
-            "Lurdon",
-            "Cragar",
-            "Wormar",
-            "Krumbor"
-        ],
-        "5 Common Last Names": [
-            "Cresthorn",
-            "Tailhorn",
-            "Tuskman",
-            "Slaughterhorn",
-            "Smallwing"
         ]
     },
     "Troglodyte": {
         "Name": "Troglodyte",
         "Type": "Medium humanoid (Troglodyte)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "11 (natural armor)",
         "Hit Points": "13 (2d8 + 4)",
         "Speed": "30 ft.",
@@ -36226,7 +30874,7 @@ dnd_monsters = {
         "INT": "6 (-2)",
         "WIS": "10 (+0)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Chameleon Skin. The troglodyte has advantage on Dexterity (Stealth) checks made to hide.",
             "Stench. Any creature other than a troglodyte that starts its turn within 5 feet of the troglodyte must succeed on a DC 12 Constitution saving throw or be poisoned until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour.",
             "Sunlight Sensitivity. While in sunlight, the troglodyte has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
@@ -36303,29 +30951,12 @@ dnd_monsters = {
             "Weapons and armor",
             "Alchemical items",
             "Trophies and body parts"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Chumash",
-            "Kurusa",
-            "Misak",
-            "Poloski",
-            "Vassa"
-        ],
-        "5 Common Last Names": [
-            "Bogatyr",
-            "Karpaty",
-            "Volyn",
-            "Voronin",
-            "Yatvyag"
         ]
     },
     "Troll": {
         "Name": "Troll",
         "Type": "Large giant",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "84 (8d10 + 40)",
         "Speed": "30 ft.",
@@ -36339,7 +30970,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "9 (-1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Keen Smell. The troll has advantage on Wisdom (Perception) checks that rely on smell.",
             "Regeneration. The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate."
         ],
@@ -36420,29 +31051,12 @@ dnd_monsters = {
             "Magical weapons",
             "Mystical trinkets",
             "Rare artifacts"
-        ],
-        "Race": "Giant",
-        "Class": "Humanoid",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Grendar",
-            "Hargur",
-            "Heorogar",
-            "Hernar",
-            "Merlick"
-        ],
-        "5 Common Last Names": [
-            "Thumbripper",
-            "Muckboar",
-            "Chopsticks",
-            "Stomper",
-            "Crusher"
         ]
     },
-    "Tyrannosaurus_Rex": {
+    "Tyrannosaurus-Rex": {
         "Name": "Tyrannosaurus Rex",
         "Type": "Huge beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "136 (13d12 + 52)",
         "Speed": "50 ft.",
@@ -36456,7 +31070,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "9 (-1)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Multiattack. The tyrannosaurus makes two attacks: one with its bite and one with its tail. It can't make both attacks against the same target.",
             "Bite.Melee Weapon Attack: +10 to hit, reach 10 ft., one target.Hit: 33 (4d12 + 7) piercing damage. If the target is a Medium or smaller creature, it is grappled (escape DC 17). Until this grapple ends, the target is restrained, and the tyrannosaurus can't bite another target.",
@@ -36527,29 +31141,12 @@ dnd_monsters = {
             "Prehistoric artifacts",
             "Ancient coins",
             "Gems"
-        ],
-        "Race": "Dinosaur",
-        "Class": "Beast",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Goliath",
-            "Gorefang",
-            "Gash-singer",
-            "Lordscreamer",
-            "Crimsonblade"
-        ],
-        "5 Common Last Names": [
-            "the Crusher",
-            "Terrormaw",
-            "the King of Bones",
-            "the Bloody Talon",
-            "Mountain-shaker"
         ]
     },
     "Ultroloth": {
         "Name": "Ultroloth",
         "Type": "Medium fiend (Yugoloth)",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "153 (18d8 + 72)",
         "Speed": "30 ft., fly 60 ft.",
@@ -36566,7 +31163,7 @@ dnd_monsters = {
         "INT": "18 (+4)",
         "WIS": "15 (+2)",
         "CHA": "19 (+4)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "This full creature's stat block is not available (not OGL)."
         ],
@@ -36640,29 +31237,12 @@ dnd_monsters = {
             "Rings of power.",
             "Scrolls of ancient knowledge.",
             "Helms of command."
-        ],
-        "Race": "Yugoloth",
-        "Class": "Fiend",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Allaz",
-            "Ika",
-            "Warul",
-            "Nukar",
-            "Wenru"
-        ],
-        "5 Common Last Names": [
-            "Erldolol",
-            "Naharjob",
-            "Nindlenet",
-            "Rurnsuul",
-            "Talladon"
         ]
     },
-    "Umber_Hulk": {
+    "Umber-Hulk": {
         "Name": "Umber Hulk",
         "Type": "Large monstrosity",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "18 (natural armor)",
         "Hit Points": "93 (11d10 + 33)",
         "Speed": "30 ft., burrow 20 ft.",
@@ -36675,7 +31255,7 @@ dnd_monsters = {
         "INT": "9 (-1)",
         "WIS": "10 (+0)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Confusing Caze. When a creature starts its turn within 30 feet of the umber hulk and is able to see the umber hulk's eyes, the umber hulk can magically force it to make a DC 15 Charisma saving throw, unless the umber hulk is incapacitated. On a failed saving throw, the creature can't take reactions until the start of its next turn and rolls a d8 to determine what it does during that turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action but uses all its movement to move in a random direction. On a 7 or 8, the creature makes one melee attack against a random creature, or it does nothing if no creature is within reach. Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the umber hulk until the start of its next turn, when it can avert its eyes again. If the creature looks at the umber hulk in the meantime, it must immediately make the save.",
             "Tunneler. The umber hulk can burrow through solid rock at half its burrowing speed and leaves a 5 foot-wide, 8-foot-high tunnel in its wake."
         ],
@@ -36747,29 +31327,12 @@ dnd_monsters = {
             "Greatsword",
             "Dragon Scale Mail",
             "Amulet of Protection"
-        ],
-        "Race": "Monstrosity",
-        "Class": "None",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Bab'Ylg'Roth",
-            "Kuutasha",
-            "Xuggurtep",
-            "Gor'Duran",
-            "Rozgarg"
-        ],
-        "5 Common Last Names": [
-            "Rollwallish",
-            "Zizspike",
-            "Lorayshrike",
-            "Vlorarusselle",
-            "Uzgakarah"
         ]
     },
     "Unicorn": {
         "Name": "Unicorn",
         "Type": "Large celestial",
-        "Alignment": "lawful good",
+        "alignment": "lawful good",
         "Armor Class": "12",
         "Hit Points": "67 (9d10 + 18)",
         "Speed": "50 ft.",
@@ -36790,7 +31353,7 @@ dnd_monsters = {
             "Shimmering Shield (Costs 2 Actions). The unicorn creates a shimmering, magical field around itself or another creature it can see within 60 feet of it. The target gains a +2 bonus to AC until the end of the unicorn's next turn.",
             "Heal Self (Costs 3 Actions). The unicorn magically regains 11 (2d8 + 2) hit points."
         ],
-        "Features": [
+        "features": [
             "Charge. If the unicorn moves at least 20 feet straight toward a target and then hits it with a horn attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.",
             "Innate Spellcasting. The unicorn's innate spellcasting ability is Charisma (spell save DC 14). The unicorn can innately cast the following spells, requiring no components:",
             "Magic Resistance. The unicorn has advantage on saving throws against spells and other magical effects.",
@@ -36868,29 +31431,12 @@ dnd_monsters = {
             "Mystical dust",
             "Rainbow colored fur",
             "Lucky horseshoes"
-        ],
-        "Race": "Celestial",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Raine",
-            "Brynne",
-            "Keryn",
-            "Ayla",
-            "Rider"
-        ],
-        "5 Common Last Names": [
-            "Meadowstrider",
-            "Tallhoof",
-            "Brightmane",
-            "Pridehorn",
-            "Sunbeam"
         ]
     },
     "Vampire": {
         "Name": "Vampire",
         "Type": "Medium undead (Shapechanger)",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "16 (natural armor)",
         "Hit Points": "144 (17d8 + 68)",
         "Speed": "30 ft.",
@@ -36912,7 +31458,7 @@ dnd_monsters = {
             "Unarmed Strike. The vampire makes one unarmed strike.",
             "Bite (Costs 2 Actions). The vampire makes one bite attack."
         ],
-        "Features": [
+        "features": [
             "Shapechanger. If the vampire isn't in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form. While in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies. While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight.",
             "Legendary Resistance (3/Day). If the vampire fails a saving throw, it can choose to succeed instead.",
             "Misty Escape. When it drops to 0 hit points outside its resting place, the vampire transforms into a cloud of mist (as in the Shapechanger trait) instead of falling unconscious, provided that it isn't in sunlight or running water. If it can't transform, it is destroyed. While it has 0 hit points in mist form, it can't revert to its vampire form, and it must reach its resting place within 2 hours or be destroyed. Once in its resting place, it reverts to its vampire form. It is then paralyzed until it regains at least 1 hit point. After spending 1 hour in its resting place with 0 hit points, it regains 1 hit point.",
@@ -37001,29 +31547,12 @@ dnd_monsters = {
             "Gems",
             "Coins",
             "Finely crafted weapons"
-        ],
-        "Race": "Undead",
-        "Class": "Undead Spawn",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Geoffrey",
-            "Adriel",
-            "Charlotte",
-            "Dimitri",
-            "Victoria"
-        ],
-        "5 Common Last Names": [
-            "Belmont",
-            "Langdon",
-            "Krieger",
-            "Harker",
-            "Von Carstein"
         ]
     },
-    "Vampire_Spawn": {
+    "Vampire-Spawn": {
         "Name": "Vampire Spawn",
         "Type": "Medium undead",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "82 (11d8 + 33)",
         "Speed": "30 ft.",
@@ -37039,7 +31568,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "10 (+0)",
         "CHA": "12 (+1)",
-        "Features": [
+        "features": [
             "Regeneration. The vampire regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn.",
             "Spider Climb. The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
             "Vampire Weaknesses. The vampire has the following flaws:",
@@ -37125,29 +31654,12 @@ dnd_monsters = {
             "Jewelry",
             "Negative energy-imbued weapons",
             "Magical items"
-        ],
-        "Race": "Undead",
-        "Class": " Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Jezebeth",
-            "Vladimir",
-            "Herman",
-            "Jasper",
-            "Roger"
-        ],
-        "5 Common Last Names": [
-            "Shadowmane",
-            "Crimsonblood",
-            "Nightfell",
-            "Duskfire",
-            "Damon"
         ]
     },
     "Veteran": {
         "Name": "Veteran",
         "Type": "Medium humanoid (any race)",
-        "Alignment": "any alignment",
+        "alignment": "any alignment",
         "Armor Class": "17 (splint)",
         "Hit Points": "58 (9d8 + 18)",
         "Speed": "30 ft.",
@@ -37161,7 +31673,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "11 (+0)",
         "CHA": "10 (+0)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Multiattack. The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack.",
             "Longsword.Melee Weapon Attack: +5 to hit, reach 5 ft., one target.Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands.",
@@ -37240,29 +31752,12 @@ dnd_monsters = {
             "Rings and Jewellery",
             "Magic Items",
             "Artifacts"
-        ],
-        "Race": "Human",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Isabelle",
-            "Samantha",
-            "Cecilia",
-            "Thomas",
-            "Brock"
-        ],
-        "5 Common Last Names": [
-            "Jones",
-            "Smith",
-            "Davies",
-            "Cooper",
-            "Garrison"
         ]
     },
-    "Violet_Fungus": {
+    "Violet-Fungus": {
         "Name": "Violet Fungus",
         "Type": "Medium plant",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "5",
         "Hit Points": "18 (4d8)",
         "Speed": "5 ft.",
@@ -37276,7 +31771,7 @@ dnd_monsters = {
         "INT": "1 (-5)",
         "WIS": "3 (-4)",
         "CHA": "1 (-5)",
-        "Features": [
+        "features": [
             "False Appearance. While the violet fungus remains motionless, it is indistinguishable from an ordinary fungus."
         ],
         "Actions": [
@@ -37349,29 +31844,12 @@ dnd_monsters = {
             "Scrolls of Protection",
             "Scrolls of Enchantment",
             "Weapons and Armor"
-        ],
-        "Race": "Plant",
-        "Class": "Monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Stilbert",
-            "Veridian",
-            "Speckle",
-            "Kozin",
-            "Millay"
-        ],
-        "5 Common Last Names": [
-            "Tanglebough",
-            "Tanglecap",
-            "Stalefin",
-            "Funglord",
-            "Mossmantle"
         ]
     },
     "Vrock": {
         "Name": "Vrock",
         "Type": "Large fiend (Demon)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "104 (11d10 + 44)",
         "Speed": "40 ft., fly 60 ft.",
@@ -37388,7 +31866,7 @@ dnd_monsters = {
         "INT": "8 (-1)",
         "WIS": "13 (+1)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Magic Resistance. The vrock has advantage on saving throws against spells and other magical effects."
         ],
         "Actions": [
@@ -37470,29 +31948,12 @@ dnd_monsters = {
             "Gold coins",
             "Gems and jewelry",
             "Weapons and armor"
-        ],
-        "Race": "Demon",
-        "Class": "Fiend",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "BERITH",
-            "FORCAS",
-            "MALEB",
-            "PURSON",
-            "RAUM"
-        ],
-        "5 Common Last Names": [
-            "SCARAB",
-            "RAVEN",
-            "GRIMLLE",
-            "DEATH",
-            "DEVIL"
         ]
     },
     "Vulture": {
         "Name": "Vulture",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "10",
         "Hit Points": "5 (1d8 + 1)",
         "Speed": "10 ft., fly 50 ft.",
@@ -37506,7 +31967,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "4 (-3)",
-        "Features": [
+        "features": [
             "Keen Sight and Smell. The vulture has advantage on Wisdom (Perception) checks that rely on sight or smell.",
             "Pack Tactics. The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally isn't incapacitated."
         ],
@@ -37575,29 +32036,12 @@ dnd_monsters = {
             "Tough vulture hide",
             "Large and sharp claws",
             "Tarnished coins"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Vorph",
-            "Maxx",
-            "Tatsu",
-            "Jak",
-            "Roark"
-        ],
-        "5 Common Last Names": [
-            "Vultureclaw",
-            "Skyfeather",
-            "Skycrest",
-            "Talonspike",
-            "Scavenger"
         ]
     },
     "Warhorse": {
         "Name": "Warhorse",
         "Type": "Large beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "11",
         "Hit Points": "19 (3d10 + 3)",
         "Speed": "60 ft.",
@@ -37610,7 +32054,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Trampling Charge. If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action."
         ],
         "Actions": [
@@ -37683,29 +32127,12 @@ dnd_monsters = {
             "Weapon or Armor Upgrade",
             "Horse Tack or Saddle",
             "Riding Animal Training Treats"
-        ],
-        "Race": "Equine",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Max",
-            "Alexander",
-            "George",
-            "Scout",
-            "Silver"
-        ],
-        "5 Common Last Names": [
-            "Stallion",
-            "Whinny",
-            "Mane",
-            "Fury",
-            "Noble"
         ]
     },
-    "Warhorse_Skeleton": {
+    "Warhorse-Skeleton": {
         "Name": "Warhorse Skeleton",
         "Type": "Large undead",
-        "Alignment": "lawful evil",
+        "alignment": "lawful evil",
         "Armor Class": "13 (barding scraps)",
         "Hit Points": "22 (3d10 + 6)",
         "Speed": "60 ft.",
@@ -37721,7 +32148,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "8 (-1)",
         "CHA": "5 (-3)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Hooves.Melee Weapon Attack: +6 to hit, reach 5 ft., one target.Hit: 11 (2d6 + 4) bludgeoning damage."
         ],
@@ -37794,29 +32221,12 @@ dnd_monsters = {
             "Silver jewelry",
             "Magical weapons and armor",
             "Scrolls of dark magic"
-        ],
-        "Race": "Undead",
-        "Class": "Skeleton",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Boneheart",
-            "Marrow",
-            "Bonecrusher",
-            "Sinew",
-            "Ossuary"
-        ],
-        "5 Common Last Names": [
-            "Skelflesh",
-            "Bonecharmer",
-            "Ghoulcrest",
-            "Gorywyrd",
-            "Melankbone"
         ]
     },
-    "Water_Elemental": {
+    "Water-Elemental": {
         "Name": "Water Elemental",
         "Type": "Large elemental",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "14 (natural armor)",
         "Hit Points": "114 (12d10 + 48)",
         "Speed": "30 ft., swim 90 ft.",
@@ -37832,7 +32242,7 @@ dnd_monsters = {
         "INT": "5 (-3)",
         "WIS": "10 (+0)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Water Form. The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.",
             "Freeze. If the elemental takes cold damage, it partially freezes; its speed is reduced by 20 feet until the end of its next turn."
         ],
@@ -37908,29 +32318,12 @@ dnd_monsters = {
             "Scrolls of Aquatic Spells",
             "Water Resistant Armor",
             "Aquatic Artifacts"
-        ],
-        "Race": "Elemental",
-        "Class": "N/A",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Ara",
-            "Erzul",
-            "Pelai",
-            "Tila",
-            "Vialai"
-        ],
-        "5 Common Last Names": [
-            "Ebbchurner",
-            "Gritflow",
-            "Tidessender",
-            "Brookebringer",
-            "Rippledrift"
         ]
     },
     "Weasel": {
         "Name": "Weasel",
         "Type": "Tiny beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13",
         "Hit Points": "1 (1d4 - 1)",
         "Speed": "30 ft.",
@@ -37944,7 +32337,7 @@ dnd_monsters = {
         "INT": "2 (-4)",
         "WIS": "12 (+1)",
         "CHA": "3 (-4)",
-        "Features": [
+        "features": [
             "Keen Hearing and Smell. The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell."
         ],
         "Actions": [
@@ -38015,29 +32408,12 @@ dnd_monsters = {
             "Sapphire",
             "Gold coins",
             "Gold nuggets"
-        ],
-        "Race": "Beast",
-        "Class": "Wilderness",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Sneaky",
-            "Graceful",
-            "Natty",
-            "Tinah",
-            "Quinn"
-        ],
-        "5 Common Last Names": [
-            "Hunter",
-            "Knight",
-            "Whisper",
-            "Spider",
-            "Tracker"
         ]
     },
     "Werebear": {
         "Name": "Werebear",
         "Type": "Medium humanoid (Human",
-        "Alignment": "Shapechanger), neutral good",
+        "alignment": "Shapechanger), neutral good",
         "Armor Class": "10 in humanoid form, 11 (natural armor) in bear and hybrid form",
         "Hit Points": "135 (18d8 + 54)",
         "Speed": "30 ft. (40 ft., climb 30 ft. in bear or hybrid form)",
@@ -38052,7 +32428,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "12 (+1)",
         "CHA": "12 (+1)",
-        "Features": [
+        "features": [
             "Shapechanger. The werebear can use its action to polymorph into a Large bear-humanoid hybrid or into a Large bear, or back into its true form, which is humanoid. Its statistics, other than its size and AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
             "Keen Smell. The werebear has advantage on Wisdom (Perception) checks that rely on smell."
         ],
@@ -38133,29 +32509,12 @@ dnd_monsters = {
             "Small stones or crystals.",
             "Berries or other edible items.",
             "Rare herbs or roots."
-        ],
-        "Race": "Shapechanger",
-        "Class": "Beast",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Bristen",
-            "Ferno",
-            "Gashok",
-            "Macial",
-            "Vishon"
-        ],
-        "5 Common Last Names": [
-            "Cliffjaw",
-            "Furclaw",
-            "Grizzlemount",
-            "Riverpaw",
-            "Silverback"
         ]
     },
     "Wereboar": {
         "Name": "Wereboar",
         "Type": "Medium humanoid (Human",
-        "Alignment": "Shapechanger), neutral evil",
+        "alignment": "Shapechanger), neutral evil",
         "Armor Class": "10 in humanoid form, 11 (natural armor) in boar or hybrid form",
         "Hit Points": "78 (12d8 + 24)",
         "Speed": "30 ft. (40 ft. in boar form)",
@@ -38170,7 +32529,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "11 (+0)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Shapechanger. The wereboar can use its action to polymorph into a boar-humanoid hybrid or into a boar, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
             "Charge (Boar or Hybrid Form Only). If the wereboar moves at least 15 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
             "Relentless (Recharges after a Short or Long Rest). If the wereboar takes 14 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
@@ -38245,29 +32604,12 @@ dnd_monsters = {
             "Gems or jewelry",
             "Glowing mushrooms or herbs",
             "Rare artifacts or relics"
-        ],
-        "Race": "Humanoid (Shapechanger)",
-        "Class": "Barbarian/Monk",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Marne",
-            "Lorik",
-            "Krash",
-            "Thokk",
-            "Grodok"
-        ],
-        "5 Common Last Names": [
-            "Goreheart",
-            "Strangetusk",
-            "Wildbrow",
-            "Beasttongue",
-            "Furymane"
         ]
     },
     "Wererat": {
         "Name": "Wererat",
         "Type": "Medium humanoid (Human",
-        "Alignment": "Shapechanger), lawful evil",
+        "alignment": "Shapechanger), lawful evil",
         "Armor Class": "12",
         "Hit Points": "33 (6d8 + 6)",
         "Speed": "30 ft.",
@@ -38282,7 +32624,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "10 (+0)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Shapechanger. The wererat can use its action to polymorph into a rat-humanoid hybrid or into a giant rat, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
             "Keen Smell. The wererat has advantage on Wisdom (Perception) checks that rely on smell."
         ],
@@ -38360,29 +32702,12 @@ dnd_monsters = {
             "Smoke Bombs",
             "Small, sharp teeth",
             "Gold coins"
-        ],
-        "Race": "Shapechanger",
-        "Class": "Monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Hurst",
-            "Wijit",
-            "Oskar",
-            "Marius",
-            "Jarvis"
-        ],
-        "5 Common Last Names": [
-            "Creekbat",
-            "Tooblimp",
-            "Ovesqueer",
-            "Vesfer",
-            "Apreed"
         ]
     },
     "Weretiger": {
         "Name": "Weretiger",
         "Type": "Medium humanoid (Human",
-        "Alignment": "Shapechanger), neutral",
+        "alignment": "Shapechanger), neutral",
         "Armor Class": "12",
         "Hit Points": "120 (16d8 + 48)",
         "Speed": "30 ft. (40 ft. in tiger form)",
@@ -38397,7 +32722,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "13 (+1)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "Shapechanger. The weretiger can use its action to polymorph into a tiger-humanoid hybrid or into a tiger, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
             "Keen Hearing and Smell. The weretiger has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
             "Pounce (Tiger or Hybrid Form Only). If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the weretiger can make one bite attack against it as a bonus action."
@@ -38481,29 +32806,12 @@ dnd_monsters = {
             "Silver Jewellery",
             "Silver Coins",
             "Uncommon Potions"
-        ],
-        "Race": "Shapechanger (Humanoid, Tiger)",
-        "Class": "N/A",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Alaric",
-            "Solomon",
-            "Ursula",
-            "Douglas",
-            "Dawn"
-        ],
-        "5 Common Last Names": [
-            "Stark",
-            "Weaver",
-            "Kakeda",
-            "Atwood",
-            "Ferguson"
         ]
     },
     "Werewolf": {
         "Name": "Werewolf",
         "Type": "Medium humanoid (Human",
-        "Alignment": "Shapechanger), chaotic evil",
+        "alignment": "Shapechanger), chaotic evil",
         "Armor Class": "11 in humanoid form, 12 (natural armor) in wolf or hybrid form",
         "Hit Points": "58 (9d8 + 18)",
         "Speed": "30 ft. (40 ft. in wolf form)",
@@ -38518,7 +32826,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "11 (+0)",
         "CHA": "10 (+0)",
-        "Features": [
+        "features": [
             "Shapechanger. The werewolf can use its action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
             "Keen Hearing and Smell. The werewolf has advantage on Wisdom (Perception) checks that rely on hearing or smell."
         ],
@@ -38592,29 +32900,12 @@ dnd_monsters = {
             "Mystical totems",
             "Gems and coins",
             "Animal hide clothing"
-        ],
-        "Race": "Humanoid (Shapechanger)",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Strahd",
-            "Vlad",
-            "Tiberius",
-            "Lucian",
-            "Fenrir"
-        ],
-        "5 Common Last Names": [
-            "Von Zarovich",
-            "Vladislav",
-            "Blackmoor",
-            "Fenris",
-            "Meyer"
         ]
     },
-    "White_Dragon_Wyrmling": {
+    "White-Dragon-Wyrmling": {
         "Name": "White Dragon Wyrmling",
         "Type": "Medium dragon (Chromatic)",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "16 (natural armor)",
         "Hit Points": "32 (5d8 + 10)",
         "Speed": "30 ft., burrow 15 ft., fly 60 ft., swim 30 ft.",
@@ -38630,7 +32921,7 @@ dnd_monsters = {
         "INT": "5 (-3)",
         "WIS": "10 (+0)",
         "CHA": "11 (+0)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Bite.Melee Weapon Attack: +4 to hit, reach 5 ft., one target.Hit: 7 (1d10 + 2) piercing damage plus 2 (1d4) cold damage.",
             "Cold Breath (Recharge 5-6). The dragon exhales an icy blast of hail in a 15-foot cone. Each creature in that area must make a DC 12 Constitution saving throw, taking 22 (5d8) cold damage on a failed save, or half as much damage on a successful one."
@@ -38700,29 +32991,12 @@ dnd_monsters = {
             "Jewels",
             "Magic Scrolls",
             "Magic Weapons"
-        ],
-        "Race": "Dragon",
-        "Class": "Dragon",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Frosty",
-            "Arctic",
-            "Frigid",
-            "Icy",
-            "Chilly"
-        ],
-        "5 Common Last Names": [
-            "Sleet",
-            "Dracos",
-            "Snowsight",
-            "Icewing",
-            "Whitefang"
         ]
     },
     "Wight": {
         "Name": "Wight",
         "Type": "Medium undead",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "14 (studded leather)",
         "Hit Points": "45 (6d8 + 18)",
         "Speed": "30 ft.",
@@ -38739,7 +33013,7 @@ dnd_monsters = {
         "INT": "10 (+0)",
         "WIS": "13 (+1)",
         "CHA": "15 (+2)",
-        "Features": [
+        "features": [
             "Sunlight Sensitivity. While in sunlight, the wight has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
         ],
         "Actions": [
@@ -38811,26 +33085,9 @@ dnd_monsters = {
             "Magic items",
             "Artifacts",
             "Rare weapons and armor"
-        ],
-        "Race": "Undead",
-        "Class": "Humanoid",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Caius",
-            "Dyer",
-            "Kallus",
-            "Talamon",
-            "Urgan"
-        ],
-        "5 Common Last Names": [
-            "Anstrigle",
-            "Bellerud",
-            "Mordenheim",
-            "Verodir",
-            "Zeddelvar"
         ]
     },
-    "Will_o'_Wisp": {
+    "Will-o'-Wisp": {
         "Name": "Will-o'-Wisp",
         "Type": "Tiny undead",
         "Alignment": "neutral evil",
@@ -38927,10 +33184,10 @@ dnd_monsters = {
             "Magical trinkets"
         ]
     },
-    "Winter_Wolf": {
+    "Winter-Wolf": {
         "Name": "Winter Wolf",
         "Type": "Large monstrosity",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "75 (10d10 + 20)",
         "Speed": "50 ft.",
@@ -38945,7 +33202,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "12 (+1)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Keen Hearing and Smell. The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
             "Pack Tactics. The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated.",
             "Snow Camouflage. The wolf has advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
@@ -39020,29 +33277,12 @@ dnd_monsters = {
             "Winter Wolf's Tooth",
             "Winter Wolf Skin",
             "Winter Wolf Hide"
-        ],
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Akkia",
-            "Idefix",
-            "Fenrir",
-            "Slash",
-            "Kai"
-        ],
-        "5 Common Last Names": [
-            "Frostfur",
-            "Icecrest",
-            "Snowcoat",
-            "Shiver",
-            "Frostbite"
         ]
     },
     "Wolf": {
         "Name": "Wolf",
         "Type": "Medium beast",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "11 (2d8 + 2)",
         "Speed": "40 ft.",
@@ -39056,7 +33296,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "12 (+1)",
         "CHA": "6 (-2)",
-        "Features": [
+        "features": [
             "Keen Hearing and Smell. The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
             "Pack Tactics. The wolf has advantage on attack rolls against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated."
         ],
@@ -39131,29 +33371,12 @@ dnd_monsters = {
             "Gems",
             "Silver coins",
             "Animal pelts"
-        ],
-        "Race": "Beast",
-        "Class": "Undead",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Stark",
-            "Shadow",
-            "Grey",
-            "Wolf",
-            "Jagged"
-        ],
-        "5 Common Last Names": [
-            "Howl",
-            "Ranger",
-            "Wolfington",
-            "Grim",
-            "Preyhall"
         ]
     },
     "Worg": {
         "Name": "Worg",
         "Type": "Large monstrosity",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "26 (4d10 + 4)",
         "Speed": "50 ft.",
@@ -39167,7 +33390,7 @@ dnd_monsters = {
         "INT": "7 (-2)",
         "WIS": "11 (+0)",
         "CHA": "8 (-1)",
-        "Features": [
+        "features": [
             "Keen Hearing and Smell. The worg has advantage on Wisdom (Perception) checks that rely on hearing or smell."
         ],
         "Actions": [
@@ -39237,29 +33460,12 @@ dnd_monsters = {
             "Silver jewelry",
             "Coins",
             "Gemstone jewelry"
-        ],
-        "Race": "Monstrous Humanoid",
-        "Class": "Beast",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Foul",
-            "Gaunt",
-            "Grim",
-            "Rabid",
-            "Ulf"
-        ],
-        "5 Common Last Names": [
-            "Howler",
-            "Hunter",
-            "Rider",
-            "Runner",
-            "Slayer"
         ]
     },
     "Wraith": {
         "Name": "Wraith",
         "Type": "Medium undead",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "13",
         "Hit Points": "67 (9d8 + 27)",
         "Speed": "0 ft., fly 60 ft. (hover)",
@@ -39275,7 +33481,7 @@ dnd_monsters = {
         "INT": "12 (+1)",
         "WIS": "14 (+2)",
         "CHA": "15 (+2)",
-        "Features": [
+        "features": [
             "Incorporeal Movement. The wraith can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.",
             "Sunlight Sensitivity. While in sunlight, the wraith has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
         ],
@@ -39350,29 +33556,12 @@ dnd_monsters = {
             "Potions of healing",
             "Gems and coins",
             "Scrolls of powerful spells"
-        ],
-        "Race": "Undead",
-        "Class": "Spectre",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Edra",
-            "Maer",
-            "Xazraga",
-            "Hev",
-            "Vlodir"
-        ],
-        "5 Common Last Names": [
-            "Wraithblade",
-            "Wraithgloom",
-            "Wraithshadow",
-            "Wraithdark",
-            "Wraithscythe"
         ]
     },
     "Wyvern": {
         "Name": "Wyvern",
         "Type": "Large dragon",
-        "Alignment": "unaligned",
+        "alignment": "unaligned",
         "Armor Class": "13 (natural armor)",
         "Hit Points": "110 (13d10 + 39)",
         "Speed": "20 ft., fly 80 ft.",
@@ -39386,7 +33575,7 @@ dnd_monsters = {
         "INT": "5 (-3)",
         "WIS": "12 (+1)",
         "CHA": "6 (-2)",
-        "Features": [],
+        "features": [],
         "Actions": [
             "Multiattack. The wyvern makes two attacks: one with its bite and one with its stinger. While flying, it can use its claws in place of one other attack.",
             "Bite.Melee Weapon Attack: +7 to hit, reach 10 ft., one creature.Hit: 11 (2d6 + 4) piercing damage.",
@@ -39460,29 +33649,12 @@ dnd_monsters = {
             "Amulets",
             "Ritual components",
             "Ringed or studded leathers"
-        ],
-        "Race": "Dragon",
-        "Class": "Large Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Terex",
-            "Grax",
-            "Gorex",
-            "Merix",
-            "Hael"
-        ],
-        "5 Common Last Names": [
-            "Vetrik",
-            "Stoneclaw",
-            "Slatewing",
-            "Sharpfang",
-            "Chillclaw"
         ]
     },
     "Xorn": {
         "Name": "Xorn",
         "Type": "Medium elemental",
-        "Alignment": "neutral",
+        "alignment": "neutral",
         "Armor Class": "19 (natural armor)",
         "Hit Points": "73 (7d8 + 42)",
         "Speed": "20 ft., burrow 20 ft.",
@@ -39497,7 +33669,7 @@ dnd_monsters = {
         "INT": "11 (+0)",
         "WIS": "10 (+0)",
         "CHA": "11 (+0)",
-        "Features": [
+        "features": [
             "Earth Glide. The xorn can burrow through nonmagical, unworked earth and stone. While doing so, the xorn doesn't disturb the material it moves through.",
             "Stone Camouflage. The xorn has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.",
             "Treasure Sense. The xorn can pinpoint, by scent, the location of precious metals and stones, such as coins and gems, within 60 feet of it."
@@ -39574,29 +33746,12 @@ dnd_monsters = {
             "Magical Armor",
             "Magical Potions",
             "Gems and Jewels"
-        ],
-        "Race": "Elemental",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Xorthon",
-            "Selenim",
-            "Ostol",
-            "Korrlad",
-            "Sokal"
-        ],
-        "5 Common Last Names": [
-            "Gorengr",
-            "Streel",
-            "Sunderthe",
-            "Foldrock",
-            "Vicentik"
         ]
     },
     "Yeti": {
         "Name": "Yeti",
         "Type": "Large monstrosity",
-        "Alignment": "chaotic evil",
+        "alignment": "chaotic evil",
         "Armor Class": "12 (natural armor)",
         "Hit Points": "51 (6d10 + 18)",
         "Speed": "40 ft., climb 40 ft.",
@@ -39611,7 +33766,7 @@ dnd_monsters = {
         "INT": "8 (-1)",
         "WIS": "12 (+1)",
         "CHA": "7 (-2)",
-        "Features": [
+        "features": [
             "Fear of Fire. If the yeti takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn.",
             "Keen Smell. The yeti has advantage on Wisdom (Perception) checks that rely on smell.",
             "Snow Camouflage. The yeti has advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
@@ -39687,29 +33842,12 @@ dnd_monsters = {
             "Boulder",
             "Clubs",
             "Scarce Berries and Roots"
-        ],
-        "Race": "Monstrosity",
-        "Class": "N/A",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Urunge",
-            "Okenpa",
-            "Numa",
-            "Zeeang",
-            "Tinga"
-        ],
-        "5 Common Last Names": [
-            "Ogoloke",
-            "Taasen",
-            "Kelney",
-            "Shevich",
-            "Wassen"
         ]
     },
-    "Yuan_ti_Abomination": {
+    "Yuan-ti-Abomination": {
         "Name": "Yuan-ti Abomination",
         "Type": "Large monstrosity (Shapechanger",
-        "Alignment": "Yuan-ti), neutral evil",
+        "alignment": "Yuan-ti), neutral evil",
         "Armor Class": "15 (natural armor)",
         "Hit Points": "127 (15d10 + 45)",
         "Speed": "40 ft.",
@@ -39725,7 +33863,7 @@ dnd_monsters = {
         "INT": "17 (+3)",
         "WIS": "15 (+2)",
         "CHA": "18 (+4)",
-        "Features": [
+        "features": [
             "Shapechanger. The yuan-ti can use its action to polymorph into a Large snake, or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It doesn't change form if it dies.",
             "Innate Spellcasting (Abomination Form Only). The yuan-ti's innate spellcasting ability is Charisma (spell save DC 15). The yuan-ti can innately cast the following spells, requiring no material components:",
             "Magic Resistance. The yuan-ti has advantage on saving throws against spells and other magical effects."
@@ -39804,10 +33942,10 @@ dnd_monsters = {
             "Mysterious stones and charms"
         ]
     },
-    "Yuan_ti_Malison": {
+    "Yuan-ti-Malison": {
         "Name": "Yuan-ti Malison",
         "Type": "Medium monstrosity (Shapechanger",
-        "Alignment": "Yuan-ti), neutral evil",
+        "alignment": "Yuan-ti), neutral evil",
         "Armor Class": "12",
         "Hit Points": "66 (12d8 + 12)",
         "Speed": "30 ft.",
@@ -39823,7 +33961,7 @@ dnd_monsters = {
         "INT": "14 (+2)",
         "WIS": "12 (+1)",
         "CHA": "16 (+3)",
-        "Features": [
+        "features": [
             "Shapechanger. The yuan-ti can use its action to polymorph into a Medium snake, or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It doesn't change form if it dies.",
             "Innate Spellcasting (Yuan-ti Form Only). The yuan-ti's innate spellcasting ability is Charisma (spell save DC 13). The yuan-ti can innately cast the following spells, requiring no material components:",
             "Magic Resistance. The yuan-ti has advantage on saving throws against spells and other magical effects.",
@@ -39910,10 +34048,10 @@ dnd_monsters = {
             "Gems and Jewelry"
         ]
     },
-    "Yuan_ti_Pureblood": {
+    "Yuan-ti-Pureblood": {
         "Name": "Yuan-ti Pureblood",
         "Type": "Medium humanoid (Yuan-ti)",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "11",
         "Hit Points": "40 (9d8)",
         "Speed": "30 ft.",
@@ -39929,7 +34067,7 @@ dnd_monsters = {
         "INT": "13 (+1)",
         "WIS": "12 (+1)",
         "CHA": "14 (+2)",
-        "Features": [
+        "features": [
             "Innate Spellcasting. The yuan-ti's spellcasting ability is Charisma (spell save DC 12). The yuan-ti can innately cast the following spells, requiring no material components:",
             "Magic Resistance. The yuan-ti has advantage on saving throws against spells and other magical effects."
         ],
@@ -40010,7 +34148,7 @@ dnd_monsters = {
     "Zombie": {
         "Name": "Zombie",
         "Type": "Medium undead",
-        "Alignment": "neutral evil",
+        "alignment": "neutral evil",
         "Armor Class": "8",
         "Hit Points": "22 (3d8 + 9)",
         "Speed": "20 ft.",
@@ -40026,7 +34164,7 @@ dnd_monsters = {
         "INT": "3 (-4)",
         "WIS": "6 (-2)",
         "CHA": "5 (-3)",
-        "Features": [
+        "features": [
             "Undead Fortitude. If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
         ],
         "Actions": [
@@ -40105,23 +34243,6 @@ dnd_monsters = {
             "Small Artifacts",
             "Weapons",
             "Armor"
-        ],
-        "Race": "Undead",
-        "Class": "Monster",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Shuffling",
-            "Groaning",
-            "Creaking",
-            "Graveyard",
-            "Festering"
-        ],
-        "5 Common Last Names": [
-            "Walker",
-            "Creeper",
-            "Stomper",
-            "Singer",
-            "Creech"
         ]
     },
     "Elf": {
@@ -40220,23 +34341,6 @@ dnd_monsters = {
             "Rare herbs and potions",
             "Enchanted armor and weapons",
             "Rare gems and coins"
-        ],
-        "Race": "High Elf",
-        "Class": "Any class",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Serena",
-            "Llewellyn",
-            "Taro",
-            "Kara",
-            "Oron"
-        ],
-        "5 Common Last Names": [
-            "Sunrider",
-            "Featherlight",
-            "Starsight",
-            "Moonrunner",
-            "Eveningfire"
         ]
     },
     "Dwarf": {
@@ -40341,23 +34445,6 @@ dnd_monsters = {
             "Precious Metals",
             "Silver Coins",
             "Artifacts"
-        ],
-        "Race": "Humanoid",
-        "Class": "Fighter",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Gorek",
-            "Tordek",
-            "Tharkur",
-            "Thegran",
-            "Bboldohn"
-        ],
-        "5 Common Last Names": [
-            "Oakenbelt",
-            "Stronghammer",
-            "Ironfist",
-            "Fireforge",
-            "Brightspear"
         ]
     },
     "Dragonborn": {
@@ -40455,23 +34542,6 @@ dnd_monsters = {
             "Jewelry",
             "Magical weapons",
             "Magical weapons"
-        ],
-        "Race": "Humanoid Dragon",
-        "Class": "Fighter, Warlord, Paladin, Sorcerer, Cleric",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Ghorrk",
-            "Kosthak",
-            "Kija",
-            "Imrak",
-            "Rizeman"
-        ],
-        "5 Common Last Names": [
-            "Vossdeth",
-            "Felgeffen",
-            "Mazook",
-            "Tiefengar",
-            "Kes'ik"
         ]
     },
     "Gnome": {
@@ -40571,26 +34641,9 @@ dnd_monsters = {
             "Potions",
             "Herbs",
             "Odd Objects"
-        ],
-        "Race": "Fey",
-        "Class": "Illusionist",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Chinley",
-            "Lorenna",
-            "Mirella",
-            "Porfin",
-            "Wrenn"
-        ],
-        "5 Common Last Names": [
-            "Amblecrown",
-            "Bushcook",
-            "Fellhearth",
-            "Greycastle",
-            "Tallstag"
         ]
     },
-    "Half_Elf": {
+    "Half-Elf": {
         "Name": "Half-Elf",
         "Type": "Medium humanoid (half-elf)",
         "Alignment": "Usually chaotic good",
@@ -40686,7 +34739,7 @@ dnd_monsters = {
             "Magical Armor"
         ]
     },
-    "Half_Orc": {
+    "Half-Orc": {
         "Name": "Half-Orc",
         "Type": "Medium humanoid (half-orc)",
         "Alignment": "Usually chaotic neutral",
@@ -40886,23 +34939,6 @@ dnd_monsters = {
             "Small pieces of jewelry",
             "Potions",
             "Magic scrolls"
-        ],
-        "Race": "Humanoid",
-        "Class": "Rogue, Warlock, Sorcerer",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Billie",
-            "Gilly",
-            "Pippin",
-            "Samwise",
-            "Tilly"
-        ],
-        "5 Common Last Names": [
-            "Brushgather",
-            "Halfpint",
-            "Leagallow",
-            "Tallfellow",
-            "Thorngage"
         ]
     },
     "Human": {
@@ -41004,23 +35040,6 @@ dnd_monsters = {
             "Maps or historical documents",
             "Magical items",
             "Crafting materials"
-        ],
-        "Race": "Human",
-        "Class": "Any",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "James",
-            "John",
-            "Robert",
-            "Michael",
-            "William"
-        ],
-        "5 Common Last Names": [
-            "Smith",
-            "Johnson",
-            "Williams",
-            "Jones",
-            "Brown"
         ]
     },
     "Tiefling": {
@@ -41119,23 +35138,6 @@ dnd_monsters = {
             "Spell scrolls",
             "Magical Weapons",
             "Gems and jewelry"
-        ],
-        "Race": "Fiend",
-        "Class": "Any",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Fara",
-            "Gaston",
-            "Ozben",
-            "Kriv",
-            "Miltiades"
-        ],
-        "5 Common Last Names": [
-            "Barreto",
-            "Guy",
-            "Heinrick",
-            "Morial",
-            "Romero"
         ]
     },
     "Tabaxi": {
@@ -41236,26 +35238,9 @@ dnd_monsters = {
             "Gems/Jewelry",
             "Scrolls",
             "Potion of Healing"
-        ],
-        "Race": "Feline Humanoid",
-        "Class": "Ranger/Rogue",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Tano",
-            "Ika",
-            "Kalan",
-            "Yenne",
-            "Mikono"
-        ],
-        "5 Common Last Names": [
-            "Ekon",
-            "Ona",
-            "Lupu",
-            "Gili",
-            "Mepe"
         ]
     },
-    "Deep_Gnome_(Svirfneblin)": {
+    "Deep-Gnome-(Svirfneblin)": {
         "Description": "Deep gnomes, also known as svirfneblin, are a shy and reclusive subrace of gnomes. Standing between three to three-and-a-half feet tall, they are even shorter and thinner than rock gnomes. They have dark brown, grey, or black skin; long nose; bright, round eyes; and white or pale grey hair. They prefer to be out of sight and underground, but some wander as far as the surface.",
         "Narrative": "Deep gnomes have a deep respect for the earth, often forming close relationships with elemental and primitive creatures. They are highly intelligent, dextrous creatures who are capable of laying elaborate plans and traps with magic and superior planning strategies. Deep gnomes prefer to keep out of sight and are rarely seen above ground, however they can be like rock gnomes when cornered, fiercely protecting their homes and communities.",
         "Background": " Deep gnomes are a subrace of gnomes who live deep underground in caves, tunnels, and labyrinths. They are rarely seen on the surface as they prefer the safety of their subterranean homes. They are distantly related to rock gnomes, whom they sometimes refer to as 'sun gnomes,' and even further distantly related to deep dwarves. Deep gnomes are friendly and hospitable to those they trust, but they can be suspicious of strangers.",
@@ -41321,26 +35306,9 @@ dnd_monsters = {
             "Magical items",
             "Gems & Jewels",
             "Magic potions"
-        ],
-        "Race": "Gnome",
-        "Class": "Commoner",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Uka",
-            "Jonel",
-            "Quelby",
-            "Rudol",
-            "Garza"
-        ],
-        "5 Common Last Names": [
-            "Denseduster",
-            "Gallowglass",
-            "Understone",
-            "Clackerdamp",
-            "Polcules"
         ]
     },
-    "Myconid_Adult": {
+    "Myconid-Adult": {
         "Description": "Myconids are a curious and intelligent fungus humanoid species, typically ranging between four to seven feet in height and with a variety of colors. Their skin is mostly soft and leathery, though there are small spikes in some places, and they have short vines that grow out of their heads. Most have four to six eyes, but some have more, and these eyes usually come in yellow, orange, or red. Myconids speak their own language, as well as Druidic, and their voices are fungal chimes or a light whistling.",
         "Narrative": "Myconids are an ancient species of fungus-like humanoids. They were believed to have evolved from subterranean fungal colonies that eventually developed independent mobility. Cunning, curious, and deeply introspective, the creations of the Father of Spores often live far away from other societies, preferring to be left undisturbed and alone in the depths of the wild. Despite this, there have been several encounters between these mysterious creatures and adventurers or explorers.",
         "Background": "Myconids have long been seen as a symbol of mystery among many races. Reclusive and deeply rooted in the secrets of the wild, these sentient fungi live in small colonies deep in the underdark. Not much is known about them since they are so sparsely populated and keep to themselves. That being said, myconids can be incredibly friendly and are said to be quite welcoming to visitors in their home. The relationship between myconids and their environment is one of immense respect, where they do all they can to preserve the wildlife that surrounds them.",
@@ -41411,26 +35379,9 @@ dnd_monsters = {
             "Myconid Touching Leaf",
             "Mystic Bedstone",
             "Myconid Spear"
-        ],
-        "Race": "Myconid",
-        "Class": "Fungus",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Dolouth",
-            "Nototh",
-            "Keototh",
-            "Gonototh",
-            "Utoloth"
-        ],
-        "5 Common Last Names": [
-            "Swarmguard",
-            "Sporecaller",
-            "Fungalkeeper",
-            "Reefguard",
-            "Plaguecaller"
         ]
     },
-    "Myconid_Sprout": {
+    "Myconid-Sprout": {
         "Description": "Myconid sprouts are small, mushroom-like creatures that typically grow in large, underground colonies.",
         "Narrative": "The myconid sprouts live in dark underground caverns, where they grow in large, sprawling colonies. Each sprout is approximately the size of a human fist and features a small, circular head with two large eyes and two small antennae. The body is composed of a stemmed mushroom-like head, with a short, thick stem and small round cap. These sprouts usually stick close together, taking safety in numbers and staying away from light and noise. They feed on organic matter found in the caverns, and live a fairly peaceful, communal life.",
         "Background": "Myconids are a race of mushroom-like humanoids, native to the forgotten realms in the world of Dungeons and Dragons. These sprouts exist in colonies, and are known for their calm personalities and telepathic powers. They use a form of communication known as 'sporesong', which allows them to share memories and thoughts with one another.",
@@ -41494,23 +35445,6 @@ dnd_monsters = {
             "Gleaming Mushroom",
             "Glowshroom",
             "Fungal Cluster"
-        ],
-        "Race": "Fungus",
-        "Class": "Plant",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Mowh",
-            "Mihak",
-            "Sorp",
-            "040",
-            "Adra"
-        ],
-        "5 Common Last Names": [
-            "Sporeheart",
-            "Tightfist",
-            "Grayweaver",
-            "Territrooper",
-            "Striderling"
         ]
     },
     "Pterydactyl": {
@@ -41575,365 +35509,6 @@ dnd_monsters = {
             "Eyes of the Beast",
             "Rare Gems",
             "Potions of Flight"
-        ],
-        "Race": "Reptilian",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Dactyl",
-            "Pterius",
-            "Scapula",
-            "Huxley",
-            "Arlo"
-        ],
-        "5 Common Last Names": [
-            "Satheron",
-            "Sparrow",
-            "Silvertongue",
-            "Twing",
-            "Mortberg"
-        ]
-    },
-    "Death Tyrant": {
-        "Race": "Undead",
-        "Class": "Tyrant",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Accius",
-            "Berrus",
-            "Cronos",
-            "Gorgon",
-            "Hades"
-        ],
-        "5 Common Last Names": [
-            "Deathbringer",
-            "Darkling",
-            "Grimwalker",
-            "Terrormonger",
-            "Malevolence"
-        ]
-    },
-    "Faerie Dragon": {
-        "Race": "Dragon",
-        "Class": "Fairy",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Treestar",
-            "Neptune",
-            "Whizz",
-            "Bubble",
-            "Clover"
-        ],
-        "5 Common Last Names": [
-            "Prancer",
-            "Elfwing",
-            "Glimmer",
-            "Mistletoe",
-            "Sparkle"
-        ]
-    },
-    "Fire Giant": {
-        "Race": "Giant",
-        "Class": "Fighter",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Boldar",
-            "Durvar",
-            "Grevik",
-            "Mordrog",
-            "Varlyr"
-        ],
-        "5 Common Last Names": [
-            "Firebane",
-            "Firewalker",
-            "Firebrand",
-            "Firescar",
-            "Firelash"
-        ]
-    },
-    "Fire Snake": {
-        "Race": "Elemental",
-        "Class": "Monstrosity",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Sal",
-            "Cinder",
-            "Feni",
-            "Firedrake",
-            "Shilla"
-        ],
-        "5 Common Last Names": [
-            "Tailburner",
-            "Blazefang",
-            "Ashenhood",
-            "Sparkcape",
-            "Flarebraid"
-        ]
-    },
-    "Gray Ooze": {
-        "Race": "Ooze",
-        "Class": "Amorphous Creature",
-        "Size": "Small",
-        "5 Common First Names": [
-            "Amal",
-            "Fenstrim",
-            "Gora",
-            "Glut",
-            "Gorl"
-        ],
-        "5 Common Last Names": [
-            "GelPetty",
-            "OozeFly",
-            "GelTing",
-            "OozeCraw",
-            "OozeSeep"
-        ]
-    },
-    "Green Hag": {
-        "Race": "Fey",
-        "Class": "Natural Magic User",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Seditha",
-            "Delora",
-            "Maria",
-            "Morwen",
-            "Bridget"
-        ],
-        "5 Common Last Names": [
-            "Hagspinner",
-            "Ragglemane",
-            "Boarbones",
-            "Grimtooth",
-            "Feastmaggot"
-        ]
-    },
-    "Half-Red_Dragon_Veteran": {
-        "Race": "Dragonborn",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Kirathar",
-            "Liathar",
-            "Marduthar",
-            "Rhanthar",
-            "Nandar"
-        ],
-        "5 Common Last Names": [
-            "Ojemann",
-            "Scthac",
-            "Draclen",
-            "Valkor",
-            "Gusteven"
-        ]
-    },
-    "Hobgoblin Captain": {
-        "Race": "Humanoid (Hobgoblin)",
-        "Class": "Fighter",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Grundrak",
-            "Urgok",
-            "Vargka",
-            "Vorri",
-            "Vikun"
-        ],
-        "5 Common Last Names": [
-            "Balizar",
-            "Kazik",
-            "Krathik",
-            "Kozel",
-            "Uzden"
-        ]
-    },
-    "Hobgoblin Warlord": {
-        "Race": "Hobgoblin",
-        "Class": "Warlord",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Kurgan",
-            "Ruldar",
-            "Morn",
-            "Akkush",
-            "Umber"
-        ],
-        "5 Common Last Names": [
-            "Gr Colorscar",
-            "Devil-Fire",
-            "Baytongue",
-            "Lardblood",
-            "Slatersaws"
-        ]
-    },
-    "Invisible Stalker": {
-        "Race": "Air elemental",
-        "Class": "Elemental",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Elbows",
-            "Wheezes",
-            "Flicks",
-            "Rumbles",
-            "Whimpers"
-        ],
-        "5 Common Last Names": [
-            "of the Wind",
-            "of the Storm",
-            "of the Maelstrom",
-            "of the Gale",
-            "of the Cyclone"
-        ]
-    },
-    "Saber-Toothed_Tiger": {
-        "Race": "Beast",
-        "Class": "Monstrosity",
-        "Size": "Large",
-        "5 Common First Names": [
-            "Tawny",
-            "Stripey",
-            "Ferocious",
-            "Growly",
-            "Savannah"
-        ],
-        "5 Common Last Names": [
-            "Panther",
-            "Stripe",
-            "Claw",
-            "Fang",
-            "Mane"
-        ]
-    },
-    "Sahuagin Baron": {
-        "Race": "Sahuagin",
-        "Class": "Barbarian",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Bralgar",
-            "Gomar",
-            "Ralan",
-            "Toral",
-            "Tokar"
-        ],
-        "5 Common Last Names": [
-            "Aurmuzor",
-            "Shemesh",
-            "Gezer",
-            "Kittoni",
-            "Opharar"
-        ]
-    },
-    "Will-o'-Wisp": {
-        "Race": "Undead",
-        "Class": "Fey",
-        "Size": "Tiny",
-        "5 Common First Names": [
-            "Gleam",
-            "Glimmer",
-            "Paley",
-            "Flimsy",
-            "Twinkle"
-        ],
-        "5 Common Last Names": [
-            "Willowlight",
-            "Hoverglow",
-            "Flickerfrye",
-            "Lumeglimmer",
-            "Gleanfire"
-        ]
-    },
-    "Yuan-ti Abomination": {
-        "Race": "Yuan-ti Abomination",
-        "Class": "Monstrosity",
-        "Size": "Huge",
-        "5 Common First Names": [
-            "Aplox",
-            "Ezhir",
-            "Ithik",
-            "Sseeth",
-            "Yzot"
-        ],
-        "5 Common Last Names": [
-            "Pradat",
-            "Rivith",
-            "Nekhet",
-            "Lilthiss",
-            "Tezral"
-        ]
-    },
-    "Yuan-ti_Malison": {
-        "Race": "Yuan-ti",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Bucha",
-            "Jirra",
-            "Kayla",
-            "Kyon",
-            "Veska"
-        ],
-        "5 Common Last Names": [
-            "Tolaj",
-            "Udossi",
-            "Yemaj",
-            "Veranij",
-            "Urunnu"
-        ]
-    },
-    "Yuan-ti_Pureblood": {
-        "Race": "Yuan-ti",
-        "Class": "Monstrosity",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Vokaya",
-            "Cet",
-            "Carric",
-            "Suvash",
-            "Baru"
-        ],
-        "5 Common Last Names": [
-            "Nagaheart",
-            "Snaketamer",
-            "Serpenteye",
-            "Coilslayer",
-            "Malison"
-        ]
-    },
-    "Half-Elf": {
-        "Race": "humanoid",
-        "Class": "Various",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Aeliana",
-            "Elora",
-            "Loralei",
-            "Jaxom",
-            "Parsell"
-        ],
-        "5 Common Last Names": [
-            "Whitethorn",
-            "Riverwood",
-            "Everwind",
-            "Moonfall",
-            "Goldoak"
-        ]
-    },
-    "Half-Ord": {
-        "Race": "Half-Orc",
-        "Class": "Barbarian",
-        "Size": "Medium",
-        "5 Common First Names": [
-            "Grugnak",
-            "Ozuk",
-            "Krolik",
-            "Torguk",
-            "Horgul"
-        ],
-        "5 Common Last Names": [
-            "Murkblood",
-            "Mangut",
-            "Fangsmasher",
-            "Volpcrawler",
-            "One-Eye"
         ]
     }
 }
