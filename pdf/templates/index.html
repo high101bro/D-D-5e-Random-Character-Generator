@@ -1,0 +1,143 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Sheet</title>
+</head>
+<body>
+    <h1>D&D Character Sheet</h1>
+    <div id="character-info"></div>
+    <script>
+        fetch('/character-data')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('character-info').innerText = JSON.stringify(data, null, 2);
+            });
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Sheet</title>
+</head>
+<body>
+    <h1>D&D Character Sheet</h1>
+    <div id="character-info"></div>
+    <style>
+        /* Add CSS styles for indentation */
+        .section {
+            margin-left: 20px; /* Adjust the indentation as needed */
+        }
+    </style>
+    <script>
+        // Function to populate the HTML form recursively
+        function populateForm(data, parentDiv, sectionName) {
+            const sectionDiv = document.createElement('div');
+            sectionDiv.classList.add('section'); // Add the 'section' class for indentation
+
+            const updateButton = document.createElement('button');
+            updateButton.innerHTML = 'Update the form';
+
+            updateButton.addEventListener('click', () => {
+                // Handle the update logic here if needed
+                // You can access the data of this section using 'data' variable
+                console.log(`Update button for ${sectionName} clicked`);
+            });
+
+            sectionDiv.appendChild(document.createTextNode(`${sectionName}: `));
+            sectionDiv.appendChild(updateButton);
+            sectionDiv.appendChild(document.createElement('br'));
+
+            for (const key in data) {
+                if (data.hasOwnProperty(key)) {
+                    if (typeof data[key] !== 'object') {
+                        const subDiv = document.createElement('div');
+                        subDiv.classList.add('section'); // Add the 'section' class for indentation
+
+                        const label = document.createElement('label');
+                        label.innerHTML = `${key}: `;
+                        const input = document.createElement('input');
+                        input.type = 'text';
+                        input.value = data[key] || ''; // Set to empty string if null
+                        input.name = key;
+                        subDiv.appendChild(label);
+                        subDiv.appendChild(input);
+                        subDiv.appendChild(document.createElement('br'));
+                        sectionDiv.appendChild(subDiv);
+                    } else {
+                        // Handle nested properties recursively
+                        populateForm(data[key], sectionDiv, key);
+                    }
+                }
+            }
+
+            parentDiv.appendChild(sectionDiv);
+        }
+
+        fetch('/character-data')
+            .then(response => response.json())
+            .then(data => {
+                for (const sectionName in data) {
+                    if (data.hasOwnProperty(sectionName)) {
+                        const mainSectionDiv = document.createElement('div');
+                        populateForm(data[sectionName], mainSectionDiv, sectionName);
+                        document.body.appendChild(mainSectionDiv);
+                    }
+                }
+            });
+
+
+        // Function to recalculate skills
+        function recalculateSkills() {
+            const str = parseInt(document.getElementsByName('STR')[0].value) || 10;
+            const dex = parseInt(document.getElementsByName('DEX')[0].value) || 10;
+            const con = parseInt(document.getElementsByName('CON')[0].value) || 10;
+            const int = parseInt(document.getElementsByName('INT')[0].value) || 10;
+            const wis = parseInt(document.getElementsByName('WIS')[0].value) || 10;
+            const cha = parseInt(document.getElementsByName('CHA')[0].value) || 10;
+
+            // Modifier calculation function
+            function mod(score) {
+                return Math.floor((score - 10) / 2);
+            }
+
+            // Update skills based on attributes
+            document.getElementsByName('Acrobatics')[0].value = mod(dex);
+            document.getElementsByName('Animal Handling')[0].value = mod(wis);
+            document.getElementsByName('Arcana')[0].value = mod(int);
+            document.getElementsByName('Athletics')[0].value = mod(str);
+            document.getElementsByName('Deception')[0].value = mod(cha);
+            document.getElementsByName('History')[0].value = mod(int);
+            document.getElementsByName('Insight')[0].value = mod(wis);
+            document.getElementsByName('Intimidation')[0].value = mod(cha);
+            document.getElementsByName('Investigation')[0].value = mod(int);
+            document.getElementsByName('Medicine')[0].value = mod(wis);
+            document.getElementsByName('Nature')[0].value = mod(int);
+            document.getElementsByName('Perception')[0].value = mod(wis);
+            document.getElementsByName('Performance')[0].value = mod(cha);
+            document.getElementsByName('Persuasion')[0].value = mod(cha);   
+            document.getElementsByName('Religion')[0].value = mod(int);
+            document.getElementsByName('Sleight of Hand')[0].value = mod(dex);
+            document.getElementsByName('Stealth')[0].value = mod(dex);
+            document.getElementsByName('Survival')[0].value = mod(wis);
+
+            // Update specific skills based on WIS, INT, CHA as needed
+        }
+
+        // Add event listeners
+        ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'].forEach(attr => {
+            const input = document.getElementsByName(attr)[0];
+            if (input) {
+                input.addEventListener('change', recalculateSkills);
+            }
+        });
+
+    </script>
+</body>
+</html>
+
+

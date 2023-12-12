@@ -249,7 +249,7 @@ def main():
 
         elif re.compile("^Character Management").match(optionsMenu [selectedMenuOption]):
             
-            inspect_character(all_characters)
+            character_management(all_characters)
             input("\nPress Enter to Continue...")
         
         

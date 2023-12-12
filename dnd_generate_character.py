@@ -88,7 +88,7 @@ class Character():
         }
         self.items = []
         self.armor = []
-        self.weapons = []
+        self.weapons = {}
         self.combat = {}
         self.spells = {
             "spellcasting" : "",
@@ -98,7 +98,25 @@ class Character():
             "save dc" : 0,
             'slots' : {}
         }
-
+    def to_dict(self):
+        return {
+            'profile' : self.profile,
+            'character_race' : self.character_race,
+            'character_class' : self.character_class,
+            'description' : self.description,
+            'background' : self.background,
+            'level_chart' : self.level_chart,
+            'attributes' : self.attributes,
+            'capabilities' : self.capabilities,
+            'skills' : self.skills,
+            'features' : self.features,
+            'money' : self.money,
+            'items' : self.items,
+            'armor' : self.armor,
+            'weapons' : self.weapons,
+            'combat' : self.combat,
+            'spells' : self.spells,
+        }
 
 # Create random character
 def generate_characters(character, character_number, character_level=1, character_race='Human', character_class='Fighter'):
@@ -482,8 +500,35 @@ def generate_characters(character, character_number, character_level=1, characte
 
     for i in range(1, random.randint(1,6)):
         character.items.append(generate_random_item(item_list))
+
     for i in range(1, random.randint(1,4)):
-        character.weapons.append(generate_random_weapon(weapon_list))
+        ##### old way, when i just used a weapons_list
+        # generated_weapon = generate_random_weapon(weapon_list)
+        # character.weapons[generated_weapon['name']] = {}
+        # character.weapons[generated_weapon['name']]['description'] = generated_weapon['description']
+        # character.weapons[generated_weapon['name']]['damage_amount'] = generated_weapon['damage_amount']
+        # character.weapons[generated_weapon['name']]['weapon_type'] = generated_weapon['damage_type']
+        # character.weapons[generated_weapon['name']]['attack_type'] = generated_weapon['attack_type']
+        # character.weapons[generated_weapon['name']]['attack_bonus'] = generated_weapon['attack_bonus']
+        # character.weapons[generated_weapon['name']]['is_ranged'] = generated_weapon['is_ranged']
+        # character.weapons[generated_weapon['name']]['range_low'] = generated_weapon['range_low']
+        # character.weapons[generated_weapon['name']]['range_high'] = generated_weapon['range_high']
+        # character.weapons[generated_weapon['name']]['amount'] = generated_weapon['amount']
+        # character.weapons[generated_weapon['name']]['rarity'] = generated_weapon['rarity']
+        # character.weapons[generated_weapon['name']]['material_components'] = generated_weapon['material_components']
+        # character.weapons[generated_weapon['name']]['cost'] = generated_weapon['cost']
+        # character.weapons[generated_weapon['name']]['weight'] = generated_weapon['weight']
+        # character.weapons[generated_weapon['name']]['mundane_properties'] = generated_weapon['mundane_properties']
+        # character.weapons[generated_weapon['name']]['is_magical'] = generated_weapon['is_magical']
+        # character.weapons[generated_weapon['name']]['magical_type'] = generated_weapon['magical_type']
+
+        #### new way, basing it off actual dnd_weapons list
+        generated_weapon = random.choice(list(dnd_weapons.keys()))
+        # debug(generated_weapon)
+        # debug(dnd_weapons)
+        character.weapons[generated_weapon] = dnd_weapons.get(generated_weapon)
+
+
 
     return character
 
@@ -536,7 +581,7 @@ def display_character(characters):
         print_inventory(character.armor, 'Armor')
 
         print(f"Weapons :")
-        print_inventory(character.weapons, 'Weapons')
+        print_character(character.weapons)
 
         print(f"Combat :")
         print_character(character.combat)

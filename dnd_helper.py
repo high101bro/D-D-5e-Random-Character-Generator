@@ -95,7 +95,7 @@ def print_inventory(dictionary, name, padding_value=35):
 
 
 
-def inspect_character(all_characters):
+def character_management(all_characters):
     while True:
         clear()
         print('Character Management')

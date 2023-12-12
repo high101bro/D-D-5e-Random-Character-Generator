@@ -138,6 +138,51 @@ dnd_skills_by_attribute = {
     "Charisma" : ["deception", "intimidation", "performance", "persuasion"]
 }
 
+conditions_and_effects = [
+    "Advantage",
+    "Bane",
+    "Bless",
+    "Blinded",
+    "Charmed",
+    "Concentration",
+    "Confused",
+    "Cursed",
+    "Deafened",
+    "Death",
+    "Diseased",
+    "Disguised",
+    "Entangled",
+    "Ethereal",
+    "Exhaustion",
+    "Fascinated",
+    "Falling",
+    "False Life",
+    "Flying",
+    "Frenzy",
+    "Frightened",
+    "Fumbled",
+    "Gaseous Form",
+    "Grappled",
+    "Hasted",
+    "Hidden",
+    "Incapacitated",
+    "Incorporeal",
+    "Instant Death",
+    "Invisible",
+    "Paralyzed",
+    "Petrified",
+    "Poisoned",
+    "Polymorphed",
+    "Prone",
+    "Rage",
+    "Revived",
+    "Restrained",
+    "Slowed",
+    "Stunned",
+    "Turned",
+    "Unconscious",
+]
+
 dnd_skills = {
     'acrobatics' : {
         'related attribute' : 'dexterity',
@@ -514,8 +559,8 @@ dnd_armor_weapon_item_modifiers = {
             }
         }, 
         "creatures" : {
-            "that are immune to the material" : [],
-            "that are weak to material" : [],
+            "that are immune to the material" : "None",
+            "that are weak to material" : "None",
             "that are susceptible to material" : ["Constructs", "Objects", "Some magical barriers"],
             "that can only be hurt by this material" : ["Mythical or very rare creatures as determined by DM"]
         },         
@@ -604,9 +649,9 @@ dnd_armor_weapon_item_modifiers = {
             }
         }, 
         "creatures" : {
-            "that are immune to the material" : [],
+            "that are immune to the material" : "None",
             "that are weak to material" : ["Fey", "Demons", "Devils"],
-            "that are susceptible to material" : [],
+            "that are susceptible to material" : "None",
             "that can only be hurt by this material" : ["Certain fey, demons, and devils as determined by DM"]
         },         
         "disadvantage" : {
@@ -782,9 +827,9 @@ dnd_armor_weapon_item_modifiers = {
             }
         }, 
         "creatures" : {
-            "that are immune to the material" : [],
+            "that are immune to the material" : "None",
             "that are weak to material" : ["Lycanthropes", "Certain types of undead"],
-            "that are susceptible to material" : [],
+            "that are susceptible to material" : "None",
             "that can only be hurt by this material" : ["Some lycanthropes and undead as determined by DM"]
         },         
         "disadvantage" : {
@@ -871,10 +916,10 @@ dnd_armor_weapon_item_modifiers = {
             }
         }, 
         "creatures" : {
-            "that are immune to the material" : [],
-            "that are weak to material" : [],
-            "that are susceptible to material" : [],
-            "that can only be hurt by this material" : []
+            "that are immune to the material" : "None",
+            "that are weak to material" : "None",
+            "that are susceptible to material" : "None",
+            "that can only be hurt by this material" : "None"
         },         
         "disadvantage" : {
             "items" : "Difficult to work with, requiring specialized skills",
@@ -960,10 +1005,10 @@ dnd_armor_weapon_item_modifiers = {
             }
         }, 
         "creatures" : {
-            "that are immune to the material" : [],
-            "that are weak to material" : [],
-            "that are susceptible to material" : [],
-            "that can only be hurt by this material" : []
+            "that are immune to the material" : "None",
+            "that are weak to material" : "None",
+            "that are susceptible to material" : "None",
+            "that can only be hurt by this material" : "None"
         },         
         "disadvantage" : {
             "items" : "Less durable against heavy crushing force",
@@ -1049,10 +1094,10 @@ dnd_armor_weapon_item_modifiers = {
             }
         }, 
         "creatures" : {
-            "that are immune to the material" : [],
-            "that are weak to material" : [],
-            "that are susceptible to material" : [],
-            "that can only be hurt by this material" : []
+            "that are immune to the material" : "None",
+            "that are weak to material" : "None",
+            "that are susceptible to material" : "None",
+            "that can only be hurt by this material" : "None"
         },         
         "disadvantage" : {
             "items" : "May require magical upkeep",
@@ -1140,7 +1185,7 @@ dnd_armor_weapon_item_modifiers = {
         "creatures" : {
             "that are immune to the material" : ["Creatures immune to the specific element"],
             "that are weak to material" : ["Creatures vulnerable to the specific element"],
-            "that are susceptible to material" : [],
+            "that are susceptible to material" : "None",
             "that can only be hurt by this material" : ["Specific elemental creatures, as determined by DM"]
         },         
         "disadvantage" : {
@@ -1227,7 +1272,7 @@ dnd_armor_weapon_item_modifiers = {
             }
         }, 
         "creatures" : {
-            "that are immune to the material" : [],
+            "that are immune to the material" : "None",
             "that are weak to material" : ["Evil extraplanar beings", "Undead", "Demons", "Devils"],
             "that are susceptible to material" : ["Supernatural creatures", "Chaos-aligned entities"],
             "that can only be hurt by this material" : ["Specific extraplanar or mythic creatures, as determined by DM"]
@@ -1316,7 +1361,7 @@ dnd_armor_weapon_item_modifiers = {
             }
         }, 
         "creatures" : {
-            "that are immune to the material" : [],
+            "that are immune to the material" : "None",
             "that are weak to material" : ["Magically susceptible creatures", "Astral or cosmic entities"],
             "that are susceptible to material" : ["Creatures vulnerable to magic"],
             "that can only be hurt by this material" : ["Specific cosmic or magical creatures, as determined by DM"]
@@ -1405,10 +1450,10 @@ dnd_armor_weapon_item_modifiers = {
             }
         }, 
         "creatures" : {
-            "that are immune to the material" : [],
-            "that are weak to material" : [],
-            "that are susceptible to material" : [],
-            "that can only be hurt by this material" : []
+            "that are immune to the material" : "None",
+            "that are weak to material" : "None",
+            "that are susceptible to material" : "None",
+            "that can only be hurt by this material" : "None"
         },         
         "disadvantage" : {
             "items" : "Expensive to produce, requires magical expertise",
@@ -1494,9 +1539,9 @@ dnd_armor_weapon_item_modifiers = {
             }
         }, 
         "creatures" : {
-            "that are immune to the material" : [],
+            "that are immune to the material" : "None",
             "that are weak to material" : ["Depends on the dragon type; for example, creatures weak to fire might be more vulnerable to red dragonbone"],
-            "that are susceptible to material" : [],
+            "that are susceptible to material" : "None",
             "that can only be hurt by this material" : ["Specific creatures, as determined by DM; could be dragon-related entities"]
         },         
         "disadvantage" : {
@@ -1583,9 +1628,9 @@ dnd_armor_weapon_item_modifiers = {
             }
         }, 
         "creatures" : {
-            "that are immune to the material" : [],
+            "that are immune to the material" : "None",
             "that are weak to material" : ["Creatures vulnerable to piercing damage"],
-            "that are susceptible to material" : [],
+            "that are susceptible to material" : "None",
             "that can only be hurt by this material" : ["None specifically"]
         },         
         "disadvantage" : {
@@ -1672,7 +1717,7 @@ dnd_armor_weapon_item_modifiers = {
             }
         }, 
         "creatures" : {
-            "that are immune to the material" : [],
+            "that are immune to the material" : "None",
             "that are weak to material" : ["Creatures vulnerable to natural magic"],
             "that are susceptible to material" : ["Some undead, unnatural beings"],
             "that can only be hurt by this material" : ["Specific creatures vulnerable to druidic magic, as determined by DM"]
@@ -1761,7 +1806,7 @@ dnd_armor_weapon_item_modifiers = {
             }
         }, 
         "creatures" : {
-            "that are immune to the material" : [],
+            "that are immune to the material" : "None",
             "that are weak to material" : ["Eldritch beings", "Cosmic entities", "Certain magical creatures"],
             "that are susceptible to material" : ["Beings vulnerable to void or cosmic energies"],
             "that can only be hurt by this material" : ["Specific otherworldly creatures, as determined by DM"]
@@ -1850,10 +1895,10 @@ dnd_armor_weapon_item_modifiers = {
             }
         }, 
         "creatures" : {
-            "that are immune to the material" : [],
-            "that are weak to material" : [],
-            "that are susceptible to material" : [],
-            "that can only be hurt by this material" : []
+            "that are immune to the material" : "None",
+            "that are weak to material" : "None",
+            "that are susceptible to material" : "None",
+            "that can only be hurt by this material" : "None"
         },         
         "disadvantage" : {
             "items" : "Fragile, requires careful handling",
@@ -2211,7 +2256,9 @@ dnd_weapons = {
         "type" : "simple melee",
         "cost" : "1 sp",
         "weight" : "2 lbs",
-        "properties" : ["Light"],
+        "properties" : {
+            "Light" : "When using two-weapon fighting and using this weapon as your off-hand attack, the character can add their ability modifier to the damage of the second weapon's attack provided it's light. You also don't suffer the normal disadvantage on the attack roll, which would typically apply to off-hand attacks without the 'light' property.",
+        },
         "size" : "medium",
         "damage" : {
             "melee" : {
@@ -2219,29 +2266,39 @@ dnd_weapons = {
                 "two_handed" : "1d4"
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "bludgeoning",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : "strength"
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "dagger" : {
         "description" : "A small, sharp knife used for stabbing.",
         "type" : "simple melee",
         "cost" : "2 gp",
         "weight" : "1 lb",
-        "properties" : ["Finesse", "Light", "Thrown"],
+        "properties" : {
+            "Finesse" : "Allows the attacker to use their Dexterity modifier instead of Strength for both the attack and damage rolls when wielding that weapon.",
+            "Light" : "When using two-weapon fighting and using this weapon as your off-hand attack, the character can add their ability modifier to the damage of the second weapon's attack provided it's light. You also don't suffer the normal disadvantage on the attack roll, which would typically apply to off-hand attacks without the 'light' property.",
+            "Thrown" : " Weapons with the thrown property can be used effectively in both melee and ranged combat, making them versatile choices for characters who want the option to attack at different ranges."
+            },
         "size" : "small",
         "damage" : {
             "melee" : {
@@ -2249,59 +2306,84 @@ dnd_weapons = {
                 "two_handed" : "1d4"
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "piercing",
         "range" : {
             "melee" : 5,
-            "thrown" : [20, 60],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 20,
+                "long" : 60,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength", "dexterity"],
-            "thrown" : ["strength", "dexterity"],
-            "ranged" : []
+            "melee" : "strength or dexterity",
+            "thrown" : "strength or dexterity",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "greatclub" : {
         "description" : "A larger and heavier club, typically requiring two hands to use effectively.",
         "type" : "simple melee",
         "cost" : "2 sp",
         "weight" : "10 lbs",
-        "properties" : ["Two-handed"],
+        "properties" : {
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
         "size" : "large",
         "damage" : {
             "melee" : {
-                "one_handed" : None,
+                "one_handed" : "None",
                 "two_handed" : "1d8",
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "bludgeoning",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 5,
+                "long" : 15,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : ["two-handed"]
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : {
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
     },
     "handaxe" : {
         "description" : "A small axe designed for use with one hand.",
         "type" : "simple melee",
         "cost" : "5 gp",
         "weight" : "2 lbs",
-        "properties" : ["Light", "Thrown"],
+        "properties" : {
+            "Light" : "When using two-weapon fighting and using this weapon as your off-hand attack, the character can add their ability modifier to the damage of the second weapon's attack provided it's light. You also don't suffer the normal disadvantage on the attack roll, which would typically apply to off-hand attacks without the 'light' property.", 
+            "Thrown" : " Weapons with the thrown property can be used effectively in both melee and ranged combat, making them versatile choices for characters who want the option to attack at different ranges.",
+        },
         "size" : "small",
         "damage" : {
             "melee" : {
@@ -2309,29 +2391,40 @@ dnd_weapons = {
                 "two_handed" : "1d6",
             },
             "thrown" : "1d6",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "slashing",
         "range" : {
             "melee" : 5,
-            "thrown" : [20, 60],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 20,
+                "long" : 60,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "javelin" : {
         "description" : "A light spear designed primarily to be thrown.",
         "type" : "simple melee",
         "cost" : "5 sp",
         "weight" : "2 lbs",
-        "properties" : ["Thrown"],
+        "properties" : {
+            "Thrown" : " Weapons with the thrown property can be used effectively in both melee and ranged combat, making them versatile choices for characters who want the option to attack at different ranges.",
+        },
         "size" : "medium",
         "damage" : {
             "melee" : {
@@ -2339,29 +2432,41 @@ dnd_weapons = {
                 "two_handed" : "1d6",
             },
             "thrown" : "1d6",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "piercing",
         "range" : {
             "melee" : 5,
-            "thrown" : [30, 120],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 30,
+                "long" : 120,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,                
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "hammer, light" : {
         "description" : "A small hammer that can be used as a weapon.",
         "type" : "simple melee",
         "cost" : "2 gp",
         "weight" : "2 lbs",
-        "properties" : ["Light", "Thrown"],
+        "properties" : {
+            "Light" : "When using two-weapon fighting and using this weapon as your off-hand attack, the character can add their ability modifier to the damage of the second weapon's attack provided it's light. You also don't suffer the normal disadvantage on the attack roll, which would typically apply to off-hand attacks without the 'light' property.", 
+            "Thrown" : " Weapons with the thrown property can be used effectively in both melee and ranged combat, making them versatile choices for characters who want the option to attack at different ranges.",
+        },
         "size" : "small",
         "damage" : {
             "melee" : {
@@ -2369,29 +2474,38 @@ dnd_weapons = {
                 "two_handed" : "1d4",
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "bludgeoning",
         "range" : {
             "melee" : 5,
-            "thrown" : [20, 60],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 20,
+                "long" : 60,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "mace" : {
         "description" : "A club-like weapon with a heavy head on the end.",
         "type" : "simple melee",
         "cost" : "5 gp",
         "weight" : "4 lbs",
-        "properties" : [],
+        "properties" : "None",
         "size" : "medium",
         "damage" : {
             "melee" : {
@@ -2399,29 +2513,40 @@ dnd_weapons = {
                 "two_handed" : "1d6",
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "bludgeoning",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "quarterstaff" : {
         "description" : "A long wooden staff, often used for defense and leverage.",
         "type" : "simple melee",
         "cost" : "2 sp",
         "weight" : "4 lbs",
-        "properties" : ["Versatile"],
+        "properties" : {
+            "Versatile" : "When wielding a versatile weapon with one hand, you can use it as you would any other one-handed melee weapon. You would typically use your Strength modifier for both the attack and damage rolls. When wielding a versatile weapon with two hands, you gain the benefit of additional damage. This means you can use both of your hands to swing the weapon with greater force. When you use a versatile weapon in this way, you typically use your Strength modifier for the attack roll but add an extra damage die to the weapon's damage.",
+        },
         "size" : "large",
         "damage" : {
             "melee" : {
@@ -2429,29 +2554,40 @@ dnd_weapons = {
                 "two_handed" : "1d6",
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "bludgeoning",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 5,
+                "long" : 15,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "sickle" : {
         "description" : "A curved, hand-held agricultural tool used as a weapon.",
         "type" : "simple melee",
         "cost" : "1 gp",
         "weight" : "2 lbs",
-        "properties" : ["Light"],
+        "properties" : {
+            "Light" : "When using two-weapon fighting and using this weapon as your off-hand attack, the character can add their ability modifier to the damage of the second weapon's attack provided it's light. You also don't suffer the normal disadvantage on the attack roll, which would typically apply to off-hand attacks without the 'light' property.",
+        },
         "size" : "small",
         "damage" : {
             "melee" : {
@@ -2459,29 +2595,41 @@ dnd_weapons = {
                 "two_handed" : "1d4"
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "slashing",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 20,
+                "long" : 60,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "spear" : {
         "description" : "A pole weapon with a sharp point, either used for thrusting or throwing.",
         "type" : "simple melee",
         "cost" : "1 gp",
         "weight" : "3 lbs",
-        "properties" : ["Thrown", "Versatile"],
+        "properties" : {
+            "Thrown" : " Weapons with the thrown property can be used effectively in both melee and ranged combat, making them versatile choices for characters who want the option to attack at different ranges.", 
+            "Versatile" : "When wielding a versatile weapon with one hand, you can use it as you would any other one-handed melee weapon. You would typically use your Strength modifier for both the attack and damage rolls. When wielding a versatile weapon with two hands, you gain the benefit of additional damage. This means you can use both of your hands to swing the weapon with greater force. When you use a versatile weapon in this way, you typically use your Strength modifier for the attack roll but add an extra damage die to the weapon's damage.",
+        },
         "size" : "medium",
         "damage" : {
             "melee" : {
@@ -2489,29 +2637,42 @@ dnd_weapons = {
                 "two_handed" : "1d8",
             },
             "thrown" : "1d6",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "piercing",
         "range" : {
             "melee" : 5,
-            "thrown" : [20, 60],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,                
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },   
     "crossbow, light" : {
         "description" : "A light, two-handed ranged weapon that fires bolts.",
         "type" : "simple ranged",
         "cost" : "25 gp",
         "weight" : "5 lbs",
-        "properties" : ["Ammunition", "Loading", "Two-handed"],
+        "properties" : {
+            "Ammunition" : "The weapon requires ammunition to use. In many cases, ammunition can be recovered after combat if you take the time to search for it.", 
+            "Loading" : "can only be fired once per turn, regardless of the character's number of attacks. This means that even if a character has Extra Attack and can make multiple attacks in one turn, they can only fire a loading weapon once during that turn.", 
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
         "size" : "medium",
         "damage" : {
             "melee" : {
@@ -2524,24 +2685,35 @@ dnd_weapons = {
         "damage type" : "piercing",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : [80, 320]
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 80,
+                "long" : 320,
+            },
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : ["dexterity"]
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : "dexterity"
         },
         "loading time" : "1 action",
-        "special" : None,
-        "restrictions" : ["two-handed"]
+        "special" : "None",
+        "restrictions" : {
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
     },
     "dart" : {
         "description" : "A small, throwable weapon with a pointed tip.",
         "type" : "simple ranged",
         "cost" : "5 cp",
         "weight" : "1/4 lb",
-        "properties" : ["Finesse", "Thrown"],
+        "properties" : {
+            "Finesse" : "Allows the attacker to use their Dexterity modifier instead of Strength for both the attack and damage rolls when wielding that weapon.", 
+            "Thrown" : " Weapons with the thrown property can be used effectively in both melee and ranged combat, making them versatile choices for characters who want the option to attack at different ranges.",
+        },
         "size" : "small",
         "damage" : {
             "melee" : {
@@ -2549,29 +2721,38 @@ dnd_weapons = {
                 "two_handed" : "1d4",
             },
             "thrown" : "1d4",
-            "ranged" : "1d4"
+            "ranged" : "0d0"
         },
         "damage type" : "piercing",
         "range" : {
             "melee" : 5,
-            "thrown" : [20, 60],
-            "ranged" : [20, 60]
+            "thrown" : {
+                "normal" : 20,
+                "long" : 60,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            },
         },
         "modifier" : {
-            "melee" : ["strength", "dexterity"],
-            "thrown" : ["strength", "dexterity"],
-            "ranged" : ["dexterity"]
+            "melee" : "strength or dexterity",
+            "thrown" : "strength or dexterity",
+            "ranged" : "dexterity"
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "shortbow" : {
         "description" : "A relatively small and light bow, used for firing arrows.",
         "type" : "simple ranged",
         "cost" : "25 gp",
         "weight" : "2 lbs",
-        "properties" : ["Ammunition", "Two-handed"],
+        "properties" : {
+            "Ammunition" : "The weapon requires ammunition to use. In many cases, ammunition can be recovered after combat if you take the time to search for it.", 
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
         "size" : "medium",
         "damage" : {
             "melee" : {
@@ -2584,24 +2765,34 @@ dnd_weapons = {
         "damage type" : "piercing",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : [80, 320]
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 80,
+                "long" : 320,
+            },
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : ["dexterity"]
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : "dexterity"
         },
         "loading time" : "1 action",
-        "special" : None,
-        "restrictions" : ["two-handed"]
+        "special" : "None",
+        "restrictions" : {
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
     },
     "sling" : {
         "description" : "A simple weapon used to hurl stones or small projectiles.",
         "type" : "simple ranged",
         "cost" : "1 sp",
         "weight" : "0 lbs",
-        "properties" : ["Ammunition"],
+        "properties" : {
+            "Ammunition" : "The weapon requires ammunition to use. In many cases, ammunition can be recovered after combat if you take the time to search for it."
+        },
         "size" : "medium",
         "damage" : {
             "melee" : {
@@ -2614,24 +2805,32 @@ dnd_weapons = {
         "damage type" : "bludgeoning",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : [30, 120]
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 30,
+                "long" : 120,
+            },
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : ["dexterity"]
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : "dexterity"
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "battleaxe" : {
         "description" : "A large axe designed for combat, usable with one or two hands.",
         "type" : "martial melee",
         "cost" : "10 gp",
         "weight" : "4 lbs",
-        "properties" : ["Versatile"],
+        "properties" : {
+            "Versatile" : "When wielding a versatile weapon with one hand, you can use it as you would any other one-handed melee weapon. You would typically use your Strength modifier for both the attack and damage rolls. When wielding a versatile weapon with two hands, you gain the benefit of additional damage. This means you can use both of your hands to swing the weapon with greater force. When you use a versatile weapon in this way, you typically use your Strength modifier for the attack roll but add an extra damage die to the weapon's damage.",
+        },
         "size" : "large",
         "damage" : {
             "melee" : {
@@ -2639,29 +2838,38 @@ dnd_weapons = {
                 "two_handed" : "1d10",
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "slashing",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 5,
+                "long" : 15,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "flail" : {
         "description" : "A weapon consisting of a striking head attached to a handle by a flexible rope, strap, or chain.",
         "type" : "martial melee",
         "cost" : "10 gp",
         "weight" : "2 lbs",
-        "properties" : [],
+        "properties" : "None",
         "size" : "medium",
         "damage" : {
             "melee" : {
@@ -2669,149 +2877,223 @@ dnd_weapons = {
                 "two_handed" : "1d8",
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "bludgeoning",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "glaive" : {
         "description" : "A polearm with a heavy blade on one end.",
         "type" : "martial melee",
         "cost" : "20 gp",
         "weight" : "6 lbs",
-        "properties" : ["Heavy", "Reach", "Two-handed"],
+        "properties" : {
+            "Heavy" : "A minimum of 15 strength is required for a character to wield this weapon effectively. If a character's Strength is less than the required amount, they have disadvantage on attack rolls made with the weapon.", 
+            "Reach" : "Weapons with the reach property typically have a longer reach than most other melee weapons. Instead of being limited to attacking creatures in adjacent squares or spaces, a character wielding a reach weapon can make melee attacks against creatures that are 10 feet away. They can threaten and potentially make opportunity attacks against creatures that enter or exit their reach, which is typically a 10-foot radius around them. This can be advantageous for controlling the battlefield and protecting allies. Reach weapons do not impose disadvantage on attack rolls when used to attack creatures that are adjacent to the wielder. This is an important distinction from some ranged weapons, like longbows, which have disadvantage when used in melee combat.", 
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon."
+        },
         "size" : "large",
         "damage" : {
             "melee" : {
-                "one_handed" : None,
+                "one_handed" : "None",
                 "two_handed" : "1d10",
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "slashing",
         "range" : {
             "melee" : 10,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 5,
+                "long" : 15,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : ["two-handed"]
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : {
+            "Heavy" : "A minimum of 15 strength is required for a character to wield this weapon effectively. If a character's Strength is less than the required amount, they have disadvantage on attack rolls made with the weapon.",
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
     },
     "greataxe" : {
         "description" : "A larger, heavier axe, typically requiring two hands.",
         "type" : "martial melee",
         "cost" : "30 gp",
         "weight" : "7 lbs",
-        "properties" : ["Heavy", "Two-handed"],
+        "properties" : {
+            "Heavy" : "A minimum of 13 strength is required for a character to wield this weapon effectively. If a character's Strength is less than the required amount, they have disadvantage on attack rolls made with the weapon.", 
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
         "size" : "large",
         "damage" : {
             "melee" : {
-                "one_handed" : None,
+                "one_handed" : "None",
                 "two_handed" : "1d12",
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "slashing",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 5,
+                "long" : 15,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : ["two-handed"]
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : {
+            "Heavy" : "A minimum of 15 strength is required for a character to wield this weapon effectively. If a character's Strength is less than the required amount, they have disadvantage on attack rolls made with the weapon.",
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
     },
     "greatsword" : {
         "description" : "A large two-handed sword with a broad blade.",
         "type" : "martial melee",
         "cost" : "50 gp",
         "weight" : "6 lbs",
-        "properties" : ["Heavy", "Two-handed"],
+        "properties" : {
+            "Heavy" : "A minimum of 15 strength is required for a character to wield this weapon effectively. If a character's Strength is less than the required amount, they have disadvantage on attack rolls made with the weapon.", 
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
         "size" : "large",
         "damage" : {
             "melee" : {
-                "one_handed" : None,
+                "one_handed" : "None",
                 "two_handed" : "2d6",
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "slashing",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 5,
+                "long" : 15,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : ["two-handed"]
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : {
+            "Heavy" : "A minimum of 15 strength is required for a character to wield this weapon effectively. If a character's Strength is less than the required amount, they have disadvantage on attack rolls made with the weapon.",
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
     },
     "halberd" : {
         "description" : "A two-handed pole weapon with an axe blade topped with a spike and a hook on the back.",
         "type" : "martial melee",
         "cost" : "20 gp",
         "weight" : "6 lbs",
-        "properties" : ["Heavy", "Reach", "Two-handed"],
+        "properties" : {
+            "Heavy" : "A minimum of 15 strength is required for a character to wield this weapon effectively. If a character's Strength is less than the required amount, they have disadvantage on attack rolls made with the weapon.", 
+            "Reach" : "Weapons with the reach property typically have a longer reach than most other melee weapons. Instead of being limited to attacking creatures in adjacent squares or spaces, a character wielding a reach weapon can make melee attacks against creatures that are 10 feet away. They can threaten and potentially make opportunity attacks against creatures that enter or exit their reach, which is typically a 10-foot radius around them. This can be advantageous for controlling the battlefield and protecting allies. Reach weapons do not impose disadvantage on attack rolls when used to attack creatures that are adjacent to the wielder. This is an important distinction from some ranged weapons, like longbows, which have disadvantage when used in melee combat.", 
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
         "size" : "large",
         "damage" : {
             "melee" : {
-                "one_handed" : None,
+                "one_handed" : "None",
                 "two_handed" : "1d10",
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "slashing",
         "range" : {
             "melee" : 10,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 5,
+                "long" : 15,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : ["two-handed"]
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : {
+            "Heavy" : "A minimum of 15 strength is required for a character to wield this weapon effectively. If a character's Strength is less than the required amount, they have disadvantage on attack rolls made with the weapon.",
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
     },
     "lance" : {
         "description" : "A long weapon for thrusting, typically used on horseback.",
         "type" : "martial melee",
         "cost" : "10 gp",
         "weight" : "6 lbs",
-        "properties" : ["Reach", "Special"],
+        "properties" : {
+            "Reach" : "Weapons with the reach property typically have a longer reach than most other melee weapons. Instead of being limited to attacking creatures in adjacent squares or spaces, a character wielding a reach weapon can make melee attacks against creatures that are 10 feet away. They can threaten and potentially make opportunity attacks against creatures that enter or exit their reach, which is typically a 10-foot radius around them. This can be advantageous for controlling the battlefield and protecting allies. Reach weapons do not impose disadvantage on attack rolls when used to attack creatures that are adjacent to the wielder. This is an important distinction from some ranged weapons, like longbows, which have disadvantage when used in melee combat.", 
+            "Special" : "Aa lance is often associated with mounted combat, and it has the 'special' property that allows it to be used one-handed when mounted. While mounted and using a lance one-handed, a character can still make melee attacks with it.",
+        },
         "size" : "large",
         "damage" : {
             "melee" : {
@@ -2819,20 +3101,29 @@ dnd_weapons = {
                 "two_handed" : "1d12"
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "piercing",
         "range" : {
             "melee" : 10,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 5,
+                "long" : 15,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
+        "loading time" : "None",
         "special" : "Disadvantage to attack target within 5 ft.",
         "restrictions" : [
             "You have disadvantage when you use a lance to attack a target within 5 feet of you.",
@@ -2844,7 +3135,9 @@ dnd_weapons = {
         "type" : "martial melee",
         "cost" : "15 gp",
         "weight" : "3 lbs",
-        "properties" : ["Versatile"],
+        "properties" : {
+            "Versatile" : "When wielding a versatile weapon with one hand, you can use it as you would any other one-handed melee weapon. You would typically use your Strength modifier for both the attack and damage rolls. When wielding a versatile weapon with two hands, you gain the benefit of additional damage. This means you can use both of your hands to swing the weapon with greater force. When you use a versatile weapon in this way, you typically use your Strength modifier for the attack roll but add an extra damage die to the weapon's damage.",
+        },
         "size" : "medium",
         "damage" : {
             "melee" : {
@@ -2852,71 +3145,90 @@ dnd_weapons = {
                 "two_handed" : "1d10"
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "slashing",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "maul" : {
         "description" : "A large hammer-like weapon.",
         "type" : "martial melee",
         "cost" : "10 gp",
         "weight" : "10 lbs",
-        "properties" : ["Heavy", "Two-handed"],
-        "size" : "large",
-        "damage" : {
-            "melee" : {
-                "one_handed" : None,
-                "two_handed" : "2d6",
-            },
-            "thrown" : "1d4",
+        "properties" : {
+            "Heavy" : "A minimum of 15 strength is required for a character to wield this weapon effectively. If a character's Strength is less than the required amount, they have disadvantage on attack rolls made with the weapon.", 
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
         },
+        "size" : "large",
         "type" : "martial melee",
         "cost" : "10 gp",
         "weight" : "6 lbs",
-        "properties" : ["Reach", "Special"],
+        "properties" : {
+            "Reach" : "Weapons with the reach property typically have a longer reach than most other melee weapons. Instead of being limited to attacking creatures in adjacent squares or spaces, a character wielding a reach weapon can make melee attacks against creatures that are 10 feet away. They can threaten and potentially make opportunity attacks against creatures that enter or exit their reach, which is typically a 10-foot radius around them. This can be advantageous for controlling the battlefield and protecting allies. Reach weapons do not impose disadvantage on attack rolls when used to attack creatures that are adjacent to the wielder. This is an important distinction from some ranged weapons, like longbows, which have disadvantage when used in melee combat.", 
+        },
         "size" : "large",
         "damage" : {
             "melee" : {
-                "one_handed" : "1d12",
-                "two_handed" : "1d12"
+                "one_handed" : "2d6",
+                "two_handed" : "2d6"
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "piercing",
         "range" : {
             "melee" : 10,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 5,
+                "long" : 15,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
+        "loading time" : "None",
         "special" : "Disadvantage to attack target within 5 ft.",
-        "restrictions" : []
+        "restrictions" : {
+            "Heavy" : "A minimum of 15 strength is required for a character to wield this weapon effectively. If a character's Strength is less than the required amount, they have disadvantage on attack rolls made with the weapon.",
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        }
     },
     "morningstar" : {
         "description" : "A weapon with a spiked club head.",
         "type" : "martial melee",
         "cost" : "15 gp",
         "weight" : "4 lbs",
-        "properties" : [],
+        "properties" : "None",
         "size" : "medium",
         "damage" : {
             "melee" : {
@@ -2924,59 +3236,86 @@ dnd_weapons = {
                 "two_handed" : "1d8"
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "piercing",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "pike" : {
         "description" : "A very long spear used predominantly by infantry.",
         "type" : "martial melee",
         "cost" : "5 gp",
         "weight" : "18 lbs",
-        "properties" : ["Heavy", "Reach", "Two-handed"],
+        "properties" : {
+            "Heavy" : "A minimum of 15 strength is required for a character to wield this weapon effectively. If a character's Strength is less than the required amount, they have disadvantage on attack rolls made with the weapon.", 
+            "Reach" : "Weapons with the reach property typically have a longer reach than most other melee weapons. Instead of being limited to attacking creatures in adjacent squares or spaces, a character wielding a reach weapon can make melee attacks against creatures that are 10 feet away. They can threaten and potentially make opportunity attacks against creatures that enter or exit their reach, which is typically a 10-foot radius around them. This can be advantageous for controlling the battlefield and protecting allies. Reach weapons do not impose disadvantage on attack rolls when used to attack creatures that are adjacent to the wielder. This is an important distinction from some ranged weapons, like longbows, which have disadvantage when used in melee combat.", 
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
         "size" : "large",
         "damage" : {
             "melee" : {
-                "one_handed" : None,
+                "one_handed" : "None",
                 "two_handed" : "1d10"
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "piercing",
         "range" : {
             "melee" : 10,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 5,
+                "long" : 15,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : ["two-handed"]
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : {
+            "Heavy" : "A minimum of 15 strength is required for a character to wield this weapon effectively. If a character's Strength is less than the required amount, they have disadvantage on attack rolls made with the weapon.",
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
     },
     "rapier" : {
         "description" : "A slender, sharply pointed sword.",
         "type" : "martial melee",
         "cost" : "25 gp",
         "weight" : "2 lbs",
-        "properties" : ["Finesse"],
+        "properties" : {
+            "Finesse" : "Allows the attacker to use their Dexterity modifier instead of Strength for both the attack and damage rolls when wielding that weapon.",
+        },
         "size" : "medium",
         "damage" : {
             "melee" : {
@@ -2984,29 +3323,41 @@ dnd_weapons = {
                 "two_handed" : "1d8"
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "piercing",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
             "melee" : ["dexterity", "strength"],
             "thrown" : ["dexterity", "strength"],
-            "ranged" : []
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "scimitar" : {
         "description" : "A short sword with a curved blade.",
         "type" : "martial melee",
         "cost" : "25 gp",
         "weight" : "3 lbs",
-        "properties" : ["Finesse", "Light"],
+        "properties" : {
+            "Finesse" : "Allows the attacker to use their Dexterity modifier instead of Strength for both the attack and damage rolls when wielding that weapon.", 
+            "Light" : "When using two-weapon fighting and using this weapon as your off-hand attack, the character can add their ability modifier to the damage of the second weapon's attack provided it's light. You also don't suffer the normal disadvantage on the attack roll, which would typically apply to off-hand attacks without the 'light' property.",
+        },
         "size" : "medium",
         "damage" : {
             "melee" : {
@@ -3014,29 +3365,41 @@ dnd_weapons = {
                 "two_handed" : "1d6"
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "slashing",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
             "melee" : ["dexterity", "strength"],
             "thrown" : ["dexterity", "strength"],
-            "ranged" : []
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "shortsword" : {
         "description" : "A small, light, and fast weapon for close combat.",
         "type" : "martial melee",
         "cost" : "10 gp",
         "weight" : "2 lbs",
-        "properties" : ["Finesse", "Light"],
+        "properties" : {
+            "Finesse" : "Allows the attacker to use their Dexterity modifier instead of Strength for both the attack and damage rolls when wielding that weapon.", 
+            "Light" : "When using two-weapon fighting and using this weapon as your off-hand attack, the character can add their ability modifier to the damage of the second weapon's attack provided it's light. You also don't suffer the normal disadvantage on the attack roll, which would typically apply to off-hand attacks without the 'light' property.",
+        },
         "size" : "medium",
         "damage" : {
             "melee" : {
@@ -3044,29 +3407,41 @@ dnd_weapons = {
                 "two_handed" : "1d6"
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "piercing",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
             "melee" : ["dexterity", "strength"],
             "thrown" : ["dexterity", "strength"],
-            "ranged" : []
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "trident" : {
         "description" : "A three-pronged spear, resembling a large fork.",
         "type" : "martial melee",
         "cost" : "5 gp",
         "weight" : "4 lbs",
-        "properties" : ["Thrown", "Versatile"],
+        "properties" : {
+            "Thrown" : " Weapons with the thrown property can be used effectively in both melee and ranged combat, making them versatile choices for characters who want the option to attack at different ranges.",
+            "Versatile" : "When wielding a versatile weapon with one hand, you can use it as you would any other one-handed melee weapon. You would typically use your Strength modifier for both the attack and damage rolls. When wielding a versatile weapon with two hands, you gain the benefit of additional damage. This means you can use both of your hands to swing the weapon with greater force. When you use a versatile weapon in this way, you typically use your Strength modifier for the attack roll but add an extra damage die to the weapon's damage.",
+        },
         "size" : "medium",
         "damage" : {
             "melee" : {
@@ -3074,29 +3449,38 @@ dnd_weapons = {
                 "two_handed" : "1d8"
             },
             "thrown" : "1d6",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "piercing",
         "range" : {
             "melee" : 5,
-            "thrown" : [20, 60],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "war pick" : {
         "description" : "A weapon with a heavy spiked head on a long handle.",
         "type" : "martial melee",
         "cost" : "5 gp",
         "weight" : "2 lbs",
-        "properties" : [],
+        "properties" : "None",
         "size" : "medium",
         "damage" : {
             "melee" : {
@@ -3104,29 +3488,40 @@ dnd_weapons = {
                 "two_handed" : "1d8"
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "piercing",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "warhammer" : {
         "description" : "A hammer with a head suitable for battle.",
         "type" : "martial melee",
         "cost" : "15 gp",
         "weight" : "2 lbs",
-        "properties" : ["Versatile"],
+        "properties" : {
+            "Versatile" : "When wielding a versatile weapon with one hand, you can use it as you would any other one-handed melee weapon. You would typically use your Strength modifier for both the attack and damage rolls. When wielding a versatile weapon with two hands, you gain the benefit of additional damage. This means you can use both of your hands to swing the weapon with greater force. When you use a versatile weapon in this way, you typically use your Strength modifier for the attack roll but add an extra damage die to the weapon's damage.",
+        },
         "size" : "large",
         "damage" : {
             "melee" : {
@@ -3134,29 +3529,41 @@ dnd_weapons = {
                 "two_handed" : "1d10",
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "bludgeoning",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 5,
+                "long" : 15,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "whip" : {
         "description" : "A flexible weapon made from a plaited strip of leather or similar material.",
         "type" : "martial melee",
         "cost" : "2 gp",
         "weight" : "3 lbs",
-        "properties" : ["Finesse", "Reach"],
+        "properties" : {
+            "Finesse" : "Allows the attacker to use their Dexterity modifier instead of Strength for both the attack and damage rolls when wielding that weapon.", 
+            "Reach" : "Weapons with the reach property typically have a longer reach than most other melee weapons. Instead of being limited to attacking creatures in adjacent squares or spaces, a character wielding a reach weapon can make melee attacks against creatures that are 10 feet away. They can threaten and potentially make opportunity attacks against creatures that enter or exit their reach, which is typically a 10-foot radius around them. This can be advantageous for controlling the battlefield and protecting allies. Reach weapons do not impose disadvantage on attack rolls when used to attack creatures that are adjacent to the wielder. This is an important distinction from some ranged weapons, like longbows, which have disadvantage when used in melee combat.",
+        },
         "size" : "small",
         "damage" : {
             "melee" : {
@@ -3164,29 +3571,41 @@ dnd_weapons = {
                 "two_handed" : "1d4",
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "slashing",
         "range" : {
             "melee" : 10,
-            "thrown" : [10, 20],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 20,
+                "long" : 60,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength", "dexterity"],
-            "thrown" : ["strength", "dexterity"],
-            "ranged" : []
+            "melee" : "strength or dexterity",
+            "thrown" : "strength or dexterity",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
-        "loading time" : None,
-        "special" : None,
-        "restrictions" : []
+        "loading time" : "None",
+        "special" : "None",
+        "restrictions" : "None"
     },
     "blowgun" : {
         "description" : "A simple ranged weapon that uses the force of one's breath to fire a dart.",
         "type" : "martial ranged",
         "cost" : "10 gp",
         "weight" : "1 lb",
-        "properties" : ["Ammunition", "Loading"],
+        "properties" : {
+            "Ammunition" : "The weapon requires ammunition to use. In many cases, ammunition can be recovered after combat if you take the time to search for it.",
+            "Loading" : "can only be fired once per turn, regardless of the character's number of attacks. This means that even if a character has Extra Attack and can make multiple attacks in one turn, they can only fire a loading weapon once during that turn.",
+        },
         "size" : "small",
         "damage" : {
             "melee" : {
@@ -3194,29 +3613,39 @@ dnd_weapons = {
                 "two_handed" : "1d4",
             },
             "thrown" : "1d4",
-            "ranged" : "1"
+            "ranged" : "1d4"
         },
         "damage type" : "piercing",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : [25, 100]
+            "thrown" : {
+                "normal" : 20,
+                "long" : 60,
+            },
+            "ranged" : {
+                "normal" : 25,
+                "long" : 100,
+            },
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : ["dexterity"]
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : "dexterity"
         },
         "loading time" : "1 action",
-        "special" : None,
-        "restrictions" : []
+        "special" : "None",
+        "restrictions" : "None"
     },
     "crossbow, hand" : {
         "description" : "A small, one-handed crossbow.",
         "type" : "martial ranged",
         "cost" : "75 gp",
         "weight" : "3 lbs",
-        "properties" : ["Ammunition", "Light", "Loading"],
+        "properties" : {
+            "Ammunition" : "The weapon requires ammunition to use. In many cases, ammunition can be recovered after combat if you take the time to search for it.", 
+            "Light" : "When using two-weapon fighting and using this weapon as your off-hand attack, the character can add their ability modifier to the damage of the second weapon's attack provided it's light. You also don't suffer the normal disadvantage on the attack roll, which would typically apply to off-hand attacks without the 'light' property.", 
+            "Loading" : "can only be fired once per turn, regardless of the character's number of attacks. This means that even if a character has Extra Attack and can make multiple attacks in one turn, they can only fire a loading weapon once during that turn.",
+        },
         "size" : "small",
         "damage" : {
             "melee" : {
@@ -3229,16 +3658,22 @@ dnd_weapons = {
         "damage type" : "piercing",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : [30, 120]
+            "thrown" : {
+                "normal" : 20,
+                "long" : 60,
+            },
+            "ranged" : {
+                "normal" : 30,
+                "long" : 120,
+            },
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : ["dexterity"]
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : "dexterity"
         },
         "loading time" : "1 action",
-        "special" : None,
+        "special" : "None",
         "restrictions" : ["light"]
     },
     "crossbow, heavy" : {
@@ -3246,7 +3681,12 @@ dnd_weapons = {
         "type" : "martial ranged",
         "cost" : "50 gp",
         "weight" : "18 lbs",
-        "properties" : ["Ammunition", "Heavy", "Loading", "Two-handed"],
+        "properties" : {
+            "Ammunition" : "The weapon requires ammunition to use. In many cases, ammunition can be recovered after combat if you take the time to search for it.",
+            "Heavy" : "A minimum of 15 strength is required for a character to wield this weapon effectively. If a character's Strength is less than the required amount, they have disadvantage on attack rolls made with the weapon.", 
+            "Loading" : "can only be fired once per turn, regardless of the character's number of attacks. This means that even if a character has Extra Attack and can make multiple attacks in one turn, they can only fire a loading weapon once during that turn.", 
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
         "size" : "large",
         "damage" : {
             "melee" : {
@@ -3259,24 +3699,37 @@ dnd_weapons = {
         "damage type" : "piercing",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : [100, 400]
+            "thrown" : {
+                "normal" : 5,
+                "long" : 15,
+            },
+            "ranged" : {
+                "normal" : 100,
+                "long" : 400,
+            },
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : ["dexterity"]
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : "dexterity"
         },
         "loading time" : "1 action",
-        "special" : None,
-        "restrictions" : ["heavy", "two-handed"]
+        "special" : "None",
+        "restrictions" : {
+            "Heavy" : "A minimum of 15 strength is required for a character to wield this weapon effectively. If a character's Strength is less than the required amount, they have disadvantage on attack rolls made with the weapon.", 
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        }
     },
     "longbow" : {
         "description" : "A tall bow used for firing arrows over longer distances.",
         "type" : "martial ranged",
         "cost" : "50 gp",
         "weight" : "2 lbs",
-        "properties" : ["Ammunition", "Heavy", "Two-handed"],
+        "properties" : {
+            "Ammunition" : "The weapon requires ammunition to use. In many cases, ammunition can be recovered after combat if you take the time to search for it.", 
+            "Heavy" : "A minimum of 11 strength is required for a character to wield this weapon effectively. If a character's Strength is less than the required amount, they have disadvantage on attack rolls made with the weapon.", 
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        },
         "size" : "large",
         "damage" : {
             "melee" : {
@@ -3289,17 +3742,26 @@ dnd_weapons = {
         "damage type" : "piercing",
         "range" : {
             "melee" : 5,
-            "thrown" : [10, 20],
-            "ranged" : [150, 600]
+            "thrown" : {
+                "normal" : 5,
+                "long" : 15,
+            },
+            "ranged" : {
+                "normal" : 150,
+                "long" : 600,
+            },
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : ["dexterity"]
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : "dexterity"
         },
         "loading time" : "None",
-        "special" : None,
-        "restrictions" : ["heavy", "two-handed"]
+        "special" : "None",
+        "restrictions" : {
+            "Heavy" : "A minimum of 11 strength is required for a character to wield this weapon effectively. If a character's Strength is less than the required amount, they have disadvantage on attack rolls made with the weapon.", 
+            "Two-handed" : "Designed to be wielded with both hands. When using a two-handed weapon, a character must grip it with both hands, which means they cannot hold another weapon or shield in their off hand while using the two-handed weapon. Two-handed weapons often deal higher damage than one-handed weapons to offset this limitation. If a character tries to wield a two-handed weapon with only one hand, they usually have disadvantage on attack rolls made with that weapon.",
+        }
     },
     "net" : {
         "description" : "A large or smaler creature hit by a net is restrained until it is freed. A creature can use its action to make a DC 10 strength check, freeing itself or another creature within its reach on success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net.",
@@ -3310,22 +3772,31 @@ dnd_weapons = {
         "size" : "medium",
         "damage" : {
             "melee" : {
-                "one_handed" : "None",
-                "two_handed" : "None",
+                "one_handed" : "0d0",
+                "two_handed" : "0d0",
             },
-            "thrown" : "None",
-            "ranged" : "None"
+            "thrown" : "0d0",
+            "ranged" : "0d0"
         },
         "damage type" : "None",
         "range" : {
             "melee" : 5,
-            "thrown" : [5, 15],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 5,
+                "long" : 15,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : [],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "None",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
         "loading time" : "None",
         "special" : "Restrains target",
@@ -3339,37 +3810,46 @@ dnd_weapons = {
         "type" : "improvised",
         "cost" : "None",
         "weight" : "varies",
-        "properties" : [],
+        "properties" : "None",
         "size" : "medium",
         "damage" : {
             "melee" : {
                 "one_handed" : "1d4",
-                "two_handed" : None,
+                "two_handed" : "None",
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "varies",
         "range" : {
             "melee" : 5,
-            "thrown" : [20, 60],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["dexterity"],
-            "thrown" : ["dexterity"],
-            "ranged" : []
+            "melee" : "dexterity",
+            "thrown" : "dexterity",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
         "loading time" : "None",
         "special" : "None",
-        "restrictions" : []
+        "restrictions" : "None"
     },
     "improvised weapon, medium" : {
-        "description" : "Medium items are larger and heavier, such as chairs, helmets, or large rocks.",
+        "description" : "Medium items are of moderate size, such as chairs, helmets, or large rocks.",
         "type" : "improvised",
         "cost" : "None",
         "weight" : "varies",
-        "properties" : [],
+        "properties" : "None",
         "size" : "medium",
         "damage" : {
             "melee" : {
@@ -3377,52 +3857,70 @@ dnd_weapons = {
                 "two_handed" : "1d4",
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "varies",
         "range" : {
             "melee" : 5,
-            "thrown" : [15, 30],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : ["strength"],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "strength",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            }
         },
         "loading time" : "None",
         "special" : "None",
-        "restrictions" : []
+        "restrictions" : "None"
     },
     "improvised weapon, large" : {
         "description" : "These are quite bulky or heavy objects like tables, large boulders, or heavy statues",
         "type" : "improvised",
         "cost" : "None",
         "weight" : "varies",
-        "properties" : [],
+        "properties" : "None",
         "size" : "medium",
         "damage" : {
             "melee" : {
-                "one_handed" : None,
+                "one_handed" : "None",
                 "two_handed" : "1d4",
             },
             "thrown" : "1d4",
-            "ranged" : None
+            "ranged" : "0d0"
         },
         "damage type" : "varies",
         "range" : {
             "melee" : 0,
-            "thrown" : [5, 10],
-            "ranged" : []
+            "thrown" : {
+                "normal" : 10,
+                "long" : 30,
+            },
+            "ranged" : {
+                "normal" : 0,
+                "long" : 0,
+            }
         },
         "modifier" : {
-            "melee" : [],
-            "thrown" : ["strength"],
-            "ranged" : []
+            "melee" : "None",
+            "thrown" : "strength",
+            "ranged" : {
+                "normal" : 20,
+                "long" : 60,
+            },
         },
         "loading time" : "None",
         "special" : "None",
-        "restrictions" : []
+        "restrictions" : "None"
     },
 }
 
