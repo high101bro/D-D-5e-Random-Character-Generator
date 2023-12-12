@@ -50,7 +50,10 @@ dnd_classes = {
             'Tools': 'None',
             "Spellcasting Modifier" : "None",
             'Saving Throws': ['Strength', 'Constitution'],
-            'Skills': 'Choose two from animal handling, athletics, intimidation, nature, perception, and survival',
+            'Skills': {
+                'Choose Number' : 2,
+                'Choose From' :  ['animal handling', 'athletics', 'intimidation', 'nature', 'perception', 'survival']
+            },
             "Languages": []
         },
         "Equipment": {
@@ -122,8 +125,11 @@ dnd_classes = {
             'Weapons': 'Simple weapons, hand crossbows, longswords, rapiers, shortswords',
             'Tools': 'Three musical instruments of your choice',
             "Spellcasting Modifier" : "Charisma",
-            'Saving Throws': 'Dexterity, Charisma',
-            'Skills': 'Choose any three',
+            'Saving Throws': ['Dexterity', 'Charisma'],
+            'Skills': {
+                'Choose Number' : 3,
+                'Choose From' :  ['acrobatics','animal handling','arcana','athletics','deception','history','insight','intimidation','investigation','medicine','nature','perception','performance','persuasion','religion','sleight of hand','stealth', 'survival']
+            },
             "Languages": []
         },
         "Equipment": {
@@ -211,8 +217,11 @@ dnd_classes = {
             'Weapons': 'All simple weapons',
             'Tools': 'None',
             "Spellcasting Modifier" : "Wisdom",
-            'Saving Throws': 'Wisdom, Charisma',
-            'Skills': 'Choose two from history, insight, medicine, persuasion, and religion',
+            'Saving Throws': ['Wisdom', 'Charisma'],
+            'Skills': {
+                'Choose Number' : 2,
+                'Choose From' :  ['history', 'insight', 'medicine', 'persuasion', 'religion']
+            },
             "Languages": []
         },
         "Equipment": {
@@ -629,8 +638,11 @@ dnd_classes = {
             'Weapons': 'Simple weapons, martial weapons',
             'Tools': 'None',
             "Spellcasting Modifier" : "Widsom",
-            'Saving Throws': 'Strength, Dexterity',
-            'Skills': 'Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival',
+            'Saving Throws': ['Strength', 'Dexterity'],
+            'Skills': {
+                'Choose Number' : 3,
+                'Choose From' :  ['Animal Handling', 'Athletics', 'Insight', 'Investigation', 'Nature', 'Perception', 'Stealth', 'Survival']
+            },
             "Languages": []
         },
         "Equipment": {
@@ -713,8 +725,11 @@ dnd_classes = {
             'Weapons': 'Simple weapons, hand crossbows, longswords, rapiers, shortswords',
             'Tools': 'Thieves\' tools',
             "Spellcasting Modifier" : "None",
-            'Saving Throws': 'Dexterity, Intelligence',
-            'Skills': 'Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth',
+            'Saving Throws': ['Dexterity', 'Intelligence'],
+            'Skills': {
+                'Choose Number' : 4,
+                'Choose From' :  ['Acrobatics', 'Athletics', 'Deception', 'Insight', 'Intimidation', 'Investigation', 'Perception', 'Performance', 'Persuasion', 'Sleight of Hand', 'Stealth']
+            },
             "Languages": []
         },
         "Equipment": {
@@ -792,8 +807,11 @@ dnd_classes = {
             'Weapons': 'Daggers, darts, slings, quarterstaffs, light crossbows',
             'Tools': 'None',
             "Spellcasting Modifier" : "Charisma",
-            'Saving Throws': 'Constitution, Charisma',
-            'Skills': 'Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion',
+            'Saving Throws': ['Constitution', 'Charisma'],
+            'Skills': {
+                'Choose Number' : 2,
+                'Choose From' :  ['Arcana', 'Deception', 'Insight', 'Intimidation', 'Persuasion', 'Religion']
+            },
             "Languages": []
         },
         "Equipment": {
@@ -880,8 +898,11 @@ dnd_classes = {
             'Weapons': 'Simple weapons',
             'Tools': 'None',
             "Spellcasting Modifier" : "Charisma",
-            'Saving Throws': 'Wisdom, Charisma',
-            'Skills': 'Choose two from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion',
+            'Saving Throws': ['Wisdom', 'Charisma'],
+            'Skills': {
+                'Choose Number' : 2,
+                'Choose From' :  ['Arcana', 'Deception', 'History', 'Intimidation', 'Investigation', 'Nature', 'Religion']
+            },
             "Languages": []
         },
         "Equipment": {
@@ -969,8 +990,11 @@ dnd_classes = {
             'Weapons': 'Daggers, darts, slings, quarterstaffs, light crossbows',
             'Tools': 'None',
             "Spellcasting Modifier" : "Intelligence",
-            'Saving Throws': 'Intelligence, Wisdom',
-            'Skills': 'Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion',
+            'Saving Throws': ['Intelligence', 'Wisdom'],
+            'Skills': {
+                'Choose Number' : 2,
+                'Choose From' :  ['Arcana', 'History', 'Insight', 'Investigation', 'Medicine', 'Religion']
+            },
             "Languages": []
         },
         "Equipment": {

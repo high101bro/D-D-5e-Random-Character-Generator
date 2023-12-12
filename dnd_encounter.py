@@ -360,7 +360,14 @@ def select_character_menu_menu(character_list):
 
     character_list.append('Exit')
 
-    characters_menu = TerminalMenu(character_list)
+    characters_menu = TerminalMenu(
+        character_list,
+        multi_select=False,
+        show_multi_select_hint=False,
+        accept_keys=("enter", "alt-d", "ctrl-i"),
+        title=None,
+        # preview_command='',
+    )
     character_menu_index = characters_menu.show()
     return character_list[character_menu_index], character_menu_index, character_menu_index
 
@@ -420,6 +427,7 @@ if encounter_menu_options[encounter_menu_selected_index] == 'Automated':
         'Remove a Character from the Battle',
         'Character Management',
         'Roll Dice',
+        'Test',
         'Exit',
     ]
 
@@ -692,33 +700,48 @@ if encounter_menu_options[encounter_menu_selected_index] == 'Automated':
                     if selected_character == 'Exit':
                         pass
                     else:
-                        while True:
-                            try:
-                                heal_character = int(input(f"  {character_list[character_menu_index]}\n\nRevive healing amount: "))
-                                # add heath
-                                if battle_in_initiative_order[character_menu_index].hp_current < battle_in_initiative_order[character_menu_index].hp_total: 
-                                    battle_in_initiative_order[character_menu_index].hp_current = battle_in_initiative_order[character_menu_index].hp_current + heal_character
-                                # can't over heal them, only to max hp
-                                if battle_in_initiative_order[character_menu_index].hp_current > battle_in_initiative_order[character_menu_index].hp_total:
-                                    battle_in_initiative_order[character_menu_index].hp_current = battle_in_initiative_order[character_menu_index].hp_total
+                        revive_selection = ['Roll Dice', 'Enter Manually', 'Exit']
+                        revive_selection_menu = TerminalMenu(revive_selection)
+                        revive_selection_index = revive_selection_menu.show()
+                        revive_selection_selected = revive_selection[revive_selection_index]
+                        if revive_selection_selected == 'Exit':
+                            pass
+                        else:
+                            while True:
+                                try:
+                                    if revive_selection_selected == 'Roll Dice':
+                                        heal_character = dnd_roll_dice()
+
+                                        input("\nPress Enter to Continue...")
+
+                                    elif revive_selection_selected == 'Enter Manually':
+                                        heal_character = int(input(f"  {character_list[character_menu_index]}\n\nEnter healing amount: "))
+
+                                    # add heath
+                                    if battle_in_initiative_order[character_menu_index].hp_current < battle_in_initiative_order[character_menu_index].hp_total: 
+                                        battle_in_initiative_order[character_menu_index].hp_current = battle_in_initiative_order[character_menu_index].hp_current + heal_character
+                                    # can't over heal them, only to max hp
+                                    if battle_in_initiative_order[character_menu_index].hp_current > battle_in_initiative_order[character_menu_index].hp_total:
+                                        battle_in_initiative_order[character_menu_index].hp_current = battle_in_initiative_order[character_menu_index].hp_total
 
 
-                                if 'Instant Death' in battle_in_initiative_order[character_menu_index].effects:
-                                    battle_in_initiative_order[character_menu_index].effects.remove('Instant Death')
-                                    if 'Revived' not in battle_in_initiative_order[character_menu_index].effects:
-                                        battle_in_initiative_order[character_menu_index].effects.insert(0,'Revived')
-                                if 'Death' in battle_in_initiative_order[character_menu_index].effects:
-                                    battle_in_initiative_order[character_menu_index].effects.remove('Death')
-                                    if 'Revived' not in battle_in_initiative_order[character_menu_index].effects:
-                                        battle_in_initiative_order[character_menu_index].effects.insert(0,'Revived')
-                                if 'Unconscious' in battle_in_initiative_order[character_menu_index].effects:
-                                    battle_in_initiative_order[character_menu_index].effects.remove('Unconscious')
-                                # pickle_handler.save_dnd_state('battle', battle_in_initiative_order, "./save_states/battles")
+                                    if 'Instant Death' in battle_in_initiative_order[character_menu_index].effects:
+                                        battle_in_initiative_order[character_menu_index].effects.remove('Instant Death')
+                                        if 'Revived' not in battle_in_initiative_order[character_menu_index].effects:
+                                            battle_in_initiative_order[character_menu_index].effects.insert(0,'Revived')
+                                    if 'Death' in battle_in_initiative_order[character_menu_index].effects:
+                                        battle_in_initiative_order[character_menu_index].effects.remove('Death')
+                                        if 'Revived' not in battle_in_initiative_order[character_menu_index].effects:
+                                            battle_in_initiative_order[character_menu_index].effects.insert(0,'Revived')
+                                    if 'Unconscious' in battle_in_initiative_order[character_menu_index].effects:
+                                        battle_in_initiative_order[character_menu_index].effects.remove('Unconscious')
+                                    # pickle_handler.save_dnd_state('battle', battle_in_initiative_order, "./save_states/battles")
 
-                                break
-                            except:
-                                print(f"Ensure to enter a number")
-                        break
+                                    break
+
+                                except:
+                                    print(f"Ensure to enter a number")
+                            break
 
 
         elif battle_task_menu_selected == 'Apply an Effect to a Character':
@@ -840,6 +863,55 @@ if encounter_menu_options[encounter_menu_selected_index] == 'Automated':
 
         elif battle_task_menu_selected == 'Exit':
             break
+
+        elif battle_task_menu_selected == 'Test':
+
+
+            from pygments import formatters, highlight, lexers
+            from pygments.util import ClassNotFound
+
+
+            # def highlight_file(filepath):
+            #     with open(filepath, "r") as f:
+            #         file_content = f.read()
+            #     try:
+            #         lexer = lexers.get_lexer_for_filename(filepath, stripnl=False, stripall=False)
+            #     except ClassNotFound:
+            #         lexer = lexers.get_lexer_by_name("text", stripnl=False, stripall=False)
+            #     formatter = formatters.TerminalFormatter(bg="dark")  # dark or light
+            #     highlighted_file_content = highlight(file_content, lexer, formatter)
+            #     return highlighted_file_content
+            def highlight_file(filepath):
+                file_content = print_character(filepath)
+                try:
+                    lexer = lexers.get_lexer_for_filename(filepath, stripnl=False, stripall=False)
+                except ClassNotFound:
+                    lexer = lexers.get_lexer_by_name("text", stripnl=False, stripall=False)
+                formatter = formatters.TerminalFormatter(bg="dark")  
+                highlighted_file_content = highlight(file_content, lexer, formatter)
+                return highlighted_file_content
+
+            def list_files(directory="."):
+                return (file for file in os.listdir(directory) if os.path.isfile(os.path.join(directory, file)))
+
+            test=list_files()
+            debug(
+                test
+            )
+
+            terminal_menu = TerminalMenu(battle_in_initiative_order, preview_command=highlight_file, preview_size=0.75)
+            menu_entry_index = terminal_menu.show()
+
+
+
+
+
+
+
+
+
+
+
 
         else:
             print('What the F is this error...')

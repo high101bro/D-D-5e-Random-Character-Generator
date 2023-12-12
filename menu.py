@@ -205,7 +205,6 @@ def main():
                         else: # The chosen class of the character
                             dnd_menu_class.pop()
                             character_class = dnd_menu_class[character_class_index].split()[0]
-                        character_class='Paladin'
 
 
                         clear()
@@ -236,7 +235,7 @@ def main():
                                 character_number_tracker,
                                 character_level = random.randint(1,21),
                                 character_race = random.choice(list(dnd_races.keys())),
-                                character_class = 'Paladin' #random.choice(list(dnd_classes.keys()))
+                                character_class = 'Bard' #random.choice(list(dnd_classes.keys()))
                             )
                         )
                         pickle_handler.save_dnd_state('characters', all_characters)

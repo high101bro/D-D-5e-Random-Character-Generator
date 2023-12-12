@@ -87,6 +87,10 @@ dnd_menu_class = [
     "Wizard        Wizards are studious spellcasters who learn magic through rigorous study and spellbooks. They can cast a wide variety of spells and specialize in arcane knowledge."
 ]
 
+
+non_magic_classes = ['Barbarian','Fighter','Monk','Rogue']
+
+
 dnd_levels_exp = {
     1: 0,
     2: 300,
@@ -167,6 +171,7 @@ conditions_and_effects = [
     "Hidden",
     "Incapacitated",
     "Incorporeal",
+    "Inspiration",
     "Instant Death",
     "Invisible",
     "Paralyzed",

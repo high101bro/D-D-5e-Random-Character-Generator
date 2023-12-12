@@ -141,7 +141,9 @@ def generate_characters(character, character_number, character_level=1, characte
     character.character_class["Requirements"] = dnd_classes[character_class]["Requirements"]
     character.character_class["Hit Die"] = dnd_classes[character_class]["Hit Die"]
     character.character_class["Current Level Chart"] = {}
-    character.character_class["Current Level Chart"][character.profile['level']] = dnd_classes[character_class]["Level Chart"][character.profile['level']]
+    debug(character_level)
+    debug(dnd_classes[character_class]["Level Chart"][int(character_level)])
+    character.character_class["Current Level Chart"][character_level] = dnd_classes[character_class]["Level Chart"][int(character_level)]
     character.character_class["Features"] = dnd_classes[character_class]["Features"]
     character.character_class["Attribute Priority"] = dnd_classes[character_class]["Attribute Priority"]
     character.character_class["Spells"] = dnd_classes[character_class]["Spells"]
@@ -297,52 +299,53 @@ def generate_characters(character, character_number, character_level=1, characte
     #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['5th Level Spell Slots']
 
     character.spells['slots'] = {}
-    
-    if dnd_classes[character_class]['Level Chart'][character.profile['level']]['1st Level Spell Slots'] != '-':
-        if character_class == 'Paladin':
-            character.spells['slots']['1st Level'] = {
-                'known spells' : dnd_classes[character_class]['Spells']["All Class Spells"]['1st Level'],
-                'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['1st Level Spell Slots']
-            }
-    if dnd_classes[character_class]['Level Chart'][character.profile['level']]['2nd Level Spell Slots'] != '-':
-        if character_class == 'Paladin':
-            character.spells['slots']['2nd Level'] = {
-                'known spells' : dnd_classes[character_class]['Spells']["All Class Spells"]['2nd Level'],
-                'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['2nd Level Spell Slots']
-            }
-    if dnd_classes[character_class]['Level Chart'][character.profile['level']]['3rd Level Spell Slots'] != '-':
-        if character_class == 'Paladin':
-            character.spells['slots']['3rd Level'] = {
-                'known spells' : dnd_classes[character_class]['Spells']["All Class Spells"]['3rd Level'],
-                'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['3rd Level Spell Slots']
-            }
 
-    if dnd_classes[character_class]['Level Chart'][character.profile['level']]['4th Level Spell Slots'] != '-':
-        if character_class == 'Paladin':
-            character.spells['slots']['4th Level'] = {
-                'known spells' : dnd_classes[character_class]['Spells']["All Class Spells"]['4th Level'],
-                'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['4th Level Spell Slots']
-            }
+    if character_class not in non_magic_classes:
+        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['1st Level Spell Slots'] != '-':
+            if character_class == 'Paladin':
+                character.spells['slots']['1st Level'] = {
+                    'known spells' : dnd_classes[character_class]['Spells']["All Class Spells"]['1st Level'],
+                    'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['1st Level Spell Slots']
+                }
+        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['2nd Level Spell Slots'] != '-':
+            if character_class == 'Paladin':
+                character.spells['slots']['2nd Level'] = {
+                    'known spells' : dnd_classes[character_class]['Spells']["All Class Spells"]['2nd Level'],
+                    'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['2nd Level Spell Slots']
+                }
+        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['3rd Level Spell Slots'] != '-':
+            if character_class == 'Paladin':
+                character.spells['slots']['3rd Level'] = {
+                    'known spells' : dnd_classes[character_class]['Spells']["All Class Spells"]['3rd Level'],
+                    'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['3rd Level Spell Slots']
+                }
 
-    if dnd_classes[character_class]['Level Chart'][character.profile['level']]['5th Level Spell Slots'] != '-':
-        if character_class == 'Paladin':
-            character.spells['slots']['5th Level'] = {
-                'known spells' : dnd_classes[character_class]['Spells']["All Class Spells"]['5th Level'],
-                'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['5th Level Spell Slots']
-            }
+        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['4th Level Spell Slots'] != '-':
+            if character_class == 'Paladin':
+                character.spells['slots']['4th Level'] = {
+                    'known spells' : dnd_classes[character_class]['Spells']["All Class Spells"]['4th Level'],
+                    'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['4th Level Spell Slots']
+                }
 
-    if character_class != 'Paladin' and character_class != 'Ranger' :
-        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['6th Level Spell Slots'] != '-':
-            character.spells['slots']['6th Level'] = dnd_classes[character_class]['Spells']["All Class Spells"]['6th Level']
+        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['5th Level Spell Slots'] != '-':
+            if character_class == 'Paladin':
+                character.spells['slots']['5th Level'] = {
+                    'known spells' : dnd_classes[character_class]['Spells']["All Class Spells"]['5th Level'],
+                    'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['5th Level Spell Slots']
+                }
 
-        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['7th Level Spell Slots'] != '-':
-            character.spells['slots']['7th Level'] = dnd_classes[character_class]['Spells']["All Class Spells"]['7th Level']
+        if character_class != 'Paladin' and character_class != 'Ranger' :
+            if dnd_classes[character_class]['Level Chart'][character.profile['level']]['6th Level Spell Slots'] != '-':
+                character.spells['slots']['6th Level'] = dnd_classes[character_class]['Spells']["All Class Spells"]['6th Level']
 
-        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['8th Level Spell Slots'] != '-':
-            character.spells['slots']['8th Level'] = dnd_classes[character_class]['Spells']["All Class Spells"]['8th Level']
+            if dnd_classes[character_class]['Level Chart'][character.profile['level']]['7th Level Spell Slots'] != '-':
+                character.spells['slots']['7th Level'] = dnd_classes[character_class]['Spells']["All Class Spells"]['7th Level']
 
-        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['9th Level Spell Slots'] != '-':
-            character.spells['slots']['9th Level'] = dnd_classes[character_class]['Spells']["All Class Spells"]['9th Level']
+            if dnd_classes[character_class]['Level Chart'][character.profile['level']]['8th Level Spell Slots'] != '-':
+                character.spells['slots']['8th Level'] = dnd_classes[character_class]['Spells']["All Class Spells"]['8th Level']
+
+            if dnd_classes[character_class]['Level Chart'][character.profile['level']]['9th Level Spell Slots'] != '-':
+                character.spells['slots']['9th Level'] = dnd_classes[character_class]['Spells']["All Class Spells"]['9th Level']
 
 
 
@@ -407,12 +410,13 @@ def generate_characters(character, character_number, character_level=1, characte
     character.spells['preparation'] = dnd_classes[character_class]['Spells']["Preparation"]
     character.spells['spellcasting modifier'] = dnd_classes[character_class]['Spells']["Spellcasting Modifier"]
 
-    # This needs to be beneath the spells and attributes section
-    # Spell Attack Modifier = Your Spellcasting Ability Modifier + Your Proficiency Bonus
-    character.spells['attack modifier'] = character.capabilities['attributes'][str(dnd_classes[character_class]['Spells']["Spellcasting Modifier"]).lower()]['modifier'] + character.profile['proficiency bonus']
+    if character_class not in non_magic_classes:
+        # This needs to be beneath the spells and attributes section
+        # Spell Attack Modifier = Your Spellcasting Ability Modifier + Your Proficiency Bonus
+        character.spells['attack modifier'] = character.capabilities['attributes'][str(dnd_classes[character_class]['Spells']["Spellcasting Modifier"]).lower()]['modifier'] + character.profile['proficiency bonus']
 
-    # Spell Save DC = 8 + Your Spellcasting Ability Modifier + Your Proficiency Bonus
-    character.spells['save dc'] = 8 + character.spells['attack modifier']
+        # Spell Save DC = 8 + Your Spellcasting Ability Modifier + Your Proficiency Bonus
+        character.spells['save dc'] = 8 + character.spells['attack modifier']
 
     # character.spells['spellcasting focus'] = 'answer' #need to calculate, need to get stat attribtes first
     #!!!!!!!!!!!!!!!!!!!!!!
