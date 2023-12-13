@@ -301,23 +301,30 @@ def generate_characters(character, character_number, character_level=1, characte
         character.spells['Spells Known'] = {}
         character.spells['Spells Known']['Total'] = dnd_classes[character_class]['Spells']['Spells Known']
         if character_class in magic_classes:
-            spell_levels = ['1st','2nd','3rd','4th','5th','6th','7th','8th','9th']
+            spell_levels = ['Cantrips','1st','2nd','3rd','4th','5th','6th','7th','8th','9th']
         elif character_class in half_magic_classes:
             spell_levels = ['1st','2nd','3rd','4th','5th']
 
         character.spells['Spells Known']["Slots"] = {}
 
         for spell_level in spell_levels:
-
-            if dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level] != '-': 
+            if spell_level == 'Cantrips':
+                dnd_classes[character_class]['Level Chart'][character.profile['level']]['Cantrips Known']
                 character.spells['Spells Known']["Slots"][spell_level] = {
-                    "Able To Cast" : dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level],
+                    "Able To Cast" : f"Can cast {dnd_classes[character_class]['Level Chart'][character.profile['level']]['Cantrips Known']} known Cantrips unlimiited times",
                     "Known Spells" : {}
                 }
                 for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
-                    # debug(spell)
-                    # debug(dnd_spells.get(spell_level).get(spell))
                     character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
+                
+            else:
+                if dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level] != '-': 
+                    character.spells['Spells Known']["Slots"][spell_level] = {
+                        "Able To Cast" : dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level],
+                        "Known Spells" : {}
+                    }
+                    for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
+                        character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
 
             
     if character_class in magic_classes:

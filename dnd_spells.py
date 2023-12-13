@@ -381,7 +381,20 @@ dnd_spells = {
             "Works well with": "Spells or abilities that have a significant impact when they hit, as well as abilities that grant additional attacks.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
         },
-
+        "Vicious Mockery": {
+            "School": "Enchantment",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "Instantaneous",
+            "Components": "V",
+            "DC Saving Throw": "Wisdom",
+            "Description": "You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.",
+            "Explanation": "Vicious Mockery is an enchantment spell that allows you to insult a creature from a distance. If the target fails a Wisdom saving throw, it takes psychic damage and has disadvantage on its next attack roll. The insult is magically enhanced to harm and distract the target.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d4 for each slot level above 1st.",
+            "Pro-Tip": "Vicious Mockery is a great spell for bards and characters who want to deal damage while verbally taunting and distracting enemies.",
+            "Works well with": "Bards and characters skilled in deception or social interactions.",
+            "Class Spell List": "Bards"
+        }
     },
     "1st" : {
         "Absorb Elements": {
