@@ -88,7 +88,11 @@ dnd_menu_class = [
 ]
 
 
+magic_classes = ['Bard','Cleric','Druid','Sorcerer','Warlock','Wizard']
+half_magic_classes = ['Paladin','Ranger']
 non_magic_classes = ['Barbarian','Fighter','Monk','Rogue']
+
+all_classes = magic_classes + half_magic_classes + non_magic_classes
 
 
 dnd_levels_exp = {
@@ -190,109 +194,109 @@ conditions_and_effects = [
 
 dnd_skills = {
     'acrobatics' : {
-        'related attribute' : 'dexterity',
+        'Related Attribute' : 'dexterity',
         'proficiency' : False,
         'total' : 0,
         'description' : "Performing physical feats, maintaining balance, and tumbling."
     },
     'animal handling' : {
-        'related attribute' : 'wisdom',
+        'Related Attribute' : 'wisdom',
         'proficiency' : False,
         'total' : 0,
         'description' : "Calming, controlling, or understanding the intentions of animals."
     },
     'arcana' : {
-        'related attribute' : 'intelligence',
+        'Related Attribute' : 'intelligence',
         'proficiency' : False,
         'total' : 0,
         'description' : "Knowledge of magic, magical creatures, mystical lore, and magical traditions."
     },
     'athletics' : {
-        'related attribute' : 'strength',
+        'Related Attribute' : 'strength',
         'proficiency' : False,
         'total' : 0,
         'description' : "Performing physical activities like climbing, jumping, and swimming."
     },
     'deception' : {
-        'related attribute' : 'charisma',
+        'Related Attribute' : 'charisma',
         'proficiency' : False,
         'total' : 0,
         'description' : "Your ability to convincingly hide the truth, either verbally or through actions."
     },
     'history' : {
-        'related attribute' : 'intelligence',
+        'Related Attribute' : 'intelligence',
         'proficiency' : False,
         'total' : 0,
         'description' : "Recalling information about historical events, legendary people, ancient kingdoms, and recent wars."
     },
     'insight' : {
-        'related attribute' : 'wisdom',
+        'Related Attribute' : 'wisdom',
         'proficiency' : False,
         'total' : 0,
         'description' : "Determining the true intentions of a creature, such as when searching out a lie or predicting someone’s next move."
     },
     'intimidation' : {
-        'related attribute' : 'charisma',
+        'Related Attribute' : 'charisma',
         'proficiency' : False,
         'total' : 0,
         'description' : "Influencing someone through overt threats, hostile actions, and physical intimidation."
     },
     'investigation' : {
-        'related attribute' : 'intelligence',
+        'Related Attribute' : 'intelligence',
         'proficiency' : False,
         'total' : 0,
         'description' : "Looking for clues and making deductions based on those clues."
     },
     'medicine' : {
-        'related attribute' : 'wisdom',
+        'Related Attribute' : 'wisdom',
         'proficiency' : False,
         'total' : 0,
         'description' : "Ability to diagnose and treat injuries and diseases."
     },
     'nature' : {
-        'related attribute' : 'intelligence',
+        'Related Attribute' : 'intelligence',
         'proficiency' : False,
         'total' : 0,
         'description' : "Knowledge about terrain, plants and animals, the weather, and natural cycles."
     },
     'perception' : {
-        'related attribute' : 'wisdom',
+        'Related Attribute' : 'wisdom',
         'proficiency' : True,
         'total' : 0,
         'description' : "Noticing or sensing things, typically based on Wisdom. It’s the skill you’d use to hear a conversation through a door, spot something hidden under a rock, or notice someone sneaking up on you."
     },
     'performance' : {
-        'related attribute' : 'charisma',
+        'Related Attribute' : 'charisma',
         'proficiency' : False,
         'total' : 0,
         'description' : "Delighting an audience with music, dance, acting, storytelling, or some other form of entertainment."
     },
     'persuasion' : {
-        'related attribute' : 'charisma',
+        'Related Attribute' : 'charisma',
         'proficiency' : False,
         'total' : 0,
         'description' : "Influencing someone with tact, social graces, or good nature."
     },
     'religion' : {
-        'related attribute' : 'intelligence',
+        'Related Attribute' : 'intelligence',
         'proficiency' : False,
         'total' : 0,
         'description' : "Knowledge about deities, rites and prayers, religious hierarchies, holy symbols, and the practices of secret cults."
     },
     'sleight of hand' : {
-        'related attribute' : 'dexterity',
+        'Related Attribute' : 'dexterity',
         'proficiency' : False,
         'total' : 0,
         'description' : "Executing tricks of dexterity or misdirection, like picking pockets or conjuring objects."
     },
     'stealth' : {
-        'related attribute' : 'dexterity',
+        'Related Attribute' : 'dexterity',
         'proficiency' : False,
         'total' : 0,
         'description' : "Concealing yourself from enemies, slinking past guards, slipping away without being noticed."
     },
     'survival' : {
-        'related attribute' : 'wisdom',
+        'Related Attribute' : 'wisdom',
         'proficiency' : False,
         'total' : 0,
         'description' : "Following tracks, hunting wild game, guiding your group through frozen wastelands, identifying signs that owlbears live nearby, predicting the weather, or avoiding quicksand and other natural hazards."
@@ -548,7 +552,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "Yes",
-                "attack modifier" : "Same as base weapon",
+                "Attack Modifier" : "Same as base weapon",
                 "magical" : "Yes",
                 "weight" : "Increased by approximately 10%",
                 "glows" : "No",
@@ -556,7 +560,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "Yes",
-                "attack modifier" : "Same as base ammunition",
+                "Attack Modifier" : "Same as base ammunition",
                 "magical" : "Yes",
                 "weight" : "Increased by approximately 10%",
                 "glows" : "No",
@@ -638,7 +642,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "Yes, for specific creatures",
-                "attack modifier" : "Same as base weapon",
+                "Attack Modifier" : "Same as base weapon",
                 "magical" : "No",
                 "weight" : "Same as standard iron",
                 "glows" : "No",
@@ -646,7 +650,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "Yes, for specific creatures",
-                "attack modifier" : "Same as base ammunition",
+                "Attack Modifier" : "Same as base ammunition",
                 "magical" : "No",
                 "weight" : "Same as standard iron",
                 "glows" : "No",
@@ -727,7 +731,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "No",
-                "attack modifier" : "Same as base weapon",
+                "Attack Modifier" : "Same as base weapon",
                 "magical" : "No",
                 "weight" : "Reduced by approximately 20%",
                 "glows" : "No",
@@ -735,7 +739,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "No",
-                "attack modifier" : "Same as base ammunition",
+                "Attack Modifier" : "Same as base ammunition",
                 "magical" : "No",
                 "weight" : "Reduced by approximately 20%",
                 "glows" : "No",
@@ -816,7 +820,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "Yes, for specific creatures",
-                "attack modifier" : "Same as base weapon",
+                "Attack Modifier" : "Same as base weapon",
                 "magical" : "No",
                 "weight" : "Slightly increased",
                 "glows" : "No",
@@ -824,7 +828,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "Yes, for specific creatures",
-                "attack modifier" : "Same as base ammunition",
+                "Attack Modifier" : "Same as base ammunition",
                 "magical" : "No",
                 "weight" : "Slightly increased",
                 "glows" : "No",
@@ -905,7 +909,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "Not applicable",
-                "attack modifier" : "Not applicable",
+                "Attack Modifier" : "Not applicable",
                 "magical" : "Not applicable",
                 "weight" : "Not applicable",
                 "glows" : "Not applicable",
@@ -913,7 +917,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "Not applicable",
-                "attack modifier" : "Not applicable",
+                "Attack Modifier" : "Not applicable",
                 "magical" : "Not applicable",
                 "weight" : "Not applicable",
                 "glows" : "Not applicable",
@@ -994,7 +998,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "No",
-                "attack modifier" : "Same as base weapon",
+                "Attack Modifier" : "Same as base weapon",
                 "magical" : "No",
                 "weight" : "Reduced by approximately 20-30%",
                 "glows" : "No",
@@ -1002,7 +1006,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "No",
-                "attack modifier" : "Same as base ammunition",
+                "Attack Modifier" : "Same as base ammunition",
                 "magical" : "No",
                 "weight" : "Reduced by approximately 20-30%",
                 "glows" : "No",
@@ -1083,7 +1087,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "No",
-                "attack modifier" : "Same as base weapon",
+                "Attack Modifier" : "Same as base weapon",
                 "magical" : "Varies",
                 "weight" : "Comparable to metal weapons",
                 "glows" : "No",
@@ -1091,7 +1095,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "No",
-                "attack modifier" : "Same as base ammunition",
+                "Attack Modifier" : "Same as base ammunition",
                 "magical" : "Varies",
                 "weight" : "Comparable to metal ammunition",
                 "glows" : "No",
@@ -1172,7 +1176,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "Yes, for creatures vulnerable to the element",
-                "attack modifier" : "Same as base weapon",
+                "Attack Modifier" : "Same as base weapon",
                 "magical" : "Yes",
                 "weight" : "Varies based on element",
                 "glows" : "Often",
@@ -1180,7 +1184,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "Yes, for creatures vulnerable to the element",
-                "attack modifier" : "Same as base ammunition",
+                "Attack Modifier" : "Same as base ammunition",
                 "magical" : "Yes",
                 "weight" : "Varies based on element",
                 "glows" : "Often",
@@ -1261,7 +1265,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "Yes, especially for supernatural creatures",
-                "attack modifier" : "Same as base weapon",
+                "Attack Modifier" : "Same as base weapon",
                 "magical" : "Yes",
                 "weight" : "Slightly lighter than typical bronze",
                 "glows" : "Sometimes",
@@ -1269,7 +1273,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "Yes, especially for supernatural creatures",
-                "attack modifier" : "Same as base ammunition",
+                "Attack Modifier" : "Same as base ammunition",
                 "magical" : "Yes",
                 "weight" : "Slightly lighter than typical bronze",
                 "glows" : "Sometimes",
@@ -1350,7 +1354,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "Yes, especially against creatures vulnerable to magic",
-                "attack modifier" : "Potentially higher than base weapon",
+                "Attack Modifier" : "Potentially higher than base weapon",
                 "magical" : "Yes",
                 "weight" : "Slightly heavier than typical steel",
                 "glows" : "Often",
@@ -1358,7 +1362,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "Yes, especially against creatures vulnerable to magic",
-                "attack modifier" : "Potentially higher than base ammunition",
+                "Attack Modifier" : "Potentially higher than base ammunition",
                 "magical" : "Yes",
                 "weight" : "Slightly heavier than typical steel",
                 "glows" : "Often",
@@ -1439,7 +1443,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "No",
-                "attack modifier" : "Same as base weapon",
+                "Attack Modifier" : "Same as base weapon",
                 "magical" : "Yes",
                 "weight" : "Slightly lighter than typical steel",
                 "glows" : "No",
@@ -1447,7 +1451,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "No",
-                "attack modifier" : "Same as base ammunition",
+                "Attack Modifier" : "Same as base ammunition",
                 "magical" : "Yes",
                 "weight" : "Slightly lighter than typical steel",
                 "glows" : "No",
@@ -1528,7 +1532,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "Yes, in certain cases",
-                "attack modifier" : "Same or slightly higher than base weapon",
+                "Attack Modifier" : "Same or slightly higher than base weapon",
                 "magical" : "Varies",
                 "weight" : "Reduced by approximately 20%",
                 "glows" : "Sometimes",
@@ -1536,7 +1540,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "Yes, in certain cases",
-                "attack modifier" : "Same or slightly higher than base ammunition",
+                "Attack Modifier" : "Same or slightly higher than base ammunition",
                 "magical" : "Varies",
                 "weight" : "Reduced by approximately 20%",
                 "glows" : "Sometimes",
@@ -1617,7 +1621,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "No",
-                "attack modifier" : "Same as base weapon",
+                "Attack Modifier" : "Same as base weapon",
                 "magical" : "No",
                 "weight" : "Lighter than metal weapons",
                 "glows" : "No",
@@ -1625,7 +1629,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "No",
-                "attack modifier" : "Same as base ammunition",
+                "Attack Modifier" : "Same as base ammunition",
                 "magical" : "No",
                 "weight" : "Lighter than typical metal",
                 "glows" : "No",
@@ -1706,7 +1710,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "No",
-                "attack modifier" : "Same as base wooden weapon",
+                "Attack Modifier" : "Same as base wooden weapon",
                 "magical" : "Yes",
                 "weight" : "Lighter than typical wooden weapons",
                 "glows" : "Sometimes",
@@ -1714,7 +1718,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "No",
-                "attack modifier" : "Same as base wooden ammunition",
+                "Attack Modifier" : "Same as base wooden ammunition",
                 "magical" : "Yes",
                 "weight" : "Lighter than typical wooden ammunition",
                 "glows" : "Sometimes",
@@ -1795,7 +1799,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "Yes, especially against otherworldly creatures",
-                "attack modifier" : "Potentially enhanced",
+                "Attack Modifier" : "Potentially enhanced",
                 "magical" : "Yes",
                 "weight" : "Comparable to steel",
                 "glows" : "Sometimes",
@@ -1803,7 +1807,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "Yes, particularly against creatures of magical or otherworldly nature",
-                "attack modifier" : "Potentially enhanced",
+                "Attack Modifier" : "Potentially enhanced",
                 "magical" : "Yes",
                 "weight" : "Comparable to steel",
                 "glows" : "Sometimes",
@@ -1884,7 +1888,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "Not applicable",
-                "attack modifier" : "Not applicable",
+                "Attack Modifier" : "Not applicable",
                 "magical" : "Not applicable",
                 "weight" : "Not applicable",
                 "glows" : "Not applicable",
@@ -1892,7 +1896,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "Not applicable",
-                "attack modifier" : "Not applicable",
+                "Attack Modifier" : "Not applicable",
                 "magical" : "Not applicable",
                 "weight" : "Not applicable",
                 "glows" : "Not applicable",
@@ -1973,7 +1977,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "weapon" : {
                 "overcomes damage reduction" : "Yes, for creatures vulnerable to the specific element",
-                "attack modifier" : "Same as base weapon",
+                "Attack Modifier" : "Same as base weapon",
                 "magical" : "Yes",
                 "weight" : "Slight increase",
                 "glows" : "Often",
@@ -1981,7 +1985,7 @@ dnd_armor_weapon_item_modifiers = {
             },
             "ammunition" : {
                 "overcomes damage reduction" : "Yes, for creatures vulnerable to the specific element",
-                "attack modifier" : "Same as base ammunition",
+                "Attack Modifier" : "Same as base ammunition",
                 "magical" : "Yes",
                 "weight" : "Slight increase",
                 "glows" : "Often",

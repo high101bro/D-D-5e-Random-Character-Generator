@@ -15,381 +15,375 @@ dnd_spells = {
             "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
             "Pro-Tip": "Use Acid Splash when facing multiple weaker foes or to finish off low-health enemies. It's also handy for testing if an object is vulnerable to acid damage.",
             "Works well with": "Other damage-dealing cantrips and spells, especially those with different damage types.",
-            "Class Spell List": "Wizards, Sorcerers, Warlocks"        },
-    "Blade Ward": {
-        "School": "Abjuration",
-        "Casting Time": "1 Action",
-        "Range": "Self",
-        "Duration": "1 round",
-        "Components": "V, S",
-        "DC Saving Throw": "None",
-        "Description": "You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage from weapon attacks.",
-        "Explanation": "Blade Ward is a defensive cantrip that provides you with resistance against weapon attacks for a brief duration. It can be useful when you expect to take melee attacks and want to reduce the damage taken.",
-        "At Higher Levels": "None",
-        "Pro-Tip": "Use Blade Ward when you anticipate being in the front lines of combat or facing enemies with strong melee attacks.",
-        "Works well with": "Other defensive spells and abilities, as it enhances your survivability.",
-        "Class Spell List": "Sorcerers, Warlocks, Wizards"
-    },
-
-    "Chill Touch": {
-        "School": "Necromancy",
-        "Casting Time": "1 Action",
-        "Range": "120 feet",
-        "Duration": "1 round",
-        "Components": "V, S",
-        "DC Saving Throw": "No",
-        "Description": "You create a ghostly skeletal hand in the air and make a ranged spell attack against a creature you can see within range. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn.",
-        "Explanation": "Chill Touch is a necromantic cantrip that allows you to damage a target and prevent it from healing temporarily. It's effective against creatures with regeneration or self-healing abilities.",
-        "At Higher Levels": "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.",
-        "Pro-Tip": "Use Chill Touch against enemies that rely on healing, or when you want to deal necrotic damage from a distance.",
-        "Works well with": "Other necromancy spells and abilities that deal necrotic damage.",
-        "Class Spell List": "Sorcerers, Warlocks, Wizards"
-    },
-
-    "Control Flames": {
-        "School": "Transmutation",
-        "Casting Time": "1 Action",
-        "Range": "60 Feet",
-        "Duration": "Instantaneous or 1 hour",
-        "Components": "S",
-        "DC Saving Throw": "No",
-        "Description": "You choose a non-magical flame that you can see within range and that fits within a 5-foot cube. You can expand the flames, extinguish them, or change their color or intensity. You can also cause simple shapes to appear within the flames.",
-        "Explanation": "Control Flames is a versatile cantrip that allows you to manipulate non-magical flames in various ways. It's useful for creating distractions, sending signals, or altering the ambiance of an area.",
-        "At Higher Levels": "None",
-        "Pro-Tip": "Use Control Flames creatively to solve puzzles, send secret messages, or enhance your role-playing in various situations.",
-        "Works well with": "Other transmutation cantrips and spells that manipulate the environment.",
-        "Class Spell List": "Druids, Sorcerers, Wizards"
-    },
-
-    "Create Bonfire": {
-        "School": "Conjuration",
-        "Casting Time": "1 Action",
-        "Range": "60 Feet",
-        "Duration": "Concentration, up to 1 minute",
-        "Components": "V, S",
-        "DC Saving Throw": "Dexterity",
-        "Description": "You create a bonfire on the ground at a point you can see within range. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage.",
-        "Explanation": "Create Bonfire is a conjuration cantrip that allows you to conjure a magical bonfire. It's effective for area denial and dealing fire damage over time to creatures that enter or start their turn in the bonfire's space.",
-        "At Higher Levels": "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.",
-        "Pro-Tip": "Use Create Bonfire to control battlefield positioning and deal consistent fire damage to enemies.",
-        "Works well with": "Other fire-based spells and abilities, especially those that can exploit targets vulnerable to fire.",
-        "Class Spell List": "Druids, Sorcerers, Warlocks, Wizards"
-    },
-    "Dancing Lights": {
-        "School": "Evocation",
-        "Casting Time": "1 Action",
-        "Range": "120 feet",
-        "Duration": "Concentration, up to 1 minute",
-        "Components": "V, S, M",
-        "DC Saving Throw": "None",
-        "Description": "You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs. You can move the lights within a 10-foot radius as a bonus action on your turn.",
-        "Explanation": "Dancing Lights is a versatile cantrip that allows you to create light sources to illuminate dark areas or create distractions. The lights can be used creatively to deceive or confuse enemies.",
-        "At Higher Levels": "The spell's duration increases with your character level but doesn't affect the number of lights created.",
-        "Pro-Tip": "Use Dancing Lights to create distractions, mislead enemies, or enhance role-playing situations by creating mystical displays of light.",
-        "Works well with": "Darkvision spells, stealthy approaches, or creating a spooky atmosphere.",
-        "Class Spell List": "Sorcerers, Wizards, Warlocks"
-    },
-    "Encode Thoughts": {
-        "School": "Enchantment",
-        "Casting Time": "1 Action",
-        "Range": "Self",
-        "Duration": "8 hours",
-        "Components": "S",
-        "DC Saving Throw": "None",
-        "Description": "You store a message or information within your mind. The encoded thoughts can be transferred to another creature you touch, allowing them to access the information.",
-        "Explanation": "Encode Thoughts is a utility spell that lets you securely store information or messages in your mind and then share them with others through touch. It's useful for espionage, sharing critical information, or preserving knowledge.",
-        "At Higher Levels": "The spell's duration remains the same regardless of the spell slot level used.",
-        "Pro-Tip": "Use Encode Thoughts to share important messages or knowledge discreetly with allies or to keep sensitive information hidden from prying eyes.",
-        "Works well with": "Communication spells, such as Sending or Message, to quickly relay the encoded thoughts to allies.",
-        "Class Spell List": "Bards, Wizards, Warlocks"
-    },
-    "Fire Bolt": {
-        "School": "Evocation",
-        "Casting Time": "1 Action",
-        "Range": "120 feet",
-        "Duration": "Instantaneous",
-        "Components": "V, S",
-        "DC Saving Throw": "None",
-        "Description": "You hurl a mote of fire at a target within range. Make a ranged spell attack against the target, dealing 1d10 fire damage on a hit.",
-        "Explanation": "Fire Bolt is a straightforward offensive cantrip that allows you to shoot a bolt of fire at a target within range. It's a reliable source of ranged damage and can be used to ignite flammable objects.",
-        "At Higher Levels": "The spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
-        "Pro-Tip": "Fire Bolt is excellent for consistent ranged damage. Combine it with spells that apply conditions for versatile combat tactics.",
-        "Works well with": "Spells that apply conditions, such as Control Flames, for tactical advantages.",
-        "Class Spell List": "Sorcerers, Wizards"
-    },
-    "Friends": {
-        "School": "Enchantment",
-        "Casting Time": "1 Action",
-        "Range": "Self",
-        "Duration": "Concentration, up to 1 minute",
-        "Components": "S, M",
-        "DC Saving Throw": "None",
-        "Description": "For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you. When the spell ends, the target realizes you used magic to influence its mood and becomes hostile.",
-        "Explanation": "Friends is a deceptive cantrip that temporarily improves your interactions with one creature but causes hostility when the spell ends. Use it wisely to gain an edge in negotiations or social situations.",
-        "At Higher Levels": "The spell's duration remains the same regardless of the spell slot level used.",
-        "Pro-Tip": "Use Friends sparingly, as its effects can lead to conflict after it ends. It's best employed when you need a quick social advantage and can deal with the consequences later.",
-        "Works well with": "Spells that improve Charisma checks or diplomacy skills, such as Guidance or Charm Person.",
-        "Class Spell List": "Sorcerers, Wizards, Warlocks"
-    },
-    "Frostbite": {
-        "School": "Evocation",
-        "Casting Time": "1 Action",
-        "Range": "60 feet",
-        "Duration": "Instantaneous",
-        "Components": "V, S",
-        "DC Saving Throw": "Constitution",
-        "Description": "You cause numbing cold to strike a target you can see within range. The target must make a Constitution saving throw or take 1d6 cold damage and have disadvantage on its next weapon attack roll before the end of its next turn.",
-        "Explanation": "Frostbite is an offensive cantrip that not only deals cold damage but also imposes a temporary disadvantage on the target's weapon attacks. It's a useful tool for reducing an enemy's combat effectiveness.",
-        "At Higher Levels": "The damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
-        "Pro-Tip": "Use Frostbite to hinder enemies' attacks, particularly those with powerful single strikes or multiattack abilities.",
-        "Works well with": "Spells or abilities that impose conditions, such as Slow, to control the battlefield.",
-        "Class Spell List": "Sorcerers, Wizards"
-    },
-    "Gust": {
-        "School": "Transmutation",
-        "Casting Time": "1 Action",
-        "Range": "30 Feet",
-        "Duration": "Instantaneous",
-        "Components": "V, S",
-        "DC Saving Throw": "Strength",
-        "Description": "You create a small blast of air in a 10-foot line that can push objects or creatures. Each creature in the line must succeed on a Strength saving throw or be pushed 10 feet away from you.",
-        "Explanation": "Gust is a versatile cantrip that allows you to manipulate the environment by creating a strong blast of air. You can use it to push objects, clear obstacles, or even push away enemies. It's particularly useful for creating space in crowded situations.",
-        "At Higher Levels": "This cantrip's effectiveness does not increase with higher-level spell slots.",
-        "Pro-Tip": "Use Gust creatively to knock enemies off balance, blow away fog or smoke, or interact with objects out of reach.",
-        "Works well with": "Spells or abilities that require precise positioning or environmental manipulation.",
-        "Class Spell List": "Sorcerers, Wizards"
-    },
-    "Infestation": {
-        "School": "Conjuration",
-        "Casting Time": "1 Action",
-        "Range": "30 Feet",
-        "Duration": "Instantaneous",
-        "Components": "V, S, M (a living flea)",
-        "DC Saving Throw": "Constitution",
-        "Description": "You release a cloud of tiny insects at a point you choose within range. The target must succeed on a Constitution saving throw or take 1d6 poison damage and move 5 feet in a random direction.",
-        "Explanation": "Infestation is a cantrip that creates a nuisance for your enemies by summoning a swarm of biting insects. It can disrupt their positioning and cause some damage over time. The target's Constitution saving throw determines if they resist the effect.",
-        "At Higher Levels": "This cantrip's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
-        "Pro-Tip": "Use Infestation to harass spellcasters and melee opponents alike, potentially forcing them into less favorable positions.",
-        "Works well with": "Other damage-over-time spells or abilities that rely on saving throws.",
-        "Class Spell List": "Sorcerers, Warlocks, Wizards"
-    },
-    "Light": {
-        "School": "Evocation",
-        "Casting Time": "1 Action",
-        "Range": "Touch",
-        "Duration": "1 Hour",
-        "Components": "V, M (a firefly or phosphorescent moss)",
-        "DC Saving Throw": "None",
-        "Description": "You touch an object, causing it to shed bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like.",
-        "Explanation": "Light is a useful cantrip for illuminating dark areas, making hidden objects visible, or providing light for stealthy operations. You can choose the color of the light, making it versatile for various situations.",
-        "At Higher Levels": "This cantrip's effect does not change with higher-level spell slots.",
-        "Pro-Tip": "Use Light to create temporary light sources, mark a trail, or signal your allies from a distance.",
-        "Works well with": "Spells or abilities that rely on vision or detection.",
-        "Class Spell List": "Clerics, Sorcerers, Wizards"
-    },
-    "Mage Hand": {
-        "School": "Conjuration",
-        "Casting Time": "1 Action",
-        "Range": "30 Feet",
-        "Duration": "1 Minute",
-        "Components": "V, S",
-        "DC Saving Throw": "None",
-        "Description": "You create a spectral, invisible hand that can carry objects and manipulate them. The hand can't attack, activate magic items, or carry more than 10 pounds.",
-        "Explanation": "Mage Hand is a versatile cantrip for remotely interacting with objects, triggering traps, or retrieving items from a distance. It's a must-have for any aspiring spellcaster.",
-        "At Higher Levels": "This cantrip's effect does not change with higher-level spell slots.",
-        "Pro-Tip": "Use Mage Hand creatively to perform tasks that would be dangerous or inconvenient for your character to do manually.",
-        "Works well with": "Spells or abilities that require fine manipulation or dexterity.",
-        "Class Spell List": "Bards, Sorcerers, Wizards"
-    },
-    "Mending": {
-        "School": "Transmutation",
-        "Casting Time": "1 Minute",
-        "Range": "Touch",
-        "Duration": "Instantaneous",
-        "Components": "V, S, M (two lodestones)",
-        "DC Saving Throw": "None",
-        "Description": "You repair a single break or tear in an object you touch, restoring it to its original condition. The object must be no larger than 1 foot in any dimension.",
-        "Explanation": "Mending is a practical cantrip for repairing damaged objects, mending torn clothing, or fixing minor structural issues. It can be handy in various non-combat situations.",
-        "At Higher Levels": "This cantrip's effect does not change with higher-level spell slots.",
-        "Pro-Tip": "Mending can be used for role-playing purposes, such as impressing NPCs with your ability to repair items.",
-        "Works well with": "Spells or abilities that involve crafting, item manipulation, or object-based puzzles.",
-        "Class Spell List": "Artificers, Clerics, Wizards"
-    },
-    "Message": {
-        "School": "Transmutation",
-        "Casting Time": "1 Action",
-        "Range": "120 feet",
-        "Duration": "1 round",
-        "Components": "V, S, M",
-        "DC Saving Throw": "None",
-        "Description": "You send a whispered message to a target within range. The target and only the target hears the message and can reply in a whisper that only you can hear during the spell's duration.",
-        "Explanation": "Message is a useful cantrip for discreet communication with a single target over short distances. It allows you to send secret messages without being overheard by others.",
-        "At Higher Levels": "N/A",
-        "Pro-Tip": "Use Message when you need to coordinate with a party member silently or relay information without alerting nearby enemies.",
-        "Works well with": "Spells that enhance stealth and communication.",
-        "Class Spell List": "Bards, Sorcerers, Wizards"
-    },
-
-    "Minor Illusion": {
-        "School": "Illusion",
-        "Casting Time": "1 Action",
-        "Range": "30 feet",
-        "Duration": "1 minute",
-        "Components": "S, M",
-        "DC Saving Throw": "Intelligence",
-        "Description": "You create a minor illusion of an object or sound within range. The illusion is limited by size and complexity and can't create sensory effects like heat or light.",
-        "Explanation": "Minor Illusion is a versatile cantrip for creating visual or auditory distractions, concealing objects, or adding flair to your storytelling. It's limited only by your creativity.",
-        "At Higher Levels": "N/A",
-        "Pro-Tip": "Use Minor Illusion to create cover, distract enemies, or enhance role-playing by creating illusory objects or sounds.",
-        "Works well with": "Other illusion spells, spells that create sensory effects.",
-        "Class Spell List": "Bards, Sorcerers, Wizards, Warlocks"
-    },
-
-    "Mold Earth": {
-        "School": "Transmutation",
-        "Casting Time": "1 Action",
-        "Range": "30 feet",
-        "Duration": "Instantaneous or 1 hour",
-        "Components": "S",
-        "DC Saving Throw": "None",
-        "Description": "You manipulate earth or loose soil within range. You can move or excavate it, create simple shapes, or restore it to its previous state.",
-        "Explanation": "Mold Earth is a versatile cantrip for altering terrain, digging, creating barriers, or leaving hidden messages in the ground. Its effects are temporary but can be creatively used.",
-        "At Higher Levels": "N/A",
-        "Pro-Tip": "Use Mold Earth for tactical advantages in battles or to leave secret signs and symbols for allies or fellow adventurers.",
-        "Works well with": "Spells that control or manipulate elements, such as Control Flames or Shape Water.",
-        "Class Spell List": "Druids, Wizards"
-    },
-
-    "Poison Spray": {
-        "School": "Conjuration",
-        "Casting Time": "1 Action",
-        "Range": "10 feet",
-        "Duration": "Instantaneous",
-        "Components": "V, S",
-        "DC Saving Throw": "Constitution",
-        "Description": "You project a puff of noxious gas toward a creature within range. The target must succeed on a Constitution saving throw or take 1d12 poison damage.",
-        "Explanation": "Poison Spray is a close-range offensive cantrip that deals poison damage. It's particularly effective against creatures with low Constitution saves.",
-        "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d12 for each slot level above 1st.",
-        "Pro-Tip": "Use Poison Spray when engaged in melee combat with a poisoned enemy or when dealing with foes vulnerable to poison damage.",
-        "Works well with": "Other damage-dealing cantrips and spells, especially those that exploit vulnerabilities.",
-        "Class Spell List": "Sorcerers, Warlocks, Wizards"
-    },
-
-    "Prestidigitation": {
-        "School": "Transmutation",
-        "Casting Time": "1 Action",
-        "Range": "10 feet",
-        "Duration": "Up to 1 hour",
-        "Components": "V, S",
-        "DC Saving Throw": "None",
-        "Description": "You perform minor magical tricks, such as creating sensory effects, cleaning or soiling objects, and producing small objects or sparks of light.",
-        "Explanation": "Prestidigitation is a versatile cantrip for creating magical effects limited only by your imagination. It's commonly used for entertainment, role-playing, or solving minor problems.",
-        "At Higher Levels": "N/A",
-        "Pro-Tip": "Use Prestidigitation to impress, amuse, or confound others with your magical prowess. It's perfect for enhancing storytelling and role-playing.",
-        "Works well with": "Other utility and illusion spells, as well as creative problem-solving.",
-        "Class Spell List": "Bards, Sorcerers, Wizards, Warlocks"
-    },
-    "Ray of Frost": {
-        "School": "Evocation",
-        "Casting Time": "1 Action",
-        "Range": "60 feet",
-        "Duration": "Instantaneous",
-        "Components": "V, S",
-        "DC Saving Throw": "None",
-        "Description": "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.",
-        "Explanation": "Ray of Frost is a ranged spell attack that deals cold damage. It can slow down the target's movement temporarily, making it useful for kiting or slowing down fast foes.",
-        "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
-        "Pro-Tip": "Use Ray of Frost to hinder the movement of enemies, especially those trying to approach your party's frontline.",
-        "Works well with": "Other damage-dealing cantrips and spells, especially those that target different saving throws.",
-        "Class Spell List": "Sorcerers, Wizards"
-    },
-    "Sapping Sting": {
-        "School": "Necromancy",
-        "Casting Time": "1 Action",
-        "Range": "30 feet",
-        "Duration": "Instantaneous",
-        "Components": "V, S",
-        "DC Saving Throw": "Constitution",
-        "Description": "You unleash a necrotic stinger toward a creature within range. The target must succeed on a Constitution saving throw or take 1d6 necrotic damage.",
-        "Explanation": "Sapping Sting is a ranged spell attack that deals necrotic damage. It requires the target to make a Constitution saving throw. It's effective against creatures with lower Constitution saves.",
-        "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
-        "Pro-Tip": "Use Sapping Sting to weaken enemies and reduce their hit points. It can be particularly useful against foes with lower Constitution.",
-        "Works well with": "Other necromantic spells or abilities that target Constitution saves.",
-        "Class Spell List": "Sorcerers, Warlocks, Wizards"
-    },
-    "Shape Water": {
-        "School": "Transmutation",
-        "Casting Time": "1 Action",
-        "Range": "30 feet",
-        "Duration": "Instantaneous or 1 hour",
-        "Components": "S",
-        "DC Saving Throw": "None",
-        "Description": "You choose an area of water that you can see within range and manipulate it in various ways. You can freeze the water, shape it, move it, or change its color or opacity.",
-        "Explanation": "Shape Water is a versatile cantrip that allows you to manipulate water in creative ways. You can use it for various utility purposes, such as creating ice bridges or obscuring vision.",
-        "At Higher Levels": "The spell's effects do not change with higher spell slots, but you can cast it as often as you like.",
-        "Pro-Tip": "Use Shape Water to solve puzzles, create obstacles, or provide environmental advantages in creative ways.",
-        "Works well with": "Other utility spells or abilities that involve manipulating the environment.",
-        "Class Spell List": "Druids, Sorcerers, Wizards"
-    },
-    "Shocking Grasp": {
-        "School": "Evocation",
-        "Casting Time": "1 Action",
-        "Range": "Touch",
-        "Duration": "Instantaneous",
-        "Components": "V, S",
-        "DC Saving Throw": "None",
-        "Description": "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. On a hit, it takes 1d8 lightning damage, and it can't take reactions until the start of its next turn.",
-        "Explanation": "Shocking Grasp is a melee spell attack that delivers lightning damage and prevents the target from taking reactions temporarily. It's useful for escaping melee combat without provoking opportunity attacks.",
-        "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
-        "Pro-Tip": "Use Shocking Grasp to disengage from an enemy without the risk of being struck by an opportunity attack.",
-        "Works well with": "Other spells or abilities that incapacitate or hinder enemies in close combat.",
-        "Class Spell List": "Sorcerers, Wizards"
-    },
-    "Thunderclap": {
-        "School": "Evocation",
-        "Casting Time": "1 Action",
-        "Range": "Self (5-foot radius)",
-        "Duration": "Instantaneous",
-        "Components": "S",
-        "DC Saving Throw": "Constitution",
-        "Description": "You create a burst of thunderous sound centered on yourself. Each creature within 5 feet of you must make a Constitution saving throw or take 1d6 thunder damage.",
-        "Explanation": "Thunderclap is an area-effect cantrip that deals thunder damage to nearby creatures. It requires affected creatures to make a Constitution saving throw. Use it when enemies are in close proximity.",
-        "At Higher Levels": "The damage of this cantrip increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
-        "Pro-Tip": "Use Thunderclap when surrounded by multiple foes to damage and potentially disrupt them.",
-        "Works well with": "Other area-effect spells or abilities that target Constitution saves.",
-        "Class Spell List": "Bards, Sorcerers, Warlocks, Wizards"
-    },
-    "Toll the Dead": {
-        "School": "Necromancy",
-        "Casting Time": "1 Action",
-        "Range": "60 feet",
-        "Duration": "Instantaneous",
-        "Components": "V, S",
-        "DC Saving Throw": "Wisdom",
-        "Description": "You point at one creature you can see within range and the sound of a dolorous bell fills the air around it for a moment. The target must make a Wisdom saving throw or take 1d8 necrotic damage.",
-        "Explanation": "Toll the Dead is a ranged spell attack that deals necrotic damage. It requires the target to make a Wisdom saving throw. It's effective against creatures with lower Wisdom saves.",
-        "At Higher Levels": "The damage of this cantrip increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
-        "Pro-Tip": "Use Toll the Dead against enemies with lower Wisdom saves to deal reliable damage.",
-        "Works well with": "Other necromantic spells or abilities that target Wisdom saves.",
-        "Class Spell List": "Clerics, Sorcerers, Warlocks, Wizards"
-    },
-    "True Strike": {
-        "School": "Divination",
-        "Casting Time": "1 Action",
-        "Range": "30 feet",
-        "Duration": "Concentration, up to 1 round",
-        "Components": "S",
-        "DC Saving Throw": "None",
-        "Description": "You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target.",
-        "Explanation": "True Strike is a divination cantrip that grants advantage on your next attack roll against a chosen target. It's helpful when you want to ensure a critical hit on your next attack.",
-        "At Higher Levels": "This cantrip's effects do not change with higher spell slots, but you can cast it as often as you like.",
-        "Pro-Tip": "Use True Strike when you want to maximize the chances of hitting with a crucial attack, such as a high-damage spell or a sneak attack.",
-        "Works well with": "Spells or abilities that have a significant impact when they hit, as well as abilities that grant additional attacks.",
-        "Class Spell List": "Sorcerers, Warlocks, Wizards"
-    },
+            "Class Spell List": "Wizards, Sorcerers, Warlocks"
+        },
+        "Blade Ward": {
+            "School": "Abjuration",
+            "Casting Time": "1 Action",
+            "Range": "Self",
+            "Duration": "1 round",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage from weapon attacks.",
+            "Explanation": "Blade Ward is a defensive cantrip that provides you with resistance against weapon attacks for a brief duration. It can be useful when you expect to take melee attacks and want to reduce the damage taken.",
+            "At Higher Levels": "None",
+            "Pro-Tip": "Use Blade Ward when you anticipate being in the front lines of combat or facing enemies with strong melee attacks.",
+            "Works well with": "Other defensive spells and abilities, as it enhances your survivability.",
+            "Class Spell List": "Sorcerers, Warlocks, Wizards"
+        },
+        "Chill Touch": {
+            "School": "Necromancy",
+            "Casting Time": "1 Action",
+            "Range": "120 feet",
+            "Duration": "1 round",
+            "Components": "V, S",
+            "DC Saving Throw": "No",
+            "Description": "You create a ghostly skeletal hand in the air and make a ranged spell attack against a creature you can see within range. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn.",
+            "Explanation": "Chill Touch is a necromantic cantrip that allows you to damage a target and prevent it from healing temporarily. It's effective against creatures with regeneration or self-healing abilities.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.",
+            "Pro-Tip": "Use Chill Touch against enemies that rely on healing, or when you want to deal necrotic damage from a distance.",
+            "Works well with": "Other necromancy spells and abilities that deal necrotic damage.",
+            "Class Spell List": "Sorcerers, Warlocks, Wizards"
+        },
+        "Control Flames": {
+            "School": "Transmutation",
+            "Casting Time": "1 Action",
+            "Range": "60 Feet",
+            "Duration": "Instantaneous or 1 hour",
+            "Components": "S",
+            "DC Saving Throw": "No",
+            "Description": "You choose a non-magical flame that you can see within range and that fits within a 5-foot cube. You can expand the flames, extinguish them, or change their color or intensity. You can also cause simple shapes to appear within the flames.",
+            "Explanation": "Control Flames is a versatile cantrip that allows you to manipulate non-magical flames in various ways. It's useful for creating distractions, sending signals, or altering the ambiance of an area.",
+            "At Higher Levels": "None",
+            "Pro-Tip": "Use Control Flames creatively to solve puzzles, send secret messages, or enhance your role-playing in various situations.",
+            "Works well with": "Other transmutation cantrips and spells that manipulate the environment.",
+            "Class Spell List": "Druids, Sorcerers, Wizards"
+        },
+        "Create Bonfire": {
+            "School": "Conjuration",
+            "Casting Time": "1 Action",
+            "Range": "60 Feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "Dexterity",
+            "Description": "You create a bonfire on the ground at a point you can see within range. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage.",
+            "Explanation": "Create Bonfire is a conjuration cantrip that allows you to conjure a magical bonfire. It's effective for area denial and dealing fire damage over time to creatures that enter or start their turn in the bonfire's space.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.",
+            "Pro-Tip": "Use Create Bonfire to control battlefield positioning and deal consistent fire damage to enemies.",
+            "Works well with": "Other fire-based spells and abilities, especially those that can exploit targets vulnerable to fire.",
+            "Class Spell List": "Druids, Sorcerers, Warlocks, Wizards"
+        },
+        "Dancing Lights": {
+            "School": "Evocation",
+            "Casting Time": "1 Action",
+            "Range": "120 feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S, M",
+            "DC Saving Throw": "None",
+            "Description": "You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs. You can move the lights within a 10-foot radius as a bonus action on your turn.",
+            "Explanation": "Dancing Lights is a versatile cantrip that allows you to create light sources to illuminate dark areas or create distractions. The lights can be used creatively to deceive or confuse enemies.",
+            "At Higher Levels": "The spell's duration increases with your character level but doesn't affect the number of lights created.",
+            "Pro-Tip": "Use Dancing Lights to create distractions, mislead enemies, or enhance role-playing situations by creating mystical displays of light.",
+            "Works well with": "Darkvision spells, stealthy approaches, or creating a spooky atmosphere.",
+            "Class Spell List": "Sorcerers, Wizards, Warlocks"
+        },
+        "Encode Thoughts": {
+            "School": "Enchantment",
+            "Casting Time": "1 Action",
+            "Range": "Self",
+            "Duration": "8 hours",
+            "Components": "S",
+            "DC Saving Throw": "None",
+            "Description": "You store a message or information within your mind. The encoded thoughts can be transferred to another creature you touch, allowing them to access the information.",
+            "Explanation": "Encode Thoughts is a utility spell that lets you securely store information or messages in your mind and then share them with others through touch. It's useful for espionage, sharing critical information, or preserving knowledge.",
+            "At Higher Levels": "The spell's duration remains the same regardless of the spell slot level used.",
+            "Pro-Tip": "Use Encode Thoughts to share important messages or knowledge discreetly with allies or to keep sensitive information hidden from prying eyes.",
+            "Works well with": "Communication spells, such as Sending or Message, to quickly relay the encoded thoughts to allies.",
+            "Class Spell List": "Bards, Wizards, Warlocks"
+        },
+        "Fire Bolt": {
+            "School": "Evocation",
+            "Casting Time": "1 Action",
+            "Range": "120 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You hurl a mote of fire at a target within range. Make a ranged spell attack against the target, dealing 1d10 fire damage on a hit.",
+            "Explanation": "Fire Bolt is a straightforward offensive cantrip that allows you to shoot a bolt of fire at a target within range. It's a reliable source of ranged damage and can be used to ignite flammable objects.",
+            "At Higher Levels": "The spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+            "Pro-Tip": "Fire Bolt is excellent for consistent ranged damage. Combine it with spells that apply conditions for versatile combat tactics.",
+            "Works well with": "Spells that apply conditions, such as Control Flames, for tactical advantages.",
+            "Class Spell List": "Sorcerers, Wizards"
+        },
+        "Friends": {
+            "School": "Enchantment",
+            "Casting Time": "1 Action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "S, M",
+            "DC Saving Throw": "None",
+            "Description": "For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you. When the spell ends, the target realizes you used magic to influence its mood and becomes hostile.",
+            "Explanation": "Friends is a deceptive cantrip that temporarily improves your interactions with one creature but causes hostility when the spell ends. Use it wisely to gain an edge in negotiations or social situations.",
+            "At Higher Levels": "The spell's duration remains the same regardless of the spell slot level used.",
+            "Pro-Tip": "Use Friends sparingly, as its effects can lead to conflict after it ends. It's best employed when you need a quick social advantage and can deal with the consequences later.",
+            "Works well with": "Spells that improve Charisma checks or diplomacy skills, such as Guidance or Charm Person.",
+            "Class Spell List": "Sorcerers, Wizards, Warlocks"
+        },
+        "Frostbite": {
+            "School": "Evocation",
+            "Casting Time": "1 Action",
+            "Range": "60 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "Constitution",
+            "Description": "You cause numbing cold to strike a target you can see within range. The target must make a Constitution saving throw or take 1d6 cold damage and have disadvantage on its next weapon attack roll before the end of its next turn.",
+            "Explanation": "Frostbite is an offensive cantrip that not only deals cold damage but also imposes a temporary disadvantage on the target's weapon attacks. It's a useful tool for reducing an enemy's combat effectiveness.",
+            "At Higher Levels": "The damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+            "Pro-Tip": "Use Frostbite to hinder enemies' attacks, particularly those with powerful single strikes or multiattack abilities.",
+            "Works well with": "Spells or abilities that impose conditions, such as Slow, to control the battlefield.",
+            "Class Spell List": "Sorcerers, Wizards"
+        },
+        "Gust": {
+            "School": "Transmutation",
+            "Casting Time": "1 Action",
+            "Range": "30 Feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "Strength",
+            "Description": "You create a small blast of air in a 10-foot line that can push objects or creatures. Each creature in the line must succeed on a Strength saving throw or be pushed 10 feet away from you.",
+            "Explanation": "Gust is a versatile cantrip that allows you to manipulate the environment by creating a strong blast of air. You can use it to push objects, clear obstacles, or even push away enemies. It's particularly useful for creating space in crowded situations.",
+            "At Higher Levels": "This cantrip's effectiveness does not increase with higher-level spell slots.",
+            "Pro-Tip": "Use Gust creatively to knock enemies off balance, blow away fog or smoke, or interact with objects out of reach.",
+            "Works well with": "Spells or abilities that require precise positioning or environmental manipulation.",
+            "Class Spell List": "Sorcerers, Wizards"
+        },
+        "Infestation": {
+            "School": "Conjuration",
+            "Casting Time": "1 Action",
+            "Range": "30 Feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (a living flea)",
+            "DC Saving Throw": "Constitution",
+            "Description": "You release a cloud of tiny insects at a point you choose within range. The target must succeed on a Constitution saving throw or take 1d6 poison damage and move 5 feet in a random direction.",
+            "Explanation": "Infestation is a cantrip that creates a nuisance for your enemies by summoning a swarm of biting insects. It can disrupt their positioning and cause some damage over time. The target's Constitution saving throw determines if they resist the effect.",
+            "At Higher Levels": "This cantrip's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+            "Pro-Tip": "Use Infestation to harass spellcasters and melee opponents alike, potentially forcing them into less favorable positions.",
+            "Works well with": "Other damage-over-time spells or abilities that rely on saving throws.",
+            "Class Spell List": "Sorcerers, Warlocks, Wizards"
+        },
+        "Light": {
+            "School": "Evocation",
+            "Casting Time": "1 Action",
+            "Range": "Touch",
+            "Duration": "1 Hour",
+            "Components": "V, M (a firefly or phosphorescent moss)",
+            "DC Saving Throw": "None",
+            "Description": "You touch an object, causing it to shed bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like.",
+            "Explanation": "Light is a useful cantrip for illuminating dark areas, making hidden objects visible, or providing light for stealthy operations. You can choose the color of the light, making it versatile for various situations.",
+            "At Higher Levels": "This cantrip's effect does not change with higher-level spell slots.",
+            "Pro-Tip": "Use Light to create temporary light sources, mark a trail, or signal your allies from a distance.",
+            "Works well with": "Spells or abilities that rely on vision or detection.",
+            "Class Spell List": "Clerics, Sorcerers, Wizards"
+        },
+        "Mage Hand": {
+            "School": "Conjuration",
+            "Casting Time": "1 Action",
+            "Range": "30 Feet",
+            "Duration": "1 Minute",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You create a spectral, invisible hand that can carry objects and manipulate them. The hand can't attack, activate magic items, or carry more than 10 pounds.",
+            "Explanation": "Mage Hand is a versatile cantrip for remotely interacting with objects, triggering traps, or retrieving items from a distance. It's a must-have for any aspiring spellcaster.",
+            "At Higher Levels": "This cantrip's effect does not change with higher-level spell slots.",
+            "Pro-Tip": "Use Mage Hand creatively to perform tasks that would be dangerous or inconvenient for your character to do manually.",
+            "Works well with": "Spells or abilities that require fine manipulation or dexterity.",
+            "Class Spell List": "Bards, Sorcerers, Wizards"
+        },
+        "Mending": {
+            "School": "Transmutation",
+            "Casting Time": "1 Minute",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (two lodestones)",
+            "DC Saving Throw": "None",
+            "Description": "You repair a single break or tear in an object you touch, restoring it to its original condition. The object must be no larger than 1 foot in any dimension.",
+            "Explanation": "Mending is a practical cantrip for repairing damaged objects, mending torn clothing, or fixing minor structural issues. It can be handy in various non-combat situations.",
+            "At Higher Levels": "This cantrip's effect does not change with higher-level spell slots.",
+            "Pro-Tip": "Mending can be used for role-playing purposes, such as impressing NPCs with your ability to repair items.",
+            "Works well with": "Spells or abilities that involve crafting, item manipulation, or object-based puzzles.",
+            "Class Spell List": "Artificers, Clerics, Wizards"
+        },
+        "Message": {
+            "School": "Transmutation",
+            "Casting Time": "1 Action",
+            "Range": "120 feet",
+            "Duration": "1 round",
+            "Components": "V, S, M",
+            "DC Saving Throw": "None",
+            "Description": "You send a whispered message to a target within range. The target and only the target hears the message and can reply in a whisper that only you can hear during the spell's duration.",
+            "Explanation": "Message is a useful cantrip for discreet communication with a single target over short distances. It allows you to send secret messages without being overheard by others.",
+            "At Higher Levels": "N/A",
+            "Pro-Tip": "Use Message when you need to coordinate with a party member silently or relay information without alerting nearby enemies.",
+            "Works well with": "Spells that enhance stealth and communication.",
+            "Class Spell List": "Bards, Sorcerers, Wizards"
+        },
+        "Minor Illusion": {
+            "School": "Illusion",
+            "Casting Time": "1 Action",
+            "Range": "30 feet",
+            "Duration": "1 minute",
+            "Components": "S, M",
+            "DC Saving Throw": "Intelligence",
+            "Description": "You create a minor illusion of an object or sound within range. The illusion is limited by size and complexity and can't create sensory effects like heat or light.",
+            "Explanation": "Minor Illusion is a versatile cantrip for creating visual or auditory distractions, concealing objects, or adding flair to your storytelling. It's limited only by your creativity.",
+            "At Higher Levels": "N/A",
+            "Pro-Tip": "Use Minor Illusion to create cover, distract enemies, or enhance role-playing by creating illusory objects or sounds.",
+            "Works well with": "Other illusion spells, spells that create sensory effects.",
+            "Class Spell List": "Bards, Sorcerers, Wizards, Warlocks"
+        },
+        "Mold Earth": {
+            "School": "Transmutation",
+            "Casting Time": "1 Action",
+            "Range": "30 feet",
+            "Duration": "Instantaneous or 1 hour",
+            "Components": "S",
+            "DC Saving Throw": "None",
+            "Description": "You manipulate earth or loose soil within range. You can move or excavate it, create simple shapes, or restore it to its previous state.",
+            "Explanation": "Mold Earth is a versatile cantrip for altering terrain, digging, creating barriers, or leaving hidden messages in the ground. Its effects are temporary but can be creatively used.",
+            "At Higher Levels": "N/A",
+            "Pro-Tip": "Use Mold Earth for tactical advantages in battles or to leave secret signs and symbols for allies or fellow adventurers.",
+            "Works well with": "Spells that control or manipulate elements, such as Control Flames or Shape Water.",
+            "Class Spell List": "Druids, Wizards"
+        },
+        "Poison Spray": {
+            "School": "Conjuration",
+            "Casting Time": "1 Action",
+            "Range": "10 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "Constitution",
+            "Description": "You project a puff of noxious gas toward a creature within range. The target must succeed on a Constitution saving throw or take 1d12 poison damage.",
+            "Explanation": "Poison Spray is a close-range offensive cantrip that deals poison damage. It's particularly effective against creatures with low Constitution saves.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d12 for each slot level above 1st.",
+            "Pro-Tip": "Use Poison Spray when engaged in melee combat with a poisoned enemy or when dealing with foes vulnerable to poison damage.",
+            "Works well with": "Other damage-dealing cantrips and spells, especially those that exploit vulnerabilities.",
+            "Class Spell List": "Sorcerers, Warlocks, Wizards"
+        },
+        "Prestidigitation": {
+            "School": "Transmutation",
+            "Casting Time": "1 Action",
+            "Range": "10 feet",
+            "Duration": "Up to 1 hour",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You perform minor magical tricks, such as creating sensory effects, cleaning or soiling objects, and producing small objects or sparks of light.",
+            "Explanation": "Prestidigitation is a versatile cantrip for creating magical effects limited only by your imagination. It's commonly used for entertainment, role-playing, or solving minor problems.",
+            "At Higher Levels": "N/A",
+            "Pro-Tip": "Use Prestidigitation to impress, amuse, or confound others with your magical prowess. It's perfect for enhancing storytelling and role-playing.",
+            "Works well with": "Other utility and illusion spells, as well as creative problem-solving.",
+            "Class Spell List": "Bards, Sorcerers, Wizards, Warlocks"
+        },
+        "Ray of Frost": {
+            "School": "Evocation",
+            "Casting Time": "1 Action",
+            "Range": "60 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.",
+            "Explanation": "Ray of Frost is a ranged spell attack that deals cold damage. It can slow down the target's movement temporarily, making it useful for kiting or slowing down fast foes.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
+            "Pro-Tip": "Use Ray of Frost to hinder the movement of enemies, especially those trying to approach your party's frontline.",
+            "Works well with": "Other damage-dealing cantrips and spells, especially those that target different saving throws.",
+            "Class Spell List": "Sorcerers, Wizards"
+        },
+        "Sapping Sting": {
+            "School": "Necromancy",
+            "Casting Time": "1 Action",
+            "Range": "30 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "Constitution",
+            "Description": "You unleash a necrotic stinger toward a creature within range. The target must succeed on a Constitution saving throw or take 1d6 necrotic damage.",
+            "Explanation": "Sapping Sting is a ranged spell attack that deals necrotic damage. It requires the target to make a Constitution saving throw. It's effective against creatures with lower Constitution saves.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
+            "Pro-Tip": "Use Sapping Sting to weaken enemies and reduce their hit points. It can be particularly useful against foes with lower Constitution.",
+            "Works well with": "Other necromantic spells or abilities that target Constitution saves.",
+            "Class Spell List": "Sorcerers, Warlocks, Wizards"
+        },
+        "Shape Water": {
+            "School": "Transmutation",
+            "Casting Time": "1 Action",
+            "Range": "30 feet",
+            "Duration": "Instantaneous or 1 hour",
+            "Components": "S",
+            "DC Saving Throw": "None",
+            "Description": "You choose an area of water that you can see within range and manipulate it in various ways. You can freeze the water, shape it, move it, or change its color or opacity.",
+            "Explanation": "Shape Water is a versatile cantrip that allows you to manipulate water in creative ways. You can use it for various utility purposes, such as creating ice bridges or obscuring vision.",
+            "At Higher Levels": "The spell's effects do not change with higher spell slots, but you can cast it as often as you like.",
+            "Pro-Tip": "Use Shape Water to solve puzzles, create obstacles, or provide environmental advantages in creative ways.",
+            "Works well with": "Other utility spells or abilities that involve manipulating the environment.",
+            "Class Spell List": "Druids, Sorcerers, Wizards"
+        },
+        "Shocking Grasp": {
+            "School": "Evocation",
+            "Casting Time": "1 Action",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. On a hit, it takes 1d8 lightning damage, and it can't take reactions until the start of its next turn.",
+            "Explanation": "Shocking Grasp is a melee spell attack that delivers lightning damage and prevents the target from taking reactions temporarily. It's useful for escaping melee combat without provoking opportunity attacks.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
+            "Pro-Tip": "Use Shocking Grasp to disengage from an enemy without the risk of being struck by an opportunity attack.",
+            "Works well with": "Other spells or abilities that incapacitate or hinder enemies in close combat.",
+            "Class Spell List": "Sorcerers, Wizards"
+        },
+        "Thunderclap": {
+            "School": "Evocation",
+            "Casting Time": "1 Action",
+            "Range": "Self (5-foot radius)",
+            "Duration": "Instantaneous",
+            "Components": "S",
+            "DC Saving Throw": "Constitution",
+            "Description": "You create a burst of thunderous sound centered on yourself. Each creature within 5 feet of you must make a Constitution saving throw or take 1d6 thunder damage.",
+            "Explanation": "Thunderclap is an area-effect cantrip that deals thunder damage to nearby creatures. It requires affected creatures to make a Constitution saving throw. Use it when enemies are in close proximity.",
+            "At Higher Levels": "The damage of this cantrip increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+            "Pro-Tip": "Use Thunderclap when surrounded by multiple foes to damage and potentially disrupt them.",
+            "Works well with": "Other area-effect spells or abilities that target Constitution saves.",
+            "Class Spell List": "Bards, Sorcerers, Warlocks, Wizards"
+        },
+        "Toll the Dead": {
+            "School": "Necromancy",
+            "Casting Time": "1 Action",
+            "Range": "60 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "Wisdom",
+            "Description": "You point at one creature you can see within range and the sound of a dolorous bell fills the air around it for a moment. The target must make a Wisdom saving throw or take 1d8 necrotic damage.",
+            "Explanation": "Toll the Dead is a ranged spell attack that deals necrotic damage. It requires the target to make a Wisdom saving throw. It's effective against creatures with lower Wisdom saves.",
+            "At Higher Levels": "The damage of this cantrip increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            "Pro-Tip": "Use Toll the Dead against enemies with lower Wisdom saves to deal reliable damage.",
+            "Works well with": "Other necromantic spells or abilities that target Wisdom saves.",
+            "Class Spell List": "Clerics, Sorcerers, Warlocks, Wizards"
+        },
+        "True Strike": {
+            "School": "Divination",
+            "Casting Time": "1 Action",
+            "Range": "30 feet",
+            "Duration": "Concentration, up to 1 round",
+            "Components": "S",
+            "DC Saving Throw": "None",
+            "Description": "You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target.",
+            "Explanation": "True Strike is a divination cantrip that grants advantage on your next attack roll against a chosen target. It's helpful when you want to ensure a critical hit on your next attack.",
+            "At Higher Levels": "This cantrip's effects do not change with higher spell slots, but you can cast it as often as you like.",
+            "Pro-Tip": "Use True Strike when you want to maximize the chances of hitting with a crucial attack, such as a high-damage spell or a sneak attack.",
+            "Works well with": "Spells or abilities that have a significant impact when they hit, as well as abilities that grant additional attacks.",
+            "Class Spell List": "Sorcerers, Warlocks, Wizards"
+        },
 
     },
-    1 : {
+    "1st" : {
         "Absorb Elements": {
             "School": "Abjuration",
             "Casting Time": "1 Reaction",
@@ -417,6 +411,20 @@ dnd_spells = {
             "Pro-Tip": "Use Alarm to safeguard your resting place during long rests or to protect valuable items from theft.",
             "Works well with": "Other protective spells and rituals, as well as characters who need to maintain vigilance while resting.",
             "Class Spell List": "Bards, Rangers, Wizards"
+        },
+        "Bless": {
+            "School": "Enchantment",
+            "Casting Time": "1 action",
+            "Range": "30 feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S, M (a sprinkling of holy water)",
+            "DC Saving Throw": "None",
+            "Description": "You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.",
+            "Explanation": "Bless is a supportive spell that bestows a temporary blessing upon up to three creatures, granting them improved chances of success in combat by adding a d4 to their attack rolls and saving throws. It is commonly used by Clerics and Paladins to enhance the combat abilities of their allies.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The spell's duration also extends with the level of the spell slot used.",
+            "Pro-Tip": "Bless is highly effective when cast on your party's frontline fighters or on characters who make frequent attack rolls or saving throws. It can significantly improve their combat performance.",
+            "Works well with": "Classes that focus on support and enhancing the abilities of their allies, such as Clerics and Paladins.",
+            "Class Spell List": "Clerics, Paladins"
         },
         "Burning Hands": {
             "School": "Evocation",
@@ -460,6 +468,20 @@ dnd_spells = {
             "Works well with": "Other fear-inducing spells and abilities, as well as characters specializing in necromancy or control effects.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
         },
+        "Ceremony": {
+            "School": "Abjuration",
+            "Casting Time": "1 hour",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (25 gp worth of powdered silver, which the spell consumes)",
+            "DC Saving Throw": "None",
+            "Description": "You perform a special religious ceremony that can have one of several effects. You can bless a marriage, a coming-of-age ritual, a funeral, or another significant event. The exact effects depend on the type of ceremony chosen.",
+            "Explanation": "Ceremony is a versatile spell that allows a character to perform significant religious rituals or ceremonies, such as blessing a marriage, coming-of-age ritual, or funeral. The spell's effects vary based on the specific type of ceremony performed, each with its own unique benefits.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change the effects of the chosen ceremony, but it allows the caster to perform multiple ceremonies in a single casting.",
+            "Pro-Tip": "Ceremony can be a role-playing tool for characters with religious or ceremonial backgrounds. It allows them to participate in and enhance important events in the campaign.",
+            "Works well with": "Characters with a religious or ceremonial focus, such as Clerics, Paladins, or characters deeply connected to a specific faith or tradition.",
+            "Class Spell List": "Clerics, Paladins"
+        },
         "Charm Person": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -502,6 +524,35 @@ dnd_spells = {
             "Works well with": "Spells or abilities that require the target to be blinded or incapacitated.",
             "Class Spell List": "Sorcerers, Wizards"
         },
+        "Command": {
+            "School": "Enchantment",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "1 round",
+            "Components": "V",
+            "DC Saving Throw": "Wisdom",
+            "Description": "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target's command is directly harmful to it.",
+            "Explanation": "Command is an enchantment spell that allows you to issue a one-word command to a creature you can see. The target must make a Wisdom saving throw, and if it fails, it is compelled to follow the command on its next turn. However, the command cannot be directly harmful to the target.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The additional creatures must be within 30 feet of each other when you target them.",
+            "Pro-Tip": "Command can be used creatively in various situations to influence the actions of NPCs or enemies. It can potentially stop them from taking specific actions or force them to drop objects or flee.",
+            "Works well with": "Characters skilled in manipulation, social interactions, or those looking for non-lethal ways to control situations.",
+            "Class Spell List": "Clerics, Paladins"
+        },
+        "Compelled Duel": {
+            "School": "Enchantment",
+            "Casting Time": "1 bonus action",
+            "Range": "30 feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V",
+            "DC Saving Throw": "Wisdom",
+            "Description": "You attempt to compel a creature into a duel. One creature that you can see within range must make a Wisdom saving throw. On a failed save, the creature is drawn to you, compelled by your divine demand. The spell ends if you attack any other creature, if you cast a spell that targets a hostile creature, or if a creature friendly to you damages the target or casts a harmful spell on it.",
+            "Explanation": "Compelled Duel is an enchantment spell that allows you to compel a single creature to engage in a duel with you. The target must make a Wisdom saving throw, and if it fails, it is compelled to focus its attention on you, making it more challenging for it to target others. However, the effect ends if you attack another creature, target a hostile creature with a spell, or if a friendly creature damages the target or casts a harmful spell on it.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the spell's range increases by 30 feet for each slot level above 1st.",
+            "Pro-Tip": "Compelled Duel is a useful spell for Paladins and characters who want to draw the attention of a dangerous enemy away from their allies, protecting the party from harm.",
+            "Works well with": "Paladins, Knights, and characters focused on tanking or protecting their party members.",
+            "Class Spell List": "Paladins"
+        }
+        ,
         "Comprehend Languages": {
             "School": "Divination",
             "Casting Time": "1 Action (Ritual)",
@@ -515,6 +566,34 @@ dnd_spells = {
             "Works well with": "Investigation and information-gathering tasks.",
             "Class Spell List": "Bards, Sorcerers, Warlocks, Wizards"
         },
+        "Cure Wounds": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+            "Explanation": "Cure Wounds is a conjuration spell that allows you to magically heal a creature you touch. The amount of healing is determined by rolling 1d8 and adding your spellcasting ability modifier. It is a fundamental healing spell used to restore hit points to injured characters.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases. For each slot level above 1st, the spell's healing increases by 1d8.",
+            "Pro-Tip": "Cure Wounds is a staple spell for healers and support characters, offering a reliable way to keep party members in good health during and after combat.",
+            "Works well with": "Healers, Clerics, Paladins, and characters focused on supporting their allies.",
+            "Class Spell List": "Bards, Clerics, Druids, Paladins, Rangers"
+        },
+        "Detect Evil and Good": {
+            "School": "Divination",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 10 minutes",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "For the duration, you sense the presence of celestial, fiend, undead, or aberration creatures within 30 feet of you that are not behind total cover. You also sense the presence of consecrated or desecrated objects or places within the same range.",
+            "Explanation": "Detect Evil and Good is a divination spell that allows you to sense the presence of specific creature types, including celestials, fiends, undead, and aberrations, within 30 feet of you. It also lets you detect the presence of consecrated or desecrated objects or places in the same range. This spell is often used to uncover hidden threats or sacred locations.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Detect Evil and Good is useful for characters seeking to uncover the presence of otherworldly or supernatural entities and for identifying locations with strong divine or malevolent energies.",
+            "Works well with": "Characters involved in investigations, those facing potential threats from the mentioned creature types, or those exploring sacred or cursed places.",
+            "Class Spell List": "Clerics, Paladins"
+        },
         "Detect Magic": {
             "School": "Divination",
             "Casting Time": "1 Action (Ritual)",
@@ -527,6 +606,34 @@ dnd_spells = {
             "Pro-Tip": "Regularly use Detect Magic to check your surroundings for hidden magical threats or treasures.",
             "Works well with": "Identifying magic items, locating hidden enchantments, and dispelling magical effects.",
             "Class Spell List": "Bards, Clerics, Sorcerers, Wizards"
+        },
+        "Detect Poison and Disease": {
+            "School": "Divination",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 10 minutes",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.",
+            "Explanation": "Detect Poison and Disease is a divination spell that allows you to sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. Additionally, you can identify the specific type of poison, poisonous creature, or disease in each case. This spell can be crucial for identifying and avoiding health hazards.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Detect Poison and Disease is a valuable spell for characters concerned about environmental hazards, contaminated food or water, or encounters with venomous creatures.",
+            "Works well with": "Characters focused on survival, nature, or those who frequently encounter dangerous environments.",
+            "Class Spell List": "Clerics, Druids, Paladins, Rangers"
+        },
+        "Divine Favor": {
+            "School": "Evocation",
+            "Casting Time": "1 bonus action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "Your prayer empowers you with divine radiance. Your weapon attacks deal an extra 1d4 radiant damage on a hit.",
+            "Explanation": "Divine Favor is an evocation spell that channels divine energy into your weapon, granting it extra radiant damage for the duration of the spell. It enhances your combat capabilities.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d4 for each slot level above 1st.",
+            "Pro-Tip": "Divine Favor is effective for characters who want to add radiant damage to their melee attacks, making it useful against creatures vulnerable to radiant damage.",
+            "Works well with": "Paladins, Fighters, and characters focused on melee combat.",
+            "Class Spell List": "Paladins"
         },
         "Disguise Self": {
             "School": "Illusion",
@@ -677,6 +784,20 @@ dnd_spells = {
             "Works well with": "Spells or abilities that target creatures on the ground, such as area-effect spells.",
             "Class Spell List": "Bards, Sorcerers, Wizards"
         },
+        "Heroism": {
+            "School": "Enchantment",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "A willing creature you touch is imbued with bravery. It is immune to being frightened and gains temporary hit points at the start of each of its turns.",
+            "Explanation": "Heroism is an enchantment spell that bolsters the courage of a willing creature you touch. It grants immunity to the frightened condition and provides temporary hit points at the start of each of the target's turns, making them more resilient in combat.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the temporary hit points increase.",
+            "Pro-Tip": "Heroism is a great spell for supporting allies who need to resist fear effects and gain extra durability during battles.",
+            "Works well with": "Supportive characters, such as Clerics or Paladins, who want to protect their comrades from fear effects.",
+            "Class Spell List": "Bards, Clerics, Paladins"
+        },
         "Ice Knife": {
             "School": "Conjuration",
             "Casting Time": "1 Action",
@@ -817,6 +938,20 @@ dnd_spells = {
             "Works well with": "Other protective spells and abilities.",
             "Class Spell List": "Clerics, Paladins, Warlocks, Wizards"
         },
+        "Purify Food and Drink": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "10 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "All nonmagical food and drink within a 5-foot radius sphere centered on a point of your choice are purified and rendered free of poison and disease.",
+            "Explanation": "Purify Food and Drink is a transmutation spell that cleanses nonmagical food and drink within a 5-foot radius sphere. It removes poisons and diseases, ensuring the consumables are safe to eat or drink.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Purify Food and Drink is a valuable utility spell for adventurers, ensuring they have a clean source of sustenance even in uncertain environments.",
+            "Works well with": "Characters responsible for food preparation or those exploring areas with questionable food sources.",
+            "Class Spell List": "Clerics, Druids, Paladins, Rangers"
+        },
         "Ray of Sickness": {
             "School": "Necromancy",
             "Casting Time": "1 Action",
@@ -831,6 +966,20 @@ dnd_spells = {
             "Works well with": "Other poison-themed spells or abilities.",
             "Class Spell List": "Sorcerers, Wizards"
         },
+        "Searing Smite": {
+            "School": "Evocation",
+            "Casting Time": "1 bonus action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V",
+            "DC Saving Throw": "Constitution",
+            "Description": "The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon ignites with flames, dealing an extra 1d6 fire damage and setting the target on fire.",
+            "Explanation": "Searing Smite is an evocation spell that imbues your melee weapon with flames. The next time you hit a creature, it deals extra fire damage and sets the target on fire. The target can make a Constitution saving throw to end the fire effect.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the fire damage increases by 1d6 for each slot level above 1st.",
+            "Pro-Tip": "Searing Smite is a potent spell for adding fire damage and control to your melee attacks, making it effective against creatures vulnerable to fire or those that you want to hinder.",
+            "Works well with": "Melee-focused characters and those who want to deal additional fire damage.",
+            "Class Spell List": "Paladins"
+        },
         "Shield": {
             "School": "Abjuration",
             "Casting Time": "1 Reaction",
@@ -844,6 +993,20 @@ dnd_spells = {
             "Pro-Tip": "Use Shield when you're targeted by a powerful attack or Magic Missile to significantly improve your chances of avoiding damage.",
             "Works well with": "Other defensive spells and abilities, especially those that improve AC.",
             "Class Spell List": "Wizards, Sorcerers"
+        },
+        "Shield of Faith": {
+            "School": "Abjuration",
+            "Casting Time": "1 bonus action",
+            "Range": "60 feet",
+            "Duration": "Concentration, up to 10 minutes",
+            "Components": "V, S, M (a small parchment with a bit of holy text written on it)",
+            "DC Saving Throw": "None",
+            "Description": "A shimmering field surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.",
+            "Explanation": "Shield of Faith is an abjuration spell that creates a protective shimmering field around a creature of your choice, increasing its Armor Class (AC) by +2 for the spell's duration. It enhances the target's defense.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+            "Pro-Tip": "Shield of Faith is a valuable spell for enhancing the defenses of important party members or yourself, making them harder to hit in combat.",
+            "Works well with": "Supportive characters, such as Clerics or Paladins, who want to protect allies from enemy attacks.",
+            "Class Spell List": "Clerics, Paladins"
         },
         "Silent Image": {
             "School": "Illusion",
@@ -929,6 +1092,20 @@ dnd_spells = {
             "Works well with": "Spells or abilities that allow you to manipulate objects or lift heavy weights, as this spell aids in carrying the load.",
             "Class Spell List": "Wizards"
         },
+        "Thunderous Smite": {
+            "School": "Evocation",
+            "Casting Time": "1 bonus action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V",
+            "DC Saving Throw": "Strength",
+            "Description": "The next time you hit a creature with a melee weapon attack during this spell's duration, it emits a deafening boom, dealing an extra 2d6 thunder damage and pushing the target 10 feet away.",
+            "Explanation": "Thunderous Smite is an evocation spell that enhances your melee weapon attack. The next time you hit a creature, it deals extra thunder damage and pushes the target 10 feet away. The target can make a Strength saving throw to resist being pushed.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the thunder damage increases by 1d6 for each slot level above 1st.",
+            "Pro-Tip": "Thunderous Smite is a powerful spell for adding thunder damage and crowd control to your melee attacks, especially against foes near ledges or hazards.",
+            "Works well with": "Melee-focused characters and those who want to deal thunder damage and reposition enemies.",
+            "Class Spell List": "Paladins"
+        },
         "Thunderwave": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -971,9 +1148,22 @@ dnd_spells = {
             "Works well with": "Spells or abilities that enhance your spell attack rolls, as Witch Bolt relies on a successful attack to initiate the damage.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
         },
-
+        "Wrathful Smite": {
+            "School": "Evocation",
+            "Casting Time": "1 bonus action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V",
+            "DC Saving Throw": "Wisdom",
+            "Description": "The next time you hit a creature with a melee weapon attack during this spell's duration, it must make a Wisdom saving throw or become frightened until the spell ends.",
+            "Explanation": "Wrathful Smite is an evocation spell that enhances your melee weapon attack. The next time you hit a creature, it must make a Wisdom saving throw or become frightened for the spell's duration. Frightened creatures have disadvantage on ability checks and attack rolls.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the spell's duration increases.",
+            "Pro-Tip": "Wrathful Smite is an effective spell for causing fear and hindering the combat capabilities of your target, especially when facing dangerous opponents.",
+            "Works well with": "Melee-focused characters and those who want to apply the frightened condition to their foes.",
+            "Class Spell List": "Paladins"
+        },
     },
-    2 : {
+    "2nd" : {
         "Aganazzar's Scorcher": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -988,7 +1178,20 @@ dnd_spells = {
             "Works well with": "Other fire-based spells and abilities.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
+        "Aid": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "30 feet",
+            "Duration": "8 hours",
+            "Components": "V, S, M (a tiny strip of white cloth)",
+            "DC Saving Throw": "None",
+            "Description": "Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration.",
+            "Explanation": "Aid is a supportive spell that enhances the durability of up to three creatures by increasing both their maximum hit points and their current hit points by 5 for the spell's duration. It can be a valuable spell for boosting the survivability of your party members.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the hit point increase per slot level above 2nd increases by 5.",
+            "Pro-Tip": "Aid is a good choice before entering a dangerous encounter or when anticipating a tough battle. It provides a buffer of additional hit points to help allies withstand damage.",
+            "Works well with": "Support-oriented characters and healers who want to bolster their party's resilience.",
+            "Class Spell List": "Clerics, Paladins"
+        },
         "Air Bubble": {
             "School": "Conjuration",
             "Casting Time": "1 Action",
@@ -1002,7 +1205,6 @@ dnd_spells = {
             "Works well with": "Spells that involve underwater exploration or extended stays in airless environments.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Alter Self": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -1016,7 +1218,6 @@ dnd_spells = {
             "Works well with": "Disguise Self, Invisibility, and other spells that enhance your ability to blend in or adapt to different environments.",
             "Class Spell List": "Bards, Sorcerers, Wizards, Warlocks"
         },
-
         "Arcane Lock": {
             "School": "Abjuration",
             "Casting Time": "1 Action",
@@ -1030,7 +1231,6 @@ dnd_spells = {
             "Works well with": "Other protective spells and wards.",
             "Class Spell List": "Wizards"
         },
-
         "Blindness/Deafness": {
             "School": "Necromancy",
             "Casting Time": "1 Action",
@@ -1045,7 +1245,6 @@ dnd_spells = {
             "Works well with": "Other spells or tactics that exploit sensory impairments.",
             "Class Spell List": "Sorcerers, Wizards, Clerics"
         },
-
         "Blur": {
             "School": "Illusion",
             "Casting Time": "1 Action",
@@ -1059,7 +1258,6 @@ dnd_spells = {
             "Works well with": "Other defensive spells and abilities.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Borrowed Knowledge": {
             "School": "Divination",
             "Casting Time": "1 Action",
@@ -1073,7 +1271,20 @@ dnd_spells = {
             "Works well with": "Other divination and knowledge-related spells.",
             "Class Spell List": "Wizards, Bards"
         },
-
+        "Branding Smite": {
+            "School": "Evocation",
+            "Casting Time": "1 bonus action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon flares with radiant light, and the attack deals an extra 2d6 radiant damage. Additionally, the target emits dim light in a 5-foot radius and can't become invisible until the spell ends.",
+            "Explanation": "Branding Smite is a potent spell that can be cast as a bonus action before making a melee weapon attack. When you hit a creature with this spell active, your attack deals additional radiant damage and causes the target to emit dim light, making it difficult to hide or become invisible.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd.",
+            "Pro-Tip": "Branding Smite is effective against creatures vulnerable to radiant damage or those who rely on invisibility for defense. It can also be used to mark a target for allies by making them emit light.",
+            "Works well with": "Melee-focused characters, especially Paladins, who can use their Divine Smite feature in combination with Branding Smite for significant burst damage.",
+            "Class Spell List": "Paladins"
+        },
         "Cloud of Daggers": {
             "School": "Conjuration",
             "Casting Time": "1 Action",
@@ -1088,7 +1299,6 @@ dnd_spells = {
             "Works well with": "Area control spells and abilities.",
             "Class Spell List": "Sorcerers, Wizards, Bards"
         },
-
         "Continual Flame": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -1102,7 +1312,6 @@ dnd_spells = {
             "Works well with": "Spells or tactics that rely on controlling light and darkness.",
             "Class Spell List": "Clerics, Wizards"
         },
-
         "Crown of Madness": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -1117,7 +1326,6 @@ dnd_spells = {
             "Works well with": "Other enchantment and crowd control spells.",
             "Class Spell List": "Bards, Sorcerers, Warlocks, Wizards"
         },
-
         "Darkness": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -1146,7 +1354,6 @@ dnd_spells = {
             "Works well with": "Stealthy characters who want to operate in the dark without revealing their position.",
             "Class Spell List": "Sorcerers, Wizards, Warlocks"
         },
-
         "Detect Thoughts": {
             "School": "Divination",
             "Casting Time": "1 Action",
@@ -1161,7 +1368,6 @@ dnd_spells = {
             "Works well with": "Spells that enhance social interactions or charm spells to put targets at ease.",
             "Class Spell List": "Bards, Sorcerers, Wizards"
         },
-
         "Dragon's Breath": {
             "School": "Transmutation",
             "Casting Time": "1 Bonus Action",
@@ -1176,7 +1382,6 @@ dnd_spells = {
             "Works well with": "Spells that provide temporary hit points or defensive buffs to ensure the caster survives while using Dragon's Breath.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Dust Devil": {
             "School": "Conjuration",
             "Casting Time": "1 Action",
@@ -1191,7 +1396,6 @@ dnd_spells = {
             "Works well with": "Spells that create difficult terrain or deal damage over time.",
             "Class Spell List": "Druids, Sorcerers, Wizards"
         },
-
         "Earthbind": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -1206,7 +1410,6 @@ dnd_spells = {
             "Works well with": "Spells that deal damage to grounded creatures or control spells that limit enemy movement.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Enlarge/Reduce": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -1221,7 +1424,20 @@ dnd_spells = {
             "Works well with": "Control spells that exploit the size of creatures, and spells that enhance or hinder Strength-based actions.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
+        "Find Steed": {
+            "School": "Conjuration",
+            "Casting Time": "10 minutes",
+            "Range": "30 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You summon a loyal, otherworldly steed that serves you as a mount. The steed takes on the form of a warhorse, a pony, a camel, an elk, or a mastiff, and it is fully equipped with appropriate gear. Your steed acts independently and obeys your commands.",
+            "Explanation": "Find Steed is a conjuration spell that allows you to summon a loyal and magical steed to serve as your mount. The steed can take on the form of various creatures and is equipped for riding. It acts independently and follows your commands, making it a valuable companion for exploration and combat.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, you can summon a steed with additional abilities and benefits, depending on the slot level used.",
+            "Pro-Tip": "Find Steed is a favorite among Paladins and other characters who value mobility and companionship. The steed can be a useful ally in both combat and travel.",
+            "Works well with": "Paladins, Knights, and characters who need a reliable and loyal mount.",
+            "Class Spell List": "Paladins"
+        },
         "Flaming Sphere": {
             "School": "Conjuration",
             "Casting Time": "1 Action",
@@ -1250,7 +1466,6 @@ dnd_spells = {
             "Works well with": "Wizards, Sorcerers, and other spellcasters who can benefit from having additional magical helpers.",
             "Class Spell List": "Wizards, Sorcerers, Warlocks"
         },
-
         "Fortune's Favor": {
             "School": "Divination (Dunamancy)",
             "Casting Time": "1 Minute",
@@ -1265,7 +1480,6 @@ dnd_spells = {
             "Works well with": "Support-oriented spellcasters and those who want to enhance their allies' performance.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Gentle Repose": {
             "School": "Necromancy",
             "Casting Time": "1 Action (Ritual)",
@@ -1280,7 +1494,6 @@ dnd_spells = {
             "Works well with": "Clerics, Necromancers, and anyone dealing with the deceased.",
             "Class Spell List": "Clerics, Wizards"
         },
-
         "Gift of Gab": {
             "School": "Enchantment",
             "Casting Time": "Reaction",
@@ -1295,7 +1508,6 @@ dnd_spells = {
             "Works well with": "Bards, Rogues, and characters who rely on their charisma and diplomacy.",
             "Class Spell List": "Bards, Sorcerers, Warlocks"
         },
-
         "Gust of Wind": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -1310,7 +1522,6 @@ dnd_spells = {
             "Works well with": "Wizards, Sorcerers, and spellcasters who want to control the battlefield.",
             "Class Spell List": "Druids, Sorcerers, Wizards"
         },
-
         "Hold Person": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -1325,7 +1536,6 @@ dnd_spells = {
             "Works well with": "Casters who want to control or incapacitate enemies in combat.",
             "Class Spell List": "Clerics, Paladins, Sorcerers, Warlocks, Wizards"
         },
-
         "Immovable Object": {
             "School": "Transmutation (Dunamancy)",
             "Casting Time": "1 Action",
@@ -1340,7 +1550,6 @@ dnd_spells = {
             "Works well with": "Characters who value security and the control of their environment.",
             "Class Spell List": "Wizards"
         },
-
         "Invisibility": {
             "School": "Illusion",
             "Casting Time": "1 Action",
@@ -1396,6 +1605,20 @@ dnd_spells = {
             "Pro-Tip": "Knock can be invaluable for bypassing obstacles or gaining access to hidden areas, but be cautious, as it can be noisy and alert nearby creatures.",
             "Works well with": "Spells or abilities that grant information about hidden or locked areas.",
             "Class Spell List": "Bards, Sorcerers, Warlocks, Wizards"
+        },
+        "Lesser Restoration": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.",
+            "Explanation": "Lesser Restoration is a versatile spell that allows you to remove certain negative conditions or diseases from a creature. This can be incredibly helpful in situations where a party member is afflicted by one of the mentioned conditions, such as blindness or paralysis.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+            "Pro-Tip": "Lesser Restoration is a valuable tool for healers and support characters, as it can quickly alleviate the effects of debilitating conditions on party members.",
+            "Works well with": "Healers, Clerics, and characters focused on support and protection.",
+            "Class Spell List": "Bards, Clerics, Druids, Paladins, Rangers"
         },
         "Levitate": {
             "School": "Transmutation",
@@ -1564,6 +1787,20 @@ dnd_spells = {
             "Pro-Tip": "Use Phantasmal Force to manipulate your target's perceptions, create obstacles, or even make them believe they are under attack by a terrifying creature.",
             "Works well with": "Other illusion spells and abilities that enhance deceptive tactics.",
             "Class Spell List": "Sorcerers, Wizards"
+        },
+        "Protection from Poison": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "1 hour",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random.",
+            "Explanation": "Protection from Poison is an abjuration spell that provides temporary immunity to poison for a creature you touch. It can neutralize an existing poison effect or protect against potential poison damage for the duration of the spell.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+            "Pro-Tip": "Protection from Poison is invaluable when navigating areas with toxic hazards, facing poison-spewing monsters, or when dealing with poison-based traps or effects.",
+            "Works well with": "Characters exploring poisonous environments, adventurers facing venomous creatures, and support-focused spellcasters.",
+            "Class Spell List": "Clerics, Druids, Paladins, Rangers"
         },
         "Pyrotechnics": {
             "School": "Transmutation",
@@ -1831,8 +2068,22 @@ dnd_spells = {
             "Works well with": "Any character who values quick access to specific items during adventures.",
             "Class Spell List": "Wizards (Dunamancy subclass)"
         },
+        "Zone of Truth": {
+            "School": "Enchantment",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "10 minutes",
+            "Components": "V, S",
+            "DC Saving Throw": "Charisma",
+            "Description": "You create a magical zone that guards against deception within a 15-foot-radius sphere centered on a point of your choice within range. Any creature that enters the zone must make a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the radius.",
+            "Explanation": "Zone of Truth is an enchantment spell that creates an area where creatures within it cannot speak deliberate falsehoods. When a creature enters the zone, they must make a Charisma saving throw. If they fail, they are compelled to speak the truth or remain silent while inside the zone.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not affect its range, duration, or the number of creatures it can affect. However, it can be useful in social situations where uncovering the truth is crucial.",
+            "Pro-Tip": "Zone of Truth is a powerful tool for interrogations, negotiations, and situations where you need to ensure honesty from those within the magical zone.",
+            "Works well with": "Characters focused on investigation, diplomacy, and uncovering deception, such as Paladins, Clerics, or characters skilled in social interactions.",
+            "Class Spell List": "Bards, Clerics, Paladins"
+        },
     },
-    3 : {
+    "3rd" : {
         "Animate Dead": {
             "School": "Necromancy",
             "Casting Time": "1 Minute",
@@ -1888,6 +2139,20 @@ dnd_spells = {
             "Pro-Tip": "Consider the nature of the curse and the target's vulnerabilities when choosing the curse's effect.",
             "Works well with": "Other debuff spells, spells that restrain or incapacitate enemies, and abilities that exploit cursed targets.",
             "Class Spell List": "Clerics, Wizards, Warlocks, and some other classes"
+        },
+        "Blinding Smite": {
+            "School": "Evocation",
+            "Casting Time": "1 bonus action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V",
+            "DC Saving Throw": "Constitution",
+            "Description": "The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon flares with a bright light, and the target must succeed on a Constitution saving throw or be blinded until the spell ends.",
+            "Explanation": "Blinding Smite is a powerful spell that can be cast as a bonus action before making a melee weapon attack. When you hit a creature with this spell active, it has to make a Constitution saving throw or be blinded for the duration. This can be a devastating effect in combat, limiting the target's ability to see and fight effectively.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases, and the target has disadvantage on its saving throw.",
+            "Pro-Tip": "Blinding Smite is particularly effective against creatures that rely on their sight for combat or those with low Constitution saving throws. It can be used strategically to incapacitate a dangerous foe.",
+            "Works well with": "Melee-focused characters, especially Paladins, who can make use of their Divine Smite feature in combination with Blinding Smite for devastating damage.",
+            "Class Spell List": "Paladins"
         },
         "Blink": {
             "School": "Transmutation",
@@ -2099,7 +2364,6 @@ dnd_spells = {
             "Works well with": "Invisibility, Dimension Door, and other utility spells.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Glyph of Warding": {
             "School": "Abjuration",
             "Casting Time": "1 Hour",
@@ -2114,7 +2378,6 @@ dnd_spells = {
             "Works well with": "Explosive spells, protective spells, and spells that inflict conditions.",
             "Class Spell List": "Clerics, Wizards"
         },
-
         "Haste": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -2129,7 +2392,6 @@ dnd_spells = {
             "Works well with": "Melee fighters, rogues, and anyone who benefits from extra actions.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Hypnotic Pattern": {
             "School": "Illusion",
             "Casting Time": "1 Action",
@@ -2144,7 +2406,6 @@ dnd_spells = {
             "Works well with": "Other crowd-control spells, ranged attackers, and allies who can target incapacitated creatures.",
             "Class Spell List": "Bards, Sorcerers, Wizards"
         },
-
         "Incite Greed": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -2159,7 +2420,6 @@ dnd_spells = {
             "Works well with": "Deception, persuasion, and spells that create or manipulate wealth.",
             "Class Spell List": "Bards, Sorcerers, Warlocks, Wizards"
         },
-
         "Leomund's Tiny Hut": {
             "School": "Evocation",
             "Casting Time": "1 Minute (Ritual)",
@@ -2174,7 +2434,6 @@ dnd_spells = {
             "Works well with": "Long rests, preparation spells, and spells that enhance the comfort of the shelter.",
             "Class Spell List": "Wizards"
         },
-
         "Life Transference": {
             "School": "Necromancy",
             "Casting Time": "1 Action",
@@ -2189,7 +2448,6 @@ dnd_spells = {
             "Works well with": "Other healing spells, damage mitigation abilities, and protective spells.",
             "Class Spell List": "Clerics, Sorcerers, Wizards"
         },
-
         "Lightning Bolt": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -2204,7 +2462,6 @@ dnd_spells = {
             "Works well with": "Crowd control spells, spells that manipulate terrain, and abilities that grant advantage on saving throws.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Magic Circle": {
             "School": "Abjuration",
             "Casting Time": "1 Minute",
@@ -2219,7 +2476,6 @@ dnd_spells = {
             "Works well with": "Summoning spells, banishment spells, and spells that control or influence specific creature types.",
             "Class Spell List": "Clerics, Paladins, Wizards"
         },
-
         "Major Image": {
             "School": "Illusion",
             "Casting Time": "1 Action",
@@ -2400,7 +2656,6 @@ dnd_spells = {
             "Works well with": "Other teleportation spells, AoE damage spells, and spells that control the battlefield.",
             "Class Spell List": "Sorcerers, Wizards, Warlocks"
         },
-
         "Tidal Wave": {
             "School": "Conjuration",
             "Casting Time": "1 Action",
@@ -2415,7 +2670,6 @@ dnd_spells = {
             "Works well with": "Spells that create or manipulate water, spells that exploit prone targets, and spells that control the battlefield.",
             "Class Spell List": "Druids, Sorcerers, Wizards"
         },
-
         "Tiny Servant": {
             "School": "Transmutation",
             "Casting Time": "1 Minute",
@@ -2429,7 +2683,6 @@ dnd_spells = {
             "Works well with": "Spells that manipulate objects, spells that require precise actions, and spells that enhance utility.",
             "Class Spell List": "Wizards"
         },
-
         "Tongues": {
             "School": "Divination",
             "Casting Time": "1 Action",
@@ -2444,7 +2697,6 @@ dnd_spells = {
             "Works well with": "Spells that involve communication, diplomacy, or gathering information.",
             "Class Spell List": "Bards, Clerics, Sorcerers, Wizards, Warlocks"
         },
-
         "Vampiric Touch": {
             "School": "Necromancy",
             "Casting Time": "1 Action",
@@ -2459,7 +2711,6 @@ dnd_spells = {
             "Works well with": "Spells that enhance your survivability, spells that improve melee combat, and spells that deal necrotic damage.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
         },
-
         "Wall of Sand": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -2474,7 +2725,6 @@ dnd_spells = {
             "Works well with": "Spells that create barriers or control the battlefield, spells that exploit blinded targets, and spells that manipulate terrain.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Wall of Water": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -2489,7 +2739,6 @@ dnd_spells = {
             "Works well with": "Spells that create barriers or control the battlefield, spells that exploit obscured vision, and spells that manipulate terrain.",
             "Class Spell List": "Druids, Sorcerers, Wizards"
         },
-
         "Water Breathing": {
             "School": "Transmutation",
             "Casting Time": "1 Action (Ritual)",
@@ -2506,7 +2755,7 @@ dnd_spells = {
         },
 
     },
-    4 : {
+    "4th" : {
         "Arcane Eye": {
             "School": "Divination",
             "Casting Time": "1 Action",
@@ -2521,7 +2770,6 @@ dnd_spells = {
             "Works well with": "Other divination spells, such as Clairvoyance, for enhanced surveillance.",
             "Class Spell List": "Wizards, Sorcerers"
         },
-
         "Banishment": {
             "School": "Abjuration",
             "Casting Time": "1 Action",
@@ -2536,7 +2784,6 @@ dnd_spells = {
             "Works well with": "Other crowd control spells, such as Hold Person, to keep enemies at bay.",
             "Class Spell List": "Clerics, Sorcerers, Warlocks, Wizards"
         },
-
         "Blight": {
             "School": "Necromancy",
             "Casting Time": "1 Action",
@@ -2551,7 +2798,6 @@ dnd_spells = {
             "Works well with": "Other necromancy spells or abilities that exploit necrotic damage, such as Negative Energy Flood.",
             "Class Spell List": "Druids, Sorcerers, Warlocks, Wizards"
         },
-
         "Charm Monster": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -2566,7 +2812,6 @@ dnd_spells = {
             "Works well with": "Other enchantment spells or abilities that manipulate creatures' minds.",
             "Class Spell List": "Bards, Sorcerers, Wizards"
         },
-
         "Confusion": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -2581,7 +2826,6 @@ dnd_spells = {
             "Works well with": "Other crowd control spells and abilities that target multiple creatures at once.",
             "Class Spell List": "Bards, Sorcerers, Wizards"
         },
-
         "Conjure Minor Elementals": {
             "School": "Conjuration",
             "Casting Time": "1 Minute",
@@ -2596,7 +2840,6 @@ dnd_spells = {
             "Works well with": "Other summoning spells or abilities that create additional combatants on your side.",
             "Class Spell List": "Druids, Wizards"
         },
-
         "Control Water": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -3004,7 +3247,7 @@ dnd_spells = {
         },
 
     },
-    5 : {
+    "5th" : {
         "Animate Objects": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -3553,7 +3796,7 @@ dnd_spells = {
         },
 
     },
-    6 : {
+    "6th" : {
         "Arcane Gate": {
             "School": "Conjuration",
             "Casting Time": "1 Action",
@@ -3708,7 +3951,6 @@ dnd_spells = {
             "Works well with": "Other control and disabling spells.",
             "Class Spell List": "Wizards, Sorcerers"
         },
-
         "Globe of Invulnerability": {
             "School": "Abjuration",
             "Casting Time": "1 Action",
@@ -3722,7 +3964,6 @@ dnd_spells = {
             "Works well with": "Other defensive and protective spells.",
             "Class Spell List": "Wizards"
         },
-
         "Gravity Fissure": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -3736,7 +3977,6 @@ dnd_spells = {
             "Works well with": "Other area damage and crowd control spells.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Guards and Wards": {
             "School": "Abjuration",
             "Casting Time": "10 Minutes",
@@ -3750,7 +3990,6 @@ dnd_spells = {
             "Works well with": "Other protective and alarm spells.",
             "Class Spell List": "Bards, Wizards"
         },
-
         "Investiture of Flame": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -3764,7 +4003,6 @@ dnd_spells = {
             "Works well with": "Other fire-based spells and abilities.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Investiture of Ice": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -3778,7 +4016,6 @@ dnd_spells = {
             "Works well with": "Other cold-based spells and abilities.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Investiture of Stone": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -3792,7 +4029,6 @@ dnd_spells = {
             "Works well with": "Other defensive spells and abilities.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Investiture of Wind": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -3806,7 +4042,6 @@ dnd_spells = {
             "Works well with": "Other wind-related spells and abilities.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Magic Jar": {
             "School": "Necromancy",
             "Casting Time": "1 Minute",
@@ -3820,7 +4055,6 @@ dnd_spells = {
             "Works well with": "Spells and abilities that provide control over enemies or provide safety to your own body.",
             "Class Spell List": "Wizards, Warlocks"
         },
-
         "Mass Suggestion": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -3848,7 +4082,6 @@ dnd_spells = {
             "Works well with": "Other illusion spells to create a web of deceptive magic and confuse your foes.",
             "Class Spell List": "Wizards, Sorcerers"
         },
-
         "Move Earth": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -3863,7 +4096,6 @@ dnd_spells = {
             "Works well with": "Other earth-manipulating spells and abilities to create intricate traps or fortifications.",
             "Class Spell List": "Druids, Wizards"
         },
-
         "Otiluke's Freezing Sphere": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -3878,7 +4110,6 @@ dnd_spells = {
             "Works well with": "Other area-of-effect spells and crowd-control abilities to maximize its impact.",
             "Class Spell List": "Wizards, Sorcerers"
         },
-
         "Otto's Irresistible Dance": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -3893,7 +4124,6 @@ dnd_spells = {
             "Works well with": "Other control spells and abilities to keep the target incapacitated and vulnerable.",
             "Class Spell List": "Bards, Wizards"
         },
-
         "Programmed Illusion": {
             "School": "Illusion",
             "Casting Time": "1 Action",
@@ -3908,7 +4138,6 @@ dnd_spells = {
             "Works well with": "Other illusion spells and clever tactics to make the most of the programmed illusion.",
             "Class Spell List": "Wizards"
         },
-
         "Scatter": {
             "School": "Conjuration",
             "Casting Time": "1 Action",
@@ -3923,7 +4152,6 @@ dnd_spells = {
             "Works well with": "Other teleportation spells and abilities to create tactical advantages on the battlefield.",
             "Class Spell List": "Druids, Sorcerers, Wizards"
         },
-
         "Soul Cage": {
             "School": "Necromancy",
             "Casting Time": "Special",
@@ -3938,7 +4166,6 @@ dnd_spells = {
             "Works well with": "Other necromantic spells and rituals related to the manipulation of souls.",
             "Class Spell List": "Warlocks, Wizards"
         },
-
         "Sunbeam": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -3953,7 +4180,6 @@ dnd_spells = {
             "Works well with": "Other radiant spells and abilities to harness the power of light against your foes.",
             "Class Spell List": "Druids, Sorcerers, Wizards"
         },
-
         "Tenser's Transformation": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -3968,7 +4194,6 @@ dnd_spells = {
             "Works well with": "Other combat-enhancing spells and abilities to become a true force on the battlefield.",
             "Class Spell List": "Wizards"
         },
-
         "True Seeing": {
             "School": "Divination",
             "Casting Time": "1 Action",
@@ -3983,7 +4208,6 @@ dnd_spells = {
             "Works well with": "Other divination spells to gain insights and detect hidden truths.",
             "Class Spell List": "Clerics, Sorcerers, Wizards"
         },
-
         "Wall of Ice": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -4000,7 +4224,7 @@ dnd_spells = {
         },
 
     },
-    7 : {
+    "7th" : {
         "Create Magen": {
             "School": "Transmutation",
             "Casting Time": "1 Hour",
@@ -4015,7 +4239,6 @@ dnd_spells = {
             "Works well with": "Spells that enhance or empower constructs, such as 'Enlarge/Reduce' or 'Animate Objects'.",
             "Class Spell List": "Wizards, Artificers"
         },
-
         "Crown of Stars": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -4030,7 +4253,6 @@ dnd_spells = {
             "Works well with": "Spells that increase your survivability and mobility, as this spell requires concentration.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
         },
-
         "Delayed Blast Fireball": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -4045,7 +4267,6 @@ dnd_spells = {
             "Works well with": "Spells that enhance fire damage, such as 'Elemental Bane' or 'Fireball'.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Draconic Transformation": {
             "School": "Transmutation",
             "Casting Time": "1 Bonus Action",
@@ -4060,7 +4281,6 @@ dnd_spells = {
             "Works well with": "Spells that enhance your combat prowess and provide additional utility.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Etherealness": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -4075,7 +4295,6 @@ dnd_spells = {
             "Works well with": "Spells that enhance your senses or provide utility while exploring, such as 'Detect Magic' or 'See Invisibility'.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
         },
-
         "Finger of Death": {
             "School": "Necromancy",
             "Casting Time": "1 Action",
@@ -4090,7 +4309,6 @@ dnd_spells = {
             "Works well with": "Spells that control or bolster undead creatures, such as 'Animate Dead' or 'Control Undead'.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
         },
-
         "Forcecage": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -4105,7 +4323,6 @@ dnd_spells = {
             "Works well with": "Spells that hinder or incapacitate creatures within the cage, such as 'Hold Person' or 'Cloudkill'.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Mirage Arcane": {
             "School": "Illusion",
             "Casting Time": "10 Minutes",
@@ -4120,7 +4337,6 @@ dnd_spells = {
             "Works well with": "Spells that enhance illusions, such as 'Major Image' or 'Invisibility'.",
             "Class Spell List": "Bards, Sorcerers, Wizards"
         },
-
         "Mordenkainen's Magnificent Mansion": {
             "School": "Conjuration",
             "Casting Time": "1 Minute",
@@ -4135,7 +4351,6 @@ dnd_spells = {
             "Works well with": "Spells that provide additional defenses or wards, such as 'Alarm' or 'Glyph of Warding'.",
             "Class Spell List": "Bards, Wizards"
         },
-
         "Mordenkainen's Sword": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -4306,7 +4521,7 @@ dnd_spells = {
         },
 
     },
-    8 : {
+    "8th" : {
         "Abi-Dalzim's Horrid Wilting": {
             "School": "Necromancy",
             "Casting Time": "1 Action",
@@ -4461,7 +4676,6 @@ dnd_spells = {
             "Works well with": "Spells that complement area denial tactics, such as Wall of Force or Forcecage.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Maddening Darkness": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -4476,7 +4690,6 @@ dnd_spells = {
             "Works well with": "Spells that create magical darkness or illusions to enhance the overall confusion in the area.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
         },
-
         "Maze": {
             "School": "Conjuration",
             "Casting Time": "1 Action",
@@ -4491,7 +4704,6 @@ dnd_spells = {
             "Works well with": "Control spells that incapacitate or hinder enemies, such as Hold Person or Hold Monster.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Mighty Fortress": {
             "School": "Conjuration",
             "Casting Time": "1 Minute",
@@ -4506,7 +4718,6 @@ dnd_spells = {
             "Works well with": "Spells that enhance fortifications or create defensive barriers.",
             "Class Spell List": "Wizards"
         },
-
         "Mind Blank": {
             "School": "Abjuration",
             "Casting Time": "1 Action",
@@ -4521,7 +4732,6 @@ dnd_spells = {
             "Works well with": "Spells that provide protection or wards against specific types of damage or conditions.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Power Word: Stun": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -4536,7 +4746,6 @@ dnd_spells = {
             "Works well with": "Spells or abilities that can weaken or deal damage to enemies before using Power Word: Stun.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Reality Break": {
             "School": "Conjuration DC",
             "Casting Time": "1 Action",
@@ -4551,7 +4760,6 @@ dnd_spells = {
             "Works well with": "Spells that manipulate battlefield positioning or control enemy movements.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Sunburst": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -4566,7 +4774,6 @@ dnd_spells = {
             "Works well with": "Spells that exploit blindness or have synergies with radiant damage.",
             "Class Spell List": "Clerics, Sorcerers, Wizards"
         },
-
         "Telepathy": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -4583,7 +4790,7 @@ dnd_spells = {
         },
 
     },
-    9 : {
+    "9th" : {
         "Astral Projection": {
             "School": "Evocation",
             "Casting Time": "1 Hour",
@@ -4724,7 +4931,6 @@ dnd_spells = {
             "Works well with": "Debuff spells that lower Intelligence saving throw modifiers.",
             "Class Spell List": "Sorcerers, Wizards, Warlocks"
         },
-
         "Ravenous Void": {
             "School": "Evocation DG",
             "Casting Time": "1 Action",
@@ -4739,7 +4945,6 @@ dnd_spells = {
             "Works well with": "Crowd control spells that can restrain or group enemies together.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "Shapechange": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -4754,7 +4959,6 @@ dnd_spells = {
             "Works well with": "Spells that enhance your chosen form, such as enhancing your new abilities or granting resistances.",
             "Class Spell List": "Sorcerers, Wizards, Druids"
         },
-
         "Time Ravage": {
             "School": "Necromancy DC",
             "Casting Time": "1 Action",
@@ -4769,7 +4973,6 @@ dnd_spells = {
             "Works well with": "Debuff spells or abilities that exploit the aging condition, as well as necrotic damage amplifiers.",
             "Class Spell List": "Sorcerers, Wizards, Warlocks"
         },
-
         "Time Stop": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -4784,7 +4987,6 @@ dnd_spells = {
             "Works well with": "Spells or abilities that have a duration or ongoing effects, as you can take multiple turns to concentrate or apply them.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
         "True Polymorph": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -4799,7 +5001,6 @@ dnd_spells = {
             "Works well with": "Spells or abilities that enhance or synergize with the newly transformed creature or object.",
             "Class Spell List": "Sorcerers, Wizards, Druids"
         },
-
         "Weird": {
             "School": "Illusion",
             "Casting Time": "1 Action",
@@ -4814,7 +5015,6 @@ dnd_spells = {
             "Works well with": "Other illusion spells or abilities that can complement or enhance the terrifying illusion created by Weird.",
             "Class Spell List": "Sorcerers, Wizards, Bards"
         },
-
         "Wish": {
             "School": "Conjuration",
             "Casting Time": "1 Action",

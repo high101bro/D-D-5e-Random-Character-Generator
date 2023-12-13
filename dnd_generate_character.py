@@ -29,7 +29,7 @@ from dnd_classes import *
 from dnd_backgrounds import *
 from dnd_random_generation import *
 from dnd_helper import *
-
+from dnd_spells import *
 
 item_list = [generate_item_list() for _ in range(10)]
 weapon_list = [generate_weapon_list() for _ in range(10)]
@@ -91,12 +91,12 @@ class Character():
         self.weapons = {}
         self.combat = {}
         self.spells = {
-            "spellcasting" : "",
-            "preparation" : "",
-            "spellcasting modifier" : "",
-            "attack modifier" : 0,
-            "save dc" : 0,
-            'slots' : {}
+            "Spellcasting" : "",
+            "Preparation" : "",
+            "Spellcasting Modifier" : "",
+            "Attack Modifier" : 0,
+            "Save DC" : 0,
+            "Slots" : {}
         }
     def to_dict(self):
         return {
@@ -141,8 +141,6 @@ def generate_characters(character, character_number, character_level=1, characte
     character.character_class["Requirements"] = dnd_classes[character_class]["Requirements"]
     character.character_class["Hit Die"] = dnd_classes[character_class]["Hit Die"]
     character.character_class["Current Level Chart"] = {}
-    debug(character_level)
-    debug(dnd_classes[character_class]["Level Chart"][int(character_level)])
     character.character_class["Current Level Chart"][character_level] = dnd_classes[character_class]["Level Chart"][int(character_level)]
     character.character_class["Features"] = dnd_classes[character_class]["Features"]
     character.character_class["Attribute Priority"] = dnd_classes[character_class]["Attribute Priority"]
@@ -280,72 +278,60 @@ def generate_characters(character, character_number, character_level=1, characte
 
     # # Adds spell slots by class
     # if character_class != 'Paladin' and character_class != 'Ranger' :
-    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['1st Level Spell Slots'],
-    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['2nd Level Spell Slots'],
-    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['3rd Level Spell Slots'],
-    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['4th Level Spell Slots'],
-    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['5th Level Spell Slots'],
-    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['6th Level Spell Slots'],
-    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['7th Level Spell Slots'],
-    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['8th Level Spell Slots'],
-    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['9th Level Spell Slots']
+    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['1st'],
+    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['2nd'],
+    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['3rd'],
+    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['4th'],
+    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['5th'],
+    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['6th'],
+    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['7th'],
+    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['8th'],
+    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['9th']
     # else:
     #     # character.character_class["Level Chart"][character.profile['level']] = dnd_classes[character_class]["Level Chart"][character.profile['level']]
 
-    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['1st Level Spell Slots'],
-    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['2nd Level Spell Slots'],
-    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['3rd Level Spell Slots'],
-    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['4th Level Spell Slots'],
-    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['5th Level Spell Slots']
+    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['1st'],
+    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['2nd'],
+    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['3rd'],
+    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['4th'],
+    #     dnd_classes[character_class]['Level Chart'][character.profile['level']]['5th']
 
-    character.spells['slots'] = {}
 
-    if character_class not in non_magic_classes:
-        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['1st Level Spell Slots'] != '-':
-            if character_class == 'Paladin':
-                character.spells['slots']['1st Level'] = {
-                    'known spells' : dnd_classes[character_class]['Spells']["All Class Spells"]['1st Level'],
-                    'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['1st Level Spell Slots']
+    def add_spell_levels(character_class,character):
+        character.spells['Spells Known'] = {}
+        character.spells['Spells Known']['Total'] = dnd_classes[character_class]['Spells']['Spells Known']
+        if character_class in magic_classes:
+            spell_levels = ['1st','2nd','3rd','4th','5th','6th','7th','8th','9th']
+        elif character_class in half_magic_classes:
+            spell_levels = ['1st','2nd','3rd','4th','5th']
+
+        character.spells['Spells Known']["Slots"] = {}
+
+        for spell_level in spell_levels:
+
+            if dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level] != '-': 
+                character.spells['Spells Known']["Slots"][spell_level] = {
+                    "Able To Cast" : dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level],
+                    "Known Spells" : {}
                 }
-        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['2nd Level Spell Slots'] != '-':
-            if character_class == 'Paladin':
-                character.spells['slots']['2nd Level'] = {
-                    'known spells' : dnd_classes[character_class]['Spells']["All Class Spells"]['2nd Level'],
-                    'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['2nd Level Spell Slots']
-                }
-        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['3rd Level Spell Slots'] != '-':
-            if character_class == 'Paladin':
-                character.spells['slots']['3rd Level'] = {
-                    'known spells' : dnd_classes[character_class]['Spells']["All Class Spells"]['3rd Level'],
-                    'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['3rd Level Spell Slots']
-                }
+                for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
+                    # debug(spell)
+                    # debug(dnd_spells.get(spell_level).get(spell))
+                    character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
 
-        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['4th Level Spell Slots'] != '-':
-            if character_class == 'Paladin':
-                character.spells['slots']['4th Level'] = {
-                    'known spells' : dnd_classes[character_class]['Spells']["All Class Spells"]['4th Level'],
-                    'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['4th Level Spell Slots']
-                }
+            
+    if character_class in magic_classes:
+        character.spells['Cantrips Known'] = dnd_classes[character_class]['Level Chart'][character.profile['level']]['Cantrips Known']
+        add_spell_levels(character_class,character)
+    elif character_class in half_magic_classes:
+        character.spells['Cantrips Known'] = "None"
+        add_spell_levels(character_class,character)
+    elif character_class in non_magic_classes:
+        character.spells['Cantrips Known'] = "None"
+        character.spells["Slots"] = "None"
+        character.spells['Spells Known'] = "None"
 
-        if dnd_classes[character_class]['Level Chart'][character.profile['level']]['5th Level Spell Slots'] != '-':
-            if character_class == 'Paladin':
-                character.spells['slots']['5th Level'] = {
-                    'known spells' : dnd_classes[character_class]['Spells']["All Class Spells"]['5th Level'],
-                    'number able to cast' : dnd_classes[character_class]['Level Chart'][character.profile['level']]['5th Level Spell Slots']
-                }
 
-        if character_class != 'Paladin' and character_class != 'Ranger' :
-            if dnd_classes[character_class]['Level Chart'][character.profile['level']]['6th Level Spell Slots'] != '-':
-                character.spells['slots']['6th Level'] = dnd_classes[character_class]['Spells']["All Class Spells"]['6th Level']
-
-            if dnd_classes[character_class]['Level Chart'][character.profile['level']]['7th Level Spell Slots'] != '-':
-                character.spells['slots']['7th Level'] = dnd_classes[character_class]['Spells']["All Class Spells"]['7th Level']
-
-            if dnd_classes[character_class]['Level Chart'][character.profile['level']]['8th Level Spell Slots'] != '-':
-                character.spells['slots']['8th Level'] = dnd_classes[character_class]['Spells']["All Class Spells"]['8th Level']
-
-            if dnd_classes[character_class]['Level Chart'][character.profile['level']]['9th Level Spell Slots'] != '-':
-                character.spells['slots']['9th Level'] = dnd_classes[character_class]['Spells']["All Class Spells"]['9th Level']
 
 
 
@@ -384,9 +370,9 @@ def generate_characters(character, character_number, character_level=1, characte
             character.capabilities['attributes'][attribute]['race_bonus'] = 0
 
         if attribute == str(dnd_classes[character_class]['Spells']["Spellcasting Modifier"]).lower():
-            character.capabilities['attributes'][attribute]['spellcasting modifier'] = True
+            character.capabilities['attributes'][attribute]["Spellcasting Modifier"] = True
         else:
-            character.capabilities['attributes'][attribute]['spellcasting modifier'] = False
+            character.capabilities['attributes'][attribute]["Spellcasting Modifier"] = False
         character.capabilities['attributes'][attribute]['total'] =  character.capabilities['attributes'][attribute]['base'] + character.capabilities['attributes'][attribute]['race_bonus']
         character.capabilities['attributes'][attribute]['modifier'] = (character.capabilities['attributes'][attribute]['total'] - 10) // 2
         for saving_throw in dnd_classes[character_class]["Proficiencies"]["Saving Throws"]:
@@ -406,17 +392,17 @@ def generate_characters(character, character_number, character_level=1, characte
 
 
 
-    character.spells['spellcasting'] = dnd_classes[character_class]['Spells']["Spellcasting"]
-    character.spells['preparation'] = dnd_classes[character_class]['Spells']["Preparation"]
-    character.spells['spellcasting modifier'] = dnd_classes[character_class]['Spells']["Spellcasting Modifier"]
+    character.spells["Spellcasting"] = dnd_classes[character_class]['Spells']["Spellcasting"]
+    character.spells["Preparation"] = dnd_classes[character_class]['Spells']["Preparation"]
+    character.spells["Spellcasting Modifier"] = dnd_classes[character_class]['Spells']["Spellcasting Modifier"]
 
     if character_class not in non_magic_classes:
         # This needs to be beneath the spells and attributes section
         # Spell Attack Modifier = Your Spellcasting Ability Modifier + Your Proficiency Bonus
-        character.spells['attack modifier'] = character.capabilities['attributes'][str(dnd_classes[character_class]['Spells']["Spellcasting Modifier"]).lower()]['modifier'] + character.profile['proficiency bonus']
+        character.spells["Attack Modifier"] = character.capabilities['attributes'][str(dnd_classes[character_class]['Spells']["Spellcasting Modifier"]).lower()]['modifier'] + character.profile['proficiency bonus']
 
         # Spell Save DC = 8 + Your Spellcasting Ability Modifier + Your Proficiency Bonus
-        character.spells['save dc'] = 8 + character.spells['attack modifier']
+        character.spells["Save DC"] = 8 + character.spells["Attack Modifier"]
 
     # character.spells['spellcasting focus'] = 'answer' #need to calculate, need to get stat attribtes first
     #!!!!!!!!!!!!!!!!!!!!!!
@@ -425,38 +411,38 @@ def generate_characters(character, character_number, character_level=1, characte
 
 
 
-    character.capabilities['skills'] = dnd_skills
+    character.capabilities['Skills'] = dnd_skills
 
     
     randomly_chosen_skills = choose_random_proficiency_skill(dnd_classes,character_class)
     
     # Assigns proficiency to skills based on the randomly chosen skills list
     for skill in dnd_skills:
-        if character.capabilities['skills'][skill]['related attribute'] == 'strength':
-            character.capabilities['skills'][skill]['total'] = character.capabilities['attributes']['strength']['modifier']
-        elif character.capabilities['skills'][skill]['related attribute'] == 'dexterity':
-            character.capabilities['skills'][skill]['total'] = character.capabilities['attributes']['dexterity']['modifier']
-        elif character.capabilities['skills'][skill]['related attribute'] == 'constitution':
-            character.capabilities['skills'][skill]['total'] = character.capabilities['attributes']['constitution']['modifier']
-        elif character.capabilities['skills'][skill]['related attribute'] == 'intelligence':
-            character.capabilities['skills'][skill]['total'] = character.capabilities['attributes']['intelligence']['modifier']
-        elif character.capabilities['skills'][skill]['related attribute'] == 'wisdom':
-            character.capabilities['skills'][skill]['total'] = character.capabilities['attributes']['wisdom']['modifier']
-        elif character.capabilities['skills'][skill]['related attribute'] == 'charisma':
-            character.capabilities['skills'][skill]['total'] = character.capabilities['attributes']['charisma']['modifier']
+        if character.capabilities['Skills'][skill]['Related Attribute'] == 'strength':
+            character.capabilities['Skills'][skill]['total'] = character.capabilities['attributes']['strength']['modifier']
+        elif character.capabilities['Skills'][skill]['Related Attribute'] == 'dexterity':
+            character.capabilities['Skills'][skill]['total'] = character.capabilities['attributes']['dexterity']['modifier']
+        elif character.capabilities['Skills'][skill]['Related Attribute'] == 'constitution':
+            character.capabilities['Skills'][skill]['total'] = character.capabilities['attributes']['constitution']['modifier']
+        elif character.capabilities['Skills'][skill]['Related Attribute'] == 'intelligence':
+            character.capabilities['Skills'][skill]['total'] = character.capabilities['attributes']['intelligence']['modifier']
+        elif character.capabilities['Skills'][skill]['Related Attribute'] == 'wisdom':
+            character.capabilities['Skills'][skill]['total'] = character.capabilities['attributes']['wisdom']['modifier']
+        elif character.capabilities['Skills'][skill]['Related Attribute'] == 'charisma':
+            character.capabilities['Skills'][skill]['total'] = character.capabilities['attributes']['charisma']['modifier']
 
         # Randomly adds proficiency to a skill if it is in the randomly chosen proficiency skills list
         for choose_skill in randomly_chosen_skills: 
             if skill == choose_skill:
-                character.capabilities['skills'][skill]['proficiency'] = True
-                character.capabilities['skills'][skill]['total'] += character.profile['proficiency bonus']
+                character.capabilities['Skills'][skill]['proficiency'] = True
+                character.capabilities['Skills'][skill]['total'] += character.profile['proficiency bonus']
 
         # Calculates passive perception
         if skill == 'perception':
-            if character.capabilities['skills'][skill]['proficiency'] == True:
-                character.capabilities['physical']['passive perception'] = 10 + character.capabilities['skills']['perception']['total'] + character.profile['proficiency bonus']
+            if character.capabilities['Skills'][skill]['proficiency'] == True:
+                character.capabilities['physical']['passive perception'] = 10 + character.capabilities['Skills']['perception']['total'] + character.profile['proficiency bonus']
             else:
-                character.capabilities['physical']['passive perception'] = 10 + character.capabilities['skills']['perception']['total']
+                character.capabilities['physical']['passive perception'] = 10 + character.capabilities['Skills']['perception']['total']
 
 
 
@@ -528,8 +514,6 @@ def generate_characters(character, character_number, character_level=1, characte
 
         #### new way, basing it off actual dnd_weapons list
         generated_weapon = random.choice(list(dnd_weapons.keys()))
-        # debug(generated_weapon)
-        # debug(dnd_weapons)
         character.weapons[generated_weapon] = dnd_weapons.get(generated_weapon)
 
 

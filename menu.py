@@ -167,7 +167,7 @@ def main():
                         
                         if character_level_index == (len(dnd_menu_level)-1): # Which should be the 'Random Level' index
                             dnd_menu_level.pop()
-                            character_level = random.randint(1,21) #random int instead of parsing the menu string
+                            character_level = random.randint(1,20) #random int instead of parsing the menu string
                         else: # The chosen level of the character
                             dnd_menu_level.pop()
                             character_level = int(dnd_menu_level[character_level_index][:8][-3:])
@@ -233,9 +233,9 @@ def main():
                             generate_characters(
                                 character,
                                 character_number_tracker,
-                                character_level = random.randint(1,21),
+                                character_level = random.randint(1,20),
                                 character_race = random.choice(list(dnd_races.keys())),
-                                character_class = 'Bard' #random.choice(list(dnd_classes.keys()))
+                                character_class = 'Paladin' #random.choice(list(dnd_classes.keys()))
                             )
                         )
                         pickle_handler.save_dnd_state('characters', all_characters)
@@ -249,7 +249,6 @@ def main():
         elif re.compile("^Character Management").match(optionsMenu [selectedMenuOption]):
             
             character_management(all_characters)
-            input("\nPress Enter to Continue...")
         
         
         elif re.compile("^Manage Battle").match(optionsMenu [selectedMenuOption]):

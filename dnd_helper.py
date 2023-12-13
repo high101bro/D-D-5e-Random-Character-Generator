@@ -5,6 +5,8 @@ import os
 import random, sys, time
 from simple_term_menu import TerminalMenu
 import pickle_handler 
+from dnd_spells import *
+from dnd_lists import *
 
 def debug(show):
     print(f"[Debug] Type: {type(show)} == Value: {show}")
@@ -194,7 +196,62 @@ def character_management(all_characters):
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'combat':
                 print_character(all_characters[characters_menu_index].combat)
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'spells':
-                print_character(all_characters[characters_menu_index].spells)
+                # for spell in all_characters[characters_menu_index].spells:
+                #     for s in all_characters[characters_menu_index].spells['Spells Known']['Slots']['1st']['Known Spells']:
+                #         print(s)
+                
+                if all_characters[characters_menu_index].character_class['Name'] in half_magic_classes:
+                    pass
+                elif all_characters[characters_menu_index].character_class['Name'] in magic_classes:
+                    spell_level_list = list(all_characters[characters_menu_index].spells['Spells Known']['Slots'])
+                    spell_level_list.insert(0,'Cantrips')
+                    spell_level_menu = TerminalMenu(spell_level_list)
+                    spell_level_index = spell_level_menu.show()
+                    spell_level_selected = list(spell_level_list)[spell_level_index]
+                    
+                    spell_level_list = list(all_characters[characters_menu_index].spells['Spells Known']["Slots"][spell_level_selected]['Known Spells'].keys())
+                    spell_list_formatted = []
+                    print(f"  ======================================================================================================================================================")
+                    print(f"{'  Spell':<37} : {'School':<20} {'Damage':<10} {'Saving Throw':<15} {'Range':<12} {'Duration':<20} {'Casting Time':<15} {'Components':<12}")
+                    print(f"  ======================================================================================================================================================")
+                    for spell in spell_level_list:
+                        # print(spell_level_selected)
+                        # print(spell)
+                        try:
+                            School = dnd_spells[spell_level_selected][spell]['School']
+                            # Damage = dnd_spells[spell_level_selected][spell]['Damage']
+                            Range = dnd_spells[spell_level_selected][spell]['Range']
+                            Duration = dnd_spells[spell_level_selected][spell]['Duration']
+                            try:
+                                DC_Saving_Throw = dnd_spells[spell_level_selected][spell]['DC Saving Throw']
+                            except:
+                                DC_Saving_Throw = "None"
+                            Casting_Time = dnd_spells[spell_level_selected][spell]['Casting Time']
+                            Components = dnd_spells[spell_level_selected][spell]['Components']
+                            spell_list_formatted.append(f"{spell:<35} : {School:<20} {'Damage':<10} {DC_Saving_Throw:<15} {Range:<12} {Duration:<20} {Casting_Time:<15} {Components:<12}")
+                        except:
+                            print(spell)
+
+                    spell_name_menu2 = TerminalMenu(spell_list_formatted)
+                    spell_name_index2 = spell_name_menu2.show()
+                    spell_name_selected2 = list(all_characters[characters_menu_index].spells['Spells Known']["Slots"][spell_level_selected]['Known Spells'].keys())[spell_name_index2]
+                    spell_name_selected2.split(':')[0].strip()
+                    debug(spell_level_selected)
+                    debug(spell_name_selected2)
+                    print_character(dnd_spells[spell_level_selected][spell_name_selected2])
+# character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell]
+
+                #     # print(spell)
+                # #     print_character(all_characters[characters_menu_index].spells['Spellcasting'])
+                # #     print_character(all_characters[characters_menu_index].spells['Preparation'])
+                # #     print_character(all_characters[characters_menu_index].spells['Spellcasting Modifier'])
+                # #     print_character(all_characters[characters_menu_index].spells['Attack Modifier'])
+                # #     print_character(all_characters[characters_menu_index].spells['Save DC'])
+                # #     print_character(all_characters[characters_menu_index].spells['Slots'])
+                # #     print_character(all_characters[characters_menu_index].spells['Cantrips Known'])
+                #     print_character(all_characters[characters_menu_index].spells['Spells Known']['Slots']['School'])
+
+                # print_character(all_characters[characters_menu_index].spells)
           
             input("\nPress Enter to Continue...")
 
