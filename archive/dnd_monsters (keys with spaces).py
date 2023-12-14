@@ -23160,7 +23160,7 @@ dnd_monsters = {
             "Mushroom Circle Schematics",
             "Scrolls of Healing",
             "Potions of Regeneration",
-            "Scrolls of Power Word: Kill",
+            "Scrolls of Power Word - Kill",
             "Spore Cap of Clarity"
         ]
     },

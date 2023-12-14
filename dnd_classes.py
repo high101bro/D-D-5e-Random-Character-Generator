@@ -189,8 +189,8 @@ dnd_classes = {
                 "5th" : ["Animate Objects","Awaken","Dominate Person","Dream","Geas","Greater Restoration","Hold Monster","Legend Lore","Mass Cure Wounds","Mislead","Modify Memory","Planar Binding","Raise Dead","Scrying","Seeming","Skill Empowerment","Synaptic Static","Teleportation Circle"],
                 "6th" : ["Eyebite","Find the Path","Guards and Wards","Mass Suggestion","Otto's Irresistible Dance","Programmed Illusion","True Seeing"],
                 "7th" : ["Etherealness","Forcecage","Mirage Arcane","Mordenkainen's Magnificent Mansion","Mordenkainen's Sword","Prismatic Spray","Project Image","Regenerate","Resurrection","Symbol","Teleport"],
-                "8th" : ["Dominate Monster","Feeblemind","Glibness","Mind Blank","Power Word: Stun"],
-                "9th" : ["Foresight","Mass Polymorph","Power Word: Heal","Power Word: Kill","Psychic Scream","True Polymorph"]
+                "8th" : ["Dominate Monster","Feeblemind","Glibness","Mind Blank","Power Word - Stun"],
+                "9th" : ["Foresight","Mass Polymorph","Power Word - Heal","Power Word - Kill","Psychic Scream","True Polymorph"]
             }
         }
     },
@@ -230,7 +230,7 @@ dnd_classes = {
             17: {'Proficiency Bonus': '+6','Features': 'Destroy Undead (CR 4), Divine Domain feature','Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': 1,'9th': 1},
             18: {'Proficiency Bonus': '+6','Features': 'Channel Divinity (x3)','Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 1,'7th': 1,'8th': 1,'9th': 1},
             19: {'Proficiency Bonus': '+6','Features': 'Ability Score Improvement, Cantrip Versatility (Optional)','Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 1,'7th': 1,'8th': 1,'9th': 1},
-            20: {'Proficiency Bonus': '+6','Features': 'Divine Intervention improvement','Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 1,'8th': 1,'9th': 1}
+            20: {'Proficiency Bonus': '+6','Features': 'Divine Intervention improvement','Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 2,'8th': 1,'9th': 1}
         },
         "Features": {},
         "Hit Die": '1d8',
@@ -960,9 +960,9 @@ dnd_classes = {
                 "4th" : ["Banishment","Blight","Charm Monster","Confusion","Dimension Door","Dominate Beast","Gate Seal","Greater Invisibility","Ice Storm","Polymorph","Raulothim's Psychic Lance","Sickening Radiance","Spirit Of Death","Stoneskin","Storm Sphere","Vitriolic Sphere","Wall of Fire","Watery Sphere"],
                 "5th" : ["Animate Objects","Cloudkill","Cone of Cold","Control Winds","Creation","Dominate Person","Enervation","Far Step","Hold Monster","Immolation","Insect Plague","Seeming","Skill Empowerment","Summon Draconic Spirit","Synaptic Static","Telekinesis","Teleportation Circle","Wall of Light","Wall of Stone"],
                 "6th" : ["Arcane Gate","Chain Lightning","Circle of Death","Disintegrate","Eyebite","Fizban's Platinum Shield","Globe of Invulnerability","Investiture of Flame","Investiture of Ice","Investiture of Stone","Investiture of Wind","Mass Suggestion","Mental Prison","Move Earth","Scatter","Sunbeam","True Seeing"],
-                "7th" : ["Crown of Stars","Delayed Blast Fireball","Draconic Transformation","Etherealness","Finger of Death","Fire Storm","Plane Shift","Power Word: Pain","Prismatic Spray","Reverse Gravity","Teleport"],
-                "8th" : ["Abi-Dalzim's Horrid Wilting","Dominate Monster","Earthquake","Incendiary Cloud","Power Word: Stun","Sunburst"],
-                "9th" : ["Blade of Disaster","Gate","Mass Polymorph","Meteor Swarm","Power Word: Kill","Psychic Scream","Time Stop","Wish"]
+                "7th" : ["Crown of Stars","Delayed Blast Fireball","Draconic Transformation","Etherealness","Finger of Death","Fire Storm","Plane Shift","Power Word - Pain","Prismatic Spray","Reverse Gravity","Teleport"],
+                "8th" : ["Abi-Dalzim's Horrid Wilting","Dominate Monster","Earthquake","Incendiary Cloud","Power Word - Stun","Sunburst"],
+                "9th" : ["Blade of Disaster","Gate","Mass Polymorph","Meteor Swarm","Power Word - Kill","Psychic Scream","Time Stop","Wish"]
             }
         }
     },
@@ -1062,10 +1062,6 @@ dnd_classes = {
                 "3rd" : ["Antagonize","Counterspell","Dispel Magic","Enemies Abound","Fear","Fly","Gaseous Form","Hunger Of Hadar","Hypnotic Pattern","Incite Greed","Magic Circle","Major Image","Remove Curse","Summon Lesser Demons","Thunder Step","Tongues","Vampiric Touch"],
                 "4th" : ["Banishment","Blight","Charm Monster","Dimension Door","Elemental Bane","Galder's Speedy Courier","Gate Seal","Hallucinatory Terrain","Raulothim's Psychic Lance","Shadow Of Moil","Sickening Radiance","Spirit Of Death"],
                 "5th" : ["Contact Other Plane","Danse Macabre","Dream","Enervation","Far Step","Hold Monster","Infernal Calling","Negative Energy Flood","Scrying","Synaptic Static","Wall of Light"],
-                "6th" : ["Arcane Gate","Circle of Death","Conjure Fey","Create Undead","Eyebite","Flesh to Stone","Investiture of Flame","Investiture of Ice","Investiture of Stone","Investiture of Wind","Mass Suggestion","Mental Prison","Scatter","Soul Cage","True Seeing"],
-                "7th" : ["Crown of Stars","Etherealness","Finger of Death","Forcecage","Plane Shift","Power Word: Pain"],
-                "8th" : ["Demiplane","Dominate Monster","Feeblemind","Glibness","Maddening Darkness","Power Word: Stun"],
-                "9th" : ["Astral Projection","Foresight","Imprisonment","Power Word: Kill","Psychic Scream","True Polymorph"]
             }
         }
     },
@@ -1164,9 +1160,9 @@ dnd_classes = {
                 "4th" : ["Arcane Eye","Banishment","Blight","Charm Monster","Confusion","Conjure Minor Elementals","Control Water","Dimension Door","Elemental Bane","Evard's Black Tentacles","Fabricate","Fire Shield","Galder's Speedy Courier","Gate Seal","Gravity Sinkhole","Greater Invisibility","Hallucinatory Terrain","Ice Storm","Leomund's Secret Chest","Locate Creature","Mordenkainen's Faithful Hound","Mordenkainen's Private Sanctum","Otiluke's Resilient Sphere","Phantasmal Killer","Polymorph","Raulothim's Psychic Lance","Sickening Radiance","Spirit Of Death","Stone Shape","Stoneskin","Storm Sphere","Summon Greater Demon","Vitriolic Sphere","Wall of Fire","Watery Sphere"],
                 "5th" : ["Animate Objects","Bigby's Hand","Cloudkill","Cone of Cold","Conjure Elemental","Contact Other Plane","Control Winds","Create Spelljamming Helm","Creation","Danse Macabre","Dawn","Dominate Person","Dream","Enervation","Far Step","Geas","Hold Monster","Immolation","Infernal Calling","Legend Lore","Mislead","Modify Memory","Negative Energy Flood","Passwall","Planar Binding","Rary's Telepathic Bond","Scrying","Seeming","Skill Empowerment","Steel Wind Strike","Summon Draconic Spirit","Synaptic Static","Telekinesis","Teleportation Circle","Temporal Shunt","Transmute Rock","Wall of Force","Wall of Light","Wall of Stone"],
                 "6th" : ["Arcane Gate","Chain Lightning","Circle of Death","Contingency","Create Homunculus","Create Undead","Disintegrate","Drawmij's Instant Summons","Eyebite","Fizban's Platinum Shield","Flesh to Stone","Globe of Invulnerability","Gravity Fissure","Guards and Wards","Investiture of Flame","Investiture of Ice","Investiture of Stone","Investiture of Wind","Magic Jar","Mass Suggestion","Mental Prison","Move Earth","Otiluke's Freezing Sphere","Otto's Irresistible Dance","Programmed Illusion","Scatter","Soul Cage","Sunbeam","Tenser's Transformation","True Seeing","Wall of Ice"],
-                "7th" : ["Create Magen","Crown of Stars","Delayed Blast Fireball","Draconic Transformation","Etherealness","Finger of Death","Forcecage","Mirage Arcane","Mordenkainen's Magnificent Mansion","Mordenkainen's Sword","Plane Shift","Power Word: Pain","Prismatic Spray","Project Image","Reverse Gravity","Sequester","Simulacrum","Symbol","Teleport","Tether Essence","Whirlwind"],
-                "8th" : ["Abi-Dalzim's Horrid Wilting","Antimagic Field","Antipathy/Sympathy","Clone","Control Weather","Dark Star","Demiplane","Dominate Monster","Feeblemind","Illusory Dragon","Incendiary Cloud","Maddening Darkness","Maze","Mighty Fortress","Mind Blank","Power Word: Stun","Reality Break","Sunburst","Telepathy"],
-                "9th" : ["Astral Projection","Foresight","Gate","Imprisonment","Invulnerability","Mass Polymorph","Meteor Swarm","Power Word: Kill","Prismatic Wall","Psychic Scream","Ravenous Void","Shapechange","Time Ravage","Time Stop","True Polymorph","Weird","Wish"]
+                "7th" : ["Create Magen","Crown of Stars","Delayed Blast Fireball","Draconic Transformation","Etherealness","Finger of Death","Forcecage","Mirage Arcane","Mordenkainen's Magnificent Mansion","Mordenkainen's Sword","Plane Shift","Power Word - Pain","Prismatic Spray","Project Image","Reverse Gravity","Sequester","Simulacrum","Symbol","Teleport","Tether Essence","Whirlwind"],
+                "8th" : ["Abi-Dalzim's Horrid Wilting","Antimagic Field","Antipathy/Sympathy","Clone","Control Weather","Dark Star","Demiplane","Dominate Monster","Feeblemind","Illusory Dragon","Incendiary Cloud","Maddening Darkness","Maze","Mighty Fortress","Mind Blank","Power Word - Stun","Reality Break","Sunburst","Telepathy"],
+                "9th" : ["Astral Projection","Foresight","Gate","Imprisonment","Invulnerability","Mass Polymorph","Meteor Swarm","Power Word - Kill","Prismatic Wall","Psychic Scream","Ravenous Void","Shapechange","Time Ravage","Time Stop","True Polymorph","Weird","Wish"]
             }
         }
     }

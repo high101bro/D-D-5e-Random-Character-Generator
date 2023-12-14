@@ -88,8 +88,8 @@ dnd_menu_class = [
 ]
 
 
-magic_classes = ['Bard','Cleric','Druid','Sorcerer','Warlock','Wizard']
-half_magic_classes = ['Paladin','Ranger']
+magic_classes = ['Bard','Cleric','Druid','Sorcerer','Wizard']
+half_magic_classes = ['Paladin','Ranger','Warlock']
 non_magic_classes = ['Barbarian','Fighter','Monk','Rogue']
 
 all_classes = magic_classes + half_magic_classes + non_magic_classes

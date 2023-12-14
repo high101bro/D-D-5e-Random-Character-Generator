@@ -87,6 +87,20 @@ dnd_spells = {
             "Works well with": "Darkvision spells, stealthy approaches, or creating a spooky atmosphere.",
             "Class Spell List": "Sorcerers, Wizards, Warlocks"
         },
+        "Druidcraft": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "30 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "Whispering to the spirits of nature, you create one of the following effects within range: You instantly make a flower blossom, a seed pod open, or a leaf bud bloom. You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, or the faint odor of skunk. You instantly light or snuff out a candle, a torch, or a small campfire.",
+            "Explanation": "Druidcraft is a transmutation cantrip that allows you to create various minor nature-themed effects within 30 feet. These effects are generally sensory and harmless.",
+            "At Higher Levels": "Druidcraft doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Druidcraft is a versatile cantrip for druids, often used for minor magical effects that add flavor to role-playing.",
+            "Works well with": "Druids and characters who want to interact with nature in subtle ways.",
+            "Class Spell List": "Druids"
+        },
         "Encode Thoughts": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -143,6 +157,20 @@ dnd_spells = {
             "Works well with": "Spells or abilities that impose conditions, such as Slow, to control the battlefield.",
             "Class Spell List": "Sorcerers, Wizards"
         },
+        "Guidance": {
+            "School": "Divination",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.",
+            "Explanation": "Guidance is a divination cantrip that allows you to touch a willing creature and grant it a d4 bonus to one ability check of its choice. The target can roll the d4 before or after making the ability check.",
+            "At Higher Levels": "This cantrip's effect doesn't change when cast using higher-level spell slots.",
+            "Pro-Tip": "Guidance is a versatile cantrip that can help improve the success of various skill checks, making it useful in a wide range of situations.",
+            "Works well with": "Clerics, druids, or any character who wants to provide assistance with skill checks.",
+            "Class Spell List": "Clerics, Druids"
+        },
         "Gust": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -198,6 +226,20 @@ dnd_spells = {
             "Pro-Tip": "Use Mage Hand creatively to perform tasks that would be dangerous or inconvenient for your character to do manually.",
             "Works well with": "Spells or abilities that require fine manipulation or dexterity.",
             "Class Spell List": "Bards, Sorcerers, Wizards"
+        },
+        "Magic Stone": {
+            "School": "Transmutation",
+            "Casting Time": "1 bonus action",
+            "Range": "Touch",
+            "Duration": "1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You touch one to three pebbles and imbue them with magic. You or someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a sling. If thrown, it has a range of 60 feet. If someone else attacks with the pebble, that attacker adds your spellcasting ability modifier, not the attacker's, to the attack roll.",
+            "Explanation": "Magic Stone is a transmutation cantrip that imbues one to three pebbles with magic, allowing them to be used for ranged spell attacks. These pebbles have a range of 60 feet and use your spellcasting ability modifier for attack rolls.",
+            "At Higher Levels": "Magic Stone doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Magic Stone can be a useful cantrip for characters who need a ranged attack option in a pinch, especially if they don't have other ranged weapons.",
+            "Works well with": "Druids, clerics, and characters who want a versatile ranged attack option.",
+            "Class Spell List": "Clerics, Druids"
         },
         "Mending": {
             "School": "Transmutation",
@@ -283,6 +325,34 @@ dnd_spells = {
             "Works well with": "Other utility and illusion spells, as well as creative problem-solving.",
             "Class Spell List": "Bards, Sorcerers, Wizards, Warlocks"
         },
+        "Primal Savagery": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "Instantaneous",
+            "Components": "S",
+            "DC Saving Throw": "None",
+            "Description": "You channel primal magic to cause your teeth or fingernails to sharpen, ready to deliver a corrosive attack. Make a melee spell attack against one creature within 5 feet of you. On a hit, the target takes 1d10 acid damage.",
+            "Explanation": "Primal Savagery is a transmutation cantrip that allows you to sharpen your teeth or fingernails to make a melee spell attack against a creature within 5 feet. On a hit, the target takes 1d10 acid damage.",
+            "At Higher Levels": "When you reach 5th level, the damage increases to 2d10, and it increases by 1d10 again when you reach 11th level and 17th level.",
+            "Pro-Tip": "Primal Savagery can be a potent melee spell attack for spellcasters who find themselves in close combat situations.",
+            "Works well with": "Druids and spellcasters who need a reliable melee spell attack.",
+            "Class Spell List": "Druids"
+        },
+        "Produce Flame": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "10 minutes",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.",
+            "Explanation": "Produce Flame is a conjuration cantrip that creates a flickering flame in your hand, shedding light in a 10-foot radius. The flame can be used for various purposes and lasts for 10 minutes.",
+            "At Higher Levels": "Produce Flame doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Produce Flame is a versatile cantrip that can be used for illumination, minor damage, or igniting objects.",
+            "Works well with": "Druids and characters who need a reliable source of light and minor fire-based effects.",
+            "Class Spell List": "Druids"
+        },
         "Ray of Frost": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -296,6 +366,34 @@ dnd_spells = {
             "Pro-Tip": "Use Ray of Frost to hinder the movement of enemies, especially those trying to approach your party's frontline.",
             "Works well with": "Other damage-dealing cantrips and spells, especially those that target different saving throws.",
             "Class Spell List": "Sorcerers, Wizards"
+        },
+        "Resistance": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S, M (a miniature cloak)",
+            "DC Saving Throw": "None",
+            "Description": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends.",
+            "Explanation": "Resistance is an abjuration cantrip that allows you to touch a willing creature and grant it a d4 bonus to one saving throw of its choice. The target can roll the d4 before or after making the saving throw.",
+            "At Higher Levels": "This cantrip's effect doesn't change when cast using higher-level spell slots.",
+            "Pro-Tip": "Resistance can be a lifesaver, providing a small but potentially crucial bonus to a saving throw when it matters most.",
+            "Works well with": "Clerics, druids, or any character who wants to provide a saving throw boost to allies.",
+            "Class Spell List": "Clerics, Druids"
+        },
+        "Sacred Flame": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "Dexterity",
+            "Description": "Flames descend on a creature you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.",
+            "Explanation": "Sacred Flame is an evocation cantrip that calls down radiant flames upon a creature you can see within range. The target must make a Dexterity saving throw or take 1d8 radiant damage, with no benefit from cover.",
+            "At Higher Levels": "When you reach higher levels, the spell's damage increases. At 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            "Pro-Tip": "Sacred Flame is a ranged cantrip that deals radiant damage, making it effective against creatures vulnerable to radiant damage.",
+            "Works well with": "Clerics and characters who want a ranged attack option with radiant damage.",
+            "Class Spell List": "Clerics"
         },
         "Sapping Sting": {
             "School": "Necromancy",
@@ -325,6 +423,20 @@ dnd_spells = {
             "Works well with": "Other utility spells or abilities that involve manipulating the environment.",
             "Class Spell List": "Druids, Sorcerers, Wizards"
         },
+        "Shillelagh": {
+            "School": "Transmutation",
+            "Casting Time": "1 bonus action",
+            "Range": "Touch",
+            "Duration": "1 minute",
+            "Components": "V, S, M (a mistletoe sprig)",
+            "DC Saving Throw": "None",
+            "Description": "The wood of a club or quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical if it isn't already. The spell ends if you cast it again or let go of the weapon.",
+            "Explanation": "Shillelagh is a transmutation cantrip that imbues a club or quarterstaff with nature's power. While the spell is active, you can use your spellcasting ability for attack and damage rolls with the weapon, and it deals d8 damage instead of its normal damage die. The weapon also becomes magical.",
+            "At Higher Levels": "Shillelagh doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Shillelagh is a handy cantrip for spellcasters who want to be effective in melee combat without investing in Strength.",
+            "Works well with": "Druids and spellcasters who prefer melee combat with simple weapons.",
+            "Class Spell List": "Druids"
+        },
         "Shocking Grasp": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -338,6 +450,48 @@ dnd_spells = {
             "Pro-Tip": "Use Shocking Grasp to disengage from an enemy without the risk of being struck by an opportunity attack.",
             "Works well with": "Other spells or abilities that incapacitate or hinder enemies in close combat.",
             "Class Spell List": "Sorcerers, Wizards"
+        },
+        "Spare the Dying": {
+            "School": "Necromancy",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs.",
+            "Explanation": "Spare the Dying is a necromancy cantrip that allows you to touch a living creature with 0 hit points and stabilize it. It has no effect on undead or constructs.",
+            "At Higher Levels": "This cantrip's effect doesn't change when cast using higher-level spell slots.",
+            "Pro-Tip": "Spare the Dying is a valuable cantrip for stabilizing dying allies and preventing them from making death saving throws.",
+            "Works well with": "Clerics and characters focused on healing and support.",
+            "Class Spell List": "Clerics"
+        },
+        "Thaumaturgy": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "30 feet",
+            "Duration": "Up to 1 minute",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "You manifest a minor wonder, a sign of supernatural power, within range. You can create one of the following magical effects: Your voice booms up to three times as loud as normal for 1 minute. You cause flames to flicker, brighten, dim, or change color for 1 minute. You cause harmless tremors in the ground for 1 minute. You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.",
+            "Explanation": "Thaumaturgy is a transmutation cantrip that allows you to manifest minor supernatural wonders and magical effects within range. These effects include booming voice, control over flames, ground tremors, or mysterious sounds.",
+            "At Higher Levels": "This cantrip's effects do not change when cast using higher-level spell slots.",
+            "Pro-Tip": "Thaumaturgy is a versatile cantrip for creating dramatic or intimidating effects, often used for role-playing or enhancing storytelling.",
+            "Works well with": "Characters who want to add flair to their actions or create a sense of mystique.",
+            "Class Spell List": "Clerics, Paladins, Sorcerers, Warlocks"
+        },
+        "Thorn Whip": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "30 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (a stem of a plant with thorns)",
+            "DC Saving Throw": "Strength",
+            "Description": "You create a long, vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. If the attack hits, the target takes 1d6 piercing damage, and if the creature is Large or smaller, you pull the creature up to 10 feet closer to you.",
+            "Explanation": "Thorn Whip is a transmutation cantrip that creates a thorny whip to make a melee spell attack against a creature within 30 feet. On a hit, it deals 1d6 piercing damage and can pull the target closer to you if it's Large or smaller.",
+            "At Higher Levels": "When you reach 5th level, the damage increases to 2d6, and it increases by 1d6 again when you reach 11th level and 17th level.",
+            "Pro-Tip": "Thorn Whip can be a useful cantrip for repositioning enemies or pulling them out of cover.",
+            "Works well with": "Druids and characters who need a ranged spell attack with crowd control.",
+            "Class Spell List": "Druids"
         },
         "Thunderclap": {
             "School": "Evocation",
@@ -394,7 +548,21 @@ dnd_spells = {
             "Pro-Tip": "Vicious Mockery is a great spell for bards and characters who want to deal damage while verbally taunting and distracting enemies.",
             "Works well with": "Bards and characters skilled in deception or social interactions.",
             "Class Spell List": "Bards"
-        }
+        },
+        "Word of Radiance": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "5 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, M (a holy symbol)",
+            "DC Saving Throw": "Constitution",
+            "Description": "You utter a divine word, and burning radiance erupts from you. Each creature of your choice that you can see within 5 feet of you must succeed on a Constitution saving throw or take 1d6 radiant damage.",
+            "Explanation": "Word of Radiance is an evocation cantrip that allows you to utter a divine word, causing burning radiance to erupt from you. It affects creatures within 5 feet of you and requires a Constitution saving throw to avoid taking 1d6 radiant damage.",
+            "At Higher Levels": "This cantrip's damage increases to 2d6 at 5th level, 3d6 at 11th level, and 4d6 at 17th level.",
+            "Pro-Tip": "Word of Radiance is a close-range cantrip that deals radiant damage, making it effective against creatures vulnerable to radiant damage.",
+            "Works well with": "Clerics and characters who want a point-blank area-of-effect attack option.",
+            "Class Spell List": "Clerics"
+        },
     },
     "1st" : {
         "Absorb Elements": {
@@ -424,6 +592,48 @@ dnd_spells = {
             "Pro-Tip": "Use Alarm to safeguard your resting place during long rests or to protect valuable items from theft.",
             "Works well with": "Other protective spells and rituals, as well as characters who need to maintain vigilance while resting.",
             "Class Spell List": "Bards, Rangers, Wizards"
+        },
+        "Animal Friendship": {
+            "School": "Enchantment",
+            "Casting Time": "1 action",
+            "Range": "30 feet",
+            "Duration": "24 hours",
+            "Components": "V, S, M (a morsel of food)",
+            "DC Saving Throw": "Wisdom",
+            "Description": "This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must make a Wisdom saving throw, or it becomes charmed by you for the spell's duration.",
+            "Explanation": "Animal Friendship is an enchantment spell that allows you to charm a beast within 30 feet of you. The chosen beast must make a Wisdom saving throw. If it fails, it becomes charmed by you for 24 hours, regarding you as a friendly acquaintance.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Animal Friendship is a useful spell for characters who want to calm or befriend wild animals, potentially avoiding combat or gaining animal allies.",
+            "Works well with": "Characters focused on nature, animal handling, or those who want to interact peacefully with wildlife.",
+            "Class Spell List": "Bards, Druids, Rangers"
+        },
+        "Bane": {
+            "School": "Enchantment",
+            "Casting Time": "1 action",
+            "Range": "30 feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S, M (a drop of blood)",
+            "DC Saving Throw": "Charisma",
+            "Description": "Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target fails the saving throw, it subtracts a d4 from its attack rolls and saving throws. At higher levels, you can target additional creatures.",
+            "Explanation": "Bane is an enchantment spell that imposes a curse on up to three creatures of your choice within 30 feet. The targeted creatures must make Charisma saving throws. When they fail, they subtract a d4 from their attack rolls and saving throws. The curse lasts for the duration of the spell.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+            "Pro-Tip": "Bane is a tactical spell often used to weaken the combat capabilities of multiple foes by reducing their chances of success on attacks and saving throws.",
+            "Works well with": "Characters who want to hinder enemy combat effectiveness or provide support by weakening enemy forces.",
+            "Class Spell List": "Bards, Clerics"
+        },
+        "Beast Bond": {
+            "School": "Divination",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "10 minutes",
+            "Components": "V, S, M (a bit of fur wrapped in a cloth)",
+            "DC Saving Throw": "None",
+            "Description": "You establish a telepathic link with one beast you touch that is friendly to you or charmed by you. The spell fails if the beast's Intelligence is 4 or higher. Until the spell ends, the beast can understand your telepathic messages to it, and it can telepathically communicate simple emotions and concepts back to you.",
+            "Explanation": "Beast Bond is a divination spell that establishes a telepathic link with a friendly or charmed beast you touch. While the spell is active, you can communicate with the linked beast through telepathy, allowing for simple exchanges of messages and emotions.",
+            "At Higher Levels": "Beast Bond doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Beast Bond is useful for druids and rangers who want to establish communication and rapport with animal companions or friendly creatures.",
+            "Works well with": "Druids, Rangers, and characters who rely on animal companions.",
+            "Class Spell List": "Druids, Rangers"
         },
         "Bless": {
             "School": "Enchantment",
@@ -494,6 +704,20 @@ dnd_spells = {
             "Pro-Tip": "Ceremony can be a role-playing tool for characters with religious or ceremonial backgrounds. It allows them to participate in and enhance important events in the campaign.",
             "Works well with": "Characters with a religious or ceremonial focus, such as Clerics, Paladins, or characters deeply connected to a specific faith or tradition.",
             "Class Spell List": "Clerics, Paladins"
+        },
+        "Chaos Bolt": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "120 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You hurl an undulating, warbling mass of chaotic energy at a creature you can see within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 damage of a damage type determined by a roll on the table in the spell description. The spell then leaps to another creature if the attack roll was a natural 20.",
+            "Explanation": "Chaos Bolt is an evocation spell that hurls chaotic energy at a target, dealing damage of a random type. On a natural 20 attack roll, the spell leaps to another creature, potentially creating a chain reaction.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d6 for each slot level above 1st.",
+            "Pro-Tip": "Chaos Bolt is a versatile spell that can deal different types of damage, making it unpredictable but potentially devastating.",
+            "Works well with": "Sorcerers and spellcasters who enjoy the randomness and versatility of chaotic magic.",
+            "Class Spell List": "Sorcerers"
         },
         "Charm Person": {
             "School": "Enchantment",
@@ -593,6 +817,20 @@ dnd_spells = {
             "Works well with": "Healers, Clerics, Paladins, and characters focused on supporting their allies.",
             "Class Spell List": "Bards, Clerics, Druids, Paladins, Rangers"
         },
+        "Create or Destroy Water": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "30 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You either create or destroy water. Create Water: You create up to 10 gallons of clean water within range in an open container. Destroy Water: You destroy up to 10 gallons of water in an open container within range, or you extinguish flames in the area affected by the spell.",
+            "Explanation": "Create or Destroy Water is a conjuration spell with dual functionality. You can either create up to 10 gallons of clean water in an open container or destroy up to 10 gallons of water in an open container. It can also be used to extinguish flames in the affected area.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, you can create or destroy an additional 10 gallons of water for each slot level above 1st.",
+            "Pro-Tip": "Create or Destroy Water is a versatile spell that can provide a water source or help control fires.",
+            "Works well with": "Clerics and characters with utility or survival roles.",
+            "Class Spell List": "Clerics, Druids"
+        },
         "Detect Evil and Good": {
             "School": "Divination",
             "Casting Time": "1 action",
@@ -633,6 +871,20 @@ dnd_spells = {
             "Pro-Tip": "Detect Poison and Disease is a valuable spell for characters concerned about environmental hazards, contaminated food or water, or encounters with venomous creatures.",
             "Works well with": "Characters focused on survival, nature, or those who frequently encounter dangerous environments.",
             "Class Spell List": "Clerics, Druids, Paladins, Rangers"
+        },
+        "Dissonant Whispers": {
+            "School": "Enchantment",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "Instantaneous",
+            "Components": "V",
+            "DC Saving Throw": "Wisdom",
+            "Description": "You whisper a discordant melody that only one creature of your choice within range can hear. The target must make a Wisdom saving throw or take 3d6 psychic damage and use its reaction to move as far away from you as its speed allows.",
+            "Explanation": "Dissonant Whispers is an enchantment spell that targets one creature within 60 feet. The chosen creature must make a Wisdom saving throw. If it fails, it takes 3d6 psychic damage and is compelled to use its reaction to move away from you as far as its speed allows.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
+            "Pro-Tip": "Dissonant Whispers is an effective spell for inflicting psychic damage and provoking opportunity attacks as the target moves away in fear.",
+            "Works well with": "Characters who want to deal damage and create tactical advantages by forcing enemies to move.",
+            "Class Spell List": "Bards"
         },
         "Divine Favor": {
             "School": "Evocation",
@@ -688,6 +940,20 @@ dnd_spells = {
             "Works well with": "Area damage spells and abilities that benefit from targets being prone.",
             "Class Spell List": "Sorcerers, Wizards"
         },
+        "Entangle": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "90 feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "Strength",
+            "Description": "Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain. A creature in the area when you cast the spell must succeed on a Strength saving throw or be restrained by the entangling plants until the spell ends. A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.",
+            "Explanation": "Entangle is a conjuration spell that causes grasping weeds and vines to sprout in a 20-foot square, creating difficult terrain and potentially restraining creatures in the area. Restrained creatures can attempt to break free with a Strength check.",
+            "At Higher Levels": "Entangle doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Entangle is an effective crowd control spell for restraining and slowing down enemies in a specific area of the battlefield.",
+            "Works well with": "Druids and characters focused on battlefield control.",
+            "Class Spell List": "Druids, Rangers"
+        },
         "Expeditious Retreat": {
             "School": "Transmutation",
             "Casting Time": "1 Bonus Action",
@@ -700,6 +966,20 @@ dnd_spells = {
             "Pro-Tip": "Combine Expeditious Retreat with hit-and-run tactics or to quickly traverse large distances.",
             "Works well with": "Hit-and-run strategies and dodging enemy attacks.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
+        },
+        "Faerie Fire": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V",
+            "DC Saving Throw": "Dexterity",
+            "Description": "Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.",
+            "Explanation": "Faerie Fire is an evocation spell that bathes a 20-foot cube within range in colorful light, making objects and creatures within it emit dim light. Creatures in the area must make a Dexterity saving throw to avoid being outlined. Outlined creatures are easier to see and grant advantage on attack rolls against them.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Faerie Fire is a useful spell for revealing hidden or invisible creatures and granting advantage to your allies when attacking them.",
+            "Works well with": "Characters who want to reveal hidden foes or improve the accuracy of their attacks.",
+            "Class Spell List": "Bards, Druids"
         },
         "False Life": {
             "School": "Necromancy",
@@ -783,6 +1063,20 @@ dnd_spells = {
             "Works well with": "Spells or abilities that grant additional actions or attacks in the first round of combat.",
             "Class Spell List": "Bards, Wizards"
         },
+        "Goodberry": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (a sprig of mistletoe)",
+            "DC Saving Throw": "None",
+            "Description": "Up to ten berries appear in your hand and are infused with magic for the duration. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day.",
+            "Explanation": "Goodberry is a transmutation spell that creates up to ten magical berries. Each berry, when eaten as an action, restores 1 hit point and provides enough sustenance to keep a creature fed for one day.",
+            "At Higher Levels": "Goodberry doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Goodberry is a valuable spell for providing healing and sustenance to a party, especially in survival situations.",
+            "Works well with": "Druids and characters who need a reliable source of healing and food.",
+            "Class Spell List": "Druids"
+        },
         "Grease": {
             "School": "Conjuration",
             "Casting Time": "1 Action",
@@ -796,6 +1090,34 @@ dnd_spells = {
             "Pro-Tip": "Strategically place Grease in chokepoints or near enemies to hinder their movement and make them easier targets for your allies.",
             "Works well with": "Spells or abilities that target creatures on the ground, such as area-effect spells.",
             "Class Spell List": "Bards, Sorcerers, Wizards"
+        },
+        "Guiding Bolt": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "120 feet",
+            "Duration": "1 round",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage.",
+            "Explanation": "Guiding Bolt is an evocation spell that sends a flash of light streaking toward a creature within range. It requires a ranged spell attack and deals 4d6 radiant damage on a hit. Additionally, it grants advantage on the next attack roll made against the target.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
+            "Pro-Tip": "Guiding Bolt is an effective ranged spell for dealing radiant damage and granting advantage to your allies' subsequent attacks.",
+            "Works well with": "Clerics and characters who want to deal ranged radiant damage.",
+            "Class Spell List": "Clerics"
+        },
+        "Healing Word": {
+            "School": "Evocation",
+            "Casting Time": "1 bonus action",
+            "Range": "60 feet",
+            "Duration": "Instantaneous",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+            "Explanation": "Healing Word is an evocation spell that allows you to heal a creature you can see within 60 feet. The target regains hit points equal to 1d4 plus your spellcasting ability modifier. It cannot affect undead or constructs.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases. The healing is 1d4 + your spellcasting ability modifier for each slot level above 1st.",
+            "Pro-Tip": "Healing Word is a quick and efficient way to heal wounded allies during combat, especially when you need to use a bonus action.",
+            "Works well with": "Support-focused characters and those who want to keep their party members in the fight.",
+            "Class Spell List": "Bards, Clerics, Druids"
         },
         "Heroism": {
             "School": "Enchantment",
@@ -852,6 +1174,20 @@ dnd_spells = {
             "Pro-Tip": "Use Illusory Script for secret communication or to leave hidden messages for allies or spies.",
             "Works well with": "Spells or abilities that create illusions or deceive others.",
             "Class Spell List": "Bards, Wizards"
+        },
+        "Inflict Wounds": {
+            "School": "Necromancy",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "Make a melee spell attack against a creature you can touch. On a hit, the target takes 3d10 necrotic damage.",
+            "Explanation": "Inflict Wounds is a necromancy spell that allows you to make a melee spell attack against a creature you can touch. On a hit, the target takes 3d10 necrotic damage.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.",
+            "Pro-Tip": "Inflict Wounds is a powerful melee spell that deals substantial necrotic damage, making it effective against enemies vulnerable to necrotic damage.",
+            "Works well with": "Clerics and characters who want to deal significant melee spell damage.",
+            "Class Spell List": "Clerics"
         },
         "Jim's Magic Missile": {
             "School": "Evocation",
@@ -979,6 +1315,20 @@ dnd_spells = {
             "Works well with": "Other poison-themed spells or abilities.",
             "Class Spell List": "Sorcerers, Wizards"
         },
+        "Sanctuary": {
+            "School": "Abjuration",
+            "Casting Time": "1 bonus action",
+            "Range": "30 feet",
+            "Duration": "1 minute",
+            "Components": "V, S, M (a small silver mirror)",
+            "DC Saving Throw": "Wisdom",
+            "Description": "You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from area effects, such as the explosion of a fireball.",
+            "Explanation": "Sanctuary is an abjuration spell that wards a creature within range against attacks. If a creature targets the warded creature with an attack or a harmful spell, it must make a Wisdom saving throw. On a failed save, the attacker must choose a new target or lose the attack or spell.",
+            "At Higher Levels": "This spell's duration increases by 1 minute when cast using a spell slot of 2nd level or higher.",
+            "Pro-Tip": "Sanctuary is a protective spell that can help keep an ally safe by diverting enemy attacks away from them.",
+            "Works well with": "Clerics, paladins, and characters focused on protecting allies.",
+            "Class Spell List": "Clerics, Paladins"
+        },
         "Searing Smite": {
             "School": "Evocation",
             "Casting Time": "1 bonus action",
@@ -1076,6 +1426,20 @@ dnd_spells = {
             "Pro-Tip": "Use Snare to set up ambushes, protect your campsite, or secure important locations. Be mindful of its nearly invisible nature, and consider using it creatively.",
             "Works well with": "Spells or abilities that immobilize or incapacitate enemies, as Snare can capitalize on those effects.",
             "Class Spell List": "Druids, Rangers, Wizards"
+        },
+        "Speak with Animals": {
+            "School": "Divination",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "10 minutes",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at a minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day.",
+            "Explanation": "Speak with Animals is a divination spell that grants you the ability to understand and speak with beasts. While their intelligence varies, even simple beasts can provide information about their surroundings and recent events they've witnessed.",
+            "At Higher Levels": "Casting this spell at a higher level does not change its effects.",
+            "Pro-Tip": "Speak with Animals can be useful for gathering information from creatures that typically cannot communicate with humans. It's great for interacting with wildlife and getting insights from them.",
+            "Works well with": "Characters who want to communicate with and understand animals or gather information about their surroundings.",
+            "Class Spell List": "Bards, Druids, Rangers"
         },
         "Tasha's Hideous Laughter": {
             "School": "Enchantment",
@@ -1231,6 +1595,20 @@ dnd_spells = {
             "Works well with": "Disguise Self, Invisibility, and other spells that enhance your ability to blend in or adapt to different environments.",
             "Class Spell List": "Bards, Sorcerers, Wizards, Warlocks"
         },
+        "Animal Messenger": {
+            "School": "Enchantment",
+            "Casting Time": "1 action",
+            "Range": "30 feet",
+            "Duration": "24 hours",
+            "Components": "V, S, M (a morsel of food)",
+            "DC Saving Throw": "None",
+            "Description": "By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a squirrel, owl, or messenger bird. You specify a location, which you must have visited before, and a recipient who matches a general description, such as 'a man or woman dressed in the uniform of the town guard' or 'a red-haired dwarf wearing a pointed hat.'",
+            "Explanation": "Animal Messenger is an enchantment spell that allows you to send a message by using a Tiny beast as a messenger. You choose the messenger and specify a location and recipient. The messenger will deliver the message to the best of its ability.",
+            "At Higher Levels": "Casting this spell at a higher level does not change its effects.",
+            "Pro-Tip": "Animal Messenger is a handy spell for sending messages quickly, especially when you need to communicate with someone in a remote location or a difficult-to-reach place.",
+            "Works well with": "Characters who need to deliver messages over long distances without relying on traditional means of communication.",
+            "Class Spell List": "Bards, Druids, Rangers"
+        },
         "Arcane Lock": {
             "School": "Abjuration",
             "Casting Time": "1 Action",
@@ -1243,6 +1621,48 @@ dnd_spells = {
             "Pro-Tip": "Use Arcane Lock to secure important entrances or containers, keeping them safe from tampering or unauthorized entry.",
             "Works well with": "Other protective spells and wards.",
             "Class Spell List": "Wizards"
+        },
+        "Augury": {
+            "School": "Divination",
+            "Casting Time": "1 minute",
+            "Range": "Self",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (specially marked sticks, bones, or similar tokens worth at least 25 gp)",
+            "DC Saving Throw": "None",
+            "Description": "By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The GM chooses from the following possible omens: Weal (good result), Woe (bad result), Weal and Woe (both good and bad results), or Nothing (neither good nor bad result).",
+            "Explanation": "Augury is a divination spell that allows you to seek guidance from an otherworldly entity about the outcome of a specific course of action you plan to take within the next 30 minutes. The entity provides an omen, which can be Weal (good), Woe (bad), Weal and Woe (both good and bad), or Nothing (neither good nor bad).",
+            "At Higher Levels": "Casting this spell using a spell slot of 2nd level or higher increases the casting time to 10 minutes, and the duration extends to 1 hour.",
+            "Pro-Tip": "Augury is a useful spell for gaining insight into the potential consequences of your actions, helping you make informed decisions.",
+            "Works well with": "Characters who want to make strategic choices or avoid potential pitfalls.",
+            "Class Spell List": "Clerics"
+        },
+        "Barkskin": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "Concentration, up to 1 hour",
+            "Components": "V, S, M (a handful of oak bark)",
+            "DC Saving Throw": "None",
+            "Description": "You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing.",
+            "Explanation": "Barkskin is a transmutation spell that toughens a creature's skin, giving it a bark-like appearance and setting the target's AC to a minimum of 16, regardless of the armor it wears, as long as the spell lasts.",
+            "At Higher Levels": "Barkskin doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Barkskin is useful for increasing the survivability of allies who lack high Armor Class.",
+            "Works well with": "Druids and characters focused on protecting their party members.",
+            "Class Spell List": "Druids, Rangers"
+        },
+        "Beast Sense": {
+            "School": "Divination",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "Concentration, up to 1 hour",
+            "Components": "S",
+            "DC Saving Throw": "None",
+            "Description": "You touch a willing beast. For the duration of the spell, you can use your action to see through the beast's eyes and hear what it hears, gaining the benefits of any special senses that the creature has. You can continue to do this as long as your concentration lasts.",
+            "Explanation": "Beast Sense is a divination spell that allows you to touch a willing beast and see through its eyes and hear what it hears as long as you concentrate on the spell. You gain any special senses the creature has during this time.",
+            "At Higher Levels": "Beast Sense doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Beast Sense is a valuable spell for scouting and gaining information from animal companions or local wildlife.",
+            "Works well with": "Druids, Rangers, and characters who have animal companions.",
+            "Class Spell List": "Druids, Rangers"
         },
         "Blindness/Deafness": {
             "School": "Necromancy",
@@ -1297,6 +1717,20 @@ dnd_spells = {
             "Pro-Tip": "Branding Smite is effective against creatures vulnerable to radiant damage or those who rely on invisibility for defense. It can also be used to mark a target for allies by making them emit light.",
             "Works well with": "Melee-focused characters, especially Paladins, who can use their Divine Smite feature in combination with Branding Smite for significant burst damage.",
             "Class Spell List": "Paladins"
+        },
+        "Calm Emotions": {
+            "School": "Enchantment",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "Charisma",
+            "Description": "You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot radius sphere centered on a point you choose within range must make a Charisma saving throw; a creature can choose to fail this saving throw if it wishes. If a creature fails its saving throw, choose one of the following two effects.",
+            "Explanation": "Calm Emotions is an enchantment spell that allows you to calm strong emotions in a group of people. It affects humanoids within a 20-foot radius sphere. Those who fail their Charisma saving throw can experience one of two effects.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Calm Emotions can be useful for diffusing tense situations, preventing violence, or managing the emotional state of a group.",
+            "Works well with": "Characters who want to maintain control over a crowd, negotiate with emotionally charged individuals, or prevent conflict.",
+            "Class Spell List": "Bards, Clerics"
         },
         "Cloud of Daggers": {
             "School": "Conjuration",
@@ -1423,6 +1857,20 @@ dnd_spells = {
             "Works well with": "Spells that deal damage to grounded creatures or control spells that limit enemy movement.",
             "Class Spell List": "Sorcerers, Wizards"
         },
+        "Enhance Ability": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "Concentration, up to 1 hour",
+            "Components": "V, S, M (fur or a feather from a beast)",
+            "DC Saving Throw": "None",
+            "Description": "You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends.",
+            "Explanation": "Enhance Ability is a transmutation spell that allows you to enhance a creature's abilities by touching them. You can choose from various effects, each providing a different benefit to the target.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Enhance Ability is a versatile spell that can temporarily grant a wide range of advantages, making it useful in a variety of situations.",
+            "Works well with": "Characters who want to enhance their own or their allies' abilities for specific tasks or challenges.",
+            "Class Spell List": "Bards, Clerics, Druids, Sorcerers, Wizards"
+        },
         "Enlarge/Reduce": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -1437,6 +1885,20 @@ dnd_spells = {
             "Works well with": "Control spells that exploit the size of creatures, and spells that enhance or hinder Strength-based actions.",
             "Class Spell List": "Sorcerers, Wizards"
         },
+        "Enthrall": {
+            "School": "Enchantment",
+            "Casting Time": "1 minute",
+            "Range": "60 feet",
+            "Duration": "1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "Wisdom",
+            "Description": "You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that fails the save becomes charmed by you for the duration.",
+            "Explanation": "Enthrall is an enchantment spell that allows you to captivate and charm creatures with your words. Creatures within range that can hear you must make a Wisdom saving throw. Those who fail the save become charmed by you for the duration.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Enthrall can be useful for distracting and charming a group of creatures, making them more receptive to your words and actions.",
+            "Works well with": "Characters who want to influence the behavior and attitudes of others, particularly in social situations.",
+            "Class Spell List": "Bards, Clerics, Warlocks, Wizards"
+        },
         "Find Steed": {
             "School": "Conjuration",
             "Casting Time": "10 minutes",
@@ -1450,6 +1912,34 @@ dnd_spells = {
             "Pro-Tip": "Find Steed is a favorite among Paladins and other characters who value mobility and companionship. The steed can be a useful ally in both combat and travel.",
             "Works well with": "Paladins, Knights, and characters who need a reliable and loyal mount.",
             "Class Spell List": "Paladins"
+        },
+        "Find Traps": {
+            "School": "Divination",
+            "Casting Time": "1 action",
+            "Range": "120 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would sense an area affected by the alarm spell, a glyph of warding, or a mechanical pit trap, but it would not reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole.",
+            "Explanation": "Find Traps is a divination spell that allows you to sense the presence of any trap within 120 feet that is within your line of sight. It can detect traps specifically designed to be harmful or undesirable.",
+            "At Higher Levels": "Casting this spell using a spell slot of 2nd level or higher extends the range by 30 feet for each slot level above 1st.",
+            "Pro-Tip": "Find Traps is a valuable spell for detecting hidden dangers, making it an essential tool for adventurers exploring dangerous areas.",
+            "Works well with": "Characters focused on reconnaissance and avoiding traps.",
+            "Class Spell List": "Clerics, Rangers, Artificers"
+        },
+        "Flame Blade": {
+            "School": "Evocation",
+            "Casting Time": "1 bonus action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 10 minutes",
+            "Components": "V, S, M (leaf of sumac)",
+            "DC Saving Throw": "None",
+            "Description": "You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar and lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action.",
+            "Explanation": "Flame Blade is an evocation spell that conjures a fiery scimitar in your free hand, which lasts for the duration. You can summon or dismiss the blade as a bonus action.",
+            "At Higher Levels": "Flame Blade doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Flame Blade is a potent spell for druids who want a melee weapon option with a fiery edge.",
+            "Works well with": "Druids and spellcasters who want a melee weapon option.",
+            "Class Spell List": "Druids"
         },
         "Flaming Sphere": {
             "School": "Conjuration",
@@ -1534,6 +2024,34 @@ dnd_spells = {
             "Pro-Tip": "Position yourself strategically to maximize the impact of Gust of Wind, such as pushing enemies off cliffs or into hazards.",
             "Works well with": "Wizards, Sorcerers, and spellcasters who want to control the battlefield.",
             "Class Spell List": "Druids, Sorcerers, Wizards"
+        },
+        "Healing Spirit": {
+            "School": "Conjuration",
+            "Casting Time": "1 bonus action",
+            "Range": "60 feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You call forth a nature spirit to soothe the wounded. The intangible spirit appears in a space that is a 5-foot cube you can see within range. The spirit looks like a transparent beast or fey (your choice). Until the spell ends, whenever you or a creature you can see moves into the spirit's space for the first time on a turn or starts its turn there, you can cause the spirit to restore 1d6 hit points to that creature (no action required). The spirit can't heal constructs or undead.",
+            "Explanation": "Healing Spirit is a conjuration spell that summons a nature spirit to a 5-foot cube within range. The spirit can restore 1d6 hit points to a creature that enters its space or starts its turn there, but it can't heal constructs or undead.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d6 for each slot level above 1st.",
+            "Pro-Tip": "Healing Spirit is an excellent spell for ongoing healing during combat or exploration.",
+            "Works well with": "Druids and parties in need of sustained healing.",
+            "Class Spell List": "Druids"
+        },
+        "Heat Metal": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S, M (a piece of iron and a flame)",
+            "DC Saving Throw": "None",
+            "Description": "Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to become red-hot. A creature in physical contact with the object takes 2d8 fire damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again.",
+            "Explanation": "Heat Metal is a transmutation spell that allows you to heat a manufactured metal object within range. The initial casting of the spell deals 2d8 fire damage to any creature in physical contact with the object. You can use a bonus action on your subsequent turns to repeat this damage.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Heat Metal is effective against opponents wearing metal armor or wielding metal weapons. It can cause significant damage and potentially force enemies to drop their heated equipment.",
+            "Works well with": "Characters who want to disable or harm opponents wearing metal armor or wielding metal weapons.",
+            "Class Spell List": "Bards, Druids"
         },
         "Hold Person": {
             "School": "Enchantment",
@@ -1647,6 +2165,20 @@ dnd_spells = {
             "Works well with": "Spells or abilities that control movement or battlefield positioning.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
         },
+        "Locate Animals or Plants": {
+            "School": "Divination",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (a bit of fur from a bloodhound)",
+            "DC Saving Throw": "None",
+            "Description": "Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present.",
+            "Explanation": "Locate Animals or Plants is a divination spell that allows you to find the closest creature or plant of a specific kind within 5 miles. By describing or naming the creature or plant, you can sense its direction and distance.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "This spell is valuable for tracking down specific animals or plants in natural environments, making it useful for hunters, gatherers, and druids.",
+            "Works well with": "Characters who want to locate specific creatures or plants in the wilderness or natural surroundings.",
+            "Class Spell List": "Bards, Clerics, Druids, Rangers"
+        },
         "Locate Object": {
             "School": "Divination",
             "Casting Time": "1 Action",
@@ -1759,6 +2291,20 @@ dnd_spells = {
             "Works well with": "Other teleportation spells and abilities for versatile movement.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
         },
+        "Moonbeam": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "120 feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S, M (several seeds of any moonseed plant)",
+            "DC Saving Throw": "Constitution",
+            "Description": "A silvery beam of pale light shines down in a 5-foot radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder. When a creature enters the spell's area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a Constitution saving throw. It takes 2d10 radiant damage on a failed save or half as much damage on a successful one.",
+            "Explanation": "Moonbeam is an evocation spell that creates a silvery beam of pale light in a 5-foot radius, 40-foot-high cylinder. Creatures entering or starting their turn in the area take 2d10 radiant damage and must make a Constitution saving throw.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd.",
+            "Pro-Tip": "Moonbeam is a versatile spell for area damage and battlefield control.",
+            "Works well with": "Druids and characters who want to control the battlefield with radiant damage.",
+            "Class Spell List": "Druids"
+        },
         "Nathair's Mischief": {
             "School": "Illusion",
             "Casting Time": "1 Action",
@@ -1787,6 +2333,20 @@ dnd_spells = {
             "Works well with": "Other illusion spells and abilities related to disguising or hiding magical properties.",
             "Class Spell List": "Wizards"
         },
+        "Pass Without Trace": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 hour",
+            "Components": "V, S, M (ashes from a burned leaf of mistletoe and a sprig of spruce)",
+            "DC Saving Throw": "None",
+            "Description": "A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can't be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.",
+            "Explanation": "Pass Without Trace is an abjuration spell that shrouds you and nearby creatures in shadows and silence. It grants a +10 bonus to Dexterity (Stealth) checks, makes you untrackable by non-magical means, and leaves no traces behind.",
+            "At Higher Levels": "Pass Without Trace doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Pass Without Trace is invaluable for stealthy approaches and avoiding detection.",
+            "Works well with": "Druids, Rangers, and parties that need to move quietly.",
+            "Class Spell List": "Druids, Rangers"
+        },
         "Phantasmal Force": {
             "School": "Illusion",
             "Casting Time": "1 Action",
@@ -1800,6 +2360,20 @@ dnd_spells = {
             "Pro-Tip": "Use Phantasmal Force to manipulate your target's perceptions, create obstacles, or even make them believe they are under attack by a terrifying creature.",
             "Works well with": "Other illusion spells and abilities that enhance deceptive tactics.",
             "Class Spell List": "Sorcerers, Wizards"
+        },
+        "Prayer of Healing": {
+            "School": "Evocation",
+            "Casting Time": "10 minutes",
+            "Range": "30 feet",
+            "Duration": "Instantaneous",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "Up to six creatures of your choice that you can see within range regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+            "Explanation": "Prayer of Healing is an evocation spell that allows you to heal up to six creatures of your choice within 30 feet. Each target regains hit points equal to 2d8 plus your spellcasting ability modifier. It has no effect on undead or constructs.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.",
+            "Pro-Tip": "Prayer of Healing is an efficient way to heal multiple allies outside of combat, making it a valuable spell for restoring the party's health after battles.",
+            "Works well with": "Clerics and characters with a healing role.",
+            "Class Spell List": "Clerics"
         },
         "Protection from Poison": {
             "School": "Abjuration",
@@ -1870,6 +2444,20 @@ dnd_spells = {
             "Pro-Tip": "Use Rope Trick as a safe haven for short rests during dangerous situations or when you need to avoid detection.",
             "Works well with": "Spells and abilities that require rest or concealment from enemies.",
             "Class Spell List": "Sorcerers, Wizards"
+        },
+        "Silence": {
+            "School": "Illusion",
+            "Casting Time": "1 action",
+            "Range": "120 feet",
+            "Duration": "Concentration, up to 10 minutes",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it.",
+            "Explanation": "Silence is an illusion spell that creates a zone of magical silence within a 20-foot-radius sphere. No sound can be created within or pass through this area. Creatures inside the sphere are deafened, and they are immune to thunder damage while entirely within it.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Silence can be used strategically to hinder spellcasters, prevent verbal communication, and negate the effects of spells that require sound.",
+            "Works well with": "Characters who want to control the battlefield, silence enemy spellcasters, or sneak past guards.",
+            "Class Spell List": "Bards, Clerics"
         },
         "Scorching Ray": {
             "School": "Evocation",
@@ -1969,6 +2557,34 @@ dnd_spells = {
             "Works well with": "Levitate (for levitating while climbing), Web (to create your own climbable surfaces), and other spells that enhance mobility.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
         },
+        "Spike Growth": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "150 feet",
+            "Duration": "Concentration, up to 10 minutes",
+            "Components": "V, S, M (seven sharp thorns or seven small twigs, each sharpened to a point)",
+            "DC Saving Throw": "Dexterity",
+            "Description": "The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels.",
+            "Explanation": "Spike Growth is a transmutation spell that transforms a 20-foot radius of ground into difficult terrain covered in sharp spikes and thorns. Moving in the area inflicts 2d4 piercing damage for every 5 feet traveled.",
+            "At Higher Levels": "Spike Growth doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Spike Growth is a potent area control spell, ideal for deterring enemies from entering an area.",
+            "Works well with": "Druids and characters focused on controlling the battlefield.",
+            "Class Spell List": "Druids, Rangers"
+        },
+        "Spiritual Weapon": {
+            "School": "Evocation",
+            "Casting Time": "1 bonus action",
+            "Range": "60 feet",
+            "Duration": "1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to 1d8 + your spellcasting ability modifier.",
+            "Explanation": "Spiritual Weapon is an evocation spell that allows you to create a floating, spectral weapon within 60 feet that lasts for 1 minute or until you cast the spell again. You can make melee spell attacks with the weapon, dealing 1d8 + your spellcasting ability modifier in force damage on a hit.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
+            "Pro-Tip": "Spiritual Weapon is a versatile spell that provides ongoing melee damage without requiring concentration, making it a favorite among clerics.",
+            "Works well with": "Clerics and characters who want to maintain a magical melee presence.",
+            "Class Spell List": "Clerics"
+        },
         "Spray Of Cards": {
             "School": "Conjuration",
             "Casting Time": "1 Action",
@@ -2010,6 +2626,20 @@ dnd_spells = {
             "Pro-Tip": "Use Vortex Warp to gain advantageous positions, escape danger, or surprise enemies by appearing where they least expect you.",
             "Works well with": "Other teleportation or mobility spells to maximize your maneuverability.",
             "Class Spell List": "Sorcerers, Wizards"
+        },
+        "Warding Bond": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "1 hour",
+            "Components": "V, S, M (a pair of platinum rings worth at least 50 gp each, which you and the target must wear for the duration)",
+            "DC Saving Throw": "None",
+            "Description": "This spell wards a willing creature you touch and creates a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has resistance to all damage. Also, each time it takes damage, you take the same amount of damage.",
+            "Explanation": "Warding Bond is an abjuration spell that creates a mystic connection between you and a willing creature you touch. The target gains several benefits, including a bonus to AC and saving throws, resistance to all damage, and you share the damage it takes.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage transfer limit increases by 1d4 for each slot level above 1st.",
+            "Pro-Tip": "Warding Bond is a powerful protective spell that allows you to share the burden of damage with an ally, making it useful for tanking and protecting vulnerable party members.",
+            "Works well with": "Clerics and characters focused on protecting allies and sharing damage.",
+            "Class Spell List": "Clerics"
         },
         "Warding Wind": {
             "School": "Evocation",
@@ -2139,6 +2769,20 @@ dnd_spells = {
             "Works well with": "Spells that enhance mobility and abilities that rely on Dexterity.",
             "Class Spell List": "Sorcerers, Wizards, and some other classes"
         },
+        "Beacon of Hope": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "30 feet",
+            "Duration": "1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and it regains the maximum number of hit points possible from any healing.",
+            "Explanation": "Beacon of Hope is an abjuration spell that bestows hope and vitality on creatures within range. It grants several benefits, including advantage on Wisdom saving throws and death saving throws, as well as maximizing healing.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, its range increases by 30 feet for each slot level above 3rd.",
+            "Pro-Tip": "Beacon of Hope is an excellent support spell, particularly useful when your party needs enhanced healing and protection against mental effects.",
+            "Works well with": "Clerics and characters who want to bolster their party's resilience.",
+            "Class Spell List": "Clerics"
+        },
         "Bestow Curse": {
             "School": "Necromancy",
             "Casting Time": "1 Action",
@@ -2181,6 +2825,20 @@ dnd_spells = {
             "Works well with": "Defensive spells, abilities that enhance evasion, and spells that provide crowd control.",
             "Class Spell List": "Wizards and some other classes"
         },
+        "Call Lightning": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "120 feet",
+            "Duration": "Concentration, up to 10 minutes",
+            "Components": "V, S",
+            "DC Saving Throw": "Dexterity",
+            "Description": "A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see within range. The cloud remains for the spell's duration. Each round on your turn, you can call down lightning from the cloud, targeting a creature or object you can see within 60 feet of the cloud's center. The target must make a Dexterity saving throw, taking 3d10 lightning damage on a failed save or half as much on a successful one.",
+            "Explanation": "Call Lightning is a conjuration spell that creates a storm cloud, allowing you to call down lightning on creatures or objects within range. Targets must make a Dexterity saving throw, taking 3d10 lightning damage on a failed save.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd.",
+            "Pro-Tip": "Call Lightning is an excellent spell for dealing consistent lightning damage to enemies over multiple rounds.",
+            "Works well with": "Druids and characters who want a powerful ranged damage option.",
+            "Class Spell List": "Druids"
+        },
         "Catnap": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -2209,6 +2867,20 @@ dnd_spells = {
             "Works well with": "Other divination spells, abilities that enhance perception, and spells that provide surveillance or reconnaissance.",
             "Class Spell List": "Wizards and some other classes"
         },
+        "Conjure Animals": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "Concentration, up to 1 hour",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options: conjure animals of challenge rating 2 or lower, conjure one beast of challenge rating 2 or lower, or conjure two beasts of challenge rating 1 or lower. The summoned creatures are friendly to you and your companions and obey your commands.",
+            "Explanation": "Conjure Animals is a conjuration spell that summons fey spirits in the form of beasts. You can choose to summon creatures based on their challenge rating, and they are friendly to you and your party, following your commands.",
+            "At Higher Levels": "When you cast this spell using a higher-level spell slot, you can summon more powerful creatures, but their challenge rating must be appropriate for the slot level.",
+            "Pro-Tip": "Conjure Animals is a versatile spell for summoning allies to aid in combat or provide assistance in various situations.",
+            "Works well with": "Druids and spellcasters who want to bolster their party's numbers.",
+            "Class Spell List": "Druids, Rangers"
+        },
         "Counterspell": {
             "School": "Abjuration",
             "Casting Time": "1 Reaction",
@@ -2222,6 +2894,34 @@ dnd_spells = {
             "Pro-Tip": "Keep an eye on your enemies' spellcasting and be ready to use Counterspell to prevent their most dangerous spells from taking effect.",
             "Works well with": "Abjuration spells, abilities that enhance your counterspelling, and spells that protect against magic.",
             "Class Spell List": "Wizards, Sorcerers, and some other classes"
+        },
+        "Create Food and Water": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "30 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and the water is clean.",
+            "Explanation": "Create Food and Water is a conjuration spell that allows you to create sustenance. You can produce 45 pounds of food and 30 gallons of water, enough to sustain humanoids or steeds for 24 hours.",
+            "At Higher Levels": "Casting this spell using a spell slot of 4th level or higher creates an additional 45 pounds of food and 30 gallons of water for each slot level above 3rd.",
+            "Pro-Tip": "Create Food and Water is a practical spell for ensuring your party's sustenance during extended journeys or in challenging environments.",
+            "Works well with": "Clerics and characters responsible for provisioning the party.",
+            "Class Spell List": "Clerics, Paladins"
+        },
+        "Daylight": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "1 hour",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet. If you target an object held or worn by a hostile creature, that creature must succeed on a Constitution saving throw to avoid the spell.",
+            "Explanation": "Daylight is an evocation spell that creates a large sphere of bright light, illuminating a 60-foot radius and shedding dim light for an additional 60 feet. It dispels darkness and can potentially harm creatures vulnerable to light.",
+            "At Higher Levels": "Casting this spell using a spell slot of 4th level or higher increases the radius of bright light by 30 feet for each slot level above 3rd.",
+            "Pro-Tip": "Daylight is a versatile spell for dispelling darkness, providing illumination, and potentially harming light-sensitive creatures.",
+            "Works well with": "Clerics and characters who need to light up dark areas or repel creatures vulnerable to light.",
+            "Class Spell List": "Clerics, Druids, Paladins, Sorcerers, Wizards"
         },
         "Dispel Magic": {
             "School": "Abjuration",
@@ -2503,6 +3203,34 @@ dnd_spells = {
             "Works well with": "Other illusion spells, deception, and spells that manipulate perception.",
             "Class Spell List": "Bards, Sorcerers, Wizards"
         },
+        "Mass Healing Word": {
+            "School": "Evocation",
+            "Casting Time": "1 bonus action",
+            "Range": "60 feet",
+            "Duration": "Instantaneous",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "You call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+            "Explanation": "Mass Healing Word is an evocation spell that allows you to call out words of restoration to up to six creatures within 60 feet. Each target regains hit points equal to 1d4 plus your spellcasting ability modifier.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.",
+            "Pro-Tip": "Mass Healing Word is a quick and efficient way to provide immediate healing to multiple allies during combat.",
+            "Works well with": "Clerics and characters focused on supporting the party's health.",
+            "Class Spell List": "Clerics"
+        },
+        "Meld into Stone": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "8 hours",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You step into a stone object or surface large enough to fully contain your body, melding yourself and all the equipment you carry with the stone for the duration. Using your movement, you step into the stone at a point you can touch. Nothing of your presence remains visible or otherwise detectable by nonmagical senses.",
+            "Explanation": "Meld into Stone is a transmutation spell that allows you to meld yourself and your equipment into a stone object or surface, becoming undetectable by nonmagical senses for 8 hours.",
+            "At Higher Levels": "Casting this spell using a spell slot of 3rd level or higher extends the duration to 12 hours for each slot level above 2nd.",
+            "Pro-Tip": "Meld into Stone can be a lifesaver when you need to hide or rest within stone structures or natural formations.",
+            "Works well with": "Druids and characters who need to hide or take refuge within stone.",
+            "Class Spell List": "Clerics, Druids"
+        },
         "Melf's Minute Meteors": {
             "School": "Evocation",
             "Casting Time": "Self",
@@ -2517,6 +3245,20 @@ dnd_spells = {
             "Works well with": "Other area-of-effect spells and spells that enhance your damage output.",
             "Class Spell List": "Sorcerers, Wizards"
         },
+        "Motivational Speech": {
+            "School": "Enchantment",
+            "Casting Time": "1 minute",
+            "Range": "60 feet",
+            "Duration": "1 hour",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "Choose up to five creatures within range that can hear you. For the duration, each affected creature gains 5 temporary hit points and has advantage on Wisdom saving throws. If an affected creature is hit by an attack, it has advantage on the next attack roll it makes. Once an affected creature loses the temporary hit points granted by this spell, the spell ends for that creature.",
+            "Explanation": "Motivational Speech is an enchantment spell that empowers up to five creatures with temporary hit points, advantage on Wisdom saving throws, and advantage on their next attack roll if they are hit by an attack. The spell ends for each creature when they lose the temporary hit points.",
+            "At Higher Levels": "Casting this spell using a spell slot of 4th level or higher increases the temporary hit points by 5 for each slot level above 3rd.",
+            "Pro-Tip": "Motivational Speech is a valuable spell for boosting the morale and capabilities of your allies during challenging situations.",
+            "Works well with": "Characters who want to inspire and support their party members in combat or other challenging scenarios.",
+            "Class Spell List": "Bards, Clerics"
+        },
         "Nondetection": {
             "School": "Abjuration",
             "Casting Time": "1 Action",
@@ -2529,6 +3271,20 @@ dnd_spells = {
             "Pro-Tip": "Cast this spell on yourself or important objects when you need to maintain secrecy or evade magical tracking.",
             "Works well with": "Spells that enhance stealth and invisibility.",
             "Class Spell List": "Bards, Rangers, Wizards"
+        },
+        "Plant Growth": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "150 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "This spell channels vitality into plants within a specific area. There are two possible uses for the spell, granting either immediate or long-term benefits.",
+            "Explanation": "Plant Growth is a transmutation spell that enhances the vitality of plants within a designated area. It can have both immediate and long-term effects on the vegetation.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Plant Growth can be used to enhance the growth of crops for a bountiful harvest or to create difficult terrain to hinder enemies' movement in outdoor environments.",
+            "Works well with": "Druids, rangers, and characters interested in agriculture or manipulating the natural world.",
+            "Class Spell List": "Bards, Clerics, Druids, Rangers"
         },
         "Phantom Steed": {
             "School": "Illusion",
@@ -2585,6 +3341,20 @@ dnd_spells = {
             "Works well with": "Detect Magic, Identify, and other spells used to assess and deal with magical items.",
             "Class Spell List": "Clerics, Paladins, Wizards"
         },
+        "Revivify": {
+            "School": "Necromancy",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (diamonds worth 300 gp, which the spell consumes)",
+            "DC Saving Throw": "None",
+            "Description": "You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.",
+            "Explanation": "Revivify is a necromancy spell that allows you to touch a creature that has died within the last minute, bringing it back to life with 1 hit point. It cannot revive creatures that died of old age or restore missing body parts.",
+            "At Higher Levels": "Casting this spell using a spell slot of 4th level or higher increases the time limit for revival by 1 additional minute for each slot level above 3rd.",
+            "Pro-Tip": "Revivify is a vital spell for quickly bringing fallen allies back to life in the heat of battle.",
+            "Works well with": "Clerics and characters who want to ensure the party's survival.",
+            "Class Spell List": "Clerics, Paladins"
+        },
         "Sending": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -2626,6 +3396,48 @@ dnd_spells = {
             "Pro-Tip": "Slow is especially effective against foes that rely on speed and reactions. Consider pairing it with spells that target incapacitated or disadvantaged creatures.",
             "Works well with": "Haste, Hold Person, and other spells that manipulate a creature's actions.",
             "Class Spell List": "Sorcerers, Wizards"
+        },
+        "Speak with Dead": {
+            "School": "Necromancy",
+            "Casting Time": "1 action",
+            "Range": "10 feet",
+            "Duration": "10 minutes",
+            "Components": "V, S, M (burning incense)",
+            "DC Saving Throw": "None",
+            "Description": "You grant the semblance of life and intelligence to a corpse of your choice within range, allowing it to answer the questions you pose. The corpse must still have a mouth and can't be undead. The spell fails if the corpse was the target of this spell within the last 10 days.",
+            "Explanation": "Speak with Dead is a necromancy spell that animates a corpse briefly, enabling it to respond to questions. The corpse must have a mouth and cannot be undead. The spell doesn't work if it has been cast on the same corpse in the last 10 days.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Speak with Dead is a useful tool for gathering information from the deceased, solving mysteries, or uncovering hidden knowledge.",
+            "Works well with": "Characters seeking to communicate with the deceased or extract information from corpses.",
+            "Class Spell List": "Clerics"
+        },
+        "Speak with Plants": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "Self (30-foot radius)",
+            "Duration": "10 minutes",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You imbue plants within 30 feet of you with limited sentience and animation, giving them the ability to communicate with you and follow simple commands. You can question plants about events in the area within the past day, gaining information about creatures that have passed, weather, and other circumstances.",
+            "Explanation": "Speak with Plants is a transmutation spell that grants you the ability to communicate with and command nearby plants. It allows you to question plants about recent events and gather information related to the area.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Speak with Plants can be useful for gathering information from the natural world, directing plant growth, or seeking insights into recent events in a forest or garden.",
+            "Works well with": "Druids, rangers, and characters who want to interact with and control plants.",
+            "Class Spell List": "Bards, Druids, Rangers"
+        },
+        "Spirit Guardians": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "Self (15-foot radius)",
+            "Duration": "Concentration, up to 10 minutes",
+            "Components": "V, S, M (a holy symbol)",
+            "DC Saving Throw": "Wisdom",
+            "Description": "You call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear fiendish.",
+            "Explanation": "Spirit Guardians is a conjuration spell that summons protective spirits to flit around you in a 15-foot radius. These spirits can damage and deter creatures that come near you.",
+            "At Higher Levels": "Casting this spell using a spell slot of 4th level or higher increases the damage by 1d8 for each slot level above 3rd.",
+            "Pro-Tip": "Spirit Guardians is an excellent spell for creating an area of protection around you, damaging enemies that enter it.",
+            "Works well with": "Clerics and characters who want to control the battlefield and protect themselves and allies.",
+            "Class Spell List": "Clerics"
         },
         "Stinking Cloud": {
             "School": "Conjuration",
@@ -2766,7 +3578,34 @@ dnd_spells = {
             "Works well with": "Spells that enhance underwater exploration, spells that protect against environmental hazards, and spells that manipulate water.",
             "Class Spell List": "Clerics, Druids, Rangers, Sorcerers, Wizards"
         },
-
+        "Water Walk": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "30 feet",
+            "Duration": "1 hour",
+            "Components": "V, S, M (a piece of cork)",
+            "DC Saving Throw": "None",
+            "Description": "This spell grants the ability to move across any liquid surface—such as water, acid, mud, snow, quicksand, or lava—as if it were harmless solid ground (creatures crossing molten lava can still take damage from the heat). Up to ten willing creatures you can see within range gain this ability for the duration.",
+            "Explanation": "Water Walk is a transmutation spell that allows you and up to ten willing creatures within 30 feet to walk on the surface of liquids, treating them as solid ground.",
+            "At Higher Levels": "Casting this spell using a spell slot of 3rd level or higher increases the duration to 8 hours for each slot level above 2nd.",
+            "Pro-Tip": "Water Walk can be a game-changer when you need to traverse bodies of water or hazardous liquid surfaces.",
+            "Works well with": "Clerics and characters who need to cross water or hazardous terrain.",
+            "Class Spell List": "Clerics"
+        },
+        "Wind Wall": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "120 feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S, M (a tiny fan and a feather of exotic origin)",
+            "DC Saving Throw": "None",
+            "Description": "A wall of strong wind rises from the ground at a point you choose within range. The wall is 50 feet long, 15 feet high, and 1 foot thick. The wall blocks arrows, bolts, and other projectiles but passes through gases and small creatures. Solid creatures can't pass through the wall, and any creature forced through it takes 3d8 bludgeoning damage and is pushed 10 feet away from the wall.",
+            "Explanation": "Wind Wall is an evocation spell that creates a wall of strong wind, blocking projectiles and hindering the passage of solid creatures. Passing through the wall inflicts bludgeoning damage and pushes creatures away.",
+            "At Higher Levels": "Wind Wall doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Wind Wall is a strategic spell for creating barriers and hindering ranged attacks.",
+            "Works well with": "Druids and characters looking to control the battlefield and protect their party.",
+            "Class Spell List": "Druids, Rangers"
+        },
     },
     "4th" : {
         "Arcane Eye": {
@@ -2825,6 +3664,20 @@ dnd_spells = {
             "Works well with": "Other enchantment spells or abilities that manipulate creatures' minds.",
             "Class Spell List": "Bards, Sorcerers, Wizards"
         },
+        "Compulsion": {
+            "School": "Enchantment",
+            "Casting Time": "1 action",
+            "Range": "30 feet",
+            "Duration": "1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "Wisdom",
+            "Description": "Creatures of your choice that you can see within range and that can hear you must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can't be charmed. On a failed save, a target is affected by this spell.",
+            "Explanation": "Compulsion is an enchantment spell that affects creatures within range who can hear you. They must make a Wisdom saving throw, with those who can't be charmed succeeding automatically. Failed saves result in the target being affected by the spell.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot increases the range by 5 feet for each slot level above 5th.",
+            "Pro-Tip": "Compulsion can be used to control the actions of affected creatures within the spell's duration, making them follow your commands.",
+            "Works well with": "Characters who want to influence the behavior of creatures or manipulate a group of individuals.",
+            "Class Spell List": "Bards, Sorcerers, Warlocks, Wizards"
+        },
         "Confusion": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -2853,6 +3706,20 @@ dnd_spells = {
             "Works well with": "Other summoning spells or abilities that create additional combatants on your side.",
             "Class Spell List": "Druids, Wizards"
         },
+        "Conjure Woodland Beings": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "Concentration, up to 1 hour",
+            "Components": "V, S, M (one holly berry per beast)",
+            "DC Saving Throw": "None",
+            "Description": "You summon fey creatures that appear in unoccupied spaces that you can see within range. Choose one of the following options: summon eight creatures of challenge rating 1/4 or lower, summon four creatures of challenge rating 1/2 or lower, or summon two creatures of challenge rating 1 or lower. The summoned creatures are friendly to you and your companions and obey your commands.",
+            "Explanation": "Conjure Woodland Beings is a conjuration spell that summons fey creatures. You can choose the number and challenge rating of creatures you summon, and they are friendly and follow your commands.",
+            "At Higher Levels": "When you cast this spell using a higher-level spell slot, you can summon more powerful creatures, but their challenge rating must be appropriate for the slot level.",
+            "Pro-Tip": "Conjure Woodland Beings is a versatile spell for summoning allies to aid in combat or provide assistance in various situations.",
+            "Works well with": "Druids and spellcasters who want to bolster their party's numbers with fey creatures.",
+            "Class Spell List": "Druids"
+        },
         "Control Water": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -2867,6 +3734,20 @@ dnd_spells = {
             "Works well with": "Other transmutation spells or abilities that manipulate the environment.",
             "Class Spell List": "Druids, Wizards"
         },
+        "Death Ward": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "8 hours",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You touch a creature and grant it a measure of protection from death. The first time the target would drop to 0 hit points as a result of taking damage, it instead drops to 1 hit point, and the spell ends.",
+            "Explanation": "Death Ward is an abjuration spell that grants a creature protection from death. When the target would drop to 0 hit points from damage, it instead drops to 1 hit point, and the spell ends.",
+            "At Higher Levels": "Casting this spell using a spell slot of 4th level or higher grants the target an additional 1d4 hit points for each slot level above 3rd.",
+            "Pro-Tip": "Death Ward is a lifesaver, ensuring that a critical blow doesn't immediately take a character out of the fight.",
+            "Works well with": "Clerics and characters who need to protect themselves or allies from deadly blows.",
+            "Class Spell List": "Clerics, Paladins"
+        },
         "Dimension Door": {
             "School": "Conjuration",
             "Casting Time": "1 Action",
@@ -2880,6 +3761,34 @@ dnd_spells = {
             "Pro-Tip": "Use Dimension Door to quickly move your party out of a dangerous situation or to access otherwise unreachable locations.",
             "Works well with": "Other teleportation spells, such as Teleport or Teleportation Circle.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
+        },
+        "Divination": {
+            "School": "Divination",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (specially marked sticks, bones, or similar tokens worth 25 gp)",
+            "DC Saving Throw": "None",
+            "Description": "Your magic and an offering put you in contact with a god or a god's servants. You ask a single question concerning a specific goal, event, or activity to occur within 7 days. The DM offers a truthful reply. The reply might be a short phrase, a cryptic rhyme, or an omen.",
+            "Explanation": "Divination is a divination spell that allows you to contact a god or god's servants and ask one specific question about a goal, event, or activity to occur within 7 days. The DM provides a truthful reply, which can be cryptic.",
+            "At Higher Levels": "Casting this spell using a spell slot of 4th level or higher grants you the ability to ask one additional question for each slot level above 3rd.",
+            "Pro-Tip": "Divination is a unique spell for gaining insights and answers from higher powers, making it valuable for planning and decision-making.",
+            "Works well with": "Clerics and characters seeking divine guidance.",
+            "Class Spell List": "Clerics"
+        },
+        "Dominate Beast": {
+            "School": "Enchantment",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "Wisdom",
+            "Description": "You attempt to beguile a beast that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.",
+            "Explanation": "Dominate Beast is an enchantment spell that attempts to charm a beast within range. The target must make a Wisdom saving throw or be charmed by you for the spell's duration, with advantage on the save if it's in combat with you or your allies.",
+            "At Higher Levels": "Dominate Beast doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Dominate Beast can be useful for gaining control over natural creatures or turning them into allies temporarily.",
+            "Works well with": "Druids and characters who want to control and charm beasts.",
+            "Class Spell List": "Druids"
         },
         "Elemental Bane": {
             "School": "Transmutation",
@@ -2923,6 +3832,20 @@ dnd_spells = {
             "Works well with": "Proficiency in relevant crafting skills, knowledge of materials, and creative thinking.",
             "Class Spell List": "Artificers, Wizards"
         },
+        "Freedom of Movement": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "1 hour",
+            "Components": "V, S, M (a leather strap, bound around the arm or a similar appendage)",
+            "DC Saving Throw": "None",
+            "Description": "You touch a willing creature, and for the duration, the target's movement is unaffected by difficult terrain, and spells and other magical effects can neither reduce the target's speed nor cause the target to be paralyzed or restrained.",
+            "Explanation": "Freedom of Movement is an abjuration spell that grants a willing creature immunity to difficult terrain, paralysis, and restraint caused by spells or magical effects. It enables the target to move freely regardless of obstacles.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot increases the duration. Using a 4th-level slot extends the duration to 8 hours, and a 5th-level slot makes it last 24 hours.",
+            "Pro-Tip": "Freedom of Movement is a valuable spell for adventurers facing challenging terrain, enemies with paralyzing abilities, or situations where mobility is crucial.",
+            "Works well with": "Characters who want to ensure freedom of movement and avoid being hindered by magical or natural obstacles.",
+            "Class Spell List": "Clerics, Druids, Rangers"
+        },
         "Fire Shield": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -2965,6 +3888,34 @@ dnd_spells = {
             "Works well with": "Other protective spells and warding magic.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
         },
+        "Giant Insect": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "30 feet",
+            "Duration": "Concentration, up to 10 minutes",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You transform up to ten centipedes, three spiders, five wasps, or one scorpion within range into giant versions of their natural forms. Each creature obeys your verbal commands and is friendly to you and your companions. In combat, their turns come immediately after yours. They have the statistics of the chosen form, but they retain your alignment and your Intelligence, Wisdom, and Charisma scores. They act on their own, but they won't attack you or your companions unless you specifically command them to do so.",
+            "Explanation": "Giant Insect is a transmutation spell that transforms small creatures into giant versions of themselves. You can command up to ten creatures, and they act immediately after you in combat, following your verbal commands.",
+            "At Higher Levels": "Giant Insect doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Giant Insect is great for summoning a variety of creatures to aid in combat and exploration.",
+            "Works well with": "Druids and spellcasters who want a diverse set of summoned creatures.",
+            "Class Spell List": "Druids"
+        },
+        "Grasping Vine": {
+            "School": "Conjuration",
+            "Casting Time": "1 bonus action",
+            "Range": "30 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "Strength",
+            "Description": "You conjure a vine that sprouts from the ground in an unoccupied space of your choice within range. When you cast this spell, you can direct the vine to lash out at a creature within 30 feet of it that you can see. The creature must succeed on a Strength saving throw or be pulled up to 20 feet directly toward the vine.",
+            "Explanation": "Grasping Vine is a conjuration spell that creates a vine in an unoccupied space. You can command the vine to pull a creature toward it, forcing the target to make a Strength saving throw or be pulled up to 20 feet.",
+            "At Higher Levels": "Grasping Vine doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Grasping Vine is useful for repositioning creatures or disrupting their movement.",
+            "Works well with": "Druids and characters who want a versatile spell for manipulating the battlefield.",
+            "Class Spell List": "Druids"
+        },
         "Gravity Sinkhole": {
             "School": "Evocation (Dunamancy)",
             "Casting Time": "1 Action",
@@ -2992,6 +3943,34 @@ dnd_spells = {
             "Pro-Tip": "Use Greater Invisibility to turn a rogue or a spellcaster into a nearly invisible infiltrator or escape artist.",
             "Works well with": "Stealthy characters, ambush strategies, or any situation where remaining unseen is advantageous.",
             "Class Spell List": "Bards, Sorcerers, Warlocks, Wizards"
+        },
+        "Guardian of Faith": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "30 feet",
+            "Duration": "8 hours",
+            "Components": "V",
+            "DC Saving Throw": "Dexterity",
+            "Description": "A Large spectral guardian appears and hovers for the duration in an unoccupied space of your choice that you can see within range. The guardian occupies that space and is indistinct except for a gleaming sword and shield emblazoned with the symbol of your deity.",
+            "Explanation": "Guardian of Faith is a conjuration spell that summons a Large spectral guardian with a gleaming sword and shield, bearing the symbol of your deity. The guardian appears for 8 hours and defends a chosen space.",
+            "At Higher Levels": "Casting this spell using a spell slot of 5th level or higher increases the damage dealt by the guardian when it hits by 20 points for each slot level above 4th.",
+            "Pro-Tip": "Guardian of Faith is an excellent way to defend a specific area or protect against enemies attempting to breach a location.",
+            "Works well with": "Clerics and characters who need to secure an area or provide extra defense.",
+            "Class Spell List": "Clerics"
+        },
+        "Guardian of Nature": {
+            "School": "Transmutation",
+            "Casting Time": "1 bonus action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "You channel primal magic to take on the form of a guardian spirit. You choose one of the following forms: Primal Beast or Great Tree. Each form grants different benefits. Primal Beast enhances your physical abilities, while Great Tree enhances your defenses and spellcasting.",
+            "Explanation": "Guardian of Nature is a transmutation spell that allows you to take on the form of a guardian spirit, choosing between Primal Beast for physical enhancements or Great Tree for defensive and spellcasting benefits.",
+            "At Higher Levels": "Guardian of Nature doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Guardian of Nature offers versatility by letting you adapt to different situations by choosing your guardian form.",
+            "Works well with": "Druids who want to excel in combat or enhance their spellcasting abilities.",
+            "Class Spell List": "Druids"
         },
         "Hallucinatory Terrain": {
             "School": "Illusion",
@@ -3275,6 +4254,34 @@ dnd_spells = {
             "Works well with": "Spells that buff or protect your animated objects, such as 'Haste' or 'Shield.'",
             "Class Spell List": "Sorcerers, Wizards"
         },
+        "Antilife Shell": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "Self (10-foot radius)",
+            "Duration": "Concentration, up to 1 hour",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "A shimmering barrier extends out from you in a 10-foot radius and moves with you, remaining centered on you and hedging out creatures other than undead and constructs. The barrier lasts for the duration and prevents creatures of those types from passing or entering. The affected creatures can use their actions to push against the barrier, but they can't cross it.",
+            "Explanation": "Antilife Shell is an abjuration spell that creates a protective barrier around you, preventing creatures other than undead and constructs from passing or entering. The barrier moves with you and lasts for the spell's duration.",
+            "At Higher Levels": "Antilife Shell doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Antilife Shell is a great spell for creating a safe zone where certain types of creatures can't enter, providing protection and control.",
+            "Works well with": "Druids and characters who want to create a secure area against living creatures.",
+            "Class Spell List": "Druids"
+        },
+        "Awaken": {
+            "School": "Transmutation",
+            "Casting Time": "8 hours",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (an agate worth at least 1,000 gp, which the spell consumes)",
+            "DC Saving Throw": "None",
+            "Description": "After spending 8 hours touching a Huge or smaller beast or plant, you awaken it to human-like sentience. The awakened creature gains an Intelligence of 10 and can speak one language you know. The creature also gains the ability to perceive its surroundings and communicate with you for 30 days without using spoken language.",
+            "Explanation": "Awaken is a transmutation spell that imbues a Huge or smaller beast or plant with human-like sentience. The awakened creature gains an Intelligence score of 10, the ability to speak one language you know, and heightened awareness for 30 days.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot increases the duration by 30 days for each slot level above 5th.",
+            "Pro-Tip": "Awaken can be used to make a loyal companion or ally out of a previously unintelligent creature, such as a beast or tree.",
+            "Works well with": "Druids, characters who seek to befriend animals or plants, or those interested in creating unique companions.",
+            "Class Spell List": "Bards, Druids"
+        },
         "Bigby's Hand": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -3302,6 +4309,34 @@ dnd_spells = {
             "Pro-Tip": "Position the cloud strategically to block enemy lines of sight, forcing them to move or take damage. It's an excellent way to control chokepoints.",
             "Works well with": "Spells or abilities that manipulate terrain and movement, such as 'Wall of Force' or 'Web.'",
             "Class Spell List": "Sorcerers, Wizards"
+        },
+        "Commune": {
+            "School": "Divination",
+            "Casting Time": "1 minute",
+            "Range": "Self",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (a holy symbol worth at least 25 gp)",
+            "DC Saving Throw": "None",
+            "Description": "You contact your deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You receive a correct answer for each question. Divine beings aren't necessarily omniscient, so you might receive 'unclear' as an answer if the question pertains to information that lies beyond the deity's knowledge.",
+            "Explanation": "Commune is a divination spell that allows you to contact your deity or a divine proxy and ask up to three yes or no questions. You receive correct answers for each question, but the deity's knowledge is not limitless.",
+            "At Higher Levels": "Casting this spell using a spell slot of 6th level or higher allows you to contact more powerful deities, which may have greater knowledge.",
+            "Pro-Tip": "Commune can be a valuable tool for seeking divine guidance or answers to critical questions.",
+            "Works well with": "Clerics and characters seeking divine insights.",
+            "Class Spell List": "Clerics"
+        },
+        "Commune with Nature": {
+            "School": "Divination",
+            "Casting Time": "1 minute",
+            "Range": "Self",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You briefly become one with nature and gain knowledge about the surrounding terrain and creatures. You instantly gain knowledge of up to three facts of your choice about any of the following subjects: terrain and bodies of water, prevalent plants, minerals, animals, or people. This knowledge is accurate and up-to-date as of the time you cast the spell.",
+            "Explanation": "Commune with Nature is a divination spell that connects you with nature, providing knowledge about the surrounding environment, including terrain, flora, fauna, minerals, animals, or people.",
+            "At Higher Levels": "Commune with Nature doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Commune with Nature is a valuable spell for gaining information about your surroundings and making informed decisions in the wilderness.",
+            "Works well with": "Druids and characters who want to understand and navigate natural environments.",
+            "Class Spell List": "Druids, Rangers"
         },
         "Cone of Cold": {
             "School": "Evocation",
@@ -3344,6 +4379,20 @@ dnd_spells = {
             "Pro-Tip": "Use this spell sparingly and carefully, as it can have unpredictable consequences. It's best suited for obtaining rare or esoteric information.",
             "Works well with": "Other divination spells and abilities that enhance communication with otherworldly beings.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
+        },
+        "Contagion": {
+            "School": "Necromancy",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "7 days",
+            "Components": "V, S",
+            "DC Saving Throw": "Constitution",
+            "Description": "Your touch inflicts disease. Make a melee spell attack against a creature you touch. On a hit, you afflict the target with a disease of your choice from the options below. The target must make a Constitution saving throw at the end of each of its turns or suffer the effects of the disease for the duration. If it succeeds on three of these saves, the disease's effects end.",
+            "Explanation": "Contagion is a necromancy spell that allows you to inflict a disease of your choice on a creature you touch. The target must make Constitution saving throws to resist the disease's effects for 7 days.",
+            "At Higher Levels": "Casting this spell using a spell slot of 6th level or higher extends the disease's duration by 7 additional days for each slot level above 5th.",
+            "Pro-Tip": "Contagion can be a potent spell for debilitating foes over an extended period, potentially weakening them significantly.",
+            "Works well with": "Clerics and characters who seek to afflict enemies with debilitating diseases.",
+            "Class Spell List": "Clerics"
         },
         "Control Winds": {
             "School": "Transmutation",
@@ -3415,6 +4464,20 @@ dnd_spells = {
             "Works well with": "Spells that create or manipulate light, such as 'Daylight' or 'Sunburst.'",
             "Class Spell List": "Clerics, Paladins, Sorcerers, Wizards"
         },
+        "Dispel Evil and Good": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (holy water or powdered silver and iron worth at least 25 gp, which the spell consumes)",
+            "DC Saving Throw": "None",
+            "Description": "Shimmering energy surrounds and protects you from fey, undead, and creatures originating from other planes. Make a melee spell attack against a creature you touch. On a hit, you deal 3d8 radiant damage. If the target is an undead or a fiend, it's also paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the paralysis on a success.",
+            "Explanation": "Dispel Evil and Good is an abjuration spell that envelops you in protective energy against certain creatures. It also allows you to make a melee spell attack that deals radiant damage and potentially paralyzes undead or fiends.",
+            "At Higher Levels": "Casting this spell using a spell slot of 6th level or higher increases the damage by 1d8 for each slot level above 5th.",
+            "Pro-Tip": "Dispel Evil and Good is a powerful spell for combating undead and fiends, providing protection and damage.",
+            "Works well with": "Clerics and characters facing undead or fiendish foes.",
+            "Class Spell List": "Clerics"
+        },
         "Dominate Person": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -3471,6 +4534,20 @@ dnd_spells = {
             "Works well with": "Spells or abilities that enhance mobility or scouting.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
         },
+        "Flame Strike": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (a pinch of sulfur)",
+            "DC Saving Throw": "Dexterity",
+            "Description": "A vertical column of divine fire roars down from the heavens and engulfs a location you choose. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on that point must make a Dexterity saving throw, taking 4d6 fire damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one.",
+            "Explanation": "Flame Strike is an evocation spell that summons a column of divine fire to strike a location you choose. It deals both fire and radiant damage to creatures in the area.",
+            "At Higher Levels": "Casting this spell using a spell slot of 6th level or higher increases the damage by 1d6 for each slot level above 5th.",
+            "Pro-Tip": "Flame Strike is a potent area-of-effect spell for dealing damage to multiple enemies in a specific location.",
+            "Works well with": "Clerics and characters who want to rain down divine destruction.",
+            "Class Spell List": "Clerics"
+        },
         "Geas": {
             "School": "Enchantment",
             "Casting Time": "1 Minute",
@@ -3485,6 +4562,34 @@ dnd_spells = {
             "Works well with": "Spells or abilities that enhance your persuasive or controlling abilities.",
             "Class Spell List": "Bards, Clerics, Paladins, Sorcerers, Warlocks, Wizards"
         },
+        "Greater Restoration": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (diamond dust worth at least 100 gp, which the spell consumes)",
+            "DC Saving Throw": "None",
+            "Description": "You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's exhaustion level by one, end one effect that charmed or petrified the target, one curse, including the target's attunement to a cursed magic item, or any reduction to one of the target's ability scores.",
+            "Explanation": "Greater Restoration is an abjuration spell that can remove debilitating conditions or effects from a creature you touch. It can reduce exhaustion, end charm or petrification, remove curses, or restore an ability score that has been reduced.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot has no additional effect.",
+            "Pro-Tip": "Greater Restoration is a powerful spell for curing a wide range of debilitating conditions, making it valuable for healers and support characters.",
+            "Works well with": "Clerics, druids, or any character focused on healing and supporting allies.",
+            "Class Spell List": "Bards, Clerics, Druids, Paladins"
+        },
+        "Hallow": {
+            "School": "Evocation",
+            "Casting Time": "24 hours",
+            "Range": "Touch",
+            "Duration": "Until dispelled",
+            "Components": "V, S, M (herbs, oils, and incense worth at least 1,000 gp, consumed by the spell)",
+            "DC Saving Throw": "None",
+            "Description": "You touch a point and infuse an area around it with holy (or unholy) energy. The affected area becomes hallowed ground, and it takes on one of four properties: • Ward against undead: Undead cannot enter the area. • Blinding radiance: Bright light fills the area, and darkness spells cast within it fail. • Energy protection: Affected creatures gain resistance to a specific energy type. • Exalted magic: Spells cast within the area can't be dispelled or countered.",
+            "Explanation": "Hallow is an evocation spell that infuses an area with holy or unholy energy, creating hallowed ground with various properties. It can ward against undead, create blinding radiance, provide energy protection, or enhance spellcasting.",
+            "At Higher Levels": "Casting this spell at higher levels allows you to affect a larger area with each slot level above 5th.",
+            "Pro-Tip": "Hallow is a versatile spell for consecrating an area to suit different needs, from warding against undead to protecting against dispelling magic.",
+            "Works well with": "Clerics and characters who want to sanctify and protect specific locations.",
+            "Class Spell List": "Clerics"
+        },
         "Hold Monster": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -3498,6 +4603,20 @@ dnd_spells = {
             "Pro-Tip": "Hold Monster is an effective control spell that can neutralize a dangerous enemy for the duration. Use it to lock down key threats in combat.",
             "Works well with": "Spells or abilities that follow up on incapacitated foes, such as coup de grâce attacks or disabling abilities.",
             "Class Spell List": "Bards, Sorcerers, Warlocks, Wizards"
+        },
+        "Holy Weapon": {
+            "School": "Evocation",
+            "Casting Time": "1 bonus action",
+            "Range": "Touch",
+            "Duration": "Concentration, up to 1 hour",
+            "Components": "V, S, M (an exquisite pearl worth at least 1,000 gp, which the spell consumes)",
+            "DC Saving Throw": "None",
+            "Description": "You imbue a weapon you touch with holy energy. For the duration, the weapon becomes a magic weapon with a +2 bonus to attack rolls and damage rolls. It also emits bright light in a 30-foot radius and dim light for an additional 30 feet. If the weapon is not already a magic weapon, it becomes one for the duration.",
+            "Explanation": "Holy Weapon is an evocation spell that enchants a touched weapon with holy energy. The weapon gains a +2 bonus to attack and damage rolls, emits bright light, and becomes a magic weapon if it isn't one already.",
+            "At Higher Levels": "Casting this spell using a spell slot of 6th level or higher increases the bonus to +3 for each slot level above 5th.",
+            "Pro-Tip": "Holy Weapon is a powerful spell for enhancing a weapon and making it more effective against a variety of foes.",
+            "Works well with": "Clerics and characters who rely on melee combat with a specific weapon.",
+            "Class Spell List": "Clerics"
         },
         "Immolation": {
             "School": "Evocation",
@@ -3527,6 +4646,20 @@ dnd_spells = {
             "Works well with": "Spells or abilities that enhance your control over summoned creatures or that protect you from infernal influences.",
             "Class Spell List": "Warlocks, Wizards"
         },
+        "Insect Plague": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "300 feet",
+            "Duration": "Concentration, up to 10 minutes",
+            "Components": "V, S, M (a few grains of sugar, some kernels of grain, and a smear of fat)",
+            "DC Saving Throw": "Constitution",
+            "Description": "You summon a horde of biting, stinging locusts. The swarm spreads in a 20-foot-radius sphere centered on a point you choose within range. The sphere's area becomes difficult terrain, and any creature that starts its turn in the area must make a Constitution saving throw, taking 4d10 piercing damage on a failed save or half as much damage on a successful one.",
+            "Explanation": "Insect Plague is a conjuration spell that summons a swarm of locusts in a 20-foot-radius sphere. Creatures within the area must make Constitution saving throws, suffering piercing damage on a failed save.",
+            "At Higher Levels": "Casting this spell using a spell slot of 6th level or higher increases the damage by 1d10 for each slot level above 5th.",
+            "Pro-Tip": "Insect Plague is a versatile spell for creating an area of denial and dealing damage to enemies within it.",
+            "Works well with": "Clerics and characters who want to control the battlefield and damage multiple foes.",
+            "Class Spell List": "Clerics, Druids"
+        },
         "Legend Lore": {
             "School": "Divination",
             "Casting Time": "10 Minutes",
@@ -3540,6 +4673,34 @@ dnd_spells = {
             "Pro-Tip": "Legend Lore is a valuable tool for solving mysteries, uncovering hidden treasures, or learning about legendary foes. It can provide crucial information to advance your quest or make informed decisions.",
             "Works well with": "Spells or abilities that enhance divination or information-gathering.",
             "Class Spell List": "Bards, Clerics, Wizards"
+        },
+        "Maelstrom": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S, M (a piece of straw and a drop of water)",
+            "DC Saving Throw": "Strength",
+            "Description": "A swirling mass of water forms a 30-foot-radius sphere centered on a point you choose within range. The sphere's area is difficult terrain. Each creature in the area must make a Strength saving throw. On a failed save, a creature takes 6d6 bludgeoning damage and is pulled 10 feet toward the center of the sphere. On a successful save, the creature takes half damage and isn't pulled.",
+            "Explanation": "Maelstrom is an evocation spell that creates a swirling sphere of water, dealing damage and pulling creatures toward its center. Affected creatures must make a Strength saving throw to resist the pull.",
+            "At Higher Levels": "Maelstrom's damage increases by 1d6 for each slot level above 5th.",
+            "Pro-Tip": "Maelstrom is a powerful area control spell, creating difficult terrain and pulling in foes.",
+            "Works well with": "Druids and spellcasters who want to control and damage groups of enemies.",
+            "Class Spell List": "Druids, Sorcerers, Wizards"
+        },
+        "Mass Cure Wounds": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier.",
+            "Explanation": "Mass Cure Wounds is a conjuration spell that radiates a wave of healing energy from a chosen point within range. It can target up to six creatures within a 30-foot-radius sphere, restoring hit points based on 3d8 plus your spellcasting ability modifier.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 6th level or higher, the healing increases. For each slot level above 5th, the spell restores an additional 1d8 hit points.",
+            "Pro-Tip": "Mass Cure Wounds is a potent spell for healing multiple targets simultaneously, making it a valuable support spell in group encounters.",
+            "Works well with": "Clerics, druids, or any character focused on healing and supporting allies.",
+            "Class Spell List": "Clerics, Druids"
         },
         "Mislead": {
             "School": "Illusion",
@@ -3611,6 +4772,20 @@ dnd_spells = {
             "Works well with": "Spells that enhance your ability to command or communicate with summoned creatures.",
             "Class Spell List": "Clerics, Sorcerers, Warlocks, Wizards"
         },
+        "Raise Dead": {
+            "School": "Necromancy",
+            "Casting Time": "1 hour",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (a diamond worth 500 gp, which the spell consumes)",
+            "DC Saving Throw": "None",
+            "Description": "You return a dead creature you touch to life, provided that it has been dead no longer than 10 days. If the creature's soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point.",
+            "Explanation": "Raise Dead is a necromancy spell that allows you to bring a dead creature back to life, as long as it has been deceased for no longer than 10 days. The creature must have a willing soul that is free to return to the body.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Raise Dead is a powerful resurrection spell, often used to bring deceased party members or important NPCs back to life.",
+            "Works well with": "Clerics and characters with a focus on healing and support.",
+            "Class Spell List": "Clerics"
+        },
         "Rary's Telepathic Bond": {
             "School": "Divination",
             "Casting Time": "1 Action (Ritual)",
@@ -3624,6 +4799,20 @@ dnd_spells = {
             "Pro-Tip": "Use this spell to maintain silent communication in situations where speaking aloud is not an option or when secrecy is essential.",
             "Works well with": "Other communication spells, teamwork-based strategies, and espionage scenarios.",
             "Class Spell List": "Bards, Sorcerers, Wizards"
+        },
+        "Reincarnate": {
+            "School": "Transmutation",
+            "Casting Time": "1 hour",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (rare oils and unguents worth 1,000 gp, consumed by the spell)",
+            "DC Saving Throw": "None",
+            "Description": "You touch a deceased humanoid or a piece of a deceased humanoid. Provided that the creature has been dead for no longer than 10 days, the spell forms a new adult body for it and then calls the soul to enter that body. If the target's soul is free and willing, it returns to life with all its memories intact.",
+            "Explanation": "Reincarnate is a transmutation spell that brings a deceased humanoid back to life by forming a new adult body for it. The target's soul must be free and willing to return to life.",
+            "At Higher Levels": "Reincarnate doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Reincarnate is a unique spell for bringing characters back to life and potentially changing their race in the process.",
+            "Works well with": "Druids and characters who seek a distinctive resurrection method.",
+            "Class Spell List": "Druids"
         },
         "Scrying": {
             "School": "Divination",
@@ -3765,6 +4954,20 @@ dnd_spells = {
             "Works well with": "Spells or abilities that complement terrain manipulation and battlefield control tactics.",
             "Class Spell List": "Druids, Sorcerers, Wizards"
         },
+        "Tree Stride": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You can use this transportation ability once per round for the spell's duration.",
+            "Explanation": "Tree Stride is a conjuration spell that allows you to enter a tree and move between trees of the same kind within 500 feet. You can use this ability once per round while the spell lasts.",
+            "At Higher Levels": "Tree Stride doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Tree Stride is an excellent spell for swift and versatile travel within natural environments.",
+            "Works well with": "Druids and characters who want to navigate forests and natural areas effectively.",
+            "Class Spell List": "Druids, Rangers"
+        },
         "Wall of Force": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -3807,7 +5010,20 @@ dnd_spells = {
             "Works well with": "Abilities or spells that complement fortification and battlefield control tactics.",
             "Class Spell List": "Clerics, Druids, Sorcerers, Wizards"
         },
-
+        "Wrath of Nature": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "120 feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "Dexterity",
+            "Description": "You call out to the spirits of nature to rouse the plants and creatures of the area to defend you. A number of spectral vines stretch out from you in a 60-foot radius. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 4d10 bludgeoning damage and is restrained by the vines until the spell ends. On a successful save, the creature takes half damage and isn't restrained.",
+            "Explanation": "Wrath of Nature is an evocation spell that summons spectral vines to damage and restrain creatures in a 60-foot radius. Affected creatures must make a Dexterity saving throw to avoid being restrained.",
+            "At Higher Levels": "Wrath of Nature's damage increases by 1d10 for each slot level above 5th.",
+            "Pro-Tip": "Wrath of Nature is an excellent area control spell, hindering and damaging multiple foes at once.",
+            "Works well with": "Druids and spellcasters who want to control and damage groups of enemies.",
+            "Class Spell List": "Druids"
+        },
     },
     "6th" : {
         "Arcane Gate": {
@@ -3823,6 +5039,34 @@ dnd_spells = {
             "Pro-Tip": "Use Arcane Gate to quickly move your party across great distances or surprise your enemies by appearing from unexpected directions.",
             "Works well with": "Teleportation spells, tactical planning, and ambush strategies.",
             "Class Spell List": "Wizards, Sorcerers"
+        },
+        "Blade Barrier": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "90 feet",
+            "Duration": "Concentration, up to 10 minutes",
+            "Components": "V, S",
+            "DC Saving Throw": "Dexterity",
+            "Description": "You create a vertical wall of whirling blades made of magical energy. The wall appears within range and lasts for the duration. Each creature that starts its turn within 10 feet of the wall must make a Dexterity saving throw, taking 6d10 slashing damage on a failed save or half as much damage on a successful one.",
+            "Explanation": "Blade Barrier is an evocation spell that creates a vertical wall of whirling blades made of magical energy. It deals slashing damage to creatures within 10 feet of the wall at the start of their turn.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 7th level or higher, both the damage and the range of the wall increase.",
+            "Pro-Tip": "Blade Barrier is a powerful spell for controlling an area, dealing damage, and discouraging enemy movement.",
+            "Works well with": "Clerics and characters who want to create a defensive barrier or control the battlefield.",
+            "Class Spell List": "Clerics"
+        },
+        "Bones of the Earth": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "120 feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S, M (a pinch of dirt)",
+            "DC Saving Throw": "Strength",
+            "Description": "You cause a tremor in the ground in a 60-foot cube within range. Each creature in that area must make a Strength saving throw. On a failed save, a creature takes 6d6 bludgeoning damage and is knocked prone. On a successful save, the creature takes half damage and isn't knocked prone. The ground in the area becomes difficult terrain until the spell ends.",
+            "Explanation": "Bones of the Earth is a transmutation spell that creates a tremor in the ground, damaging and potentially knocking prone creatures in a 60-foot cube. The affected area also becomes difficult terrain.",
+            "At Higher Levels": "Bones of the Earth's damage increases by 2d6 for each slot level above 6th.",
+            "Pro-Tip": "Bones of the Earth is an effective spell for crowd control and creating difficult terrain to impede movement.",
+            "Works well with": "Druids and spellcasters who want to control the battlefield and damage multiple foes.",
+            "Class Spell List": "Druids, Sorcerers, Wizards"
         },
         "Chain Lightning": {
             "School": "Evocation",
@@ -3851,6 +5095,20 @@ dnd_spells = {
             "Pro-Tip": "Use Circle of Death when facing hordes of weaker enemies or to weaken a group of foes before engaging them in combat.",
             "Works well with": "Spells that create undead minions, abilities that reduce enemies' Constitution saving throws, and battlefield control tactics.",
             "Class Spell List": "Sorcerers, Wizards, Warlocks"
+        },
+        "Conjure Fey": {
+            "School": "Conjuration",
+            "Casting Time": "1 minute",
+            "Range": "90 feet",
+            "Duration": "Concentration, up to 1 hour",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You summon a fey creature of challenge rating 6 or lower, or you summon two fey creatures of challenge rating 4 or lower. The summoned creatures appear in unoccupied spaces within range and are friendly to you and your companions. Roll initiative for the summoned creatures, which have their own turns. They obey any verbal commands you issue to them.",
+            "Explanation": "Conjure Fey is a conjuration spell that summons one fey creature of challenge rating 6 or lower, or two fey creatures of challenge rating 4 or lower. The summoned creatures are friendly and follow your commands.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 7th level or higher, you can summon fey creatures with higher challenge ratings.",
+            "Pro-Tip": "Conjure Fey provides extra combat support by summoning fey creatures to aid you and your party.",
+            "Works well with": "Druids and spellcasters who want to bolster their forces in battle.",
+            "Class Spell List": "Druids, Warlocks, Wizards"
         },
         "Contingency": {
             "School": "Evocation",
@@ -3922,6 +5180,20 @@ dnd_spells = {
             "Works well with": "Valuable or essential items that you want to keep safe and accessible.",
             "Class Spell List": "Wizards"
         },
+        "Druid Grove": {
+            "School": "Abjuration",
+            "Casting Time": "10 minutes",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (mistletoe, holly berries, and a scented flower)",
+            "DC Saving Throw": "None",
+            "Description": "You transform a part of land into a natural sanctuary called a druid grove. The grove can be up to 120 feet in diameter and has a magical effect based on the terrain where it's created. The grove's magic can enhance plant growth, purify water and air, or provide cover and defense to creatures within it.",
+            "Explanation": "Druid Grove is an abjuration spell that allows you to transform a portion of land into a magical sanctuary with various beneficial effects based on the terrain.",
+            "At Higher Levels": "Druid Grove doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Druid Grove is a versatile spell that can provide valuable benefits to your party when strategically placed.",
+            "Works well with": "Druids and characters who want to create safe and beneficial environments.",
+            "Class Spell List": "Druids"
+        },
         "Eyebite": {
             "School": "Necromancy",
             "Casting Time": "1 Action",
@@ -3935,6 +5207,20 @@ dnd_spells = {
             "Pro-Tip": "Choose the effect that suits the situation best. Panic can disrupt enemy formations, sickness can weaken foes, and sleep can provide opportunities for stealthy actions.",
             "Works well with": "Crowd control spells, spells that grant advantage on Wisdom saving throws, and abilities that enhance your own Wisdom saving throws.",
             "Class Spell List": "Sorcerers, Wizards, Warlocks"
+        },
+        "Find the Path": {
+            "School": "Divination",
+            "Casting Time": "1 minute",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 day",
+            "Components": "V, S, M (a set of divinatory tools—such as bones, ivory sticks, cards, teeth, or carved runes—worth 100 gp and an object from the location you wish to find)",
+            "DC Saving Throw": "None",
+            "Description": "This spell allows you to find the shortest, most direct physical route to a specific fixed location that you are familiar with on the same plane of existence. If the location is on another plane of existence, this spell fails.",
+            "Explanation": "Find the Path is a divination spell that helps you find the shortest and most direct route to a specific location you are familiar with on the same plane of existence. It requires divinatory tools and an object from the target location.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot increases the duration by 1 day for each slot level above 6th.",
+            "Pro-Tip": "Find the Path can be valuable for navigating complex terrain or reaching a distant and familiar destination efficiently.",
+            "Works well with": "Characters who need to find specific locations or travel long distances quickly.",
+            "Class Spell List": "Clerics"
         },
         "Fizban's Platinum Shield": {
             "School": "Abjuration",
@@ -3963,6 +5249,20 @@ dnd_spells = {
             "Pro-Tip": "Use this spell to neutralize a dangerous enemy or protect your party by rendering foes immobile.",
             "Works well with": "Other control and disabling spells.",
             "Class Spell List": "Wizards, Sorcerers"
+        },
+        "Forbiddance": {
+            "School": "Abjuration",
+            "Casting Time": "6 hours",
+            "Range": "Touch",
+            "Duration": "1 day",
+            "Components": "V, S, M (a sprinkling of holy water, rare incense, and powdered ruby worth at least 1,000 gp)",
+            "DC Saving Throw": "None",
+            "Description": "You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can't teleport into the area or use portals, such as those created by the gate spell, to enter the area. The spell proofs the area against planar travel as well, preventing creatures from accessing the area via the Astral Plane, Ethereal Plane, or similar plane-shifting magic.",
+            "Explanation": "Forbiddance is an abjuration spell that creates a ward against magical travel in a specified area, preventing teleportation, portal usage, and planar travel.",
+            "At Higher Levels": "Using a spell slot of 7th level or higher extends the duration to 30 days for each slot level above 6th.",
+            "Pro-Tip": "Forbiddance is a potent spell for securing a location against unwanted magical intrusion and planar travel.",
+            "Works well with": "Clerics and characters tasked with safeguarding specific areas.",
+            "Class Spell List": "Clerics"
         },
         "Globe of Invulnerability": {
             "School": "Abjuration",
@@ -4002,6 +5302,48 @@ dnd_spells = {
             "Pro-Tip": "Use this spell to set up elaborate traps and defenses within a designated area.",
             "Works well with": "Other protective and alarm spells.",
             "Class Spell List": "Bards, Wizards"
+        },
+        "Harm": {
+            "School": "Necromancy",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "Constitution",
+            "Description": "You unleash a virulent disease on a creature that you can see within range. The target must make a Constitution saving throw. On a failed save, it takes 14d6 necrotic damage, or half as much damage on a successful save. The damage can't reduce the target's hit points below 1.",
+            "Explanation": "Harm is a necromancy spell that inflicts necrotic damage by unleashing a virulent disease on a target. The damage can't reduce the target's hit points below 1.",
+            "At Higher Levels": "Casting this spell using a spell slot of 7th level or higher increases the damage.",
+            "Pro-Tip": "Harm is a potent offensive spell that can deal significant damage to a single target.",
+            "Works well with": "Clerics and characters focused on dealing necrotic damage.",
+            "Class Spell List": "Clerics"
+        },
+        "Heal": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points. This spell also ends blindness, deafness, and any diseases affecting the target. This spell has no effect on undead or constructs.",
+            "Explanation": "Heal is an evocation spell that allows you to restore 70 hit points to a creature within 60 feet. It also cures blindness, deafness, and diseases affecting the target.",
+            "At Higher Levels": "Casting this spell using a spell slot of 7th level or higher increases the healing.",
+            "Pro-Tip": "Heal is a potent healing spell that can fully restore a creature's hit points and remove debilitating conditions.",
+            "Works well with": "Clerics and characters dedicated to healing.",
+            "Class Spell List": "Clerics, Druids"
+        },
+        "Heroes' Feast": {
+            "School": "Conjuration",
+            "Casting Time": "10 minutes",
+            "Range": "30 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (a gem-encrusted bowl worth at least 1,000 gp, which the spell consumes)",
+            "DC Saving Throw": "None",
+            "Description": "You bring forth a great feast, including magnificent food and drink. The feast takes 1 hour to consume and provides several benefits. First, the feast cures all diseases and poison afflicting those who partake of it. Second, each participant gains 2d10 temporary hit points, and its hit point maximum also increases by 2d10. These benefits last for 24 hours.",
+            "Explanation": "Heroes' Feast is a conjuration spell that conjures a magnificent feast, curing diseases and poison and granting temporary hit points and increased hit point maximum to participants.",
+            "At Higher Levels": "Using a spell slot of 7th level or higher increases the hit points gained by 1d10 for each slot level above 6th.",
+            "Pro-Tip": "Heroes' Feast is a celebratory spell that provides numerous benefits, making it ideal for preparing for challenging encounters or celebrations.",
+            "Works well with": "Clerics and characters looking to enhance their party's resilience.",
+            "Class Spell List": "Clerics, Druids"
         },
         "Investiture of Flame": {
             "School": "Transmutation",
@@ -4137,6 +5479,34 @@ dnd_spells = {
             "Works well with": "Other control spells and abilities to keep the target incapacitated and vulnerable.",
             "Class Spell List": "Bards, Wizards"
         },
+        "Planar Ally": {
+            "School": "Conjuration",
+            "Casting Time": "10 minutes",
+            "Range": "60 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You beseech an otherworldly entity for aid. The entity must be known to you, and it might require a payment in return. Make an Intelligence (Arcana) check to determine if you succeed. The DM chooses the nature of the entity, which might be celestial, fey, or fiendish, or something else. The entity arrives in 1d6 rounds to aid you in the best way it can.",
+            "Explanation": "Planar Ally is a conjuration spell that allows you to beseech an otherworldly entity for aid. The entity's nature and assistance depend on the DM's choice.",
+            "At Higher Levels": "Using a spell slot of 7th level or higher improves your chances of success on the Intelligence (Arcana) check.",
+            "Pro-Tip": "Planar Ally is a versatile spell for seeking aid from otherworldly beings in various situations.",
+            "Works well with": "Clerics and characters in need of extraplanar assistance.",
+            "Class Spell List": "Clerics"
+        },
+        "Primordial Ward": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You tap into the primordial forces of the Elemental Planes to protect yourself. For the duration, you have resistance to acid, cold, fire, lightning, and thunder damage.",
+            "Explanation": "Primordial Ward is an abjuration spell that grants you resistance to a variety of elemental damage types, including acid, cold, fire, lightning, and thunder.",
+            "At Higher Levels": "Primordial Ward doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Primordial Ward is an excellent spell for bolstering your resistance against elemental threats.",
+            "Works well with": "Druids and characters facing elemental damage threats.",
+            "Class Spell List": "Druids"
+        },
         "Programmed Illusion": {
             "School": "Illusion",
             "Casting Time": "1 Action",
@@ -4193,6 +5563,20 @@ dnd_spells = {
             "Works well with": "Other radiant spells and abilities to harness the power of light against your foes.",
             "Class Spell List": "Druids, Sorcerers, Wizards"
         },
+        "Transport via Plants": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "10 feet",
+            "Duration": "1 round",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You create a magical link between two living plant creatures within 10 feet of each other. This link allows instantaneous travel between the two plants for the duration. The plants must be Large or larger and must be of the same kind.",
+            "Explanation": "Transport via Plants is a conjuration spell that creates a magical connection between two large or larger living plants, enabling instant travel between them for the duration of the spell.",
+            "At Higher Levels": "Transport via Plants doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Transport via Plants can provide a quick means of travel or escape when you have access to suitable plant life.",
+            "Works well with": "Druids and characters who need rapid transportation through natural environments.",
+            "Class Spell List": "Druids"
+        },
         "Tenser's Transformation": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -4235,9 +5619,64 @@ dnd_spells = {
             "Works well with": "Other spells and abilities that manipulate the terrain or create barriers.",
             "Class Spell List": "Druids, Sorcerers, Wizards"
         },
-
+        "Wall of Thorns": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "120 feet",
+            "Duration": "Concentration, up to 10 minutes",
+            "Components": "V, S",
+            "DC Saving Throw": "Dexterity",
+            "Description": "You create a wall of tough, pliable, tangled brush bristling with needle-sharp thorns. The wall appears within range and lasts for the duration. Each creature that starts its turn within 10 feet of the wall or moves into the wall's space must make a Dexterity saving throw or take 7d8 piercing damage on a failed save, or half as much damage on a successful one.",
+            "Explanation": "Wall of Thorns is a conjuration spell that creates a formidable wall of thorny brush. Creatures near or moving into the wall's space risk taking significant piercing damage.",
+            "At Higher Levels": "Wall of Thorns' damage increases by 2d8 for each slot level above 6th.",
+            "Pro-Tip": "Wall of Thorns is a potent defensive spell for creating barriers and dealing damage to intruders.",
+            "Works well with": "Druids and characters who want to control the battlefield and protect an area.",
+            "Class Spell List": "Druids, Rangers"
+        },
+        "Wind Walk": {
+            "School": "Transmutation",
+            "Casting Time": "1 minute",
+            "Range": "Touch",
+            "Duration": "8 hours",
+            "Components": "V, S, M (fire and holy water)",
+            "DC Saving Throw": "None",
+            "Description": "You and up to ten willing creatures you touch become misty and gain a flying speed of 300 feet. While in this misty form, you can't take physical actions, speak, or manipulate objects. You are undetectable by nonmagical senses.",
+            "Explanation": "Wind Walk is a transmutation spell that transforms you and others into mist, granting a high flying speed and near-invisibility for the duration.",
+            "At Higher Levels": "Wind Walk doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Wind Walk is an excellent spell for swift and stealthy aerial travel.",
+            "Works well with": "Druids and adventurers seeking rapid and concealed movement through the air.",
+            "Class Spell List": "Druids"
+        },
+        "Word of Recall": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "5 feet",
+            "Duration": "Instantaneous",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "You and up to five willing creatures within 5 feet of you instantly teleport to a previously designated sanctuary. You and any creatures that teleport with you appear in the nearest unoccupied space to the spot you designated when you prepared your sanctuary (see the sanctuary spell). If you cast this spell without first preparing a sanctuary, the spell has no effect.",
+            "Explanation": "Word of Recall is a conjuration spell that allows you and up to five willing creatures to teleport to a designated sanctuary. The sanctuary must be prepared in advance.",
+            "At Higher Levels": "Using a spell slot of 7th level or higher allows you to bring additional creatures with you.",
+            "Pro-Tip": "Word of Recall is an excellent spell for quickly escaping danger or returning to a safe location.",
+            "Works well with": "Clerics and characters who want a reliable escape option.",
+            "Class Spell List": "Clerics"
+        },
     },
     "7th" : {
+        "Conjure Celestial": {
+            "School": "Conjuration",
+            "Casting Time": "1 minute",
+            "Range": "90 feet",
+            "Duration": "1 hour",
+            "Components": "V, S, M (a jeweled holy symbol worth at least 1,000 gp)",
+            "DC Saving Throw": "None",
+            "Description": "You summon a celestial of challenge rating 4 or lower, which appears in an unoccupied space that you can see within range. The celestial acts as your ally and follows your verbal commands. It remains for 1 hour, until it drops to 0 hit points, or until you dismiss it as an action.",
+            "Explanation": "Conjure Celestial is a conjuration spell that allows you to summon a celestial creature with a challenge rating of 4 or lower to act as your ally. You can command it verbally, and it remains for 1 hour or until dismissed or reduced to 0 hit points.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 7th level or higher, you can summon a celestial of challenge rating 5 or lower.",
+            "Pro-Tip": "Conjure Celestial is a powerful spell for bringing a celestial ally into the battle to aid you and your party.",
+            "Works well with": "Clerics and characters who seek celestial assistance.",
+            "Class Spell List": "Clerics"
+        },
         "Create Magen": {
             "School": "Transmutation",
             "Casting Time": "1 Hour",
@@ -4280,6 +5719,20 @@ dnd_spells = {
             "Works well with": "Spells that enhance fire damage, such as 'Elemental Bane' or 'Fireball'.",
             "Class Spell List": "Sorcerers, Wizards"
         },
+        "Divine Word": {
+            "School": "Evocation",
+            "Casting Time": "1 bonus action",
+            "Range": "30 feet",
+            "Duration": "Instantaneous",
+            "Components": "V",
+            "DC Saving Throw": "Charisma",
+            "Description": "You speak a word of power that can compel creatures to be cowed. Each creature of your choice within range that hears you must make a Charisma saving throw. On a failed save, a creature is either deafened for 1 minute or until it takes damage, or it is frightened for 1 minute. A deafened creature is frightened if it can see the source of the sound.",
+            "Explanation": "Divine Word is an evocation spell that allows you to speak a word of power, compelling creatures within range to make a Charisma saving throw. Failure results in deafness or fear, with a frightened creature becoming deafened if it can see the source of the sound.",
+            "At Higher Levels": "Using a spell slot of 8th level or higher increases the range to 60 feet for each slot level above 7th.",
+            "Pro-Tip": "Divine Word is a potent spell for controlling and disabling multiple creatures with a single word of power.",
+            "Works well with": "Clerics and characters focused on crowd control.",
+            "Class Spell List": "Clerics"
+        },
         "Draconic Transformation": {
             "School": "Transmutation",
             "Casting Time": "1 Bonus Action",
@@ -4321,6 +5774,20 @@ dnd_spells = {
             "Pro-Tip": "Target creatures with lower Constitution saves to maximize the chance of creating undead minions.",
             "Works well with": "Spells that control or bolster undead creatures, such as 'Animate Dead' or 'Control Undead'.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
+        },
+        "Fire Storm": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "150 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "Dexterity",
+            "Description": "You choose a location you can see within range and create a rain of fire that deals 7d10 fire damage to each creature within a 10-foot cube centered on that location. The damage ignites flammable objects in the area that aren't being worn or carried.",
+            "Explanation": "Fire Storm is an evocation spell that allows you to create a rain of fire at a location you can see within 150 feet. It deals substantial fire damage to creatures in the area and ignites flammable objects.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 8th level or higher, the damage increases by 2d10 for each slot level above 7th.",
+            "Pro-Tip": "Fire Storm is a devastating area-of-effect spell for dealing fire damage to a group of enemies or incinerating obstacles.",
+            "Works well with": "Clerics and characters who want to bring the heat to their enemies.",
+            "Class Spell List": "Clerics, Sorcerers"
         },
         "Forcecage": {
             "School": "Evocation",
@@ -4392,7 +5859,7 @@ dnd_spells = {
             "Works well with": "Divination spells to gather information about the target plane, and protective spells to safeguard against potential dangers.",
             "Class Spell List": "Clerics, Sorcerers, Warlocks, Wizards"
         },
-        "Power Word: Pain": {
+        "Power Word - Pain": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
             "Range": "60 feet",
@@ -4400,7 +5867,7 @@ dnd_spells = {
             "Components": "V",
             "DC Saving Throw": "N/A",
             "Description": "You utter a word of power that causes intense pain to a creature you can see within range. The target takes psychic damage equal to its current hit points minus 100 (no effect if the target has 100 hit points or fewer).",
-            "Explanation": "Power Word: Pain is a high-level spell that inflicts excruciating pain on a target. However, it only affects creatures with more than 100 hit points, making it effective against powerful foes.",
+            "Explanation": "Power Word - Pain is a high-level spell that inflicts excruciating pain on a target. However, it only affects creatures with more than 100 hit points, making it effective against powerful foes.",
             "At Higher Levels": "N/A",
             "Pro-Tip": "Use this spell to finish off a high-health enemy or weaken a formidable opponent. It can be a game-changer in battles against creatures with substantial hit points.",
             "Works well with": "Other damage-dealing spells to maximize damage output and crowd control spells to incapacitate enemies.",
@@ -4433,6 +5900,34 @@ dnd_spells = {
             "Pro-Tip": "Use Project Image to scout dangerous locations, negotiate with distant allies, or engage in covert operations. Protect your physical body while your image is active.",
             "Works well with": "Illusion spells for added disguise and misdirection, divination spells to gather information remotely, and defensive spells to protect your physical body.",
             "Class Spell List": "Bards, Sorcerers, Wizards"
+        },
+        "Regenerate": {
+            "School": "Transmutation",
+            "Casting Time": "1 minute",
+            "Range": "Touch",
+            "Duration": "1 hour",
+            "Components": "V, S, M (a prayer wheel and holy water)",
+            "DC Saving Throw": "None",
+            "Description": "You touch a creature and stimulate its natural healing ability. The target regains 4d8 + 15 hit points, and for the duration of the spell, the target regains 1 hit point at the start of each of its turns (10 hit points each minute). If the creature is missing any vital body parts, the spell regenerates them over the duration, but this process takes 2 minutes. As long as you have a part of the creature's body, such as a limb, hair, or blood, the creature can be targeted even if it's not present.",
+            "Explanation": "Regenerate is a transmutation spell that enhances a creature's natural healing ability. It provides an initial burst of hit points and allows the target to regain hit points at the start of each turn for the duration. It can also regenerate missing body parts over time.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Regenerate is a potent healing spell that can restore a significant amount of hit points and even regrow missing body parts over time.",
+            "Works well with": "Clerics, druids, and characters focused on healing and restoration.",
+            "Class Spell List": "Clerics, Druids"
+        },
+        "Resurrection": {
+            "School": "Necromancy",
+            "Casting Time": "1 hour",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (a diamond worth at least 1,000 gp, which the spell consumes)",
+            "DC Saving Throw": "None",
+            "Description": "You touch a dead creature that has been dead for no more than a century, that didn't die of old age, and that isn't undead. If its soul is free and willing, the target returns to life with all its hit points. This spell neutralizes any poisons and cures nonmagical diseases afflicting the creature when it died. It doesn't restore missing body parts.",
+            "Explanation": "Resurrection is a necromancy spell that allows you to bring a dead creature back to life, as long as it has been deceased for no more than a century, died of non-old age causes, and is not undead. The creature's soul must be willing and free to return to its body.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Resurrection is a powerful spell for bringing the dead back to life, but it doesn't restore missing body parts. It can also cure poisons and nonmagical diseases the creature had when it died.",
+            "Works well with": "Clerics and characters with a focus on healing and resurrection.",
+            "Class Spell List": "Clerics"
         },
         "Reverse Gravity": {
             "School": "Transmutation",
@@ -4504,6 +5999,20 @@ dnd_spells = {
             "Works well with": "Divination spells to gather information about the destination, protective spells to guard against mishaps, and spells that enhance your ability to explore the target area.",
             "Class Spell List": "Sorcerers, Wizards"
         },
+        "Temple of the Gods": {
+            "School": "Conjuration",
+            "Casting Time": "1 minute",
+            "Range": "300 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (a holy symbol worth at least 500 gp)",
+            "DC Saving Throw": "None",
+            "Description": "You cause a temple to shimmer into existence on ground you can see within range. The temple remains for the duration, and it is dedicated to a god of your choice. The temple has a 60-foot square base and is 60 feet tall with a central spire. It is made from a material that is appropriate to the god's themes and desires.",
+            "Explanation": "Temple of the Gods is a conjuration spell that allows you to create a temple dedicated to a chosen god. The temple's appearance and features are influenced by the chosen deity.",
+            "At Higher Levels": "Casting this spell using a spell slot of 9th level increases the temple's size to a 120-foot square base and 120 feet tall with a central spire.",
+            "Pro-Tip": "Temple of the Gods is a unique spell for creating a divine sanctuary, often used for religious rituals and ceremonies.",
+            "Works well with": "Clerics and characters who wish to manifest their deity's presence.",
+            "Class Spell List": "Clerics"
+        },
         "Tether Essence": {
             "School": "Necromancy D",
             "Casting Time": "1 Action",
@@ -4548,6 +6057,20 @@ dnd_spells = {
             "Pro-Tip": "Use this spell against groups of foes, especially those vulnerable to necrotic damage. It's also effective for decimating plant-based enemies or creating dramatic environmental effects.",
             "Works well with": "Other necromantic spells, spells that create difficult terrain, and crowd control spells.",
             "Class Spell List": "Sorcerers, Wizards, Warlocks"
+        },
+        "Animal Shapes": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "30 feet",
+            "Duration": "Concentration, up to 24 hours",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You transform up to ten willing creatures you can see within range into beasts of your choice. The chosen creatures assume the form of beasts with a challenge rating of 4 or lower. Each target's game statistics are replaced by the statistics of the chosen beast. They retain their alignment and personality.",
+            "Explanation": "Animal Shapes is a transmutation spell that transforms willing creatures into beasts with a challenge rating of 4 or lower. The affected creatures assume the statistics of their chosen beast.",
+            "At Higher Levels": "Animal Shapes doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Animal Shapes can turn your party into a pack of beasts, granting unique abilities and enhancing versatility.",
+            "Works well with": "Druids and characters who want to adapt to different situations by becoming beasts.",
+            "Class Spell List": "Druids"
         },
         "Antimagic Field": {
             "School": "Abjuration",
@@ -4647,6 +6170,20 @@ dnd_spells = {
             "Works well with": "Charm spells, illusion spells, and spells that manipulate emotions.",
             "Class Spell List": "Wizards, Sorcerers, Bards"
         },
+        "Earthquake": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "500 feet",
+            "Duration": "1 minute",
+            "Components": "V, S, M (a pinch of dirt)",
+            "DC Saving Throw": "Strength",
+            "Description": "You create a seismic disturbance at a point on the ground that you can see within range. The area becomes difficult terrain. Each creature on the ground that is concentrating must make a Strength saving throw. On a failed save, a creature's concentration is broken, and it falls prone.",
+            "Explanation": "Earthquake is an evocation spell that creates a seismic disturbance, turning the ground into difficult terrain. It also forces creatures concentrating on spells to make Strength saving throws to maintain concentration, potentially causing them to fall prone.",
+            "At Higher Levels": "Casting this spell using a spell slot of 7th level or higher increases the range by 500 feet for each slot level above 6th.",
+            "Pro-Tip": "Earthquake is a potent area denial spell that can disrupt enemy spellcasters and impede movement in battle.",
+            "Works well with": "Characters seeking to control the battlefield and disrupt enemy plans.",
+            "Class Spell List": "Clerics, Druids, Sorcerers, Wizards"
+        },
         "Feeblemind": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -4660,6 +6197,34 @@ dnd_spells = {
             "Pro-Tip": "Use this spell to neutralize powerful spellcasters or intelligent foes. It can severely cripple their abilities, making them easy targets for capture or further manipulation.",
             "Works well with": "Dispel magic, spells that target mental abilities, and spells that restrain or incapacitate.",
             "Class Spell List": "Wizards, Sorcerers, Bards"
+        },
+        "Glibness": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "1 hour",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "Until the spell ends, when you make a Charisma check, you can replace the number you roll with a 15. Additionally, no matter what you say, magic that would determine if you are telling the truth indicates that you are being truthful.",
+            "Explanation": "Glibness is a transmutation spell that enhances your ability to deceive and manipulate with charisma. It allows you to replace the roll of a Charisma check with a 15 and makes magical truth-detection spells indicate that you are being truthful.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Glibness is a powerful spell for characters who need to excel at persuasion, deception, or social manipulation. It makes you exceptionally convincing and difficult to detect when lying.",
+            "Works well with": "Characters who rely on charisma-based skills, such as bards or rogues specializing in deception.",
+            "Class Spell List": "Bards, Warlocks"
+        },
+        "Holy Aura": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "Self (30-foot radius)",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S, M (a tiny reliquary worth 1,000 gp)",
+            "DC Saving Throw": "None",
+            "Description": "Divine light washes out from you and coalesces in a soft radiance in a 30-foot radius around you. Creatures of your choice in that radius when you cast this spell shed dim light in a 5-foot radius and have advantage on all saving throws, and other creatures have disadvantage on attack rolls against them until the spell ends.",
+            "Explanation": "Holy Aura is an abjuration spell that emits divine light in a 30-foot radius around you. Creatures you choose within this area gain several benefits, including advantage on saving throws, while other creatures have disadvantage on attack rolls against them.",
+            "At Higher Levels": "Casting this spell using a spell slot of 9th level increases the duration to 10 minutes for each slot level above 8th.",
+            "Pro-Tip": "Holy Aura is a powerful protective spell that can significantly bolster the defenses of you and your allies.",
+            "Works well with": "Clerics and characters focused on protection and support.",
+            "Class Spell List": "Clerics, Paladins"
         },
         "Illusory Dragon": {
             "School": "Illusion",
@@ -4745,7 +6310,7 @@ dnd_spells = {
             "Works well with": "Spells that provide protection or wards against specific types of damage or conditions.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-        "Power Word: Stun": {
+        "Power Word - Stun": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
             "Range": "60 Feet",
@@ -4753,10 +6318,10 @@ dnd_spells = {
             "Components": "V, S",
             "DC Saving Throw": "N/A",
             "Description": "You utter a single word of power, targeting a creature with 150 hit points or fewer. The target must make a Constitution saving throw or be stunned until the end of your next turn.",
-            "Explanation": "Power Word: Stun is a potent spell that can incapacitate a weakened enemy with low hit points. It's particularly effective against foes that are close to defeat.",
+            "Explanation": "Power Word - Stun is a potent spell that can incapacitate a weakened enemy with low hit points. It's particularly effective against foes that are close to defeat.",
             "At Higher Levels": "N/A",
-            "Pro-Tip": "Save Power Word: Stun for moments when you need to disable an opponent quickly, especially one with low hit points remaining.",
-            "Works well with": "Spells or abilities that can weaken or deal damage to enemies before using Power Word: Stun.",
+            "Pro-Tip": "Save Power Word - Stun for moments when you need to disable an opponent quickly, especially one with low hit points remaining.",
+            "Works well with": "Spells or abilities that can weaken or deal damage to enemies before using Power Word - Stun.",
             "Class Spell List": "Sorcerers, Wizards"
         },
         "Reality Break": {
@@ -4801,7 +6366,20 @@ dnd_spells = {
             "Works well with": "Spells or abilities that involve discreet communication or espionage.",
             "Class Spell List": "Bards, Sorcerers, Wizards"
         },
-
+        "Tsunami": {
+            "School": "Conjuration",
+            "Casting Time": "1 minute",
+            "Range": "300 feet",
+            "Duration": "6 rounds",
+            "Components": "V, S",
+            "DC Saving Throw": "Strength",
+            "Description": "You create a massive wave of water that crashes down on an area within range. The tsunami is 300 feet long, 300 feet wide, and 50 feet tall. Each creature in the area must make a Strength saving throw or take 6d10 bludgeoning damage and be knocked prone. On a successful save, a creature takes half damage and isn't knocked prone.",
+            "Explanation": "Tsunami is a conjuration spell that summons a colossal wave of water, dealing massive bludgeoning damage to creatures in its path and potentially knocking them prone.",
+            "At Higher Levels": "Tsunami's damage increases by 2d10 for each slot level above 8th.",
+            "Pro-Tip": "Tsunami is a devastating area-of-effect spell that can wreak havoc on enemy forces and create formidable obstacles.",
+            "Works well with": "Druids and spellcasters who want to control the battlefield with destructive aquatic power.",
+            "Class Spell List": "Druids, Sorcerers, Wizards"
+        },
     },
     "9th" : {
         "Astral Projection": {
@@ -4817,6 +6395,20 @@ dnd_spells = {
             "Pro-Tip": "Be cautious when using this spell, as your physical bodies are vulnerable while you are on the Astral Plane.",
             "Works well with": "Other planar travel and exploration spells.",
             "Class Spell List": "Clerics, Wizards"
+        },
+        "Blade of Disaster": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You create a shimmering, sword-like plane of force that hovers within your range for the duration. The sword is 5 feet wide, 30 feet long, and 3 feet thick. It hovers, immobile, at a point you choose within range. You can make a melee spell attack against any creature within 5 feet of the sword. On a hit, the target takes 4d12 force damage.",
+            "Explanation": "Blade of Disaster is an evocation spell that conjures a massive, immobile sword-like plane of force. You can make melee spell attacks with it, dealing significant force damage on a hit.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 8th level or higher, the damage increases by 2d12 for each slot level above 7th.",
+            "Pro-Tip": "Blade of Disaster is a formidable spell for dealing massive melee spell damage to nearby foes.",
+            "Works well with": "Sorcerers and spellcasters who want to wield a devastating magical sword.",
+            "Class Spell List": "Sorcerers, Wizards"
         },
         "Foresight": {
             "School": "Divination",
@@ -4874,6 +6466,20 @@ dnd_spells = {
             "Works well with": "Other protective spells and abilities.",
             "Class Spell List": "Sorcerers, Wizards"
         },
+        "Mass Heal": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "60 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "A flood of healing energy flows from you into injured creatures nearby. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within range. The maximum number of hit points restored to each creature is equal to its hit point maximum.",
+            "Explanation": "Mass Heal is an evocation spell that channels a flood of healing energy to restore a total of 700 hit points to injured creatures within 60 feet. You can distribute these hit points as you choose among the targets.",
+            "At Higher Levels": "Casting this spell using a spell slot of 10th level or higher increases the total number of hit points restored by 10 for each slot level above 9th.",
+            "Pro-Tip": "Mass Heal is an incredibly potent healing spell, capable of saving your entire party from the brink of defeat.",
+            "Works well with": "Clerics and characters focused on healing and support.",
+            "Class Spell List": "Clerics"
+        },
         "Mass Polymorph": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -4902,7 +6508,21 @@ dnd_spells = {
             "Works well with": "Other area-of-effect damage spells and crowd control.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-        "Power Word: Kill": {
+        "Power Word - Heal": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "A wave of healing energy washes over a creature you touch. The target regains all its hit points. If the creature is charmed, frightened, paralyzed, or stunned, the condition ends. If the creature is prone, it can use its reaction to stand up.",
+            "Explanation": "Power Word - Heal is an evocation spell that instantly restores all hit points to a creature you touch. It also ends certain debilitating conditions, such as charm, fear, paralysis, or stunning. If the creature is prone, it can use its reaction to stand up.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot does not change its effects.",
+            "Pro-Tip": "Power Word - Heal is a tremendously powerful spell that can instantly revive and restore a creature to full health. It's especially useful in dire situations when a character is near death.",
+            "Works well with": "Characters with the ability to touch allies in close combat and those who want to remove debilitating conditions quickly.",
+            "Class Spell List": "Clerics, Sorcerers, Wizards"
+        },
+        "Power Word - Kill": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
             "Range": "60 Feet",
@@ -4910,10 +6530,10 @@ dnd_spells = {
             "Components": "V",
             "DC Saving Throw": "None",
             "Description": "You utter a word of power that can instantly kill a creature with 100 hit points or fewer. If the target has more than 100 hit points, it is unaffected.",
-            "Explanation": "Power Word: Kill is a deadly enchantment spell that can instantly slay a creature with 100 hit points or fewer. It does not require a saving throw.",
+            "Explanation": "Power Word - Kill is a deadly enchantment spell that can instantly slay a creature with 100 hit points or fewer. It does not require a saving throw.",
             "At Higher Levels": "N/A",
             "Pro-Tip": "This spell is a reliable way to eliminate low-health enemies, but it has a hit point threshold.",
-            "Works well with": "Other damaging spells to weaken targets before using Power Word: Kill.",
+            "Works well with": "Other damaging spells to weaken targets before using Power Word - Kill.",
             "Class Spell List": "Sorcerers, Wizards"
         },
         "Prismatic Wall": {
@@ -4972,6 +6592,20 @@ dnd_spells = {
             "Works well with": "Spells that enhance your chosen form, such as enhancing your new abilities or granting resistances.",
             "Class Spell List": "Sorcerers, Wizards, Druids"
         },
+        "Storm of Vengeance": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "Sight",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "Varies",
+            "Description": "You create an enormous storm of elemental fury in the area you can see within range. The storm's effect varies with each round, unleashing a series of destructive phenomena. It deals damage to creatures in its area and has the potential to deafen, blind, and restrain them.",
+            "Explanation": "Storm of Vengeance is a conjuration spell that summons a devastating storm, each round of which inflicts different harmful effects on creatures in its area.",
+            "At Higher Levels": "Storm of Vengeance doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Storm of Vengeance is a powerful spell for causing widespread destruction and hindering enemy forces.",
+            "Works well with": "Druids and spellcasters who want to control the battlefield with a relentless storm.",
+            "Class Spell List": "Druids"
+        },
         "Time Ravage": {
             "School": "Necromancy DC",
             "Casting Time": "1 Action",
@@ -5014,6 +6648,20 @@ dnd_spells = {
             "Works well with": "Spells or abilities that enhance or synergize with the newly transformed creature or object.",
             "Class Spell List": "Sorcerers, Wizards, Druids"
         },
+        "True Resurrection": {
+            "School": "Necromancy",
+            "Casting Time": "1 hour",
+            "Range": "Touch",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (a sprinkle of holy water and diamonds worth at least 25,000 gp, which the spell consumes)",
+            "DC Saving Throw": "None",
+            "Description": "You touch a creature that has been dead for no longer than 200 years and that died for any reason except old age. If the creature's soul is free and willing, the creature is restored to life with all its hit points.",
+            "Explanation": "True Resurrection is a necromancy spell that allows you to touch a creature that has been dead for up to 200 years and restore it to life, provided its soul is free and willing. The revived creature regains all its hit points.",
+            "At Higher Levels": "Casting this spell at its base level is sufficient to restore a creature to life, and it doesn't have an effect at higher spell slot levels.",
+            "Pro-Tip": "True Resurrection is the ultimate revival spell, capable of bringing back the dead regardless of the cause of death or how long they've been deceased.",
+            "Works well with": "Clerics and characters who seek to resurrect important figures or companions.",
+            "Class Spell List": "Clerics"
+        },
         "Weird": {
             "School": "Illusion",
             "Casting Time": "1 Action",
@@ -5042,7 +6690,6 @@ dnd_spells = {
             "Works well with": "Creative thinking and a good understanding of the spell's limits.",
             "Class Spell List": "Sorcerers, Wizards"
         },
-
     },
 }
 

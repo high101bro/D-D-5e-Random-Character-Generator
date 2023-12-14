@@ -26,8 +26,8 @@ dnd_dungeon_master = """
 
 
 optionsMenu  = [
-    'Create Character',
     'Character Management',
+    'Create Character',
     'Items, Weapons, Armor, Equipment',
     'Spells and Cantrips',
     'Monster Manual',
