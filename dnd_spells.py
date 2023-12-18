@@ -101,6 +101,20 @@ dnd_spells = {
             "Works well with": "Druids and characters who want to interact with nature in subtle ways.",
             "Class Spell List": "Druids"
         },
+        "Eldritch Blast": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "120 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes force damage. The spell creates more than one beam when you reach higher levels, with additional beams at 5th, 11th, and 17th level.",
+            "Explanation": "Eldritch Blast is an evocation spell that allows you to fire a beam of crackling energy at a target, dealing force damage. The spell gains additional beams as you level up, making it a potent offensive option for warlocks.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 5th level or higher, you create two beams, with more beams at higher levels (3 beams at 11th level, and 4 beams at 17th level).",
+            "Pro-Tip": "Eldritch Blast is the signature cantrip for warlocks, offering reliable ranged damage.",
+            "Works well with": "Warlocks and characters who want a powerful ranged attack cantrip.",
+            "Class Spell List": "Warlocks"
+        },
         "Encode Thoughts": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -607,6 +621,34 @@ dnd_spells = {
             "Works well with": "Characters focused on nature, animal handling, or those who want to interact peacefully with wildlife.",
             "Class Spell List": "Bards, Druids, Rangers"
         },
+        "Armor of Agathys": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "1 hour",
+            "Components": "V, S, M (a cup of water)",
+            "DC Saving Throw": "None",
+            "Description": "A protective magical force surrounds you, manifesting as a layer of frost. When a creature hits you with a melee attack, it takes cold damage. The spell also grants you temporary hit points.",
+            "Explanation": "Armor of Agathys is an abjuration spell that envelops you in protective frost. When a creature hits you with a melee attack, it takes cold damage, and you gain temporary hit points.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the cold damage and temporary hit points increase.",
+            "Pro-Tip": "Armor of Agathys is a great way to deter melee attackers and gain some extra durability in combat.",
+            "Works well with": "Warlocks and characters who want to discourage enemies from melee attacks.",
+            "Class Spell List": "Warlocks"
+        },
+        "Arms of Hadar": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "Self (10-foot radius)",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "Strength",
+            "Description": "Tendrils of dark energy erupt from you and batter all creatures in a 10-foot radius. Affected creatures take necrotic damage and can't take reactions until their next turn.",
+            "Explanation": "Arms of Hadar is a conjuration spell that summons tendrils of dark energy to damage and restrict the movement of creatures in a 10-foot radius around you.",
+            "At Higher Levels": "Casting this spell using higher-level spell slots increases the damage.",
+            "Pro-Tip": "Arms of Hadar is effective for crowd control and dealing necrotic damage to multiple enemies in close quarters.",
+            "Works well with": "Warlocks and characters who want area-of-effect crowd control.",
+            "Class Spell List": "Warlocks"
+        },
         "Bane": {
             "School": "Enchantment",
             "Casting Time": "1 action",
@@ -940,6 +982,20 @@ dnd_spells = {
             "Works well with": "Area damage spells and abilities that benefit from targets being prone.",
             "Class Spell List": "Sorcerers, Wizards"
         },
+        "Ensnaring Strike": {
+            "School": "Conjuration",
+            "Casting Time": "1 bonus action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V",
+            "DC Saving Throw": "Strength",
+            "Description": "The next time you hit a creature with a weapon attack before this spell ends, vines sprout from your weapon and restrain the target. The creature must succeed on a Strength saving throw or be restrained. A restrained creature can repeat the saving throw at the end of each of its turns, ending the effect on a success.",
+            "Explanation": "Ensnaring Strike is a conjuration spell that enchants your weapon, allowing you to restrain a target with vines upon a successful weapon attack, potentially immobilizing them.",
+            "At Higher Levels": "Ensnaring Strike doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Ensnaring Strike is a useful spell for controlling and immobilizing enemies in combat.",
+            "Works well with": "Rangers and characters who prefer ranged attacks with control options.",
+            "Class Spell List": "Rangers"
+        },
         "Entangle": {
             "School": "Conjuration",
             "Casting Time": "1 action",
@@ -1013,10 +1069,10 @@ dnd_spells = {
             "Range": "10 feet",
             "Duration": "Instantaneous",
             "Components": "V, S, M",
-            "DC Saving Throw": None,
+            "DC Saving Throw": "None",
             "Description": "This spell allows you to summon a celestial, fey, or fiendish familiar spirit to serve you. The familiar can take the form of a creature such as a bat, cat, hawk, or other small animal. It can perform various tasks and share its senses with you.",
             "Explanation": "Find Familiar is a useful spell for spellcasters, as it grants them a loyal companion with unique abilities. Familiars can be used for scouting, delivering touch spells, and providing assistance in various situations.",
-            "At Higher Levels": None,
+            "At Higher Levels": "None",
             "Pro-Tip": "Choose a familiar that complements your character's abilities and playstyle. Communicate with your DM to determine the specific benefits and limitations of your chosen familiar.",
             "Works well with": "Spells that require touch or share senses with your familiar, such as 'Mage Armor' or 'Touch' spells.",
             "Class Spell List": "Wizards, Warlocks (via the Pact of the Chain)"
@@ -1030,7 +1086,7 @@ dnd_spells = {
             "DC Saving Throw": "None",
             "Description": "You create a 20-foot-radius sphere of fog centered on a point within range. The fog heavily obscures vision and makes it difficult to see beyond its boundaries.",
             "Explanation": "Fog Cloud is a versatile spell that can be used for obscuring vision, creating cover, or escaping from enemies. It can provide both offensive and defensive advantages in combat and exploration.",
-            "At Higher Levels": None,
+            "At Higher Levels": "None",
             "Pro-Tip": "Use Fog Cloud strategically to obscure the vision of enemies, allowing your party to reposition or hide. Be mindful that it can also affect your own vision.",
             "Works well with": "Spells or abilities that grant advantage on attacks or hide checks within the fog.",
             "Class Spell List": "Druids, Sorcerers, Wizards"
@@ -1058,7 +1114,7 @@ dnd_spells = {
             "DC Saving Throw": "None",
             "Description": "You grant a creature the gift of heightened reflexes. The target gains a bonus to its initiative rolls for the duration of the spell.",
             "Explanation": "Gift of Alacrity is a supportive spell that improves a creature's initiative, allowing them to act quicker in combat. It can be particularly beneficial for allies who rely on acting early in battle.",
-            "At Higher Levels": None,
+            "At Higher Levels": "None",
             "Pro-Tip": "Use this spell on party members who need to act early in combat, such as rogues or spellcasters. It can help your group gain a tactical advantage.",
             "Works well with": "Spells or abilities that grant additional actions or attacks in the first round of combat.",
             "Class Spell List": "Bards, Wizards"
@@ -1086,7 +1142,7 @@ dnd_spells = {
             "DC Saving Throw": "Dexterity",
             "Description": "You create a slippery area on the ground within range. Creatures that enter or start their turn in the area must make a Dexterity saving throw or fall prone.",
             "Explanation": "Grease is a spell that can be used for both control and crowd control. It creates difficult terrain and forces creatures to make Dexterity saving throws to avoid falling prone.",
-            "At Higher Levels": None,
+            "At Higher Levels": "None",
             "Pro-Tip": "Strategically place Grease in chokepoints or near enemies to hinder their movement and make them easier targets for your allies.",
             "Works well with": "Spells or abilities that target creatures on the ground, such as area-effect spells.",
             "Class Spell List": "Bards, Sorcerers, Wizards"
@@ -1105,6 +1161,20 @@ dnd_spells = {
             "Works well with": "Clerics and characters who want to deal ranged radiant damage.",
             "Class Spell List": "Clerics"
         },
+        "Hail of Thorns": {
+            "School": "Conjuration",
+            "Casting Time": "1 bonus action",
+            "Range": "Self",
+            "Duration": "Instantaneous",
+            "Components": "V",
+            "DC Saving Throw": "Dexterity",
+            "Description": "The next time you hit a creature with a ranged weapon attack before this spell ends, the attack releases a spray of thorns. Each creature within 5 feet of the target must make a Dexterity saving throw or take 1d10 piercing damage.",
+            "Explanation": "Hail of Thorns is a conjuration spell that enhances your ranged weapon attack, causing it to release a damaging spray of thorns to nearby creatures upon a successful hit.",
+            "At Higher Levels": "Hail of Thorns doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Hail of Thorns is a great spell for dealing area damage to multiple enemies when using ranged attacks.",
+            "Works well with": "Rangers and characters who specialize in ranged combat.",
+            "Class Spell List": "Rangers"
+        },
         "Healing Word": {
             "School": "Evocation",
             "Casting Time": "1 bonus action",
@@ -1119,6 +1189,20 @@ dnd_spells = {
             "Works well with": "Support-focused characters and those who want to keep their party members in the fight.",
             "Class Spell List": "Bards, Clerics, Druids"
         },
+        "Hellish Rebuke": {
+            "School": "Abjuration",
+            "Casting Time": "1 reaction",
+            "Range": "60 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "Dexterity",
+            "Description": "When you take damage from a creature within range, you can unleash fiery retaliation. The creature must make a Dexterity saving throw or take fire damage.",
+            "Explanation": "Hellish Rebuke is an abjuration spell that allows you to react with fiery retaliation when you take damage from a creature within range, dealing fire damage to the attacker.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot increases the damage.",
+            "Pro-Tip": "Hellish Rebuke is an excellent way to punish attackers who harm you in close combat.",
+            "Works well with": "Warlocks and characters who want to deal damage when they are hit.",
+            "Class Spell List": "Warlocks"
+        },
         "Heroism": {
             "School": "Enchantment",
             "Casting Time": "1 action",
@@ -1132,6 +1216,34 @@ dnd_spells = {
             "Pro-Tip": "Heroism is a great spell for supporting allies who need to resist fear effects and gain extra durability during battles.",
             "Works well with": "Supportive characters, such as Clerics or Paladins, who want to protect their comrades from fear effects.",
             "Class Spell List": "Bards, Clerics, Paladins"
+        },
+        "Hex": {
+            "School": "Enchantment",
+            "Casting Time": "1 bonus action",
+            "Range": "90 feet",
+            "Duration": "Concentration, up to 1 hour",
+            "Components": "V, S, M (the petrified eye of a newt)",
+            "DC Saving Throw": "None",
+            "Description": "You curse a creature you can see within range. The target has disadvantage on ability checks made with a chosen ability score. You deal extra damage to the cursed target whenever you hit it with an attack.",
+            "Explanation": "Hex is an enchantment spell that allows you to curse a creature, imposing disadvantage on chosen ability checks and increasing damage when you attack the cursed target.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot doesn't change its effects.",
+            "Pro-Tip": "Hex is a great spell for increasing your damage output against a specific target, especially when combined with multiple attacks.",
+            "Works well with": "Warlocks and characters who want to focus on single-target damage.",
+            "Class Spell List": "Warlocks"
+        },
+        "Hunter's Mark": {
+            "School": "Divination",
+            "Casting Time": "1 bonus action",
+            "Range": "90 feet",
+            "Duration": "Concentration, up to 1 hour",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra 1d6 damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it.",
+            "Explanation": "Hunter's Mark is a divination spell that allows you to mark a creature as your quarry, granting bonus damage on attacks and improved tracking abilities against the target.",
+            "At Higher Levels": "Hunter's Mark doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Hunter's Mark is a staple spell for Rangers, boosting their damage output against a chosen target.",
+            "Works well with": "Rangers and characters who prefer tracking and dealing extra damage.",
+            "Class Spell List": "Rangers"
         },
         "Ice Knife": {
             "School": "Conjuration",
@@ -1156,7 +1268,7 @@ dnd_spells = {
             "DC Saving Throw": "None",
             "Description": "By touching an object, you learn its magical properties and how to use them, including any spells affecting it.",
             "Explanation": "Identify is a ritual spell commonly used to identify the properties of magical items, uncovering their mysteries. It's invaluable for adventurers looking to understand the enchanted treasures they acquire.",
-            "At Higher Levels": None,
+            "At Higher Levels": "None",
             "Pro-Tip": "Routinely use Identify on unknown magical items to avoid unexpected consequences or to discover hidden powers.",
             "Works well with": "Spells or abilities that allow you to detect magic or dispel magical effects.",
             "Class Spell List": "Bards, Wizards"
@@ -1170,7 +1282,7 @@ dnd_spells = {
             "DC Saving Throw": "None",
             "Description": "You write a hidden message on an object or surface, which can only be read by a creature you designate. Others see an unrelated script.",
             "Explanation": "Illusory Script is a covert communication spell. It allows you to hide messages on objects or surfaces, ensuring that only the intended recipient can read them.",
-            "At Higher Levels": None,
+            "At Higher Levels": "None",
             "Pro-Tip": "Use Illusory Script for secret communication or to leave hidden messages for allies or spies.",
             "Works well with": "Spells or abilities that create illusions or deceive others.",
             "Class Spell List": "Bards, Wizards"
@@ -1212,7 +1324,7 @@ dnd_spells = {
             "DC Saving Throw": "None",
             "Description": "You touch a creature, and its jump distance is tripled for the duration, allowing it to make extraordinary leaps.",
             "Explanation": "Jump is a utility spell that enhances a creature's jumping ability, allowing them to cover great distances with their leaps. It can be useful for overcoming obstacles or escaping danger.",
-            "At Higher Levels": None,
+            "At Higher Levels": "None",
             "Pro-Tip": "Use Jump to help party members reach otherwise inaccessible places or to quickly traverse difficult terrain.",
             "Works well with": "Spells or abilities that enhance movement or provide aerial mobility.",
             "Class Spell List": "Druids, Sorcerers, Wizards"
@@ -1539,6 +1651,20 @@ dnd_spells = {
             "Works well with": "Melee-focused characters and those who want to apply the frightened condition to their foes.",
             "Class Spell List": "Paladins"
         },
+        "Zephyr Strike": {
+            "School": "Transmutation",
+            "Casting Time": "1 bonus action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "You move like the wind. Until the spell ends, your movement doesn't provoke opportunity attacks, and you gain an extra 1d8 force damage on your first weapon attack on each of your turns. Whether you hit or miss, your walking speed increases until the end of that turn.",
+            "Explanation": "Zephyr Strike is a transmutation spell that enhances your mobility, preventing opportunity attacks, and boosting your damage on the first weapon attack each turn.",
+            "At Higher Levels": "Zephyr Strike doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Zephyr Strike is a versatile spell that enhances both mobility and damage, making it great for hit-and-run tactics.",
+            "Works well with": "Rangers and characters who value mobility and damage output.",
+            "Class Spell List": "Rangers"
+        },
     },
     "2nd" : {
         "Aganazzar's Scorcher": {
@@ -1758,6 +1884,20 @@ dnd_spells = {
             "Pro-Tip": "Use Continual Flame to create magical lanterns or light sources that can be placed in strategic locations.",
             "Works well with": "Spells or tactics that rely on controlling light and darkness.",
             "Class Spell List": "Clerics, Wizards"
+        },
+        "Cordon of Arrows": {
+            "School": "Transmutation",
+            "Casting Time": "1 minute",
+            "Range": "Touch",
+            "Duration": "Until Dispelled",
+            "Components": "V, S, M (four or more arrows)",
+            "DC Saving Throw": "None",
+            "Description": "You touch a set of four or more arrows, causing them to become magical. When a creature comes within 30 feet of the touched arrows, the spell is triggered. One of the arrows flies up to strike the creature, provided that creature is large or smaller and has an unobstructed path to it. The target must make a Dexterity saving throw or take damage from the arrow.",
+            "Explanation": "Cordon of Arrows is a transmutation spell that enchants arrows, allowing them to autonomously shoot at nearby creatures when triggered, dealing damage on a failed Dexterity saving throw.",
+            "At Higher Levels": "Casting this spell using higher-level spell slots doesn't change its effects.",
+            "Pro-Tip": "Cordon of Arrows is an excellent way to set up traps or provide early warning against approaching threats.",
+            "Works well with": "Characters who want to set up traps or create defensive perimeters.",
+            "Class Spell List": "Rangers"
         },
         "Crown of Madness": {
             "School": "Enchantment",
@@ -2769,6 +2909,20 @@ dnd_spells = {
             "Works well with": "Spells that enhance mobility and abilities that rely on Dexterity.",
             "Class Spell List": "Sorcerers, Wizards, and some other classes"
         },
+        "Aura of Vitality": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "Self (30-foot radius)",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "You create a healing aura in a 30-foot radius around you. On each of your turns for the spell's duration, you can use a bonus action to heal one creature in the aura, restoring 2d6 hit points.",
+            "Explanation": "Aura of Vitality is an evocation spell that creates a healing aura around you, allowing you to heal creatures within its radius as a bonus action on each of your turns.",
+            "At Higher Levels": "Aura of Vitality doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Aura of Vitality is an excellent spell for providing sustained healing support to your party during combat.",
+            "Works well with": "Clerics, Paladins, and characters who want to serve as dedicated healers.",
+            "Class Spell List": "Clerics, Paladins"
+        },
         "Beacon of Hope": {
             "School": "Abjuration",
             "Casting Time": "1 action",
@@ -2839,6 +2993,20 @@ dnd_spells = {
             "Works well with": "Druids and characters who want a powerful ranged damage option.",
             "Class Spell List": "Druids"
         },
+        "Crusader's Mantle": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "Self (30-foot radius)",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "You create an aura of radiant energy in a 30-foot radius around you. For the spell's duration, non-hostile creatures within the aura deal an extra 1d4 radiant damage with their weapon attacks.",
+            "Explanation": "Crusader's Mantle is an evocation spell that envelops you in an aura of radiant energy, enhancing the weapon attacks of non-hostile creatures within its radius.",
+            "At Higher Levels": "Crusader's Mantle doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Crusader's Mantle is a great spell for boosting the damage output of your party's melee fighters.",
+            "Works well with": "Clerics, Paladins, and characters who want to empower their allies' attacks.",
+            "Class Spell List": "Clerics, Paladins"
+        },
         "Catnap": {
             "School": "Enchantment",
             "Casting Time": "1 Action",
@@ -2880,6 +3048,20 @@ dnd_spells = {
             "Pro-Tip": "Conjure Animals is a versatile spell for summoning allies to aid in combat or provide assistance in various situations.",
             "Works well with": "Druids and spellcasters who want to bolster their party's numbers.",
             "Class Spell List": "Druids, Rangers"
+        },
+        "Conjure Barrage": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "Instantaneous",
+            "Components": "V, S, M (one piece of ammunition)",
+            "DC Saving Throw": "Dexterity",
+            "Description": "You throw a non-magical piece of ammunition into the air, and it multiplies into a rain of ammunition. Each creature in a 60-foot cone must make a Dexterity saving throw. On a failed save, a creature takes damage from the ammunition.",
+            "Explanation": "Conjure Barrage is a conjuration spell that allows you to turn a single piece of ammunition into a barrage that damages multiple creatures in a cone area.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases.",
+            "Pro-Tip": "Conjure Barrage is a great spell for dealing damage to multiple enemies at once, especially when facing a group of foes.",
+            "Works well with": "Rangers and characters who specialize in ranged attacks and crowd control.",
+            "Class Spell List": "Rangers"
         },
         "Counterspell": {
             "School": "Abjuration",
@@ -2936,6 +3118,20 @@ dnd_spells = {
             "Pro-Tip": "Dispel Magic is useful for countering enemy spells and removing magical obstacles. It's a must-have for any spellcaster.",
             "Works well with": "Counterspell, Spellbook preparation",
             "Class Spell List": "Bards, Clerics, Druids, Paladins, Sorcerers, Warlocks, Wizards"
+        },
+        "Elemental Weapon": {
+            "School": "Transmutation",
+            "Casting Time": "1 action",
+            "Range": "Touch",
+            "Duration": "Concentration, up to 1 hour",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You touch a non-magical weapon and imbue it with elemental energy of your choice: acid, cold, fire, lightning, or thunder. The weapon becomes magical and gains an extra 1d4 damage of the chosen type with each hit.",
+            "Explanation": "Elemental Weapon is a transmutation spell that imbues a non-magical weapon with elemental energy, making it magical and granting bonus damage of a chosen type with each hit.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the bonus damage increases by 1d4 for each slot level above 3rd.",
+            "Pro-Tip": "Elemental Weapon is a versatile spell for enhancing your weapon's damage and overcoming resistances or immunities.",
+            "Works well with": "Clerics, Paladins, and characters who want to make their weapons more potent.",
+            "Class Spell List": "Clerics, Paladins"
         },
         "Enemies Abound": {
             "School": "Enchantment",
@@ -3105,6 +3301,20 @@ dnd_spells = {
             "Works well with": "Melee fighters, rogues, and anyone who benefits from extra actions.",
             "Class Spell List": "Sorcerers, Wizards"
         },
+        "Hunger of Hadar": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "150 feet",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S, M (a pickled octopus tentacle)",
+            "DC Saving Throw": "Dexterity",
+            "Description": "You open a gateway to the dark between the stars, and a region of black, tentacle-covered darkness appears. This area becomes heavily obscured, and any creature that starts its turn in the area takes cold and acid damage. A creature that ends its turn in the area must succeed on a Dexterity saving throw or take additional damage.",
+            "Explanation": "Hunger of Hadar is a conjuration spell that creates a zone of darkness filled with writhing tentacles. Creatures inside this area take cold and acid damage at the start of their turns and can suffer additional damage when they end their turns within it.",
+            "At Higher Levels": "Casting this spell using higher-level spell slots doesn't change its effects.",
+            "Pro-Tip": "Hunger of Hadar is excellent for creating an area of denial and dealing damage over time to enemies trapped within it.",
+            "Works well with": "Warlocks and characters who want to control the battlefield and hinder enemy movement.",
+            "Class Spell List": "Warlocks"
+        },
         "Hypnotic Pattern": {
             "School": "Illusion",
             "Casting Time": "1 Action",
@@ -3160,6 +3370,20 @@ dnd_spells = {
             "Pro-Tip": "Use Life Transference when an ally is in critical condition and needs healing urgently. Be mindful of your own hit points, as overusing it can put you in danger.",
             "Works well with": "Other healing spells, damage mitigation abilities, and protective spells.",
             "Class Spell List": "Clerics, Sorcerers, Wizards"
+        },
+        "Lightning Arrow": {
+            "School": "Transmutation",
+            "Casting Time": "1 bonus action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S, M (an arrow or bolt of ammunition)",
+            "DC Saving Throw": "Dexterity",
+            "Description": "You imbue an arrow or bolt with the power of lightning. The next time you make a ranged weapon attack with it during the spell's duration, the weapon's ammunition transforms into a bolt of lightning. The target and all other creatures within 10 feet of it must make a Dexterity saving throw or take lightning damage.",
+            "Explanation": "Lightning Arrow is a transmutation spell that empowers a ranged weapon attack, causing the ammunition to transform into a bolt of lightning and deal damage to the target and nearby creatures on a failed Dexterity saving throw.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases.",
+            "Pro-Tip": "Lightning Arrow is a potent spell for delivering area damage to both the target and nearby enemies with a single shot.",
+            "Works well with": "Rangers and characters who favor ranged attacks with area damage potential.",
+            "Class Spell List": "Rangers"
         },
         "Lightning Bolt": {
             "School": "Evocation",
@@ -3439,6 +3663,20 @@ dnd_spells = {
             "Works well with": "Clerics and characters who want to control the battlefield and protect themselves and allies.",
             "Class Spell List": "Clerics"
         },
+        "Spirit Shroud": {
+            "School": "Necromancy",
+            "Casting Time": "1 action",
+            "Range": "Self (10-foot radius)",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You shroud yourself in a ghostly aura, and your attacks deal an extra 1d8 damage of a chosen type: cold, fire, or radiant. In addition, the aura extends 10 feet around you, and when a creature starts its turn in the aura or enters it for the first time on a turn, it takes damage of the chosen type.",
+            "Explanation": "Spirit Shroud is a necromancy spell that envelops you in a ghostly aura, enhancing your weapon attacks and dealing damage to creatures near you.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the extra damage increases by 1d8 for each slot level above 3rd.",
+            "Pro-Tip": "Spirit Shroud is a versatile spell for adding extra damage to your attacks and controlling the battlefield around you.",
+            "Works well with": "Clerics, Paladins, and characters who want to augment their attacks with necrotic power.",
+            "Class Spell List": "Clerics, Paladins"
+        },
         "Stinking Cloud": {
             "School": "Conjuration",
             "Casting Time": "1 Action",
@@ -3621,6 +3859,34 @@ dnd_spells = {
             "Pro-Tip": "Use Arcane Eye to scout ahead, spy on enemies, or investigate unknown locations without putting yourself at risk.",
             "Works well with": "Other divination spells, such as Clairvoyance, for enhanced surveillance.",
             "Class Spell List": "Wizards, Sorcerers"
+        },
+        "Aura of Life": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "Self (30-foot radius)",
+            "Duration": "Concentration, up to 10 minutes",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "You emit an aura of positive energy in a 30-foot radius around you. This aura grants you and friendly creatures within it resistance to necrotic damage and regains 1 hit point at the start of their turns if they have no more than half of their hit points remaining.",
+            "Explanation": "Aura of Life is an abjuration spell that creates a protective aura of positive energy, providing resistance to necrotic damage and healing injured allies within its radius.",
+            "At Higher Levels": "Aura of Life doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Aura of Life is a vital spell for bolstering the durability of your party and helping them resist necrotic damage.",
+            "Works well with": "Paladins and characters who want to protect their allies from necrotic harm.",
+            "Class Spell List": "Paladins"
+        },
+        "Aura of Purity": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "Self (30-foot radius)",
+            "Duration": "Concentration, up to 10 minutes",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "You emit an aura of divine purity in a 30-foot radius around you. This aura grants you and friendly creatures within it advantage on saving throws against diseases and the poisoned condition. It also ends these effects if they are already afflicted.",
+            "Explanation": "Aura of Purity is an abjuration spell that radiates an aura of divine purity, granting advantage on saving throws against diseases and poison and curing those already affected within its radius.",
+            "At Higher Levels": "Aura of Purity doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Aura of Purity is a protective spell that helps your party resist diseases and poison while curing those already suffering from them.",
+            "Works well with": "Paladins and characters who want to provide immunity to diseases and poison to their allies.",
+            "Class Spell List": "Paladins"
         },
         "Banishment": {
             "School": "Abjuration",
@@ -3831,6 +4097,20 @@ dnd_spells = {
             "Pro-Tip": "Use Fabricate to quickly craft or repair items, barricades, or structures in creative ways.",
             "Works well with": "Proficiency in relevant crafting skills, knowledge of materials, and creative thinking.",
             "Class Spell List": "Artificers, Wizards"
+        },
+        "Find Greater Steed": {
+            "School": "Conjuration",
+            "Casting Time": "10 minutes",
+            "Range": "30 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You summon a loyal, powerful steed that takes on the form of a celestial, fey, or fiend (your choice) creature. The steed can be a pegasus, a griffon, a dire wolf, a rhinoceros, or a saber-toothed tiger. It serves you as a faithful mount and can magically communicate with you. It vanishes if reduced to 0 hit points, and you can summon it again with this spell.",
+            "Explanation": "Find Greater Steed is a conjuration spell that allows you to summon a powerful and loyal steed, choosing from various celestial, fey, or fiend forms.",
+            "At Higher Levels": "Find Greater Steed doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Find Greater Steed is a fantastic spell for gaining a loyal and powerful companion to serve as a mount and aid you in battle.",
+            "Works well with": "Paladins and characters who want a formidable steed to ride into combat.",
+            "Class Spell List": "Paladins"
         },
         "Freedom of Movement": {
             "School": "Abjuration",
@@ -4126,6 +4406,20 @@ dnd_spells = {
             "Works well with": "Spells that incapacitate or hinder affected creatures, as they'll have a harder time escaping the area.",
             "Class Spell List": "Sorcerers, Warlocks, Wizards"
         },
+        "Shadow of Moil": {
+            "School": "Necromancy",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S",
+            "DC Saving Throw": "None",
+            "Description": "You become wreathed in shadowy flames, granting you several benefits. You are heavily obscured to others, making you difficult to target. Additionally, any creature that hits you with an attack takes necrotic damage. The darkness also grants you advantage on saving throws against spells.",
+            "Explanation": "Shadow of Moil is a necromancy spell that surrounds you with shadowy flames, providing concealment, damaging attackers, and granting advantage on saving throws against spells.",
+            "At Higher Levels": "Casting this spell using a higher-level spell slot increases the damage dealt when a creature hits you with an attack.",
+            "Pro-Tip": "Shadow of Moil is an excellent defensive spell that makes you harder to hit and punishes those who attack you.",
+            "Works well with": "Warlocks and characters who want to enhance their defenses and deter enemies.",
+            "Class Spell List": "Warlocks"
+        },
         "Spirit Of Death": {
             "School": "Necromancy",
             "Casting Time": "1 Action",
@@ -4139,6 +4433,20 @@ dnd_spells = {
             "Pro-Tip": "Use this spell to weaken and damage a single target over time. It's particularly effective against enemies with low Wisdom saves.",
             "Works well with": "Spells that hinder or incapacitate the cursed target, as they'll struggle to withstand the ongoing damage.",
             "Class Spell List": "Warlocks, Wizards"
+        },
+        "Staggering Smite": {
+            "School": "Evocation",
+            "Casting Time": "1 bonus action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V",
+            "DC Saving Throw": "Wisdom",
+            "Description": "The next time you hit a creature with a melee weapon attack, you imbue your weapon with smoldering psychic energy. The target must succeed on a Wisdom saving throw or be stunned until the end of its next turn. The spell's concentration can extend up to 1 minute if you maintain it.",
+            "Explanation": "Staggering Smite is an evocation spell that enhances your melee weapon attack, potentially stunning the target if it fails a Wisdom saving throw.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 4th level or higher, the duration of the stun effect increases by 1 round for each slot level above 3rd.",
+            "Pro-Tip": "Staggering Smite is a powerful spell for disabling an enemy in combat and preventing it from taking actions.",
+            "Works well with": "Paladins and characters who prefer melee combat and crowd control tactics.",
+            "Class Spell List": "Paladins"
         },
         "Stone Shape": {
             "School": "Transmutation",
@@ -4282,6 +4590,20 @@ dnd_spells = {
             "Works well with": "Druids, characters who seek to befriend animals or plants, or those interested in creating unique companions.",
             "Class Spell List": "Bards, Druids"
         },
+        "Banishing Smite": {
+            "School": "Abjuration",
+            "Casting Time": "1 bonus action",
+            "Range": "Self",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V",
+            "DC Saving Throw": "Charisma",
+            "Description": "The next time you hit a creature with a melee weapon attack, you imbue your weapon with banishing energy. The target must succeed on a Charisma saving throw or be banished to another plane of existence. If it fails, it is banished for the spell's duration.",
+            "Explanation": "Banishing Smite is an abjuration spell that enhances your melee weapon attack, potentially banishing the target to another plane of existence if it fails a Charisma saving throw.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 5th level or higher, you can target an additional creature for each slot level above 4th.",
+            "Pro-Tip": "Banishing Smite is a potent spell for removing a dangerous enemy from combat temporarily.",
+            "Works well with": "Paladins and characters who want to incapacitate foes through banishment.",
+            "Class Spell List": "Paladins"
+        },
         "Bigby's Hand": {
             "School": "Evocation",
             "Casting Time": "1 Action",
@@ -4295,6 +4617,20 @@ dnd_spells = {
             "Pro-Tip": "Experiment with different hand actions to adapt to various combat situations. Grasping can prevent enemy movement, Interposing can shield your party, and Pummeling delivers substantial damage.",
             "Works well with": "Control spells that limit enemy mobility, such as 'Hold Person' or 'Web.'",
             "Class Spell List": "Wizards"
+        },
+        "Circle of Power": {
+            "School": "Abjuration",
+            "Casting Time": "1 action",
+            "Range": "Self",
+            "Duration": "10 minutes",
+            "Components": "V",
+            "DC Saving Throw": "None",
+            "Description": "You create a protective ward in a 30-foot radius around you for 10 minutes. The ward grants advantage on saving throws against spells and other magical effects to you and friendly creatures within its radius.",
+            "Explanation": "Circle of Power is an abjuration spell that creates a protective ward, providing advantage on saving throws against spells and magical effects to you and nearby allies.",
+            "At Higher Levels": "Circle of Power doesn't have an effect when cast using higher-level spell slots.",
+            "Pro-Tip": "Circle of Power is an excellent spell for bolstering your party's defenses against magical threats.",
+            "Works well with": "Paladins and characters who want to enhance their party's magical defenses.",
+            "Class Spell List": "Paladins"
         },
         "Cloudkill": {
             "School": "Conjuration",
@@ -4394,6 +4730,20 @@ dnd_spells = {
             "Works well with": "Clerics and characters who seek to afflict enemies with debilitating diseases.",
             "Class Spell List": "Clerics"
         },
+        "Conjure Volley": {
+            "School": "Conjuration",
+            "Casting Time": "1 action",
+            "Range": "150 feet",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "Dexterity",
+            "Description": "You fire a piece of non-magical ammunition into the air, causing it to multiply into a rain of ammunition. Each creature in a 40-foot radius cylinder centered on a point within range must make a Dexterity saving throw or take damage from the ammunition.",
+            "Explanation": "Conjure Volley is a conjuration spell that allows you to fire a single piece of ammunition into the air, creating a burst of projectiles that damages multiple creatures in a radius.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 8th level or higher, the damage increases.",
+            "Pro-Tip": "Conjure Volley is an excellent spell for dealing massive ranged damage to a group of enemies at once.",
+            "Works well with": "Rangers and characters who excel in ranged combat and area damage.",
+            "Class Spell List": "Rangers"
+        },
         "Control Winds": {
             "School": "Transmutation",
             "Casting Time": "1 Action",
@@ -4463,6 +4813,20 @@ dnd_spells = {
             "Pro-Tip": "Use Dawn to illuminate dark areas, dispel magical darkness, and deal radiant damage to creatures sensitive to light.",
             "Works well with": "Spells that create or manipulate light, such as 'Daylight' or 'Sunburst.'",
             "Class Spell List": "Clerics, Paladins, Sorcerers, Wizards"
+        },
+        "Destructive Wave": {
+            "School": "Evocation",
+            "Casting Time": "1 action",
+            "Range": "Self (30-foot radius)",
+            "Duration": "Instantaneous",
+            "Components": "V, S",
+            "DC Saving Throw": "Constitution",
+            "Description": "You unleash a powerful wave of energy in a 30-foot radius around you. Each creature in the area must make a Constitution saving throw. On a failed save, a creature takes 5d6 thunder damage and 5d6 radiant or necrotic damage (your choice). On a successful save, it takes half damage.",
+            "Explanation": "Destructive Wave is an evocation spell that releases a devastating wave of energy, dealing both thunder and radiant or necrotic damage to creatures within its radius.",
+            "At Higher Levels": "When you cast this spell using a spell slot of 6th level or higher, both types of damage increase by 1d6 for each slot level above 5th.",
+            "Pro-Tip": "Destructive Wave is a formidable area-of-effect spell that can deal massive damage to a group of foes.",
+            "Works well with": "Paladins and characters who want to unleash destructive power in close combat.",
+            "Class Spell List": "Paladins"
         },
         "Dispel Evil and Good": {
             "School": "Abjuration",
@@ -4883,6 +5247,20 @@ dnd_spells = {
             "Pro-Tip": "Use the summoned draconic spirit strategically, considering the situation. It can aid you in a multitude of ways, from aiding your attacks to providing assistance with skills and checks.",
             "Works well with": "Spells and abilities that benefit from having an additional ally or distractions on the battlefield.",
             "Class Spell List": "Sorcerers, Wizards"
+        },
+        "Swift Quiver": {
+            "School": "Transmutation",
+            "Casting Time": "1 bonus action",
+            "Range": "Touch",
+            "Duration": "Concentration, up to 1 minute",
+            "Components": "V, S, M (a quiver containing at least one piece of ammunition)",
+            "DC Saving Throw": "None",
+            "Description": "You transform a quiver containing at least one piece of ammunition into a magical quiver. When you use your bonus action to make two attacks with a ranged weapon, you can make two additional attacks with it as a part of the same bonus action.",
+            "Explanation": "Swift Quiver is a transmutation spell that enhances your ranged combat abilities, allowing you to make additional ranged weapon attacks as a bonus action.",
+            "At Higher Levels": "Casting this spell using higher-level spell slots doesn't change its effects.",
+            "Pro-Tip": "Swift Quiver is an incredible spell for rangers who want to become rapid-fire archers, greatly increasing their damage output.",
+            "Works well with": "Rangers and characters who rely on ranged attacks for damage.",
+            "Class Spell List": "Rangers"
         },
         "Synaptic Static": {
             "School": "Enchantment",

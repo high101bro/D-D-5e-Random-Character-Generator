@@ -7,67 +7,8 @@ from dnd_helper import *
 # from menu import *
 import random, os, re
 from dnd_lists import *
-import json
 
 
-# Option to load previous save files
-all_characters = pickle_handler.select_and_load_pkl()
-if all_characters is not None:
-    print("Characters loaded")
-else:
-    print("No Characters loaded")
-    all_characters = []
-print()
-
-xp_thresholds = {
-    # xp thresholds by character level
-    # indice 0 = easy, 1 = medium, 2 = hard, 3 = deadly
-    1: [25, 50, 75, 100], 
-    2: [50, 100, 150, 200], 
-    3: [75, 150, 225, 400],
-    4: [125, 250, 375, 500], 
-    5: [250, 500, 750, 1100], 
-    6: [300, 600, 900, 1400],
-    7: [350, 750, 1100, 1700], 
-    8: [450, 900, 1400, 2100], 
-    9: [550, 1100, 1600, 2400],
-    10: [600, 1200, 1900, 2800], 
-    11: [800, 1600, 2400, 3600], 
-    12: [1000, 2000, 3000, 4500],
-    13: [1100, 2200, 3400, 5100], 
-    14: [1250, 2500, 3800, 5700], 
-    15: [1400, 2800, 4300, 6400],
-    16: [1600, 3200, 4800, 7200], 
-    17: [2000, 3900, 5900, 8800], 
-    18: [2100, 4200, 6300, 9500],
-    19: [2400, 4900, 7300, 10900], 
-    20: [2800, 5700, 8500, 12700]
-}
-
-encounter_multipliers = {
-    1 : 1,
-    2 : 1.5,
-    3 : 2,
-    4 : 2,
-    5 : 2,
-    6 : 2,
-    7 : 2.5,
-    8 : 2.5,
-    9 : 2.5,
-    10 : 2.5,
-    11 : 3,
-    12 : 3,
-    13 : 3,
-    14 : 3,
-    15 : 4,
-    # 15 or higher is x4
-}
-
-encounter_difficulty = ['easy','medium','hard','deadly']
-
-characters_in_battle = []
-
-# number_of_characters = int(input(f"How many characters? "))
 
 class Character_in_battle():
     def __init__(self):
@@ -111,272 +52,319 @@ class Character_in_battle():
             'attack_number' : self.attack_number,
         }
 
-def character_enters_the_battle(character):
-    char_in_battle            = Character_in_battle()
-    char_in_battle.name       = f"{character.profile['name']['first']} {character.profile['name']['last']}"
-    # char_in_battle.cr         = character.profile['level']
-    char_in_battle.level      = character.profile['level']
-    char_in_battle.pb         = character.profile['proficiency bonus']
-    char_in_battle.char_race  = character.description['race']
-    char_in_battle.char_class = character.description['class']
-    char_in_battle.type       = 'Humanoid'
-    char_in_battle.size       = character.character_race['Traits']['Size']
-    char_in_battle.ac         = 17 #dan, update me
-    char_in_battle.hp_total   = character.capabilities['combat']['hit_points']['total']
-    char_in_battle.hp_current = character.capabilities['combat']['hit_points']['current']
-    char_in_battle.speed      = character.capabilities['physical']['speed']
-    while True:
-        try:
-            user_roll = int(input(f"  {char_in_battle.name} the {char_in_battle.char_race} {char_in_battle.char_class}: "))
-            initiative_calc = int(character.capabilities['attributes']['dexterity']['modifier']) + user_roll
-            break
-        except:
-            print(f"Error, please input a number")
-    char_in_battle.initiative = initiative_calc
-    char_in_battle.str        = int(character.capabilities['attributes']['strength']['modifier'])
-    char_in_battle.dex        = int(character.capabilities['attributes']['constitution']['modifier'])
-    char_in_battle.con        = int(character.capabilities['attributes']['dexterity']['modifier'])
-    char_in_battle.int        = int(character.capabilities['attributes']['intelligence']['modifier'])
-    char_in_battle.wis        = int(character.capabilities['attributes']['wisdom']['modifier'])
-    char_in_battle.cha        = int(character.capabilities['attributes']['charisma']['modifier'])
-    char_in_battle.attacks    = character.weapons
-    char_in_battle.skills     = character.capabilities['Skills']
-    char_in_battle.effects    = []
-    char_in_battle.friendly   = True
 
-    return char_in_battle
-
-def monster_enters_the_battle(monster):
-    mon_in_battle            = Character_in_battle()
-    mon_in_battle.name       = f"[{monster['Name']}] {random.choice(monster['5 Common First Names'])} {random.choice(monster['5 Common Last Names'])}"
-    mon_in_battle.cr         = monster["Challenge Rating"]
-    mon_in_battle.level      = 0
-    mon_in_battle.pb         = 0
-    mon_in_battle.char_race  = monster["Race"]
-    mon_in_battle.char_class = monster["Class"]
-    mon_in_battle.type       = monster["Type"]
-    mon_in_battle.size       = monster['Size']
-    mon_in_battle.ac         = monster["Armor Class"].split()[0]
-
-    # Calculate dynamic hp base of ex: "350 (20d20 + 140)"
-    match = re.search(r'(\d+) \((\d+)d(\d+) \+ (\d+)\)', monster["Hit Points"])
-    if match:
-        remove    = int(match.group(1))
-        die_num   = int(match.group(2))
-        die_sides = int(match.group(3))
-        base_con  = int(match.group(4))
-        roll_total = 0
-        for roll in range(0,die_num):
-            roll_total += random.randint(1,die_sides)
-        total_hp  = roll_total + base_con
-    else:
-        # if above calucation fails, like from formatting, just grab the average hp
-        total_hp = monster["Hit Points"].split()[0]
-
-    mon_in_battle.hp_total   = total_hp
-    mon_in_battle.hp_current = mon_in_battle.hp_total # placeholder
-    mon_in_battle.speed      = monster["Speed"]
-    mon_in_battle.str        = int(monster["STR"].split()[1].replace('(','').replace(')',''))
-    mon_in_battle.dex        = int(monster["DEX"].split()[1].replace('(','').replace(')',''))
-    mon_in_battle.con        = int(monster["CON"].split()[1].replace('(','').replace(')',''))
-    mon_in_battle.int        = int(monster["INT"].split()[1].replace('(','').replace(')',''))
-    mon_in_battle.wis        = int(monster["WIS"].split()[1].replace('(','').replace(')',''))
-    mon_in_battle.cha        = int(monster["CHA"].split()[1].replace('(','').replace(')',''))
-    mon_in_battle.initiative = random.randint(1,20) + mon_in_battle.dex
-    mon_in_battle.attacks    = monster["Actions"]
-    mon_in_battle.skills    = {
-        'acrobatics' : {
-            'Related Attribute' : 'dexterity',
-            'proficiency' : False,
-            'total' : mon_in_battle.dex,
-            'description' : "Performing physical feats, maintaining balance, and tumbling."
-        },
-        'animal handling' : {
-            'Related Attribute' : 'wisdom',
-            'proficiency' : False,
-            'total' : mon_in_battle.wis,
-            'description' : "Calming, controlling, or understanding the intentions of animals."
-        },
-        'arcana' : {
-            'Related Attribute' : 'intelligence',
-            'proficiency' : False,
-            'total' : mon_in_battle.int,
-            'description' : "Knowledge of magic, magical creatures, mystical lore, and magical traditions."
-        },
-        'athletics' : {
-            'Related Attribute' : 'strength',
-            'proficiency' : False,
-            'total' : mon_in_battle.str,
-            'description' : "Performing physical activities like climbing, jumping, and swimming."
-        },
-        'deception' : {
-            'Related Attribute' : 'charisma',
-            'proficiency' : False,
-            'total' : mon_in_battle.cha,
-            'description' : "Your ability to convincingly hide the truth, either verbally or through actions."
-        },
-        'history' : {
-            'Related Attribute' : 'intelligence',
-            'proficiency' : False,
-            'total' : mon_in_battle.int,
-            'description' : "Recalling information about historical events, legendary people, ancient kingdoms, and recent wars."
-        },
-        'insight' : {
-            'Related Attribute' : 'wisdom',
-            'proficiency' : False,
-            'total' : mon_in_battle.wis,
-            'description' : "Determining the true intentions of a creature, such as when searching out a lie or predicting someone’s next move."
-        },
-        'intimidation' : {
-            'Related Attribute' : 'charisma',
-            'proficiency' : False,
-            'total' : mon_in_battle.cha,
-            'description' : "Influencing someone through overt threats, hostile actions, and physical intimidation."
-        },
-        'investigation' : {
-            'Related Attribute' : 'intelligence',
-            'proficiency' : False,
-            'total' : mon_in_battle.int,
-            'description' : "Looking for clues and making deductions based on those clues."
-        },
-        'medicine' : {
-            'Related Attribute' : 'wisdom',
-            'proficiency' : False,
-            'total' : mon_in_battle.wis,
-            'description' : "Ability to diagnose and treat injuries and diseases."
-        },
-        'nature' : {
-            'Related Attribute' : 'intelligence',
-            'proficiency' : False,
-            'total' : mon_in_battle.int,
-            'description' : "Knowledge about terrain, plants and animals, the weather, and natural cycles."
-        },
-        'perception' : {
-            'Related Attribute' : 'wisdom',
-            'proficiency' : True,
-            'total' : mon_in_battle.wis,
-            'description' : "Noticing or sensing things, typically based on Wisdom. It’s the skill you’d use to hear a conversation through a door, spot something hidden under a rock, or notice someone sneaking up on you."
-        },
-        'performance' : {
-            'Related Attribute' : 'charisma',
-            'proficiency' : False,
-            'total' : mon_in_battle.cha,
-            'description' : "Delighting an audience with music, dance, acting, storytelling, or some other form of entertainment."
-        },
-        'persuasion' : {
-            'Related Attribute' : 'charisma',
-            'proficiency' : False,
-            'total' : mon_in_battle.cha,
-            'description' : "Influencing someone with tact, social graces, or good nature."
-        },
-        'religion' : {
-            'Related Attribute' : 'intelligence',
-            'proficiency' : False,
-            'total' : mon_in_battle.int,
-            'description' : "Knowledge about deities, rites and prayers, religious hierarchies, holy symbols, and the practices of secret cults."
-        },
-        'sleight of hand' : {
-            'Related Attribute' : 'dexterity',
-            'proficiency' : False,
-            'total' : mon_in_battle.dex,
-            'description' : "Executing tricks of dexterity or misdirection, like picking pockets or conjuring objects."
-        },
-        'stealth' : {
-            'Related Attribute' : 'dexterity',
-            'proficiency' : False,
-            'total' : mon_in_battle.dex,
-            'description' : "Concealing yourself from enemies, slinking past guards, slipping away without being noticed."
-        },
-        'survival' : {
-            'Related Attribute' : 'wisdom',
-            'proficiency' : False,
-            'total' : mon_in_battle.wis,
-            'description' : "Following tracks, hunting wild game, guiding your group through frozen wastelands, identifying signs that owlbears live nearby, predicting the weather, or avoiding quicksand and other natural hazards."
-        }
+def main(all_characters):
 
 
+    xp_thresholds = {
+        # xp thresholds by character level
+        # indice 0 = easy, 1 = medium, 2 = hard, 3 = deadly
+        1: [25, 50, 75, 100], 
+        2: [50, 100, 150, 200], 
+        3: [75, 150, 225, 400],
+        4: [125, 250, 375, 500], 
+        5: [250, 500, 750, 1100], 
+        6: [300, 600, 900, 1400],
+        7: [350, 750, 1100, 1700], 
+        8: [450, 900, 1400, 2100], 
+        9: [550, 1100, 1600, 2400],
+        10: [600, 1200, 1900, 2800], 
+        11: [800, 1600, 2400, 3600], 
+        12: [1000, 2000, 3000, 4500],
+        13: [1100, 2200, 3400, 5100], 
+        14: [1250, 2500, 3800, 5700], 
+        15: [1400, 2800, 4300, 6400],
+        16: [1600, 3200, 4800, 7200], 
+        17: [2000, 3900, 5900, 8800], 
+        18: [2100, 4200, 6300, 9500],
+        19: [2400, 4900, 7300, 10900], 
+        20: [2800, 5700, 8500, 12700]
     }
-    mon_in_battle.effects    = []
-    mon_in_battle.friendly   = False
 
-    return mon_in_battle
+    encounter_multipliers = {
+        1 : 1,
+        2 : 1.5,
+        3 : 2,
+        4 : 2,
+        5 : 2,
+        6 : 2,
+        7 : 2.5,
+        8 : 2.5,
+        9 : 2.5,
+        10 : 2.5,
+        11 : 3,
+        12 : 3,
+        13 : 3,
+        14 : 3,
+        15 : 4,
+        # 15 or higher is x4
+    }
 
-encounter_menu_options = [
-    "Automated",
-    "Guided"
-]
-encounter_menu_selected = TerminalMenu(encounter_menu_options)
-encounter_menu_selected_index = encounter_menu_selected.show()
+    encounter_difficulty = ['easy','medium','hard','deadly']
 
-battle_in_initiative_order = []
+    characters_in_battle = []
 
-def print_turn_banner():
-    print(f"  ======================================================================================================================================================")
-    print(f"  {'Turn':<3}   {'Init':>4}   {'Character':<65}  {'Hit Points':>7}    {'Effects':<8}")
-    print(f"  ======================================================================================================================================================")
+    # number_of_characters = int(input(f"How many characters? "))
 
+    def character_enters_the_battle(character):
+        char_in_battle            = Character_in_battle()
+        char_in_battle.name       = f"{character.profile['name']['first']} {character.profile['name']['last']}"
+        # char_in_battle.cr         = character.profile['level']
+        char_in_battle.level      = character.profile['level']
+        char_in_battle.pb         = character.profile['proficiency bonus']
+        char_in_battle.char_race  = character.description['race']
+        char_in_battle.char_class = character.description['class']
+        char_in_battle.type       = 'Humanoid'
+        char_in_battle.size       = character.character_race['Traits']['Size']
+        char_in_battle.ac         = 17 #dan, update me
+        char_in_battle.hp_total   = character.capabilities['combat']['hit_points']['total']
+        char_in_battle.hp_current = character.capabilities['combat']['hit_points']['current']
+        char_in_battle.speed      = character.capabilities['physical']['speed']
+        while True:
+            try:
+                user_roll = int(input(f"  {char_in_battle.name} the {char_in_battle.char_race} {char_in_battle.char_class}: "))
+                initiative_calc = int(character.capabilities['attributes']['dexterity']['modifier']) + user_roll
+                break
+            except:
+                print(f"Error, please input a number")
+        char_in_battle.initiative = initiative_calc
+        char_in_battle.str        = int(character.capabilities['attributes']['strength']['modifier'])
+        char_in_battle.dex        = int(character.capabilities['attributes']['constitution']['modifier'])
+        char_in_battle.con        = int(character.capabilities['attributes']['dexterity']['modifier'])
+        char_in_battle.int        = int(character.capabilities['attributes']['intelligence']['modifier'])
+        char_in_battle.wis        = int(character.capabilities['attributes']['wisdom']['modifier'])
+        char_in_battle.cha        = int(character.capabilities['attributes']['charisma']['modifier'])
+        char_in_battle.attacks    = character.weapons
+        char_in_battle.skills     = character.capabilities['Skills']
+        char_in_battle.effects    = []
+        char_in_battle.friendly   = True
 
-def get_hp_color(current, total):
-    hp_percentage = (current / total) * 100
+        return char_in_battle
 
-    if hp_percentage > 75:
-        return "\033[92m"  # Green
-    elif hp_percentage > 50:
-        return "\033[93m"  # Yellow
-    elif hp_percentage > 25:
-        return "\033[91m"  # Orange
-    else:
-        return "\033[91m"  # Red
+    def monster_enters_the_battle(monster):
+        mon_in_battle            = Character_in_battle()
+        mon_in_battle.name       = f"[{monster['Name']}] {random.choice(monster['5 Common First Names'])} {random.choice(monster['5 Common Last Names'])}"
+        mon_in_battle.cr         = monster["Challenge Rating"]
+        mon_in_battle.level      = 0
+        mon_in_battle.pb         = 0
+        mon_in_battle.char_race  = monster["Race"]
+        mon_in_battle.char_class = monster["Class"]
+        mon_in_battle.type       = monster["Type"]
+        mon_in_battle.size       = monster['Size']
+        mon_in_battle.ac         = monster["Armor Class"].split()[0]
 
-
-def print_turn_order():
-    for index, character in enumerate(battle_in_initiative_order):
-        display_name = f"{character.name} the {character.char_race} {character.char_class}"
-
-        current_hp = character.hp_current
-        total_hp = character.hp_total
-        hp_color = get_hp_color(current_hp, total_hp)
-
-        if character.friendly == True:
-            if len(character.effects) == 0:
-                print(f"  {index + 1:>4}   [{character.initiative:>2}]   \033[92m{display_name:<65}\033[0m  {hp_color}{character.hp_current:>4} /{character.hp_total:>4}\033[0m    {'None':<8}")
-            else:
-                print(f"  {index + 1:>4}   [{character.initiative:>2}]   \033[92m{display_name:<65}\033[0m  {hp_color}{character.hp_current:>4} /{character.hp_total:>4}\033[0m    {', '.join(character.effects):<8}")
-        elif character.friendly == False:
-            if len(character.effects) == 0:
-                print(f"  {index + 1:>4}   [{character.initiative:>2}]   \033[91m{display_name:<65}\033[0m  {hp_color}{character.hp_current:>4} /{character.hp_total:>4}\033[0m    {'None':<8}")
-            else:
-                print(f"  {index + 1:>4}   [{character.initiative:>2}]   \033[91m{display_name:<65}\033[0m  {hp_color}{character.hp_current:>4} /{character.hp_total:>4}\033[0m    {', '.join(character.effects):<8}")
-
-
-
-def select_character_menu_menu(character_list):
-    for index, character in enumerate(battle_in_initiative_order):
-        display_name = f"{character.name} the {character.char_race} {character.char_class}"
-        if len(character.effects) == 0:
-            character_list.append(f"{index + 1:>4}   [{character.initiative:>2}]   {display_name:<65} {character.hp_current:>4} /{character.hp_total:>4}    {'None':<8}")
+        # Calculate dynamic hp base of ex: "350 (20d20 + 140)"
+        match = re.search(r'(\d+) \((\d+)d(\d+) \+ (\d+)\)', monster["Hit Points"])
+        if match:
+            remove    = int(match.group(1))
+            die_num   = int(match.group(2))
+            die_sides = int(match.group(3))
+            base_con  = int(match.group(4))
+            roll_total = 0
+            for roll in range(0,die_num):
+                roll_total += random.randint(1,die_sides)
+            total_hp  = roll_total + base_con
         else:
-            character_list.append(f"{index + 1:>4}   [{character.initiative:>2}]   {display_name:<65} {character.hp_current:>4} /{character.hp_total:>4}    {', '.join(character.effects):<8}")
+            # if above calucation fails, like from formatting, just grab the average hp
+            total_hp = monster["Hit Points"].split()[0]
 
-    character_list.append('Exit')
+        mon_in_battle.hp_total   = total_hp
+        mon_in_battle.hp_current = mon_in_battle.hp_total # placeholder
+        mon_in_battle.speed      = monster["Speed"]
+        mon_in_battle.str        = int(monster["STR"].split()[1].replace('(','').replace(')',''))
+        mon_in_battle.dex        = int(monster["DEX"].split()[1].replace('(','').replace(')',''))
+        mon_in_battle.con        = int(monster["CON"].split()[1].replace('(','').replace(')',''))
+        mon_in_battle.int        = int(monster["INT"].split()[1].replace('(','').replace(')',''))
+        mon_in_battle.wis        = int(monster["WIS"].split()[1].replace('(','').replace(')',''))
+        mon_in_battle.cha        = int(monster["CHA"].split()[1].replace('(','').replace(')',''))
+        mon_in_battle.initiative = random.randint(1,20) + mon_in_battle.dex
+        mon_in_battle.attacks    = monster["Actions"]
+        mon_in_battle.skills    = {
+            'acrobatics' : {
+                'Related Attribute' : 'dexterity',
+                'proficiency' : False,
+                'total' : mon_in_battle.dex,
+                'description' : "Performing physical feats, maintaining balance, and tumbling."
+            },
+            'animal handling' : {
+                'Related Attribute' : 'wisdom',
+                'proficiency' : False,
+                'total' : mon_in_battle.wis,
+                'description' : "Calming, controlling, or understanding the intentions of animals."
+            },
+            'arcana' : {
+                'Related Attribute' : 'intelligence',
+                'proficiency' : False,
+                'total' : mon_in_battle.int,
+                'description' : "Knowledge of magic, magical creatures, mystical lore, and magical traditions."
+            },
+            'athletics' : {
+                'Related Attribute' : 'strength',
+                'proficiency' : False,
+                'total' : mon_in_battle.str,
+                'description' : "Performing physical activities like climbing, jumping, and swimming."
+            },
+            'deception' : {
+                'Related Attribute' : 'charisma',
+                'proficiency' : False,
+                'total' : mon_in_battle.cha,
+                'description' : "Your ability to convincingly hide the truth, either verbally or through actions."
+            },
+            'history' : {
+                'Related Attribute' : 'intelligence',
+                'proficiency' : False,
+                'total' : mon_in_battle.int,
+                'description' : "Recalling information about historical events, legendary people, ancient kingdoms, and recent wars."
+            },
+            'insight' : {
+                'Related Attribute' : 'wisdom',
+                'proficiency' : False,
+                'total' : mon_in_battle.wis,
+                'description' : "Determining the true intentions of a creature, such as when searching out a lie or predicting someone’s next move."
+            },
+            'intimidation' : {
+                'Related Attribute' : 'charisma',
+                'proficiency' : False,
+                'total' : mon_in_battle.cha,
+                'description' : "Influencing someone through overt threats, hostile actions, and physical intimidation."
+            },
+            'investigation' : {
+                'Related Attribute' : 'intelligence',
+                'proficiency' : False,
+                'total' : mon_in_battle.int,
+                'description' : "Looking for clues and making deductions based on those clues."
+            },
+            'medicine' : {
+                'Related Attribute' : 'wisdom',
+                'proficiency' : False,
+                'total' : mon_in_battle.wis,
+                'description' : "Ability to diagnose and treat injuries and diseases."
+            },
+            'nature' : {
+                'Related Attribute' : 'intelligence',
+                'proficiency' : False,
+                'total' : mon_in_battle.int,
+                'description' : "Knowledge about terrain, plants and animals, the weather, and natural cycles."
+            },
+            'perception' : {
+                'Related Attribute' : 'wisdom',
+                'proficiency' : True,
+                'total' : mon_in_battle.wis,
+                'description' : "Noticing or sensing things, typically based on Wisdom. It’s the skill you’d use to hear a conversation through a door, spot something hidden under a rock, or notice someone sneaking up on you."
+            },
+            'performance' : {
+                'Related Attribute' : 'charisma',
+                'proficiency' : False,
+                'total' : mon_in_battle.cha,
+                'description' : "Delighting an audience with music, dance, acting, storytelling, or some other form of entertainment."
+            },
+            'persuasion' : {
+                'Related Attribute' : 'charisma',
+                'proficiency' : False,
+                'total' : mon_in_battle.cha,
+                'description' : "Influencing someone with tact, social graces, or good nature."
+            },
+            'religion' : {
+                'Related Attribute' : 'intelligence',
+                'proficiency' : False,
+                'total' : mon_in_battle.int,
+                'description' : "Knowledge about deities, rites and prayers, religious hierarchies, holy symbols, and the practices of secret cults."
+            },
+            'sleight of hand' : {
+                'Related Attribute' : 'dexterity',
+                'proficiency' : False,
+                'total' : mon_in_battle.dex,
+                'description' : "Executing tricks of dexterity or misdirection, like picking pockets or conjuring objects."
+            },
+            'stealth' : {
+                'Related Attribute' : 'dexterity',
+                'proficiency' : False,
+                'total' : mon_in_battle.dex,
+                'description' : "Concealing yourself from enemies, slinking past guards, slipping away without being noticed."
+            },
+            'survival' : {
+                'Related Attribute' : 'wisdom',
+                'proficiency' : False,
+                'total' : mon_in_battle.wis,
+                'description' : "Following tracks, hunting wild game, guiding your group through frozen wastelands, identifying signs that owlbears live nearby, predicting the weather, or avoiding quicksand and other natural hazards."
+            }
 
-    characters_menu = TerminalMenu(
-        character_list,
-        multi_select=False,
-        show_multi_select_hint=False,
-        accept_keys=("enter", "alt-d", "ctrl-i"),
-        title=None,
-        # preview_command='',
-    )
-    character_menu_index = characters_menu.show()
-    return character_list[character_menu_index], character_menu_index, character_menu_index
+
+        }
+        mon_in_battle.effects    = []
+        mon_in_battle.friendly   = False
+
+        return mon_in_battle
+
+
+
+    battle_in_initiative_order = []
+
+    def print_turn_banner():
+        print(f"  ======================================================================================================================================================")
+        print(f"  {'Turn':<3}   {'Init':>4}   {'Character':<65}  {'Hit Points':>7}    {'Effects':<8}")
+        print(f"  ======================================================================================================================================================")
+
+
+    def get_hp_color(current, total):
+        hp_percentage = (current / total) * 100
+
+        if hp_percentage > 75:
+            return "\033[92m"  # Green
+        elif hp_percentage > 50:
+            return "\033[93m"  # Yellow
+        elif hp_percentage > 25:
+            return "\033[91m"  # Orange
+        else:
+            return "\033[91m"  # Red
+
+
+    def print_turn_order():
+        for index, character in enumerate(battle_in_initiative_order):
+            display_name = f"{character.name} the {character.char_race} {character.char_class}"
+
+            current_hp = character.hp_current
+            total_hp = character.hp_total
+            hp_color = get_hp_color(current_hp, total_hp)
+
+            if character.friendly == True:
+                if len(character.effects) == 0:
+                    print(f"  {index + 1:>4}   [{character.initiative:>2}]   \033[92m{display_name:<65}\033[0m  {hp_color}{character.hp_current:>4} /{character.hp_total:>4}\033[0m    {'None':<8}")
+                else:
+                    print(f"  {index + 1:>4}   [{character.initiative:>2}]   \033[92m{display_name:<65}\033[0m  {hp_color}{character.hp_current:>4} /{character.hp_total:>4}\033[0m    {', '.join(character.effects):<8}")
+            elif character.friendly == False:
+                if len(character.effects) == 0:
+                    print(f"  {index + 1:>4}   [{character.initiative:>2}]   \033[91m{display_name:<65}\033[0m  {hp_color}{character.hp_current:>4} /{character.hp_total:>4}\033[0m    {'None':<8}")
+                else:
+                    print(f"  {index + 1:>4}   [{character.initiative:>2}]   \033[91m{display_name:<65}\033[0m  {hp_color}{character.hp_current:>4} /{character.hp_total:>4}\033[0m    {', '.join(character.effects):<8}")
+
+
+
+    def select_character_menu_menu(character_list):
+        for index, character in enumerate(battle_in_initiative_order):
+            display_name = f"{character.name} the {character.char_race} {character.char_class}"
+            if len(character.effects) == 0:
+                character_list.append(f"{index + 1:>4}   [{character.initiative:>2}]   {display_name:<65} {character.hp_current:>4} /{character.hp_total:>4}    {'None':<8}")
+            else:
+                character_list.append(f"{index + 1:>4}   [{character.initiative:>2}]   {display_name:<65} {character.hp_current:>4} /{character.hp_total:>4}    {', '.join(character.effects):<8}")
+
+        character_list.append('Exit')
+
+        characters_menu = TerminalMenu(
+            character_list,
+            multi_select=False,
+            show_multi_select_hint=False,
+            accept_keys=("enter", "alt-d", "ctrl-i"),
+            title=None,
+            # preview_command='',
+        )
+        character_menu_index = characters_menu.show()
+        return character_list[character_menu_index], character_menu_index, character_menu_index
 
 
 
 
 
-# Characters entering the battlefield
-if encounter_menu_options[encounter_menu_selected_index] == 'Automated':
     if len(all_characters) == 0:
         print(f"There are not character available to enter battle.")
     else:
@@ -393,15 +381,15 @@ if encounter_menu_options[encounter_menu_selected_index] == 'Automated':
             for pickle_file in pickle_files:
                 print(f"Previous save stated detected: {pickle_file}")
             load_pickle = ['Load previous battle','Start new battle']
-            load_pickle_menu = TerminalMenu(load_pickle, title="\nDo you want to load it?")
+            print("\n\033[91mDo you want to load it?\033[0m\n")
+            load_pickle_menu = TerminalMenu(load_pickle)
             load_pickle_menu_index = load_pickle_menu.show()
             load_pickle_menu_selected = load_pickle[load_pickle_menu_index]
             if load_pickle_menu_selected == 'Load previous battle':
                 battle_in_initiative_order = pickle_handler.load_pkl_file(pickle_file, directory_path)
             elif load_pickle_menu_selected == 'Start new battle':
                 clear()
-                print("No pickle files found in the directory.")
-                print(f"\nMake Inititative Rolls:")
+                print(f"\n\033[91mMake Inititative Rolls:\033[0m\n")
                 for index, character in enumerate(all_characters):
                     characters_in_battle.append(character_enters_the_battle(character))
                 battle_in_initiative_order = sorted(characters_in_battle, key=lambda char: char.initiative, reverse=True)
@@ -461,16 +449,8 @@ if encounter_menu_options[encounter_menu_selected_index] == 'Automated':
                 break                
 
             else:
-                # obj = battle_in_initiative_order[selected_index]
-                # data = obj.to_dict()
-                # formatted_data = json.dumps(data, indent=4)
-
-                # print(
-                #     formatted_data
-                # )
                 print_character(battle_in_initiative_order[selected_index].to_dict())
 
-                # print_character(battle_in_initiative_order[selected_index].to_dict())
                 input("\nPress Enter to Continue...")
 
 
@@ -894,23 +874,9 @@ if encounter_menu_options[encounter_menu_selected_index] == 'Automated':
             def list_files(directory="."):
                 return (file for file in os.listdir(directory) if os.path.isfile(os.path.join(directory, file)))
 
-            test=list_files()
-            debug(
-                test
-            )
 
             terminal_menu = TerminalMenu(battle_in_initiative_order, preview_command=highlight_file, preview_size=0.75)
             menu_entry_index = terminal_menu.show()
-
-
-
-
-
-
-
-
-
-
 
 
         else:
@@ -918,20 +884,17 @@ if encounter_menu_options[encounter_menu_selected_index] == 'Automated':
 
 
 
-elif encounter_menu_options[encounter_menu_selected_index] == 'Guided':
-    pass
 
+if __name__ == '__main__':
+    # Option to load previous save files
+    all_characters = pickle_handler.select_and_load_pkl()
+    if all_characters is not None:
+        print("Characters loaded")
+    else:
+        print("No Characters loaded")
+        all_characters = []
+    print()
 
-
-
-
-
-
-
-
-# print(
-#     xp_thresholds[1]
-# )
-
+    main(all_characters)
 
 

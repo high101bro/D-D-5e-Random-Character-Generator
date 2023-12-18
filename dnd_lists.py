@@ -60,7 +60,7 @@ dnd_menu_level = [
     "Level 20    370,000 Exp    At the pinnacle of power, you're virtually untouchable."
 ]
 
-dnd_menu_race = [
+dnd_race_list = [
     "Dwarf         Known for their craftsmanship, mining skills, and resilience in battle. They often live in mountain strongholds and value honor and tradition." ,
     "Elf           Graceful and long-lived, with a deep connection to nature and magic. They are known for their agility, keen senses, and affinity for archery." ,
     "Halfling      Small and nimble, often living peaceful lives in rural communities. They are known for their love of good food, simple pleasures, and luck." ,
@@ -72,7 +72,7 @@ dnd_menu_race = [
     "Tiefling      Infernal bloodlines with fiendish features. They are tied to dark forces but can use their unique abilities for good or ill."
 ]
 
-dnd_menu_class = [
+dnd_class_list = [
     "Barbarian     Barbarians are fierce warriors from untamed lands, known for their rage and primal strength. They excel in melee combat and are often linked to nature.",
     "Bard          Bards are versatile performers and spellcasters, using their art and magic to inspire allies and hinder foes. They are charismatic and adaptable adventurers.",
     "Cleric        Clerics are divine spellcasters and servants of gods, channeling their power to heal or smite. They provide spiritual guidance and support in battle.",

@@ -117,23 +117,17 @@ def character_management(all_characters):
         characters_menu_index = characters_menu.show()
         
         if character_list[characters_menu_index] == 'Exit':
-            character_list.pop()
-            character_list.pop()
             break
         elif character_list[characters_menu_index] == 'Delete Character':
-            character_list.pop()
-            character_list.pop()
 
             while True:
                 clear()
                 print("Delete a Character from the Game.")
-                print(f"  ====================================================================================================")
-                print(f"  Character {'#':<7} {'Race':<15} {'Class':<14} {'Name':<34} {'Created':<20} ")
-                print(f"  ====================================================================================================")
+                character_management_banner()
 
                 character_remove_list = []
                 for character in all_characters:
-                    character_remove_list.append(f"Character {character.profile['character number']:<7} {character.character_race['Name']:<15} {character.character_class['Name']:<14} {character.profile['name']['first'] + ' ' + character.profile['name']['last']:<34} {character.profile['created']:<20}")
+                    character_remove_list.append(f"Character {character.profile['character number']:<7} {character.profile['level']:<10} {character.character_race['Name']:<15} {character.character_class['Name']:<14} {character.profile['name']['first'] + ' ' + character.profile['name']['last']:<34} {character.profile['created']:<20}")
                 character_remove_list.append('Exit')
 
                 characters_menu = TerminalMenu(character_remove_list)
@@ -162,55 +156,77 @@ def character_management(all_characters):
             # dnd_choose_character_number = dir(Character())
             # Gets all the attributues of Character() and removes all the attributes that start with '__'
             # dnd_menu_character_class_section_selection = [attr for attr in dir(Character()) if not attr.startswith("__")]
-            dnd_menu_character_class_section_selection = ["Armor","attributes","background","capabilities","character_class","character_race","combat","description","features","items","level_chart","money","profile","skills","spells","weapons"] 
+            dnd_menu_character_class_section_selection = ["spells","profile","armor","attributes","background","capabilities","character_class","character_race","combat","description","features","items","level_chart","money","skills","weapons","Exit"] 
  
             dnd_menu_character_class_section_selection_menu = TerminalMenu(dnd_menu_character_class_section_selection)
             dnd_menu_character_class_section_selection_menu_index = dnd_menu_character_class_section_selection_menu.show()
 
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'profile':
                 print_character(all_characters[characters_menu_index].profile)
+                input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'character_race':
                 print_character(all_characters[characters_menu_index].character_race)
+                input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'character_class':
                 print_character(all_characters[characters_menu_index].character_class)
+                input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'description':
                 print_character(all_characters[characters_menu_index].description)
+                input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'background':
                 print_character(all_characters[characters_menu_index].background)
+                input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'level_chart':
                 print_character(all_characters[characters_menu_index].level_chart)
+                input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'attributes':
                 print_character(all_characters[characters_menu_index].attributes)
+                input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'capabilities':
                 print_character(all_characters[characters_menu_index].capabilities)
+                input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'skills':
                 print_character(all_characters[characters_menu_index].skills)
+                input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'featuers':
                 print_character(all_characters[characters_menu_index].feautres)
+                input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'money':
                 print_character(all_characters[characters_menu_index].money)
+                input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'items':
                 print_character(all_characters[characters_menu_index].items)
+                input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Armor':
                 print_character(all_characters[characters_menu_index].armor)
+                input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'weapons':
                 print_character(all_characters[characters_menu_index].weapons)
+                input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'combat':
                 print_character(all_characters[characters_menu_index].combat)
+                input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'spells':
 
 
-                if all_characters[characters_menu_index].character_class['Name'] in half_magic_classes:
-                    if all_characters[characters_menu_index].character_class['Name'] == "Paladin":
-                        pass
-                    if all_characters[characters_menu_index].character_class['Name'] == "Ranger":
-                        pass
-                    if all_characters[characters_menu_index].character_class['Name'] == "Warlock":
-                        pass
+                # if all_characters[characters_menu_index].character_class['Name'] in half_magic_classes:
+                #     if all_characters[characters_menu_index].character_class['Name'] == "Paladin":
+                #         pass
+                #     if all_characters[characters_menu_index].character_class['Name'] == "Ranger":
+                #         pass
+                #     if all_characters[characters_menu_index].character_class['Name'] == "Warlock":
+                #         pass
 
-                elif all_characters[characters_menu_index].character_class['Name'] in magic_classes:
+                # el
+                if all_characters[characters_menu_index].character_class['Name'] in magic_classes or all_characters[characters_menu_index].character_class['Name'] in half_magic_classes:
                     spell_level_list = list(all_characters[characters_menu_index].spells['Spells Known']['Slots'])
                     spell_level_list.append('Exit')
+
+                    # These magic classes don't have Cantrips
+                    if all_characters[characters_menu_index].character_class['Name'] == 'Paladin' or \
+                       all_characters[characters_menu_index].character_class['Name'] == "Ranger":
+                       spell_level_list.remove('Cantrips')
+                       
                     while True:
                         clear()
                         def spell_menu_banner():
@@ -218,7 +234,6 @@ def character_management(all_characters):
                             print(f"  {spell_level_title:<35} {'SEL':<5} {'School':<20} {'Damage':<10} {'Saving Throw':<15} {'Range':<22} {'Duration':<32} {'Casting Time':<25} {'Components':<12}")
                             print(f"  ========================================================================================================================================================================================================")
                         spell_menu_banner
-
 
                         #example: Cantrips, 1st, 2nd...
                         spell_level_menu = TerminalMenu(spell_level_list, title="Select Level")
@@ -308,7 +323,6 @@ def character_management(all_characters):
                                             except:
                                                 pass
                                             break
-                                        debug(all_characters[characters_menu_index].spells["Selected Spells"])
 
                             # input("\nPress Enter to Continue...")
             # input("\nPress Enter to Continue...")

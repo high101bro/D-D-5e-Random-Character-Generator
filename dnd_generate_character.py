@@ -96,7 +96,9 @@ class Character():
             "Spellcasting Modifier" : "",
             "Attack Modifier" : 0,
             "Save DC" : 0,
-            "Slots" : {},
+            "Spells Known" : {
+                "Slots" : {},
+            },
             "Selected Spells" : []
         }
     def to_dict(self):
@@ -280,28 +282,32 @@ def generate_characters(character, character_number, character_level=1, characte
 
     if character_class == "Barbarian":
         # Not a native spell caster
-        pass
+        character.spells['Cantrips Known'] = "None"
+        character.spells['Spells Known'] = "None"
 
 
     elif character_class == "Fighter":
         # Not a native spell caster
-        pass
-    
-    
+        character.spells['Cantrips Known'] = "None"
+        character.spells['Spells Known'] = "None"
+
+
     elif character_class == "Monk":
         # Not a native spell caster
-        pass
-    
-    
+        character.spells['Cantrips Known'] = "None"
+        character.spells['Spells Known'] = "None"
+
+
     elif character_class == "Rogue":
         # Not a native spell caster
-        pass
-    
-    
+        character.spells['Cantrips Known'] = "None"
+        character.spells['Spells Known'] = "None"   
+
+
     elif character_class == "Bard":
         spell_levels = ['Cantrips','1st','2nd','3rd','4th','5th','6th','7th','8th','9th']
-        character.spells['Cantrips Known'] = dnd_classes[character_class]['Level Chart'][character.profile['level']]['Cantrips Known']
 
+        character.spells['Cantrips Known'] = dnd_classes[character_class]['Level Chart'][character.profile['level']]['Cantrips Known']
         character.spells['Spells Known'] = {}
         character.spells['Spells Known']['Total'] = dnd_classes[character_class]['Level Chart'][character.profile['level']]['Spells Known']
         character.spells['Spells Known']["Slots"] = {}
@@ -316,9 +322,8 @@ def generate_characters(character, character_number, character_level=1, characte
                 for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
                     character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
                 
+                chosen_temp_list = []
                 for each in range(1,character.spells['Cantrips Known'] + 1):
-                    debug(character.spells['Cantrips Known'])
-                    chosen_temp_list = []
                     def choose_random_spell():
                         random_spell = random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level])
                         if random_spell not in chosen_temp_list:
@@ -329,7 +334,6 @@ def generate_characters(character, character_number, character_level=1, characte
                     random_spell = choose_random_spell()
 
                     character.spells["Selected Spells"].append(random_spell)
-                    # character.spells["Selected Spells"].append( random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]))
             else:
                 if dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level] != '-': 
                     character.spells['Spells Known']["Slots"][spell_level] = {
@@ -339,8 +343,8 @@ def generate_characters(character, character_number, character_level=1, characte
                     for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
                         character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
 
-                    for each in range(1,dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level] + 1):
-                        chosen_temp_list = []
+                    chosen_temp_list = []
+                    for each in range(1,int(dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level]) + 1):
                         def choose_random_spell():
                             random_spell = random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level])
                             if random_spell not in chosen_temp_list:
@@ -351,13 +355,12 @@ def generate_characters(character, character_number, character_level=1, characte
                         random_spell = choose_random_spell()
 
                         character.spells["Selected Spells"].append(random_spell)
-                        # character.spells["Selected Spells"].append(random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]))
 
 
     elif character_class == "Cleric":
         spell_levels = ['Cantrips','1st','2nd','3rd','4th','5th','6th','7th','8th','9th']
-        character.spells['Cantrips Known'] = dnd_classes[character_class]['Level Chart'][character.profile['level']]['Cantrips Known']
 
+        character.spells['Cantrips Known'] = dnd_classes[character_class]['Level Chart'][character.profile['level']]['Cantrips Known']
         character.spells['Spells Known'] = {}
         character.spells['Spells Known']['Total'] = "Clerics have access to all their spells, but can change them daily with preparation"
         character.spells['Spells Known']["Slots"] = {}
@@ -372,8 +375,224 @@ def generate_characters(character, character_number, character_level=1, characte
                 for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
                     character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
                 
+                chosen_temp_list = []
                 for each in range(1,character.spells['Cantrips Known'] + 1):
+                    def choose_random_spell():
+                        random_spell = random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level])
+                        if random_spell not in chosen_temp_list:
+                            chosen_temp_list.append(random_spell)
+                            return random_spell
+                        else:
+                            choose_random_spell()
+                    random_spell = choose_random_spell()
+
+                    character.spells["Selected Spells"].append(random_spell)
+            else:
+                if dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level] != '-': 
+                    character.spells['Spells Known']["Slots"][spell_level] = {
+                        "Able To Cast" : dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level],
+                        "Known Spells" : {}
+                    }
+                    for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
+                        character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
+
                     chosen_temp_list = []
+                    for each in range(1,int(dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level]) + 1):
+                        def choose_random_spell():
+                            random_spell = random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level])
+                            if random_spell not in chosen_temp_list:
+                                chosen_temp_list.append(random_spell)
+                                return random_spell
+                            else:
+                                choose_random_spell()
+                        random_spell = choose_random_spell()
+
+                        character.spells["Selected Spells"].append(random_spell)
+
+
+    elif character_class == "Druid":
+        spell_levels = ['Cantrips','1st','2nd','3rd','4th','5th','6th','7th','8th','9th']
+
+        character.spells['Cantrips Known'] = dnd_classes[character_class]['Level Chart'][character.profile['level']]['Cantrips Known']
+        character.spells['Spells Known'] = {}
+        character.spells['Spells Known']['Total'] = "Clerics have access to all their spells, but can change them daily with preparationXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        character.spells['Spells Known']["Slots"] = {}
+
+        for spell_level in spell_levels:
+            if spell_level == 'Cantrips':
+                
+                character.spells['Spells Known']["Slots"][spell_level] = {
+                    "Able To Cast" : f"Can cast {character.spells['Cantrips Known']} known Cantrips unlimiited times",
+                    "Known Spells" : {}
+                }
+                for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
+                    character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
+                
+                chosen_temp_list = []
+                for each in range(1,character.spells['Cantrips Known'] + 1):
+                    def choose_random_spell():
+                        random_spell = random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level])
+                        if random_spell not in chosen_temp_list:
+                            chosen_temp_list.append(random_spell)
+                            return random_spell
+                        else:
+                            choose_random_spell()
+                    random_spell = choose_random_spell()
+
+                    character.spells["Selected Spells"].append(random_spell)
+            else:
+                if dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level] != '-': 
+                    character.spells['Spells Known']["Slots"][spell_level] = {
+                        "Able To Cast" : dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level],
+                        "Known Spells" : {}
+                    }
+                    for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
+                        character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
+
+                    chosen_temp_list = []
+                    for each in range(1,int(dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level]) + 1):
+                        def choose_random_spell():
+                            random_spell = random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level])
+                            if random_spell not in chosen_temp_list:
+                                chosen_temp_list.append(random_spell)
+                                return random_spell
+                            else:
+                                choose_random_spell()
+                        random_spell = choose_random_spell()
+
+                        character.spells["Selected Spells"].append(random_spell)
+
+
+    elif character_class == "Sorcerer":
+        spell_levels = ['Cantrips','1st','2nd','3rd','4th','5th','6th','7th','8th','9th']
+
+        character.spells['Cantrips Known'] = dnd_classes[character_class]['Level Chart'][character.profile['level']]['Cantrips Known']
+        character.spells['Spells Known'] = {}
+        character.spells['Spells Known']['Total'] = dnd_classes[character_class]['Level Chart'][character.profile['level']]['Spells Known']
+        character.spells['Spells Known']["Slots"] = {}
+
+        for spell_level in spell_levels:
+            if spell_level == 'Cantrips':
+                
+                character.spells['Spells Known']["Slots"][spell_level] = {
+                    "Able To Cast" : f"Can cast {character.spells['Cantrips Known']} known Cantrips unlimiited times",
+                    "Known Spells" : {}
+                }
+                for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
+                    character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
+                
+                chosen_temp_list = []
+                for each in range(1,character.spells['Cantrips Known'] + 1):
+                    def choose_random_spell():
+                        random_spell = random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level])
+                        if random_spell not in chosen_temp_list:
+                            chosen_temp_list.append(random_spell)
+                            return random_spell
+                        else:
+                            choose_random_spell()
+                    random_spell = choose_random_spell()
+
+                    character.spells["Selected Spells"].append(random_spell)
+            else:
+                if dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level] != '-': 
+                    character.spells['Spells Known']["Slots"][spell_level] = {
+                        "Able To Cast" : dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level],
+                        "Known Spells" : {}
+                    }
+                    for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
+                        character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
+
+                    chosen_temp_list = []
+                    for each in range(1,int(dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level]) + 1):
+                        def choose_random_spell():
+                            random_spell = random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level])
+                            if random_spell not in chosen_temp_list:
+                                chosen_temp_list.append(random_spell)
+                                return random_spell
+                            else:
+                                choose_random_spell()
+                        random_spell = choose_random_spell()
+
+                        character.spells["Selected Spells"].append(random_spell)
+
+
+    elif character_class == "Wizard":
+        spell_levels = ['Cantrips','1st','2nd','3rd','4th','5th','6th','7th','8th','9th']
+
+        character.spells['Cantrips Known'] = dnd_classes[character_class]['Level Chart'][character.profile['level']]['Cantrips Known']
+        character.spells['Spells Known'] = {}
+        character.spells['Spells Known']['Total'] = "Clerics have access to all their spells, but can change them daily with preparationXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        character.spells['Spells Known']["Slots"] = {}
+
+        for spell_level in spell_levels:
+            if spell_level == 'Cantrips':
+                
+                character.spells['Spells Known']["Slots"][spell_level] = {
+                    "Able To Cast" : f"Can cast {character.spells['Cantrips Known']} known Cantrips unlimiited times",
+                    "Known Spells" : {}
+                }
+                for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
+                    character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
+                
+                chosen_temp_list = []
+                for each in range(1,character.spells['Cantrips Known'] + 1):
+                    def choose_random_spell():
+                        random_spell = random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level])
+                        if random_spell not in chosen_temp_list:
+                            chosen_temp_list.append(random_spell)
+                            return random_spell
+                        else:
+                            choose_random_spell()
+                    random_spell = choose_random_spell()
+
+                    character.spells["Selected Spells"].append(random_spell)
+            else:
+                if dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level] != '-': 
+                    character.spells['Spells Known']["Slots"][spell_level] = {
+                        "Able To Cast" : dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level],
+                        "Known Spells" : {}
+                    }
+                    for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
+                        character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
+
+                    chosen_temp_list = []
+                    for each in range(1,int(dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level]) + 1):
+                        def choose_random_spell():
+                            random_spell = random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level])
+                            if random_spell not in chosen_temp_list:
+                                chosen_temp_list.append(random_spell)
+                                return random_spell
+                            else:
+                                choose_random_spell()
+                        random_spell = choose_random_spell()
+
+                        character.spells["Selected Spells"].append(random_spell)
+
+
+    elif character_class == "Paladin":
+        spell_levels = ['1st','2nd','3rd','4th','5th']
+
+        character.spells['Spells Known'] = {}
+        character.spells['Spells Known']['Total'] = "Clerics have access to all their spells, but can change them daily with preparationXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        character.spells['Spells Known']["Slots"] = {}
+
+        character.spells['Cantrips Known'] = "None"
+        character.spells['Spells Known']["Slots"]["Cantrips"] = {
+            "Able To Cast" : "None",
+            "Known Spells" : "None"
+        }
+
+        for spell_level in spell_levels:
+            if dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level] != '-': 
+                character.spells['Spells Known']["Slots"][spell_level] = {
+                    "Able To Cast" : dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level],
+                    "Known Spells" : {}
+                }
+                for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
+                    character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
+
+                chosen_temp_list = []
+                for each in range(1,int(dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level]) + 1):
                     def choose_random_spell():
                         random_spell = random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level])
                         if random_spell not in chosen_temp_list:
@@ -385,17 +604,122 @@ def generate_characters(character, character_number, character_level=1, characte
 
                     character.spells["Selected Spells"].append(random_spell)
                     # character.spells["Selected Spells"].append(random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]))
-            else:
-                if dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level] != '-': 
-                    character.spells['Spells Known']["Slots"][spell_level] = {
-                        "Able To Cast" : dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level],
-                        "Known Spells" : {}
-                    }
-                    for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
-                        character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
 
-                    for each in range(1,dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level] + 1):
-                        chosen_temp_list = []
+
+    elif character_class == "Ranger":
+        spell_levels = ['1st','2nd','3rd','4th','5th']
+
+        character.spells['Spells Known'] = {}
+        character.spells['Spells Known']['Total'] = "Clerics have access to all their spells, but can change them daily with preparationXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        character.spells['Spells Known']["Slots"] = {}
+
+        character.spells['Cantrips Known'] = "None"
+        character.spells['Spells Known']["Slots"]["Cantrips"] = {
+            "Able To Cast" : "None",
+            "Known Spells" : "None"
+        }
+
+        for spell_level in spell_levels:
+            if dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level] != '-': 
+                character.spells['Spells Known']["Slots"][spell_level] = {
+                    "Able To Cast" : dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level],
+                    "Known Spells" : {}
+                }
+                for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
+                    character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
+
+                chosen_temp_list = []
+                for each in range(1,int(dnd_classes[character_class]['Level Chart'][character.profile['level']][spell_level]) + 1):
+                    def choose_random_spell():
+                        random_spell = random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level])
+                        if random_spell not in chosen_temp_list:
+                            chosen_temp_list.append(random_spell)
+                            return random_spell
+                        else:
+                            choose_random_spell()
+                    random_spell = choose_random_spell()
+
+                    character.spells["Selected Spells"].append(random_spell)
+
+
+    elif character_class == "Warlock":
+        # Warlock's primary ranged spell is Eldritch Blast, which they get for free at level 1
+        character.spells["Selected Spells"].append('Eldritch Blast')
+        character.spells['Cantrips Known'] = dnd_classes[character_class]['Level Chart'][character.profile['level']]['Cantrips Known']
+        character.spells['Spells Known'] = {}
+        character.spells['Spells Known']['Total'] = "Clerics have access to all their spells, but can change them daily with preparationXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        character.spells['Spells Known']["Slots"] = {}
+
+        spell_level = 'Cantrips'
+        character.spells['Spells Known']["Slots"][spell_level] = {
+            "Able To Cast" : f"Can cast {character.spells['Cantrips Known']} known Cantrips unlimiited times",
+            "Known Spells" : {}
+        }
+        for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
+            character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
+        
+        chosen_temp_list = ['Eldritch Blast']
+        for each in range(1,character.spells['Cantrips Known'] + 1):
+            def choose_random_spell():
+                random_spell = random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level])
+                if random_spell not in chosen_temp_list:
+                    chosen_temp_list.append(random_spell)
+                    return random_spell
+                else:
+                    choose_random_spell()
+            random_spell = choose_random_spell()
+
+            character.spells["Selected Spells"].append(random_spell)
+        #This is how many spells a warlock knows at at each level of any given spell level
+        # Coincidently, the number of 1st level spells you can ever now is also your total number of known spells...
+        # level : [5th, 4th, 3rd, 2nd, 1st]
+        warlock_known_vs_slot_level = {
+            20 : [12, 14, 15, 15, 15],
+            19 : [11, 13, 15, 15, 15],
+            18 : [10, 12, 14, 15, 14],
+            17 : [ 9, 11, 13, 15, 14],
+            16 : [ 8, 10, 12, 14, 13],
+            15 : [ 7,  9, 11, 13, 13],
+            14 : [ 6,  8, 10, 12, 12],
+            13 : [ 5,  7,  9, 11, 12],
+            12 : [ 4,  6,  8, 10, 11],
+            11 : [ 3,  5,  7,  9, 11],
+            10 : [ 2,  4,  6,  8, 10],
+             9 : [ 1,  3,  5,  7, 10],
+             8 : [ 0,  2,  4,  6,  9],
+             7 : [ 0,  1,  3,  5,  8],
+             6 : [ 0,  0,  2,  4,  7],
+             5 : [ 0,  0,  1,  3,  6],
+             4 : [ 0,  0,  0,  2,  5],
+             3 : [ 0,  0,  0,  1,  4],
+             2 : [ 0,  0,  0,  0,  3],
+             1 : [ 0,  0,  0,  0,  2],
+        }
+        spells_count_to_learn = dnd_classes[character_class]['Level Chart'][character.profile['level']]['Spells Known'] #ex: returns 6 known for level 5
+        for index,spell_index in enumerate(warlock_known_vs_slot_level[character.profile['level']]): #ex: returns 0,0,3,1,6 (for 5th Level)
+            if index == 4:
+                spell_level = "1st"
+            elif index == 3:
+                spell_level = "2nd"
+            elif index == 2:
+                spell_level = "3rd"
+            elif index == 1:
+                spell_level = "4th"
+            elif index == 0:
+                spell_level = "5th"
+
+            if spell_index > 0:
+                character.spells['Spells Known']["Slots"][spell_level] = {
+                    "Able To Cast" : f"Can cast {dnd_classes[character_class]['Level Chart'][character.profile['level']]['Spell Slots']} from any of their known spells.",
+                    "Known Spells" : {}
+                }
+                for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
+                    character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
+
+                chosen_temp_list = []
+                for each in range(1, int(warlock_known_vs_slot_level[character.profile['level']][index] + 1)): #iterates through 0,0,3,1,6
+                    if spells_count_to_learn > 0:
+                        spells_count_to_learn -= 1
                         def choose_random_spell():
                             random_spell = random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level])
                             if random_spell not in chosen_temp_list:
@@ -404,86 +728,12 @@ def generate_characters(character, character_number, character_level=1, characte
                             else:
                                 choose_random_spell()
                         random_spell = choose_random_spell()
-
                         character.spells["Selected Spells"].append(random_spell)
-                        character.spells["Selected Spells"].append(random.choice(dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]))
-
-
-    elif character_class == "Druid":
-        pass
-
-
-    elif character_class == "Sorcerer":
-        pass
-
-
-    elif character_class == "Wizard":
-        pass
-
-
-    elif character_class == "Paladin":
-        spell_levels = ['1st','2nd','3rd','4th','5th']
-        pass
-
-
-    elif character_class == "Ranger":
-        spell_levels = ['1st','2nd','3rd','4th','5th']
-        pass
-
-
-    elif character_class == "Warlock":
-        spell_levels = ['Cantrips','1st','2nd','3rd','4th','5th']
-        pass
-        # elif character.character_class["Name"] == "Warlock":
-        #     # Track spells as you level up
-        #     known_spells = {}
-        #     # generate spells as you level up
-        #     for level in range(1,int(character.profile['level']) + 1):
-        #         # you always have this, but it needs it iterate as you level up
-        #         character.spells['Spells Known']["Slots"][spell_level] = {
-        #             "Able To Cast" : dnd_classes[character_class]['Level Chart'][character.profile['level']]["Spell Slots"],
-        #             "Known Spells" : {}
-        #         }
-        #         # If your level's spell slot level is 1st
-        #         if dnd_classes[character_class]['Level Chart'][character.profile['level']]["Slot Level"] == "1st":
-        #             # Update what spells are known
-        #             for each in range(1, int(dnd_classes[character_class]['Level Chart'][character.profile['level']]["Spells Known"]) + 1):
-        #                 random_spell = random.choice(list(dnd_spells['1st'].keys()))
-        #                 known_spells[random_spell] = dnd_spells['1st'].get(random_spell) 
-                
-        #             for known_spell in known_spells:
-        #                 character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][random_spell] = known_spell
-        #         # If your level's spell slot level is 2nd
-        #         # If your level's spell slot level is 3rd
-        #         # If your level's spell slot level is 4th
-        #         # If your level's spell slot level is 5th
-
-        #         # for spell in dnd_classes[character_class]['Spells']["All Class Spells"][spell_level]:
-        #         #     character.spells['Spells Known']["Slots"][spell_level]['Known Spells'][spell] = dnd_spells.get(spell_level).get(spell)
-
-        #         # known spells
-        #         # spell slots
-        #         # slot level
-        #         # if level up, 
-        #         #     replace one spell you know
-
+                  
                 
         print_character(character.spells)
-        debug('stop')
 
-    elif character_class in half_magic_classes and not character_class == "Warlock":
-        character.spells['Cantrips Known'] = dnd_classes[character_class]['Level Chart'][character.profile['level']]['Cantrips Known']
-        add_spell_levels(character_class,character)
-    elif character_class in non_magic_classes:
-        character.spells['Cantrips Known'] = "None"
-        character.spells["Slots"] = "None"
-        character.spells['Spells Known'] = "None"
-
-
-
-
-
-
+ 
     character.capabilities['attributes'] = {
         'strength' : {},
         'dexterity' : {},
@@ -556,6 +806,15 @@ def generate_characters(character, character_number, character_level=1, characte
     #!!!!!!!!!!!!!!!!!!!!!!
     #!!!!!!!!!!!!!!!!!!!!!!
     #!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+    character.features
+
+
+
+
 
 
 

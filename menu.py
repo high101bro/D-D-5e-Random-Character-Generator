@@ -12,29 +12,31 @@ from chatgpt import *
 from my_secrets import *
 import pickle_handler
 import readline
+import dnd_encounter
 
 dnd_dungeon_master = """
- _____        _____              _____                                        __  __           _            
-|  __ \      |  __ \            |  __ \                                      |  \/  |         | |           
-| |  | |_ __ | |  | |   _____   | |  | |_   _ _ __   __ _  ___  ___  _ __    | \  / | __ _ ___| |_ ___ _ __ 
-| |  | | '_ \| |  | |  |_____|  | |  | | | | | '_ \ / _` |/ _ \/ _ \| '_ \   | |\/| |/ _` / __| __/ _ \ '__|
-| |__| | | | | |__| |           | |__| | |_| | | | | (_| |  __/ (_) | | | |  | |  | | (_| \__ \ ||  __/ |   
-|_____/|_| |_|_____/(5e)        |_____/ \__,_|_| |_|\__, |\___|\___/|_| |_|  |_|  |_|\__,_|___/\__\___|_|(DM)  
-                                                     __/ |                                                  
-                                                    |___/                                                   
+\033[93m _____        _____    \033[0m         \033[92m _____                                        __  __           _            
+\033[93m|  __ \      |  __ \   \033[0m         \033[92m|  __ \                                      |  \/  |         | |           
+\033[93m| |  | |_ __ | |  | |  \033[0m _____   \033[92m| |  | |_   _ _ __   __ _  ___  ___  _ __    | \  / | __ _ ___| |_ ___ _ __ 
+\033[93m| |  | | '_ \| |  | |  \033[0m|_____|  \033[92m| |  | | | | | '_ \ / _` |/ _ \/ _ \| '_ \   | |\/| |/ _` / __| __/ _ \ '__|
+\033[93m| |__| | | | | |__| |  \033[0m         \033[92m| |__| | |_| | | | | (_| |  __/ (_) | | | |  | |  | | (_| \__ \ ||  __/ |   
+\033[93m|_____/|_| |_|_____/\033[94m(5e)\033[0m        \033[92m|_____/ \__,_|_| |_|\__, |\___|\___/|_| |_|  |_|  |_|\__,_|___/\__\___|_|\033[94m(DM)  
+\033[93m                                       \033[92m              __/ |                                                  
+\033[93m                                       \033[92m             |___/                                                   
 """
 
 
-optionsMenu  = [
+main_menu_list  = [
     'Character Management',
     'Create Character',
     'Items, Weapons, Armor, Equipment',
     'Spells and Cantrips',
     'Monster Manual',
     'Locations, Cities, and Towns',
-    'Manage Battle',
+    'Manage Encounter',
     'Roll Dice',
-    'ChatGPT'
+    'Ask ChatGPT a question',
+    'Exit DnD Dungeon Master'
 ]
 
 
@@ -58,18 +60,19 @@ def print_dnd_menu(items_dictionary,pad=30):
         first_element, second_element = split_two_elements(item)
         menu_formatted.append(f"{first_element.strip():<{pad}}{second_element.strip()}")
     menu_formatted = sorted(menu_formatted)
+    menu_formatted = ["Random Selections(s)"] + menu_formatted + ["Exit"] 
 
     # The menu
     print(f"Select from {len(menu_formatted)} options: ")
-    menu_formatted.insert(0, 'Random Selection(s)')
-    menu_formatted.append('Exit')
+    # menu_formatted.insert(0, 'Random Selection(s)')
+    # menu_formatted.append('Exit')
     terminal_menu = TerminalMenu(menu_formatted)
     menu_index = terminal_menu.show()
+    # del menu_formatted[0]
+    # del menu_formatted[-1]
 
     # Handling menu selections
     if menu_formatted[menu_index] == 'Random Selection(s)':
-        del menu_formatted[0]
-        del menu_formatted[-1]
         while True:
             try:
                 number_of_random_selections = int(input(f"How many selections? "))
@@ -81,15 +84,12 @@ def print_dnd_menu(items_dictionary,pad=30):
         for _ in range(number_of_random_selections):
             random_selection = random.choice(menu_formatted)
             random_selections.append(random_selection)
-            # debug(random_selection)
         return random_selections
     elif menu_formatted[menu_index] == 'Exit':
-        # debug(menu_formatted[menu_index])
         return None
     else: # prints the selection
         del menu_formatted[0]
         del menu_formatted[-1]
-        # debug(menu_formatted[menu_index - 1])
         return menu_formatted[menu_index - 1]
 
 
@@ -108,170 +108,314 @@ def main():
     while True:
         clear()
         print(dnd_dungeon_master)
-
-
+        print(f"\033[91mAlmighty Dungeon Master, what do you want to do?\033[0m\n")
         characters = []
-        menuMain = TerminalMenu(optionsMenu)
-        selectedMenuOption = menuMain.show()
-        if re.compile("^Create Character").match(optionsMenu [selectedMenuOption]):
+        menuMain = TerminalMenu(main_menu_list)
+        menu_main_index = menuMain.show()
+        main_menu_selected = main_menu_list[menu_main_index]
 
-            # Number of Characters
-            clear()
-            print('How many characters do you want to create? ')
-            dnd_choose_character_number = ['1','2','3','4','5','6','7','8','9','10']
-            dnd_choose_character_number.insert(0,'Random Number')
-            dnd_choose_character_number.append('Exit')
-            character_number_menu = TerminalMenu(dnd_choose_character_number)
-            character_number_index = character_number_menu.show()
-            
-
-            if dnd_choose_character_number[character_number_index] == 'Random Number': # Which should be the 'Random Number' index
-                # dnd_choose_character_number.pop()
-                del dnd_choose_character_number[0]
-                del dnd_choose_character_number[-1]
-                character_number = int(random.choice(dnd_choose_character_number))
-            elif dnd_choose_character_number[character_number_index] == 'Exit': # Which should be the 'Exit' index
-                # dnd_choose_character_number.pop()
-                del dnd_choose_character_number[0]
-                del dnd_choose_character_number[-1]
-                character_number = 0
-            else: # The chosen number of characters
-                # dnd_choose_character_number.pop()
-                del dnd_choose_character_number[0]
-                del dnd_choose_character_number[-1]
-                character_number = int(dnd_choose_character_number[character_number_index -1])
-
-
-            if character_number > 0:
-                # Create the characters
-                for _ in range(character_number):
-                    character = Character()
-                    characters.append(character)
-
-
+        if re.compile("^Exit").match(main_menu_selected):
+            #exit the script DnD DM
+            break
+        elif re.compile("^Create Character").match(main_menu_selected):
+            continue_char_number = True
+            while continue_char_number:
+                # Number of Characters
                 clear()
-                print(f"A total of {character_number} character(s) will be created.")
-                print('Do you want to guide the character generation or have it copmletely automated? ')
-                dnd_choose_character_number = ['Automated','Guided','Exit']
-                generation_menu = TerminalMenu(dnd_choose_character_number)
-                generation_menu_index = generation_menu.show()
-                if dnd_choose_character_number[generation_menu_index] == 'Guided':
-                    for index, character in enumerate(characters):
-                        character_number = index + 1
-                        # Character Level
-                        clear()
-                        print("Select Character Level:")
-                        dnd_menu_level.append('Random Level')
-                        character_level_menu = TerminalMenu(dnd_menu_level)
-                        character_level_index = character_level_menu.show()
-                        
-                        if character_level_index == (len(dnd_menu_level)-1): # Which should be the 'Random Level' index
-                            dnd_menu_level.pop()
-                            character_level = random.randint(1,20) #random int instead of parsing the menu string
-                        else: # The chosen level of the character
-                            dnd_menu_level.pop()
-                            character_level = int(dnd_menu_level[character_level_index][:8][-3:])
+                print('\033[91mHow many characters do you want to create? \033[0m\n')
+                dnd_choose_character_number = ['Random Number','1','2','3','4','5','6','7','8','9','10','Exit']
+                character_number_menu = TerminalMenu(dnd_choose_character_number)
+                character_number_index = character_number_menu.show()
+                character_number_selected = dnd_choose_character_number[character_number_index]
+                dnd_choose_character_number.remove('Random Number')
+                dnd_choose_character_number.remove('Exit')
 
+                if character_number_selected == 'Exit':
+                    character_number = 0
+                    continue_char_number = False
+                    continue_guide_or_automated = False
+                    continue_guided = False
+                    break
+                elif character_number_selected == 'Random Number':
+                    character_number = int(random.choice(dnd_choose_character_number))
+                    continue_char_number = False
+                    continue_guide_or_automated = True
+                    continue_guided = True
+                else: # The chosen number of characters
+                    character_number = int(character_number_selected)
+                    continue_char_number = False
+                    continue_guide_or_automated = True
+                    continue_guided = True
 
-                        # Character Race
-                        clear()
-                        print("Select Character Race:")
-                        dnd_menu_race.append('Random Race')
-                        character_race_menu = TerminalMenu(dnd_menu_race)
-                        character_race_index = character_race_menu.show()
-
-                        if character_race_index == (len(dnd_menu_race)-1): # Which should be the 'Random Race' index
-                            dnd_menu_race.pop()
-                            character_race = random.choice(list(dnd_races.keys()))
-                            # Alternative method
-                            # character_race = random.choice(dnd_menu_race).split()[0]
-                        else: # The chosen race of the character
-                            dnd_menu_race.pop()
-                            character_race = dnd_menu_race[character_race_index].split()[0]
-
-
-                        # Character Class
-                        clear()
-                        print("Select Character Class:")
-                        dnd_menu_class.append('Random Class')
-                        character_class_menu = TerminalMenu(dnd_menu_class)
-                        character_class_index = character_class_menu.show()
-
-                        if character_class_index == (len(dnd_menu_class)-1): # Which should be the 'Random Class' index
-                            dnd_menu_class.pop()
-                            character_class = random.choice(list(dnd_classes.keys()))
-                            # Alternative method
-                            # character_class = random.choice(dnd_menu_class).split()[0] 
-                        else: # The chosen class of the character
-                            dnd_menu_class.pop()
-                            character_class = dnd_menu_class[character_class_index].split()[0]
-
+                while continue_guide_or_automated:
+                    if character_number > 0:
+                        # Create the characters
+                        for _ in range(character_number):
+                            character = Character()
+                            characters.append(character)
 
                         clear()
-                        character_number_tracker += 1
-                        all_characters.append(
-                            generate_characters(
-                                character,
-                                character_number_tracker,
-                                character_level,
-                                character_race,
-                                character_class
-                            )
-                        )
-                        pickle_handler.save_dnd_state('characters', all_characters)
-                        clear()
-                        display_character(characters)
-                        input("\nPress Enter to Continue...")        
+                        if int(character_number) > 1 :
+                            print(f"Great. Each character will be created one a time. Let's start with Character \033[92m1 of {character_number}\033[0m.\n")
+                        else:
+                            print(f"Great. Let's create a new character.\n")
+
+                        print('\033[91mDo you want to guide the character generation or have it completely automated? \033[0m\n')
+                        dnd_choose_character_number = ['Automated','Guided','Go Back','Exit']
+                        generation_menu = TerminalMenu(dnd_choose_character_number)
+                        generation_menu_index = generation_menu.show()
+                        generation_menu_selected = dnd_choose_character_number[generation_menu_index]
+
+                        if generation_menu_selected == 'Exit':
+                            continue_char_number = False
+                            continue_guide_or_automated = False
+                            break
+
+                        elif generation_menu_selected == 'Go Back':
+                            continue_char_number = True
+                            continue_guide_or_automated = True
+                            break
+
+                        elif generation_menu_selected == 'Guided':
+
+                            continue_guided = True
+                            while continue_guided:
+                                for index, character in enumerate(characters):
+                                    character_number = index + 1
+                                    # Character Level
+                                    clear()
+                                    print(f"\033[92mCharacter {character_number}\033[0m will be a level \033[91m[#]\033[0m, [race] [class].\n")
+                                    print("\033[91mSelect Character Level:\033[0m\n")
+                                    level_menu_list = ['Random Level'] + dnd_menu_level + ['Go Back','Exit']
+                                    level_menu_menu = TerminalMenu(level_menu_list)
+                                    level_menu_index = level_menu_menu.show()
+                                    level_menu_selected = level_menu_list[level_menu_index]
+
+                                    if level_menu_selected == "Exit":
+                                        continue_char_number = False
+                                        continue_guide_or_automated = False
+                                        continue_guided = False
+                                        continue_race = False
+                                        break
+
+                                    elif level_menu_selected == 'Go Back':
+                                        continue_char_number = True
+                                        continue_guide_or_automated = True
+                                        continue_guided = False
+                                        continue_race = False
+                                        break
+
+                                    elif level_menu_selected == "Random Level": 
+                                        character_level = random.randint(1,20)
+                                        continue_char_number = False
+                                        continue_guide_or_automated = False
+                                        continue_guided = False
+                                        continue_race = True
+
+                                    else: # The chosen level of the character
+                                        character_level = int(level_menu_list[level_menu_index][:8][-3:])
+                                        continue_char_number = False
+                                        continue_guide_or_automated = False
+                                        continue_guided = False
+                                        continue_race = True
+
+                                    while continue_race:
+                                        # Character Race
+                                        clear()
+                                        print(f"\033[92mCharacter {character_number}\033[0m will be a level \033[92m{character_level}\033[0m, \033[91m[race]\033[0m [class].\n")
+                                        print("\033[91mSelect Character Race:\033[0m\n")
+                                        char_race_list = ['Random Race'] + dnd_race_list + ["Go Back","Exit"]
+                                        char_race_menu = TerminalMenu(char_race_list)
+                                        char_race_index = char_race_menu.show()
+                                        char_race_selected = char_race_list[char_race_index]
+
+                                        if char_race_selected == 'Exit':
+                                            continue_char_number = False
+                                            continue_guide_or_automated = False
+                                            continue_guided = False
+                                            continue_race = False
+                                            continue_class = False
+                                            continue_create_character = False
+                                            break
+                                        elif char_race_selected == 'Go Back':
+                                            continue_char_number = True
+                                            continue_guide_or_automated = True
+                                            continue_guided = True
+                                            continue_race = False
+                                            continue_class = False
+                                            # continue_create_character = False
+                                            break
+                                        elif char_race_selected == 'Random Race':
+                                            character_race = random.choice(list(dnd_races.keys()))
+                                            continue_char_number = False
+                                            continue_guide_or_automated = False
+                                            continue_guided = False
+                                            continue_race = False
+                                            continue_class = True
+                                            # continue_create_character = False
+                                        else: # The chosen race of the character
+                                            character_race = char_race_list[char_race_index].split()[0]
+                                            continue_char_number = False
+                                            continue_guide_or_automated = False
+                                            continue_guided = False
+                                            continue_race = False
+                                            continue_class = True
+                                            # continue_create_character = False
 
 
-                elif dnd_choose_character_number[generation_menu_index] == 'Automated':
-                    for index, character in enumerate(characters):
+                                        while continue_class:
+                                            # Character Class
+                                            clear()
+                                            print(f"\033[92mCharacter {character_number}\033[0m will be a level \033[92m{character_level}\033[0m, \033[92m{character_race}\033[0m \033[91m[class]\033[0m.\n")
+                                            print("\033[91mSelect Character Class:\033[0m\n")
+                                            char_class_list = ["Random Class"] + dnd_class_list + ["Go Back","Exit"]
+                                            char_class_menu = TerminalMenu(char_class_list)
+                                            char_class_index = char_class_menu.show()
+                                            char_class_selected = char_class_list[char_class_index]
 
-                        clear()
-                        character_number_tracker += 1
-                        all_characters.append(
-                            generate_characters(
-                                character,
-                                character_number_tracker,
-                                character_level = random.randint(1,20),
-                                character_race = random.choice(list(dnd_races.keys())),
-                                character_class = 'Paladin' #random.choice(list(dnd_classes.keys()))
-                            )
-                        )
-                        pickle_handler.save_dnd_state('characters', all_characters)
-                        clear()
-                        display_character(characters)
-                        input("\nPress Enter to Continue...")
-                else:
-                    pass
+                                            if char_class_selected == "Exit":
+                                                continue_char_number = False
+                                                continue_guide_or_automated = False
+                                                continue_guided = False
+                                                continue_race = False
+                                                continue_class = False
+                                                continue_create_character = False
+                                                break
+                                            if char_class_selected == "Go Back":
+                                                continue_char_number = True
+                                                continue_guide_or_automated = True
+                                                continue_guided = True
+                                                continue_race = True
+                                                continue_class = False
+                                                continue_create_character = False
+                                                break
+                                            elif char_class_selected == "Random Class":
+                                                character_class = random.choice(list(dnd_classes.keys()))
+                                                continue_char_number = False
+                                                continue_guide_or_automated = False
+                                                continue_guided = False
+                                                continue_race = False
+                                                continue_class = False
+                                                continue_create_character = True
+                                            else: # The chosen class of the character
+                                                character_class = char_class_list[char_class_index].split()[0]
+                                                continue_char_number = False
+                                                continue_guide_or_automated = False
+                                                continue_guided = False
+                                                continue_race = False
+                                                continue_class = False
+                                                continue_create_character = True
 
 
-        elif re.compile("^Character Management").match(optionsMenu [selectedMenuOption]):
+                                            while continue_create_character:
+                                                # Proceed with character creation or not
+                                                clear()
+                                                print(f"\033[92mCharacter {character_number} will be a level {character_level}, {character_race} {character_class}.\033[0m\n")
+                                                print(f"\033[91mWould you like to proceed with creating this character? \033[0m\n")
+                                                create_character_list = ["Yes","No","Go Back","Exit"]
+                                                create_character_menu = TerminalMenu(create_character_list)
+                                                create_character_index = create_character_menu.show()
+                                                create_character_selected = create_character_list[create_character_index]
+
+                                                if create_character_selected == "Exit":
+                                                    continue_char_number = False
+                                                    continue_guide_or_automated = False
+                                                    continue_guided = False
+                                                    continue_race = False
+                                                    continue_class = False
+                                                    continue_create_character = False
+                                                    break
+                                                elif create_character_selected == "Go Back":
+                                                    continue_char_number = True
+                                                    continue_guide_or_automated = True
+                                                    continue_guided = True
+                                                    continue_race = True
+                                                    continue_class = True
+                                                    continue_create_character = False
+                                                    break
+                                                elif create_character_selected == "Yes":
+                                                    clear()
+                                                    character_number_tracker += 1
+                                                    all_characters.append(
+                                                        generate_characters(
+                                                            character,
+                                                            character_number_tracker,
+                                                            character_level,
+                                                            character_race,
+                                                            character_class
+                                                        )
+                                                    )
+                                                    pickle_handler.save_dnd_state('characters', all_characters)
+                                                    clear()
+                                                    display_character(characters)
+                                                    input("\nPress Enter to Continue...")
+                                                    continue_char_number = False
+                                                    continue_guide_or_automated = False
+                                                    continue_guided = False
+                                                    continue_race = False
+                                                    continue_class = False
+                                                    continue_create_character = False
+                                                    break     
+
+                                                elif create_character_selected == "No":
+                                                    continue_char_number = False
+                                                    continue_guide_or_automated = False
+                                                    continue_guided = False
+                                                    continue_race = False
+                                                    continue_class = False
+                                                    continue_create_character = False
+                                                    break
+
+
+                        elif generation_menu_selected == 'Automated':
+                            for index, character in enumerate(characters):
+
+                                clear()
+                                character_number_tracker += 1
+                                all_characters.append(
+                                    generate_characters(
+                                        character,
+                                        character_number_tracker,
+                                        character_level = random.randint(1,20),
+                                        character_race = random.choice(list(dnd_races.keys())),
+                                        character_class = random.choice(list(dnd_classes.keys()))
+                                    )
+                                )
+                                pickle_handler.save_dnd_state('characters', all_characters)
+                                clear()
+                                display_character(characters)
+                                input("\nPress Enter to Continue...")
+                            continue_char_number = False
+                            continue_guide_or_automated = False                            
+                            break
+
+
+
+        elif re.compile("^Character Management").match(main_menu_selected):
             
             character_management(all_characters)
         
         
-        elif re.compile("^Manage Battle").match(optionsMenu [selectedMenuOption]):
-            pass
+        elif re.compile("^Manage Encounter").match(main_menu_selected):
+            dnd_encounter.main(all_characters)
 
 
-        elif re.compile("^Items").match(optionsMenu [selectedMenuOption]):
+        elif re.compile("^Items").match(main_menu_selected):
         
 
 
             print('Managing the Battle is under deverlopment...')
 
-            stuff_category = ['Items','Equipment','Weapons','Armor']
-            print(f"Select one of the following: ")
-            stuff_category.append('Exit')
+            stuff_category = ['Items','Equipment','Weapons','Armor','Exit']
+            print(f"\033[91mSelect one of the following:\033[0m\n")
+            # stuff_category.append('Exit')
             stuff_category_menu = TerminalMenu(stuff_category)
             stuff_category_menu_index = stuff_category_menu.show()
-            
+            # del stuff_category[-1]
+        
             if stuff_category[stuff_category_menu_index] == 'Exit':
-                del stuff_category[-1]
-                pass
+                break
             else:
-                del stuff_category[-1]
                 print(stuff_category[stuff_category_menu_index])
 
                 if stuff_category[stuff_category_menu_index] == 'Items':
@@ -286,7 +430,7 @@ def main():
             input("\nPress Enter to Continue...")
 
 
-        elif re.compile("^Spells").match(optionsMenu [selectedMenuOption]):
+        elif re.compile("^Spells").match(main_menu_selected):
         
             dnd_menu_spells = {
                 "Cantrips": "Simple, low-level spells that can be cast at will for minor magical effects.",
@@ -303,7 +447,7 @@ def main():
 
 
             dnd_menu_spell_selection = print_dnd_menu(dnd_menu_spells)
-            # debug(dnd_menu_spell_selection)
+
             if dnd_menu_spell_selection.split()[0] == "Cantrips":
                 dnd_menu_spell_formated_list = []
                 dnd_menu_spell_formated_dict = {}
@@ -333,7 +477,7 @@ def main():
             input("\nPress Enter to Continue...")
 
 
-        elif re.compile("^Locations").match(optionsMenu [selectedMenuOption]):
+        elif re.compile("^Locations").match(main_menu_selected):
 
             dnd_locations_menu = {
                 "Cities and Towns" : 'Various places where civilization has taken root.',
@@ -368,7 +512,7 @@ def main():
                         
             input("\nPress Enter to Continue...")
             
-        elif re.compile("^Monster Manual").match(optionsMenu [selectedMenuOption]):
+        elif re.compile("^Monster Manual").match(main_menu_selected):
             # print_character(dnd_monsters)
 
             # # Set the autocomplete function
@@ -415,14 +559,14 @@ def main():
             input("\nPress Enter to Continue...")
 
 
-        elif re.compile("^ChatGPT").match(optionsMenu [selectedMenuOption]):
+        elif re.compile("^Ask ChatGPT a question").match(main_menu_selected):
             user_query = input(f"Ask ChatGPT: ")
             chatgpt_response = query_chatgpt(openai_key,user_query)
             print(chatgpt_response)
             input("\nPress Enter to Continue...")
         
 
-        elif re.compile("^Roll Dice").match(optionsMenu [selectedMenuOption]):
+        elif re.compile("^Roll Dice").match(main_menu_selected):
             dnd_roll_dice()
             input("\nPress Enter to Continue...")
 
