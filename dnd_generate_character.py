@@ -27,7 +27,6 @@ from dnd_lists import *
 from dnd_races import *
 from dnd_classes import *
 from dnd_backgrounds import *
-from dnd_random_generation import *
 from dnd_helper import *
 from dnd_spells import *
 
@@ -810,11 +809,17 @@ def generate_characters(character, character_number, character_level=1, characte
 
 
 
-    character.features
-
-
-
-
+    # Class Features
+    character_feautres = []
+    for Level in range(1,character_level + 1):
+        for Feature in dnd_classes[character_class]["Level Chart"][Level]["Features"]:
+            if Feature == "-":
+                pass
+            else:
+                character.features[Feature] = dnd_classes[character_class]["Features"][Feature]
+            # debug(dnd_classes[character_class]["Features"][Feature])
+            # character_feautres.append()
+    debug(character.features)
 
 
 

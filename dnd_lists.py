@@ -5098,6 +5098,3 @@ dnd_locations = {
     "voidshroud_forest": "A forest covered in an eerie voidshroud, home to creatures of darkness and shadow.",
     "starry_maze": "A labyrinthine maze with walls made of twinkling stars, where travelers navigate by constellations.",
 }
-
-
-

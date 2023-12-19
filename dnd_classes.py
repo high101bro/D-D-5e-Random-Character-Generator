@@ -42,7 +42,52 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6', 'Features': ['Ability Score Improvement'], 'Rages': 6, 'Rage Damage': '+4'},
             20: {'Proficiency Bonus': '+6', 'Features': ['Primal Champion'], 'Rages': 'Unlimited', 'Rage Damage': '+4'}
         },
-        "Features": {},
+        "Features": {
+            "Rage": "At 1st level, you can enter a rage as a bonus action. "
+                    "While raging, you gain several benefits, including advantage on Strength checks and saves, "
+                    "bonus damage to melee attacks, and resistance to certain types of damage. "
+                    "Rage lasts for 1 minute and ends early if you are knocked unconscious or your turn ends and you haven’t attacked "
+                    "a hostile creature or taken damage since your last turn.",
+            "Unarmored Defense": "Beginning at 1st level, while not wearing armor, "
+                                "your Armor Class (AC) equals 10 + your Dexterity modifier + your Constitution modifier. "
+                                "This allows you to have a strong defense even without traditional armor.",
+            "Reckless Attack": "Starting at 2nd level, you can choose to make your attacks with advantage on your turn, "
+                            "but this also allows enemies to have advantage on their attacks against you until your next turn. "
+                            "This feature enhances your combat abilities but comes with increased vulnerability.",
+            "Danger Sense": "At 2nd level, you gain an uncanny sense of danger. "
+                            "You have advantage on Dexterity saving throws against effects that you can see, "
+                            "such as traps and spells, to avoid danger more effectively.",
+            "Primal Path": "At 3rd level, you choose a Primal Path that defines your barbarian archetype, "
+                        "granting you additional features and abilities based on your chosen path.",
+            "Primal Knowledge (Optional)": "At 3rd level, you have the option to gain proficiency with two skills from the list: "
+                                            "Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival.",
+            "Ability Score Improvement": "At 4th level and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice "
+                                        "by 2, or you can increase two ability scores of your choice by 1. This allows you to customize your character as you progress.",
+            "Extra Attack": "Starting at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. "
+                            "This feature significantly enhances your combat capabilities.",
+            "Fast Movement": "At 5th level, your speed increases by 10 feet while you are not wearing heavy armor. "
+                            "This allows you to move swiftly in combat and exploration.",
+            "Path feature": "At 6th level and again at 10th, 14th, and 18th level, your chosen Primal Path grants you additional features and abilities "
+                            "that reflect the unique path you've embraced.",
+            "Feral Instinct": "At 7th level, you have advantage on initiative rolls, and you can act normally on your first turn in combat, "
+                            "even if you are surprised. This feature reflects your heightened awareness and readiness in battle.",
+            "Instinctive Pounce (Optional)": "At 7th level, you can use your reaction to move up to half your speed when a creature ends its turn "
+                                            "within 30 feet of you. This allows you to quickly close the distance to your foes.",
+            "Brutal Critical (1 die)": "Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit. "
+                                    "This feature increases your damage potential in combat.",
+            "Relentless Rage": "At 11th level, if you drop to 0 hit points while you’re raging and don’t die outright, "
+                            "you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead. "
+                            "This feature reflects your sheer determination and ability to push through even when severely wounded.",
+            "Brutal Critical (2 dice)": "Starting at 13th level, you can roll two additional weapon damage dice when determining the extra damage for a critical hit. "
+                                    "This further enhances your damage output during critical hits.",
+            "Persistent Rage": "At 15th level, your rage can't be ended early due to failing to attack a hostile creature or take damage since your last turn. "
+                            "This allows you to maintain your rage for longer durations.",
+            "Brutal Critical (3 dice)": "Beginning at 17th level, you can roll three additional weapon damage dice when determining the extra damage for a critical hit. "
+                                    "This makes your critical hits even more devastating in combat.",
+            "Indomitable Might": "At 18th level, if your total for a Strength check is less than your Strength score, "
+                                "you can use that score in place of the total. This feature showcases your incredible physical strength.",
+            "Primal Champion": "At 20th level, your Strength and Constitution scores increase by 4"
+        },
         "Hit Die": '1d12',
         "Proficiencies": {
             'Armor': ['Light armor', 'medium armor', 'shields'],
@@ -113,7 +158,7 @@ dnd_classes = {
             3: {'Proficiency Bonus': '+2','Features': ['Bard College', 'Expertise'],'Cantrips Known': 2,'Spells Known': 6,'1st': 4,'2nd': 2,'3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-',},
             4: {'Proficiency Bonus': '+2','Features': ['Ability Score Improvement', 'Bardic Versatility (Optional)'],'Cantrips Known': 3,'Spells Known': 7,'1st': 4,'2nd': 3,'3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-',},
             5: {'Proficiency Bonus': '+3','Features': ['Bardic Inspiration (d8)', 'Font of Inspiration'],'Cantrips Known': 3,'Spells Known': 8,'1st': 4,'2nd': 3,'3rd': 2,'4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-',},
-            6: {'Proficiency Bonus': '+3','Features': ['Countercharm', 'Bard College feature'],'Cantrips Known': 3,'Spells Known': 9,'1st': 4,'2nd': 3,'3rd': 3,'4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-',},
+            6: {'Proficiency Bonus': '+3','Features': ['Countercharm', 'Bard College Feature'],'Cantrips Known': 3,'Spells Known': 9,'1st': 4,'2nd': 3,'3rd': 3,'4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-',},
             7: {'Proficiency Bonus': '+3','Features': ['-'],'Cantrips Known': 3,'Spells Known': 10,'1st': 4,'2nd': 3,'3rd': 3,'4th': 1,'5th': '-','6th': '-','7th': '-','8th': '-','9th': '-',},
             8: {'Proficiency Bonus': '+3','Features': ['Ability Score Improvement', 'Bardic Versatility (Optional)'],'Cantrips Known': 3,'Spells Known': 11,'1st': 4,'2nd': 3,'3rd': 3,'4th': 2,'5th': '-','6th': '-','7th': '-','8th': '-','9th': '-',},
             9: {'Proficiency Bonus': '+4','Features': ['Song of Rest (d8)'],'Cantrips Known': 3,'Spells Known': 12,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 1,'6th': '-','7th': '-','8th': '-','9th': '-',},
@@ -121,7 +166,7 @@ dnd_classes = {
             11: {'Proficiency Bonus': '+4','Features': ['-'],'Cantrips Known': 4,'Spells Known': 15,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': '-','8th': '-','9th': '-',},
             12: {'Proficiency Bonus': '+4','Features': ['Ability Score Improvement', 'Bardic Versatility (Optional)'],'Cantrips Known': 4,'Spells Known': 15,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': '-','8th': '-','9th': '-',},
             13: {'Proficiency Bonus': '+5','Features': ['Song of Rest (d10)'],'Cantrips Known': 4,'Spells Known': 16,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': '-','9th': '-',},
-            14: {'Proficiency Bonus': '+5','Features': ['Magical Secrets', 'Bard College feature'],'Cantrips Known': 4,'Spells Known': 18,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': '-','9th': '-',},
+            14: {'Proficiency Bonus': '+5','Features': ['Magical Secrets', 'Bard College Feature'],'Cantrips Known': 4,'Spells Known': 18,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': '-','9th': '-',},
             15: {'Proficiency Bonus': '+5','Features': ['Bardic Inspiration (d12)'],'Cantrips Known': 4,'Spells Known': 19,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': 1,'9th': '-',},
             16: {'Proficiency Bonus': '+5','Features': ['Ability Score Improvement', 'Bardic Versatility (Optional)'],'Cantrips Known': 4,'Spells Known': 19,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': 1,'9th': '-',},
             17: {'Proficiency Bonus': '+6','Features': ['Song of Rest (d12)'],'Cantrips Known': 4,'Spells Known': 20,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': 1,'9th': 1,},
@@ -129,7 +174,53 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6','Features': ['Ability Score Improvement', 'Bardic Versatility (Optional)'],'Cantrips Known': 4,'Spells Known': 22,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 1,'8th': 1,'9th': 1,},
             20: {'Proficiency Bonus': '+6','Features': ['Superior Inspiration'],'Cantrips Known': 4,'Spells Known': 22,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 2,'8th': 1,'9th': 1,}
         },
-        "Features": {},
+        "Features": {
+            "Spellcasting": "At 1st level, you gain the ability to cast spells from the bard spell list. "
+                            "You learn a number of cantrips and spells, and your spellcasting ability is Charisma. "
+                            "You can use a musical instrument as a spellcasting focus.",
+            "Bardic Inspiration (d6)": "At 1st level, you can inspire others through stirring words or music. "
+                                        "As a bonus action, you can grant a creature within 60 feet of you a Bardic Inspiration die (d6). "
+                                        "The creature can roll this die and add the number rolled to one ability check, "
+                                        "attack roll, or saving throw it makes. The die can be used after the roll, but before the outcome is determined.",
+            "Bard Song of Rest (d10)": "The Bard Song of Rest (d10) is a feature of the bard class in Dungeons and Dragons (D&D) 5th Edition. "
+                                       "When a bard plays soothing music or offers words of encouragement during a short rest, "
+                                       "the party members regain an extra 1d10 hit points if they spend Hit Dice to heal. "
+                                       "This bonus hit points restoration is in addition to any Hit Dice spent normally during the rest.",
+            "Bard College Feature": "The Bard College Feature is a key aspect of the bard class in Dungeons and Dragons (D&D) 5th Edition. "
+                                    "Bards choose a specific college that represents their area of expertise and style of performance. "
+                                    "This choice grants them unique abilities, spells, and a thematic connection to their chosen college, enhancing their bardic talents and role within the party.",
+            "Jack of All Trades": "Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make "
+                                "that doesn't already include your proficiency bonus. This feature reflects your broad range of skills.",
+            "Song of Rest (d6)": "At 2nd level, if you or any friendly creatures who can hear your performance regain hit points at the end of a short rest, "
+                                "each of those creatures regains an extra 1d6 hit points. The extra hit points increase as you gain bard levels.",
+            "Magical Inspiration (Optional)": "Starting at 2nd level, you can use your Bardic Inspiration to inspire someone to create a magical effect. "
+                                            "The creature can add the Bardic Inspiration die to one damage roll it makes for a spell it casts. "
+                                            "This feature enhances the magical abilities of your allies.",
+            "Bard College": "At 3rd level, you choose a Bard College that represents your area of expertise and focus. "
+                            "This choice grants you additional features and abilities based on your chosen college.",
+            "Expertise": "Starting at 3rd level, choose two of your skill proficiencies or one of your skill proficiencies and your proficiency "
+                        "with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. "
+                        "This reflects your growing expertise in certain skills.",
+            "Ability Score Improvement": "At 4th level and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice "
+                                        "by 2, or you can increase two ability scores of your choice by 1. This allows you to customize your character as you progress.",
+            "Bardic Versatility (Optional)": "Starting at 4th level, you can replace one spell you know with another from the bard spell list "
+                                            "whenever you gain a level in this class. This allows you to adapt your spells known as your character grows.",
+            "Bardic Inspiration (d8)": "At 5th level, the Bardic Inspiration die increases to a d8, providing more potent inspiration to your allies.",
+            "Font of Inspiration": "Starting at 5th level, you regain expended uses of Bardic Inspiration when you finish a short rest. "
+                                "This feature allows you to inspire your allies more frequently.",
+            "Countercharm": "At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. "
+                            "As an action, you can start a performance that lasts until the end of your next turn. "
+                            "During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. "
+                            "This feature reflects your ability to bolster your allies' mental fortitude.",
+            "Song of Rest (d8)": "At 9th level, the extra hit points granted by your Song of Rest feature increase to 1d8.",
+            "Bardic Inspiration (d10)": "At 10th level, the Bardic Inspiration die increases to a d10, providing even greater inspiration to your allies.",
+            "Magical Secrets": "Starting at 10th level, you can learn two spells from any class, including spells that are not on the bard spell list. "
+                            "This allows you to expand your magical repertoire significantly.",
+            "Bardic Inspiration (d12)": "At 15th level, the Bardic Inspiration die increases to a d12, providing the most potent inspiration to your allies.",
+            "Superior Inspiration": "At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use. "
+                                    "Additionally, whenever you use Bardic Inspiration, you can roll a d12 instead of the normal die. "
+                                    "This feature reflects your unmatched ability to inspire and lead your allies."
+        },
         "Hit Die": '1d8',
         "Proficiencies": {
             'Armor': 'Light armor',
@@ -212,13 +303,13 @@ dnd_classes = {
         "Requirements" : "You must have a Wisdom score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
             1: {'Proficiency Bonus': '+2','Features': ['Spellcasting', 'Divine Domain'],'Cantrips Known': 3,'1st': 2,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
-            2: {'Proficiency Bonus': '+2','Features': ['Channel Divinity (x1)', 'Divine Domain feature', 'Harness Divine Power (Optional)'],'Cantrips Known': 3,'1st': 3,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
+            2: {'Proficiency Bonus': '+2','Features': ['Channel Divinity (x1)', 'Divine Domain Feature', 'Harness Divine Power (Optional)'],'Cantrips Known': 3,'1st': 3,'2nd': '-','3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
             3: {'Proficiency Bonus': '+2','Features': ['-'],'Cantrips Known': 3,'1st': 4,'2nd': 2,'3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
             4: {'Proficiency Bonus': '+2','Features': ['Ability Score Improvement', 'Cantrip Versatility (Optional)'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
             5: {'Proficiency Bonus': '+3','Features': ['Destroy Undead (CR 1/2)'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 2,'4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
-            6: {'Proficiency Bonus': '+3','Features': ['Channel Divinity (x2)', 'Divine Domain feature'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
+            6: {'Proficiency Bonus': '+3','Features': ['Channel Divinity (x2)', 'Divine Domain Feature'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
             7: {'Proficiency Bonus': '+3','Features': ['-'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 1,'5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
-            8: {'Proficiency Bonus': '+3','Features': ['Ability Score Improvement', 'Destroy Undead (CR 1)', 'Divine Domain feature', 'Cantrip Versatility (Optional)'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 2,'5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
+            8: {'Proficiency Bonus': '+3','Features': ['Ability Score Improvement', 'Destroy Undead (CR 1)', 'Divine Domain Feature', 'Cantrip Versatility (Optional)'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 2,'5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
             9: {'Proficiency Bonus': '+4','Features': ['-'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 1,'6th': '-','7th': '-','8th': '-','9th': '-'},
             10: {'Proficiency Bonus': '+4','Features': ['Divine Intervention'],'Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': '-','7th': '-','8th': '-','9th': '-'},
             11: {'Proficiency Bonus': '+4','Features': ['Destroy Undead (CR 2)'],'Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': '-','8th': '-','9th': '-'},
@@ -227,12 +318,50 @@ dnd_classes = {
             14: {'Proficiency Bonus': '+5','Features': ['Destroy Undead (CR 3)'],'Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': '-','9th': '-'},
             15: {'Proficiency Bonus': '+5','Features': ['-'],'Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': 1,'9th': '-'},
             16: {'Proficiency Bonus': '+5','Features': ['Ability Score Improvement', 'Cantrip Versatility (Optional)'],'Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': 1,'9th': '-'},
-            17: {'Proficiency Bonus': '+6','Features': ['Destroy Undead (CR 4)', 'Divine Domain feature'],'Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': 1,'9th': 1},
+            17: {'Proficiency Bonus': '+6','Features': ['Destroy Undead (CR 4)', 'Divine Domain Feature'],'Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': 1,'9th': 1},
             18: {'Proficiency Bonus': '+6','Features': ['Channel Divinity (x3)'],'Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 1,'7th': 1,'8th': 1,'9th': 1},
             19: {'Proficiency Bonus': '+6','Features': ['Ability Score Improvement', 'Cantrip Versatility (Optional)'],'Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 1,'7th': 1,'8th': 1,'9th': 1},
             20: {'Proficiency Bonus': '+6','Features': ['Divine Intervention improvement'],'Cantrips Known': 5,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 2,'8th': 1,'9th': 1}
         },
-        "Features": {},
+        "Features": {
+            "Spellcasting": "At 1st level, you gain the ability to cast spells from the cleric spell list. "
+                            "You learn a number of cantrips and spells, and your spellcasting ability is Wisdom. "
+                            "You can use a holy symbol as a spellcasting focus.",
+            "Divine Domain": "At 1st level, you choose a Divine Domain that represents your deity's domain of influence. "
+                            "This choice grants you additional features and abilities based on your chosen domain.",
+            "Divine Domain Feature" : "This feature represents the specific domain or aspect of their deity that a cleric dedicates themselves to. "
+                                      "It grants unique abilities, spells, and powers that align with the cleric's chosen domain. "
+                                      "Each domain has its own set of features, such as bonus spells, Channel Divinity options, and domain-specific abilities, "
+                                      "that enhance the cleric's role and capabilities within the party. The Divine Domain Feature is a fundamental choice for clerics, "
+                                      "shaping their role and abilities as they serve their deity's divine purpose.",
+            "Channel Divinity (x1)": "At 2nd level, you gain the ability to channel divine energy directly from your deity. "
+                                    "You can use this ability to invoke divine effects based on your chosen domain. "
+                                    "You have one use of this ability before needing a short or long rest to use it again.",
+            "Harness Divine Power (Optional)": "Starting at 2nd level, you can call upon your deity's power to regain expended spell slots. "
+                                            "This feature enhances your spellcasting capabilities.",
+            "Jack of All Trades": "Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make "
+                                "that doesn't already include your proficiency bonus. This feature reflects your diverse knowledge.",
+            "Destroy Undead (CR 1/2)": "At 5th level, you gain the ability to turn or destroy undead creatures with a Challenge Rating of 1/2 or lower. "
+                                    "This ability allows you to repel or destroy undead foes.",
+            "Channel Divinity (x2)": "At 6th level, you gain an additional use of your Channel Divinity ability, "
+                                    "allowing you to call upon your deity's power more frequently.",
+            "Destroy Undead (CR 1)": "At 8th level, your Destroy Undead ability now affects undead creatures with a Challenge Rating of 1 or lower. "
+                                    "This allows you to combat stronger undead foes.",
+            "Divine Intervention": "At 10th level, you can call upon your deity for divine intervention in dire situations. "
+                                "This ability allows your deity to directly intervene in the world on your behalf.",
+            "Destroy Undead (CR 2)": "At 11th level, your Destroy Undead ability now affects undead creatures with a Challenge Rating of 2 or lower. "
+                                    "This allows you to confront even more powerful undead foes.",
+            "Destroy Undead (CR 3)": "At 14th level, your Destroy Undead ability now affects undead creatures with a Challenge Rating of 3 or lower. "
+                                    "You become a formidable force against undead enemies.",
+            "Destroy Undead (CR 4)": "At 17th level, your Destroy Undead ability now affects undead creatures with a Challenge Rating of 4 or lower. "
+                                    "This ability allows you to confront the most powerful undead foes.",
+            "Divine Intervention improvement": "At 20th level, your Divine Intervention ability becomes more reliable and effective. "
+                                            "Your deity is more likely to respond to your call for intervention.",
+            "Cantrip Versatility (Optional)": "Starting at 4th level, you can replace one cantrip you know with another from the cleric spell list "
+                                            "whenever you gain a level in this class. This allows you to adapt your cantrips as your character grows.",
+            "Ability Score Improvement": "At 4th level and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice "
+                                        "by 2, or you can increase two ability scores of your choice by 1. This allows you to customize your character as you progress."
+        },
         "Hit Die": '1d8',
         "Proficiencies": {
             'Armor': 'Light armor, medium armor, shields',
@@ -323,15 +452,15 @@ dnd_classes = {
             3: {'Proficiency Bonus': '+2','Features': ['-'],'Cantrips Known': 2,'1st': 4,'2nd': 2,'3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
             4: {'Proficiency Bonus': '+2','Features': ['Wild Shape improvement', 'Ability Score Improvement', 'Cantrip Versatility (Optional)'],'Cantrips Known': 3,'1st': 4,'2nd': 3,'3rd': '-','4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
             5: {'Proficiency Bonus': '+3','Features': ['-'],'Cantrips Known': 3,'1st': 4,'2nd': 3,'3rd': 2,'4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
-            6: {'Proficiency Bonus': '+3','Features': ['Druid Circle feature'],'Cantrips Known': 3,'1st': 4,'2nd': 3,'3rd': 3,'4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
+            6: {'Proficiency Bonus': '+3','Features': ['Druid Circle Feature'],'Cantrips Known': 3,'1st': 4,'2nd': 3,'3rd': 3,'4th': '-','5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
             7: {'Proficiency Bonus': '+3','Features': ['-'],'Cantrips Known': 3,'1st': 4,'2nd': 3,'3rd': 3,'4th': 1,'5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
             8: {'Proficiency Bonus': '+3','Features': ['Wild Shape improvement', 'Ability Score Improvement', 'Cantrip Versatility (Optional)'],'Cantrips Known': 3,'1st': 4,'2nd': 3,'3rd': 3,'4th': 2,'5th': '-','6th': '-','7th': '-','8th': '-','9th': '-'},
             9: {'Proficiency Bonus': '+4','Features': ['-'],'Cantrips Known': 3,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 1,'6th': '-','7th': '-','8th': '-','9th': '-'},
-            10: {'Proficiency Bonus': '+4','Features': ['Druid Circle feature'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': '-','7th': '-','8th': '-','9th': '-'},
+            10: {'Proficiency Bonus': '+4','Features': ['Druid Circle Feature'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': '-','7th': '-','8th': '-','9th': '-'},
             11: {'Proficiency Bonus': '+4','Features': ['-'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': '-','8th': '-','9th': '-'},
             12: {'Proficiency Bonus': '+4','Features': ['Ability Score Improvement', 'Cantrip Versatility (Optional)'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': '-','8th': '-','9th': '-'},
             13: {'Proficiency Bonus': '+5','Features': ['-'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': '-','9th': '-'},
-            14: {'Proficiency Bonus': '+5','Features': ['Druid Circle feature'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': '-','9th': '-'},
+            14: {'Proficiency Bonus': '+5','Features': ['Druid Circle Feature'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': '-','9th': '-'},
             15: {'Proficiency Bonus': '+5','Features': ['-'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': 1,'9th': '-'},
             16: {'Proficiency Bonus': '+5','Features': ['Ability Score Improvement', 'Cantrip Versatility (Optional)'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': 1,'9th': '-'},
             17: {'Proficiency Bonus': '+6','Features': ['-'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 2,'6th': 1,'7th': 1,'8th': 1,'9th': 1},
@@ -339,7 +468,33 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6','Features': ['Ability Score Improvement', 'Cantrip Versatility (Optional)'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 1,'8th': 1,'9th': 1},
             20: {'Proficiency Bonus': '+6','Features': ['Archdruid'],'Cantrips Known': 4,'1st': 4,'2nd': 3,'3rd': 3,'4th': 3,'5th': 3,'6th': 2,'7th': 2,'8th': 1,'9th': 1}
         },
-        "Features": {},
+        "Features": {
+            "Druidic": "At 1st level, you gain the ability to speak and understand Druidic, the secret language of the druids. "
+                    "This language allows you to communicate with other druids and understand the natural world better.",
+            "Druid Circle Feature": "The Druid Circle Feature is a key aspect of the druid class in Dungeons and Dragons (D&D) 5th Edition. "
+                                    "Druids choose a specific circle, such as the Circle of the Land or Circle of the Moon, "
+                                    "which represents their connection to nature and their unique magical abilities. "
+                                    "This choice grants them access to circle-specific spells and features, shaping their role and abilities within the party.",
+            "Spellcasting": "At 1st level, you gain the ability to cast spells from the druid spell list. "
+                            "You learn a number of cantrips and spells, and your spellcasting ability is Wisdom. "
+                            "You can use a druidic focus as a spellcasting focus.",
+            "Wild Shape": "At 2nd level, you gain the ability to transform into animals using Wild Shape. "
+                        "This ability allows you to take on the form of a variety of creatures, gaining their abilities and physical characteristics.",
+            "Druid Circle": "At 2nd level, you choose a Druid Circle that represents your connection to a particular aspect of nature. "
+                            "This choice grants you additional features and abilities based on your chosen circle.",
+            "Wild Companion (Optional)": "Starting at 2nd level, you can choose to have a faithful animal companion by your side. "
+                                        "This companion aids you in various ways and grows stronger as you level up.",
+            "Wild Shape improvement": "At 4th level, your Wild Shape ability improves, allowing you to transform into more powerful creatures. "
+                                    "You can also choose to become more proficient with a specific Wild Shape form.",
+            "Ability Score Improvement": "At 4th level and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice "
+                                        "by 2, or you can increase two ability scores of your choice by 1. This allows you to customize your character as you progress.",
+            "Cantrip Versatility (Optional)": "Starting at 4th level, you can replace one cantrip you know with another from the druid spell list "
+                                            "whenever you gain a level in this class. This allows you to adapt your cantrips as your character grows.",
+            "Beast Spells": "At 18th level, you can cast spells while in Wild Shape form, merging your spellcasting abilities with your transformed state.",
+            "Archdruid": "At 20th level, you become an Archdruid, gaining powerful abilities. "
+                        "You can use your Wild Shape an unlimited number of times, and you gain access to high-level spells."
+
+        },
         "Hit Die": "1d8",
         "Proficiencies": {
             "Armor": "Light armor, medium armor, shields (druids will not wear armor or use shields made of metal)",
@@ -426,22 +581,44 @@ dnd_classes = {
             4: {"Proficiency Bonus": "+2","Features": ["Ability Score Improvement", "Martial Versatility (Optional)"]},
             5: {"Proficiency Bonus": "+3","Features": ["Extra Attack (x1)"]},
             6: {"Proficiency Bonus": "+3","Features": ["Ability Score Improvement", "Martial Versatility (Optional)"]},
-            7: {"Proficiency Bonus": "+3","Features": ["Martial Archetype feature"]},
+            7: {"Proficiency Bonus": "+3","Features": ["Martial Archetype Feature"]},
             8: {"Proficiency Bonus": "+3","Features": ["Ability Score Improvement", "Martial Versatility (Optional)"]},
             9: {"Proficiency Bonus": "+4","Features": ["Indomitable (x1)"]},
-            10: {"Proficiency Bonus": "+4","Features": ["Martial Archetype feature"]},
+            10: {"Proficiency Bonus": "+4","Features": ["Martial Archetype Feature"]},
             11: {"Proficiency Bonus": "+4","Features": ["Extra Attack (x2)"]},
             12: {"Proficiency Bonus": "+4","Features": ["Ability Score Improvement", "Martial Versatility (Optional)"]},
             13: {"Proficiency Bonus": "+5","Features": ["Indomitable (x2)"]},
             14: {"Proficiency Bonus": "+5","Features": ["Ability Score Improvement", "Martial Versatility (Optional)"]},
-            15: {"Proficiency Bonus": "+5","Features": ["Martial Archetype feature"]},
+            15: {"Proficiency Bonus": "+5","Features": ["Martial Archetype Feature"]},
             16: {"Proficiency Bonus": "+5","Features": ["Ability Score Improvement", "Martial Versatility (Optional)"]},
             17: {"Proficiency Bonus": "+6","Features": ["Action Surge (x2)", "Indomitable (x3)"]},
-            18: {"Proficiency Bonus": "+6","Features": ["Martial Archetype feature"]},
+            18: {"Proficiency Bonus": "+6","Features": ["Martial Archetype Feature"]},
             19: {"Proficiency Bonus": "+6","Features": ["Ability Score Improvement", "Martial Versatility (Optional)"]},
             20: {"Proficiency Bonus": "+6","Features": ["Extra Attack (x3)"]}
         },
-        "Features": {},
+        "Features": {
+            "Fighting Style": "At 1st level, you choose a Fighting Style that defines your approach to combat. "
+                            "This choice grants you specific combat benefits such as increased accuracy or better defense.",
+            "Second Wind": "At 1st level, you can tap into your reserves to regain some hit points as a bonus action in combat.",
+            "Action Surge (x1)": "At 2nd level, you can push yourself beyond your normal limits, taking an additional action on your turn. "
+                                "You regain this ability after a short or long rest.",
+            "Martial Archetype": "At 3rd level, you choose a Martial Archetype that represents your specialized combat path, "
+                                "such as being a Champion, Battle Master, or Eldritch Knight. This choice grants you unique features "
+                                "and abilities related to your chosen path.",
+            "Ability Score Improvement": "At 4th level and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score "
+                                        "of your choice by 2, or you can increase two ability scores of your choice by 1. This allows you to customize your character.",
+            "Martial Versatility (Optional)": "Starting at 4th level, you can replace one fighting style or Martial Archetype Feature you know "
+                                            "with another option whenever you gain a level in this class. This allows you to adapt your abilities as needed.",
+            "Martial Archetype Feature": "The Martial Archetype Feature is a key aspect of the fighter class in the Dungeons and Dragons (D&D) 5th Edition role-playing game. "
+                                         "It represents the fighter's chosen combat specialization, granting them unique abilities and combat techniques that define their style and role on the battlefield.",
+            "Extra Attack (x1)": "At 5th level, you gain the ability to make two attacks instead of one when you take the Attack action on your turn.",
+            "Indomitable (x1)": "At 9th level, you can reroll a saving throw that you fail, potentially avoiding the negative effects of a failed save.",
+            "Extra Attack (x2)": "At 11th level, you gain a second extra attack, allowing you to make three attacks when taking the Attack action on your turn.",
+            "Indomitable (x2)": "At 13th level, you gain an additional use of the Indomitable feature, increasing your resilience against failed saving throws.",
+            "Action Surge (x2)": "At 17th level, you gain a second use of the Action Surge feature, allowing you to take two additional actions between rests.",
+            "Indomitable (x3)": "At 17th level, you gain a third use of the Indomitable feature, further improving your ability to resist the effects of failed saves.",
+            "Extra Attack (x3)": "At 20th level, you gain a third extra attack, allowing you to make four attacks when taking the Attack action on your turn."
+        },
         "Hit Die": "1d10",
         "Proficiencies": {
             "Armor": "All armor, shields",
@@ -517,23 +694,69 @@ dnd_classes = {
             3: {'Proficiency Bonus': '+2','Martial Arts': '1d4','Ki Points': '3','Unarmored Movement': '+10 ft.','Features': ['Monastic Tradition', 'Deflect Missiles', 'Ki-Fueled Attack (Optional)']},
             4: {'Proficiency Bonus': '+2','Martial Arts': '1d4','Ki Points': '4','Unarmored Movement': '+10 ft.','Features': ['Ability Score Improvement', 'Slow Fall', 'Quickened Healing (Optional)']},
             5: {'Proficiency Bonus': '+3','Martial Arts': '1d6','Ki Points': '5','Unarmored Movement': '+10 ft.','Features': ['Extra Attack', 'Stunning Strike', 'Focused Aim (Optional)']},
-            6: {'Proficiency Bonus': '+3','Martial Arts': '1d6','Ki Points': '6','Unarmored Movement': '+15 ft.','Features': ['Ki-Empowered Strikes', 'Monastic Tradition feature']},
+            6: {'Proficiency Bonus': '+3','Martial Arts': '1d6','Ki Points': '6','Unarmored Movement': '+15 ft.','Features': ['Ki-Empowered Strikes', 'Monastic Tradition Feature']},
             7: {'Proficiency Bonus': '+3','Martial Arts': '1d6','Ki Points': '7','Unarmored Movement': '+15 ft.','Features': ['Evasion', 'Stillness of Mind']},
             8: {'Proficiency Bonus': '+3','Martial Arts': '1d6','Ki Points': '8','Unarmored Movement': '+15 ft.','Features': ['Ability Score Improvement']},
             9: {'Proficiency Bonus': '+4','Martial Arts': '1d6','Ki Points': '9','Unarmored Movement': '+15 ft.','Features': ['Unarmored Movement improvement']},
             10: {'Proficiency Bonus': '+4','Martial Arts': '1d6','Ki Points': '10','Unarmored Movement': '+20 ft.','Features': ['Purity of Body']},
-            11: {'Proficiency Bonus': '+4','Martial Arts': '1d8','Ki Points': '11','Unarmored Movement': '+20 ft.','Features': ['Monastic Tradition feature']},
+            11: {'Proficiency Bonus': '+4','Martial Arts': '1d8','Ki Points': '11','Unarmored Movement': '+20 ft.','Features': ['Monastic Tradition Feature']},
             12: {'Proficiency Bonus': '+4','Martial Arts': '1d8','Ki Points': '12','Unarmored Movement': '+20 ft.','Features': ['Ability Score Improvement']},
             13: {'Proficiency Bonus': '+5','Martial Arts': '1d8','Ki Points': '13','Unarmored Movement': '+20 ft.','Features': ['Tongue of the Sun and Moon']},
             14: {'Proficiency Bonus': '+5','Martial Arts': '1d8','Ki Points': '14','Unarmored Movement': '+25 ft.','Features': ['Diamond Soul']},
             15: {'Proficiency Bonus': '+5','Martial Arts': '1d8','Ki Points': '15','Unarmored Movement': '+25 ft.','Features': ['Timeless Body']},
             16: {'Proficiency Bonus': '+5','Martial Arts': '1d8','Ki Points': '16','Unarmored Movement': '+25 ft.','Features': ['Ability Score Improvement']},
-            17: {'Proficiency Bonus': '+6','Martial Arts': '1d10','Ki Points': '17','Unarmored Movement': '+25 ft.','Features': ['Monastic Tradition feature']},
+            17: {'Proficiency Bonus': '+6','Martial Arts': '1d10','Ki Points': '17','Unarmored Movement': '+25 ft.','Features': ['Monastic Tradition Feature']},
             18: {'Proficiency Bonus': '+6','Martial Arts': '1d10','Ki Points': '18','Unarmored Movement': '+30 ft.','Features': ['Empty Body']},
             19: {'Proficiency Bonus': '+6','Martial Arts': '1d10','Ki Points': '19','Unarmored Movement': '+30 ft.','Features': ['Ability Score Improvement']},
             20: {'Proficiency Bonus': '+6','Martial Arts': '1d10','Ki Points': '20','Unarmored Movement': '+30 ft.','Features': ['Perfect Self']}
         },
-        "Features": {},
+        "Features": {
+            "Unarmored Defense": "Starting at 1st level, while you are not wearing armor or using a shield, your AC equals 10 + "
+                                "your Dexterity modifier + your Wisdom modifier. This reflects your ability to defend yourself "
+                                "without the need for traditional armor.",
+            "Martial Arts": "At 1st level, your martial training allows you to use unarmed strikes as a monk weapon, "
+                            "and you can use Dexterity instead of Strength for the attack and damage rolls. Additionally, "
+                            "your unarmed strike damage increases as you gain levels in this class.",
+            "Ki Points": "Starting at 2nd level, you gain the ability to use ki points to fuel various features and abilities. "
+                        "The number of ki points you have increases as you gain levels in this class.",
+            "Monastic Tradition Feature": "The Monastic Tradition Feature is a key element of the monk class in the Dungeons and Dragons (D&D) 5th Edition role-playing game. "
+                                          "It represents the monk's chosen path or school of martial arts and philosophy, shaping their unique abilities and combat style.",
+            "Unarmored Movement": "At 2nd level, your speed increases, and it continues to increase as you gain levels in this class. "
+                                "This reflects your agility and ability to move quickly even without heavy armor.",
+            "Ki": "Starting at 2nd level, you gain access to ki features. These features include Flurry of Blows, Patient Defense, "
+                "and Step of the Wind, which allow you to manipulate your ki energy for different effects in combat.",
+            "Dedicated Weapon (Optional)": "At 2nd level, you can choose a specific type of monk weapon as your dedicated weapon. "
+                                        "This choice enhances your proficiency with that weapon.",
+            "Monastic Tradition": "At 3rd level, you choose a Monastic Tradition that reflects your specific style and philosophy as a monk. "
+                                "This choice grants you additional features and abilities based on your chosen tradition.",
+            "Deflect Missiles": "At 3rd level, you gain the ability to deflect or catch missiles and projectiles. "
+                                "This allows you to reduce or negate ranged attacks against you.",
+            "Ki-Fueled Attack (Optional)": "Starting at 3rd level, you can spend ki points to enhance your unarmed strikes with additional effects. "
+                                        "This provides you with more versatility in combat.",
+            "Ability Score Improvement": "At 4th level and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice "
+                                        "by 2, or you can increase two ability scores of your choice by 1. This allows you to customize your character as you progress.",
+            "Slow Fall": "At 4th level, you gain the ability to reduce falling damage, allowing you to safely land from great heights.",
+            "Quickened Healing (Optional)": "Starting at 4th level, you can spend ki points to heal yourself or others, "
+                                            "granting you a way to provide support and recovery in combat.",
+            "Extra Attack": "At 5th level, you can make two unarmed strikes instead of one when you use the Attack action on your turn. "
+                            "This increases your damage output in combat.",
+            "Stunning Strike": "At 5th level, you gain the ability to stun a creature with your unarmed strikes, rendering them incapacitated. "
+                            "This is a powerful crowd control ability.",
+            "Focused Aim (Optional)": "Starting at 5th level, you can spend ki points to gain advantage on attack rolls, "
+                                    "ensuring that your attacks are more likely to hit their target.",
+            "Ki-Empowered Strikes": "At 6th level, your unarmed strikes are considered magical for the purpose of overcoming resistances and immunities.",
+            "Evasion": "At 7th level, you gain the ability to avoid damage from area-effect spells and abilities with a successful Dexterity saving throw.",
+            "Stillness of Mind": "At 7th level, you gain the ability to end an effect on yourself that is causing you to be charmed or frightened. "
+                                "This reflects your mental discipline and inner calm.",
+            "Unarmored Movement improvement": "At 9th level, your Unarmored Movement feature improves, allowing you to move more quickly and easily.",
+            "Purity of Body": "At 10th level, you become immune to disease and poison, reflecting your physical and mental purity.",
+            "Tongue of the Sun and Moon": "At 13th level, you can understand and speak any language, allowing you to communicate with almost anyone.",
+            "Diamond Soul": "At 14th level, you gain proficiency in all saving throws, and you can spend ki points to reroll failed saving throws.",
+            "Timeless Body": "At 15th level, you no longer age and are immune to the effects of aging. This reflects your attunement to the flow of time.",
+            "Empty Body": "At 18th level, you gain the ability to become invisible and immune to damage, allowing you to escape danger or ambush foes.",
+            "Perfect Self": "At 20th level, you achieve a state of perfect physical and mental being, gaining resistance to all damage types "
+                            "and the ability to use your ki points without limit for certain features."
+        },
         "Hit Die": "1d8",
         "Proficiencies": {
             "Armor": "None",
@@ -619,7 +842,48 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6', 'Features': ['Ability Score Improvement', 'Martial Versatility (Optional)'], '1st': '4', '2nd': '3', '3rd': '3', '4th': '3', '5th': '2'},
             20: {'Proficiency Bonus': '+6', 'Features': ['Sacred Oath feature'], '1st': '4', '2nd': '3', '3rd': '3', '4th': '3', '5th': '2'}
         },
-        "Features" : {},
+        "Features" : {
+            "Divine Sense": "At 1st level, you gain the ability to sense the presence of celestial, fiend, or undead creatures "
+                            "within 60 feet of you. This allows you to detect the presence of such creatures, but it doesn't provide "
+                            "specific information about their identity or location. You can use this feature a number of times equal "
+                            "to 1 + your Charisma modifier before needing to complete a long rest.",
+            "Lay on Hands": "Also at 1st level, you can use your Paladin's Touch to heal wounds. As an action, you can touch a creature "
+                            "and restore hit points equal to your Paladin level x 5. You have a pool of healing power, and this pool "
+                            "refreshes after a long rest.",
+            "Fighting Style": "At 2nd level, you adopt a particular style of fighting as your specialty. "
+                            "This choice grants you a feature to enhance your combat abilities, such as Dueling for increased damage or "
+                            "Protection to aid in defense.",
+            "Spellcasting": "Also at 2nd level, you gain the ability to cast spells as a Paladin. You prepare and cast spells "
+                            "from the Paladin spell list, using your Charisma as your spellcasting ability. This feature allows you to "
+                            "smite enemies with divine power and provide support to your allies through spells.",
+            "Divine Smite": "Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot "
+                            "to deal radiant damage to the target in addition to the weapon's damage. The extra damage increases as you "
+                            "gain higher-level spell slots.",
+            "Divine Health": "At 3rd level, your divine magic makes you immune to disease. You are now not only a warrior but also a beacon "
+                            "of health and vitality.",
+            "Sacred Oath": "Also at 3rd level, you swear an oath to uphold certain principles and ideals. This choice determines your Paladin "
+                        "Oath, granting you additional features and abilities based on your chosen oath.",
+            "Harness Divine Power (Optional)": "At 3rd level, you gain the ability to channel your divine energy to fuel certain class features. "
+                                                "This optional feature allows you to regain expended spell slots through prayer.",
+            "Ability Score Improvement": "At 4th level and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice "
+                                        "by 2, or you can increase two ability scores of your choice by 1. This allows you to customize your character as you progress.",
+            "Martial Versatility (Optional)": "At 4th level, you can replace a fighting style you previously chose with another one. "
+                                            "This option grants you greater flexibility in adapting your combat style to different situations.",
+            "Extra Attack": "Starting at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. "
+                            "This feature significantly enhances your combat capabilities.",
+            "Aura of Protection": "At 6th level, you and friendly creatures within 10 feet of you gain a bonus to saving throws equal to your "
+                                "Charisma modifier. This aura enhances your allies' resilience to various threats.",
+            "Sacred Oath feature": "At 7th level and again at 15th and 20th level, your chosen Sacred Oath grants you additional features and abilities "
+                                "that reflect your oath's tenets and purpose.",
+            "Aura of Courage": "At 10th level, you and friendly creatures within 10 feet of you can't be frightened while you are conscious. "
+                            "This aura instills bravery and determination in your allies.",
+            "Improved Divine Smite": "Starting at 11th level, your Divine Smite feature now adds extra damage to your weapon attacks even without "
+                                    "expending spell slots. Your attacks carry an increased divine impact.",
+            "Cleansing Touch": "At 14th level, you gain the ability to cure disease or end a condition afflicting a creature. "
+                            "Your touch can purify and heal, providing aid to your allies in need.",
+            "Aura improvements": "At 18th level, the range of your Aura of Protection and Aura of Courage increases, benefiting more allies "
+                                "with your protective auras.",
+        },
         "Hit Die": "1d10",
         "Proficiencies": {
             "Armor": "All armor, shields",
@@ -717,7 +981,54 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6', 'Features': ['Ability Score Improvement', 'Martial Versatility (Optional)'], 'Spells Known': 11, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2},
             20: {'Proficiency Bonus': '+6', 'Features': ['Foe Slayer'], 'Spells Known': 11, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2}
         },
-        "Features": {},
+        "Features": {
+            "Favored Enemy": "At 1st level, you choose a type of creature to be your favored enemy. You gain bonuses when tracking, "
+                            "hunting, and interacting with creatures of this type. You can choose additional favored enemies as you level up.",
+            "Natural Explorer": "Also at 1st level, you gain benefits when traveling through specific types of terrain. You become skilled at "
+                                "navigating the wilderness and avoiding hazards associated with your favored terrain.",
+            "Deft Explorer (Optional)": "At 1st level, you gain one of three features (Canny, Roving, or Tireless) that enhance your "
+                                        "abilities based on your preferred exploration style. You can choose an additional feature at later levels.",
+            "Favored Foe (Optional)": "At 1st level, you can mark a creature as your favored foe. You gain bonus damage against this target, "
+                                    "and you can designate a new favored foe after a short or long rest.",
+            "Fighting Style": "At 2nd level, you choose a fighting style that defines your combat preferences. Options include Archery, "
+                            "Two-Weapon Fighting, and more, each granting specific combat benefits.",
+            "Spellcasting": "Also at 2nd level, you gain the ability to cast spells as a Ranger. You prepare and cast spells from the Ranger "
+                            "spell list, using your Wisdom as your spellcasting ability.",
+            "Spellcasting Focus (Optional)": "At 2nd level, you can use a druidic focus as a spellcasting focus for your Ranger spells. "
+                                            "This is an optional feature for added flavor.",
+            "Primeval Awareness": "At 3rd level, you gain the ability to use your awareness to detect nearby creatures. This helps you sense "
+                                "the presence of certain types of creatures within 1 mile of you.",
+            "Ranger Conclave": "Also at 3rd level, you choose a Ranger Conclave that represents your specialization, such as Hunter or Beast Master. "
+                            "This choice grants you unique features based on your selected Conclave.",
+            "Primal Awareness (Optional)": "At 3rd level, you can expend spell slots to gain the ability to cast additional spells, such as "
+                                        "Detect Magic or Speak with Animals, without preparing them in advance. This is an optional feature.",
+            "Ability Score Improvement": "At 4th level and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice "
+                                        "by 2, or you can increase two ability scores of your choice by 1. This allows you to customize your character as you progress.",
+            "Martial Versatility (Optional)": "At 4th level, you can replace a favored enemy or favored foe with another one. This option grants you greater "
+                                            "flexibility in adapting your specialization to different situations.",
+            "Extra Attack": "Starting at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. "
+                            "This feature significantly enhances your combat capabilities.",
+            "Favored Enemy Improvement": "At 6th level, your expertise in dealing with your favored enemy improves. You gain additional bonuses when "
+                                        "interacting with them.",
+            "Natural Explorer Improvement": "At 6th level, your Natural Explorer feature is enhanced, granting you further advantages when traveling "
+                                        "through your favored terrain.",
+            "Deft Explorer Improvement (Optional)": "At 6th level, you can choose another feature to improve your exploration skills further. "
+                                                    "This is an optional feature.",
+            "Ranger Conclave feature": "At 7th level and again at 11th and 15th level, your chosen Ranger Conclave grants you additional features "
+                                    "and abilities that reflect your specialization within the Ranger class.",
+            "Land's Stride": "At 8th level, moving through non-magical difficult terrain doesn't cost you extra movement, and you can't be "
+                            "tracked by non-magical means unless you choose to leave tracks.",
+            "Hide in Plain Sight": "At 10th level, you can blend into your surroundings while lightly obscured by natural phenomena, "
+                                    "making you exceptionally stealthy.",
+            "Nature's Veil (Optional)": "At 10th level, you can use magic to conceal yourself or allies from view, enhancing your ability to "
+                                        "ambush or hide. This is an optional feature.",
+            "Vanish": "At 14th level, you can disappear from view as a bonus action, gaining improved stealth and the ability to hide more easily.",
+            "Feral Senses": "At 18th level, your senses become incredibly sharp. You gain advantage on Wisdom (Perception) checks, and you can "
+                            "sense the presence of invisible creatures within 30 feet of you.",
+            "Foe Slayer": "At 20th level, you become a master of hunting. You can add your Wisdom modifier to the attack and damage rolls against "
+                        "your favored enemies, making you a formidable adversary."
+
+        },
         "Hit Die": '1d10',
         "Proficiencies": {
             'Armor': 'Light armor, medium armor, shields',
@@ -815,7 +1126,40 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6', 'Sneak Attack': '10d6', 'Features': ['Ability Score Improvement']},
             20: {'Proficiency Bonus': '+6', 'Sneak Attack': '10d6', 'Features': ['Stroke of Luck']}
         },
-        "Features": {},
+        "Features": {
+            "Expertise": "At 1st level, you gain proficiency in two of your choice of skills, tools, or languages. Your proficiency bonus "
+                        "is doubled for any ability check you make using these chosen proficiencies. This feature is gained again at 6th level.",
+            "Sneak Attack": "At 1st level, you can deal extra damage to creatures you hit with an attack if you have advantage on the attack roll, "
+                            "or if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage "
+                            "on the attack roll. The extra damage increases as you level up.",
+            "Thieves' Cant": "At 1st level, you learn the secret language of thieves. You can communicate in a hidden manner with other rogues "
+                            "who know this language.",
+            "Cunning Action": "At 2nd level, you can take a bonus action on each of your turns in combat to Dash, Disengage, or Hide, allowing you to "
+                            "be more agile and elusive in combat.",
+            "Roguish Archetype": "At 3rd level, you choose a Roguish Archetype that defines your specialization as a rogue, such as Thief or Assassin. "
+                                "This choice grants you unique features based on your selected archetype.",
+            "Steady Aim (Optional)": "At 3rd level, you can use your bonus action to carefully aim your ranged weapon, giving you advantage on your next "
+                                    "attack roll with it. This is an optional feature.",
+            "Ability Score Improvement": "At 4th level and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice "
+                                        "by 2, or you can increase two ability scores of your choice by 1. This allows you to customize your character as you progress.",
+            "Uncanny Dodge": "At 5th level, you can use your reaction to halve the damage from an incoming attack that you can see, as long as you're wielding "
+                            "a finesse weapon or a ranged weapon.",
+            "Evasion": "At 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice storm spell, "
+                    "taking no damage on a successful Dexterity saving throw.",
+            "Roguish Archetype feature": "At 9th, 13th, and 17th level, your chosen Roguish Archetype grants you additional features and abilities that reflect "
+                                        "your specialization within the rogue class.",
+            "Reliable Talent": "At 11th level, you can add your proficiency bonus to any ability check you make that uses one of your skill proficiencies, "
+                            "ensuring that you are incredibly skilled in those areas.",
+            "Blindsense": "At 14th level, you gain the ability to detect the presence of creatures even if they are invisible or heavily obscured, "
+                        "as long as they are within 10 feet of you.",
+            "Slippery Mind": "At 15th level, you have acquired mental resilience, allowing you to use your action to end an effect on yourself that is causing "
+                            "you to be charmed or frightened, helping you break free from such conditions.",
+            "Elusive": "At 18th level, you become exceptionally difficult to pin down during combat. Attackers have disadvantage on attack rolls against you, "
+                    "and you can use your action to make yourself effectively invisible for a turn.",
+            "Stroke of Luck": "At 20th level, you have an uncanny ability to avoid failure. If your attack misses a target or a saving throw fails, you can "
+                            "use Stroke of Luck to turn the failure into a success, potentially saving the day."
+
+        },
         "Hit Die": '1d8',
         "Proficiencies": {
             'Armor': 'Light armor',
@@ -908,7 +1252,26 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6', 'Sorcery Points': '19', 'Features': ['Ability Score Improvement', 'Sorcerous Versatility (Optional)'], 'Cantrips Known': 6, 'Spells Known': 15, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1, '9th': 1},
             20: {'Proficiency Bonus': '+6', 'Sorcery Points': '20', 'Features': ['Sorcerous Restoration'], 'Cantrips Known': 6, 'Spells Known': 15, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1, '9th': 1}
         },
-        "Features": {},
+        "Features": {
+            "Spellcasting": "At 1st level, you gain the ability to cast spells using your innate magical ability, known as Sorcery Points. "
+                            "You can choose spells from the sorcerer spell list and cast them using spell slots.",
+            "Sorcerous Origin": "At 1st level, you choose a Sorcerous Origin, which represents the source of your innate magical power. "
+                                "Different origins grant you unique abilities and features.",
+            "Font of Magic": "At 2nd level, you gain the ability to manipulate your Sorcery Points. You can use Sorcery Points to create spell slots "
+                            "or convert unused spell slots into Sorcery Points.",
+            "Metamagic": "At 3rd level, you gain access to Metamagic options, which allow you to modify your spells in various ways. You can choose "
+                        "Metamagic options as you level up.",
+            "Ability Score Improvement": "At 4th level and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice "
+                                        "by 2, or you can increase two ability scores of your choice by 1. This allows you to customize your character as you progress.",
+            "Sorcerous Versatility (Optional)": "At 4th level, you can choose to gain proficiency with a new set of tools or a new language instead of "
+                                                "increasing your ability scores. This is an optional feature.",
+            "Magical Guidance (Optional)": "At 5th level, you can choose to gain proficiency in a skill or a set of tools instead of increasing your ability scores. "
+                                        "This is an optional feature.",
+            "Sorcerous Origin feature": "At 6th, 14th, and 18th level, your chosen Sorcerous Origin grants you additional features and abilities that reflect "
+                                        "your magical heritage.",
+            "Sorcerous Restoration": "At 20th level, you regain expended Sorcery Points when you finish a short rest, giving you more versatility in "
+                                    "managing your magical resources."
+        },
         "Hit Die": '1d6',
         "Proficiencies": {
             'Armor': 'None',
@@ -994,15 +1357,15 @@ dnd_classes = {
             3: {'Proficiency Bonus': '+2', 'Features': ['Pact Boon'], 'Cantrips Known': 2, 'Spells Known': 4, 'Spell Slots': 2, 'Slot Level': '2nd', 'Invocations Known': '2'},
             4: {'Proficiency Bonus': '+2', 'Features': ['Ability Score Improvement', 'Eldritch Versatility (Optional)'], 'Cantrips Known': 3, 'Spells Known': 5, 'Spell Slots': 2, 'Slot Level': '2nd', 'Invocations Known': '2'},
             5: {'Proficiency Bonus': '+3', 'Features': ['-'], 'Cantrips Known': 3, 'Spells Known': 6, 'Spell Slots': 2, 'Slot Level': '3rd', 'Invocations Known': '3'},
-            6: {'Proficiency Bonus': '+3', 'Features': ['Otherworldly Patron feature'], 'Cantrips Known': 3, 'Spells Known': 7, 'Spell Slots': 2, 'Slot Level': '3rd', 'Invocations Known': '3'},
+            6: {'Proficiency Bonus': '+3', 'Features': ['Otherworldly Patron Feature'], 'Cantrips Known': 3, 'Spells Known': 7, 'Spell Slots': 2, 'Slot Level': '3rd', 'Invocations Known': '3'},
             7: {'Proficiency Bonus': '+3', 'Features': ['-'], 'Cantrips Known': 3, 'Spells Known': 8, 'Spell Slots': 2, 'Slot Level': '4th', 'Invocations Known': '4'},
             8: {'Proficiency Bonus': '+3', 'Features': ['Ability Score Improvement', 'Eldritch Versatility (Optional)'], 'Cantrips Known': 3, 'Spells Known': 9, 'Spell Slots': 2, 'Slot Level': '4th', 'Invocations Known': '4'},
             9: {'Proficiency Bonus': '+4', 'Features': ['-'], 'Cantrips Known': 3, 'Spells Known': 10, 'Spell Slots': 2, 'Slot Level': '5th', 'Invocations Known': '5'},
-            10: {'Proficiency Bonus': '+4', 'Features': ['Otherworldly Patron feature'], 'Cantrips Known': 4, 'Spells Known': 10, 'Spell Slots': 2, 'Slot Level': '5th', 'Invocations Known': '5'},
+            10: {'Proficiency Bonus': '+4', 'Features': ['Otherworldly Patron Feature'], 'Cantrips Known': 4, 'Spells Known': 10, 'Spell Slots': 2, 'Slot Level': '5th', 'Invocations Known': '5'},
             11: {'Proficiency Bonus': '+4', 'Features': ['Mystic Arcanum (6th level)'], 'Cantrips Known': 4, 'Spells Known': 11, 'Spell Slots': 3, 'Slot Level': '5th', 'Invocations Known': '5'},
             12: {'Proficiency Bonus': '+4', 'Features': ['Ability Score Improvement', 'Eldritch Versatility (Optional)'], 'Cantrips Known': 4, 'Spells Known': 11, 'Spell Slots': 3, 'Slot Level': '5th', 'Invocations Known': '6'},
             13: {'Proficiency Bonus': '+5', 'Features': ['Mystic Arcanum (7th level)'], 'Cantrips Known': 4, 'Spells Known': 12, 'Spell Slots': 3, 'Slot Level': '5th', 'Invocations Known': '6'},
-            14: {'Proficiency Bonus': '+5', 'Features': ['Otherworldly Patron feature'], 'Cantrips Known': 4, 'Spells Known': 12, 'Spell Slots': 3, 'Slot Level': '5th', 'Invocations Known': '6'},
+            14: {'Proficiency Bonus': '+5', 'Features': ['Otherworldly Patron Feature'], 'Cantrips Known': 4, 'Spells Known': 12, 'Spell Slots': 3, 'Slot Level': '5th', 'Invocations Known': '6'},
             15: {'Proficiency Bonus': '+5', 'Features': ['Mystic Arcanum (8th level)'], 'Cantrips Known': 4, 'Spells Known': 13, 'Spell Slots': 3, 'Slot Level': '5th', 'Invocations Known': '7'},
             16: {'Proficiency Bonus': '+5', 'Features': ['Ability Score Improvement', 'Eldritch Versatility (Optional)'], 'Cantrips Known': 4, 'Spells Known': 13, 'Spell Slots': 3, 'Slot Level': '5th', 'Invocations Known': '7'},
             17: {'Proficiency Bonus': '+6', 'Features': ['Mystic Arcanum (9th level)'], 'Cantrips Known': 4, 'Spells Known': 14, 'Spell Slots': 4, 'Slot Level': '5th', 'Invocations Known': '7'},
@@ -1010,7 +1373,30 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6', 'Features': ['Ability Score Improvement', 'Eldritch Versatility (Optional)'], 'Cantrips Known': 4, 'Spells Known': 15, 'Spell Slots': 4, 'Slot Level': '5th', 'Invocations Known': '8'},
             20: {'Proficiency Bonus': '+6', 'Features': ['Eldritch Master'], 'Cantrips Known': 4, 'Spells Known': 15, 'Spell Slots': 4, 'Slot Level': '5th', 'Invocations Known': '8'}
         },
-        "Features": {},
+        "Features": {
+            "Otherworldly Patron": "At 1st level, you choose an Otherworldly Patron, a powerful being that grants you warlock powers. "
+                                "This choice determines your Patron's features and spells you can cast.",
+            "Otherworldly Patron Feature": "The Otherworldly Patron Feature is a key element of the warlock class in the Dungeons and Dragons (D&D) 5th Edition role-playing game. "
+                                           "It represents the warlock's pact with a powerful otherworldly being, granting them special abilities, spells, and a unique connection to their patron. "
+                                           "This choice of patron significantly influences the warlock's character and abilities.",
+            "Pact Magic": "At 1st level, you gain the ability to cast spells through a mystical connection to your Patron. You have a limited number "
+                        "of spell slots, and your spells are always cast at their highest possible level.",
+            "Eldritch Invocations": "At 2nd level, you gain the ability to choose Eldritch Invocations, which grant you unique abilities and enhancements. "
+                                    "You can select two Eldritch Invocations at this level.",
+            "Pact Boon": "At 3rd level, you receive a special gift from your Patron known as a Pact Boon. There are three types of Pact Boons: Pact of the Chain, "
+                        "Pact of the Blade, and Pact of the Tome. Each provides different benefits.",
+            "Ability Score Improvement": "At 4th level and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, "
+                                        "or you can increase two ability scores of your choice by 1. This allows you to customize your character as you progress.",
+            "Eldritch Versatility (Optional)": "At 4th level, you can choose to gain proficiency in a new set of tools or a new language instead of "
+                                                "increasing your ability scores. This is an optional feature.",
+            "Mystic Arcanum (6th level)": "At 11th level, you gain access to a special spell known as a Mystic Arcanum. This spell is of 6th-level and can "
+                                        "be cast once without expending a spell slot.",
+            "Mystic Arcanum (7th level)": "At 13th level, you gain access to a 7th-level Mystic Arcanum spell, which can be cast once without expending a spell slot.",
+            "Mystic Arcanum (8th level)": "At 15th level, you gain access to an 8th-level Mystic Arcanum spell, which can be cast once without expending a spell slot.",
+            "Mystic Arcanum (9th level)": "At 17th level, you gain access to a 9th-level Mystic Arcanum spell, which can be cast once without expending a spell slot.",
+            "Eldritch Master": "At 20th level, you can spend 1 minute to regain all expended spell slots once per day when you finish a short rest."
+
+        },
         "Hit Die": '1d8',
         "Proficiencies": {
             'Armor': 'Light armor',
@@ -1109,7 +1495,23 @@ dnd_classes = {
             19: {'Proficiency Bonus': '+6', 'Features': ['-'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 3, '6th': 2, '7th': 1, '8th': 1, '9th': 1},
             20: {'Proficiency Bonus': '+6', 'Features': ['Signature Spells'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 3, '6th': 2, '7th': 2, '8th': 1, '9th': 1}    
         },
-        "Features": {},
+        "Features": {
+            "Spellcasting": "At 1st level, you gain the ability to cast spells. You can prepare a number of spells each day from your spellbook and cast them using "
+                            "spell slots. Your spellbook is a crucial tool for your spellcasting.",
+            "Arcane Recovery": "At 1st level, you have the ability to recover some of your expended spell slots during a short rest. This feature helps you regain "
+                            "magical energy quickly.",
+            "Arcane Tradition": "At 2nd level, you choose an Arcane Tradition, which determines your focus within the magical arts. Each tradition offers unique abilities "
+                                "and spells related to that school of magic.",
+            "Cantrip Formulas (Optional)": "At 3rd level, you can create formulas that allow you to switch out one or more of your cantrips when you gain a level. "
+                                        "This is an optional feature and provides flexibility in your cantrip choices.",
+            "Ability Score Improvement": "At 4th level and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can "
+                                        "increase two ability scores of your choice by 1. This allows you to customize your character as you progress.",
+            "Spell Mastery": "At 18th level, you gain mastery over certain spells, allowing you to cast them at will without expending a spell slot. This demonstrates "
+                            "your deep understanding of these spells.",
+            "Signature Spells": "At 20th level, you gain access to a special list of Signature Spells, which are always prepared for you. You can cast these spells "
+                                "without expending a spell slot, adding versatility to your spellcasting."
+
+        },
         "Hit Die": '1d6',
         "Proficiencies": {
             'Armor': 'None',
