@@ -123,17 +123,17 @@ def main(all_characters):
         while True:
             try:
                 user_roll = int(input(f"  {char_in_battle.name} the {char_in_battle.char_race} {char_in_battle.char_class}: "))
-                initiative_calc = int(character.capabilities['attributes']['dexterity']['modifier']) + user_roll
+                initiative_calc = int(character.attributes['dexterity']['modifier']) + user_roll
                 break
             except:
                 print(f"Error, please input a number")
         char_in_battle.initiative = initiative_calc
-        char_in_battle.str        = int(character.capabilities['attributes']['strength']['modifier'])
-        char_in_battle.dex        = int(character.capabilities['attributes']['constitution']['modifier'])
-        char_in_battle.con        = int(character.capabilities['attributes']['dexterity']['modifier'])
-        char_in_battle.int        = int(character.capabilities['attributes']['intelligence']['modifier'])
-        char_in_battle.wis        = int(character.capabilities['attributes']['wisdom']['modifier'])
-        char_in_battle.cha        = int(character.capabilities['attributes']['charisma']['modifier'])
+        char_in_battle.str        = int(character.attributes['strength']['modifier'])
+        char_in_battle.dex        = int(character.attributes['constitution']['modifier'])
+        char_in_battle.con        = int(character.attributes['dexterity']['modifier'])
+        char_in_battle.int        = int(character.attributes['intelligence']['modifier'])
+        char_in_battle.wis        = int(character.attributes['wisdom']['modifier'])
+        char_in_battle.cha        = int(character.attributes['charisma']['modifier'])
         char_in_battle.attacks    = character.weapons
         char_in_battle.skills     = character.capabilities['Skills']
         char_in_battle.effects    = []

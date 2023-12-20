@@ -213,6 +213,8 @@ dnd_classes = {
                             "During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. "
                             "This feature reflects your ability to bolster your allies' mental fortitude.",
             "Song of Rest (d8)": "At 9th level, the extra hit points granted by your Song of Rest feature increase to 1d8.",
+            "Song of Rest (d10)": "The Song of Rest (d10) is a feature unique to bards in the Dungeons and Dragons (D&D) 5th Edition role-playing game. It allows the bard to use soothing music or oration to help their companions during a short rest. When the bard and their allies spend Hit Dice to regain hit points at the end of a short rest, each of those allies also rolls a d10 and adds the result to the hit points regained. This feature enhances the bard's support role and provides additional healing to the party.",
+            "Song of Rest (d12)": "Song of Rest is a bard class feature in Dungeons and Dragons (D&D) 5th Edition. It allows the bard to use soothing music or words of encouragement during a short rest, aiding allies in their recovery. With this feature, the bard adds a d12 to the hit points regained by any friendly creatures who spend hit dice at the end of a short rest. It provides additional healing and support to the party, making the bard a valuable asset during recovery periods.",
             "Bardic Inspiration (d10)": "At 10th level, the Bardic Inspiration die increases to a d10, providing even greater inspiration to your allies.",
             "Magical Secrets": "Starting at 10th level, you can learn two spells from any class, including spells that are not on the bard spell list. "
                             "This allows you to expand your magical repertoire significantly.",
@@ -337,14 +339,16 @@ dnd_classes = {
             "Channel Divinity (x1)": "At 2nd level, you gain the ability to channel divine energy directly from your deity. "
                                     "You can use this ability to invoke divine effects based on your chosen domain. "
                                     "You have one use of this ability before needing a short or long rest to use it again.",
+            "Channel Divinity (x2)": "At 6th level, you gain an additional use of your Channel Divinity ability, "
+                                    "allowing you to call upon your deity's power more frequently.",
+            "Channel Divinity (x3)": "At 18th level, you gain an additional use of your Channel Divinity ability, "
+                                    "allowing you to call upon your deity's power more frequently.",
             "Harness Divine Power (Optional)": "Starting at 2nd level, you can call upon your deity's power to regain expended spell slots. "
                                             "This feature enhances your spellcasting capabilities.",
             "Jack of All Trades": "Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make "
                                 "that doesn't already include your proficiency bonus. This feature reflects your diverse knowledge.",
             "Destroy Undead (CR 1/2)": "At 5th level, you gain the ability to turn or destroy undead creatures with a Challenge Rating of 1/2 or lower. "
                                     "This ability allows you to repel or destroy undead foes.",
-            "Channel Divinity (x2)": "At 6th level, you gain an additional use of your Channel Divinity ability, "
-                                    "allowing you to call upon your deity's power more frequently.",
             "Destroy Undead (CR 1)": "At 8th level, your Destroy Undead ability now affects undead creatures with a Challenge Rating of 1 or lower. "
                                     "This allows you to combat stronger undead foes.",
             "Divine Intervention": "At 10th level, you can call upon your deity for divine intervention in dire situations. "
@@ -491,6 +495,9 @@ dnd_classes = {
             "Cantrip Versatility (Optional)": "Starting at 4th level, you can replace one cantrip you know with another from the druid spell list "
                                             "whenever you gain a level in this class. This allows you to adapt your cantrips as your character grows.",
             "Beast Spells": "At 18th level, you can cast spells while in Wild Shape form, merging your spellcasting abilities with your transformed state.",
+            "Timeless Body": "Timeless Body is a class feature for druids in Dungeons and Dragons (D&D) 5th Edition. "
+                             "At 18th level, a druid's body becomes immune to the effects of aging. They no longer suffer the drawbacks of old age, and they can't be magically aged. "
+                             "This feature reflects the druid's deep connection to nature, allowing them to maintain their vitality and youthfulness throughout their life.",
             "Archdruid": "At 20th level, you become an Archdruid, gaining powerful abilities. "
                         "You can use your Wild Shape an unlimited number of times, and you gain access to high-level spells."
 
@@ -682,7 +689,7 @@ dnd_classes = {
  | \  / | ___  _ __ | | __
  | |\/| |/ _ \| '_ \| |/ /
  | |  | | (_) | | | |   < 
- |_|  |_|\___/|_| |_|_|\_\
+ |_|  |_|\___/|_| |_|_|\_\ 
                           
         """,
         "Name": "Monk",
@@ -988,6 +995,9 @@ dnd_classes = {
                                 "navigating the wilderness and avoiding hazards associated with your favored terrain.",
             "Deft Explorer (Optional)": "At 1st level, you gain one of three features (Canny, Roving, or Tireless) that enhance your "
                                         "abilities based on your preferred exploration style. You can choose an additional feature at later levels.",
+            "Deft Explorer Feature (Optional)": "The Deft Explorer feature is an optional class feature for rangers in Dungeons and Dragons (D&D) 5th Edition. "
+                                                "It enhances the ranger's exploration abilities, offering them a choice between three options: Canny, Roving, or Tireless. "
+                                                "Each choice grants the ranger specific benefits related to skills, movement, or endurance, enhancing their versatility in the wilderness and during exploration.",
             "Favored Foe (Optional)": "At 1st level, you can mark a creature as your favored foe. You gain bonus damage against this target, "
                                     "and you can designate a new favored foe after a short or long rest.",
             "Fighting Style": "At 2nd level, you choose a fighting style that defines your combat preferences. Options include Archery, "
@@ -1095,7 +1105,7 @@ dnd_classes = {
   _____                        
  |  __ \                       
  | |__) |___   __ _ _   _  ___ 
- |  _  // _ \ / _` | | | |/ _ \
+ |  _  // _ \ / _` | | | |/ _ \ 
  | | \ \ (_) | (_| | |_| |  __/
  |_|  \_\___/ \__, |\__,_|\___|
                __/ |           
@@ -1345,7 +1355,7 @@ dnd_classes = {
   \ \  /\  / /_ _ _ __| | ___   ___| | __
    \ \/  \/ / _` | '__| |/ _ \ / __| |/ /
     \  /\  / (_| | |  | | (_) | (__|   < 
-     \/  \/ \__,_|_|  |_|\___/ \___|_|\_\
+     \/  \/ \__,_|_|  |_|\___/ \___|_|\_\ 
                                          
         """,
         "Name": "Warlock",
@@ -1474,22 +1484,22 @@ dnd_classes = {
         "Description": "A scholarly magic-user capable of manipulating the structures of reality. Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, brute-force mind control, and much more.",
         "Requirements": "You must have an Intelligence score of 13 or higher in order to multiclass in or out of this class.",
         "Level Chart" : {
-            1: {'Proficiency Bonus': '+2', 'Features': ['Spellcasting', 'Arcane Recovery'], 'Cantrips Known': 3, '1st': 2},
-            2: {'Proficiency Bonus': '+2', 'Features': ['Arcane Tradition'], 'Cantrips Known': 3, '1st': 3},
-            3: {'Proficiency Bonus': '+2', 'Features': ['Cantrip Formulas (Optional)'], 'Cantrips Known': 3, '1st': 4, '2nd': 2},
-            4: {'Proficiency Bonus': '+2', 'Features': ['Ability Score Improvement'], 'Cantrips Known': 4, '1st': 4, '2nd': 3},
-            5: {'Proficiency Bonus': '+3', 'Features': ['-'], 'Cantrips Known': 4, '1st': 4, '2nd': 3, '3rd': 2},
-            6: {'Proficiency Bonus': '+3', 'Features': ['Arcane Tradition feature'], 'Cantrips Known': 4, '1st': 4, '2nd': 3, '3rd': 3},
-            7: {'Proficiency Bonus': '+3', 'Features': ['-'], 'Cantrips Known': 4, '1st': 4, '2nd': 3, '3rd': 3, '4th': 1},
-            8: {'Proficiency Bonus': '+3', 'Features': ['Ability Score Improvement'], 'Cantrips Known': 4, '1st': 4, '2nd': 3, '3rd': 3, '4th': 2},
-            9: {'Proficiency Bonus': '+4', 'Features': ['-'], 'Cantrips Known': 4, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 1},
-            10: {'Proficiency Bonus': '+4', 'Features': ['Arcane Tradition feature'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2},
-            11: {'Proficiency Bonus': '+4', 'Features': ['-'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1},
-            12: {'Proficiency Bonus': '+4', 'Features': ['Ability Score Improvement'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1},
-            13: {'Proficiency Bonus': '+5', 'Features': ['-'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1},
-            14: {'Proficiency Bonus': '+5', 'Features': ['Arcane Tradition feature'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1},
-            15: {'Proficiency Bonus': '+5', 'Features': ['-'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1},
-            16: {'Proficiency Bonus': '+5', 'Features': ['Ability Score Improvement'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1},
+            1: {'Proficiency Bonus': '+2', 'Features': ['Spellcasting', 'Arcane Recovery'], 'Cantrips Known': 3, '1st': 2, '2nd': '-', '3rd': '-', '4th': '-', '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            2: {'Proficiency Bonus': '+2', 'Features': ['Arcane Tradition'], 'Cantrips Known': 3, '1st': 3, '2nd': '-', '3rd': '-', '4th': '-', '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            3: {'Proficiency Bonus': '+2', 'Features': ['Cantrip Formulas (Optional)'], 'Cantrips Known': 3, '1st': 4, '2nd': 2, '3rd': '-', '4th': '-', '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            4: {'Proficiency Bonus': '+2', 'Features': ['Ability Score Improvement'], 'Cantrips Known': 4, '1st': 4, '2nd': 3, '3rd': '-', '4th': '-', '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            5: {'Proficiency Bonus': '+3', 'Features': ['-'], 'Cantrips Known': 4, '1st': 4, '2nd': 3, '3rd': 2, '4th': '-', '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            6: {'Proficiency Bonus': '+3', 'Features': ['Arcane Tradition Feature'], 'Cantrips Known': 4, '1st': 4, '2nd': 3, '3rd': 3, '4th': '-', '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            7: {'Proficiency Bonus': '+3', 'Features': ['-'], 'Cantrips Known': 4, '1st': 4, '2nd': 3, '3rd': 3, '4th': 1, '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            8: {'Proficiency Bonus': '+3', 'Features': ['Ability Score Improvement'], 'Cantrips Known': 4, '1st': 4, '2nd': 3, '3rd': 3, '4th': 2, '5th': '-', '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            9: {'Proficiency Bonus': '+4', 'Features': ['-'], 'Cantrips Known': 4, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 1, '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            10: {'Proficiency Bonus': '+4', 'Features': ['Arcane Tradition Feature'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': '-', '7th': '-', '8th': '-', '9th': '-'},
+            11: {'Proficiency Bonus': '+4', 'Features': ['-'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': '-', '8th': '-', '9th': '-'},
+            12: {'Proficiency Bonus': '+4', 'Features': ['Ability Score Improvement'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': '-', '8th': '-', '9th': '-'},
+            13: {'Proficiency Bonus': '+5', 'Features': ['-'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': '-', '9th': '-'},
+            14: {'Proficiency Bonus': '+5', 'Features': ['Arcane Tradition Feature'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': '-', '9th': '-'},
+            15: {'Proficiency Bonus': '+5', 'Features': ['-'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1, '9th': '-'},
+            16: {'Proficiency Bonus': '+5', 'Features': ['Ability Score Improvement'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1, '9th': '-'},
             17: {'Proficiency Bonus': '+6', 'Features': ['-'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 2, '6th': 1, '7th': 1, '8th': 1, '9th': 1},
             18: {'Proficiency Bonus': '+6', 'Features': ['Spell Mastery'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 3, '6th': 1, '7th': 1, '8th': 1, '9th': 1},
             19: {'Proficiency Bonus': '+6', 'Features': ['-'], 'Cantrips Known': 5, '1st': 4, '2nd': 3, '3rd': 3, '4th': 3, '5th': 3, '6th': 2, '7th': 1, '8th': 1, '9th': 1},
@@ -1498,6 +1508,7 @@ dnd_classes = {
         "Features": {
             "Spellcasting": "At 1st level, you gain the ability to cast spells. You can prepare a number of spells each day from your spellbook and cast them using "
                             "spell slots. Your spellbook is a crucial tool for your spellcasting.",
+            "Arcane Tradition Feature": "The Arcane Tradition Feature is a key element of the wizard class in the Dungeons and Dragons (D&D) 5th Edition role-playing game. It represents the wizard's chosen school of magic, such as Evocation or Abjuration. This choice of arcane tradition grants the wizard special abilities, spells, and a unique focus on a specific school of magic, shaping their magical abilities and role within the party.",
             "Arcane Recovery": "At 1st level, you have the ability to recover some of your expended spell slots during a short rest. This feature helps you regain "
                             "magical energy quickly.",
             "Arcane Tradition": "At 2nd level, you choose an Arcane Tradition, which determines your focus within the magical arts. Each tradition offers unique abilities "

@@ -8,7 +8,8 @@ import pickle_handler
 from dnd_spells import *
 from dnd_lists import *
 import numpy as np
-
+from dnd_classes import *
+import textwrap
 
 def debug(show):
     print(f"[Debug] Type: {type(show)} == Value: {show}")
@@ -18,6 +19,37 @@ def debug(show):
 
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
+
+
+def text_wrap(long_text,line_length=100, initial_indent="", padding_value=35, spaces=2):
+
+    subsequent_indent = ' ' * (padding_value + spaces + 1)  # The + 1 accounts for the :
+
+    # Use textwrap to format the string with an initial indent
+    wrapped_text = textwrap.fill(long_text, width=line_length, initial_indent=initial_indent)
+
+    # Manually add subsequent indent to the wrapped lines
+    formatted_text = '\n'.join([initial_indent + line if i == 0 else subsequent_indent + line for i, line in enumerate(wrapped_text.splitlines())])
+
+    return formatted_text
+
+
+def choose_random_spell(character, spell_list, chosen_temp_list):
+    random_spell = random.choice(spell_list)
+    if random_spell == None:
+        choose_random_spell(character, spell_list, chosen_temp_list)
+    elif random_spell in chosen_temp_list:
+        choose_random_spell(character, spell_list, chosen_temp_list)
+    elif random_spell not in chosen_temp_list:
+        # return random_spell, chosen_temp_list
+        chosen_temp_list.append(random_spell)
+        character.spells["Selected Spells"].append(random_spell)
+
+
+def terminalmenu_quick_select(list,title):
+    terminal_menu = TerminalMenu(list,title=title)
+    terminal_menu_index = terminal_menu.show()
+    return list[terminal_menu_index]
 
 
 def dnd_roll_dice():
@@ -69,25 +101,35 @@ def dnd_roll_dice():
 
 
 
-
 def print_character(dictionary, spaces=2, padding_value=35):
     try:
         for key, value in dictionary.items():
+            # Define the desired line length and indent
+            # initial_indent = ""  # 4 spaces for initial indent
+            # subsequent_indent = ' ' * (padding_value + spaces + 1)  # The + 1 accounts for the :
+
+            # Use textwrap to format the string with an initial indent
+            # wrapped_text = textwrap.fill(value, width=100, initial_indent=initial_indent)
+
+            # Manually add subsequent indent to the wrapped lines
+            # formatted_text = '\n'.join([initial_indent + line if i == 0 else subsequent_indent + line for i, line in enumerate(wrapped_text.splitlines())])
+            # value = formatted_text
+
             if isinstance(value, dict):  # Check if value is a nested dictionary
-                print(f"{' ' * spaces}{key} :")
+                print(f"\n{' ' * spaces}{key} :")
                 print_character(value, spaces + 2)  # recursively call the function to handle nested dictionary
             elif isinstance(value, list):  
                 print(f"{' ' * spaces}{key} :")
-                list_space = spaces + 2
+                list_space = spaces -1
                 for v in value:
-                    print(f"{' ' * list_space}{v} :")
+                    print(f"{' ' * (padding_value + list_space)}- {v}")
                 print_character(value, spaces + 2)  # recursively call the function to handle nested dictionary
             else:
                 padding = padding_value - spaces
                 print(f"{' ' * spaces}{f'{key:<{padding}}'} : {value}")  # print key-value pair if value is not a nested dictionary
     except:
-        # print(f"{' ' * spaces}None")
         print(f"{' ' * spaces}")
+
 
 
 def print_inventory(dictionary, name, padding_value=35):
@@ -102,6 +144,7 @@ def character_management_banner():
         print(f"  ===============================================================================================================")
         print(f"  Character {'#':<7} {'Level':<10} {'Race':<15} {'Class':<14} {'Name':<34} {'Created':<20} ")
         print(f"  ===============================================================================================================")
+
 
 def character_management(all_characters):
     while True:
@@ -157,57 +200,57 @@ def character_management(all_characters):
             # dnd_choose_character_number = dir(Character())
             # Gets all the attributues of Character() and removes all the attributes that start with '__'
             # dnd_menu_character_class_section_selection = [attr for attr in dir(Character()) if not attr.startswith("__")]
-            dnd_menu_character_class_section_selection = ["features","spells","profile","armor","attributes","background","capabilities","character_class","character_race","combat","description","items","level_chart","money","skills","weapons","Exit"] 
+            dnd_menu_character_class_section_selection = ["Profile","Description","Background","Features","Spells","Attributes","Skills","Capabilities","Money","Items","Weapons","Armor","Combat","Race Details","Class Details","Level Chart","Exit"] 
  
             dnd_menu_character_class_section_selection_menu = TerminalMenu(dnd_menu_character_class_section_selection)
             dnd_menu_character_class_section_selection_menu_index = dnd_menu_character_class_section_selection_menu.show()
 
-            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'profile':
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Profile':
                 print_character(all_characters[characters_menu_index].profile)
                 input("\nPress Enter to Continue...")
-            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'character_race':
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Race Details':
                 print_character(all_characters[characters_menu_index].character_race)
                 input("\nPress Enter to Continue...")
-            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'character_class':
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Class Details':
                 print_character(all_characters[characters_menu_index].character_class)
                 input("\nPress Enter to Continue...")
-            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'description':
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Description':
                 print_character(all_characters[characters_menu_index].description)
                 input("\nPress Enter to Continue...")
-            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'background':
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Background':
                 print_character(all_characters[characters_menu_index].background)
                 input("\nPress Enter to Continue...")
-            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'level_chart':
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Level Chart':
                 print_character(all_characters[characters_menu_index].level_chart)
                 input("\nPress Enter to Continue...")
-            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'attributes':
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Attributes': #batman
                 print_character(all_characters[characters_menu_index].attributes)
                 input("\nPress Enter to Continue...")
-            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'capabilities':
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Capabilities':
                 print_character(all_characters[characters_menu_index].capabilities)
                 input("\nPress Enter to Continue...")
-            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'skills':
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Skills':
                 print_character(all_characters[characters_menu_index].skills)
                 input("\nPress Enter to Continue...")
-            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'features':
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Features':
                 print_character(all_characters[characters_menu_index].features)
                 input("\nPress Enter to Continue...")
-            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'money':
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Money':
                 print_character(all_characters[characters_menu_index].money)
                 input("\nPress Enter to Continue...")
-            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'items':
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Items':
                 print_character(all_characters[characters_menu_index].items)
                 input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Armor':
                 print_character(all_characters[characters_menu_index].armor)
                 input("\nPress Enter to Continue...")
-            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'weapons':
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Weapons':
                 print_character(all_characters[characters_menu_index].weapons)
                 input("\nPress Enter to Continue...")
-            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'combat':
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Combat':
                 print_character(all_characters[characters_menu_index].combat)
                 input("\nPress Enter to Continue...")
-            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'spells':
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Spells':
 
 
                 # if all_characters[characters_menu_index].character_class['Name'] in half_magic_classes:
@@ -221,6 +264,7 @@ def character_management(all_characters):
                 # el
                 if all_characters[characters_menu_index].character_class['Name'] in magic_classes or all_characters[characters_menu_index].character_class['Name'] in half_magic_classes:
                     spell_level_list = list(all_characters[characters_menu_index].spells['Spells Known']['Slots'])
+                    spell_level_list.insert(0,'Details')
                     spell_level_list.append('Exit')
 
                     # These magic classes don't have Cantrips
@@ -235,13 +279,47 @@ def character_management(all_characters):
                             print(f"  {spell_level_title:<35} {'SEL':<5} {'School':<20} {'Damage':<10} {'Saving Throw':<15} {'Range':<22} {'Duration':<32} {'Casting Time':<25} {'Components':<12}")
                             print(f"  ========================================================================================================================================================================================================")
                         spell_menu_banner
+                        line_length=100
 
-                        #example: Cantrips, 1st, 2nd...
+                        #example: Cantrips, 1st, 2nd...                        
                         spell_level_menu = TerminalMenu(spell_level_list, title="Select Level")
                         spell_level_index = spell_level_menu.show()
                         spell_level_selected = list(spell_level_list)[spell_level_index]
 
                         if spell_level_selected == 'Exit':
+                            break
+                        if spell_level_selected == 'Details':
+                            print(f"""
+Spellcasting Ability   : {text_wrap(dnd_classes[all_characters[characters_menu_index].character_class['Name']]["Spells"]["Spellcasting"],line_length=line_length,padding_value=22)}
+
+Spellcasting Modifier  : {text_wrap(dnd_classes[all_characters[characters_menu_index].character_class['Name']]["Spells"]["Spellcasting Modifier"],line_length=line_length,padding_value=22)}
+
+Spell Attack Modifier  : {text_wrap(dnd_classes[all_characters[characters_menu_index].character_class['Name']]["Spells"]["Spell Attack Modifier"],line_length=line_length,padding_value=22)}
+
+Spell DC Save          : {text_wrap(dnd_classes[all_characters[characters_menu_index].character_class['Name']]["Spells"]["Spell DC Save"],line_length=line_length,padding_value=22)}
+
+Preparation            : {text_wrap(dnd_classes[all_characters[characters_menu_index].character_class['Name']]["Spells"]["Preparation"],line_length=line_length,padding_value=22)}
+
+Recovery               : {text_wrap(dnd_classes[all_characters[characters_menu_index].character_class['Name']]["Spells"]["Recovery"],line_length=line_length,padding_value=22)}
+
+Spell Slots            : {text_wrap(dnd_classes[all_characters[characters_menu_index].character_class['Name']]["Spells"]["Spell Slots"],line_length=line_length,padding_value=22)}
+
+Spells Known           : {text_wrap(dnd_classes[all_characters[characters_menu_index].character_class['Name']]["Spells"]["Spells Known"],line_length=line_length,padding_value=22)}
+
+Change Up              : {text_wrap(dnd_classes[all_characters[characters_menu_index].character_class['Name']]["Spells"]["Change Up"],line_length=line_length,padding_value=22)}
+
+Progression            : {text_wrap(dnd_classes[all_characters[characters_menu_index].character_class['Name']]["Spells"]["Progression"],line_length=line_length,padding_value=22)}
+
+Requirements           : {text_wrap(dnd_classes[all_characters[characters_menu_index].character_class['Name']]["Spells"]["Requirements"],line_length=line_length,padding_value=22)}
+
+Key Differences        : {text_wrap(dnd_classes[all_characters[characters_menu_index].character_class['Name']]["Spells"]["Key Difference"],line_length=line_length,padding_value=22)}
+
+Uniqueness             : {text_wrap(dnd_classes[all_characters[characters_menu_index].character_class['Name']]["Spells"]["Uniqueness"],line_length=line_length,padding_value=22)}
+
+Magic Lore             : {text_wrap(dnd_classes[all_characters[characters_menu_index].character_class['Name']]["Spells"]["Magic Lore"],line_length=line_length,padding_value=22)}
+
+""")
+                            input("\nPress Enter to Continue...")
                             break
                         else:
                             while True:
@@ -284,7 +362,7 @@ def character_management(all_characters):
 
                                 clear()
                                 spell_menu_banner()
-                                spell_name_menu2 = TerminalMenu(spell_list_formatted, title='Select Spell')
+                                spell_name_menu2 = TerminalMenu(spell_list_formatted)
                                 spell_name_index2 = spell_name_menu2.show()
                                 spell_name_selected2 = spell_list_formatted[spell_name_index2]
                                 spell_name_selected2 = spell_name_selected2.split('[')[0].strip()
