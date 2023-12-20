@@ -155,14 +155,14 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['age'] = random.randint(character_age_ranges[character_race][0], character_age_ranges[character_race][1])
     elif method == 'Manual':
-        character.description['age'] = terminalmenu_quick_select([str(num) for num in range(character_age_ranges[character_race][0], character_age_ranges[character_race][1])], 'Select an age:')
+        character.description['age'] = terminalmenu_quick_select([str(num) for num in range(character_age_ranges[character_race][0], character_age_ranges[character_race][1])], f'[{character_race}] Select an age:')
 
 
     # Gender
     if method == 'Automated' or method == 'Guided':
         character.description['gender'] = str(random.choice(list(['Male','Female','Unknown'])))
     elif method == 'Manual':
-        character.description['gender'] = terminalmenu_quick_select(['Male', 'Female', 'Hermaphrodite', 'Non-Binary', 'Transgender', 'Unknown', 'Other', 'None'], 'Select a gender:')
+        character.description['gender'] = terminalmenu_quick_select(['Male', 'Female', 'Hermaphrodite', 'Non-Binary', 'Transgender', 'Unknown', 'Other', 'None'], f'[{character_race}] Select a gender:')
 
 
     # Height
@@ -180,7 +180,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['height'] = random.randint(character_height_ranges[character_race][0], character_height_ranges[character_race][1])
     elif method == 'Manual':
-        character.description['height'] = terminalmenu_quick_select([str(num) for num in range(character_height_ranges[character_race][0], character_height_ranges[character_race][1])], 'Select a height in inches:')
+        character.description['height'] = terminalmenu_quick_select([str(num) for num in range(character_height_ranges[character_race][0], character_height_ranges[character_race][1])], f'[{character_race}] Select a height in inches:')
 
 
     # Weight
@@ -198,7 +198,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['weight'] = random.randint(character_weight_ranges[character_race][0], character_weight_ranges[character_race][1])
     elif method == 'Manual':
-        character.description['weight'] = terminalmenu_quick_select([str(num) for num in range(character_weight_ranges[character_race][0],character_weight_ranges[character_race][1])], 'Select a weight in pounds:')
+        character.description['weight'] = terminalmenu_quick_select([str(num) for num in range(character_weight_ranges[character_race][0],character_weight_ranges[character_race][1])], f'[{character_race}] Select a weight in pounds:')
 
 
     # Skin variations
@@ -297,7 +297,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['skin_type'] = random.choice(character_skin_type_variations[character_race])
     elif method == 'Manual':
-        character.description['skin_type'] = terminalmenu_quick_select(character_skin_type_variations[character_race], 'Select a skin type variation:')
+        character.description['skin_type'] = terminalmenu_quick_select(character_skin_type_variations[character_race], f'[{character_race}] Select a skin type variation:')
 
     character_skin_color_variations = {
         'Dwarf': [
@@ -367,7 +367,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['skin_color'] = random.choice(character_skin_color_variations[character_race])
     elif method == 'Manual':
-        character.description['skin_color'] = terminalmenu_quick_select(character_skin_color_variations[character_race], 'Select a skin color variation:')
+        character.description['skin_color'] = terminalmenu_quick_select(character_skin_color_variations[character_race], f'[{character_race}] Select a skin color variation:')
 
 
     # Race-specific skin scents
@@ -432,7 +432,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == "Automated" or method == "Guided":
         character.description["skin_scent"] = random.choice(character_skin_scent_variations[character_race])
     elif method == "Manual":
-        character.description["skin_scent"] = terminalmenu_quick_select(character_skin_scent_variations[character_race], "Select a skin scent:")
+        character.description["skin_scent"] = terminalmenu_quick_select(character_skin_scent_variations[character_race], f"[{character_race}] Select a skin scent:")
 
     # Race-specific skin defects
     character_skin_defect_variations = {
@@ -496,7 +496,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == "Automated" or method == "Guided":
         character.description["skin_defect"] = random.choice(character_skin_defect_variations[character_race])
     elif method == "Manual":
-        character.description["skin_defect"] = terminalmenu_quick_select(character_skin_defect_variations[character_race], "Select a skin defect:")
+        character.description["skin_defect"] = terminalmenu_quick_select(character_skin_defect_variations[character_race], f"[{character_race}] Select a skin defect:")
 
     # Race-specific eye shapes
     character_eye_shape_variations = {
@@ -569,7 +569,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == "Automated" or method == "Guided":
         character.description["eye_shape"] = random.choice(character_eye_shape_variations[character_race])
     elif method == "Manual":
-        character.description["eye_shape"] = terminalmenu_quick_select(character_eye_shape_variations[character_race], "Select an eye shape:")
+        character.description["eye_shape"] = terminalmenu_quick_select(character_eye_shape_variations[character_race], f"[{character_race}] Select an eye shape:")
 
     # Race-specific eye sizes
     character_eye_size_variations = {
@@ -642,7 +642,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == "Automated" or method == "Guided":
         character.description["eye_size"] = random.choice(character_eye_size_variations[character_race])
     elif method == "Manual":
-        character.description["eye_size"] = terminalmenu_quick_select(character_eye_size_variations[character_race], "Select an eye size:")
+        character.description["eye_size"] = terminalmenu_quick_select(character_eye_size_variations[character_race], f"[{character_race}] Select an eye size:")
 
     # Race-specific eye colors
     character_eye_color_variations = {
@@ -720,13 +720,13 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == "Automated" or method == "Guided":
         character.description["eye_color"] = random.choice(character_eye_color_variations[character_race])
     elif method == "Manual":
-        character.description["eye_color"] = terminalmenu_quick_select(character_eye_color_variations[character_race], "Select an eye color:")
+        character.description["eye_color"] = terminalmenu_quick_select(character_eye_color_variations[character_race], f"[{character_race}] Select an eye color:")
 
 
     if method == "Automated" or method == "Guided":
         character.description["eye_brows"] = random.choice(['None','Short','Medium','Long', 'Thin', 'Bushy', 'Other'])
     elif method == "Manual":
-        character.description["eye_brows"] = terminalmenu_quick_select(['Short','Medium','Long', 'Thin', 'Bushy', 'Other'], "Select an eye brows:")
+        character.description["eye_brows"] = terminalmenu_quick_select(['Short','Medium','Long', 'Thin', 'Bushy', 'Other'], f"[{character_race}] Select an eye brows:")
 
 
 
@@ -768,7 +768,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == "Automated" or method == "Guided":
         character.description["eye_feature"] = random.choice(character_eye_features_variations)
     elif method == "Manual":
-        selected_feature = terminalmenu_quick_select(character_eye_features_variations, "Select an eye feature or sight condition:")
+        selected_feature = terminalmenu_quick_select(character_eye_features_variations, f"[{character_race}] Select an eye feature or sight condition:")
         character.description["eye_feature"] = selected_feature
     
     
@@ -840,7 +840,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == "Automated" or method == "Guided":
         character.description["nose_shape"] = random.choice(character_race_nose_variations[character_race])
     elif method == "Manual":
-        character.description["nose_shape"] = terminalmenu_quick_select(character_race_nose_variations[character_race], "Select a nose shape:")
+        character.description["nose_shape"] = terminalmenu_quick_select(character_race_nose_variations[character_race], f"[{character_race}] Select a nose shape:")
 
 
     character_race_chin_variations = {
@@ -921,7 +921,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == "Automated" or method == "Guided":
         character.description["chin_shape"] = random.choice(character_race_chin_variations[character_race])
     elif method == "Manual":
-        character.description["chin_shape"] = terminalmenu_quick_select(character_race_chin_variations[character_race], "Select a chin shape:")
+        character.description["chin_shape"] = terminalmenu_quick_select(character_race_chin_variations[character_race], f"[{character_race}] Select a chin shape:")
 
 
     character_race_chin_features_variations = {
@@ -993,7 +993,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == "Automated" or method == "Guided":
         character.description["chin_features"] = random.choice(character_race_chin_features_variations[character_race])
     elif method == "Manual":
-        character.description["chin_features"] = terminalmenu_quick_select(character_race_chin_features_variations[character_race], "Select chin features:")
+        character.description["chin_features"] = terminalmenu_quick_select(character_race_chin_features_variations[character_race], f"[{character_race}] Select chin features:")
 
 
     character_race_ear_shape_variations = {
@@ -1065,7 +1065,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == "Automated" or method == "Guided":
         character.description["ear_shape"] = random.choice(character_race_ear_shape_variations[character_race])
     elif method == "Manual":
-        character.description["ear_shape"] = terminalmenu_quick_select(character_race_ear_shape_variations[character_race], "Select ear shape:")
+        character.description["ear_shape"] = terminalmenu_quick_select(character_race_ear_shape_variations[character_race], f"[{character_race}] Select ear shape:")
 
 
     character_race_ear_size_variations = {
@@ -1137,7 +1137,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == "Automated" or method == "Guided":
         character.description["ear_size"] = random.choice(character_race_ear_size_variations[character_race])
     elif method == "Manual":
-        character.description["ear_size"] = terminalmenu_quick_select(character_race_ear_size_variations[character_race], "Select ear size:")
+        character.description["ear_size"] = terminalmenu_quick_select(character_race_ear_size_variations[character_race], f"[{character_race}] Select ear size:")
 
 
     character_race_ear_type_variations = {
@@ -1194,7 +1194,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == "Automated" or method == "Guided":
         character.description["ear_type"] = random.choice(character_race_ear_type_variations[character_race])
     elif method == "Manual":
-        character.description["ear_type"] = terminalmenu_quick_select(character_race_ear_type_variations[character_race], "Select ear type:")
+        character.description["ear_type"] = terminalmenu_quick_select(character_race_ear_type_variations[character_race], f"[{character_race}] Select ear type:")
 
 
     character_race_hair_variations = {
@@ -1259,7 +1259,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['hair_color'] = random.choice(character_race_hair_variations[character_race])
     elif method == 'Manual':
-        character.description['hair_color'] = terminalmenu_quick_select(character_race_hair_variations[character_race], 'Select a hair color:')
+        character.description['hair_color'] = terminalmenu_quick_select(character_race_hair_variations[character_race], f'[{character_race}] Select a hair color:')
 
 
     character_race_hair_types = {
@@ -1368,7 +1368,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['hair_type'] = random.choice(character_race_hair_types[character_race])
     elif method == 'Manual':
-        character.description['hair_type'] = terminalmenu_quick_select(character_race_hair_types[character_race], 'Select a hair type:')
+        character.description['hair_type'] = terminalmenu_quick_select(character_race_hair_types[character_race], f'[{character_race}] Select a hair type:')
 
 
     character_race_hair_styles = {
@@ -1512,7 +1512,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['hair_style'] = random.choice(character_race_hair_styles[character_race])
     elif method == 'Manual':
-        character.description['hair_style'] = terminalmenu_quick_select(character_race_hair_styles[character_race], 'Select a hair style:')
+        character.description['hair_style'] = terminalmenu_quick_select(character_race_hair_styles[character_race], f'[{character_race}] Select a hair style:')
 
 
     character_race_facial_hair = {
@@ -1611,7 +1611,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['facial_hair'] = random.choice(character_race_facial_hair[character_race])
     elif method == 'Manual':
-        character.description['facial_hair'] = terminalmenu_quick_select(character_race_facial_hair[character_race], 'Select a facial hair style:')
+        character.description['facial_hair'] = terminalmenu_quick_select(character_race_facial_hair[character_race], f'[{character_race}] Select a facial hair style:')
 
 
     character_race_facial_features = {
@@ -1683,7 +1683,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['facial_features'] = random.choice(character_race_facial_features[character_race])
     elif method == 'Manual':
-        character.description['facial_features'] = terminalmenu_quick_select(character_race_facial_features[character_race], 'Select a facial feature:')
+        character.description['facial_features'] = terminalmenu_quick_select(character_race_facial_features[character_race], f'[{character_race}] Select a facial feature:')
 
 
     character_race_body_types = {
@@ -1746,7 +1746,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['body_type'] = random.choice(character_race_body_types[character_race])
     elif method == 'Manual':
-        character.description['body_type'] = terminalmenu_quick_select(character_race_body_types[character_race], 'Select a body type:')
+        character.description['body_type'] = terminalmenu_quick_select(character_race_body_types[character_race], f'[{character_race}] Select a body type:')
 
 
     character_race_tattoo_locations = {
@@ -1862,7 +1862,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['tattoo_location'] = random.choice(character_race_tattoo_locations[character_race])
     elif method == 'Manual':
-        character.description['tattoo_location'] = terminalmenu_quick_select(character_race_tattoo_locations[character_race], 'Select a tattoo location:')
+        character.description['tattoo_location'] = terminalmenu_quick_select(character_race_tattoo_locations[character_race], f'[{character_race}] Select a tattoo location:')
 
     # character.description['tattoo_pattern'] = str(random.choice(list(['None','Tribal','Mural','Faces','Words','Dates','Strip','Triangle','Square','Other'])))
     # character.description['tattoo_amount'] = str(random.choice(list(['None','Few','Some','Many','Other'])))
@@ -1939,7 +1939,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['clothing_style'] = random.choice(character_race_clothing_styles[character_race])
     elif method == 'Manual':
-        character.description['clothing_style'] = terminalmenu_quick_select(character_race_clothing_styles[character_race], 'Select a clothing style:')
+        character.description['clothing_style'] = terminalmenu_quick_select(character_race_clothing_styles[character_race], f'[{character_race}] Select a clothing style:')
 
     # character.description['clothing_color'] = str(random.choice(list(['White','Black','Brown','Red','Yellow','Green','Blue','Purple','Orange','Pink','Gray','Other'])))
     # character.description['clothing_pattern'] = str(random.choice(list(['None','Strip','Triangle','Square','Other'])))
@@ -2053,7 +2053,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['accessories'] = random.choice(character_race_accessories[character_race])
     elif method == 'Manual':
-        character.description['accessories'] = terminalmenu_quick_select(character_race_accessories[character_race], 'Select an accessory:')
+        character.description['accessories'] = terminalmenu_quick_select(character_race_accessories[character_race], f'[{character_race}] Select an accessory:')
 
     # character.description['head_gear'] = str(random.choice(list(['None','Metal Armor','Leather Pad','Cloth','Bare','Other'])))
     # character.description['neck_gear'] = str(random.choice(list(['None','Metal Armor','Leather Pad','Cloth','Bare','Other'])))
@@ -2145,7 +2145,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['voice'] = random.choice(character_race_voices[character_race])
     elif method == 'Manual':
-        character.description['voice'] = terminalmenu_quick_select(character_race_voices[character_race], 'Select a voice:')
+        character.description['voice'] = terminalmenu_quick_select(character_race_voices[character_race], f'[{character_race}] Select a voice:')
 
 
     character_race_mannerisms = {
@@ -2262,7 +2262,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['mannerisms'] = random.choice(character_race_mannerisms[character_race])
     elif method == 'Manual':
-        character.description['mannerisms'] = terminalmenu_quick_select(character_race_mannerisms[character_race], 'Select mannerisms:')
+        character.description['mannerisms'] = terminalmenu_quick_select(character_race_mannerisms[character_race], f'[{character_race}] Select mannerisms:')
 
 
     character_race_personalities = {
@@ -2361,7 +2361,7 @@ def generate_characters(character, character_number, character_level=1, characte
     if method == 'Automated' or method == 'Guided':
         character.description['personality'] = random.choice(character_race_personalities[character_race])
     elif method == 'Manual':
-        character.description['personality'] = terminalmenu_quick_select(character_race_personalities[character_race], 'Select a personality trait:')
+        character.description['personality'] = terminalmenu_quick_select(character_race_personalities[character_race], f'[{character_race}] Select a personality trait:')
 
 
 
