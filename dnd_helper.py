@@ -10,6 +10,8 @@ from dnd_lists import *
 import numpy as np
 from dnd_classes import *
 import textwrap
+from dnd_npc_conversation import *
+
 
 def debug(show):
     print(f"[Debug] Type: {type(show)} == Value: {show}")
@@ -200,11 +202,28 @@ def character_management(all_characters):
             # dnd_choose_character_number = dir(Character())
             # Gets all the attributues of Character() and removes all the attributes that start with '__'
             # dnd_menu_character_class_section_selection = [attr for attr in dir(Character()) if not attr.startswith("__")]
-            dnd_menu_character_class_section_selection = ["Profile","Description","Background","Features","Spells","Attributes","Skills","Capabilities","Money","Items","Weapons","Armor","Combat","Race Details","Class Details","Level Chart","Exit"] 
+            dnd_menu_character_class_section_selection = ["Chat with the Character","Profile","Description","Background","Features","Spells","Attributes","Skills","Capabilities","Money","Items","Weapons","Armor","Combat","Race Details","Class Details","Level Chart","Exit"] 
  
             dnd_menu_character_class_section_selection_menu = TerminalMenu(dnd_menu_character_class_section_selection)
             dnd_menu_character_class_section_selection_menu_index = dnd_menu_character_class_section_selection_menu.show()
 
+
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Chat with the Character':
+                character_names = [f"{character.profile['name']['first']} {character.profile['name']['last']} the {character.character_race['Name']} {character.character_class['Name']}" for character in all_characters]
+                character_names.append('Exit')
+                npc_description = all_characters[characters_menu_index].background.copy()
+               
+               
+                conversation_with_npc(
+                    character_names = character_names,
+                    npc_name  = all_characters[characters_menu_index].profile['name']['full'],
+                    npc_race  = all_characters[characters_menu_index].character_race["Name"],
+                    npc_class = all_characters[characters_menu_index].character_class["Name"],
+                    npc_description = npc_description,
+                    # npc_salutations=,
+                    # npc_follow_up_statements=
+                )
+                input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Profile':
                 print_character(all_characters[characters_menu_index].profile)
                 input("\nPress Enter to Continue...")
@@ -223,7 +242,7 @@ def character_management(all_characters):
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Level Chart':
                 print_character(all_characters[characters_menu_index].level_chart)
                 input("\nPress Enter to Continue...")
-            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Attributes': #batman
+            if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Attributes':
                 print_character(all_characters[characters_menu_index].attributes)
                 input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Capabilities':

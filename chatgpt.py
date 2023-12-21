@@ -7,10 +7,11 @@ def query_chatgpt(openai_api_key, prompt):
     
     try:
         response = openai.Completion.create(
-            engine="text-davinci-003",  # or another model you wish to use
-            prompt=prompt,
-            max_tokens=2500
+            engine = "text-davinci-003",  # "gpt-3.5-turbo",
+            prompt = prompt,
+            max_tokens = 2500
         )
         return response.choices[0].text.strip()
+        # return response.choices[0].message['content'].strip()
     except openai.error.OpenAIError as e:
         return f"An error occurred: {str(e)}"

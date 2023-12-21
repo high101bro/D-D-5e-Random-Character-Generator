@@ -263,8 +263,8 @@ def create_character_automated_and_manual(characters, character_number_tracker):
                             character_number_tracker += 1
 
                             clear()
-                            display_character(characters)
-                            input("\nPress Enter to Continue...")
+                            # display_character(characters)
+                            # input("\nPress Enter to Continue...")
                             continue_char_number = False
                             continue_guide_or_automated = False
                             continue_guided = False
@@ -375,8 +375,8 @@ def main():
                             )
                             pickle_handler.save_dnd_state('characters', all_characters)                            
                             clear()
-                            display_character(characters)
-                            input("\nPress Enter to Continue...")
+                            # display_character(characters)
+                            # input("\nPress Enter to Continue...")
                             continue_char_number = False
                             continue_guide_or_automated = False                            
                             break
@@ -399,8 +399,8 @@ def main():
                                 )
                                 pickle_handler.save_dnd_state('characters', all_characters)
                                 clear()
-                                display_character(characters)
-                                input("\nPress Enter to Continue...")
+                                # display_character(characters)
+                                # input("\nPress Enter to Continue...")
                             continue_char_number = False
                             continue_guide_or_automated = False                            
                             break
@@ -420,8 +420,8 @@ def main():
                             )
                             pickle_handler.save_dnd_state('characters', all_characters)                            
                             clear()
-                            display_character(characters)
-                            input("\nPress Enter to Continue...")
+                            # display_character(characters)
+                            # input("\nPress Enter to Continue...")
                             continue_char_number = False
                             continue_guide_or_automated = False                            
                             break

@@ -29,6 +29,7 @@ from dnd_classes import *
 from dnd_backgrounds import *
 from dnd_helper import *
 from dnd_spells import *
+from chatgpt_dall_e import *
 
 item_list = [generate_item_list() for _ in range(10)]
 weapon_list = [generate_weapon_list() for _ in range(10)]
@@ -37,6 +38,7 @@ weapon_list = [generate_weapon_list() for _ in range(10)]
 class Character():
     def __init__(self):
         self.profile = {}
+        self.memory = {}
         self.character_race = {}
         self.character_class = {}
         self.description = {}
@@ -113,6 +115,7 @@ def generate_characters(character, character_number, character_level=1, characte
     character.profile['name'] = {}
     character.profile['name']['first'] = random.choice(first_names)
     character.profile['name']['last'] = random.choice(last_names)
+    character.profile['name']['full'] = f"{character.profile['name']['first']} {character.profile['name']['last']}"
     character.profile['level'] = character_level
     character.profile['proficiency bonus'] = dnd_proficiency_bonus.get(character_level, '1')
     character.profile['experience'] = dnd_levels_exp.get(character_level, '1')    
@@ -2364,22 +2367,71 @@ def generate_characters(character, character_number, character_level=1, characte
         character.description['personality'] = terminalmenu_quick_select(character_race_personalities[character_race], f'[{character_race}] Select a personality trait:')
 
 
-
+    # Background
     character.background = {}
-    character.background['name'] = random.choice(list(dnd_backgrounds.keys()))
-    character.background = dnd_backgrounds[character.background['name']]
+    if method == 'Automated':
+        character_automated_background_selected = terminalmenu_quick_select(["Use random pre-built template","Create random background from others"], f'[{character_race}] Select a background:')
+        if character_automated_background_selected == "Use random pre-built template":
+            character.background['name'] = random.choice(list(dnd_backgrounds.keys()))
+            character.background = dnd_backgrounds[character.background['name']]    
+        elif character_automated_background_selected == "Create random background from others":
+            randomly_generated_background = generate_random_background(dnd_backgrounds)
+            character.background['name'] = randomly_generated_background["Name"]
+            character.background = randomly_generated_background
+    elif method == 'Guided':
+        character.background['name'] = terminalmenu_quick_select(sorted(list(dnd_backgrounds.keys())), f'[{character_race}] Select a background:')
+        character.background = dnd_backgrounds[character.background['name']]
+    elif method == 'Manual':
+        character.background = {}
+        character.background['Name']                = terminalmenu_quick_select(sorted(list(set(dnd_backgrounds.keys()))), f'[{character_race}] Select a background name:')
+        character.background['Source']              = "Manually Selected"
+        character.background['Details']             = terminalmenu_quick_select(sorted(list(set([dnd_backgrounds[background]["Details"]  for background in dnd_backgrounds]))), f'[{character_race}] Select background details:')
+        character.background['Features']            = terminalmenu_quick_select(sorted(list(set([dnd_backgrounds[background]["Features"] for background in dnd_backgrounds]))), f'[{character_race}] Select background features:')
+        character.background['Skill Proficiencies'] = terminalmenu_quick_select(sorted(list(set([', '.join(dnd_backgrounds[background]["Skill Proficiencies"]).lower() for background in dnd_backgrounds]))), f'[{character_race}] Select background skill proficiencies:')
+        character.background['Tool Proficiencies']  = terminalmenu_quick_select(sorted(list(set([', '.join(dnd_backgrounds[background]["Tool Proficiencies"])  for background in dnd_backgrounds]))), f'[{character_race}] Select background tool proficiencies:')
+        character.background['Languages']           = terminalmenu_quick_select(sorted(list(set([', '.join(dnd_backgrounds[background]["Languages"]) for background in dnd_backgrounds]))), f'[{character_race}] Select background languages:')
+        character.background['Equipment']           = terminalmenu_quick_select(sorted(list(set([dnd_backgrounds[background]["Equipment"] for background in dnd_backgrounds]))), f'[{character_race}] Select background equipment:')
+        character.background['Roleplaying Suggestions'] = {}
+
+        character_background_persontality_trait_list = []
+        for background in dnd_backgrounds:
+            character_background_persontality_trait_list.append(dnd_backgrounds[background]["Roleplaying Suggestions"]["Personality Trait"])
+        character_background_persontality_trait_list = list(set(character_background_persontality_trait_list))
+        character.background['Roleplaying Suggestions']["Personality Trait"] = terminalmenu_quick_select(sorted(list(character_background_persontality_trait_list)), f'[{character_race}] Select a background suggested roleplaying ideal:')
+        
+        character_background_ideal_list = []
+        for background in dnd_backgrounds:
+            character_background_ideal_list.append(dnd_backgrounds[background]["Roleplaying Suggestions"]["Ideal"])
+        character_background_ideal_list = list(set(character_background_ideal_list))
+        character.background['Roleplaying Suggestions']["Ideal"] = terminalmenu_quick_select(sorted(list(character_background_ideal_list)), f'[{character_race}] Select a background suggested roleplaying ideal:')
+        
+        character_background_bond_list = []
+        for background in dnd_backgrounds:
+            character_background_bond_list.append(dnd_backgrounds[background]["Roleplaying Suggestions"]["Bond"])
+        character_background_bond_list = list(set(character_background_bond_list))
+        character.background['Roleplaying Suggestions']["Bond"]  = terminalmenu_quick_select(sorted(list(character_background_bond_list)), f'[{character_race}] Select a background suggested roleplaying ideal:')
+        
+        character_background_flaw_list = []
+        for background in dnd_backgrounds:
+            character_background_flaw_list.append(dnd_backgrounds[background]["Roleplaying Suggestions"]["Flaw"])
+        character_background_flaw_list = list(set(character_background_flaw_list))
+        character.background['Roleplaying Suggestions']["Flaw"]  = terminalmenu_quick_select(sorted(list(character_background_flaw_list)), f'[{character_race}] Select a background suggested roleplaying ideal:')
+            
+        
 
 
+
+
+    # Level Chart
     character.level_chart = dnd_classes[character_class]["Level Chart"]
 
-    # probably not needed, it really just duplicates the info
     # character.profile['all_armor_proficiencies'] = []
     # character.profile['all_weapon_proficiencies'] = []
     # character.profile['all_tools_proficiencies'] = []
     # character.profile['all_languages'] = list(character.character_race['Proficiencies']['languages']) + list(character.character_class['Proficiencies']['Languages'])
 
 
-
+    # Spellcasting
     if character_class == "Barbarian":
         # Not a native spell caster
         character.spells['Cantrips Known'] = "None"
@@ -2805,15 +2857,12 @@ def generate_characters(character, character_number, character_level=1, characte
         character.spells["Save DC"] = 8 + character.spells["Attack Modifier"]
 
     # character.spells['spellcasting focus'] = 'answer' #need to calculate, need to get stat attribtes first
-    #!!!!!!!!!!!!!!!!!!!!!!
-    #!!!!!!!!!!!!!!!!!!!!!!
-    #!!!!!!!!!!!!!!!!!!!!!!
 
 
 
 
     # Class Features
-    character_feautres = []
+    # character_feautres = []
     for Level in range(1,character_level + 1):
         for Feature in dnd_classes[character_class]["Level Chart"][Level]["Features"]:
             if Feature == "-":
@@ -2822,10 +2871,8 @@ def generate_characters(character, character_number, character_level=1, characte
                 character.features[Feature] = dnd_classes[character_class]["Features"][Feature]
 
 
-
+    # Skills
     character.skills = dnd_skills
-
-    
     randomly_chosen_skills = choose_random_proficiency_skill(dnd_classes,character_class)
     
     # Assigns proficiency to skills based on the randomly chosen skills list
@@ -2929,63 +2976,120 @@ def generate_characters(character, character_number, character_level=1, characte
         character.weapons[generated_weapon] = dnd_weapons.get(generated_weapon)
 
 
+    create_chatgpt_dall_e_image = terminalmenu_quick_select(['No','Yes'], f"[{character_race}] Have ChatGTP use DALL-E to generate a character image? ")
+    if create_chatgpt_dall_e_image == 'No':
+        pass
+    elif create_chatgpt_dall_e_image == 'Yes':
+        while True:
+            verify = input(f"Let's verify this request as it costs money. Type 'yes' to submit, 'no' to abort. ")
+            if verify == 'yes':
+                image_size = terminalmenu_quick_select(['1024x1024', '1024x1792', '1792x1024'], f'[{character_race}] Select an image size:')
+                image_style = terminalmenu_quick_select(['Abstract Art','Anime', 'Cartoon', 'Impressionism', 'Oil Painting', 'Pixel Art', 'Realistic', 'Sketch ', 'Surrealism','Watercolor'], f'[{character_race}] Select an image style:')
+                dall_e_model = terminalmenu_quick_select(['dall-e-2','dall-e-3'], f'[{character_race}] Select an DALLE-E modle:')
+                if dall_e_model == 'dall-e-2':
+                    number_of_images = terminalmenu_quick_select([1,2,3,4,5,6,7,8,9,10], f'[{character_race}] DALL-E 2 supports mulipli images:')
+
+
+# from openai import OpenAI
+# client = OpenAI()
+
+# response = client.images.create_variation(
+#   image=open("image_edit_original.png", "rb"),
+#   n=2,
+#   size="1024x1024"
+# )
+
+# image_url = response.data[0].url                
+
+
+
+                description = description=character.description.copy()
+                del description['race']
+                del description['class']
+                del description['gender']
+                del description['age']
+                del description['skin_scent']
+                del description['voice']
+                del description['mannerisms']
+                del description['personality']
+
+                generate_character_image(
+                    description=description, 
+                    character_race=character_race, 
+                    character_class=character_class, 
+                    character_name=character.profile['name']['full'],
+                    character_gender=character.description['gender'],
+                    character_age=character.description['age'],
+                    background_name=character.background['Name'],
+                    background_features=character.background['Features'],
+                    background_equipment=character.background['Equipment'],
+                    image_style=image_style, 
+                    image_size=image_size,
+                    dall_e_model=dall_e_model,
+                    number_of_images=number_of_images,
+                )
+                break
+            elif verify == 'no':
+                break
+            else:
+                print(f"Invalid input. Type in exactly 'yes' or 'no' to proceed.")
 
     return character
 
 
 
-def display_character(characters):
-    # Print Character to screen
-    for index, character in enumerate(characters):
-        print(f"==================================================")
-        print(f"Character #{index + 1}")
-        print(f"==================================================")
+# def display_character(characters):
+#     # Print Character to screen
+#     for index, character in enumerate(characters):
+#         print(f"==================================================")
+#         print(f"Character #{index + 1}")
+#         print(f"==================================================")
 
-        print(f"Profile :")
-        print_character(character.profile)
+#         print(f"Profile :")
+#         print_character(character.profile)
 
-        print(f"Race :")
-        print_character(character.character_race)
+#         print(f"Race :")
+#         print_character(character.character_race)
 
-        print(f"Class :")
-        print_character(character.character_class)
+#         print(f"Class :")
+#         print_character(character.character_class)
 
-        print(f"Level Chart :")
-        print_character(character.level_chart)
+#         print(f"Level Chart :")
+#         print_character(character.level_chart)
 
-        print(f"Description :")
-        print_character(character.description)
+#         print(f"Description :")
+#         print_character(character.description)
 
-        print(f"Background :")
-        print_character(character.background)
+#         print(f"Background :")
+#         print_character(character.background)
 
-        print(f"Attributes :")
-        print_character(character.attributes)
+#         print(f"Attributes :")
+#         print_character(character.attributes)
 
-        print(f"Capabilties :")
-        print_character(character.capabilities)
+#         print(f"Capabilties :")
+#         print_character(character.capabilities)
 
-        print(f"Skills :")
-        print_character(character.skills)
+#         print(f"Skills :")
+#         print_character(character.skills)
 
-        print(f"Features :")
-        print_character(character.features)
+#         print(f"Features :")
+#         print_character(character.features)
 
-        print(f"Money :")
-        print_character(character.items)
+#         print(f"Money :")
+#         print_character(character.items)
 
-        print(f"Items :")
-        print_inventory(character.items, 'Items')
+#         print(f"Items :")
+#         print_inventory(character.items, 'Items')
 
-        print(f"Armor :")
-        print_inventory(character.armor, 'Armor')
+#         print(f"Armor :")
+#         print_inventory(character.armor, 'Armor')
 
-        print(f"Weapons :")
-        print_character(character.weapons)
+#         print(f"Weapons :")
+#         print_character(character.weapons)
 
-        print(f"Combat :")
-        print_character(character.combat)
+#         print(f"Combat :")
+#         print_character(character.combat)
 
-        print(f"Spells :")
-        print_character(character.spells)
+#         print(f"Spells :")
+#         print_character(character.spells)
 
