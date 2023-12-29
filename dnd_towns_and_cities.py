@@ -1,77 +1,79 @@
-dnd_cities = {
-    "mysticshadows" : {
-        "name" : "Mysticshadows",
-        "description" : "Mysticshadows is a city shrouded in an eternal twilight, known for its enigmatic atmosphere and shadowy mysteries. The city's dimly lit streets are veiled in a perpetual mist, giving it an eerie and alluring charm.",
-        "narrative" : "Nestled deep within the shroud of a dense and ancient forest, Mysticshadows emerges as a city veiled in mystery and whispered legends. This enigmatic metropolis, often referred to as the 'Shrouded Enclave,' stands as a testament to the coexistence of magic and shadows, where the line between reality and the arcane becomes tantalizingly blurred. Mysticshadows is a sprawling city, occupying a vast expanse of 1200 acres within the heart of the shadowed woods. Its buildings seem to materialize from the very trees themselves, their ebony structures intricately carved with arcane symbols that pulse with an otherworldly energy. The city's population, a diverse blend of races and backgrounds, totals approximately 25,000 residents, each bearing their own secrets and stories concealed within the city's depths. The crime rate in Mysticshadows is notoriously high, standing at a menacing 15%, a reflection of the city's shadowy nature. Those who navigate its streets must tread carefully, for danger often lurks in the form of cunning thieves and enigmatic assassins who call the city's shadows their allies. Surrounding Mysticshadows are neighboring cities and towns, each with its own tale to tell. To the north lies the eerie settlement of Whispering Pines, where ghostly apparitions are said to roam freely. To the east, the forsaken ruins of Darkthorn stand as a haunting reminder of a forgotten era. To the south, the enigmatic city of Obsidian Spire rises from the depths of a chasm, its origins shrouded in obscurity. And to the west, the luminous city of Crystalhaven provides a stark contrast to Mysticshadows' perpetual twilight. The terrain features of Mysticshadows are equally enigmatic. The city is built upon a network of ancient, twisting pathways where the shadows themselves seem to dance to an otherworldly melody. Ethereal mists frequently shroud the city, casting an eerie and ever-changing veil over its streets. Mysticshadows is also home to a series of underground catacombs, rumored to house forgotten relics of immense power. The city's central plaza is adorned with an enigmatic monument known as the Obsidian Obelisk, said to have been a gift from shadowy deities. Five key features define Mysticshadows' essence. The Veilweaver's Sanctum is a secretive guild of shadowmancers who harness the power of darkness for their arcane arts. The Ebon Market is a clandestine bazaar where forbidden artifacts and cryptic scrolls change hands in the shadows. The Shadowspire, a towering obsidian spire at the city's heart, is said to be a conduit to other planes of existence. The Midnight Masquerade is an annual event where residents don masks and costumes, obscuring their identities amidst the city's intrigue. And the Whispering Grotto, hidden beneath a cascading waterfall, is a place where dark rituals and clandestine meetings occur in the cover of night. Mysticshadows harbors countless local lores, each more enigmatic than the last. Whispers in the dark alleys hint at a hidden portal to the Shadowfell concealed within the city's boundaries. Legend has it that the city's founder was a rogue sorcerer who forged pacts with shadowy beings for power. The Obsidian Obelisk is rumored to hold the key to unlocking long-forgotten arcane secrets. Shadows in certain alleyways are said to come to life after nightfall, serving as spectral sentinels. And beneath the city's streets lies a labyrinthine catacomb, believed to be the resting place of a lost civilization's treasures. Mysticshadows boasts a roster of captivating individuals. The enigmatic Shadowmaster lurks in the shadows, controlling the city's underworld with a web of intrigue. Lysandra Nightshade, a mysterious enchantress, is known for her captivating performances that entrance onlookers. The Shadowblade, an elusive assassin, strikes fear into the hearts of those who cross their path. Arcanist Zephyr, a shadowy mage, is a scholar of forbidden knowledge. And the enigmatic Veilwalker is rumored to possess the ability to traverse between worlds. Religions in Mysticshadows are as diverse as its secrets. Worshipers of Shar, the Mistress of the Night, venerate the power of darkness and secrets. Vecna, the Whispered One, is also revered by those who seek forbidden knowledge and arcane power. The enigmatic Mask, a deity of deception and intrigue, finds followers among the city's shadowy inhabitants. Cyric, the Prince of Lies, holds sway over those who thrive on deception and chaos. And the elusive god of shadows, known only as the Shade, is whispered to protect the city from otherworldly threats. Hidden beneath the city's enigmatic façade are little-known secrets that defy explanation. The city's shadowy wards are maintained by an ancient shadow dragon bound to its service. A clandestine society of shadow-walkers manipulates the city's politics from the shadows. In the depths of the city's catacombs, a clan of shadow-touched beings conducts sinister experiments. The city's criminal underworld is ruled by a cabal of shape-shifting doppelgangers. And the very ground beneath Mysticshadows is rumored to be a portal to an alternate dimension. Mysticshadows is a city where adventurers must choose their path carefully, for every step taken may lead deeper into the mysteries of shadow and magic. Its veiled streets, secretive inhabitants, and ever-present aura of enchantment make it a place where the line between light and darkness blurs, and where the arcane and the mysterious reign supreme. If you seek the allure of the enigmatic, the embrace of the arcane, and the thrill of unraveling secrets, then Mysticshadows awaits, cloaked in shadows and ready to reveal its mysteries to those bold enough to seek them.",
-        "place is known for" : "the annual Shadow Festival",
-        "amount of land" : "800 acres",
-        "population" : 12000,
-        "number of buildings" : 2500,
-        "crime rate" : "15%",
-        "Neighboring cities and towns" : {
+#! /usr/bin/env python3
+
+dnd_towns_and_cities = {
+    "Mysticshadows" : {
+        "Name" : "Mysticshadows",
+        "Description" : "Mysticshadows is a city shrouded in an eternal twilight, known for its enigmatic atmosphere and shadowy mysteries. The city's dimly lit streets are veiled in a perpetual mist, giving it an eerie and alluring charm.",
+        "Narrative" : "Nestled deep within the shroud of a dense and ancient forest, Mysticshadows emerges as a city veiled in mystery and whispered legends. This enigmatic metropolis, often referred to as the 'Shrouded Enclave,' stands as a testament to the coexistence of magic and shadows, where the line between reality and the arcane becomes tantalizingly blurred. Mysticshadows is a sprawling city, occupying a vast expanse of 1200 acres within the heart of the shadowed woods. Its buildings seem to materialize from the very trees themselves, their ebony structures intricately carved with arcane symbols that pulse with an otherworldly energy. The city's population, a diverse blend of races and backgrounds, totals approximately 25,000 residents, each bearing their own secrets and stories concealed within the city's depths. The crime rate in Mysticshadows is notoriously high, standing at a menacing 15%, a reflection of the city's shadowy nature. Those who navigate its streets must tread carefully, for danger often lurks in the form of cunning thieves and enigmatic assassins who call the city's shadows their allies. Surrounding Mysticshadows are neighboring cities and towns, each with its own tale to tell. To the north lies the eerie settlement of Whispering Pines, where ghostly apparitions are said to roam freely. To the east, the forsaken ruins of Darkthorn stand as a haunting reminder of a forgotten era. To the south, the enigmatic city of Obsidian Spire rises from the depths of a chasm, its origins shrouded in obscurity. And to the west, the luminous city of Crystalhaven provides a stark contrast to Mysticshadows' perpetual twilight. The terrain features of Mysticshadows are equally enigmatic. The city is built upon a network of ancient, twisting pathways where the shadows themselves seem to dance to an otherworldly melody. Ethereal mists frequently shroud the city, casting an eerie and ever-changing veil over its streets. Mysticshadows is also home to a series of underground catacombs, rumored to house forgotten relics of immense power. The city's central plaza is adorned with an enigmatic monument known as the Obsidian Obelisk, said to have been a gift from shadowy deities. Five key features define Mysticshadows' essence. The Veilweaver's Sanctum is a secretive guild of shadowmancers who harness the power of darkness for their arcane arts. The Ebon Market is a clandestine bazaar where forbidden artifacts and cryptic scrolls change hands in the shadows. The Shadowspire, a towering obsidian spire at the city's heart, is said to be a conduit to other planes of existence. The Midnight Masquerade is an annual event where residents don masks and costumes, obscuring their identities amidst the city's intrigue. And the Whispering Grotto, hidden beneath a cascading waterfall, is a place where dark rituals and clandestine meetings occur in the cover of night. Mysticshadows harbors countless local lores, each more enigmatic than the last. Whispers in the dark alleys hint at a hidden portal to the Shadowfell concealed within the city's boundaries. Legend has it that the city's founder was a rogue sorcerer who forged pacts with shadowy beings for power. The Obsidian Obelisk is rumored to hold the key to unlocking long-forgotten arcane secrets. Shadows in certain alleyways are said to come to life after nightfall, serving as spectral sentinels. And beneath the city's streets lies a labyrinthine catacomb, believed to be the resting place of a lost civilization's treasures. Mysticshadows boasts a roster of captivating individuals. The enigmatic Shadowmaster lurks in the shadows, controlling the city's underworld with a web of intrigue. Lysandra Nightshade, a mysterious enchantress, is known for her captivating performances that entrance onlookers. The Shadowblade, an elusive assassin, strikes fear into the hearts of those who cross their path. Arcanist Zephyr, a shadowy mage, is a scholar of forbidden knowledge. And the enigmatic Veilwalker is rumored to possess the ability to traverse between worlds. Religions in Mysticshadows are as diverse as its secrets. Worshipers of Shar, the Mistress of the Night, venerate the power of darkness and secrets. Vecna, the Whispered One, is also revered by those who seek forbidden knowledge and arcane power. The enigmatic Mask, a deity of deception and intrigue, finds followers among the city's shadowy inhabitants. Cyric, the Prince of Lies, holds sway over those who thrive on deception and chaos. And the elusive god of shadows, known only as the Shade, is whispered to protect the city from otherworldly threats. Hidden beneath the city's enigmatic façade are little-known secrets that defy explanation. The city's shadowy wards are maintained by an ancient shadow dragon bound to its service. A clandestine society of shadow-walkers manipulates the city's politics from the shadows. In the depths of the city's catacombs, a clan of shadow-touched beings conducts sinister experiments. The city's criminal underworld is ruled by a cabal of shape-shifting doppelgangers. And the very ground beneath Mysticshadows is rumored to be a portal to an alternate dimension. Mysticshadows is a city where adventurers must choose their path carefully, for every step taken may lead deeper into the mysteries of shadow and magic. Its veiled streets, secretive inhabitants, and ever-present aura of enchantment make it a place where the line between light and darkness blurs, and where the arcane and the mysterious reign supreme. If you seek the allure of the enigmatic, the embrace of the arcane, and the thrill of unraveling secrets, then Mysticshadows awaits, cloaked in shadows and ready to reveal its mysteries to those bold enough to seek them.",
+        "Place Is Known For" : "the annual Shadow Festival",
+        "Amount Of Land" : "800 acres",
+        "Population" : 12000,
+        "Number of Buildings" : 2500,
+        "Crime Rate" : "15%",
+        "Neighboring Cities And Towns" : {
             "Gloomhaven" : "50 miles north",
             "Duskmire" : "20 miles east",
             "Moonlit Hollow" : "30 miles southeast",
             "Eclipsia" : "40 miles south",
             "Nocturne's Rest" : "15 miles west",
         },
-        "5 terrain features" : [
+        "Terrain Features" : [
             "ancient twisted forests with trees that seem to whisper secrets",
             "ethereal glades where mysterious apparitions appear at midnight",
             "a network of underground catacombs with forgotten tombs",
             "shadowy canals winding through the city, home to eerie aquatic creatures",
             "an obsidian spire at the city's center, pulsing with dark magic",
         ],
-        "5 key features" : [
+        "Key Features" : [
             "Shrouded Enclaves",
             "Shadowdancer Troupes performing mysterious dances",
             "Silent Bazaars where merchants communicate through gestures",
             "The Crypt of Lost Whispers",
             "Shadow Walkways that allow residents to navigate in darkness",
         ],
-        "5 local lores" : [
+        "Local Lores" : [
             "A hidden portal to the Shadowfell exists within the city, granting access to the Plane of Shadow",
             "The city's founder made a pact with a shadowy entity, leading to the city's unique nature",
             "An ancient curse haunts the city, causing shadows to come alive at night",
             "A powerful artifact called the Umbra Heart is rumored to be concealed beneath the obsidian spire",
             "Mysticshadows' mist conceals hidden realms inhabited by mysterious beings",
         ],
-        "5 popular people" : {
+        "Popular People" : {
             "Lord Umbertan" : "Mysterious ruler known for rarely appearing in public",
             "Lady Nyxara" : "Famous shadowdancer and performer",
             "Theron Blackthorn" : "Reclusive scholar of dark magic",
             "Eilistrae's Chosen" : "Cult-like group worshiping the goddess of darkness",
             "Luna Shadowcloak" : "Rogue with a reputation for daring heists under the cover of night",
         },
-        "5 top religions" : [
+        "Top Religions" : [
             "Shar", 
             "Mask", 
             "Eilistraee", 
             "Vecna", 
             "Selûne"
         ],
-        "5 little-known secrets" : [
+        "Little Known Secrets" : [
             "The city's mist is created by the tears of a forgotten god imprisoned beneath it",
             "A secret society of shadowy vigilantes combats crime in the city's darkest alleys",
             "Mysticshadows' catacombs house a colony of undead who maintain a cryptic society",
             "The local thieves' guild is a front for a network of necromancers",
             "The obsidian spire is slowly sinking into the ground, revealing a hidden chamber below",
         ],
-        "5 areas you should avoid" : [
+        "Areas You Should Avoid" : [
             "The Whispering Woods, where lost souls are said to roam",
             "The Haunted Canals, home to malevolent aquatic spirits",
             "The Forbidden Crypt beneath the obsidian spire",
             "The Cryptic Bazaar, where dark dealings take place",
             "The Shadow's Embrace Tavern, rumored to be frequented by assassins",
         ],
-        "5 areas best to visit" : [
+        "Areas Best To Visit" : [
             "The Midnight Masquerade, a mysterious ballroom hidden within the shadowy glades",
             "The Obsidian Observatory, offering glimpses into other planes",
             "The Temple of Shadows, a sacred site for worshipers of the dark deities",
             "The Veilstone Bridge, an ancient structure spanning the city's canals",
             "The Cryptic Library, home to forbidden knowledge and dark tomes",
         ],
-        "races" : {
+        "Race Makeup" : {
             "Human" : "20%",
             "Elf" : "15%",
             "Dwarf" : "5%",
@@ -83,7 +85,7 @@ dnd_cities = {
             "Dragonborn" : "3%",
             "Other" : "14%",
         },
-        "classes" : {
+        "Classes Makeup" : {
             "Barbarian" : "2%",
             "Bard" : "5%",
             "Cleric" : "5%",
@@ -98,12 +100,12 @@ dnd_cities = {
             "Wizard" : "10%",
             "Other" : "4%",
         },
-        "annual income" : {
+        "Annual Income" : {
             "top 10% earners" : "900,000 gp",
             "bottom 10% earners" : "300 gp",
             "median earners" : "50,000 gp",
         },
-        "shops" : {
+        "Shops" : {
             "Shadowcloak's Boutique" : 10,
             "Ethereal Elixirs" : 15,
             "Cursed Curiosities" : 12,
@@ -117,7 +119,7 @@ dnd_cities = {
             "Wraithcrafters" : 5,
             "Obsidian Artifacts" : 2,
         },
-        "services" : {
+        "Services" : {
             "Mystic Guildhall" : 10,
             "Shadows' Taverns" : 15,
             "Nocturnal Stables" : 5,
@@ -190,79 +192,81 @@ dnd_cities = {
             25: "The city's mystical springs are said to draw power from the Plane of Shadow and grant visions to those who bathe in them.",
         },
     },
-    "ironhold" : {
-        "name" : "Ironhold",
-        "description" : "Ironhold, often referred to as the City of Forges, is a bustling industrial metropolis known for its ironworks, ingenious machinery, and resilient people. The city's skyline is dominated by towering smokestacks and colossal factories.",
-        "narrative" : "Ironhold, the city of gears and steam, stands as a testament to the boundless ingenuity of its inhabitants. Nestled within the heart of an expansive industrial forest, Ironhold is a marvel of mechanical innovation and technological wonder. It is often called the 'Iron Citadel' for its imposing architecture and its reputation as a hub of invention. The city's sprawling expanse spans 800 acres, its streets echoing with the rhythmic clang of hammers, the hiss of steam vents, and the hum of machinery. Towering clockwork constructs patrol the streets, their mechanical precision ensuring order and safety. Ironhold is a city that never sleeps, where the relentless work of invention carries on day and night. One of the city's most iconic features is its annual Grand Forge Festival, a celebration of invention and craftsmanship. During this event, the city comes alive with grand parades, contests, and exhibitions of the latest technological marvels. It's a time when artisans from far and wide gather to showcase their creations, and the air is filled with the scent of smoldering metal and the sound of whirring machines. At the heart of Ironhold lies the Great Anvil, a sacred place where master artisans forge intricate devices and legendary weapons beneath the open sky. The city's clock tower, a towering structure with gears made of precious metals, never ceases to turn, a constant reminder of the city's ceaseless innovation. Ironhold's society is organized into various guilds, each dedicated to a specific aspect of invention and technology. The Mechanists' Guild, Magi Engineers' Guild, and Gearmancers' Guild are just a few of the influential organizations that shape the city's destiny. These guilds offer courses in crafting, engineering, and magical machinery, ensuring that the city's residents are well-versed in the art of invention. Visitors to Ironhold often wear protective goggles to shield their eyes from flying sparks and steam, and they marvel at the intricate clockwork animals and constructs sold at the Metallic Menagerie shop. The city's theaters offer captivating performances featuring automatons and mechanical actors, immersing audiences in a world of mechanical artistry. Rumors persist of a secret council of master inventors who silently guide the city's future, and an intricate system of pneumatic tubes serves as a communication network for residents, ensuring that information flows seamlessly through the city. Ironhold's Elemental Wardens patrol the skies on griffon mounts, overseeing the safety of the city's floating islands and steam-powered devices. The city's Temple of Gond, a colossal bronze structure housing a grand automaton, stands as a testament to the city's reverence for the god of invention. The city's streets are a fascinating blend of nature and machinery, with ancient trees interwoven with iron scaffolding and crystal-clear streams meandering through the streets. Ironhold is a place where innovation meets nature, and the result is a city unlike any other—a testament to the boundless creativity of its inhabitants.",
-        "place is known for" : "the annual Grand Forge Festival",
-        "amount of land" : "1200 acres",
-        "population" : 25000,
-        "number of buildings" : 4000,
-        "crime rate" : "8%",
-        "Neighboring cities and towns" : {
+
+
+    "Ironhold" : {
+        "Name" : "Ironhold",
+        "Description" : "Ironhold, often referred to as the City of Forges, is a bustling industrial metropolis known for its ironworks, ingenious machinery, and resilient people. The city's skyline is dominated by towering smokestacks and colossal factories.",
+        "Narrative" : "Ironhold, the city of gears and steam, stands as a testament to the boundless ingenuity of its inhabitants. Nestled within the heart of an expansive industrial forest, Ironhold is a marvel of mechanical innovation and technological wonder. It is often called the 'Iron Citadel' for its imposing architecture and its reputation as a hub of invention. The city's sprawling expanse spans 800 acres, its streets echoing with the rhythmic clang of hammers, the hiss of steam vents, and the hum of machinery. Towering clockwork constructs patrol the streets, their mechanical precision ensuring order and safety. Ironhold is a city that never sleeps, where the relentless work of invention carries on day and night. One of the city's most iconic features is its annual Grand Forge Festival, a celebration of invention and craftsmanship. During this event, the city comes alive with grand parades, contests, and exhibitions of the latest technological marvels. It's a time when artisans from far and wide gather to showcase their creations, and the air is filled with the scent of smoldering metal and the sound of whirring machines. At the heart of Ironhold lies the Great Anvil, a sacred place where master artisans forge intricate devices and legendary weapons beneath the open sky. The city's clock tower, a towering structure with gears made of precious metals, never ceases to turn, a constant reminder of the city's ceaseless innovation. Ironhold's society is organized into various guilds, each dedicated to a specific aspect of invention and technology. The Mechanists' Guild, Magi Engineers' Guild, and Gearmancers' Guild are just a few of the influential organizations that shape the city's destiny. These guilds offer courses in crafting, engineering, and magical machinery, ensuring that the city's residents are well-versed in the art of invention. Visitors to Ironhold often wear protective goggles to shield their eyes from flying sparks and steam, and they marvel at the intricate clockwork animals and constructs sold at the Metallic Menagerie shop. The city's theaters offer captivating performances featuring automatons and mechanical actors, immersing audiences in a world of mechanical artistry. Rumors persist of a secret council of master inventors who silently guide the city's future, and an intricate system of pneumatic tubes serves as a communication network for residents, ensuring that information flows seamlessly through the city. Ironhold's Elemental Wardens patrol the skies on griffon mounts, overseeing the safety of the city's floating islands and steam-powered devices. The city's Temple of Gond, a colossal bronze structure housing a grand automaton, stands as a testament to the city's reverence for the god of invention. The city's streets are a fascinating blend of nature and machinery, with ancient trees interwoven with iron scaffolding and crystal-clear streams meandering through the streets. Ironhold is a place where innovation meets nature, and the result is a city unlike any other—a testament to the boundless creativity of its inhabitants.",
+        "Place Is Known For" : "the annual Grand Forge Festival",
+        "Amount Of Land" : "1200 acres",
+        "Population" : 25000,
+        "Number of Buildings" : 4000,
+        "Crime Rate" : "8%",
+        "Neighboring Cities And Towns" : {
             "Steamhaven" : "30 miles north",
             "Cogsville" : "15 miles east",
             "Rustholm" : "40 miles southeast",
             "Moltenpeak" : "60 miles south",
             "Gearspire" : "20 miles west",
         },
-        "5 terrain features" : [
+        "Terrain Features" : [
             "massive foundries belching smoke and flames day and night",
             "an intricate network of steam-powered bridges and walkways",
             "a labyrinthine underground network of tunnels and mines",
             "a roaring river of molten metal flowing through the heart of the city",
             "the towering Clockwork Citadel, a massive clockwork structure that dominates the skyline",
         ],
-        "5 key features" : [
+        "Key Features" : [
             "Guildhalls of Metalcrafters",
             "Mechanical street performers entertaining passersby",
             "Bustling Market of Gears and Gadgets",
             "The Great Anvil, a colossal forge open to all artisans",
             "Steam-Powered Public Transportation",
         ],
-        "5 local lores" : [
+        "Local Lores" : [
             "A hidden passage to the Elemental Plane of Fire is rumored to lie within the city's depths",
             "The city's founder was a brilliant engineer who built the Clockwork Citadel",
             "The city's clock tower is said to possess the ability to control machines across the city",
             "Mysterious automatons patrol certain districts at night, enforcing curfews",
             "A legendary artifact known as the Ironheart is said to be buried deep within the city",
         ],
-        "5 popular people" : {
+        "Popular People" : {
             "Master Smith Ironforge" : "Renowned dwarven blacksmith and inventor",
             "Cogsworth the Tinkerer" : "Gnomish inventor known for creating ingenious contraptions",
             "Lady Geariana" : "Influential noble with a passion for mechanical arts",
             "Ember, the Steamblade" : "Famous warforged warrior and protector of Ironhold",
             "Professor Gearspring" : "Scholar specializing in the history of automata",
         },
-        "5 top religions" : [
+        "Top Religions" : [
             "Gond", 
             "Moradin", 
             "Gondal", 
             "Kossuth", 
             "Gizmodan"
         ],
-        "5 little-known secrets" : [
+        "Little Known Secrets" : [
             "The city's steam-powered defenses are linked to an underground steam geyser",
             "A secret society of engineers known as 'The Gearmasters' influences city politics",
             "The city's sewers are inhabited by a colony of friendly mechanical rats",
             "The local thieves' guild operates covertly as a group of artificers",
             "The Clockwork Citadel's gears are slowly shifting, altering the city's layout",
         ],
-        "5 areas you should avoid" : [
+        "Areas You Should Avoid" : [
             "The Searing Foundry, where molten metal poses constant danger",
             "The Depths, a maze of dark tunnels inhabited by dangerous creatures",
             "The Ironbound District, known for frequent mechanical accidents",
             "The Steam Valve Tavern, where brawls are common and tempers run hot",
             "The Gnomish Quarter, where unconventional experiments occasionally go awry",
         ],
-        "5 areas best to visit" : [
+        "Areas Best To Visit" : [
             "The Grand Forge Plaza, where artisans showcase their masterpieces",
             "The Gearworks Institute, a prestigious school for engineers",
             "The Clockwork Observatory, offering breathtaking views of the city",
             "The Foundry Gardens, where metallic plants and trees flourish",
             "The Shrine of Geariana, a place of worship and reflection for engineers",
         ],
-        "races" : {
+        "Race Makeup" : {
             "Human" : "40%",
             "Dwarf" : "20%",
             "Gnome" : "15%",
@@ -273,7 +277,7 @@ dnd_cities = {
             "Elf" : "2%",
             "Other" : "5%",
         },
-        "classes" : {
+        "Classes Makeup" : {
             "Barbarian" : "2%",
             "Bard" : "3%",
             "Cleric" : "5%",
@@ -289,12 +293,12 @@ dnd_cities = {
             "Artificer" : "20%",
             "Other" : "5%",
         },
-        "annual income" : {
+        "Annual Income" : {
             "top 10% earners" : "1,200,000 gp",
             "bottom 10% earners" : "500 gp",
             "median earners" : "80,000 gp",
         },
-        "shops" : {
+        "Shops" : {
             "Ironforge's Armory" : 10,
             "Gnomish Gadgets Galore" : 15,
             "Steam-Powered Contraptions" : 12,
@@ -308,7 +312,7 @@ dnd_cities = {
             "The Gears' Emporium" : 5,
             "Automaton's Workshop" : 2,
         },
-        "services" : {
+        "Services" : {
             "Engineers' Guildhall" : 10,
             "Steamtaverns" : 15,
             "Gearlock Stables" : 5,
@@ -381,79 +385,81 @@ dnd_cities = {
             25: "The city's steam-powered hot springs are said to have rejuvenating properties, popular among inventors and laborers alike.",
         },
     },
-    "sylvanreach" : {
-        "name" : "Sylvanreach",
-        "description" : "Sylvanreach, often referred to as the Verdant Enclave, is a lush and mystical city nestled deep within a sprawling forest. The city is known for its harmonious coexistence with nature, and its architecture seamlessly blends with the natural surroundings.",
-        "narrative" : "Sylvanreach, the Verdant Enclave, is a city of unparalleled natural beauty, nestled deep within the heart of a sprawling forest. It is a place where the boundaries between civilization and the wilderness blur into a harmonious coexistence. As you approach the city, the landscape gradually transforms from the dense, untamed wilderness into an enchanting urban center seamlessly integrated with the surrounding nature. The first thing that strikes you upon entering Sylvanreach is the captivating scent of blooming flowers and the soothing sound of crystal-clear streams winding their way through the city's streets. Tall, ancient trees with majestic canopies provide shade and shelter, and it's not uncommon to see dwellings built among their sturdy branches. Bioluminescent flora illuminates the city at night, casting a soft, ethereal glow over the cobblestone pathways. At the heart of Sylvanreach stands the Great Tree, a colossal oak rumored to possess sentience. It is not merely a landmark but the very soul of the city, believed to protect and heal those who dwell within its reach. The Great Tree's roots extend deep into the earth, connecting with the Feywild and granting the city unique and magical properties. Life in Sylvanreach is defined by its deep reverence for the natural world. Residents communicate with animals through a telepathic bond, fostering a profound understanding and cooperation between all living beings. The city's architecture seamlessly integrates with the forest, and the streets are lined with bioluminescent flowers that provide soft illumination at night. The annual Forest Festival is a highlight of Sylvanreach, featuring archery competitions, tree-climbing contests, and captivating nature-themed performances. Elven minstrels serenade the streets with mesmerizing melodies, and the city's theaters host plays where actors transform into animals with magical costumes. Sylvanreach is a city of secrets, whispered among its ancient trees. Hidden groves with portals to the Feywild beckon adventurers, and rumors persist of a secret council of ancient treants who silently guide the city's destiny. The Temple of Mielikki, a grand living tree that changes with the seasons, stands as a testament to the city's devotion to the natural world. As you wander through Sylvanreach's verdant streets, you can't help but feel the tranquility and harmony that permeate every corner of this mystical city. It is a place where the boundaries between the mundane and the magical are blurred, where nature and civilization dance in perfect rhythm, creating a breathtaking tapestry of life and wonder that beckons all who seek to immerse themselves in the embrace of the natural world.",
-        "place is known for" : "the annual Forest Festival",
-        "amount of land" : "800 acres",
-        "population" : 15000,
-        "number of buildings" : 2500,
-        "crime rate" : "3%",
-        "Neighboring cities and towns" : {
+
+
+    "Sylvanreach" : {
+        "Name" : "Sylvanreach",
+        "Description" : "Sylvanreach, often referred to as the Verdant Enclave, is a lush and mystical city nestled deep within a sprawling forest. The city is known for its harmonious coexistence with nature, and its architecture seamlessly blends with the natural surroundings.",
+        "Narrative" : "Sylvanreach, the Verdant Enclave, is a city of unparalleled natural beauty, nestled deep within the heart of a sprawling forest. It is a place where the boundaries between civilization and the wilderness blur into a harmonious coexistence. As you approach the city, the landscape gradually transforms from the dense, untamed wilderness into an enchanting urban center seamlessly integrated with the surrounding nature. The first thing that strikes you upon entering Sylvanreach is the captivating scent of blooming flowers and the soothing sound of crystal-clear streams winding their way through the city's streets. Tall, ancient trees with majestic canopies provide shade and shelter, and it's not uncommon to see dwellings built among their sturdy branches. Bioluminescent flora illuminates the city at night, casting a soft, ethereal glow over the cobblestone pathways. At the heart of Sylvanreach stands the Great Tree, a colossal oak rumored to possess sentience. It is not merely a landmark but the very soul of the city, believed to protect and heal those who dwell within its reach. The Great Tree's roots extend deep into the earth, connecting with the Feywild and granting the city unique and magical properties. Life in Sylvanreach is defined by its deep reverence for the natural world. Residents communicate with animals through a telepathic bond, fostering a profound understanding and cooperation between all living beings. The city's architecture seamlessly integrates with the forest, and the streets are lined with bioluminescent flowers that provide soft illumination at night. The annual Forest Festival is a highlight of Sylvanreach, featuring archery competitions, tree-climbing contests, and captivating nature-themed performances. Elven minstrels serenade the streets with mesmerizing melodies, and the city's theaters host plays where actors transform into animals with magical costumes. Sylvanreach is a city of secrets, whispered among its ancient trees. Hidden groves with portals to the Feywild beckon adventurers, and rumors persist of a secret council of ancient treants who silently guide the city's destiny. The Temple of Mielikki, a grand living tree that changes with the seasons, stands as a testament to the city's devotion to the natural world. As you wander through Sylvanreach's verdant streets, you can't help but feel the tranquility and harmony that permeate every corner of this mystical city. It is a place where the boundaries between the mundane and the magical are blurred, where nature and civilization dance in perfect rhythm, creating a breathtaking tapestry of life and wonder that beckons all who seek to immerse themselves in the embrace of the natural world.",
+        "Place Is Known For" : "the annual Forest Festival",
+        "Amount Of Land" : "800 acres",
+        "Population" : 15000,
+        "Number of Buildings" : 2500,
+        "Crime Rate" : "3%",
+        "Neighboring Cities And Towns" : {
             "Woodhaven" : "20 miles north",
             "Mossybrook" : "10 miles east",
             "Thornwood" : "30 miles southeast",
             "Glenholme" : "50 miles south",
             "Emeraldvale" : "15 miles west",
         },
-        "5 terrain features" : [
+        "Terrain Features" : [
             "ancient, towering trees with dwellings built among their branches",
             "crystal-clear streams meandering through the city, forming natural pathways",
             "bioluminescent flora that illuminates the city at night",
             "hidden groves with portals to the Feywild",
             "the Great Tree at the city's center, a massive oak rumored to be sentient",
         ],
-        "5 key features" : [
+        "Key Features" : [
             "Circle of Druids' Grove",
             "Elven minstrels playing enchanting melodies in the streets",
             "Verdant Market of Rare Herbs and Plants",
             "The Heartwood Library, a repository of natural knowledge",
             "Telepathic Bond with local wildlife for communication",
         ],
-        "5 local lores" : [
+        "Local Lores" : [
             "A sacred spring deep in the forest grants visions to those who drink from it",
             "The city's founder was a reclusive archdruid who communed with the spirits of the land",
             "The Great Tree is said to have the power to heal and protect the city",
             "Mysterious creatures known as 'Silvaneth' guard the forest's secrets",
             "A hidden treasure is rumored to be buried beneath the roots of an ancient oak",
         ],
-        "5 popular people" : {
+        "Popular People" : {
             "Archdruid Elowen" : "Leader of the Sylvan Council",
             "Aelar the Melodious" : "Renowned elven bard known for his mesmerizing songs",
             "Thalia Greenleaf" : "Expert herbalist and protector of the city's flora",
             "Silvanor the Wildshaper" : "Mysterious druid with the ability to shape-shift",
             "Professor Oakthorn" : "Scholar specializing in the study of sentient trees",
         },
-        "5 top religions" : [
+        "Top Religions" : [
             "Mielikki", 
             "Corellon Larethian", 
             "Obad-Hai", 
             "Ehlonna", 
             "Silvanus"
         ],
-        "5 little-known secrets" : [
+        "Little Known Secrets" : [
             "The city's protective wards are maintained by the spirits of the forest",
             "A hidden council of treants influences the city's policies",
             "The city's sewers are home to a colony of friendly forest creatures",
             "The local protectors of nature secretly work as herbalists and apothecaries",
             "The Great Tree's roots extend into the Feywild, granting unique magical properties",
         ],
-        "5 areas you should avoid" : [
+        "Areas You Should Avoid" : [
             "The Thorned Wilds, where carnivorous plants and dangerous beasts roam",
             "The Whispering Glade, a serene place where eerie whispers unsettle visitors",
             "The Darkwood Thicket, a dense forest with limited visibility and treacherous terrain",
             "The Enchanted Falls, where powerful water elementals reside",
             "The Fey Crossing, a portal to the Feywild that can be unpredictable",
         ],
-        "5 areas best to visit" : [
+        "Areas Best To Visit" : [
             "The Grove of Tranquility, a serene place for meditation and reflection",
             "The Elven Conservatory, a school for the study of nature and magic",
             "The Heartwood Library, housing ancient tomes and scrolls on nature and the Fey",
             "The Emerald Glade, a lush garden with vibrant, magical flora",
             "The Songbird Sanctuary, where rare and exotic birds can be observed",
         ],
-        "races" : {
+        "Race Makeup" : {
             "Elf" : "40%",
             "Human" : "25%",
             "Halfling" : "10%",
@@ -465,7 +471,7 @@ dnd_cities = {
             "Tiefling" : "2%",
             "Other" : "5%",
         },
-        "classes" : {
+        "Classes Makeup" : {
             "Barbarian" : "1%",
             "Bard" : "5%",
             "Cleric" : "5%",
@@ -480,12 +486,12 @@ dnd_cities = {
             "Wizard" : "2%",
             "Other" : "5%",
         },
-        "annual income" : {
+        "Annual Income" : {
             "top 10% earners" : "800,000 gp",
             "bottom 10% earners" : "100 gp",
             "median earners" : "30,000 gp",
         },
-        "shops" : {
+        "Shops" : {
             "Verdant Traders" : 10,
             "Ethereal Enchantments" : 15,
             "Botanical Elixirs and Tinctures" : 12,
@@ -499,7 +505,7 @@ dnd_cities = {
             "Sylvan Alchemy" : 5,
             "Antiques from the Elven Ancestry" : 2,
         },
-        "services" : {
+        "Services" : {
             "Druidic Circle Hall" : 10,
             "Taverns of Tranquility" : 15,
             "Nature's Stables" : 5,
@@ -571,79 +577,81 @@ dnd_cities = {
             25: "The city's natural hot springs are said to have rejuvenating properties, attracting nature enthusiasts and druids alike.",
         },
     },
-    "emeraldhaven" : {
-        "name" : "Emeraldhaven",
-        "description" : "Emeraldhaven, known as the City of Gems, is a majestic metropolis perched high atop a range of towering crystal spires. It's renowned for its breathtaking architecture and the sparkling gems that adorn every corner of the city.",
-        "narrative" : "Emeraldhaven, the City of Gems, is a metropolis unlike any other, perched high atop a range of towering crystal spires that glisten like a beacon in the sun. The city's skyline is a mesmerizing sight, with structures carved from vibrant gemstones and precious minerals that seem to defy gravity. As you approach Emeraldhaven, the radiant colors of sapphires, emeralds, and amethysts catch your eye, and the air is filled with a faint, pleasant hum—the resonance of the gems that adorn every corner of the city. The streets are paved with translucent crystal tiles that shift and shimmer with every step, creating a dazzling spectacle for visitors. At the heart of Emeraldhaven stands the Crystal Citadel, a colossal fortress carved entirely from a massive diamond. It serves as the city's seat of power and is rumored to contain unimaginable treasures and arcane knowledge. Life in Emeraldhaven revolves around the pursuit of wealth and the art of gemcrafting. The city is known for its gem mines, where miners risk their lives to extract precious stones from deep underground. Skilled gemcutters and jewelers work tirelessly to craft exquisite pieces of jewelry and magical artifacts. The annual Gemstone Gala is a highlight of Emeraldhaven's social calendar, where nobles and commoners alike don their finest gem-encrusted attire. The city's aristocracy competes to display the most dazzling gemstones, and the gala culminates in a grand auction of rare and unique gems. Emeraldhaven is a city of secrets, hidden beneath layers of sparkling wealth. Beneath the crystal spires lie a network of tunnels and caverns, where thieves and rogues navigate a treacherous world of intrigue and double-crossing. The Temple of Tiamat, a controversial place of worship for the Dragon Queen, stands as a testament to the city's diversity of beliefs. As you wander through Emeraldhaven's gleaming streets, you can't help but be enchanted by the allure of wealth and the captivating beauty of the gemstone city. It is a place where ambition and opulence shine as brightly as the gems that adorn every facet of this majestic metropolis.",
-        "place is known for" : "the annual Gemstone Gala",
-        "amount of land" : "400 acres",
-        "population" : 25000,
-        "number of buildings" : 3500,
-        "crime rate" : "8%",
-        "Neighboring cities and towns" : {
+
+
+    "Emeraldhaven" : {
+        "Name" : "Emeraldhaven",
+        "Description" : "Emeraldhaven, known as the City of Gems, is a majestic metropolis perched high atop a range of towering crystal spires. It's renowned for its breathtaking architecture and the sparkling gems that adorn every corner of the city.",
+        "Narrative" : "Emeraldhaven, the City of Gems, is a metropolis unlike any other, perched high atop a range of towering crystal spires that glisten like a beacon in the sun. The city's skyline is a mesmerizing sight, with structures carved from vibrant gemstones and precious minerals that seem to defy gravity. As you approach Emeraldhaven, the radiant colors of sapphires, emeralds, and amethysts catch your eye, and the air is filled with a faint, pleasant hum—the resonance of the gems that adorn every corner of the city. The streets are paved with translucent crystal tiles that shift and shimmer with every step, creating a dazzling spectacle for visitors. At the heart of Emeraldhaven stands the Crystal Citadel, a colossal fortress carved entirely from a massive diamond. It serves as the city's seat of power and is rumored to contain unimaginable treasures and arcane knowledge. Life in Emeraldhaven revolves around the pursuit of wealth and the art of gemcrafting. The city is known for its gem mines, where miners risk their lives to extract precious stones from deep underground. Skilled gemcutters and jewelers work tirelessly to craft exquisite pieces of jewelry and magical artifacts. The annual Gemstone Gala is a highlight of Emeraldhaven's social calendar, where nobles and commoners alike don their finest gem-encrusted attire. The city's aristocracy competes to display the most dazzling gemstones, and the gala culminates in a grand auction of rare and unique gems. Emeraldhaven is a city of secrets, hidden beneath layers of sparkling wealth. Beneath the crystal spires lie a network of tunnels and caverns, where thieves and rogues navigate a treacherous world of intrigue and double-crossing. The Temple of Tiamat, a controversial place of worship for the Dragon Queen, stands as a testament to the city's diversity of beliefs. As you wander through Emeraldhaven's gleaming streets, you can't help but be enchanted by the allure of wealth and the captivating beauty of the gemstone city. It is a place where ambition and opulence shine as brightly as the gems that adorn every facet of this majestic metropolis.",
+        "Place Is Known For" : "the annual Gemstone Gala",
+        "Amount Of Land" : "400 acres",
+        "Population" : 25000,
+        "Number of Buildings" : 3500,
+        "Crime Rate" : "8%",
+        "Neighboring Cities And Towns" : {
             "Crystalridge" : "15 miles north",
             "Jewelholme" : "10 miles east",
             "Amberkeep" : "30 miles southeast",
             "Sapphirevale" : "50 miles south",
             "Opalhaven" : "15 miles west",
         },
-        "5 terrain features" : [
+        "Terrain Features" : [
             "towering crystal spires that house the city's structures",
             "translucent crystal streets that shift and shimmer with every step",
             "radiant gems and precious minerals adorning every corner of the city",
             "a network of tunnels and caverns beneath the city's surface",
             "the Crystal Citadel, a colossal fortress carved entirely from diamond",
         ],
-        "5 key features" : [
+        "Key Features" : [
             "Gem Mine District, where miners extract precious stones",
             "Jewelers' Plaza, a bustling marketplace for exquisite gemcrafting",
             "Crystal Archive, a repository of arcane knowledge and gem lore",
             "Gemstone Gala, an annual event celebrating wealth and opulence",
             "Temple of Tiamat, a controversial place of worship for the Dragon Queen",
         ],
-        "5 local lores" : [
+        "Local Lores" : [
             "A hidden chamber within the Crystal Citadel holds the city's most valuable treasures",
             "Emeraldhaven's gem mines are said to be haunted by the spirits of long-lost miners",
             "The Crystal Spire District is home to secretive gem cults that revere precious stones",
             "A labyrinthine network of tunnels beneath the city conceals the lairs of thieves' guilds",
             "The Crystalheart Lake at the city's center is rumored to have magical properties",
         ],
-        "5 popular people" : {
+        "Popular People" : {
             "Lord Gemcrafter Darian" : "Wealthiest gem merchant and noble",
             "Lady Iridessa Starshine" : "Renowned gemcutter with a mysterious past",
             "Master Thief Zephyr Shadowblade" : "Elusive rogue who controls the city's criminal underworld",
             "Archmage Lysandra Prismfire" : "Arcane expert specializing in gem-based magic",
             "High Priest Varian Dragonheart" : "Leader of the controversial Temple of Tiamat",
         },
-        "5 top religions" : [
+        "Top Religions" : [
             "Tiamat", 
             "Moradin", 
             "Avandra", 
             "Gond", 
             "Lliira"
         ],
-        "5 little-known secrets" : [
+        "Little Known Secrets" : [
             "The Crystal Citadel's diamond spires hide a chamber with unimaginable treasures",
             "A council of gem cults influences the city's policies in secret",
             "Gems used in the city's structures are believed to have protective properties",
             "The Crystalheart Lake is said to hold visions of the future for those who gaze into it",
             "A hidden library beneath Emeraldhaven contains forbidden knowledge of gem magic",
         ],
-        "5 areas you should avoid" : [
+        "Areas You Should Avoid" : [
             "The Abyssal Caverns, where dangerous creatures lurk in the darkness",
             "The Shadowed Alleyways, a maze-like network of thief-run streets",
             "The Crystal Abyss, a pit of uncharted crystal formations with treacherous terrain",
             "The Obsidian Tunnels, rumored to be inhabited by vengeful miner spirits",
             "The Dragon's Den, a chamber in the Temple of Tiamat filled with worshippers",
         ],
-        "5 areas best to visit" : [
+        "Areas Best To Visit" : [
             "Gem Mine District, to witness the extraction of precious stones",
             "Crystal Archive, for rare books and arcane knowledge",
             "Crystalheart Lake, for its enchanting, crystal-clear waters",
             "Jewelers' Plaza, to admire and purchase exquisite gemcrafting",
             "The Crystal Citadel, for its breathtaking view of the city from the diamond spires",
         ],
-        "races" : {
+        "Race Makeup" : {
             "Dwarf" : "20%",
             "Human" : "30%",
             "Gnome" : "15%",
@@ -655,7 +663,7 @@ dnd_cities = {
             "Tiefling" : "4%",
             "Other" : "2%",
         },
-        "classes" : {
+        "Classes Makeup" : {
             "Wizard" : "15%",
             "Artificer" : "10%",
             "Bard" : "10%",
@@ -671,12 +679,12 @@ dnd_cities = {
             "Barbarian" : "3%",
             "Other" : "5%",
         },
-        "annual income" : {
+        "Annual Income" : {
             "top 10% earners" : "2,000,000 gp",
             "bottom 10% earners" : "1,000 gp",
             "median earners" : "100,000 gp",
         },
-        "shops" : {
+        "Shops" : {
             "Gem Emporium" : 20,
             "Crystal Elegance Jewelry" : 18,
             "Diamond District Gemstones" : 15,
@@ -691,7 +699,7 @@ dnd_cities = {
             "Crystal Prism Potions" : 5,
             "Luxurious Gem Spa" : 3,
         },
-        "services" : {
+        "Services" : {
             "Crystal Citadel Tours" : 10,
             "Taverns of Opulence" : 15,
             "Gem Transport and Trade" : 5,
@@ -762,79 +770,81 @@ dnd_cities = {
             25: "The Crystal Gardens of Opulence are a serene place for meditation and reflection amidst the sparkling city."
         },
     },
-    "drakonspire": {
-        "name": "Drakonspire",
-        "description": "Drakonspire, known as the Dragonborn Citadel, is a formidable city built into the side of a towering mountain. It is renowned for its strong martial traditions and the ancient dragon lineage that resides within its walls.",
-        "narrative": "Welcome to Drakonspire, the Dragonborn Citadel, a city that stands as a testament to strength and resilience. This awe-inspiring city is built into the side of a towering mountain, its architecture seamlessly blending with the rocky terrain. As you approach, the first thing you notice is the city's imposing walls adorned with dragon motifs, a testament to the ancient dragon lineage that resides within. The air is filled with the scent of burning incense and the sound of blacksmiths crafting mighty weapons and armor. Drakonspire is a place where martial traditions run deep, and the echoes of warriors training in the city's numerous arenas reverberate through the streets. The city's heart is the Dragon's Roost, a colossal cavern where the dragonborn council holds court. The council, led by the wise and powerful Dragon Lord, governs the city with honor and strength. Dragonborn guards clad in gleaming armor patrol the streets, ensuring the safety of its residents. Life in Drakonspire is marked by discipline and honor, and the city's inhabitants are fiercely loyal to their dragon lords. The annual Dragon's Challenge is the city's most celebrated event, where warriors from all over the realm compete in combat trials to prove their mettle. The city is divided into districts, each named after a dragon type and representing a different aspect of life. The Platinum District is home to the city's scholars and libraries, while the Redfang District houses the fearsome dragon knights and their training grounds. Drakonspire's Temple of Bahamut is a place of reverence and worship, where dragonborn gather to pay homage to their draconic ancestors. As you explore the city, you'll encounter dragonborn of various colors, each representing different dragon lineages, from the fiery reds to the regal golds. Drakonspire is a city of legends, where tales of dragon slayers and heroic deeds are told around every tavern table. Hidden beneath the city lies the Dragon's Vault, rumored to hold ancient dragon treasures and relics. Drakonspire is a city where strength, honor, and the legacy of dragons reign supreme. It is a place where the dragonborn embrace their heritage and stand ready to face any challenge with unwavering determination.",
-        "place is known for": "the annual Dragon's Challenge",
-        "amount of land": "600 acres",
-        "population": 20000,
-        "number of buildings": 3500,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Drakonspire": {
+        "Name": "Drakonspire",
+        "Description": "Drakonspire, known as the Dragonborn Citadel, is a formidable city built into the side of a towering mountain. It is renowned for its strong martial traditions and the ancient dragon lineage that resides within its walls.",
+        "Narrative": "Welcome to Drakonspire, the Dragonborn Citadel, a city that stands as a testament to strength and resilience. This awe-inspiring city is built into the side of a towering mountain, its architecture seamlessly blending with the rocky terrain. As you approach, the first thing you notice is the city's imposing walls adorned with dragon motifs, a testament to the ancient dragon lineage that resides within. The air is filled with the scent of burning incense and the sound of blacksmiths crafting mighty weapons and armor. Drakonspire is a place where martial traditions run deep, and the echoes of warriors training in the city's numerous arenas reverberate through the streets. The city's heart is the Dragon's Roost, a colossal cavern where the dragonborn council holds court. The council, led by the wise and powerful Dragon Lord, governs the city with honor and strength. Dragonborn guards clad in gleaming armor patrol the streets, ensuring the safety of its residents. Life in Drakonspire is marked by discipline and honor, and the city's inhabitants are fiercely loyal to their dragon lords. The annual Dragon's Challenge is the city's most celebrated event, where warriors from all over the realm compete in combat trials to prove their mettle. The city is divided into districts, each named after a dragon type and representing a different aspect of life. The Platinum District is home to the city's scholars and libraries, while the Redfang District houses the fearsome dragon knights and their training grounds. Drakonspire's Temple of Bahamut is a place of reverence and worship, where dragonborn gather to pay homage to their draconic ancestors. As you explore the city, you'll encounter dragonborn of various colors, each representing different dragon lineages, from the fiery reds to the regal golds. Drakonspire is a city of legends, where tales of dragon slayers and heroic deeds are told around every tavern table. Hidden beneath the city lies the Dragon's Vault, rumored to hold ancient dragon treasures and relics. Drakonspire is a city where strength, honor, and the legacy of dragons reign supreme. It is a place where the dragonborn embrace their heritage and stand ready to face any challenge with unwavering determination.",
+        "Place Is Known For": "the annual Dragon's Challenge",
+        "Amount Of Land": "600 acres",
+        "Population": 20000,
+        "Number of Buildings": 3500,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Stonehold": "15 miles north",
             "Emberfell": "25 miles east",
             "Ironpeak": "10 miles southwest",
             "Moltenreach": "40 miles south",
             "Draconia Outpost": "5 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Towering mountain with the city built into its side",
             "Lava flows and geothermal vents running through the mountain",
             "Dragon-themed statues and monuments adorning the streets",
             "Dragonborn arenas for combat training and tournaments",
             "The Dragon's Roost, a cavernous citadel where the dragon lords reside",
         ],
-        "5 key features": [
+        "Key Features": [
             "The Platinum District, home to scholars and libraries",
             "The Temple of Bahamut, a place of reverence and worship",
             "Redfang District, housing the fearsome dragon knights",
             "Dragon's Challenge Arena, where warriors prove their mettle",
             "Dragon's Vault, rumored to hold ancient dragon treasures",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Dragon's Roost holds the lineage of the city's dragon lords",
             "Dragonborn are said to carry the blood of true dragons in their veins",
             "The Dragon's Challenge winners gain the favor of Bahamut",
             "The Dragon's Vault guards relics of legendary dragon hunters",
             "A hidden tunnel system connects the city's districts for quick defense",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Dragon Lord Valthrun": "Wise and powerful ruler of Drakonspire",
             "Sorala Flameheart": "Legendary dragon knight and arena champion",
             "Draegon Stonebinder": "Renowned blacksmith forging dragon-forged weapons",
             "Sylvara Stormwing": "High priestess of the Temple of Bahamut",
             "Thorn Ironfoot": "Master tactician and leader of the Platinum Guard",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Bahamut",
             "Tiamat",
             "Kord",
             "Moradin",
             "Honor the Ancestors",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The Dragon's Roost has hidden chambers with ancient dragon lore",
             "The city's forges use geothermal heat to craft exceptional weapons",
             "A secret society of dragon hunters operates beneath the city",
             "Dragonborn can communicate with dragons through rituals",
             "The Dragon's Vault contains a mysterious egg of unknown origin",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Molten Depths, where lava flows unpredictably",
             "The Wyrm's Den, a district known for its underground black market",
             "The Shadowed Caverns, rumored to house dangerous creatures",
             "The Dragon's Maw, a treacherous mountain pass",
             "The Abyssal Abyss, a chasm with unknown depths",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Platinum District's grand libraries and halls of knowledge",
             "The Temple of Bahamut for moments of reflection and prayer",
             "The Dragon's Challenge Arena during the annual competition",
             "Redfang District's dragon knights' training grounds",
             "The Dragon's Vault for a glimpse of dragon treasures",
         ],
-        "races": {
+        "Race Makeup": {
             "Dragonborn": "80%",
             "Dwarf": "5%",
             "Goliath": "5%",
@@ -844,7 +854,7 @@ dnd_cities = {
             "Gnome": "1%",
             "Other": "2%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Barbarian": "2%",
             "Cleric": "5%",
             "Fighter": "20%",
@@ -854,12 +864,12 @@ dnd_cities = {
             "Wizard": "3%",
             "Other": "5%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "900,000 gp",
             "bottom 10% earners": "50 gp",
             "median earners": "40,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Dragon's Forge Armory": 10,
             "Draconic Treasures Emporium": 15,
             "Temple's Relics and Offerings": 12,
@@ -873,7 +883,7 @@ dnd_cities = {
             "Dragonheart Alchemy": 5,
             "Dragonhunter's Trophies": 2,
         },
-        "services": {
+        "Services": {
             "Dragonlord's Council Hall": 10,
             "Taverns of Strength": 15,
             "Stables of the Dragon's Mount": 5,
@@ -943,79 +953,81 @@ dnd_cities = {
             25: "The Dragonborn Council meets within the Dragonlord's Council Hall to make important decisions for the city.",
         },
     },
-    "faebluff" : {
-        "name" : "Faebluff",
-        "description" : "Faebluff, often called the Fey Enclave, is an enchanting city hidden deep within a mystical forest. The city is known for its close ties to the Feywild, and its architecture seems to be a natural extension of the surrounding wilderness.",
-        "narrative" : "Faebluff, known as the Fey Enclave, is an extraordinary city concealed within the heart of a mystical forest. It is a place where the boundaries between the material plane and the Feywild intertwine in perfect harmony. As you approach Faebluff, the wilderness transforms into an enchanting urban center, seamlessly woven into the natural landscape. The air is filled with the scent of wildflowers, and the soft laughter of unseen fey folk dances on the breeze. Gigantic trees with shimmering leaves provide both shelter and wonder, their branches adorned with colorful lanterns that illuminate the city at night. At the heart of Faebluff stands the Arboreal Spire, a colossal oak that is said to be a portal to the Feywild. It is not merely a structure but a living entity, believed to bless the city with fey magic and a connection to the Feywild's whims. Life in Faebluff is characterized by its deep connection to the Feywild. The residents have the ability to slip between the two realms, and the city's architecture seamlessly blends with the forest, creating an otherworldly atmosphere. The annual Fey Festival is the city's grand celebration, featuring mesmerizing fey performances, magical illusions, and contests of arcane skill. Bards, known as Feyweavers, enthrall the city with their tales of the Feywild, and the theaters host plays where actors transform into fey creatures with enchanted costumes. Faebluff is a city of secrets, whispered among the ancient trees. Hidden glades with portals to the Feywild beckon adventurers, and rumors persist of a council of powerful archfey who guide the city's destiny. The Shrine of Titania, an intricate tree adorned with silver leaves, stands as a testament to the city's connection to the Feywild. As you explore Faebluff's enchanting streets, you can't help but feel the enchantment and mysticism that permeate every corner of this magical city. It is a place where the boundaries between the mundane and the fantastical blur, where the natural and the supernatural coexist in a mesmerizing dance that beckons all who seek to embrace the wonder of the Feywild.",
-        "place is known for" : "the annual Fey Festival",
-        "amount of land" : "900 acres",
-        "population" : 18000,
-        "number of buildings" : 2800,
-        "crime rate" : "2%",
-        "Neighboring cities and towns" : {
+
+
+    "Faebluff" : {
+        "Name" : "Faebluff",
+        "Description" : "Faebluff, often called the Fey Enclave, is an enchanting city hidden deep within a mystical forest. The city is known for its close ties to the Feywild, and its architecture seems to be a natural extension of the surrounding wilderness.",
+        "Narrative" : "Faebluff, known as the Fey Enclave, is an extraordinary city concealed within the heart of a mystical forest. It is a place where the boundaries between the material plane and the Feywild intertwine in perfect harmony. As you approach Faebluff, the wilderness transforms into an enchanting urban center, seamlessly woven into the natural landscape. The air is filled with the scent of wildflowers, and the soft laughter of unseen fey folk dances on the breeze. Gigantic trees with shimmering leaves provide both shelter and wonder, their branches adorned with colorful lanterns that illuminate the city at night. At the heart of Faebluff stands the Arboreal Spire, a colossal oak that is said to be a portal to the Feywild. It is not merely a structure but a living entity, believed to bless the city with fey magic and a connection to the Feywild's whims. Life in Faebluff is characterized by its deep connection to the Feywild. The residents have the ability to slip between the two realms, and the city's architecture seamlessly blends with the forest, creating an otherworldly atmosphere. The annual Fey Festival is the city's grand celebration, featuring mesmerizing fey performances, magical illusions, and contests of arcane skill. Bards, known as Feyweavers, enthrall the city with their tales of the Feywild, and the theaters host plays where actors transform into fey creatures with enchanted costumes. Faebluff is a city of secrets, whispered among the ancient trees. Hidden glades with portals to the Feywild beckon adventurers, and rumors persist of a council of powerful archfey who guide the city's destiny. The Shrine of Titania, an intricate tree adorned with silver leaves, stands as a testament to the city's connection to the Feywild. As you explore Faebluff's enchanting streets, you can't help but feel the enchantment and mysticism that permeate every corner of this magical city. It is a place where the boundaries between the mundane and the fantastical blur, where the natural and the supernatural coexist in a mesmerizing dance that beckons all who seek to embrace the wonder of the Feywild.",
+        "Place Is Known For" : "the annual Fey Festival",
+        "Amount Of Land" : "900 acres",
+        "Population" : 18000,
+        "Number of Buildings" : 2800,
+        "Crime Rate" : "2%",
+        "Neighboring Cities And Towns" : {
             "Glimmerwood" : "25 miles north",
             "Dreamspire" : "15 miles east",
             "Whispering Glade" : "35 miles southeast",
             "Misthaven" : "45 miles south",
             "Feywatch" : "20 miles west",
         },
-        "5 terrain features" : [
+        "Terrain Features" : [
             "enormous, shimmering trees with structures intertwined in their branches",
             "crystal-clear streams that crisscross the city, forming natural pathways",
             "lantern-lit canopies that cast an ethereal glow over the streets at night",
             "hidden glades with portals to the Feywild",
             "the Arboreal Spire at the city's center, a colossal oak believed to be a Feywild portal",
         ],
-        "5 key features" : [
+        "Key Features" : [
             "The Feyweavers' Court, where bards enthrall the city with tales of the Feywild",
             "The Verdant Bazaar, a bustling market of exotic fey goods and trinkets",
             "The Portal Plaza, where adventurers gather to explore the Feywild",
             "The Enchanted Theater, hosting plays with actors transforming into fey creatures",
             "Feywild Connection, allowing residents to slip between realms",
         ],
-        "5 local lores" : [
+        "Local Lores" : [
             "A hidden glade beneath the city holds a portal to the Summer Court of the Feywild",
             "The Arboreal Spire is said to grant visions of the future to those who meditate beneath its branches",
             "Faebluff's lanterns are crafted from the petals of magical moonflowers",
             "Mysterious fey creatures known as 'Lumina sprites' protect the city's secrets",
             "A legendary treasure is rumored to be hidden in the heart of the Feywild accessible from Faebluff",
         ],
-        "5 popular people" : {
+        "Popular People" : {
             "Lady Elowen Moonshadow" : "Leader of the Court of Archfey",
             "Thistledown the Trickster" : "Renowned fey bard known for whimsical performances",
             "Willow Whisperleaf" : "Master of enchantments and guardian of the Fey Portal",
             "Aurora Starlight" : "Mysterious sorceress with ties to the Feywild",
             "Professor Thornebloom" : "Scholar specializing in the study of interplanar travel",
         },
-        "5 top religions" : [
+        "Top Religions" : [
             "Titania",
             "Oberon",
             "Seelie Court",
             "Unseelie Court",
             "Eilistraee",
         ],
-        "5 little-known secrets" : [
+        "Little Known Secrets" : [
             "The city's lanterns are maintained by mischievous will-o'-wisps in exchange for riddles and games",
             "A council of powerful archfey secretly influences the city's policies",
             "Faebluff's sewers are home to a colony of friendly pixies who help with waste disposal",
             "The local protectors of the Feywild work as enchanters, crafting fey-themed items",
             "The Arboreal Spire's roots extend deep into the Feywild, granting unique magical properties",
         ],
-        "5 areas you should avoid" : [
+        "Areas You Should Avoid" : [
             "The Thorned Thicket, where carnivorous plants and treacherous creatures thrive",
             "The Whispering Glade, a serene place where eerie whispers unsettle visitors",
             "The Darkling Hollow, a shadowy realm where nightmarish creatures dwell",
             "The Enchanted Falls, home to unpredictable feywater spirits",
             "The Fey Crossing, a portal to the Feywild that can lead to unpredictable destinations",
         ],
-        "5 areas best to visit" : [
+        "Areas Best To Visit" : [
             "The Enchanted Grove, a tranquil place for meditation and contemplation",
             "The Feywild Portal Plaza, where adventurers embark on journeys to otherworldly realms",
             "The Moonflower Meadows, a lush field of magical blossoms",
             "The Feyweavers' Court, where bards captivate audiences with tales of the Feywild",
             "The Starlit Glade, a serene garden with luminescent flora and firefly-like fae",
         ],
-        "races" : {
+        "Race Makeup" : {
             "Elf" : "35%",
             "Human" : "20%",
             "Gnome" : "15%",
@@ -1027,7 +1039,7 @@ dnd_cities = {
             "Goliath" : "2%",
             "Other" : "2%",
         },
-        "classes" : {
+        "Classes Makeup" : {
             "Bard" : "8%",
             "Cleric" : "4%",
             "Druid" : "25%",
@@ -1040,12 +1052,12 @@ dnd_cities = {
             "Wizard" : "3%",
             "Other" : "5%",
         },
-        "annual income" : {
+        "Annual Income" : {
             "top 10% earners" : "750,000 gp",
             "bottom 10% earners" : "120 gp",
             "median earners" : "35,000 gp",
         },
-        "shops" : {
+        "Shops" : {
             "Fey Trinkets and Wonders" : 10,
             "Enchanted Elixirs and Potions" : 15,
             "Moonflower Perfumery" : 12,
@@ -1059,7 +1071,7 @@ dnd_cities = {
             "Sylvan Alchemy" : 5,
             "Antiques from the Fey Courts" : 2,
         },
-        "services" : {
+        "Services" : {
             "Fey Enchanters' Guild" : 10,
             "Taverns of Enchantment" : 15,
             "Fey Steeds Stables" : 5,
@@ -1128,79 +1140,81 @@ dnd_cities = {
             25: "The city's lanterns are lit by mischievous will-o'-wisps in exchange for riddles and games.",
         },
     },
-    "crimsonspire": {
-        "name": "Crimsonspire",
-        "description": "Crimsonspire is a city of contrasts, built upon a massive, floating island suspended in the sky. The city is a marvel of magical engineering, with towering spires and intricate bridges connecting various districts.",
-        "narrative": "Welcome to Crimsonspire, a city like no other in the realms. As you approach, you can't help but marvel at the breathtaking sight before you. The city floats upon a massive, enchanted island suspended high in the sky. Towering spires and intricate bridges connect the various districts, creating a mesmerizing spectacle that seems to defy gravity. Crimsonspire is a true testament to the art of magical engineering, where wizards and artificers have pushed the boundaries of possibility. The city is divided into several districts, each with its own unique character and purpose. The Upper Arcana, located at the pinnacle of the city, houses the most prestigious magical academies and is home to the city's ruling council of archmages. The bustling Bazaar of Elements, a sprawling marketplace, offers a dizzying array of magical wares and exotic goods from across the realms. Below, in the Elemental Quarters, elemental beings coexist with the citizens, contributing to the city's magical infrastructure. The Twilight District, nestled in the shadow of the floating island, is a mysterious and enigmatic place where shadows come alive, and illusionists test the boundaries of reality. As you explore Crimsonspire, you'll encounter airships docking at the Aetherport, soaring through the skies or navigating the intricate web of bridges and walkways. The city's enchantments make falling almost impossible, but the experience of floating above the world is both exhilarating and humbling. The city's heartbeat is the Grand Arcanium, a colossal tower that houses the most powerful magical artifacts and secrets. It's said that even the air itself within Crimsonspire is imbued with magic, granting residents and visitors heightened vitality and clarity of thought. Crimsonspire is a city of progress, innovation, and limitless possibilities. It's a place where magic flows like air, where wizards, artificers, and elemental beings coexist in harmony, and where the very concept of gravity is challenged daily. As you journey through its floating streets and soaring towers, prepare to be enchanted by the wonders of Crimsonspire, the City in the Sky.",
-        "place is known for": "its floating island and magical architecture",
-        "amount of land": "floating island, 1 square mile",
-        "population": 25000,
-        "number of buildings": 3500,
-        "crime rate": "7%",
-        "Neighboring cities and towns": {
+
+
+    "Crimsonspire": {
+        "Name": "Crimsonspire",
+        "Description": "Crimsonspire is a city of contrasts, built upon a massive, floating island suspended in the sky. The city is a marvel of magical engineering, with towering spires and intricate bridges connecting various districts.",
+        "Narrative": "Welcome to Crimsonspire, a city like no other in the realms. As you approach, you can't help but marvel at the breathtaking sight before you. The city floats upon a massive, enchanted island suspended high in the sky. Towering spires and intricate bridges connect the various districts, creating a mesmerizing spectacle that seems to defy gravity. Crimsonspire is a true testament to the art of magical engineering, where wizards and artificers have pushed the boundaries of possibility. The city is divided into several districts, each with its own unique character and purpose. The Upper Arcana, located at the pinnacle of the city, houses the most prestigious magical academies and is home to the city's ruling council of archmages. The bustling Bazaar of Elements, a sprawling marketplace, offers a dizzying array of magical wares and exotic goods from across the realms. Below, in the Elemental Quarters, elemental beings coexist with the citizens, contributing to the city's magical infrastructure. The Twilight District, nestled in the shadow of the floating island, is a mysterious and enigmatic place where shadows come alive, and illusionists test the boundaries of reality. As you explore Crimsonspire, you'll encounter airships docking at the Aetherport, soaring through the skies or navigating the intricate web of bridges and walkways. The city's enchantments make falling almost impossible, but the experience of floating above the world is both exhilarating and humbling. The city's heartbeat is the Grand Arcanium, a colossal tower that houses the most powerful magical artifacts and secrets. It's said that even the air itself within Crimsonspire is imbued with magic, granting residents and visitors heightened vitality and clarity of thought. Crimsonspire is a city of progress, innovation, and limitless possibilities. It's a place where magic flows like air, where wizards, artificers, and elemental beings coexist in harmony, and where the very concept of gravity is challenged daily. As you journey through its floating streets and soaring towers, prepare to be enchanted by the wonders of Crimsonspire, the City in the Sky.",
+        "Place Is Known For": "its floating island and magical architecture",
+        "Amount Of Land": "floating island, 1 square mile",
+        "Population": 25000,
+        "Number of Buildings": 3500,
+        "Crime Rate": "7%",
+        "Neighboring Cities And Towns": {
             "Aetherholm": "Floating islands to the west",
             "Stormreach": "City on the surface, 100 miles below",
             "Skycastle": "Another floating city, 50 miles northeast",
             "Luminara": "City of light, floating 20 miles east",
             "Netherhold": "Shadowy city, floating 30 miles south",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "A massive, floating island suspended in the sky",
             "Intricate bridges connecting various districts",
             "Airships docking at the Aetherport",
             "Enchanted air that grants heightened vitality and clarity of thought",
             "The Twilight District, where shadows come alive and illusions abound",
         ],
-        "5 key features": [
+        "Key Features": [
             "The Upper Arcana, home to prestigious magical academies",
             "The Bazaar of Elements, a bustling magical marketplace",
             "The Elemental Quarters, where elemental beings contribute to the city's magic",
             "The Grand Arcanium, housing powerful magical artifacts and secrets",
             "The Aetherport, a hub for airships and aerial transportation",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The city's floating island was created by an ancient archmage's spell",
             "Crimsonspire's enchantments are powered by elemental cores",
             "The Twilight District is said to be haunted by shadowy beings",
             "The Grand Arcanium contains a portal to other realms",
             "A secret society of artificers controls the city's magical infrastructure",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Archmage Solara Dawnwhisper": "Leader of the Council of Archmages",
             "Xandar Skystrider": "Legendary airship captain and explorer",
             "Lyria Emberglow": "Enigmatic illusionist of the Twilight District",
             "Ignarok the Elemental Lord": "Guardian of the Elemental Quarters",
             "Alaric Runebound": "Famous artificer and inventor",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Mystra",
             "Boccob",
             "Kord",
             "Vecna",
             "Ioun",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The city's enchantments are maintained by a secret order of air elementals",
             "Beneath the city lies a hidden chamber containing forbidden spells",
             "Crimsonspire's bridges are woven from strands of phoenix feathers",
             "The Aetherport is connected to a network of teleportation circles",
             "The Grand Arcanium holds a shard of a fallen star with unknown powers",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Shadow Abyss, a dangerous chasm below the city",
             "The Illusionist's Maze, where reality twists and confounds",
             "The Elemental Vortex, a chaotic area of elemental turmoil",
             "The Arcane Barrier, a forbidden zone with unpredictable magic",
             "The Gloomshroud Forest, a dark and treacherous realm beneath the island",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Sky Garden, a serene oasis of floating gardens and waterfalls",
             "The Elemental Plaza, where elemental beings display their powers",
             "The Astral Observatory, offering breathtaking views of the cosmos",
             "The Crystal Archive, a repository of magical knowledge",
             "The Skyward Theater, where aerial performances take your breath away",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "30%",
             "Elf": "25%",
             "Gnome": "15%",
@@ -1211,7 +1225,7 @@ dnd_cities = {
             "Firbolg": "3%",
             "Other": "2%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Wizard": "15%",
             "Artificer": "10%",
             "Sorcerer": "10%",
@@ -1225,12 +1239,12 @@ dnd_cities = {
             "Ranger": "4%",
             "Other": "9%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "1,000,000 gp",
             "bottom 10% earners": "500 gp",
             "median earners": "50,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Arcane Emporium": 12,
             "Elemental Oddities": 10,
             "Skyship Outfitters": 8,
@@ -1244,7 +1258,7 @@ dnd_cities = {
             "The Phoenix's Perch": 3,
             "Feyglass Enchantments": 6,
         },
-        "services": {
+        "Services": {
             "Elemental Forge": 8,
             "Astral Temples": 7,
             "Mageguild Hall": 10,
@@ -1314,79 +1328,81 @@ dnd_cities = {
             25: "The Elemental Accord oversees peaceful relations with elemental beings."
         },
     },
-    "faerholme" : {
-        "name" : "Faerholme",
-        "description" : "Faerholme, known as the City of Wonders, is a bustling metropolis nestled within a vast, otherworldly cavern. The city is renowned for its technological marvels and the strange, radiant crystals that illuminate its underground streets.",
-        "narrative" : "Welcome to Faerholme, the City of Wonders, a marvel hidden deep within a colossal underground cavern. As you descend into the subterranean world, you're greeted by a breathtaking sight: streets illuminated by radiant crystals that cast an otherworldly glow. The city is a testament to the boundless ingenuity of its inhabitants, who have harnessed the power of these enigmatic crystals to create breathtaking technological marvels. Faerholme stands as a fusion of the magical and the mechanical, where the boundaries between science and wizardry blur. The city is divided into districts, each dedicated to a specific field of innovation. The Clockwork Quarter hums with the sounds of intricate machines and mechanical constructs, while the Alchemical Bazaar offers potions and elixirs that defy conventional magic. The Arcane Forge is a haven for artificers, where enchanted items are created with meticulous precision. Faerholme's residents are a diverse mix of races and backgrounds, drawn to the city by its promise of progress and discovery. Gnomes, dwarves, and goblins work alongside humans, elves, and tieflings, united by their thirst for knowledge and the pursuit of invention. The city's heart, known as the Crystal Spire, is a towering edifice where the most brilliant minds gather to unlock the secrets of the radiant crystals. The annual Technomagica Festival is a highlight of Faerholme's calendar, featuring exhibitions of automatons, airships powered by crystal energy, and magical fireworks that light up the cavern's ceiling. Visitors can also explore the Crystal Gardens, where rare and exotic plant life thrives under the crystals' radiant energy. Faerholme is not without its mysteries. Rumors persist of an enigmatic figure known as the Crystal Whisperer, who possesses an uncanny connection to the radiant crystals and can manipulate them at will. The city's religion centers around the Crystal Pantheon, a group of deities who embody the city's principles of invention and progress. The Temple of Gears and the Shrine of Alchemists are places of worship for those who seek divine guidance in their pursuits. As you wander through Faerholme's illuminated streets, you can't help but be captivated by the sense of wonder and possibility that permeates every corner of this subterranean marvel. It is a place where science and magic converge, where innovation knows no bounds, and where the future is as bright as the crystals that light the way.",
-        "place is known for" : "the annual Technomagica Festival",
-        "amount of land" : "1,200 acres",
-        "population" : 25000,
-        "number of buildings" : 3500,
-        "crime rate" : "5%",
-        "Neighboring cities and towns" : {
+
+
+    "Faerholme" : {
+        "Name" : "Faerholme",
+        "Description" : "Faerholme, known as the City of Wonders, is a bustling metropolis nestled within a vast, otherworldly cavern. The city is renowned for its technological marvels and the strange, radiant crystals that illuminate its underground streets.",
+        "Narrative" : "Welcome to Faerholme, the City of Wonders, a marvel hidden deep within a colossal underground cavern. As you descend into the subterranean world, you're greeted by a breathtaking sight: streets illuminated by radiant crystals that cast an otherworldly glow. The city is a testament to the boundless ingenuity of its inhabitants, who have harnessed the power of these enigmatic crystals to create breathtaking technological marvels. Faerholme stands as a fusion of the magical and the mechanical, where the boundaries between science and wizardry blur. The city is divided into districts, each dedicated to a specific field of innovation. The Clockwork Quarter hums with the sounds of intricate machines and mechanical constructs, while the Alchemical Bazaar offers potions and elixirs that defy conventional magic. The Arcane Forge is a haven for artificers, where enchanted items are created with meticulous precision. Faerholme's residents are a diverse mix of races and backgrounds, drawn to the city by its promise of progress and discovery. Gnomes, dwarves, and goblins work alongside humans, elves, and tieflings, united by their thirst for knowledge and the pursuit of invention. The city's heart, known as the Crystal Spire, is a towering edifice where the most brilliant minds gather to unlock the secrets of the radiant crystals. The annual Technomagica Festival is a highlight of Faerholme's calendar, featuring exhibitions of automatons, airships powered by crystal energy, and magical fireworks that light up the cavern's ceiling. Visitors can also explore the Crystal Gardens, where rare and exotic plant life thrives under the crystals' radiant energy. Faerholme is not without its mysteries. Rumors persist of an enigmatic figure known as the Crystal Whisperer, who possesses an uncanny connection to the radiant crystals and can manipulate them at will. The city's religion centers around the Crystal Pantheon, a group of deities who embody the city's principles of invention and progress. The Temple of Gears and the Shrine of Alchemists are places of worship for those who seek divine guidance in their pursuits. As you wander through Faerholme's illuminated streets, you can't help but be captivated by the sense of wonder and possibility that permeates every corner of this subterranean marvel. It is a place where science and magic converge, where innovation knows no bounds, and where the future is as bright as the crystals that light the way.",
+        "Place Is Known For" : "the annual Technomagica Festival",
+        "Amount Of Land" : "1,200 acres",
+        "Population" : 25000,
+        "Number of Buildings" : 3500,
+        "Crime Rate" : "5%",
+        "Neighboring Cities And Towns" : {
             "Stonewatch" : "15 miles southwest",
             "Crystalpeak" : "10 miles northeast",
             "Glimmerhold" : "25 miles northwest",
             "Duskhaven" : "30 miles southeast",
             "Infernal Depths" : "50 miles south",
         },
-        "5 terrain features" : [
+        "Terrain Features" : [
             "Radiant crystals that light the underground streets",
             "A vast underground lake with bioluminescent flora",
             "The Clockwork Quarter with intricate machines and constructs",
             "The Arcane Forge, a hub for magical artificers",
             "The Crystal Spire, a towering edifice of innovation",
         ],
-        "5 key features" : [
+        "Key Features" : [
             "Technomagica Festival showcasing technological wonders",
             "Crystal Gardens with exotic plants fueled by crystal energy",
             "The Clockwork Market, offering mechanical marvels",
             "The Arcane Forge's Grand Workshop, a hub of enchantment",
             "The Crystal Pantheon's Temple of Progress",
         ],
-        "5 local lores" : [
+        "Local Lores" : [
             "The radiant crystals were discovered by a gnome inventor in a hidden chamber",
             "The Crystal Whisperer can manipulate the radiant crystals with a mere thought",
             "The Crystal Guardians protect the city's radiant crystal mines",
             "An ancient dwarven vault filled with forgotten inventions lies beneath Faerholme",
             "A network of underground tunnels connects Faerholme to neighboring cities",
         ],
-        "5 popular people" : {
+        "Popular People" : {
             "Professor Geargrind" : "Renowned gnome inventor and founder of the Crystal Academy",
             "Lorelei Starshaper" : "Elven artificer known for her magical inventions",
             "Brom Goldfire" : "Dwarf alchemist and master of explosive concoctions",
             "Zara Nightspark" : "Tiefling warlock with a fascination for forbidden magic",
             "Master Tinker Glimmerstone" : "Goblin engineer and creator of ingenious gadgets",
         },
-        "5 top religions" : [
+        "Top Religions" : [
             "The Crystal Pantheon", 
             "The Clockwork Clergy", 
             "The Alchemical Order", 
             "The Artificer's Faith", 
             "The Gnome Inventors' Guild"
         ],
-        "5 little-known secrets" : [
+        "Little Known Secrets" : [
             "The Crystal Whisperer's identity remains a closely guarded mystery",
             "A hidden chamber beneath Faerholme houses a repository of ancient knowledge",
             "The city's sewers conceal secret passages used by thieves and spies",
             "Faerholme's airship fleet is powered by specially crafted elemental crystals",
             "The Crystal Pantheon's deities are rumored to walk among the city's inhabitants in disguise",
         ],
-        "5 areas you should avoid" : [
+        "Areas You Should Avoid" : [
             "The Abyssal Abyss, where dark experiments are conducted",
             "The Gloomspire, a district plagued by mysterious disappearances",
             "The Cursed Foundry, home to malevolent constructs",
             "The Unstable Reactor, a site prone to magical accidents",
             "The Whispering Tunnels, where strange voices echo through the darkness",
         ],
-        "5 areas best to visit" : [
+        "Areas Best To Visit" : [
             "The Crystal Gardens, a radiant oasis of natural beauty",
             "The Clockwork Market, where unique inventions are sold",
             "The Arcane Forge's Grand Workshop, a hub of enchantment",
             "The Crystal Spire, a towering center of innovation",
             "The Technomagica Festival grounds during the annual celebration",
         ],
-        "races" : {
+        "Race Makeup" : {
             "Gnome" : "30%",
             "Dwarf" : "20%",
             "Human" : "15%",
@@ -1398,7 +1414,7 @@ dnd_cities = {
             "Aarakocra" : "2%",
             "Other" : "2%",
         },
-        "classes" : {
+        "Classes Makeup" : {
             "Artificer" : "25%",
             "Wizard" : "15%",
             "Alchemist" : "10%",
@@ -1413,12 +1429,12 @@ dnd_cities = {
             "Barbarian" : "2%",
             "Other" : "2%",
         },
-        "annual income" : {
+        "Annual Income" : {
             "top 10% earners" : "900,000 gp",
             "bottom 10% earners" : "200 gp",
             "median earners" : "45,000 gp",
         },
-        "shops" : {
+        "Shops" : {
             "Clockwork Curiosities" : 10,
             "Alchemy Emporium" : 15,
             "Crystal Artisans" : 12,
@@ -1432,7 +1448,7 @@ dnd_cities = {
             "Arcane Oddities" : 5,
             "Inventor's Paradise" : 2,
         },
-        "services" : {
+        "Services" : {
             "Crystal Academy" : 10,
             "Gearspring Taverns" : 15,
             "Clockwork Stables" : 5,
@@ -1503,79 +1519,81 @@ dnd_cities = {
             25: "Visitors can explore the Crystal Arboretum, a lush garden filled with crystal-infused plants.",
         },
     },
-    "thundertop" : {
-        "name" : "Thundertop",
-        "description" : "Thundertop, often referred to as the Aerial Citadel, is a city suspended high in the sky among the clouds. It is a marvel of engineering and magic, known for its breathtaking views and skyborne architecture.",
-        "narrative" : "Thundertop, the Aerial Citadel, is a city suspended high above the ground, nestled among the clouds. It is a breathtaking marvel of engineering and magic, where the boundaries between earth and sky blur into an awe-inspiring coexistence. As you approach the city, you can see its massive floating platforms, connected by intricate bridges and walkways, surrounded by a perpetual halo of fluffy white clouds. The first thing that strikes you upon entering Thundertop is the sensation of weightlessness, as the city's magical wards grant a gentle buoyancy to its inhabitants. The streets are lined with levitating platforms and ethereal gardens that seem to float in mid-air. Giant airships dock at towering spires, and adventurers can be seen soaring through the skies on their winged mounts. At the heart of Thundertop stands the Skyforge, a colossal structure where powerful elemental magic and skilled artisans craft wondrous flying machines and magical items. The Skyforge's core is said to hold the power to control the city's altitude and weather. Life in Thundertop is defined by its embrace of the skies. Residents have adapted to the high-flying lifestyle, using air currents and wind tunnels for transportation. The city's architecture seamlessly integrates with the clouds, and the streets are adorned with floating gardens filled with exotic aerial flora. The annual Skyward Festival is a highlight of Thundertop, featuring airship races, cloud-walking competitions, and breathtaking aerial displays. Skyborne bards play mesmerizing tunes on their flying instruments, and the city's theaters host plays where actors perform daring mid-air acrobatics. Thundertop is a city of secrets, whispered among the clouds. Hidden sky temples with portals to the Elemental Plane of Air beckon adventurers, and rumors persist of a secret council of elemental lords who silently guide the city's destiny. The Cathedral of Aerdrie Faenya, a grand floating spire, stands as a testament to the city's devotion to the skies. As you soar through Thundertop's aerial streets, you can't help but feel the exhilaration and wonder that permeate every corner of this skyborne metropolis. It is a place where the boundaries between the earth and the heavens are blurred, where technology and magic unite to create a breathtaking tapestry of life and adventure that beckons all who seek to touch the skies.",
-        "place is known for" : "the annual Skyward Festival",
-        "amount of land" : "10 square miles of floating platforms",
-        "population" : 20000,
-        "number of buildings" : 3500,
-        "crime rate" : "2%",
-        "Neighboring cities and towns" : {
+
+
+    "Thundertop" : {
+        "Name" : "Thundertop",
+        "Description" : "Thundertop, often referred to as the Aerial Citadel, is a city suspended high in the sky among the clouds. It is a marvel of engineering and magic, known for its breathtaking views and skyborne architecture.",
+        "Narrative" : "Thundertop, the Aerial Citadel, is a city suspended high above the ground, nestled among the clouds. It is a breathtaking marvel of engineering and magic, where the boundaries between earth and sky blur into an awe-inspiring coexistence. As you approach the city, you can see its massive floating platforms, connected by intricate bridges and walkways, surrounded by a perpetual halo of fluffy white clouds. The first thing that strikes you upon entering Thundertop is the sensation of weightlessness, as the city's magical wards grant a gentle buoyancy to its inhabitants. The streets are lined with levitating platforms and ethereal gardens that seem to float in mid-air. Giant airships dock at towering spires, and adventurers can be seen soaring through the skies on their winged mounts. At the heart of Thundertop stands the Skyforge, a colossal structure where powerful elemental magic and skilled artisans craft wondrous flying machines and magical items. The Skyforge's core is said to hold the power to control the city's altitude and weather. Life in Thundertop is defined by its embrace of the skies. Residents have adapted to the high-flying lifestyle, using air currents and wind tunnels for transportation. The city's architecture seamlessly integrates with the clouds, and the streets are adorned with floating gardens filled with exotic aerial flora. The annual Skyward Festival is a highlight of Thundertop, featuring airship races, cloud-walking competitions, and breathtaking aerial displays. Skyborne bards play mesmerizing tunes on their flying instruments, and the city's theaters host plays where actors perform daring mid-air acrobatics. Thundertop is a city of secrets, whispered among the clouds. Hidden sky temples with portals to the Elemental Plane of Air beckon adventurers, and rumors persist of a secret council of elemental lords who silently guide the city's destiny. The Cathedral of Aerdrie Faenya, a grand floating spire, stands as a testament to the city's devotion to the skies. As you soar through Thundertop's aerial streets, you can't help but feel the exhilaration and wonder that permeate every corner of this skyborne metropolis. It is a place where the boundaries between the earth and the heavens are blurred, where technology and magic unite to create a breathtaking tapestry of life and adventure that beckons all who seek to touch the skies.",
+        "Place Is Known For" : "the annual Skyward Festival",
+        "Amount Of Land" : "10 square miles of floating platforms",
+        "Population" : 20000,
+        "Number of Buildings" : 3500,
+        "Crime Rate" : "2%",
+        "Neighboring Cities And Towns" : {
             "Cloudhaven" : "50 miles northeast among the clouds",
             "Skyreach" : "30 miles west on a floating island",
             "Windsong Harbor" : "20 miles south at the edge of the sky",
             "Aeriswatch" : "40 miles northwest on a skyward mountain",
             "Celestial Haven" : "60 miles southeast on a celestial island",
         },
-        "5 terrain features" : [
+        "Terrain Features" : [
             "levitating platforms and walkways suspended among the clouds",
             "perpetual halo of fluffy white clouds enveloping the city",
             "giant airships docking at towering spires",
             "sky temples with portals to the Elemental Plane of Air",
             "the Skyforge at the city's center, a colossal magical forge",
         ],
-        "5 key features" : [
+        "Key Features" : [
             "The Skyward Bazaar, a bustling market of flying merchants",
             "Aerdrie's Aeries, platforms for skydiving and aerial acrobatics",
             "The Skyhaven Library, a repository of skyborne knowledge",
             "Windrider Guild, where adventurers find aerial mounts and training",
             "Elemental Ascendancy, a ritual for communion with elemental lords",
         ],
-        "5 local lores" : [
+        "Local Lores" : [
             "A hidden sky garden holds the secrets to controlling the weather",
             "The city's founder was an ingenious artificer who mastered flight",
             "The Skyforge's core contains elemental gems of immense power",
             "Mysterious beings known as 'Aeromancers' watch over the city's skies",
             "A legendary flying ship is said to be buried beneath the floating city",
         ],
-        "5 popular people" : {
+        "Popular People" : {
             "High Artificer Aeris" : "Leader of the Skyward Council",
             "Aerona the Aerial Virtuoso" : "Renowned skydancer and performer",
             "Zephyr the Airship Captain" : "Master pilot and owner of the Windrider Guild",
             "Aeritha Stormweaver" : "Enigmatic Aeromancer with control over the winds",
             "Professor Skythorn" : "Scholar specializing in skyborne technology",
         },
-        "5 top religions" : [
+        "Top Religions" : [
             "Aerdrie Faenya", 
             "Moradin", 
             "Kord", 
             "Helm", 
             "Tymora"
         ],
-        "5 little-known secrets" : [
+        "Little Known Secrets" : [
             "The city's levitation is powered by elemental gems beneath each platform",
             "A secret network of air tunnels connects Thundertop to other floating cities",
             "The city's libraries contain books written in languages of the Elemental Planes",
             "A council of elemental lords influences the city's weather and air currents",
             "The Skyforge's core can forge items imbued with the power of flight",
         ],
-        "5 areas you should avoid" : [
+        "Areas You Should Avoid" : [
             "The Tempest Gorge, where unpredictable storms and lightning strike",
             "The Voidwalker's Chasm, a perilous rift leading to the Astral Plane",
             "The Maelstrom Nexus, a swirling vortex of turbulent winds",
             "The Whispering Clouds, where eerie voices can lead travelers astray",
             "The Abyssal Abyss, a bottomless pit rumored to hold ancient terrors",
         ],
-        "5 areas best to visit" : [
+        "Areas Best To Visit" : [
             "The Celestial Spire, a floating garden with breathtaking panoramic views",
             "The Aeromancer's Sanctum, where the winds are harnessed for magic",
             "The Skyfall Plaza, a marketplace with enchanted goods from the skies",
             "The Arcane Skyship Museum, showcasing legendary flying vessels",
             "The Crystal Skywalk, a transparent bridge offering a dizzying view below",
         ],
-        "races" : {
+        "Race Makeup" : {
             "Gnome" : "30%",
             "Aarakocra" : "20%",
             "Human" : "15%",
@@ -1586,7 +1604,7 @@ dnd_cities = {
             "Aasimar" : "5%",
             "Other" : "5%",
         },
-        "classes" : {
+        "Classes Makeup" : {
             "Artificer" : "10%",
             "Wizard" : "15%",
             "Sorcerer" : "10%",
@@ -1600,12 +1618,12 @@ dnd_cities = {
             "Paladin" : "5%",
             "Other" : "5%",
         },
-        "annual income" : {
+        "Annual Income" : {
             "top 10% earners" : "1,000,000 gp",
             "bottom 10% earners" : "500 gp",
             "median earners" : "50,000 gp",
         },
-        "shops" : {
+        "Shops" : {
             "Skyward Treasures" : 20,
             "AeroCrafters' Emporium" : 15,
             "Cloudwalker Outfitters" : 12,
@@ -1619,7 +1637,7 @@ dnd_cities = {
             "Skyborne Oddities" : 4,
             "The Skyforge Market" : 6,
         },
-        "services" : {
+        "Services" : {
             "Aeromancer Academy" : 10,
             "Taverns of the Clouds" : 15,
             "Skydock Stables" : 5,
@@ -1690,79 +1708,81 @@ dnd_cities = {
             25: "The Crystal Skywalk offers a dizzying view of the endless expanse of the sky below.",
         },
     },
-    "mysticshroud" : {
-        "name" : "Mysticshroud",
-        "description" : "Mysticshroud is a city cloaked in perpetual twilight, nestled within a massive cavern. Its people are masters of shadow magic, and the city's unique geography grants it an air of mystery and enchantment.",
-        "narrative" : "Mysticshroud is a city unlike any other, a place where the boundary between day and night is eternally blurred. Nestled within a colossal underground cavern, the city is bathed in a perpetual twilight that casts everything in a soft, enchanting glow. Tall spires and bridges of obsidian rise from the cavern floor, creating a mesmerizing labyrinth of shadows. At its heart stands the Shadowheart Citadel, a massive fortress where the ruling council of shadowmages resides. The city's streets are lined with will-o'-the-wisps, providing an eerie yet beautiful illumination. The people of Mysticshroud are masters of shadow magic, and the city's unique geography grants them an inherent connection to the Plane of Shadow. As you explore, you'll notice that buildings shift and change, their appearances altered by the will of the shadowmages. Mysticshroud's economy thrives on the trade of shadow-infused gems and enchanted darkness, items that are highly sought after in other realms. The annual Shadow Masquerade is a highlight of the city's social calendar, where residents and visitors alike don elaborate masks and costumes to celebrate their mastery of shadow magic. In Mysticshroud, secrets are currency, and knowledge of shadowy mysteries is highly valued. The city is also known for its elaborate shadow puppetry performances, where stories are told using intricate shadow projections. While the city's culture may seem mysterious to outsiders, its residents are welcoming and eager to share their unique talents. The Temple of Shar, the goddess of darkness, stands as the city's religious center, and her followers often perform shadowy rituals to maintain the city's connection to the Plane of Shadow. As you traverse Mysticshroud's twisting pathways, you can't help but feel the allure of shadow and magic that permeates every corner of this enigmatic city. It is a place where light and darkness dance in perpetual harmony, offering a unique and captivating experience to all who dare to explore its secrets.",
-        "place is known for" : "the annual Shadow Masquerade",
-        "amount of land" : "600 acres",
-        "population" : 18000,
-        "number of buildings" : 3000,
-        "crime rate" : "5%",
-        "Neighboring cities and towns" : {
+
+
+    "Mysticshroud" : {
+        "Name" : "Mysticshroud",
+        "Description" : "Mysticshroud is a city cloaked in perpetual twilight, nestled within a massive cavern. Its people are masters of shadow magic, and the city's unique geography grants it an air of mystery and enchantment.",
+        "Narrative" : "Mysticshroud is a city unlike any other, a place where the boundary between day and night is eternally blurred. Nestled within a colossal underground cavern, the city is bathed in a perpetual twilight that casts everything in a soft, enchanting glow. Tall spires and bridges of obsidian rise from the cavern floor, creating a mesmerizing labyrinth of shadows. At its heart stands the Shadowheart Citadel, a massive fortress where the ruling council of shadowmages resides. The city's streets are lined with will-o'-the-wisps, providing an eerie yet beautiful illumination. The people of Mysticshroud are masters of shadow magic, and the city's unique geography grants them an inherent connection to the Plane of Shadow. As you explore, you'll notice that buildings shift and change, their appearances altered by the will of the shadowmages. Mysticshroud's economy thrives on the trade of shadow-infused gems and enchanted darkness, items that are highly sought after in other realms. The annual Shadow Masquerade is a highlight of the city's social calendar, where residents and visitors alike don elaborate masks and costumes to celebrate their mastery of shadow magic. In Mysticshroud, secrets are currency, and knowledge of shadowy mysteries is highly valued. The city is also known for its elaborate shadow puppetry performances, where stories are told using intricate shadow projections. While the city's culture may seem mysterious to outsiders, its residents are welcoming and eager to share their unique talents. The Temple of Shar, the goddess of darkness, stands as the city's religious center, and her followers often perform shadowy rituals to maintain the city's connection to the Plane of Shadow. As you traverse Mysticshroud's twisting pathways, you can't help but feel the allure of shadow and magic that permeates every corner of this enigmatic city. It is a place where light and darkness dance in perpetual harmony, offering a unique and captivating experience to all who dare to explore its secrets.",
+        "Place Is Known For" : "the annual Shadow Masquerade",
+        "Amount Of Land" : "600 acres",
+        "Population" : 18000,
+        "Number of Buildings" : 3000,
+        "Crime Rate" : "5%",
+        "Neighboring Cities And Towns" : {
             "Umbral Hollow" : "20 miles north",
             "Shadowfen" : "15 miles east",
             "Ebonvale" : "25 miles southwest",
             "Abyssal Enclave" : "40 miles south",
             "Twilight's End" : "10 miles west",
         },
-        "5 terrain features" : [
+        "Terrain Features" : [
             "Obsidian spires rising from the cavern floor",
             "Will-o'-the-wisps illuminating the city's streets",
             "Perpetual twilight enveloping the city",
             "Shifting and morphing buildings influenced by shadow magic",
             "Shadowy bridges connecting different parts of the city",
         ],
-        "5 key features" : [
+        "Key Features" : [
             "Shadowheart Citadel, the ruling council's fortress",
             "The Shadow Masquerade, an annual festival of shadow magic",
             "The Midnight Bazaar, a market specializing in shadow-infused goods",
             "Shadow Puppetry Theaters, where stories are told through shadows",
             "The Hall of Whispers, a place for sharing and collecting secrets",
         ],
-        "5 local lores" : [
+        "Local Lores" : [
             "A hidden portal to the Plane of Shadow lies beneath the city",
             "The Shadowheart Council wields immense power over the city's shadows",
             "Mysticshroud's gems are infused with the essence of darkness",
             "Shadowmages can manipulate reality with their shadow magic",
             "A legendary shadow dragon is rumored to protect the city's secrets",
         ],
-        "5 popular people" : {
+        "Popular People" : {
             "Lady Nightshade" : "Head of the Shadowheart Council",
             "Thorn Shadowcaster" : "Renowned shadowmancer and performer",
             "Ebon Whisperer" : "Master of shadow puppetry",
             "Nocturna, the Enigmatic" : "Mysterious figure known for her cryptic prophecies",
             "Shadowfang" : "Legendary shadow dragon guardian",
         },
-        "5 top religions" : [
+        "Top Religions" : [
             "Shar",
             "Mask",
             "Velsharoon",
             "Kiaransalee",
             "Loviatar"
         ],
-        "5 little-known secrets" : [
+        "Little Known Secrets" : [
             "The city's obsidian spires are connected by a web of shadowy walkways",
             "A hidden library contains forbidden tomes on shadow magic",
             "Mysticshroud's gems can reveal glimpses of other realms",
             "Shadowmancers hold an annual competition to test their skills",
             "The city's shadows have a mind of their own, guiding travelers",
         ],
-        "5 areas you should avoid" : [
+        "Areas You Should Avoid" : [
             "The Abyssal Abyss, a bottomless chasm of darkness",
             "The Whispering Shadows, where shadowy spirits lurk",
             "The Labyrinthine Tunnels, a maze of shifting passages",
             "The Veil of Eternal Night, a place of perpetual darkness",
             "The Shadowspire Summit, where dangerous rituals are performed",
         ],
-        "5 areas best to visit" : [
+        "Areas Best To Visit" : [
             "The Obsidian Plaza, a central gathering place for residents",
             "The Hall of Whispers, where secrets are exchanged",
             "The Midnight Bazaar, offering unique shadow-infused goods",
             "The Temple of Shar, a place of worship and shadowy rituals",
             "The Twilight Gardens, where rare shadowy flora bloom",
         ],
-        "races" : {
+        "Race Makeup" : {
             "Elf" : "20%",
             "Human" : "30%",
             "Tiefling" : "15%",
@@ -1774,7 +1794,7 @@ dnd_cities = {
             "Half-Elf" : "2%",
             "Other" : "10%",
         },
-        "classes" : {
+        "Classes Makeup" : {
             "Wizard" : "15%",
             "Sorcerer" : "10%",
             "Warlock" : "20%",
@@ -1786,12 +1806,12 @@ dnd_cities = {
             "Monk" : "5%",
             "Other" : "10%",
         },
-        "annual income" : {
+        "Annual Income" : {
             "top 10% earners" : "700,000 gp",
             "bottom 10% earners" : "150 gp",
             "median earners" : "40,000 gp",
         },
-        "shops" : {
+        "Shops" : {
             "Shrouded Treasures" : 12,
             "Eternal Shadows Emporium" : 8,
             "Whispering Wares" : 10,
@@ -1805,7 +1825,7 @@ dnd_cities = {
             "Darkness & Dreams" : 4,
             "Ebon Shrouds" : 5,
         },
-        "services" : {
+        "Services" : {
             "Shadowheart Citadel Council Services" : 10,
             "Shrouded Inns and Taverns" : 15,
             "Shadowmancer's Guild" : 5,
@@ -1876,79 +1896,81 @@ dnd_cities = {
             25: "Visitors often wear shadow-themed clothing and accessories to blend in with the city's atmosphere.",
         },
     },
-    "frostholm" : {
-        "name" : "Frostholm",
-        "description" : "Frostholm, also known as the Glacial Citadel, is a majestic city nestled high in the icy peaks of the northern mountains. The city is renowned for its breathtaking vistas and the resilience of its inhabitants, who have adapted to the harsh, frozen environment.",
-        "narrative" : "Frostholm, the Glacial Citadel, stands as a testament to the indomitable spirit of its people. Perched high in the icy peaks of the northern mountains, this majestic city is a sight to behold. As you approach Frostholm, you're greeted by towering glaciers and snow-capped peaks that glisten in the sunlight. The city's architecture, carved from the very ice and stone of the mountains, exudes a sense of grandeur and strength. Massive ice sculptures depicting heroic figures and mythical creatures adorn the city's plazas. Frostholm's population has adapted to the harsh, frozen environment, with thick furs and cold-resistant magic being commonplace. The city's economy thrives on the mining of precious gems and minerals from the mountain's depths, as well as ice-magic-infused crafts that are highly sought after throughout the realm. Life in Frostholm is marked by its unwavering determination to survive and prosper in the face of adversity. The city is a hub of innovation in ice and frost magic, with enchanters and frostweavers crafting powerful spells and magical items. The annual Frost Festival, held during the peak of winter, features ice sculpting competitions, grand feasts, and daring ice-skating races on frozen lakes. The city is known for its Order of the Frostwardens, a group of elite warriors who protect Frostholm from external threats, including frost giants and ice dragons. The Temple of Auril, the Frostmaiden, is a prominent religious institution, and the city's residents offer prayers for her blessing to endure the harsh climate. Frostholm's remote location has led to a strong sense of self-reliance and resilience among its people. The city is governed by a council of elder frost mages, who harness the power of the glaciers to protect and sustain the city. Secrets lie buried beneath the ice, and rumors persist of ancient, frozen crypts that hold untold treasures and mysteries. Frostholm may be isolated, but it stands as a beacon of strength and ingenuity in the heart of the frozen north.",
-        "place is known for" : "the annual Frost Festival",
-        "amount of land" : "600 acres",
-        "population" : 12000,
-        "number of buildings" : 1800,
-        "crime rate" : "2%",
-        "Neighboring cities and towns" : {
+
+
+    "Frostholm" : {
+        "Name" : "Frostholm",
+        "Description" : "Frostholm, also known as the Glacial Citadel, is a majestic city nestled high in the icy peaks of the northern mountains. The city is renowned for its breathtaking vistas and the resilience of its inhabitants, who have adapted to the harsh, frozen environment.",
+        "Narrative" : "Frostholm, the Glacial Citadel, stands as a testament to the indomitable spirit of its people. Perched high in the icy peaks of the northern mountains, this majestic city is a sight to behold. As you approach Frostholm, you're greeted by towering glaciers and snow-capped peaks that glisten in the sunlight. The city's architecture, carved from the very ice and stone of the mountains, exudes a sense of grandeur and strength. Massive ice sculptures depicting heroic figures and mythical creatures adorn the city's plazas. Frostholm's population has adapted to the harsh, frozen environment, with thick furs and cold-resistant magic being commonplace. The city's economy thrives on the mining of precious gems and minerals from the mountain's depths, as well as ice-magic-infused crafts that are highly sought after throughout the realm. Life in Frostholm is marked by its unwavering determination to survive and prosper in the face of adversity. The city is a hub of innovation in ice and frost magic, with enchanters and frostweavers crafting powerful spells and magical items. The annual Frost Festival, held during the peak of winter, features ice sculpting competitions, grand feasts, and daring ice-skating races on frozen lakes. The city is known for its Order of the Frostwardens, a group of elite warriors who protect Frostholm from external threats, including frost giants and ice dragons. The Temple of Auril, the Frostmaiden, is a prominent religious institution, and the city's residents offer prayers for her blessing to endure the harsh climate. Frostholm's remote location has led to a strong sense of self-reliance and resilience among its people. The city is governed by a council of elder frost mages, who harness the power of the glaciers to protect and sustain the city. Secrets lie buried beneath the ice, and rumors persist of ancient, frozen crypts that hold untold treasures and mysteries. Frostholm may be isolated, but it stands as a beacon of strength and ingenuity in the heart of the frozen north.",
+        "Place Is Known For" : "the annual Frost Festival",
+        "Amount Of Land" : "600 acres",
+        "Population" : 12000,
+        "Number of Buildings" : 1800,
+        "Crime Rate" : "2%",
+        "Neighboring Cities And Towns" : {
             "Glacialhaven" : "15 miles south",
             "Frostpeak Outpost" : "40 miles east",
             "Icewind Hamlet" : "30 miles northwest",
             "Aurora's Rest" : "50 miles west",
             "Frostfall Village" : "25 miles northeast",
         },
-        "5 terrain features" : [
+        "Terrain Features" : [
             "towering glaciers and snow-capped peaks",
             "ice sculptures of heroic figures and mythical creatures",
             "frozen lakes used for ice-skating races during the Frost Festival",
             "hidden ice caves with ancient secrets",
             "magic-infused frost crystals that illuminate the city at night",
         ],
-        "5 key features" : [
+        "Key Features" : [
             "Order of the Frostwardens' Citadel",
             "Enchanter's Guild of Ice and Frost Magic",
             "Temple of Auril, the Frostmaiden",
             "Glacial Gem Emporium",
             "Frostweaver's Academy of Magical Arts",
         ],
-        "5 local lores" : [
+        "Local Lores" : [
             "Ancient frost giants once ruled the northern mountains and left hidden relics behind.",
             "The glaciers hold mysterious ice crypts said to contain ancient knowledge and power.",
             "The city's enchanters craft weapons and armor infused with ice magic, prized throughout the realm.",
             "Frostholm's ice sculptures are said to come to life during the Frost Festival, granting visions of the past.",
             "The Order of the Frostwardens protects the city from threats lurking in the frozen wilderness.",
         ],
-        "5 popular people" : {
+        "Popular People" : {
             "High Frostwarden Sylas" : "Leader of the Order of the Frostwardens",
             "Elsa Iceheart" : "Renowned ice sculptor and Frost Festival champion",
             "Aurius Frostweaver" : "Master enchanter and head of the Enchanter's Guild",
             "Sister Freya" : "Devout priestess of Auril, known for her prophetic dreams",
             "Ivar Frostbeard" : "Famed gem merchant and owner of the Glacial Gem Emporium",
         },
-        "5 top religions" : [
+        "Top Religions" : [
             "Auril, the Frostmaiden",
             "Tempus",
             "Shar",
             "Amaunator",
             "Kelemvor",
         ],
-        "5 little-known secrets" : [
+        "Little Known Secrets" : [
             "Beneath the city lies an ancient, frozen labyrinth filled with traps and mysteries.",
             "Frostholm's glaciers hide veins of enchanted sapphire, the city's most prized gem.",
             "The Order of the Frostwardens secretly studies ancient frost giant lore to protect the city.",
             "The Enchanter's Guild experiments with frost magic, creating powerful and unique artifacts.",
             "A network of underground tunnels connects key locations in the city, used for secret travel.",
         ],
-        "5 areas you should avoid" : [
+        "Areas You Should Avoid" : [
             "The Whispering Caverns, where eerie echoes and strange apparitions disturb the peace.",
             "The Frostbite Pass, a treacherous mountain route plagued by avalanches and ice trolls.",
             "The Frozen Abyss, a chasm with deadly cold winds and mysterious disappearances.",
             "The Glacier's Edge, where territorial ice dragons guard their lairs.",
             "The Crypts of Eternal Frost, said to house the frozen remains of ancient giants and horrors.",
         ],
-        "5 areas best to visit" : [
+        "Areas Best To Visit" : [
             "The Crystal Plaza, adorned with stunning ice sculptures and offering panoramic views of the mountains.",
             "The Frostweaver's Academy, where aspiring mages master the art of frost magic.",
             "The Glacial Gem Emporium, a treasure trove of exquisite, magical gemstones.",
             "The Temple of Auril, a place of serene beauty and religious contemplation.",
             "The Frostwarden's Citadel, a fortress atop a glacier with a commanding view of the city.",
         ],
-        "races" : {
+        "Race Makeup" : {
             "Dwarf" : "30%",
             "Human" : "20%",
             "Goliath" : "15%",
@@ -1959,7 +1981,7 @@ dnd_cities = {
             "Aarakocra" : "2%",
             "Other" : "3%",
         },
-        "classes" : {
+        "Classes Makeup" : {
             "Barbarian" : "5%",
             "Bard" : "2%",
             "Cleric" : "8%",
@@ -1974,12 +1996,12 @@ dnd_cities = {
             "Wizard" : "8%",
             "Other" : "5%",
         },
-        "annual income" : {
+        "Annual Income" : {
             "top 10% earners" : "700,000 gp",
             "bottom 10% earners" : "50 gp",
             "median earners" : "20,000 gp",
         },
-        "shops" : {
+        "Shops" : {
             "Glacial Forges" : 8,
             "Auril's Blessings" : 12,
             "Frostweaver's Enchantments" : 15,
@@ -1993,7 +2015,7 @@ dnd_cities = {
             "Chillfire Crystals" : 4,
             "Dwarven Delights" : 3,
         },
-        "services" : {
+        "Services" : {
             "Order of the Frostwardens' Training Hall" : 10,
             "Taverns of Warmth" : 12,
             "Frostweaver's Apothecary" : 5,
@@ -2063,79 +2085,81 @@ dnd_cities = {
             25: "The city's natural hot springs provide a rejuvenating experience in the midst of the icy peaks."
         },
     },
-    "mysticgrove": {
-        "name": "Mysticgrove",
-        "description": "Mysticgrove is a hidden city concealed within a dense, mystical forest. The city is shrouded in an aura of enchantment, where arcane energies flow through every corner, and secrets are whispered among ancient trees.",
-        "narrative": "Mysticgrove, the city concealed within an enigmatic forest, beckons to those who seek the arcane mysteries hidden within nature's embrace. As you approach, the forest itself seems to guide you, revealing the hidden path to this mystical sanctuary. The city's buildings are constructed from living wood, shaped and grown by the skilled hands of druids and wizards. Bioluminescent mushrooms and enchanted flowers provide an otherworldly glow that bathes the city in an ethereal light after nightfall. The heart of Mysticgrove is the Crystal Nexus, a massive crystal formation that resonates with arcane power. It is said that the city's magic flows from this ancient artifact, and it is protected by the Circle of Arcane Guardians. The city's residents are deeply attuned to magic, and the air is filled with the soft hum of spells being cast. Arcane shops and mystical academies thrive here, attracting spellcasters from all corners of the world who seek to unravel the city's magical secrets. Mysticgrove is a place where arcane scholars, druids, and sorcerers come together to push the boundaries of magical knowledge. The annual Arcane Convergence draws wizards, warlocks, and other magic users to showcase their abilities and exchange spells and arcane lore. The city's government, known as the Council of Mystics, is composed of powerful spellcasters who govern with wisdom and arcane mastery. The Temple of Mystra, the goddess of magic, stands as the central place of worship, and its grand spires reach towards the sky, channeling magical energy from the heavens. As you explore Mysticgrove, you'll find that every corner of the city holds secrets and mysteries, waiting to be uncovered by those who dare to delve into the depths of arcane knowledge.",
-        "place is known for": "the Crystal Nexus",
-        "amount of land": "700 acres",
-        "population": 18000,
-        "number of buildings": 3000,
-        "crime rate": "2%",
-        "Neighboring cities and towns": {
+
+
+    "Mysticgrove": {
+        "Name": "Mysticgrove",
+        "Description": "Mysticgrove is a hidden city concealed within a dense, mystical forest. The city is shrouded in an aura of enchantment, where arcane energies flow through every corner, and secrets are whispered among ancient trees.",
+        "Narrative": "Mysticgrove, the city concealed within an enigmatic forest, beckons to those who seek the arcane mysteries hidden within nature's embrace. As you approach, the forest itself seems to guide you, revealing the hidden path to this mystical sanctuary. The city's buildings are constructed from living wood, shaped and grown by the skilled hands of druids and wizards. Bioluminescent mushrooms and enchanted flowers provide an otherworldly glow that bathes the city in an ethereal light after nightfall. The heart of Mysticgrove is the Crystal Nexus, a massive crystal formation that resonates with arcane power. It is said that the city's magic flows from this ancient artifact, and it is protected by the Circle of Arcane Guardians. The city's residents are deeply attuned to magic, and the air is filled with the soft hum of spells being cast. Arcane shops and mystical academies thrive here, attracting spellcasters from all corners of the world who seek to unravel the city's magical secrets. Mysticgrove is a place where arcane scholars, druids, and sorcerers come together to push the boundaries of magical knowledge. The annual Arcane Convergence draws wizards, warlocks, and other magic users to showcase their abilities and exchange spells and arcane lore. The city's government, known as the Council of Mystics, is composed of powerful spellcasters who govern with wisdom and arcane mastery. The Temple of Mystra, the goddess of magic, stands as the central place of worship, and its grand spires reach towards the sky, channeling magical energy from the heavens. As you explore Mysticgrove, you'll find that every corner of the city holds secrets and mysteries, waiting to be uncovered by those who dare to delve into the depths of arcane knowledge.",
+        "Place Is Known For": "the Crystal Nexus",
+        "Amount Of Land": "700 acres",
+        "Population": 18000,
+        "Number of Buildings": 3000,
+        "Crime Rate": "2%",
+        "Neighboring Cities And Towns": {
             "Eldertree": "15 miles northeast",
             "Gloomwood": "25 miles west",
             "Aetherbrook": "40 miles south",
             "Wyrmspire": "50 miles north",
             "Moonshadow Hollow": "10 miles southeast",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Enchanted waterfalls that shimmer with magical energies",
             "Mystical groves where the trees move and rearrange themselves",
             "Astral bridges that connect distant parts of the city",
             "Glowing runic symbols etched into the ground, creating magical pathways",
             "Sentient talking animals that serve as guides and messengers",
         ],
-        "5 key features": [
+        "Key Features": [
             "The Crystal Nexus, the source of the city's arcane power",
             "The Arcane Convergence, an annual gathering of magic users",
             "The Crystal Arcanum, a library of ancient and rare spellbooks",
             "The Circle of Arcane Guardians, protectors of the Crystal Nexus",
             "The Astral Observatory, where the skies and stars are studied for divination",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Crystal Nexus holds the memories of every mage who ever lived in the city",
             "A hidden portal to the Plane of Magic can be found deep within the forest",
             "The Crystal Arcanum contains a forbidden section of dark and dangerous spells",
             "The Council of Mystics consults with powerful extraplanar beings for guidance",
             "A mythical Archmage's Tower is said to grant immense power to its discoverer",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Archmage Seraphina": "Leader of the Council of Mystics",
             "Thalindra the Enchantress": "Renowned sorceress known for her magical performances",
             "Elandar Moonshadow": "Druidic Elder who communes with the spirits of the forest",
             "Nyxarion Shadowweaver": "Warlock with a pact to an otherworldly patron",
             "Professor Aelarion": "Scholar specializing in the study of planar magic",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Mystra",
             "Corellon Larethian",
             "Savras",
             "Azuth",
             "Sehanine Moonbow",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The Crystal Nexus is a gateway to other planes of existence",
             "A hidden council of ancient elementals influences the city's policies",
             "The city's sewers are enchanted to clean themselves and dispose of waste harmlessly",
             "Mysticgrove's magical aura grants residents extended lifespans",
             "The Astral Observatory's telescopes can predict future magical events",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Bewitched Thicket, where illusions can lead travelers astray",
             "The Cursed Pools, whose waters can bring strange curses to those who touch them",
             "The Arcane Abyss, a chasm filled with wild magic surges",
             "The Shadowed Grove, inhabited by mysterious and reclusive spellcasters",
             "The Echoing Woods, where sound is twisted and distorted, disorienting visitors",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Crystal Nexus Plaza, a central hub of magical activity",
             "The Astral Observatory's celestial garden, offering a stunning view of the night sky",
             "The Crystal Arcanum's Forbidden Section, filled with forbidden knowledge",
             "The Enchanted Waterfalls, known for their calming and rejuvenating properties",
             "The Council of Mystics' Chamber, where the city's leaders make important decisions",
         ],
-        "races": {
+        "Race Makeup": {
             "Elf": "30%",
             "Human": "20%",
             "Gnome": "15%",
@@ -2146,7 +2170,7 @@ dnd_cities = {
             "Genasi": "2%",
             "Other": "3%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Wizard": "25%",
             "Sorcerer": "15%",
             "Druid": "12%",
@@ -2160,12 +2184,12 @@ dnd_cities = {
             "Ranger": "2%",
             "Other": "8%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "900,000 gp",
             "bottom 10% earners": "150 gp",
             "median earners": "40,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Arcane Emporium": 10,
             "Enchanted Tomes and Scrolls": 15,
             "Mystical Elixirs and Potions": 12,
@@ -2179,7 +2203,7 @@ dnd_cities = {
             "Magical Beasts Menagerie": 5,
             "Artificer's Gadgets and Gizmos": 2,
         },
-        "services": {
+        "Services": {
             "Arcane Guildhall": 10,
             "Mystical Taverns and Inns": 15,
             "Transmutation Specialists": 5,
@@ -2251,78 +2275,80 @@ dnd_cities = {
             25: "The city's natural hot springs are said to have rejuvenating properties, attracting nature enthusiasts and spellcasters alike.",
         },
     },
-    "verdanthaven" : {
-        "name" : "Verdanthaven",
-        "description" : "Verdanthaven, often called the Garden Oasis, is a breathtaking city located within a massive, mystical greenhouse. The city thrives in a climate of perpetual spring, surrounded by towering plants and vibrant flora.",
-        "narrative" : "Verdanthaven, known as the Garden Oasis, is a city like no other. Nestled within a colossal, mystical greenhouse, it thrives in an eternal springtime. The city's architecture weaves seamlessly with the towering plants and vibrant flora that surround it. As you approach Verdanthaven, you are greeted by a lush wall of emerald vines and radiant flowers, forming an inviting gateway into this paradise of greenery. Inside the city, massive petals serve as awnings over bustling marketplaces, and ivy-covered walkways lead you through the enchanting streets. Verdanthaven is a place where nature's beauty reigns supreme, and life flourishes in harmony with the botanical wonders that envelope it. The heart of the city is the Grand Conservatory, a breathtaking dome filled with exotic plants and magical trees that provide shelter and sustenance for the inhabitants. In Verdanthaven, the line between civilization and wilderness is blurred. The residents have a unique bond with the natural world, able to communicate with plants and harness their magical properties. At the center of the city stands the Blossom Citadel, a towering structure where the Council of Druids convenes to ensure the city's prosperity and protect it from threats. Visitors and residents alike gather at the Petal Plaza, a bustling hub of activity where merchants sell rare herbs, vibrant flowers, and botanical elixirs. The annual Garden Festival is a highlight of Verdanthaven, featuring floral parades, contests of gardening prowess, and performances by druidic minstrels who can coax melodies from living flora. As you explore Verdanthaven's streets, you'll discover hidden groves where portals to the Feywild beckon adventurers, and rumors abound of ancient treants who silently influence the city's fate. The Temple of Chauntea, a sanctuary of growth and harvest, stands as a testament to the city's devotion to the natural world. Verdanthaven is a place where nature's wonders are celebrated, and every day is a reminder of the beauty that can be found in the heart of the Garden Oasis.",
-        "place is known for" : "the annual Garden Festival",
-        "amount of land" : "1000 acres",
-        "population" : 18000,
-        "number of buildings" : 3000,
-        "crime rate" : "2%",
-        "Neighboring cities and towns" : {
+
+
+    "Verdanthaven" : {
+        "Name" : "Verdanthaven",
+        "Description" : "Verdanthaven, often called the Garden Oasis, is a breathtaking city located within a massive, mystical greenhouse. The city thrives in a climate of perpetual spring, surrounded by towering plants and vibrant flora.",
+        "Narrative" : "Verdanthaven, known as the Garden Oasis, is a city like no other. Nestled within a colossal, mystical greenhouse, it thrives in an eternal springtime. The city's architecture weaves seamlessly with the towering plants and vibrant flora that surround it. As you approach Verdanthaven, you are greeted by a lush wall of emerald vines and radiant flowers, forming an inviting gateway into this paradise of greenery. Inside the city, massive petals serve as awnings over bustling marketplaces, and ivy-covered walkways lead you through the enchanting streets. Verdanthaven is a place where nature's beauty reigns supreme, and life flourishes in harmony with the botanical wonders that envelope it. The heart of the city is the Grand Conservatory, a breathtaking dome filled with exotic plants and magical trees that provide shelter and sustenance for the inhabitants. In Verdanthaven, the line between civilization and wilderness is blurred. The residents have a unique bond with the natural world, able to communicate with plants and harness their magical properties. At the center of the city stands the Blossom Citadel, a towering structure where the Council of Druids convenes to ensure the city's prosperity and protect it from threats. Visitors and residents alike gather at the Petal Plaza, a bustling hub of activity where merchants sell rare herbs, vibrant flowers, and botanical elixirs. The annual Garden Festival is a highlight of Verdanthaven, featuring floral parades, contests of gardening prowess, and performances by druidic minstrels who can coax melodies from living flora. As you explore Verdanthaven's streets, you'll discover hidden groves where portals to the Feywild beckon adventurers, and rumors abound of ancient treants who silently influence the city's fate. The Temple of Chauntea, a sanctuary of growth and harvest, stands as a testament to the city's devotion to the natural world. Verdanthaven is a place where nature's wonders are celebrated, and every day is a reminder of the beauty that can be found in the heart of the Garden Oasis.",
+        "Place Is Known For" : "the annual Garden Festival",
+        "Amount Of Land" : "1000 acres",
+        "Population" : 18000,
+        "Number of Buildings" : 3000,
+        "Crime Rate" : "2%",
+        "Neighboring Cities And Towns" : {
             "Bloomhaven" : "15 miles south",
             "Thornwood" : "25 miles east",
             "Crystalbrook" : "10 miles west",
             "Vinedale" : "40 miles north",
         },
-        "5 terrain features" : [
+        "Terrain Features" : [
             "massive petals serving as awnings over marketplaces",
             "towering, mystical greenhouse enveloping the entire city",
             "ivy-covered walkways leading through the streets",
             "hidden groves with portals to the Feywild",
             "the Grand Conservatory, a colossal dome filled with exotic plants",
         ],
-        "5 key features" : [
+        "Key Features" : [
             "Petal Plaza, a bustling hub of botanical commerce",
             "Blossom Citadel, where the Council of Druids convenes",
             "The Garden Festival, a yearly celebration of nature's beauty",
             "Council of Druids' Grove, a sacred grove of ancient trees",
             "The Temple of Chauntea, a sanctuary of growth and harvest",
         ],
-        "5 local lores" : [
+        "Local Lores" : [
             "A mythical Fountain of Bloom is said to grant eternal youth to those who find it",
             "The city was founded by a reclusive archdruid who communed with the spirits of plants",
             "The Grand Conservatory's oldest tree holds the knowledge of the city's history",
             "Mysterious creatures known as 'Blossom Guardians' protect the city's secrets",
             "A hidden treasure is rumored to be buried beneath the roots of a colossal fern",
         ],
-        "5 popular people" : {
+        "Popular People" : {
             "Archdruid Thalara" : "Leader of the Council of Druids",
             "Aelar the Verdant Bard" : "Renowned bard known for songs that make plants grow",
             "Briar Rose" : "Master gardener and expert on mystical plants",
             "Verdelia the Shapeshifter" : "Druid with the power to transform into any plant",
             "Professor Ivythorn" : "Scholar specializing in the study of magical trees",
         },
-        "5 top religions" : [
+        "Top Religions" : [
             "Chauntea",
             "Mielikki",
             "Silvanus",
             "Ehlonna",
             "Obad-Hai",
         ],
-        "5 little-known secrets" : [
+        "Little Known Secrets" : [
             "The city's protective wards are maintained by the spirits of ancient trees",
             "A hidden council of treants influences the city's policies",
             "Verdanthaven's sewers are home to a colony of friendly forest creatures",
             "Local protectors of nature secretly work as herbalists and apothecaries",
             "The Grand Conservatory's flora is connected to the Feywild, granting unique magic",
         ],
-        "5 areas you should avoid" : [
+        "Areas You Should Avoid" : [
             "The Thorned Thicket, where carnivorous plants and dangerous creatures roam",
             "The Whispering Glade, a serene place where eerie whispers unsettle visitors",
             "The Tangled Undergrowth, a maze-like area with treacherous terrain",
             "The Enchanted Pool, inhabited by elusive water nymphs and guardian spirits",
             "The Fey Archway, a portal to the Feywild that can be unpredictable",
         ],
-        "5 areas best to visit" : [
+        "Areas Best To Visit" : [
             "The Grove of Tranquility, a serene place for meditation and reflection",
             "The Conservatory Archive, housing ancient botanical tomes and knowledge",
             "The Herbalists' Haven, where rare herbs and magical plants are cultivated",
             "The Radiant Arboretum, a garden of luminescent flora that glows at night",
             "The Bardic Amphitheater, where bards perform music that makes plants flourish",
         ],
-        "races" : {
+        "Race Makeup" : {
             "Elf" : "35%",
             "Human" : "20%",
             "Halfling" : "15%",
@@ -2334,7 +2360,7 @@ dnd_cities = {
             "Tiefling" : "2%",
             "Other" : "5%",
         },
-        "classes" : {
+        "Classes Makeup" : {
             "Barbarian" : "1%",
             "Bard" : "5%",
             "Cleric" : "5%",
@@ -2349,12 +2375,12 @@ dnd_cities = {
             "Wizard" : "2%",
             "Other" : "5%",
         },
-        "annual income" : {
+        "Annual Income" : {
             "top 10% earners" : "850,000 gp",
             "bottom 10% earners" : "120 gp",
             "median earners" : "35,000 gp",
         },
-        "shops" : {
+        "Shops" : {
             "Blossom Bazaar" : 12,
             "Verdant Enchantments" : 10,
             "Botanical Potions and Elixirs" : 15,
@@ -2368,7 +2394,7 @@ dnd_cities = {
             "Floral Alchemy" : 5,
             "Fey-Touched Trinkets" : 3,
         },
-        "services" : {
+        "Services" : {
             "Druidic Council Hall" : 10,
             "Taverns of Blossom Beauty" : 12,
             "Nature's Stables" : 6,
@@ -2439,79 +2465,81 @@ dnd_cities = {
             25: "The city's natural hot springs are said to have rejuvenating properties, attracting nature enthusiasts and druids alike.",
         },
     },
-    "verdanthal" : {
-        "name" : "Verdanthal",
-        "description" : "Verdanthal, often called the City of Gears, is a sprawling metropolis where magic and machinery intertwine. It stands as a testament to innovation and engineering, with towering clockwork spires and arcane factories that belch smoke and steam.",
-        "narrative" : "Verdanthal, known far and wide as the City of Gears, is a bustling metropolis where the realms of magic and machinery intertwine. As you approach the city, towering clockwork spires dominate the skyline, their intricate gears and cogs turning in unison, creating a mesmerizing symphony of motion. The city's streets are a network of cobbled pathways illuminated by the soft glow of magical lanterns and the fiery furnaces of arcane factories. The air is thick with the scent of steam and machinery, and the city's denizens move with purpose, their lives intricately woven into the fabric of this mechanized wonder. The heart of Verdanthal is the Grand Mechanica, a colossal clockwork palace where the ruling Archmagister resides, overseeing both the magical and mechanical aspects of the city. Verdanthal is a place of constant innovation, where inventors and engineers work tirelessly to create ever more intricate and fantastical devices. The city's Clockwork College is renowned for its mastery of magical automation, and its students can often be seen riding enchanted broomsticks above the bustling streets. In Verdanthal, magic is not merely a tool but an integral part of daily life. The city's Elemental Forges harness the power of the elements to fuel the machinery that powers the city, and enchanted golems assist in various tasks, from construction to law enforcement. Verdanthal is not without its challenges, however. The city's towering spires cast long shadows, and rumors persist of a secret underground rebellion seeking to overthrow the Archmagister's rule. The Temple of Mystra, the goddess of magic, is a place of solace for those who seek guidance in this mechanized world. The city's clockwork economy is meticulously managed, with a complex system of gears and levers ensuring that every cog in the machine runs smoothly. Verdanthal is known for its annual Inventor's Expo, a grand event where inventors from all corners of the realm gather to showcase their latest creations. The city's clockwork guardians, known as the Iron Sentinels, protect its borders and ensure the safety of its citizens. As you wander through Verdanthal's bustling streets, you can't help but marvel at the intricate dance of magic and machinery that defines this extraordinary city. It is a place where innovation knows no bounds, where the future unfolds with every turn of a cog and twist of a spell.",
-        "place is known for" : "the annual Inventor's Expo",
-        "amount of land" : "1200 acres",
-        "population" : 25000,
-        "number of buildings" : 3500,
-        "crime rate" : "7%",
-        "Neighboring cities and towns" : {
+
+
+    "Verdanthal" : {
+        "Name" : "Verdanthal",
+        "Description" : "Verdanthal, often called the City of Gears, is a sprawling metropolis where magic and machinery intertwine. It stands as a testament to innovation and engineering, with towering clockwork spires and arcane factories that belch smoke and steam.",
+        "Narrative" : "Verdanthal, known far and wide as the City of Gears, is a bustling metropolis where the realms of magic and machinery intertwine. As you approach the city, towering clockwork spires dominate the skyline, their intricate gears and cogs turning in unison, creating a mesmerizing symphony of motion. The city's streets are a network of cobbled pathways illuminated by the soft glow of magical lanterns and the fiery furnaces of arcane factories. The air is thick with the scent of steam and machinery, and the city's denizens move with purpose, their lives intricately woven into the fabric of this mechanized wonder. The heart of Verdanthal is the Grand Mechanica, a colossal clockwork palace where the ruling Archmagister resides, overseeing both the magical and mechanical aspects of the city. Verdanthal is a place of constant innovation, where inventors and engineers work tirelessly to create ever more intricate and fantastical devices. The city's Clockwork College is renowned for its mastery of magical automation, and its students can often be seen riding enchanted broomsticks above the bustling streets. In Verdanthal, magic is not merely a tool but an integral part of daily life. The city's Elemental Forges harness the power of the elements to fuel the machinery that powers the city, and enchanted golems assist in various tasks, from construction to law enforcement. Verdanthal is not without its challenges, however. The city's towering spires cast long shadows, and rumors persist of a secret underground rebellion seeking to overthrow the Archmagister's rule. The Temple of Mystra, the goddess of magic, is a place of solace for those who seek guidance in this mechanized world. The city's clockwork economy is meticulously managed, with a complex system of gears and levers ensuring that every cog in the machine runs smoothly. Verdanthal is known for its annual Inventor's Expo, a grand event where inventors from all corners of the realm gather to showcase their latest creations. The city's clockwork guardians, known as the Iron Sentinels, protect its borders and ensure the safety of its citizens. As you wander through Verdanthal's bustling streets, you can't help but marvel at the intricate dance of magic and machinery that defines this extraordinary city. It is a place where innovation knows no bounds, where the future unfolds with every turn of a cog and twist of a spell.",
+        "Place Is Known For" : "the annual Inventor's Expo",
+        "Amount Of Land" : "1200 acres",
+        "Population" : 25000,
+        "Number of Buildings" : 3500,
+        "Crime Rate" : "7%",
+        "Neighboring Cities And Towns" : {
             "Steamhaven" : "15 miles north",
             "Gearforge" : "20 miles east",
             "Clockwork Hollow" : "10 miles south",
             "Magitech Enclave" : "25 miles west",
             "Cogsworth Outpost" : "5 miles northwest",
         },
-        "5 terrain features" : [
+        "Terrain Features" : [
             "Towering clockwork spires dominating the skyline",
             "Intricate network of cobbled pathways",
             "Soft glow of magical lanterns illuminating the streets",
             "Scent of steam and machinery in the air",
             "Arcane factories with fiery furnaces belching smoke and steam",
         ],
-        "5 key features" : [
+        "Key Features" : [
             "Grand Mechanica, the colossal clockwork palace",
             "Clockwork College specializing in magical automation",
             "Elemental Forges harnessing elemental power for machinery",
             "Temple of Mystra, offering solace in a mechanized world",
             "Iron Sentinels, the city's clockwork guardians",
         ],
-        "5 local lores" : [
+        "Local Lores" : [
             "The Archmagister possesses a mysterious artifact of immense power",
             "A hidden underground rebellion seeks to overthrow the ruling council",
             "The Elemental Forges are fueled by captured elemental spirits",
             "Enchanted golems serve as tireless laborers and protectors",
             "The Clockwork College is working on a groundbreaking invention",
         ],
-        "5 popular people" : {
+        "Popular People" : {
             "Archmagister Gearwind" : "Ruler of Verdanthal and master of magic and machinery",
             "Inventor Tinkermage" : "Renowned inventor with a penchant for ingenious contraptions",
             "Cogsworth the Clocksmith" : "Master craftsman responsible for the city's grand timepieces",
             "Magitech Artificer Arcana" : "Magical engineer known for creating wondrous devices",
             "Steamblade, the Iron Sentinel Commander" : "Leader of the city's clockwork guardians",
         },
-        "5 top religions" : [
+        "Top Religions" : [
             "Mystra",
             "Gond",
             "Moradin",
             "Ioun",
             "Erathis",
         ],
-        "5 little-known secrets" : [
+        "Little Known Secrets" : [
             "The Archmagister's palace is rumored to contain a portal to another realm",
             "A powerful underground organization known as the Cog Syndicate controls the city's economy",
             "Clockwork spies disguised as automatons gather information for the ruling council",
             "The Elemental Forges are maintained by skilled elemental binders",
             "The city's clockwork technology is gradually replacing traditional magic",
         ],
-        "5 areas you should avoid" : [
+        "Areas You Should Avoid" : [
             "The Geargraveyards, where malfunctioning constructs roam",
             "The Steamworks Slums, a lawless district ruled by crime lords",
             "The Golem Foundry, a dangerous area filled with experimental golems",
             "The Abyssal Quarter, where forbidden experiments take place",
             "The Clockwork Abyss, a deep chasm with treacherous machinery",
         ],
-        "5 areas best to visit" : [
+        "Areas Best To Visit" : [
             "The Inventor's Plaza, a hub of innovation and creativity",
             "The Grand Clocktower, a marvel of engineering and timekeeping",
             "The Elemental Gardens, where elemental spirits are harnessed",
             "The Mystran Sanctuary, a place of peace and magical study",
             "The Iron Sentinel Barracks, home to the city's clockwork guardians",
         ],
-        "races" : {
+        "Race Makeup" : {
             "Gnome" : "30%",
             "Human" : "25%",
             "Warforged" : "15%",
@@ -2523,7 +2551,7 @@ dnd_cities = {
             "Genasi" : "2%",
             "Other" : "3%",
         },
-        "classes" : {
+        "Classes Makeup" : {
             "Artificer" : "15%",
             "Wizard" : "10%",
             "Sorcerer" : "8%",
@@ -2539,12 +2567,12 @@ dnd_cities = {
             "Barbarian" : "3%",
             "Other" : "2%",
         },
-        "annual income" : {
+        "Annual Income" : {
             "top 10% earners" : "1,200,000 gp",
             "bottom 10% earners" : "200 gp",
             "median earners" : "50,000 gp",
         },
-        "shops" : {
+        "Shops" : {
             "Cogworks Emporium" : 12,
             "Arcane Contraptions" : 18,
             "Gearforge Gadgets" : 14,
@@ -2558,7 +2586,7 @@ dnd_cities = {
             "Gearshift Alchemy" : 8,
             "Inventor's Oddities" : 4,
         },
-        "services" : {
+        "Services" : {
             "Clockwork Hospital" : 10,
             "Taverns of Innovation" : 15,
             "Magitech Carriages" : 5,
@@ -2628,79 +2656,81 @@ dnd_cities = {
             25: "The Clockwork Guardians' Order trains individuals to become skilled defenders of the city's peace.",
         },
     },
-    "crystalhaven": {
-        "name": "Crystalhaven",
-        "description": "Crystalhaven is a city carved into the heart of a massive, transparent crystal mountain. The city is renowned for its breathtaking architecture and the ethereal glow that emanates from within the crystalline walls.",
-        "narrative": "Crystalhaven, a city of enchanting beauty, is unlike any other in the realm. Nestled within the heart of a colossal crystal mountain, the city is a true marvel to behold. As you approach Crystalhaven, you are greeted by the sight of towering crystalline spires that seem to reach the heavens. The city's walls, made entirely of transparent crystal, refract the sunlight into a mesmerizing kaleidoscope of colors, bathing the entire city in a surreal, ever-changing glow. The streets of Crystalhaven are a network of finely carved crystal walkways, adorned with intricate designs and illuminated by the natural luminescence of the mountain itself. The city's architecture is a testament to the craftsmanship of its inhabitants, as they have skillfully carved homes, shops, and temples directly into the crystal walls. As you explore the city, you notice that even the flora has adapted to its unique environment, with crystalline trees and plants sparkling with an otherworldly radiance. The heart of Crystalhaven is the Crystal Citadel, a massive crystalline palace that serves as the seat of power for the city's ruling council. The council is composed of representatives from various races and backgrounds, united in their goal to protect and govern this extraordinary city. Life in Crystalhaven revolves around the crystal formations, which provide both shelter and sustenance. The city's inhabitants have mastered the art of crystal magic, using it to craft tools, create art, and even control the flow of water and light within the mountain. The annual Crystal Festival is a highlight of the city, where artisans display their crystal sculptures, and mages showcase their mastery of crystal magic. Crystalhaven's unique environment has also led to the development of a distinct religion centered around the Crystal Deity, a divine being believed to reside within the heart of the mountain. Pilgrims from far and wide journey to Crystalhaven to seek blessings from the Crystal Deity. Crystalhaven is a city of secrets, and rumors persist of hidden chambers deep within the crystal walls that hold untold treasures and mysteries. The Crystal Library, a vast repository of knowledge, is rumored to house ancient texts that reveal the true nature of the crystal mountain. As you wander through Crystalhaven's radiant streets, you can't help but feel the awe and wonder that permeate every corner of this unique city. It is a place where the boundaries between the mundane and the magical are blurred, where art and nature merge to create a breathtaking tapestry of light and beauty.",
-        "place is known for": "the annual Crystal Festival",
-        "amount of land": "600 acres",
-        "population": 20000,
-        "number of buildings": 3000,
-        "crime rate": "2%",
-        "Neighboring cities and towns": {
+
+
+    "Crystalhaven": {
+        "Name": "Crystalhaven",
+        "Description": "Crystalhaven is a city carved into the heart of a massive, transparent crystal mountain. The city is renowned for its breathtaking architecture and the ethereal glow that emanates from within the crystalline walls.",
+        "Narrative": "Crystalhaven, a city of enchanting beauty, is unlike any other in the realm. Nestled within the heart of a colossal crystal mountain, the city is a true marvel to behold. As you approach Crystalhaven, you are greeted by the sight of towering crystalline spires that seem to reach the heavens. The city's walls, made entirely of transparent crystal, refract the sunlight into a mesmerizing kaleidoscope of colors, bathing the entire city in a surreal, ever-changing glow. The streets of Crystalhaven are a network of finely carved crystal walkways, adorned with intricate designs and illuminated by the natural luminescence of the mountain itself. The city's architecture is a testament to the craftsmanship of its inhabitants, as they have skillfully carved homes, shops, and temples directly into the crystal walls. As you explore the city, you notice that even the flora has adapted to its unique environment, with crystalline trees and plants sparkling with an otherworldly radiance. The heart of Crystalhaven is the Crystal Citadel, a massive crystalline palace that serves as the seat of power for the city's ruling council. The council is composed of representatives from various races and backgrounds, united in their goal to protect and govern this extraordinary city. Life in Crystalhaven revolves around the crystal formations, which provide both shelter and sustenance. The city's inhabitants have mastered the art of crystal magic, using it to craft tools, create art, and even control the flow of water and light within the mountain. The annual Crystal Festival is a highlight of the city, where artisans display their crystal sculptures, and mages showcase their mastery of crystal magic. Crystalhaven's unique environment has also led to the development of a distinct religion centered around the Crystal Deity, a divine being believed to reside within the heart of the mountain. Pilgrims from far and wide journey to Crystalhaven to seek blessings from the Crystal Deity. Crystalhaven is a city of secrets, and rumors persist of hidden chambers deep within the crystal walls that hold untold treasures and mysteries. The Crystal Library, a vast repository of knowledge, is rumored to house ancient texts that reveal the true nature of the crystal mountain. As you wander through Crystalhaven's radiant streets, you can't help but feel the awe and wonder that permeate every corner of this unique city. It is a place where the boundaries between the mundane and the magical are blurred, where art and nature merge to create a breathtaking tapestry of light and beauty.",
+        "Place Is Known For": "the annual Crystal Festival",
+        "Amount Of Land": "600 acres",
+        "Population": 20000,
+        "Number of Buildings": 3000,
+        "Crime Rate": "2%",
+        "Neighboring Cities And Towns": {
             "Gemstone Ridge": "15 miles north",
             "Quartzville": "10 miles east",
             "Prismpeak": "25 miles southeast",
             "Opalwood": "40 miles south",
             "Luminaria": "12 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Crystal spires that reach the skies",
             "Transparent crystal walls that refract sunlight",
             "Intricately carved crystal walkways",
             "Crystalline flora that sparkles with radiance",
             "The Crystal Citadel, a colossal crystalline palace",
         ],
-        "5 key features": [
+        "Key Features": [
             "Crystal Library, a repository of ancient knowledge",
             "Crystal Deity's Temple, a place of divine reverence",
             "Artisan's Guild of Crystalcrafters",
             "Luminary Plaza, a gathering place for festivals",
             "Crystalheart Chamber, rumored to hold mystical secrets",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Crystal Deity grants blessings to pilgrims within the mountain",
             "Crystalhaven's founders were master crystal mages from distant lands",
             "Hidden chambers within the crystal walls hold untold treasures",
             "The Crystal Library contains texts revealing the mountain's secrets",
             "Crystal magic allows inhabitants to control light and water within the city",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Archmage Crystania": "Leader of the Crystal Council",
             "Elyndor the Crystal Sculptor": "Renowned artist known for intricate crystal sculptures",
             "Serenity Quartzheart": "High priestess of the Crystal Deity's Temple",
             "Zephyr Crystalweaver": "Master of crystal magic and city's protector",
             "Lorekeeper Diamondbane": "Custodian of the ancient texts in the Crystal Library",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Crystal Deity",
             "Lightbringer",
             "Eidolon",
             "Selenia",
             "Luminaris",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "Crystal formations within the city hide ancient chambers filled with wonders",
             "The Crystal Library contains a map to hidden crystal caves rich in gemstones",
             "Crystal magic allows for communication with distant lands through scrying",
             "Crystalhaven's flora produces unique ingredients for potent potions",
             "The Crystal Deity's blessings can imbue objects with mystical properties",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Abyssal Chasm, a dark and treacherous abyss beneath the city",
             "The Refracted Maze, a complex labyrinth of shifting crystal walls",
             "The Echoing Caverns, where eerie echoes disorient wanderers",
             "The Quartz Gorge, a deep ravine with unstable crystal bridges",
             "The Shattered Vault, rumored to hold malevolent crystal entities",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Crystal Gardens, a serene oasis of crystalline flora",
             "The Artisan's Quarter, where crystal craftsmen create masterpieces",
             "The Luminous Observatory, offering breathtaking views of the city",
             "The Crystalheart Chamber, said to hold the mountain's deepest secrets",
             "The Crystal Lake, a tranquil pool of pristine water within the mountain",
         ],
-        "races": {
+        "Race Makeup": {
             "Elf": "30%",
             "Human": "25%",
             "Gnome": "15%",
@@ -2712,7 +2742,7 @@ dnd_cities = {
             "Kenku": "2%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Wizard": "10%",
             "Sorcerer": "5%",
             "Cleric": "8%",
@@ -2727,12 +2757,12 @@ dnd_cities = {
             "Ranger": "5%",
             "Other": "3%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "1,000,000 gp",
             "bottom 10% earners": "200 gp",
             "median earners": "50,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Crystal Emporium": 10,
             "Ethereal Enchantments": 15,
             "Crystal Forge": 12,
@@ -2746,7 +2776,7 @@ dnd_cities = {
             "The Crystal Petal (Florist)": 5,
             "Minerals and Gems Emporium": 2,
         },
-        "services": {
+        "Services": {
             "Crystal Council Hall": 10,
             "Luminary Inns": 15,
             "Crystal Stables": 5,
@@ -2818,79 +2848,81 @@ dnd_cities = {
             25: "The city's crystal hot springs are said to have rejuvenating properties, attracting visitors from afar.",
         },
     },
-    "ironhaven" : {
-        "name": "Ironhaven",
-        "description": "Ironhaven is a bustling and industrious human city built around the largest iron mine in the region. The city is known for its skilled blacksmiths, bustling markets, and sturdy defenses.",
-        "narrative": "Ironhaven, a city forged in the crucible of industry, stands as a testament to human perseverance and craftsmanship. Nestled beside the largest iron mine in the region, Ironhaven is a thriving hub of activity, its skyline dominated by towering chimneys and the rhythmic clang of hammers on anvils. As you approach Ironhaven, you're greeted by the sight of massive ore-laden carts pulled by powerful draft horses, trundling along well-worn paths leading to the city's numerous foundries. The air is thick with the scent of smelting metals and the distant rumble of steam-powered machinery. The city's architecture is a blend of practicality and strength, with buildings made from thick stone and reinforced iron, designed to withstand both the rigors of industry and potential threats from outside. The heart of Ironhaven is the Ironforge, an immense foundry at the city's center, where molten metal flows like a river, and master blacksmiths forge legendary weapons and armor. The city is governed by the Iron Council, a group of influential merchant lords and skilled artisans who oversee both trade and defense. Life in Ironhaven revolves around the bustling markets, where artisans sell their finely crafted goods, and miners trade their hard-earned ores. The annual Iron Festival is a highlight of the city, featuring competitions of blacksmithing prowess, weapon exhibitions, and grand parades celebrating the city's industrial heritage. Ironhaven's unique environment has also led to the development of a distinct religion centered around the Forge God, a deity believed to bless the city's forges and artisans. Pilgrims from far and wide journey to Ironhaven to seek blessings for their craftsmanship. Ironhaven is a city of secrets, with rumors of hidden tunnels connecting the mines to mysterious underground chambers, where ancient treasures are said to be guarded by spectral miners. The Iron Library, a repository of knowledge on metallurgy and engineering, is rumored to contain blueprints for powerful war machines. As you explore Ironhaven's bustling streets, you can't help but feel the energy and determination that permeate every corner of this industrious city. It is a place where the clang of the anvil is a symphony, where craftsmanship and trade are the lifeblood of the people, and where the strength of iron is both a symbol and a way of life.",
-        "place is known for": "the annual Iron Festival",
-        "amount of land": "1000 acres",
-        "population": 25000,
-        "number of buildings": 3500,
-        "crime rate": "5%",
-        "Neighboring cities and towns": {
+
+
+    "Ironhaven" : {
+        "Name": "Ironhaven",
+        "Description": "Ironhaven is a bustling and industrious human city built around the largest iron mine in the region. The city is known for its skilled blacksmiths, bustling markets, and sturdy defenses.",
+        "Narrative": "Ironhaven, a city forged in the crucible of industry, stands as a testament to human perseverance and craftsmanship. Nestled beside the largest iron mine in the region, Ironhaven is a thriving hub of activity, its skyline dominated by towering chimneys and the rhythmic clang of hammers on anvils. As you approach Ironhaven, you're greeted by the sight of massive ore-laden carts pulled by powerful draft horses, trundling along well-worn paths leading to the city's numerous foundries. The air is thick with the scent of smelting metals and the distant rumble of steam-powered machinery. The city's architecture is a blend of practicality and strength, with buildings made from thick stone and reinforced iron, designed to withstand both the rigors of industry and potential threats from outside. The heart of Ironhaven is the Ironforge, an immense foundry at the city's center, where molten metal flows like a river, and master blacksmiths forge legendary weapons and armor. The city is governed by the Iron Council, a group of influential merchant lords and skilled artisans who oversee both trade and defense. Life in Ironhaven revolves around the bustling markets, where artisans sell their finely crafted goods, and miners trade their hard-earned ores. The annual Iron Festival is a highlight of the city, featuring competitions of blacksmithing prowess, weapon exhibitions, and grand parades celebrating the city's industrial heritage. Ironhaven's unique environment has also led to the development of a distinct religion centered around the Forge God, a deity believed to bless the city's forges and artisans. Pilgrims from far and wide journey to Ironhaven to seek blessings for their craftsmanship. Ironhaven is a city of secrets, with rumors of hidden tunnels connecting the mines to mysterious underground chambers, where ancient treasures are said to be guarded by spectral miners. The Iron Library, a repository of knowledge on metallurgy and engineering, is rumored to contain blueprints for powerful war machines. As you explore Ironhaven's bustling streets, you can't help but feel the energy and determination that permeate every corner of this industrious city. It is a place where the clang of the anvil is a symphony, where craftsmanship and trade are the lifeblood of the people, and where the strength of iron is both a symbol and a way of life.",
+        "Place Is Known For": "the annual Iron Festival",
+        "Amount Of Land": "1000 acres",
+        "Population": 25000,
+        "Number of Buildings": 3500,
+        "Crime Rate": "5%",
+        "Neighboring Cities And Towns": {
             "Steelgate": "30 miles north",
             "Copperhill": "15 miles east",
             "Bronzeforge": "40 miles southeast",
             "Silverbrook": "50 miles south",
             "Goldhaven": "20 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Massive iron mines with tunnels stretching deep underground",
             "Gigantic ore-laden carts pulled by draft horses",
             "Smoke-belching chimneys from the city's many foundries",
             "Bustling markets where craftsmen trade their wares",
             "The Ironforge, the city's massive central foundry",
         ],
-        "5 key features": [
+        "Key Features": [
             "Iron Library, a repository of metallurgical knowledge",
             "Forge God's Temple, a place of divine reverence for craftsmen",
             "Artisan's Guild of Ironcrafters",
             "Merchant Square, the heart of the city's commerce",
             "Defensive Wall with formidable iron gates",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Forge God grants blessings to artisans and blacksmiths in the city",
             "Ironhaven's founders were skilled miners and blacksmiths who discovered the rich iron deposits",
             "Hidden tunnels connect the mines to underground chambers with ancient treasures",
             "The Iron Library holds blueprints for powerful war machines and siege engines",
             "Steam-powered machinery drives the city's industrial processes",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Lord Ironforge": "Leader of the Iron Council",
             "Thurin Stonehammer": "Master blacksmith known for crafting legendary weapons",
             "High Priestess Ironheart": "Spiritual leader of the Forge God's Temple",
             "Gilda Ironhand": "Influential merchant known for her shrewd business acumen",
             "Archivist Ironclad": "Custodian of the Iron Library's knowledge",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Forge God",
             "Morradin",
             "Gond",
             "Tymora",
             "Hephaestus",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "Hidden tunnels connect the mines to chambers guarded by spectral miners",
             "The Iron Library contains blueprints for devastating war machines",
             "Secret societies of miners and blacksmiths safeguard ancient treasures",
             "The city's sewers hide a network of underground passages for smugglers",
             "The Iron Council secretly maintains a reserve of powerful enchanted weapons",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Depths, treacherous and uncharted sections of the mines",
             "The Smog District, where toxic fumes from foundries linger in the air",
             "The Shadowed Alleyways, a haven for criminal activities",
             "The Abandoned Forge, a cursed foundry with a dark history",
             "The Iron Prison, a maximum-security facility for dangerous criminals",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Iron Park, a green oasis within the city for relaxation",
             "The Artisan's Quarter, where skilled craftsmen showcase their talents",
             "The Iron Council Hall, where decisions that shape the city's future are made",
             "The Foundry Plaza, a place for witnessing impressive blacksmithing demonstrations",
             "The Iron Gate, the main entrance to the city with formidable defenses",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "80%",
             "Dwarf": "5%",
             "Gnome": "3%",
@@ -2899,7 +2931,7 @@ dnd_cities = {
             "Warforged": "1%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Barbarian": "2%",
             "Bard": "5%",
             "Cleric": "5%",
@@ -2914,12 +2946,12 @@ dnd_cities = {
             "Wizard": "2%",
             "Other": "2%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "1,200,000 gp",
             "bottom 10% earners": "500 gp",
             "median earners": "60,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Ironworks Emporium": 10,
             "Ethereal Enchantments": 15,
             "Blacksmith's Forge": 12,
@@ -2932,7 +2964,7 @@ dnd_cities = {
             "Tavern of Iron Tales": 3,
             "Minerals and Gemstones Merchant": 2,
         },
-        "services": {
+        "Services": {
             "Iron Council Hall": 10,
             "Taverns of Craftsmanship": 15,
             "Iron Stables": 5,
@@ -3002,79 +3034,81 @@ dnd_cities = {
             25: "The city's iron hot springs are said to have healing properties, attracting those in need of restoration.",
         },
     },
-    "ironpeak" : {
-        "name": "Ironpeak",
-        "description": "Ironpeak is a sprawling underground city nestled deep within the heart of a massive mountain range. It is renowned for its impressive forges, skilled craftsmen, and unyielding dedication to the art of blacksmithing and mining.",
-        "narrative": "Ironpeak, a city of unparalleled craftsmanship, lies hidden deep within the heart of a towering mountain range. This sprawling underground city is a testament to the dwarves' unyielding dedication to the art of blacksmithing and mining. As you approach Ironpeak, the earthy scent of freshly forged metals fills the air, and the sound of ringing hammers and clinking anvils reverberates through the tunnels. The city's architecture is a marvel of engineering, with massive stone pillars supporting the vast underground caverns, where the finest forges in the realm can be found. Lava flows through channels, providing the intense heat needed for smelting and crafting, while also casting a warm, fiery glow over the city. Ironpeak is a city where every surface gleams with the fruits of the dwarves' labor, from intricate weapons and armor to delicate jewelry and ornate sculptures. The heart of Ironpeak is the Great Forge, an immense chamber where the most skilled blacksmiths and artisans create masterpieces of steel and stone. The forge's fire, fueled by rare and precious minerals, burns eternally and is said to hold the spirit of the city itself. Life in Ironpeak revolves around the mining of precious minerals and the craft of blacksmithing. Dwarves here have honed their skills for generations, and their weapons and armor are renowned throughout the land. The annual Ironsmith Festival is a highlight of the city, featuring competitions of blacksmithing skill, mineral mining, and grand feasts in honor of the Great Forge. Ironpeak's unique environment has also led to the development of a distinct religion centered around the Forgefather, a divine being believed to bless the forges and the dwarves' work. Pilgrims from across the realm visit Ironpeak to seek the Forgefather's blessings. Ironpeak is a city of secrets, and rumors persist of hidden chambers deep within the mountain that contain veins of untapped, rare minerals. The Iron Library, a vast repository of knowledge, is rumored to hold ancient texts revealing the secrets of legendary dwarven weaponsmiths. As you traverse Ironpeak's labyrinthine tunnels, you can't help but feel the resounding echoes of industry and craftsmanship that permeate every corner of this underground city. It is a place where the boundaries between the mundane and the magical are blurred, where metal and stone are transformed into works of art and strength.",
-        "place is known for": "the annual Ironsmith Festival",
-        "amount of land": "600 acres (underground)",
-        "population": 25000,
-        "number of buildings": 3500,
-        "crime rate": "2%",
-        "Neighboring cities and towns": {
+
+
+    "Ironpeak" : {
+        "Name": "Ironpeak",
+        "Description": "Ironpeak is a sprawling underground city nestled deep within the heart of a massive mountain range. It is renowned for its impressive forges, skilled craftsmen, and unyielding dedication to the art of blacksmithing and mining.",
+        "Narrative": "Ironpeak, a city of unparalleled craftsmanship, lies hidden deep within the heart of a towering mountain range. This sprawling underground city is a testament to the dwarves' unyielding dedication to the art of blacksmithing and mining. As you approach Ironpeak, the earthy scent of freshly forged metals fills the air, and the sound of ringing hammers and clinking anvils reverberates through the tunnels. The city's architecture is a marvel of engineering, with massive stone pillars supporting the vast underground caverns, where the finest forges in the realm can be found. Lava flows through channels, providing the intense heat needed for smelting and crafting, while also casting a warm, fiery glow over the city. Ironpeak is a city where every surface gleams with the fruits of the dwarves' labor, from intricate weapons and armor to delicate jewelry and ornate sculptures. The heart of Ironpeak is the Great Forge, an immense chamber where the most skilled blacksmiths and artisans create masterpieces of steel and stone. The forge's fire, fueled by rare and precious minerals, burns eternally and is said to hold the spirit of the city itself. Life in Ironpeak revolves around the mining of precious minerals and the craft of blacksmithing. Dwarves here have honed their skills for generations, and their weapons and armor are renowned throughout the land. The annual Ironsmith Festival is a highlight of the city, featuring competitions of blacksmithing skill, mineral mining, and grand feasts in honor of the Great Forge. Ironpeak's unique environment has also led to the development of a distinct religion centered around the Forgefather, a divine being believed to bless the forges and the dwarves' work. Pilgrims from across the realm visit Ironpeak to seek the Forgefather's blessings. Ironpeak is a city of secrets, and rumors persist of hidden chambers deep within the mountain that contain veins of untapped, rare minerals. The Iron Library, a vast repository of knowledge, is rumored to hold ancient texts revealing the secrets of legendary dwarven weaponsmiths. As you traverse Ironpeak's labyrinthine tunnels, you can't help but feel the resounding echoes of industry and craftsmanship that permeate every corner of this underground city. It is a place where the boundaries between the mundane and the magical are blurred, where metal and stone are transformed into works of art and strength.",
+        "Place Is Known For": "the annual Ironsmith Festival",
+        "Amount Of Land": "600 acres (underground)",
+        "Population": 25000,
+        "Number of Buildings": 3500,
+        "Crime Rate": "2%",
+        "Neighboring Cities And Towns": {
             "Stonemere": "15 miles northwest",
             "Moltenhold": "20 miles southwest",
             "Glimmerstone": "10 miles southeast",
             "Hammerfast": "30 miles northeast",
             "Deepforge": "40 miles east",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Sprawling underground caverns with massive stone pillars",
             "Channels of flowing lava providing heat and illumination",
             "Intricately carved tunnels and chambers showcasing dwarven craftsmanship",
             "The Great Forge, an immense chamber at the heart of the city",
             "Veins of precious minerals and gemstones embedded in the mountain",
         ],
-        "5 key features": [
+        "Key Features": [
             "The Great Forge, where master blacksmiths craft legendary weapons",
             "The Iron Library, housing ancient tomes and scrolls on blacksmithing",
             "Forgefather's Temple, a place of divine reverence for the dwarves",
             "Miner's Guildhall, the hub for mineral extraction operations",
             "Armorsmiths' District, where the finest armor is forged and sold",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Forgefather blesses the city's forges and bestows skill upon dwarves",
             "Ironpeak's founders were legendary blacksmiths who discovered the mountain's riches",
             "Hidden chambers deep within the mountain hold veins of untapped minerals",
             "The Iron Library contains texts revealing the secrets of legendary dwarven weaponsmiths",
             "Dwarves here are known for crafting weapons and armor of unparalleled quality",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Forgefather Thrain": "High priest of the Forgefather's Temple",
             "Durin Stonehammer": "Master blacksmith renowned for crafting legendary weapons",
             "Molgrim Ironheart": "Guildmaster of the Miner's Guildhall",
             "Hilda Earthshaker": "Armorsmith known for crafting impenetrable suits of armor",
             "Bromlin Ironbeard": "Keeper of the Iron Library's ancient knowledge",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Forgefather",
             "Moradin",
             "Clangeddin Silverbeard",
             "Sharindlar",
             "Dugmaren Brightmantle",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "Hidden chambers within the mountain hold veins of untapped, rare minerals",
             "The Great Forge's eternal fire is said to hold the spirit of the city",
             "Dwarves of Ironpeak can communicate with one another through resonant stone markings",
             "The Iron Library contains a map to uncharted mineral-rich caves",
             "The Forgefather's blessings can imbue weapons with magical properties",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Molten Depths, where rivers of lava flow dangerously",
             "The Abyssal Shaft, a treacherous chasm with unstable pathways",
             "The Darkforge Tunnels, where sinister rumors of a cursed forge persist",
             "The Crystaline Chambers, where unstable gemstone formations threaten collapse",
             "The Deep Abyss, a perilous void with no known bottom",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Great Forge, a marvel of dwarven craftsmanship",
             "The Iron Library, a repository of blacksmithing knowledge",
             "Forgefather's Temple, a place of divine reverence",
             "Miner's Guildhall, where plans for the next mineral expedition are discussed",
             "Armorsmiths' District, where the finest dwarven armor is on display",
         ],
-        "races": {
+        "Race Makeup": {
             "Dwarf": "90%",
             "Gnome": "2%",
             "Human": "2%",
@@ -3083,7 +3117,7 @@ dnd_cities = {
             "Kobold": "1%",
             "Other": "1%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Barbarian": "1%",
             "Bard": "2%",
             "Cleric": "5%",
@@ -3098,12 +3132,12 @@ dnd_cities = {
             "Wizard": "5%",
             "Other": "2%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "1,200,000 gp",
             "bottom 10% earners": "100 gp",
             "median earners": "60,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Forgemaster's Emporium": 10,
             "Dwarven Relics and Artifacts": 15,
             "Mineral Merchants' Guild": 12,
@@ -3117,7 +3151,7 @@ dnd_cities = {
             "The Crystal Chisel (Artisan Shop)": 5,
             "Rocksteady Inn": 2,
         },
-        "services": {
+        "Services": {
             "Forgefather's Blessings": 10,
             "Taverns of the Molten Mug": 15,
             "Miner's Depot": 5,
@@ -3188,79 +3222,81 @@ dnd_cities = {
             25: "The Ironpeak Quartermaster is responsible for managing the city's mineral resources and trade agreements.",
         },
     },
-    "gnomereach" : {
-        "name": "Gnomereach",
-        "description": "Gnomereach, known as the Clockwork Capital, is a bustling city built deep underground. It's renowned for its ingenious inventions, intricate clockwork mechanisms, and the perpetual hum of machinery.",
-        "narrative": "Gnomereach, the Clockwork Capital, is a bustling subterranean city like no other. Nestled deep beneath the earth, the city is a marvel of engineering and innovation. As you descend into Gnomereach, you're greeted by a cacophony of sounds—the rhythmic ticking of countless clockwork devices, the clang of hammers on metal, and the hiss of steam vents. The city's architecture is a blend of ornate clock towers, intricate tunnels, and grand chambers filled with whirring machinery. Gnomes of all ages can be seen darting about, working on their latest inventions or fine-tuning complex contraptions. Gnomereach is a testament to the Gnomish love for all things mechanical. The heart of Gnomereach is the Great Gears, a colossal clockwork mechanism at the center of the city. It not only marks the passage of time but also serves as the city's main meeting place. Gnomes gather around the Great Gears to discuss their projects, share ideas, and celebrate their innovations. Life in Gnomereach revolves around invention and creation. The city's inhabitants are natural tinkerers, and their homes are filled with gadgets and gizmos of their own design. The annual Gearfest is a highlight of the city, featuring invention contests, grand parades of mechanical wonders, and races of clockwork contraptions. Gnomereach's unique environment has also led to the development of a distinct religion centered around the Clockwork Deity, a divine being believed to be the patron of inventors. The city's workshops and laboratories are filled with ingenious devices, and the Gnomish Guild of Inventors is a revered institution that guides the city's technological progress. Gnomereach is a city of secrets, with hidden workshops and underground tunnels filled with experimental machinery. The Archive of Gnomish Knowledge is rumored to hold blueprints for legendary inventions. As you navigate the bustling tunnels and chambers of Gnomereach, you can't help but be drawn into the energy of invention and innovation that permeates every corner of this underground marvel. It is a place where the boundaries between the mechanical and the magical are blurred, where gears and gadgets are the heartbeat of the city.",
-        "place is known for": "the annual Gearfest",
-        "amount of land": "400 acres",
-        "population": 25000,
-        "number of buildings": 3500,
-        "crime rate": "2.5%",
-        "Neighboring cities and towns": {
+
+
+    "Gnomereach" : {
+        "Name": "Gnomereach",
+        "Description": "Gnomereach, known as the Clockwork Capital, is a bustling city built deep underground. It's renowned for its ingenious inventions, intricate clockwork mechanisms, and the perpetual hum of machinery.",
+        "Narrative": "Gnomereach, the Clockwork Capital, is a bustling subterranean city like no other. Nestled deep beneath the earth, the city is a marvel of engineering and innovation. As you descend into Gnomereach, you're greeted by a cacophony of sounds—the rhythmic ticking of countless clockwork devices, the clang of hammers on metal, and the hiss of steam vents. The city's architecture is a blend of ornate clock towers, intricate tunnels, and grand chambers filled with whirring machinery. Gnomes of all ages can be seen darting about, working on their latest inventions or fine-tuning complex contraptions. Gnomereach is a testament to the Gnomish love for all things mechanical. The heart of Gnomereach is the Great Gears, a colossal clockwork mechanism at the center of the city. It not only marks the passage of time but also serves as the city's main meeting place. Gnomes gather around the Great Gears to discuss their projects, share ideas, and celebrate their innovations. Life in Gnomereach revolves around invention and creation. The city's inhabitants are natural tinkerers, and their homes are filled with gadgets and gizmos of their own design. The annual Gearfest is a highlight of the city, featuring invention contests, grand parades of mechanical wonders, and races of clockwork contraptions. Gnomereach's unique environment has also led to the development of a distinct religion centered around the Clockwork Deity, a divine being believed to be the patron of inventors. The city's workshops and laboratories are filled with ingenious devices, and the Gnomish Guild of Inventors is a revered institution that guides the city's technological progress. Gnomereach is a city of secrets, with hidden workshops and underground tunnels filled with experimental machinery. The Archive of Gnomish Knowledge is rumored to hold blueprints for legendary inventions. As you navigate the bustling tunnels and chambers of Gnomereach, you can't help but be drawn into the energy of invention and innovation that permeates every corner of this underground marvel. It is a place where the boundaries between the mechanical and the magical are blurred, where gears and gadgets are the heartbeat of the city.",
+        "Place Is Known For": "the annual Gearfest",
+        "Amount Of Land": "400 acres",
+        "Population": 25000,
+        "Number of Buildings": 3500,
+        "Crime Rate": "2.5%",
+        "Neighboring Cities And Towns": {
             "Cogsworth": "10 miles northeast",
             "Steamhaven": "15 miles southwest",
             "Machinopolis": "20 miles northwest",
             "Gearford": "12 miles southeast",
             "Whirlington": "8 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Intricate clock towers that reach the ceiling",
             "Tunnels filled with conveyor belts transporting goods",
             "Steam-powered trains crisscrossing the city",
             "Grand chambers with whirring machinery",
             "The Great Gears, a colossal clockwork mechanism at the city's center",
         ],
-        "5 key features": [
+        "Key Features": [
             "The Great Gears, the central clockwork mechanism",
             "The Archive of Gnomish Knowledge",
             "Gearworks Guildhall, the heart of innovation",
             "Cog and Cogwheel, the city's famous clockwork tavern",
             "Clockwork Cathedral, dedicated to the Clockwork Deity",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Clockwork Deity blesses inventors with inspiration",
             "Gnomereach's founders were visionary engineers who dug deep underground",
             "Hidden workshops hold experimental devices of great potential",
             "The Archive of Gnomish Knowledge contains blueprints for legendary inventions",
             "The city's clockwork mechanisms are powered by a rare underground crystal",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Gearmaster Tinkertop": "Leader of the Gnomish Guild of Inventors",
             "Cogspring the Tinkerer": "Renowned inventor and creator of mechanical marvels",
             "High Artificer Gearsprocket": "Priest of the Clockwork Deity and guardian of the Archive",
             "Steamwhistle the Brewmaster": "Owner of Cog and Cogwheel, the famous clockwork tavern",
             "Clockwork Choir Director Gearsong": "Conductor of the clockwork orchestra in the Clockwork Cathedral",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Clockwork Deity",
             "Gnomish Pantheon",
             "Mechanica",
             "Cogfather",
             "Steammaiden",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The city's underground tunnels hide experimental workshops and machinery",
             "The Archive of Gnomish Knowledge contains blueprints for legendary inventions",
             "Clockwork magic allows for precise control of mechanical devices",
             "The Great Gears are powered by a rare crystal found only deep underground",
             "The city's sewers are used as hidden passages for underground exploration",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Steam Vent Chambers, where high-pressure steam poses dangers",
             "The Tinkertown Bazaar, a bustling market with crowded streets",
             "The Mechanist's Maze, a labyrinth of pipes and valves",
             "The Gnomish Catacombs, rumored to house restless clockwork spirits",
             "The Geargraveyard, a scrapyard filled with discarded machinery",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Great Gears Plaza, the city's central meeting place",
             "The Inventors' Quarter, where workshops and laboratories abound",
             "The Archive of Gnomish Knowledge, filled with blueprints and ancient texts",
             "Cog and Cogwheel Tavern, known for clockwork-inspired drinks and entertainment",
             "Clockwork Cathedral, a marvel of engineering and devotion",
         ],
-        "races": {
+        "Race Makeup": {
             "Gnome": "80%",
             "Dwarf": "5%",
             "Human": "4%",
@@ -3271,7 +3307,7 @@ dnd_cities = {
             "Halfling": "1%",
             "Other": "1%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Artificer": "15%",
             "Wizard": "10%",
             "Rogue": "10%",
@@ -3288,12 +3324,12 @@ dnd_cities = {
             "Barbarian": "2%",
             "Other": "2%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "1,200,000 gp",
             "bottom 10% earners": "150 gp",
             "median earners": "60,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Clockwork Emporium": 12,
             "Gearsmiths' Supplies": 15,
             "Steam Brews and Elixirs": 10,
@@ -3307,7 +3343,7 @@ dnd_cities = {
             "Tinkerer's Trinkets": 4,
             "Gearspring's Workshop": 2,
         },
-        "services": {
+        "Services": {
             "Guild of Inventors' Hall": 10,
             "Clockwork Taverns": 15,
             "Gearworks Stables": 5,
@@ -3379,86 +3415,88 @@ dnd_cities = {
             25: "The city's steam baths are said to have invigorating properties, attracting inventors and steam enthusiasts.",
         },
     },
-    "elaria" : {
-        "name": "Elaria",
-        "description": "Elaria, often referred to as the Emerald Haven, is a majestic city nestled deep within an ancient forest. It is renowned for its harmonious elf society, where nature and magic intertwine seamlessly.",
-        "narrative": "Elaria, the Emerald Haven, stands as a testament to the enduring bond between the elves and the natural world. This majestic city is nestled deep within an ancient forest, a place where the vibrant flora and fauna are as much a part of the city as its elven inhabitants. As you approach Elaria, the towering, ancient trees seem to part to welcome you into their midst. The city's architecture blends seamlessly with the forest, with dwellings and structures built into the massive tree trunks and suspended among the branches. The air is filled with the sweet fragrance of blooming flowers, and the gentle melody of wind chimes crafted from leaves and vines. Bioluminescent mushrooms and fireflies provide a soft, natural illumination during the night, creating an enchanting and mystical ambiance. The heart of Elaria is the Sylvan Palace, a grand structure built within the largest tree in the city. Here, the Council of Elders, composed of wise elven leaders, governs with a deep respect for nature and tradition. Life in Elaria is defined by a profound connection to the natural world. Elves commune with animals, plants, and even the spirits of the forest, fostering a harmonious coexistence. The city's magic is closely intertwined with nature, with druids and rangers working alongside wizards and sorcerers to protect and enhance the forest. The annual Verdant Festival is a highlight of Elaria, celebrating the changing seasons with elaborate ceremonies, music, and dances that invoke the magic of the forest. Elaria is a city of secrets, and hidden groves within the forest contain portals to the Feywild, where adventurers seek to explore the mystical realms. Rumors persist of an ancient, sentient tree at the heart of the forest, said to hold the wisdom of the land itself. The Temple of Corellon Larethian, adorned with intricate natural motifs, serves as a place of spiritual reflection for the city's residents. As you wander through Elaria's verdant streets, you can't help but feel the profound connection to nature and magic that permeates every corner of this elf society. It is a place where the boundaries between the mundane and the mystical are blurred, where the forest and the city are one, creating a breathtaking tapestry of life and enchantment.",
-        "place is known for": "the annual Verdant Festival",
-        "amount of land": "1000 acres",
-        "population": 25000,
-        "number of buildings": 3500,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Elaria" : {
+        "Name": "Elaria",
+        "Description": "Elaria, often referred to as the Emerald Haven, is a majestic city nestled deep within an ancient forest. It is renowned for its harmonious elf society, where nature and magic intertwine seamlessly.",
+        "Narrative": "Elaria, the Emerald Haven, stands as a testament to the enduring bond between the elves and the natural world. This majestic city is nestled deep within an ancient forest, a place where the vibrant flora and fauna are as much a part of the city as its elven inhabitants. As you approach Elaria, the towering, ancient trees seem to part to welcome you into their midst. The city's architecture blends seamlessly with the forest, with dwellings and structures built into the massive tree trunks and suspended among the branches. The air is filled with the sweet fragrance of blooming flowers, and the gentle melody of wind chimes crafted from leaves and vines. Bioluminescent mushrooms and fireflies provide a soft, natural illumination during the night, creating an enchanting and mystical ambiance. The heart of Elaria is the Sylvan Palace, a grand structure built within the largest tree in the city. Here, the Council of Elders, composed of wise elven leaders, governs with a deep respect for nature and tradition. Life in Elaria is defined by a profound connection to the natural world. Elves commune with animals, plants, and even the spirits of the forest, fostering a harmonious coexistence. The city's magic is closely intertwined with nature, with druids and rangers working alongside wizards and sorcerers to protect and enhance the forest. The annual Verdant Festival is a highlight of Elaria, celebrating the changing seasons with elaborate ceremonies, music, and dances that invoke the magic of the forest. Elaria is a city of secrets, and hidden groves within the forest contain portals to the Feywild, where adventurers seek to explore the mystical realms. Rumors persist of an ancient, sentient tree at the heart of the forest, said to hold the wisdom of the land itself. The Temple of Corellon Larethian, adorned with intricate natural motifs, serves as a place of spiritual reflection for the city's residents. As you wander through Elaria's verdant streets, you can't help but feel the profound connection to nature and magic that permeates every corner of this elf society. It is a place where the boundaries between the mundane and the mystical are blurred, where the forest and the city are one, creating a breathtaking tapestry of life and enchantment.",
+        "Place Is Known For": "the annual Verdant Festival",
+        "Amount Of Land": "1000 acres",
+        "Population": 25000,
+        "Number of Buildings": 3500,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Lorewood": "30 miles north",
             "Glimmerbrook": "15 miles east",
             "Feywood": "40 miles southeast",
             "Aeloria": "50 miles south",
             "Thornshade": "20 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Massive, ancient trees with dwellings built among their trunks",
             "Bioluminescent mushrooms and fireflies lighting the city at night",
             "Natural vines and pathways leading through the forest",
             "Hidden groves with portals to the Feywild",
             "The Sylvan Palace, a grand structure within the largest tree",
         ],
-        "5 key features": [
+        "Key Features": [
             "Verdant Grove of Elders",
             "Elven bards playing mesmerizing forest melodies",
             "Botanical Emporium of Rare Herbs and Plants",
             "The Lorekeeper's Library, a repository of natural and magical knowledge",
             "Animal Companionship for communication with local wildlife",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "A sacred waterfall deep in the forest grants visions to those who seek it",
             "The city's founders were legendary elven heroes who protected the forest",
             "The ancient, sentient tree at the heart of the forest holds the wisdom of the land",
             "Mysterious creatures known as 'Feyguardians' protect the forest's secrets",
             "An elusive artifact known as the 'Heartwood Amulet' is said to be hidden in the forest",
         ],
-        "5 popular people": {
+        "Popular People": {
             "High Elder Elowyn": "Leader of the Council of Elders",
             "Aelarion the Melodious": "Renowned elven bard known for captivating forest songs",
             "Thalindra Greenleaf": "Expert herbalist and protector of the city's flora",
             "Sylvanar the Wildshaper": "Mysterious druid with the ability to shape-shift",
             "Professor Willowind": "Scholar specializing in the study of nature and magic",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Corellon Larethian",
             "Mielikki",
             "Obad-Hai",
             "Ehlonna",
             "Silvanus"
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The forest's protective wards are maintained by the spirits of the land",
             "A hidden council of treants influences the city's policies",
             "The city's sewers are home to a colony of friendly forest creatures",
             "The local protectors of nature secretly work as herbalists and apothecaries",
             "The ancient tree at the heart of the forest holds a portal to the Feywild",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Thorned Wilds, where dangerous creatures and thorns pose a threat",
             "The Whispering Glen, a serene place where eerie whispers unsettle visitors",
             "The Darkwood Thicket, a dense forest with limited visibility",
             "The Enchanted Falls, where powerful water elementals reside",
             "The Fey Crossing, a portal to the Feywild with unpredictable effects",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Grove of Tranquility, a serene place for meditation",
             "The Elven Conservatory, a school for the study of nature and magic",
             "The Lorekeeper's Library, housing ancient tomes and scrolls on nature and magic",
             "The Verdant Glade, a lush garden with vibrant, magical flora",
             "The Songbird Sanctuary, where rare and exotic forest birds can be observed",
         ],
-        "races": {
+        "Race Makeup": {
             "Elf": "95%",
             "Human": "2%",
             "Halfling": "1%",
             "Gnome": "1%",
             "Other": "1%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Druid": "40%",
             "Ranger": "20%",
             "Wizard": "10%",
@@ -3471,12 +3509,12 @@ dnd_cities = {
             "Warlock": "2%",
             "Other": "5%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "1,500,000 gp",
             "bottom 10% earners": "300 gp",
             "median earners": "75,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Verdant Traders": 10,
             "Ethereal Enchantments": 15,
             "Botanical Elixirs and Tinctures": 12,
@@ -3490,7 +3528,7 @@ dnd_cities = {
             "Forest Alchemy": 5,
             "Elven Art Gallery": 2,
         },
-        "services": {
+        "Services": {
             "Council of Elders Hall": 10,
             "Elven Inns of Tranquility": 15,
             "Nature's Stables": 5,
@@ -3562,79 +3600,81 @@ dnd_cities = {
             25: "The city's forest glades and meadows are a favorite spot for residents and visitors to connect with nature."
         }
     },
-    "halfelaria" : {
-        "name": "Halfelaria",
-        "description": "Halfelaria is a bustling city where Half-Elves thrive, known for its rich culture and unique blend of Elven and Human traditions. The city stands as a symbol of harmony and coexistence.",
-        "narrative": "Halfelaria, a bustling city of diversity and coexistence, stands as a testament to the harmony between Elves and Humans. The city is a vibrant tapestry woven from the threads of two worlds, where Half-Elves have found their own unique identity. As you approach Halfelaria, you're welcomed by the sight of elegant Elven spires intermingling with the sturdy architecture of Human buildings. The city's streets are alive with a bustling mix of people from various backgrounds, all living together in a state of unity. The scent of exotic spices wafts through the air, and the sounds of lively marketplaces and street performers fill your ears. Halfelaria is renowned for its rich culture, with theaters, art galleries, and music venues that showcase the talents of its diverse inhabitants. The annual Harmony Festival is a highlight, where Half-Elves celebrate their unique heritage through grand parades, feasts, and performances that blend Elven grace with Human enthusiasm. The heart of Halfelaria is the Council of the Two Realms, a governing body composed of both Elven and Human representatives who work together to maintain peace and prosperity in the city. Life in Halfelaria is marked by an appreciation for diversity, and the city's inhabitants embrace the blending of Elven and Human traditions. The Temple of the Eilistraee, the Goddess of Song and Dance, stands as a symbol of unity and devotion, welcoming worshippers from both races. Halfelaria is a city of secrets, with rumors of hidden chambers beneath the city that hold relics from both Elven and Human history. The Hall of Ancestral Memory, a vast underground library, is said to contain records of every Half-Elf born in the city. As you explore Halfelaria's lively streets, you can't help but feel the sense of acceptance and unity that permeate every corner of this vibrant city. It is a place where different races come together to create a harmonious and flourishing society.",
-        "place is known for": "the annual Harmony Festival",
-        "amount of land": "700 acres",
-        "population": 25000,
-        "number of buildings": 3500,
-        "crime rate": "4%",
-        "Neighboring cities and towns": {
+
+
+    "Halfelaria" : {
+        "Name": "Halfelaria",
+        "Description": "Halfelaria is a bustling city where Half-Elves thrive, known for its rich culture and unique blend of Elven and Human traditions. The city stands as a symbol of harmony and coexistence.",
+        "Narrative": "Halfelaria, a bustling city of diversity and coexistence, stands as a testament to the harmony between Elves and Humans. The city is a vibrant tapestry woven from the threads of two worlds, where Half-Elves have found their own unique identity. As you approach Halfelaria, you're welcomed by the sight of elegant Elven spires intermingling with the sturdy architecture of Human buildings. The city's streets are alive with a bustling mix of people from various backgrounds, all living together in a state of unity. The scent of exotic spices wafts through the air, and the sounds of lively marketplaces and street performers fill your ears. Halfelaria is renowned for its rich culture, with theaters, art galleries, and music venues that showcase the talents of its diverse inhabitants. The annual Harmony Festival is a highlight, where Half-Elves celebrate their unique heritage through grand parades, feasts, and performances that blend Elven grace with Human enthusiasm. The heart of Halfelaria is the Council of the Two Realms, a governing body composed of both Elven and Human representatives who work together to maintain peace and prosperity in the city. Life in Halfelaria is marked by an appreciation for diversity, and the city's inhabitants embrace the blending of Elven and Human traditions. The Temple of the Eilistraee, the Goddess of Song and Dance, stands as a symbol of unity and devotion, welcoming worshippers from both races. Halfelaria is a city of secrets, with rumors of hidden chambers beneath the city that hold relics from both Elven and Human history. The Hall of Ancestral Memory, a vast underground library, is said to contain records of every Half-Elf born in the city. As you explore Halfelaria's lively streets, you can't help but feel the sense of acceptance and unity that permeate every corner of this vibrant city. It is a place where different races come together to create a harmonious and flourishing society.",
+        "Place Is Known For": "the annual Harmony Festival",
+        "Amount Of Land": "700 acres",
+        "Population": 25000,
+        "Number of Buildings": 3500,
+        "Crime Rate": "4%",
+        "Neighboring Cities And Towns": {
             "Elvenwood": "20 miles north",
             "Hearthaven": "15 miles east",
             "Humanbridge": "30 miles southeast",
             "Highforest": "45 miles south",
             "Riverhaven": "10 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Interwoven Elven spires and Human structures",
             "Lively marketplaces with exotic goods",
             "Diverse street performers and artists",
             "The Council of the Two Realms, a symbol of unity",
             "Elegant Temple of the Eilistraee at the city's heart",
         ],
-        "5 key features": [
+        "Key Features": [
             "The Harmony Theater, showcasing cultural performances",
             "Artisan's Plaza, a hub of creativity and craftsmanship",
             "Minglewood Park, a serene oasis of nature in the city",
             "The Hall of Ancestral Memory, a vast underground library",
             "Crossroads Bazaar, a market where Elven and Human goods meet",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Council of the Two Realms maintains peace and unity in the city",
             "The Temple of the Eilistraee is a symbol of acceptance and devotion",
             "Hidden chambers beneath the city hold relics of Elven and Human history",
             "The Hall of Ancestral Memory contains records of every Half-Elf born in Halfelaria",
             "Halfelaria's street food is a delightful fusion of Elven and Human cuisines",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Lord Elarion": "Co-chair of the Council of the Two Realms",
             "Sylvana Starwhisper": "Famous Half-Elf actress and singer",
             "Aldric Ironheart": "Master blacksmith known for crafting exquisite weapons",
             "Thalindra Moonshadow": "Elder priestess of the Temple of the Eilistraee",
             "Lorekeeper Galanor": "Guardian of the Hall of Ancestral Memory's records",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Eilistraee",
             "Corellon Larethian",
             "Lathander",
             "Sune",
             "Oghma",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The Council of the Two Realms holds secret negotiations in an underground chamber",
             "The Temple of the Eilistraee conceals ancient Elven artifacts beneath its floors",
             "A hidden passage beneath Artisan's Plaza leads to a network of underground tunnels",
             "The Hall of Ancestral Memory contains records dating back centuries, including rare scrolls",
             "Halfelaria's street festivals are a blend of Elven and Human customs, celebrating unity",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Shadowed Alley, known for illicit activities and hidden dangers",
             "The Forgotten Tunnels, a maze of dark passages beneath the city",
             "The Broken Bridge, a deteriorating structure that poses a danger to travelers",
             "The Abandoned Theater, rumored to be haunted by restless spirits",
             "The Enigmatic Gardens, where enchanted flora can be unpredictable",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Harmony Plaza, a central square where cultural events take place",
             "Minglewood Park, a peaceful retreat in the heart of the city",
             "The Hall of Ancestral Memory, where history comes to life",
             "The Artisan's Plaza, a vibrant hub of creativity and craftsmanship",
             "Crossroads Bazaar, a market where unique Elven and Human goods are found",
         ],
-        "races": {
+        "Race Makeup": {
             "Half-Elf": "60%",
             "Elf": "20%",
             "Human": "15%",
@@ -3644,7 +3684,7 @@ dnd_cities = {
             "Tiefling": "1%",
             "Other": "1%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Bard": "10%",
             "Cleric": "8%",
             "Fighter": "10%",
@@ -3655,12 +3695,12 @@ dnd_cities = {
             "Wizard": "10%",
             "Other": "30%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "1,200,000 gp",
             "bottom 10% earners": "100 gp",
             "median earners": "40,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Harmony Traders": 10,
             "Ethereal Enchantments": 15,
             "Artisan's Emporium": 12,
@@ -3674,7 +3714,7 @@ dnd_cities = {
             "The Half-Elven Florist": 5,
             "Rare Curiosities": 2,
         },
-        "services": {
+        "Services": {
             "Council Hall of Unity": 10,
             "Harmony Inns": 15,
             "Nature's Stables": 5,
@@ -3746,79 +3786,81 @@ dnd_cities = {
             25: "The city's communal baths are said to promote unity and relaxation among its residents.",
         },
     },
-    "orcspire" : {
-        "name": "Orcspire",
-        "description": "Orcspire is a bustling city nestled in a rocky valley, known for its strong half-orc population and their dedication to martial prowess and community. The city is carved into the mountainside, displaying impressive fortifications and arenas.",
-        "narrative": "Orcspire, a city of unwavering strength and unity, is a testament to the resilience of the half-orc people. Nestled within a rocky valley, the city's imposing fortifications and grand arenas dominate the landscape. As you approach Orcspire, you are greeted by the sight of half-orc warriors engaged in rigorous training exercises in the city's training yards. The city's architecture is a striking blend of natural rock formations and meticulously carved stone structures. Homes, markets, and temples are seamlessly integrated into the mountainside, and massive stone bridges connect different parts of the city. The heart of Orcspire is the Arena of Champions, a colossal battleground where warriors from all corners of the realm come to test their mettle. The arena's grand tournaments and duels are a source of great pride for the half-orc community. Life in Orcspire revolves around martial prowess, and every citizen is trained in combat from a young age. The annual Gladiator Festival is a highlight of the city, featuring fierce competitions and combat displays that attract spectators from near and far. Orcspire's unique society is governed by a council of seasoned warriors and shaman leaders who maintain a delicate balance between tradition and progress. The city's Great Forge, fueled by the fires of a dormant volcano, is where legendary weapons and armor are crafted, and it's said that each piece carries the spirit of the city's ancestors. Orcspire's temples are dedicated to Gruumsh, the god of war, and offer guidance and blessings to those who seek strength and victory. Orcspire is a city of secrets, with rumors of hidden underground chambers that hold ancient relics of great power. The Shaman's Sanctuary, a sacred cave deep within the mountain, is said to be a place of visions and communion with the spirits. As you navigate Orcspire's rocky streets, you can't help but feel the fierce determination and camaraderie that permeate every corner of this mighty city. It is a place where the boundaries between strength and honor are blurred, where the echoes of battle and the bonds of brotherhood forge an indomitable spirit.",
-        "place is known for": "the annual Gladiator Festival",
-        "amount of land": "700 acres",
-        "population": 18000,
-        "number of buildings": 2700,
-        "crime rate": "5%",
-        "Neighboring cities and towns": {
+
+
+    "Orcspire" : {
+        "Name": "Orcspire",
+        "Description": "Orcspire is a bustling city nestled in a rocky valley, known for its strong half-orc population and their dedication to martial prowess and community. The city is carved into the mountainside, displaying impressive fortifications and arenas.",
+        "Narrative": "Orcspire, a city of unwavering strength and unity, is a testament to the resilience of the half-orc people. Nestled within a rocky valley, the city's imposing fortifications and grand arenas dominate the landscape. As you approach Orcspire, you are greeted by the sight of half-orc warriors engaged in rigorous training exercises in the city's training yards. The city's architecture is a striking blend of natural rock formations and meticulously carved stone structures. Homes, markets, and temples are seamlessly integrated into the mountainside, and massive stone bridges connect different parts of the city. The heart of Orcspire is the Arena of Champions, a colossal battleground where warriors from all corners of the realm come to test their mettle. The arena's grand tournaments and duels are a source of great pride for the half-orc community. Life in Orcspire revolves around martial prowess, and every citizen is trained in combat from a young age. The annual Gladiator Festival is a highlight of the city, featuring fierce competitions and combat displays that attract spectators from near and far. Orcspire's unique society is governed by a council of seasoned warriors and shaman leaders who maintain a delicate balance between tradition and progress. The city's Great Forge, fueled by the fires of a dormant volcano, is where legendary weapons and armor are crafted, and it's said that each piece carries the spirit of the city's ancestors. Orcspire's temples are dedicated to Gruumsh, the god of war, and offer guidance and blessings to those who seek strength and victory. Orcspire is a city of secrets, with rumors of hidden underground chambers that hold ancient relics of great power. The Shaman's Sanctuary, a sacred cave deep within the mountain, is said to be a place of visions and communion with the spirits. As you navigate Orcspire's rocky streets, you can't help but feel the fierce determination and camaraderie that permeate every corner of this mighty city. It is a place where the boundaries between strength and honor are blurred, where the echoes of battle and the bonds of brotherhood forge an indomitable spirit.",
+        "Place Is Known For": "the annual Gladiator Festival",
+        "Amount Of Land": "700 acres",
+        "Population": 18000,
+        "Number of Buildings": 2700,
+        "Crime Rate": "5%",
+        "Neighboring Cities And Towns": {
             "Stonehaven": "20 miles north",
             "Ironhold": "15 miles east",
             "Battlekeep": "30 miles southeast",
             "Forgeholm": "50 miles south",
             "Shieldwall": "10 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Rocky valley surrounded by towering peaks",
             "Massive stone bridges connecting districts",
             "The dormant volcano, home to the Great Forge",
             "Training yards where half-orc warriors hone their skills",
             "The Arena of Champions, a grand battleground for contests",
         ],
-        "5 key features": [
+        "Key Features": [
             "Arena of Champions, the heart of gladiatorial combat",
             "Great Forge, where legendary weapons are crafted",
             "Shaman's Sanctuary, a sacred cave for spiritual communion",
             "Council of Warlords, governing the city's martial society",
             "Temples of Gruumsh, offering blessings and guidance",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "Orcspire's ancestors forged the city's foundations in a great battle",
             "The dormant volcano's fires fuel the Great Forge's legendary creations",
             "The Shaman's Sanctuary holds the secrets of half-orc spirituality",
             "Hidden underground chambers are rumored to contain relics of great power",
             "Each piece of armor from the Great Forge carries the spirit of the city's warriors",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Warlord Grakthar": "Leader of the Council of Warlords",
             "Sarnak the Blade": "Renowned gladiator and undefeated champion",
             "Shaman Zarakka": "Spiritual leader and guardian of the Shaman's Sanctuary",
             "Korruk Ironfist": "Master blacksmith of the Great Forge",
             "Ugar Bloodaxe": "High priest of the Temples of Gruumsh",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Gruumsh",
             "Kord",
             "Tempus",
             "Malar",
             "Hruggek",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The city's underground tunnels hide ancient relics and forgotten chambers",
             "The Great Forge's fires are said to be connected to the heart of the volcano",
             "Shamans can commune with ancestral spirits in the depths of the Shaman's Sanctuary",
             "Orcspire's legendary weapons are known to strike fear into the hearts of enemies",
             "The city's warriors undergo a rite of passage in the treacherous Cave of Trials",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Shadowed Cleft, a secluded canyon home to dangerous creatures",
             "The Labyrinthine Tunnels, a maze-like network of treacherous passages",
             "The Magma Chambers, where the dormant volcano's fury could awaken",
             "The Abyssal Pit, a dark chasm believed to be a gateway to other realms",
             "The Bonefields, a grim reminder of past battles with lingering undead",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Arena of Champions, to witness thrilling gladiatorial combat",
             "The Great Forge, to see master blacksmiths crafting legendary weapons",
             "The Shaman's Sanctuary, for spiritual guidance and visions",
             "The Council Square, where the city's leaders gather to make decisions",
             "The Temples of Gruumsh, to receive blessings and seek strength",
         ],
-        "races": {
+        "Race Makeup": {
             "Half-Orc": "80%",
             "Orc": "10%",
             "Human": "5%",
@@ -3827,7 +3869,7 @@ dnd_cities = {
             "Tiefling": "1%",
             "Other": "1%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Barbarian": "20%",
             "Fighter": "15%",
             "Monk": "5%",
@@ -3842,12 +3884,12 @@ dnd_cities = {
             "Druid": "1%",
             "Other": "8%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "1,500,000 gp",
             "bottom 10% earners": "100 gp",
             "median earners": "40,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Forgeheart Armory": 10,
             "Battleborn Weaponry": 15,
             "Shaman's Trinkets and Relics": 12,
@@ -3861,7 +3903,7 @@ dnd_cities = {
             "Spiritual Crystals and Totems": 5,
             "Metal and Stone Carvings": 2,
         },
-        "services": {
+        "Services": {
             "Council Square Hall": 10,
             "Lionheart Inns": 15,
             "Stables of Strength": 5,
@@ -3933,86 +3975,88 @@ dnd_cities = {
             25: "The city's stone hot springs are said to have rejuvenating properties, drawing warriors from distant lands.",
         },
     },
-    "halflinghaven" : {
-        "name": "Halflinghaven",
-        "description": "Halflinghaven is a bustling city built into the rolling hills of the countryside. The city is renowned for its warm hospitality, delicious cuisine, and intricate underground tunnels that connect every corner of the city.",
-        "narrative": "Halflinghaven, a city of warmth and camaraderie, is nestled among the picturesque rolling hills of the countryside. As you approach the city, you're greeted by the sight of quaint halfling cottages with thatched roofs and colorful gardens that seem to stretch as far as the eye can see. The city's streets are a cheerful maze of cobblestone paths, lined with market stalls, cozy inns, and bustling cafes. The halfling inhabitants, known for their boundless hospitality, welcome travelers with open arms and infectious laughter. The heart of Halflinghaven is the Great Green, a sprawling park where residents gather for picnics, games, and lively celebrations. Beneath the city's surface lies a network of intricate tunnels that connect every corner of the city, providing shelter during storms and allowing for swift travel. These tunnels are also home to the legendary Halfling Thieves' Guild, renowned for their skills in subterranean navigation and their sense of mischief. Life in Halflinghaven revolves around community and good food. The city's culinary delights are world-famous, with every street corner offering a taste of halfling cuisine, from savory pies to delectable pastries. The annual Feast of the Greenfields is a highlight of the city, featuring a grand feast that lasts for days, with food, music, and dancing filling the streets. Halflinghaven's unique tunnels also house the Tunneldancers, a group of halfling performers who use the tunnels' acoustics for mesmerizing underground shows. Halflinghaven is a city of secrets, and rumors persist of hidden chambers beneath the hills that contain treasures and ancient relics. The Halfling Sage's Library, a repository of knowledge, is said to hold the city's most cherished stories and histories. As you wander through Halflinghaven's cozy streets, you can't help but feel the sense of belonging and happiness that permeate every corner of this halfling paradise. It is a place where the boundaries between neighbors and friends blur, where laughter and friendship are valued above all else, creating a heartwarming tapestry of unity and joy.",
-        "place is known for": "the annual Feast of the Greenfields",
-        "amount of land": "500 acres",
-        "population": 12000,
-        "number of buildings": 2000,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Halflinghaven" : {
+        "Name": "Halflinghaven",
+        "Description": "Halflinghaven is a bustling city built into the rolling hills of the countryside. The city is renowned for its warm hospitality, delicious cuisine, and intricate underground tunnels that connect every corner of the city.",
+        "Narrative": "Halflinghaven, a city of warmth and camaraderie, is nestled among the picturesque rolling hills of the countryside. As you approach the city, you're greeted by the sight of quaint halfling cottages with thatched roofs and colorful gardens that seem to stretch as far as the eye can see. The city's streets are a cheerful maze of cobblestone paths, lined with market stalls, cozy inns, and bustling cafes. The halfling inhabitants, known for their boundless hospitality, welcome travelers with open arms and infectious laughter. The heart of Halflinghaven is the Great Green, a sprawling park where residents gather for picnics, games, and lively celebrations. Beneath the city's surface lies a network of intricate tunnels that connect every corner of the city, providing shelter during storms and allowing for swift travel. These tunnels are also home to the legendary Halfling Thieves' Guild, renowned for their skills in subterranean navigation and their sense of mischief. Life in Halflinghaven revolves around community and good food. The city's culinary delights are world-famous, with every street corner offering a taste of halfling cuisine, from savory pies to delectable pastries. The annual Feast of the Greenfields is a highlight of the city, featuring a grand feast that lasts for days, with food, music, and dancing filling the streets. Halflinghaven's unique tunnels also house the Tunneldancers, a group of halfling performers who use the tunnels' acoustics for mesmerizing underground shows. Halflinghaven is a city of secrets, and rumors persist of hidden chambers beneath the hills that contain treasures and ancient relics. The Halfling Sage's Library, a repository of knowledge, is said to hold the city's most cherished stories and histories. As you wander through Halflinghaven's cozy streets, you can't help but feel the sense of belonging and happiness that permeate every corner of this halfling paradise. It is a place where the boundaries between neighbors and friends blur, where laughter and friendship are valued above all else, creating a heartwarming tapestry of unity and joy.",
+        "Place Is Known For": "the annual Feast of the Greenfields",
+        "Amount Of Land": "500 acres",
+        "Population": 12000,
+        "Number of Buildings": 2000,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Hobbiton": "15 miles north",
             "Meadowbrook": "10 miles east",
             "Hillside Hamlet": "20 miles southeast",
             "Thistledown": "35 miles south",
             "Sunnydale": "8 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Quaint halfling cottages with colorful gardens",
             "Cobblestone streets filled with market stalls and cafes",
             "The Great Green, a sprawling park for community gatherings",
             "Intricate underground tunnels that crisscross the city",
             "The Halfling Thieves' Guild, hidden beneath the hills",
         ],
-        "5 key features": [
+        "Key Features": [
             "The Great Green, a hub of community activities",
             "Halfling Sage's Library, a repository of cherished stories",
             "Tunneldancer's Guild, renowned for underground performances",
             "The Feast of the Greenfields, a grand culinary celebration",
             "The Underground Market, a bustling subterranean bazaar",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Great Green is said to be blessed by a guardian spirit",
             "Halflinghaven's founders were renowned farmers and cooks",
             "Hidden chambers beneath the hills hold treasures of great value",
             "The Halfling Sage's Library contains ancient halfling lore",
             "The Tunneldancers use the tunnels' acoustics for mesmerizing shows",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Mayor Bramblefoot": "Leader of Halflinghaven's council",
             "Merry Berrybake": "Famous halfling chef known for delicious pies",
             "Pip Willowshade": "Master of ceremonies for the Feast of the Greenfields",
             "Silas Tunnelskipper": "Leader of the Tunneldancers' Guild",
             "Elderberry Leafwhisper": "Guardian of the Halfling Sage's Library",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Yondalla",
             "Brandobaris",
             "Sheela Peryroyl",
             "Arvoreen",
             "Cyrrollalee",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The tunnels house hidden chambers with treasures guarded by playful spirits",
             "Halflinghaven's tunnels are said to have been dug with the guidance of a mysterious patron",
             "The Underground Market sells exotic goods from distant lands",
             "The Halfling Sage's Library holds a book that tells the story of the city's founding",
             "The Tunneldancers use their performances to send secret messages to allies",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Burrowed Abyss, a dark and confusing labyrinth in the tunnels",
             "The Whispering Hollows, where eerie echoes can disorient travelers",
             "The Thieves' Den, the heart of the Halfling Thieves' Guild",
             "The Deepdark Depths, treacherous tunnels with unstable pathways",
             "The Mysterious Molehill, rumored to be a hidden lair of a powerful entity",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Great Green, a hub of community gatherings and games",
             "Halfling Sage's Library, where stories and history are cherished",
             "The Tunneldancers' Guild, for mesmerizing underground performances",
             "The Feast of the Greenfields, a grand culinary celebration",
             "The Underground Market, a bustling bazaar filled with exotic goods",
         ],
-        "races": {
+        "Race Makeup": {
             "Halfling": "95%",
             "Human": "2%",
             "Gnome": "1%",
             "Dwarf": "1%",
             "Elf": "1%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Rogue": "40%",
             "Bard": "15%",
             "Druid": "10%",
@@ -4021,12 +4065,12 @@ dnd_cities = {
             "Wizard": "5%",
             "Other": "10%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "100,000 gp",
             "bottom 10% earners": "5 gp",
             "median earners": "10,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Bramblefoot's Bakery": 10,
             "Hillside Inn": 15,
             "Thistledown Traders": 12,
@@ -4040,7 +4084,7 @@ dnd_cities = {
             "Sunnydale Sweets": 5,
             "Molehill Mysteries": 2,
         },
-        "services": {
+        "Services": {
             "Mayor's Office": 10,
             "Merry's Kitchen Catering": 15,
             "Hillside Stables": 5,
@@ -4112,79 +4156,81 @@ dnd_cities = {
             25: "The city's underground tunnels have hidden passages that lead to secret locations in the hills.",
         },
     },
-    "infernastra" : {
-        "name": "Infernastra",
-        "description": "Infernastra is a city nestled in the heart of a volcanic caldera, inhabited primarily by tieflings. The city is known for its fiery landscape, intricate architecture, and a society shaped by their infernal heritage.",
-        "narrative": "Infernastra, a city forged in the fires of a volcanic caldera, is a place where tieflings reign supreme. As you approach the city, you can feel the heat intensify, and the ground beneath your feet becomes rugged and rocky. The city's architecture is a masterpiece of dark, intricate design, with buildings carved into the obsidian cliffs and adorned with flaming motifs. Molten lava flows through carefully crafted channels, providing both illumination and a source of power for the city's forges. Infernastra's streets are bustling with tiefling residents, their horns and tails proudly displayed as symbols of their infernal heritage. The city's society is organized around a strict hierarchy, with powerful noble families at the top, each vying for control and influence. Infernal magic courses through the veins of its inhabitants, and fire-based spells and rituals are woven into their daily lives. At the heart of Infernastra lies the Obsidian Citadel, a formidable fortress where the Infernal Council convenes to govern the city. The council consists of representatives from the most influential tiefling noble families, and their politics are as fiery as the landscape. Life in Infernastra is a constant struggle for power and recognition, and its residents are known for their cunning and ambition. The annual Infernal Revelry is a highlight of the city, featuring fire-dancing competitions, spellcasting displays, and infernal music that echoes through the caldera. Infernastra is a city of secrets, with hidden chambers beneath the volcanic rock where powerful artifacts and infernal knowledge are guarded. The Temple of Asmodeus, the infernal deity, stands as a testament to the city's devotion to its fiendish heritage. As you navigate Infernastra's fiery streets, you can't help but feel the tension and ambition that permeate every corner of this infernal city. It is a place where the boundaries between the mortal and the infernal are blurred, where fire and ambition forge the destiny of its inhabitants.",
-        "place is known for": "the annual Infernal Revelry",
-        "amount of land": "400 acres",
-        "population": 12000,
-        "number of buildings": 2000,
-        "crime rate": "7%",
-        "Neighboring cities and towns": {
+
+
+    "Infernastra" : {
+        "Name": "Infernastra",
+        "Description": "Infernastra is a city nestled in the heart of a volcanic caldera, inhabited primarily by tieflings. The city is known for its fiery landscape, intricate architecture, and a society shaped by their infernal heritage.",
+        "Narrative": "Infernastra, a city forged in the fires of a volcanic caldera, is a place where tieflings reign supreme. As you approach the city, you can feel the heat intensify, and the ground beneath your feet becomes rugged and rocky. The city's architecture is a masterpiece of dark, intricate design, with buildings carved into the obsidian cliffs and adorned with flaming motifs. Molten lava flows through carefully crafted channels, providing both illumination and a source of power for the city's forges. Infernastra's streets are bustling with tiefling residents, their horns and tails proudly displayed as symbols of their infernal heritage. The city's society is organized around a strict hierarchy, with powerful noble families at the top, each vying for control and influence. Infernal magic courses through the veins of its inhabitants, and fire-based spells and rituals are woven into their daily lives. At the heart of Infernastra lies the Obsidian Citadel, a formidable fortress where the Infernal Council convenes to govern the city. The council consists of representatives from the most influential tiefling noble families, and their politics are as fiery as the landscape. Life in Infernastra is a constant struggle for power and recognition, and its residents are known for their cunning and ambition. The annual Infernal Revelry is a highlight of the city, featuring fire-dancing competitions, spellcasting displays, and infernal music that echoes through the caldera. Infernastra is a city of secrets, with hidden chambers beneath the volcanic rock where powerful artifacts and infernal knowledge are guarded. The Temple of Asmodeus, the infernal deity, stands as a testament to the city's devotion to its fiendish heritage. As you navigate Infernastra's fiery streets, you can't help but feel the tension and ambition that permeate every corner of this infernal city. It is a place where the boundaries between the mortal and the infernal are blurred, where fire and ambition forge the destiny of its inhabitants.",
+        "Place Is Known For": "the annual Infernal Revelry",
+        "Amount Of Land": "400 acres",
+        "Population": 12000,
+        "Number of Buildings": 2000,
+        "Crime Rate": "7%",
+        "Neighboring Cities And Towns": {
             "Ashenkeep": "10 miles north",
             "Sulfur Springs": "8 miles east",
             "CharredHaven": "15 miles southeast",
             "Hellfire Hollow": "30 miles south",
             "Abyssal Citadel": "12 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Rugged volcanic landscape with obsidian cliffs",
             "Molten lava channels flowing through the city",
             "Infernal motifs and symbols carved into buildings",
             "Dark, fiery skies created by volcanic ash",
             "The Obsidian Citadel, a formidable fortress at the city's center",
         ],
-        "5 key features": [
+        "Key Features": [
             "The Obsidian Forge, where master blacksmiths craft infernal weapons",
             "Temple of Asmodeus, a place of infernal worship and dark rituals",
             "Infernal Bazaar, a marketplace for exotic and dangerous goods",
             "Infernal Magic Academies, where tieflings master their fiery powers",
             "The Infernal Council Chambers, where city politics are decided",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "Infernastra was founded by a tiefling warlord who made a pact with a powerful devil",
             "The Obsidian Forge is said to hold the secret of forging weapons from the heart of a volcano",
             "Hidden chambers beneath the city contain infernal artifacts of great power",
             "The Temple of Asmodeus is rumored to hold a portal to the Nine Hells",
             "Infernal magic is used to shape the volcanic landscape and create defenses",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Lord Infernus": "Dominant ruler of Infernastra's most powerful noble family",
             "Sylthara Flameheart": "Renowned fire-dancer and entertainer",
             "High Priest Malzara": "Spiritual leader of the Temple of Asmodeus",
             "Ignar the Pyromancer": "Master of infernal fire magic and protector of the city",
             "Lady Vexithra": "Influential noble with a network of spies and informants",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Asmodeus",
             "Belial",
             "Fierna",
             "Levistus",
             "Mammon",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "Hidden tunnels beneath the city connect to ancient catacombs with fiendish guardians",
             "The Obsidian Forge's secret technique involves binding fire elementals to weapons",
             "Infernal politics are influenced by a shadowy organization known as the Infernal Syndicate",
             "The Temple of Asmodeus holds forbidden tomes of infernal lore",
             "Mysterious portals to the Nine Hells are rumored to exist deep within the caldera",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Scorching Abyss, where the lava's heat is unbearable",
             "The Cursed Caverns, home to fiendish creatures and trapped souls",
             "The Searing Plateau, where eruptions can occur without warning",
             "The Ashen Tunnels, a labyrinthine maze filled with infernal traps",
             "The Dark Chasm, a pit leading to the unknown depths of the caldera",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Infernal Bazaar, a bustling market of exotic goods and fiery spices",
             "The Obsidian Forge, where master blacksmiths create infernal weapons",
             "The Infernal Magic Academies, where tieflings hone their magical talents",
             "The Infernal Revelry grounds, where the annual celebration ignites the city",
             "The Temple of Asmodeus, for those seeking infernal guidance or dark rituals",
         ],
-        "races": {
+        "Race Makeup": {
             "Tiefling": "90%",
             "Human": "5%",
             "Dwarf": "2%",
@@ -4192,7 +4238,7 @@ dnd_cities = {
             "Elf": "1%",
             "Other": "1%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Sorcerer": "15%",
             "Warlock": "20%",
             "Wizard": "10%",
@@ -4207,12 +4253,12 @@ dnd_cities = {
             "Barbarian": "1%",
             "Other": "25%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "2,000,000 gp",
             "bottom 10% earners": "500 gp",
             "median earners": "100,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Infernal Traders": 10,
             "Ethereal Enchantments": 15,
             "Obsidian Forge Weapons": 12,
@@ -4225,7 +4271,7 @@ dnd_cities = {
             "Fiendish Eats and Spices": 5,
             "Abyssal Artifacts": 2,
         },
-        "services": {
+        "Services": {
             "Obsidian Council Hall": 10,
             "Infernal Taverns": 15,
             "Flameforged Stables": 5,
@@ -4297,79 +4343,81 @@ dnd_cities = {
             25: "Infernastra's architecture incorporates both beauty and functionality, reflecting the tiefling culture's love for intricate design",
         },
     },
-    "wildaxe" : {
-        "name": "Wildaxe",
-        "description": "Wildaxe is a rugged city situated amidst untamed wilderness. It is known for its fierce Barbarian inhabitants and their deep connection to the primal forces of nature.",
-        "narrative": "Wildaxe, a city of unbridled strength and primal power, stands as a testament to the might of its Barbarian inhabitants. Situated amidst the untamed wilderness, the city is a stark contrast to the polished elegance of other urban centers. As you approach Wildaxe, you are met with the sight of towering trees, dense forests, and rugged terrain that stretches as far as the eye can see. The city itself appears to be carved directly from the wilderness, with sturdy log cabins and watchtowers scattered among the trees. The inhabitants of Wildaxe are fierce Barbarians who have embraced the raw power of nature. They live in harmony with the untamed world, drawing their strength from the primal forces that surround them. The heart of Wildaxe is the Great Lodge, a massive wooden structure that serves as both a meeting hall and a training ground for the city's warriors. It is here that Barbarians of all tribes gather to test their mettle, share stories of battle, and make decisions that affect the city. Life in Wildaxe revolves around survival and strength. The city's inhabitants are expert hunters, skilled in tracking and trapping the creatures of the wilderness for sustenance. The annual Great Hunt is a highlight of the city's calendar, where Barbarians from different tribes come together to compete in a contest of hunting prowess. Wildaxe's unique society is governed by a council of tribal leaders, each representing a different clan within the city. Decisions are made through a consensus of these leaders, and the council meets in the Great Lodge to discuss matters of importance. The city's religion centers around the worship of primal deities, and sacred groves within the city serve as places of reverence and communion with the natural world. Wildaxe is a city of secrets, and rumors persist of hidden totemic artifacts that grant incredible power to those who find them. The Whispering Woods, a mysterious forest on the outskirts of the city, is said to hold ancient spirits that can be communed with by those who dare to venture within. As you explore Wildaxe's rugged streets, you can't help but feel the primal energy that permeates every corner of this untamed city. It is a place where the boundaries between civilization and the wild blur, where strength and survival are paramount, and where the call of the wild echoes in the hearts of its inhabitants.",
-        "place is known for": "the annual Great Hunt",
-        "amount of land": "1000 acres",
-        "population": 12000,
-        "number of buildings": 2000,
-        "crime rate": "5%",
-        "Neighboring cities and towns": {
+
+
+    "Wildaxe" : {
+        "Name": "Wildaxe",
+        "Description": "Wildaxe is a rugged city situated amidst untamed wilderness. It is known for its fierce Barbarian inhabitants and their deep connection to the primal forces of nature.",
+        "Narrative": "Wildaxe, a city of unbridled strength and primal power, stands as a testament to the might of its Barbarian inhabitants. Situated amidst the untamed wilderness, the city is a stark contrast to the polished elegance of other urban centers. As you approach Wildaxe, you are met with the sight of towering trees, dense forests, and rugged terrain that stretches as far as the eye can see. The city itself appears to be carved directly from the wilderness, with sturdy log cabins and watchtowers scattered among the trees. The inhabitants of Wildaxe are fierce Barbarians who have embraced the raw power of nature. They live in harmony with the untamed world, drawing their strength from the primal forces that surround them. The heart of Wildaxe is the Great Lodge, a massive wooden structure that serves as both a meeting hall and a training ground for the city's warriors. It is here that Barbarians of all tribes gather to test their mettle, share stories of battle, and make decisions that affect the city. Life in Wildaxe revolves around survival and strength. The city's inhabitants are expert hunters, skilled in tracking and trapping the creatures of the wilderness for sustenance. The annual Great Hunt is a highlight of the city's calendar, where Barbarians from different tribes come together to compete in a contest of hunting prowess. Wildaxe's unique society is governed by a council of tribal leaders, each representing a different clan within the city. Decisions are made through a consensus of these leaders, and the council meets in the Great Lodge to discuss matters of importance. The city's religion centers around the worship of primal deities, and sacred groves within the city serve as places of reverence and communion with the natural world. Wildaxe is a city of secrets, and rumors persist of hidden totemic artifacts that grant incredible power to those who find them. The Whispering Woods, a mysterious forest on the outskirts of the city, is said to hold ancient spirits that can be communed with by those who dare to venture within. As you explore Wildaxe's rugged streets, you can't help but feel the primal energy that permeates every corner of this untamed city. It is a place where the boundaries between civilization and the wild blur, where strength and survival are paramount, and where the call of the wild echoes in the hearts of its inhabitants.",
+        "Place Is Known For": "the annual Great Hunt",
+        "Amount Of Land": "1000 acres",
+        "Population": 12000,
+        "Number of Buildings": 2000,
+        "Crime Rate": "5%",
+        "Neighboring Cities And Towns": {
             "Stoneholt": "15 miles north",
             "Feralwood": "10 miles east",
             "Savagecliff": "30 miles southeast",
             "Beasthold": "40 miles south",
             "Wildwood": "20 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Towerings trees and dense forests",
             "Rugged terrain and rocky outcrops",
             "Log cabins and wooden watchtowers",
             "Sacred groves dedicated to primal deities",
             "The Great Lodge, a massive wooden meeting hall",
         ],
-        "5 key features": [
+        "Key Features": [
             "Great Lodge, the heart of Barbarian gatherings",
             "Primal Totem Carvers' Guild",
             "Hunter's Bazaar, where trophies of the wild are traded",
             "Sacred Grove of the Bear Spirit",
             "Council of Tribal Leaders",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Whispering Woods hold ancient spirits that can be communed with",
             "Barbarians of Wildaxe draw strength from the primal forces of nature",
             "Hidden totemic artifacts grant incredible power to those who find them",
             "The Great Hunt is a contest of hunting prowess held annually",
             "Wildaxe's society is governed by a council of tribal leaders",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Bjorn Ironfist": "Champion of the Great Hunt",
             "Sylva Windrider": "Tribal leader of the Wolf Clan",
             "Grom Stoneheart": "Master totemic carver",
             "Thora Bearheart": "High priestess of the Bear Spirit",
             "Ulfgar Stormcaller": "Council leader and renowned warrior",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Bear Spirit",
             "Wolf Spirit",
             "Eagle Spirit",
             "Serpent Spirit",
             "Primal Ancestors",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The Whispering Woods conceal a hidden path to the Elemental Plane of Nature",
             "The Great Lodge contains ancient totemic relics that grant visions",
             "The Hunter's Bazaar hosts rare creatures captured from other planes",
             "Wildaxe's sacred groves hold hidden passages to underground caverns",
             "The Council of Tribal Leaders meets in a hidden chamber beneath the Great Lodge",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Savage Ravine, a treacherous chasm inhabited by dangerous beasts",
             "The Fangwood Swamp, where deadly serpents and quicksand lurk",
             "The Howling Peaks, home to fierce creatures and unpredictable weather",
             "The Shadowed Caverns, dark and perilous underground tunnels",
             "The Abyssal Gorge, a rift leading to unknown depths",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Great Lodge, a place of grand Barbarian gatherings",
             "The Primal Totem Carvers' Guild, showcasing totemic artistry",
             "The Hunter's Bazaar, where trophies of the wild are traded",
             "The Sacred Grove of the Bear Spirit, a place of spiritual communion",
             "The Council of Tribal Leaders, where decisions are made",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "70%",
             "Half-Orc": "15%",
             "Goliath": "5%",
@@ -4377,19 +4425,19 @@ dnd_cities = {
             "Firbolg": "3%",
             "Other": "3%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Barbarian": "90%",
             "Fighter": "5%",
             "Druid": "2%",
             "Ranger": "1%",
             "Other": "2%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "200,000 gp",
             "bottom 10% earners": "50 gp",
             "median earners": "10,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Primal Gear and Weapons": 10,
             "Totemic Artistry": 15,
             "Wildtrophy Traders": 12,
@@ -4403,7 +4451,7 @@ dnd_cities = {
             "The Bear's Den (Tavern)": 5,
             "Nature's Treasures and Artifacts": 2,
         },
-        "services": {
+        "Services": {
             "Great Lodge Hall": 10,
             "Raging Fires Taverns": 15,
             "Wildstables": 5,
@@ -4475,79 +4523,81 @@ dnd_cities = {
             25: "The city's wilderness contains hidden caves and totemic shrines, waiting to be discovered by brave adventurers.",
         },
     },
-    "melodyspire" : {
-        "name": "Melodyspire",
-        "description": "Melodyspire, often called the City of Bards, is a vibrant and musical metropolis renowned for its artistic expression, grand performances, and the harmonious blend of various musical traditions.",
-        "narrative": "Melodyspire, known far and wide as the City of Bards, is a place where the very air seems to be filled with music. Nestled in a picturesque valley surrounded by rolling hills, the city is a vibrant and artistic metropolis. As you approach Melodyspire, you are greeted by the sounds of lutes, flutes, and harps drifting through the air. The city's architecture is a testament to its artistic spirit, with colorful buildings adorned with intricate musical motifs, and streets lined with statues and sculptures celebrating great bards of the past. The heart of Melodyspire is the Harmonious Hall, a grand amphitheater where bards from all corners of the realm come to perform and showcase their talents. The Hall is not merely a venue; it is the very soul of the city, where musical competitions, poetic recitations, and dramatic performances unfold on a daily basis. Life in Melodyspire revolves around artistic expression, and residents can often be found in the city's countless taverns, inns, and theaters, sharing tales and melodies. The annual Bardic Festival is a highlight of the city, featuring enchanting performances, grand parades, and a massive competition known as the Bardic Rhapsody, where bards compete for the title of Grand Maestro. Melodyspire's unique artistic environment has led to the development of a distinct bardic religion centered around the Muse, a divine being believed to inspire creativity and artistic excellence. Temples dedicated to the Muse dot the city, and pilgrims come to seek inspiration for their own artistic endeavors. Melodyspire is a city of secrets, and hidden underground chambers known as the Subterranean Soundscapes are rumored to hold ancient musical artifacts and legendary instruments. As you wander through Melodyspire's bustling streets, you can't help but feel the passion and creativity that permeate every corner of this musical city. It is a place where the boundaries between performer and audience blur, where art and music are celebrated as essential aspects of life and culture.",
-        "place is known for": "the annual Bardic Festival",
-        "amount of land": "700 acres",
-        "population": 18000,
-        "number of buildings": 2800,
-        "crime rate": "4%",
-        "Neighboring cities and towns": {
+
+
+    "Melodyspire" : {
+        "Name": "Melodyspire",
+        "Description": "Melodyspire, often called the City of Bards, is a vibrant and musical metropolis renowned for its artistic expression, grand performances, and the harmonious blend of various musical traditions.",
+        "Narrative": "Melodyspire, known far and wide as the City of Bards, is a place where the very air seems to be filled with music. Nestled in a picturesque valley surrounded by rolling hills, the city is a vibrant and artistic metropolis. As you approach Melodyspire, you are greeted by the sounds of lutes, flutes, and harps drifting through the air. The city's architecture is a testament to its artistic spirit, with colorful buildings adorned with intricate musical motifs, and streets lined with statues and sculptures celebrating great bards of the past. The heart of Melodyspire is the Harmonious Hall, a grand amphitheater where bards from all corners of the realm come to perform and showcase their talents. The Hall is not merely a venue; it is the very soul of the city, where musical competitions, poetic recitations, and dramatic performances unfold on a daily basis. Life in Melodyspire revolves around artistic expression, and residents can often be found in the city's countless taverns, inns, and theaters, sharing tales and melodies. The annual Bardic Festival is a highlight of the city, featuring enchanting performances, grand parades, and a massive competition known as the Bardic Rhapsody, where bards compete for the title of Grand Maestro. Melodyspire's unique artistic environment has led to the development of a distinct bardic religion centered around the Muse, a divine being believed to inspire creativity and artistic excellence. Temples dedicated to the Muse dot the city, and pilgrims come to seek inspiration for their own artistic endeavors. Melodyspire is a city of secrets, and hidden underground chambers known as the Subterranean Soundscapes are rumored to hold ancient musical artifacts and legendary instruments. As you wander through Melodyspire's bustling streets, you can't help but feel the passion and creativity that permeate every corner of this musical city. It is a place where the boundaries between performer and audience blur, where art and music are celebrated as essential aspects of life and culture.",
+        "Place Is Known For": "the annual Bardic Festival",
+        "Amount Of Land": "700 acres",
+        "Population": 18000,
+        "Number of Buildings": 2800,
+        "Crime Rate": "4%",
+        "Neighboring Cities And Towns": {
             "Harmony Hollow": "10 miles north",
             "Crescendo Canyon": "15 miles east",
             "Lyricville": "30 miles southeast",
             "Sonata Springs": "40 miles south",
             "Canticle Crossing": "12 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Rolling hills surrounding the city",
             "Colorful buildings adorned with musical motifs",
             "Streets filled with statues and sculptures of famous bards",
             "The Harmonious Hall, a grand amphitheater at the city's heart",
             "The River of Rhapsodies, a sparkling waterway lined with musicians",
         ],
-        "5 key features": [
+        "Key Features": [
             "Harmonious Hall, a grand amphitheater for performances",
             "Temples of the Muse, dedicated to the divine inspiration of art",
             "The Bardic Bazaar, a bustling marketplace for artistic wares",
             "The Lyric Library, housing ancient scrolls and musical compositions",
             "Bardic Colleges offering training in various musical disciplines",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Muse blesses artists with inspiration through dreams and visions",
             "Melodyspire was founded by a legendary bard who played a magical harp",
             "Subterranean Soundscapes hold ancient musical artifacts and instruments",
             "The Harmonious Hall is said to have acoustics that rival the heavens",
             "A hidden passage in the Lyric Library leads to a treasure trove of compositions",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Grand Maestro Orpheus": "Renowned bard and winner of multiple Bardic Rhapsodies",
             "Lyra Songweaver": "Master of the Muse's Temples, inspiring artists across the city",
             "Thesius Melodious": "Eccentric bard who claims to have spoken to the Muse",
             "Melodia Starlight": "Famous bardic historian and curator of the Lyric Library",
             "Maestro Crescendo": "Composer of the legendary 'Symphony of the Ages'",
         },
-        "5 top religions": [
+        "Top Religions": [
             "The Muse",
             "Apollo",
             "Sune",
             "Lliira",
             "Oghma",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "A hidden chamber beneath the Harmonious Hall holds a legendary harp of power",
             "The Subterranean Soundscapes are guarded by sentient musical guardians",
             "Artifacts known as 'Harmonic Crystals' can enhance musical performances",
             "The Lyric Library contains a map to hidden caverns of forgotten compositions",
             "Certain bards claim to have heard the Muse's voice in the winds of Melodyspire",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Discordant Alley, where rival bards engage in musical duels",
             "The Muted Moat, a waterway inhabited by eerie, sound-absorbing creatures",
             "The Silent Stage, a cursed amphitheater where no music can be heard",
             "The Echoless Caves, a dark labyrinth where sounds vanish without a trace",
             "The Soundless Sanctuary, a temple shrouded in unnatural silence",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Bardic Gardens, a serene oasis filled with inspirational sculptures",
             "The Muse's Temples, where artists seek divine guidance and inspiration",
             "The Bardic Bazaar, a vibrant marketplace offering artistic wares",
             "The Lyric Library, a treasure trove of musical compositions and knowledge",
             "The Harmonious Hall, the heart of Melodyspire's artistic expression",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "40%",
             "Elf": "25%",
             "Half-Elf": "10%",
@@ -4557,7 +4607,7 @@ dnd_cities = {
             "Tiefling": "3%",
             "Other": "4%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Bard": "30%",
             "Sorcerer": "10%",
             "Rogue": "10%",
@@ -4569,12 +4619,12 @@ dnd_cities = {
             "Warlock": "4%",
             "Other": "15%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "1,200,000 gp",
             "bottom 10% earners": "100 gp",
             "median earners": "40,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Harmonic Harmonies": 10,
             "Ethereal Enchantments": 15,
             "Musical Instruments Emporium": 12,
@@ -4588,7 +4638,7 @@ dnd_cities = {
             "The Muse's Inspirations (Bookstore)": 5,
             "Antiques of Musical Legends": 2,
         },
-        "services": {
+        "Services": {
             "Harmonious Hall Reservations": 10,
             "Bardic Inns and Taverns": 15,
             "Melodic Stables": 5,
@@ -4660,79 +4710,81 @@ dnd_cities = {
             25: "The city's melodic hot springs are said to have rejuvenating properties, attracting artists seeking inspiration.",
         },
     },
-    "holyhaven" : {
-        "name": "Holyhaven",
-        "description": "Holyhaven is a sacred city devoted to the worship of gods and the training of clerics. Its grand temples, radiant gardens, and divine aura make it a haven for the faithful.",
-        "narrative": "Holyhaven, a city bathed in divine radiance, stands as a beacon of faith in the realm. Nestled within a valley surrounded by majestic mountains, the city is a haven for the faithful and a hub of religious devotion. As you approach Holyhaven, you're greeted by the sight of grand temples and cathedrals that pierce the sky, their spires reaching toward the heavens. The city's architecture is a testament to its devotion, with intricately carved statues and holy symbols adorning every building. The streets of Holyhaven are paved with polished marble, and fragrant gardens filled with vibrant, celestial flora line the thoroughfares. Pilgrims from distant lands journey to Holyhaven to seek the blessings of the gods and the wisdom of the clergy. The heart of the city is the Sanctum of Divinity, a massive cathedral that serves as the spiritual center of Holyhaven. It is here that clerics from all corners of the world come to receive training, guidance, and blessings from the city's revered high priests and priestesses. Life in Holyhaven revolves around faith and devotion. The city's inhabitants are known for their kindness and piety, and divine magic permeates every aspect of daily life. The annual Festival of Devotion is a highlight of the city, featuring religious processions, divine rituals, and gatherings of clergy from various faiths. Holyhaven is a city of secrets, and hidden chambers beneath the temples are said to house relics of great power. The Celestial Library, a vast repository of sacred texts, is rumored to contain prophecies that foretell the destiny of the faithful. As you wander through Holyhaven's radiant streets, you can't help but feel the divine aura that envelops every corner of this sacred city. It is a place where the boundaries between mortals and gods blur, where faith and devotion light the path to enlightenment and divine favor.",
-        "place is known for": "the annual Festival of Devotion",
-        "amount of land": "500 acres",
-        "population": 18000,
-        "number of buildings": 2800,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Holyhaven" : {
+        "Name": "Holyhaven",
+        "Description": "Holyhaven is a sacred city devoted to the worship of gods and the training of clerics. Its grand temples, radiant gardens, and divine aura make it a haven for the faithful.",
+        "Narrative": "Holyhaven, a city bathed in divine radiance, stands as a beacon of faith in the realm. Nestled within a valley surrounded by majestic mountains, the city is a haven for the faithful and a hub of religious devotion. As you approach Holyhaven, you're greeted by the sight of grand temples and cathedrals that pierce the sky, their spires reaching toward the heavens. The city's architecture is a testament to its devotion, with intricately carved statues and holy symbols adorning every building. The streets of Holyhaven are paved with polished marble, and fragrant gardens filled with vibrant, celestial flora line the thoroughfares. Pilgrims from distant lands journey to Holyhaven to seek the blessings of the gods and the wisdom of the clergy. The heart of the city is the Sanctum of Divinity, a massive cathedral that serves as the spiritual center of Holyhaven. It is here that clerics from all corners of the world come to receive training, guidance, and blessings from the city's revered high priests and priestesses. Life in Holyhaven revolves around faith and devotion. The city's inhabitants are known for their kindness and piety, and divine magic permeates every aspect of daily life. The annual Festival of Devotion is a highlight of the city, featuring religious processions, divine rituals, and gatherings of clergy from various faiths. Holyhaven is a city of secrets, and hidden chambers beneath the temples are said to house relics of great power. The Celestial Library, a vast repository of sacred texts, is rumored to contain prophecies that foretell the destiny of the faithful. As you wander through Holyhaven's radiant streets, you can't help but feel the divine aura that envelops every corner of this sacred city. It is a place where the boundaries between mortals and gods blur, where faith and devotion light the path to enlightenment and divine favor.",
+        "Place Is Known For": "the annual Festival of Devotion",
+        "Amount Of Land": "500 acres",
+        "Population": 18000,
+        "Number of Buildings": 2800,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Divine Haven": "20 miles north",
             "Blessed Springs": "12 miles east",
             "Seraph's Rest": "30 miles southeast",
             "Gracewood": "45 miles south",
             "Sacred Grove": "10 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Grand temples and cathedrals reaching toward the heavens",
             "Polished marble streets lined with celestial gardens",
             "Fragrant celestial flora that fills the city with divine scents",
             "Majestic mountains that cradle Holyhaven in a protective embrace",
             "The Sanctum of Divinity, a colossal cathedral at the city's heart",
         ],
-        "5 key features": [
+        "Key Features": [
             "Sanctum of Divinity, the spiritual center of the city",
             "Celestial Library, a repository of sacred texts and prophecies",
             "Hall of Divine Blessings, where clerics receive their holy powers",
             "Garden of Serenity, a place of meditation and reflection",
             "Oracle's Spire, where seers and prophets seek visions of the future",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Sanctum of Divinity is said to house the presence of the gods",
             "Holyhaven's founders were blessed by a celestial being",
             "Hidden chambers beneath the temples hold relics of great power",
             "The Celestial Library contains prophecies that foretell the future",
             "Divine magic flows through the city's inhabitants, marking them as chosen",
         ],
-        "5 popular people": {
+        "Popular People": {
             "High Priest Solara": "Spiritual leader of Holyhaven",
             "Acolyte Cedric": "Young cleric with a burgeoning reputation",
             "Elder Seraphina": "Keeper of ancient prophecies in the Celestial Library",
             "Sister Elowen": "Renowned healer known for miraculous cures",
             "Prophet Malachi": "Seer who interprets visions from the Oracle's Spire",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Pelor",
             "Lathander",
             "Sarenrae",
             "Torm",
             "Helm",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "Hidden chambers beneath the temples hold divine relics and artifacts",
             "The Celestial Library contains prophecies that can shape the future",
             "Divine visions from the Oracle's Spire guide the city's decisions",
             "The Garden of Serenity is rumored to have miraculous healing properties",
             "High Priest Solara communicates directly with a celestial being",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Shadowed Catacombs, where restless spirits are said to dwell",
             "The Whispering Crypts, where eerie voices can drive one to madness",
             "The Cursed Mausoleum, a place said to be haunted by malevolent entities",
             "The Abyssal Altar, where dark rituals were once performed",
             "The Forgotten Sepulcher, a burial site rumored to be cursed",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Garden of Serenity, a place of peace and reflection",
             "The Hall of Divine Blessings, where clerics receive their holy powers",
             "The Celestial Library, housing sacred texts and prophecies",
             "The Oracle's Spire, where seers seek visions of the future",
             "The Sanctum of Divinity, the heart of Holyhaven's spirituality",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "50%",
             "Dwarf": "15%",
             "Elf": "10%",
@@ -4742,7 +4794,7 @@ dnd_cities = {
             "Tiefling": "5%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Cleric": "30%",
             "Paladin": "15%",
             "Bard": "5%",
@@ -4755,12 +4807,12 @@ dnd_cities = {
             "Monk": "3%",
             "Other": "2%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "1,200,000 gp",
             "bottom 10% earners": "100 gp",
             "median earners": "40,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Radiant Relics": 10,
             "Divine Artisans": 15,
             "Celestial Elixirs and Potions": 12,
@@ -4774,7 +4826,7 @@ dnd_cities = {
             "Scribes of Divine Wisdom": 5,
             "Crystal Oracles": 2,
         },
-        "services": {
+        "Services": {
             "Sanctum of Divine Blessings": 10,
             "Blessed Inns": 15,
             "Sacred Stables": 5,
@@ -4846,79 +4898,81 @@ dnd_cities = {
             25: "The city's holy hot springs are said to purify the soul, drawing faithful visitors from afar.",
         },
     },
-    "druidshaven" : {
-        "name": "Druidshaven",
-        "description": "Druidshaven is a city nestled within an ancient, enchanted forest. It is a haven for druids and nature enthusiasts, where the boundaries between civilization and the wild are blurred.",
-        "narrative": "Druidshaven, a city born of nature's embrace, is hidden within the depths of an ancient and enchanted forest. This remarkable city is a sanctuary for druids and all who revere the natural world. As you approach Druidshaven, the landscape gradually transforms from the ordinary woods into a mystical, untamed wilderness. The city itself is a harmonious blend of civilization and the wild, where towering trees serve as natural watchtowers and cobblestone paths wind their way through the forest underbrush. Vines, moss, and flowers adorn the buildings, as if the city itself is a part of the forest it inhabits. The air is filled with the scent of pine and earth, and the soft rustling of leaves is a constant companion. At the heart of Druidshaven stands the Verdant Spire, a towering tree that serves as both a symbol of the city's connection to nature and its center of governance. Druidic symbols and runes adorn the tree's bark, and it is rumored to hold ancient wisdom. The inhabitants of Druidshaven, known as the Circle of the Grove, are a diverse group of nature enthusiasts, including druids, rangers, and those who seek to live in harmony with the wilderness. The annual Wildheart Festival is a celebration of nature, featuring contests of archery, herbalism, and storytelling under the open sky. The city's theaters host plays where actors transform into animals through the use of intricate masks and costumes. Druidshaven is a city of secrets, and hidden groves within the forest serve as portals to the Feywild, inviting adventurers to explore the realm of fae creatures. Rumors persist of a sacred grove where an ancient Archdruid communes with the spirits of the land. The Sacred Oak, a massive tree within the city, is said to grant visions to those who meditate beneath its branches. Life in Druidshaven is deeply spiritual, and the city is home to various druidic circles that gather in sacred glades to connect with the natural world. As you wander through Druidshaven's enchanted streets, you can't help but feel the deep reverence and connection to nature that permeate every corner of this mystical city. It is a place where the boundaries between civilization and the wilderness are blurred, where nature and society exist in perfect harmony, creating a haven for all who seek to embrace the wild within.",
-        "place is known for": "the annual Wildheart Festival",
-        "amount of land": "700 acres",
-        "population": 18000,
-        "number of buildings": 2700,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Druidshaven" : {
+        "Name": "Druidshaven",
+        "Description": "Druidshaven is a city nestled within an ancient, enchanted forest. It is a haven for druids and nature enthusiasts, where the boundaries between civilization and the wild are blurred.",
+        "Narrative": "Druidshaven, a city born of nature's embrace, is hidden within the depths of an ancient and enchanted forest. This remarkable city is a sanctuary for druids and all who revere the natural world. As you approach Druidshaven, the landscape gradually transforms from the ordinary woods into a mystical, untamed wilderness. The city itself is a harmonious blend of civilization and the wild, where towering trees serve as natural watchtowers and cobblestone paths wind their way through the forest underbrush. Vines, moss, and flowers adorn the buildings, as if the city itself is a part of the forest it inhabits. The air is filled with the scent of pine and earth, and the soft rustling of leaves is a constant companion. At the heart of Druidshaven stands the Verdant Spire, a towering tree that serves as both a symbol of the city's connection to nature and its center of governance. Druidic symbols and runes adorn the tree's bark, and it is rumored to hold ancient wisdom. The inhabitants of Druidshaven, known as the Circle of the Grove, are a diverse group of nature enthusiasts, including druids, rangers, and those who seek to live in harmony with the wilderness. The annual Wildheart Festival is a celebration of nature, featuring contests of archery, herbalism, and storytelling under the open sky. The city's theaters host plays where actors transform into animals through the use of intricate masks and costumes. Druidshaven is a city of secrets, and hidden groves within the forest serve as portals to the Feywild, inviting adventurers to explore the realm of fae creatures. Rumors persist of a sacred grove where an ancient Archdruid communes with the spirits of the land. The Sacred Oak, a massive tree within the city, is said to grant visions to those who meditate beneath its branches. Life in Druidshaven is deeply spiritual, and the city is home to various druidic circles that gather in sacred glades to connect with the natural world. As you wander through Druidshaven's enchanted streets, you can't help but feel the deep reverence and connection to nature that permeate every corner of this mystical city. It is a place where the boundaries between civilization and the wilderness are blurred, where nature and society exist in perfect harmony, creating a haven for all who seek to embrace the wild within.",
+        "Place Is Known For": "the annual Wildheart Festival",
+        "Amount Of Land": "700 acres",
+        "Population": 18000,
+        "Number of Buildings": 2700,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Leafshade": "15 miles north",
             "Mossy Hollow": "12 miles east",
             "Thornwood Grove": "20 miles southeast",
             "Feyglade": "35 miles south",
             "Elmbrook": "10 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Ancient trees that serve as natural watchtowers",
             "Enchanted forest underbrush and flora",
             "Verdant Spire, the towering symbol of the city",
             "Sacred Oak, a massive tree granting visions",
             "Hidden groves with portals to the Feywild",
         ],
-        "5 key features": [
+        "Key Features": [
             "Verdant Spire, the center of governance and wisdom",
             "Wildheart Pavilion, where the annual festival is held",
             "Herbalist's Haven, a marketplace for rare herbs",
             "Theater of Transformation, where actors become animals",
             "Circle of the Grove, a gathering place for nature enthusiasts",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Sacred Oak grants visions to those who meditate beneath it",
             "Druidshaven's founders were renowned Archdruids who communed with spirits",
             "Hidden groves within the forest serve as portals to the Feywild",
             "The Verdant Spire holds ancient druidic wisdom within its bark",
             "The city's inhabitants communicate with animals through a telepathic bond",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Archdruid Thalara": "Leader of the Circle of the Grove",
             "Sylvan Melodies": "Renowned bard known for nature-themed songs",
             "Thornbark Greenleaf": "Expert herbalist and protector of the forest",
             "Wildshape Warden": "Mysterious druid with the ability to shape-shift",
             "Professor Moonshadow": "Scholar specializing in the study of the Feywild",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Nature's Harmony",
             "Obad-Hai",
             "Sylvanus",
             "Ehlonna",
             "Silvanus",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The city's protective wards are maintained by the spirits of the forest",
             "A hidden council of ancient treants influences the city's policies",
             "The city's sewers are home to a colony of friendly forest creatures",
             "The local protectors of nature secretly work as herbalists and apothecaries",
             "The Sacred Oak's roots extend into the Feywild, granting unique magical properties",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Thorned Thornwood, where dangerous beasts and thorny thickets abound",
             "The Whispering Grove, a serene place where eerie whispers unsettle visitors",
             "The Shadowed Glade, a forested area with limited visibility and treacherous terrain",
             "The Fey Crossing, a portal to the Feywild that can be unpredictable",
             "The Enchanted Falls, where powerful water elementals reside",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Grove of Serenity, a serene place for meditation and reflection",
             "The Druidic Conservatory, a school for the study of nature and druidic magic",
             "The Heartwood Library, housing ancient tomes and scrolls on nature and the Fey",
             "The Verdant Glade, a lush garden with vibrant, magical flora",
             "The Songbird Sanctuary, where rare and exotic birds can be observed",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "30%",
             "Elf": "25%",
             "Half-Elf": "10%",
@@ -4929,7 +4983,7 @@ dnd_cities = {
             "Tiefling": "3%",
             "Other": "7%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Druid": "35%",
             "Ranger": "15%",
             "Bard": "10%",
@@ -4942,12 +4996,12 @@ dnd_cities = {
             "Wizard": "1%",
             "Other": "13%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "500,000 gp",
             "bottom 10% earners": "50 gp",
             "median earners": "20,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Verdant Traders": 8,
             "Herbalist's Haven": 12,
             "Feycrafted Artifacts": 6,
@@ -4961,7 +5015,7 @@ dnd_cities = {
             "The Circle's Blessing (Jewelry)": 2,
             "Ancient Relics Emporium": 3,
         },
-        "services": {
+        "Services": {
             "Circle of the Grove Hall": 8,
             "Taverns of Nature's Embrace": 10,
             "Stables of the Wild": 5,
@@ -5033,79 +5087,81 @@ dnd_cities = {
             25: "The city's natural hot springs are said to have rejuvenating properties, drawing nature enthusiasts and druids alike.",
         },
     },
-    "bladehaven" : {
-        "name": "Bladehaven",
-        "description": "Bladehaven, also known as the Citadel of Swords, is a fortified city dedicated to the art of combat. Its towering walls, training arenas, and renowned swordmasters make it a haven for warriors seeking to hone their skills.",
-        "narrative": "Bladehaven, the Citadel of Swords, stands as a testament to the mastery of combat. This fortified city is unlike any other in the realm, where the way of the blade reigns supreme. As you approach Bladehaven, the first thing that strikes you is the towering walls of dark stone that encircle the city. Guard towers and battlements line the walls, a clear indication of the city's focus on defense and martial prowess. The streets of Bladehaven are wide and well-paved, with training arenas scattered throughout. Warriors from all walks of life gather here to hone their skills, and the sounds of clashing weapons and battle cries are a constant background hum. The heart of Bladehaven is the Swordmaster's Citadel, a massive fortress that serves as the epicenter of martial training and combat knowledge. It houses the Swordmaster's Guild, a prestigious organization of elite warriors who have achieved unparalleled mastery in various forms of combat. Life in Bladehaven revolves around the pursuit of martial excellence. Residents are required to undergo rigorous training from a young age, and every citizen is expected to be proficient with at least one weapon. The annual Blade Tournament is a highlight of the city, where warriors from across the land gather to test their mettle in intense duels and combat challenges. Bladehaven's unique environment has also led to the development of a distinct religion centered around the God of War, a deity believed to bless the city's warriors with strength and skill. Pilgrims and aspiring fighters come to Bladehaven seeking the God of War's favor. Bladehaven is a city of secrets, and rumors persist of hidden underground arenas where the most skilled fighters engage in deadly contests. The Swordmaster's Library, a vast repository of combat knowledge, is rumored to hold ancient scrolls that reveal the true secrets of combat. As you wander through Bladehaven's martial streets, you can't help but feel the intensity and determination that permeate every corner of this city. It is a place where the boundaries between the mundane and the martial are blurred, where warriors of all backgrounds gather to test their skills and seek the path of the ultimate blade master.",
-        "place is known for": "the annual Blade Tournament",
-        "amount of land": "700 acres",
-        "population": 18000,
-        "number of buildings": 2800,
-        "crime rate": "4%",
-        "Neighboring cities and towns": {
+
+
+    "Bladehaven" : {
+        "Name": "Bladehaven",
+        "Description": "Bladehaven, also known as the Citadel of Swords, is a fortified city dedicated to the art of combat. Its towering walls, training arenas, and renowned swordmasters make it a haven for warriors seeking to hone their skills.",
+        "Narrative": "Bladehaven, the Citadel of Swords, stands as a testament to the mastery of combat. This fortified city is unlike any other in the realm, where the way of the blade reigns supreme. As you approach Bladehaven, the first thing that strikes you is the towering walls of dark stone that encircle the city. Guard towers and battlements line the walls, a clear indication of the city's focus on defense and martial prowess. The streets of Bladehaven are wide and well-paved, with training arenas scattered throughout. Warriors from all walks of life gather here to hone their skills, and the sounds of clashing weapons and battle cries are a constant background hum. The heart of Bladehaven is the Swordmaster's Citadel, a massive fortress that serves as the epicenter of martial training and combat knowledge. It houses the Swordmaster's Guild, a prestigious organization of elite warriors who have achieved unparalleled mastery in various forms of combat. Life in Bladehaven revolves around the pursuit of martial excellence. Residents are required to undergo rigorous training from a young age, and every citizen is expected to be proficient with at least one weapon. The annual Blade Tournament is a highlight of the city, where warriors from across the land gather to test their mettle in intense duels and combat challenges. Bladehaven's unique environment has also led to the development of a distinct religion centered around the God of War, a deity believed to bless the city's warriors with strength and skill. Pilgrims and aspiring fighters come to Bladehaven seeking the God of War's favor. Bladehaven is a city of secrets, and rumors persist of hidden underground arenas where the most skilled fighters engage in deadly contests. The Swordmaster's Library, a vast repository of combat knowledge, is rumored to hold ancient scrolls that reveal the true secrets of combat. As you wander through Bladehaven's martial streets, you can't help but feel the intensity and determination that permeate every corner of this city. It is a place where the boundaries between the mundane and the martial are blurred, where warriors of all backgrounds gather to test their skills and seek the path of the ultimate blade master.",
+        "Place Is Known For": "the annual Blade Tournament",
+        "Amount Of Land": "700 acres",
+        "Population": 18000,
+        "Number of Buildings": 2800,
+        "Crime Rate": "4%",
+        "Neighboring Cities And Towns": {
             "Warrior's Rest": "25 miles north",
             "Ironforge": "15 miles east",
             "Battlehold": "30 miles southeast",
             "Steelhaven": "45 miles south",
             "Smith's Crossing": "20 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Towering stone walls that encircle the city",
             "Wide streets with training arenas and dueling platforms",
             "Swordmaster's Citadel, a massive fortress of martial excellence",
             "The Temple of the God of War, a place of divine reverence",
             "The Colosseum of Champions, where grand tournaments are held",
         ],
-        "5 key features": [
+        "Key Features": [
             "Swordmaster's Guild, home to elite warriors and trainers",
             "Bladehaven Armory, renowned for crafting exceptional weapons",
             "The Battleforge, a place to enchant and enhance weapons and armor",
             "Warrior's Plaza, a gathering place for training and sparring",
             "Hall of Legends, where the greatest warriors' achievements are celebrated",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The God of War grants blessings to warriors who prove their valor",
             "Bladehaven was founded by a legendary swordmaster and his disciples",
             "Hidden underground arenas host secret combat contests",
             "The Swordmaster's Library contains scrolls revealing the true secrets of combat",
             "Bladehaven's warriors are renowned for their skill and discipline",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Grand Swordmaster Kaldor": "Leader of the Swordmaster's Guild",
             "Elena Steelheart": "Legendary swordswoman known for her unmatched skills",
             "High Priest Gavric": "Spiritual leader of the Temple of the God of War",
             "Maelik Ironforge": "Master blacksmith and creator of exceptional weapons",
             "Sarena Bloodspire": "Champion of the annual Blade Tournament",
         },
-        "5 top religions": [
+        "Top Religions": [
             "God of War",
             "Tempus",
             "Kord",
             "Tyr",
             "Istus",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "Hidden underground arenas host illegal, high-stakes combat tournaments",
             "The Swordmaster's Library contains ancient scrolls with forbidden techniques",
             "Bladehaven's blacksmiths secretly forge weapons of extraordinary power",
             "The city's martial artists can communicate silently through a secret code",
             "The God of War's blessings grant unique abilities to the city's champions",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Pit of Challenge, where inexperienced warriors often meet their match",
             "The Shadowed Alley, a notorious hub for illegal combat gambling",
             "The Labyrinth of Blades, a treacherous maze for deadly duels",
             "The Ironforge Quarries, where accidents can lead to dangerous cave-ins",
             "The Bloodspire Arena, where only the bravest warriors dare to compete",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "Swordmaster's Plaza, where martial exhibitions and sparring matches are held",
             "The Bladehaven Armory, showcasing masterfully crafted weapons and armor",
             "The Temple of the God of War, a place for reflection and blessings",
             "The Colosseum of Champions, host to grand tournaments and contests",
             "Warrior's Plaza, a bustling training ground for aspiring fighters",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "40%",
             "Dwarf": "20%",
             "Half-Orc": "10%",
@@ -5115,7 +5171,7 @@ dnd_cities = {
             "Dragonborn": "5%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Fighter": "60%",
             "Barbarian": "10%",
             "Monk": "5%",
@@ -5130,12 +5186,12 @@ dnd_cities = {
             "Druid": "2%",
             "Other": "5%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "1,200,000 gp",
             "bottom 10% earners": "150 gp",
             "median earners": "60,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Swordmaster's Forge": 10,
             "Armory of Champions": 15,
             "Temple Arms and Armor": 12,
@@ -5149,7 +5205,7 @@ dnd_cities = {
             "Smith's Supplies": 5,
             "Martial Arts Scrolls and Manuals": 2,
         },
-        "services": {
+        "Services": {
             "Swordmaster's Guild Hall": 10,
             "Champion's Rest Inns": 15,
             "Warrior's Stables": 5,
@@ -5221,79 +5277,81 @@ dnd_cities = {
             25: "The city's martial hot springs are said to soothe the body and mind, attracting warriors seeking rejuvenation.",
         },
     },
-    "zenithfall" : {
-        "name": "Zenithfall",
-        "description": "Zenithfall is a city built on the cliffs of a remote mountain range, known for its deep connection to the art of martial combat and the practice of monk traditions. The city's architecture is designed to harmonize with the rugged terrain, and its residents are dedicated to the path of discipline and enlightenment.",
-        "narrative": "Zenithfall, a city perched on the precipitous cliffs of a remote mountain range, is a haven for those who seek mastery of the martial arts and the pursuit of spiritual enlightenment. As you approach Zenithfall, you'll be struck by the breathtaking sight of the city's buildings seamlessly integrated into the natural rock formations and cliffs. The architecture is a testament to the city's dedication to blending with the rugged terrain, creating an awe-inspiring harmony between nature and civilization. The streets of Zenithfall are a network of stone walkways, adorned with intricate calligraphy and martial arts sculptures. Monks in traditional attire can be seen practicing their forms and meditation techniques, their movements precise and graceful. Life in Zenithfall revolves around the path of discipline, self-discovery, and martial combat. The city is known for its numerous monastic orders, each specializing in different aspects of the monk traditions. The annual Monastery Festival is a highlight of Zenithfall, where monks from different orders showcase their skills, and visitors can partake in martial arts competitions and meditation retreats. Zenithfall's unique environment has led to the development of a distinct philosophy centered around the balance of body and mind, with the monks often retreating to the city's mountaintop shrines for contemplation. The Great Temple of Inner Harmony, carved into the mountain's heart, is the spiritual center of the city, where monks gather for ceremonies and meditation. Zenithfall is a city of secrets, with hidden meditation chambers and underground training dojos rumored to hold ancient techniques. The Temple of the Silent Wind, high on the cliffs, is said to offer glimpses of enlightenment to those who reach its summit. As you wander through Zenithfall's serene streets, you can't help but feel the profound sense of focus and tranquility that permeate every corner of this martial city. It is a place where the boundaries between the physical and the metaphysical are blurred, where warriors become scholars, and the pursuit of inner peace is as valued as the mastery of combat.",
-        "place is known for": "the annual Monastery Festival",
-        "amount of land": "500 acres",
-        "population": 12000,
-        "number of buildings": 2000,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Zenithfall" : {
+        "Name": "Zenithfall",
+        "Description": "Zenithfall is a city built on the cliffs of a remote mountain range, known for its deep connection to the art of martial combat and the practice of monk traditions. The city's architecture is designed to harmonize with the rugged terrain, and its residents are dedicated to the path of discipline and enlightenment.",
+        "Narrative": "Zenithfall, a city perched on the precipitous cliffs of a remote mountain range, is a haven for those who seek mastery of the martial arts and the pursuit of spiritual enlightenment. As you approach Zenithfall, you'll be struck by the breathtaking sight of the city's buildings seamlessly integrated into the natural rock formations and cliffs. The architecture is a testament to the city's dedication to blending with the rugged terrain, creating an awe-inspiring harmony between nature and civilization. The streets of Zenithfall are a network of stone walkways, adorned with intricate calligraphy and martial arts sculptures. Monks in traditional attire can be seen practicing their forms and meditation techniques, their movements precise and graceful. Life in Zenithfall revolves around the path of discipline, self-discovery, and martial combat. The city is known for its numerous monastic orders, each specializing in different aspects of the monk traditions. The annual Monastery Festival is a highlight of Zenithfall, where monks from different orders showcase their skills, and visitors can partake in martial arts competitions and meditation retreats. Zenithfall's unique environment has led to the development of a distinct philosophy centered around the balance of body and mind, with the monks often retreating to the city's mountaintop shrines for contemplation. The Great Temple of Inner Harmony, carved into the mountain's heart, is the spiritual center of the city, where monks gather for ceremonies and meditation. Zenithfall is a city of secrets, with hidden meditation chambers and underground training dojos rumored to hold ancient techniques. The Temple of the Silent Wind, high on the cliffs, is said to offer glimpses of enlightenment to those who reach its summit. As you wander through Zenithfall's serene streets, you can't help but feel the profound sense of focus and tranquility that permeate every corner of this martial city. It is a place where the boundaries between the physical and the metaphysical are blurred, where warriors become scholars, and the pursuit of inner peace is as valued as the mastery of combat.",
+        "Place Is Known For": "the annual Monastery Festival",
+        "Amount Of Land": "500 acres",
+        "Population": 12000,
+        "Number of Buildings": 2000,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Summit's Edge": "20 miles north",
             "Tranquil Vale": "15 miles east",
             "Stonegate": "30 miles southeast",
             "Mistral Peaks": "40 miles south",
             "Serenity Falls": "12 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Precipitous cliffs and rugged mountain terrain",
             "Stone walkways adorned with martial arts sculptures",
             "Mountain shrines for meditation and contemplation",
             "The Great Temple of Inner Harmony carved into the mountain",
             "The Temple of the Silent Wind, high on the cliffs",
         ],
-        "5 key features": [
+        "Key Features": [
             "Great Temple of Inner Harmony",
             "Monastery of Flowing Water",
             "Temple of the Silent Wind",
             "Martial Arts Plaza for training and exhibitions",
             "Library of Ancient Scrolls and Teachings",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The monks of Zenithfall follow a philosophy of inner balance and martial mastery",
             "The Great Temple houses ancient texts containing the city's martial history",
             "Hidden meditation chambers hold the secrets of advanced martial techniques",
             "The Monastery Festival attracts martial artists and philosophers from afar",
             "The Temple of the Silent Wind is said to grant glimpses of enlightenment to the worthy",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Grandmaster Shinzo": "Leader of the Council of Monastic Orders",
             "Serenity Lotusblade": "Renowned monk and master of the Silent Wind technique",
             "Acolyte Yun": "Dedicated scholar and keeper of the ancient scrolls",
             "Stone Fist Shiro": "Champion of the Martial Arts Plaza competitions",
             "Mistress Tranquil Rain": "Expert in meditation and inner balance",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Path of Inner Harmony",
             "Way of the Flowing Water",
             "Silent Wind Philosophy",
             "The Balance of Spirit and Body",
             "Meditation on the Mountain",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "Hidden meditation chambers reveal advanced martial techniques to the worthy",
             "The Library of Ancient Scrolls holds secrets of past martial masters",
             "Monks in Zenithfall can communicate through a silent form of telepathy",
             "The Temple of the Silent Wind is said to offer visions of the future to those who meditate there",
             "The mountain holds caves with mineral-rich crystals used in monks' training",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Abyssal Gorge, a treacherous chasm with deadly winds",
             "The Misty Ravine, where thick mists obscure vision and disorient travelers",
             "The Caverns of Echoing Despair, known for eerie echoes that drive people to madness",
             "The Storm-Torn Plateau, a harsh and unpredictable landscape",
             "The Whispering Cliffs, where mysterious voices seem to beckon travelers to their doom",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Monastery of Flowing Water, a serene retreat for meditation and training",
             "The Martial Arts Plaza, where monks display their combat skills",
             "The Great Temple of Inner Harmony, the spiritual heart of Zenithfall",
             "The Temple of the Silent Wind, high on the cliffs, offering breathtaking views",
             "The Library of Ancient Scrolls and Teachings, a treasure trove of knowledge",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "45%",
             "Elf": "20%",
             "Dwarf": "10%",
@@ -5304,7 +5362,7 @@ dnd_cities = {
             "Tiefling": "3%",
             "Other": "2%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Monk": "70%",
             "Fighter": "5%",
             "Rogue": "5%",
@@ -5315,12 +5373,12 @@ dnd_cities = {
             "Druid": "2%",
             "Other": "9%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "600,000 gp",
             "bottom 10% earners": "100 gp",
             "median earners": "40,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Martial Arts Supplies": 10,
             "Enlightened Artifacts": 15,
             "Monastic Potions and Elixirs": 12,
@@ -5332,7 +5390,7 @@ dnd_cities = {
             "Artisan's Workshops": 5,
             "Crystal Alchemy": 2,
         },
-        "services": {
+        "Services": {
             "Monastery Guesthouses": 10,
             "Tranquil Inns": 15,
             "Mountain Stables": 5,
@@ -5404,79 +5462,81 @@ dnd_cities = {
             25: "The city's crystal hot springs are said to rejuvenate both body and mind, attracting monks and travelers alike.",
         },
     },
-    "valorspire" : {
-        "name": "Valorspire",
-        "description": "Valorspire is a city perched on the edge of a sheer cliff overlooking a vast expanse of wilderness. It is a haven for Paladins and those dedicated to upholding justice and honor.",
-        "narrative": "Valorspire, a city of unwavering dedication to justice and honor, stands proudly on the edge of a towering cliff, offering a breathtaking view of the wild expanse below. The city is a bastion of Paladins and those who share their unwavering commitment to righteousness. As you approach Valorspire, you can't help but be impressed by the imposing city walls adorned with radiant sigils of goodness. The city's architecture is a testament to strength and virtue, with towering cathedrals, sturdy fortifications, and gleaming palaces dedicated to the cause of justice. The streets are filled with knights in shining armor, and the air is alive with the sound of prayers and hymns. At the heart of Valorspire lies the Holy Citadel, a magnificent fortress that serves as the seat of the city's Paladin Council. This council is composed of the most revered Paladins, each representing a different order devoted to various aspects of righteousness and valor. Life in Valorspire is defined by the strict code of honor that all inhabitants adhere to. Visitors are welcomed, but they must respect the city's principles of justice and integrity. The annual Knight's Vigil is a highlight of the city, where aspiring Paladins undergo trials and tests to prove their dedication to the cause. Valorspire's unique environment has also led to the development of a distinct religion centered around the deities of righteousness and valor. Temples and shrines dedicated to these deities can be found throughout the city, and pilgrims from across the realm travel to Valorspire to seek their blessings. Valorspire is a city of secrets, whispered among its holy halls. Hidden catacombs beneath the city are rumored to hold relics of ancient Paladins, and legends speak of a sacred sword that can only be wielded by the pure of heart. As you walk the righteous streets of Valorspire, you can't help but feel the strength of conviction and the call to uphold justice that permeate every corner of this holy city. It is a place where the boundaries between right and wrong are clear, where valor and honor are celebrated, and where the light of righteousness guides every step.",
-        "place is known for": "the annual Knight's Vigil",
-        "amount of land": "400 acres",
-        "population": 18000,
-        "number of buildings": 2800,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Valorspire" : {
+        "Name": "Valorspire",
+        "Description": "Valorspire is a city perched on the edge of a sheer cliff overlooking a vast expanse of wilderness. It is a haven for Paladins and those dedicated to upholding justice and honor.",
+        "Narrative": "Valorspire, a city of unwavering dedication to justice and honor, stands proudly on the edge of a towering cliff, offering a breathtaking view of the wild expanse below. The city is a bastion of Paladins and those who share their unwavering commitment to righteousness. As you approach Valorspire, you can't help but be impressed by the imposing city walls adorned with radiant sigils of goodness. The city's architecture is a testament to strength and virtue, with towering cathedrals, sturdy fortifications, and gleaming palaces dedicated to the cause of justice. The streets are filled with knights in shining armor, and the air is alive with the sound of prayers and hymns. At the heart of Valorspire lies the Holy Citadel, a magnificent fortress that serves as the seat of the city's Paladin Council. This council is composed of the most revered Paladins, each representing a different order devoted to various aspects of righteousness and valor. Life in Valorspire is defined by the strict code of honor that all inhabitants adhere to. Visitors are welcomed, but they must respect the city's principles of justice and integrity. The annual Knight's Vigil is a highlight of the city, where aspiring Paladins undergo trials and tests to prove their dedication to the cause. Valorspire's unique environment has also led to the development of a distinct religion centered around the deities of righteousness and valor. Temples and shrines dedicated to these deities can be found throughout the city, and pilgrims from across the realm travel to Valorspire to seek their blessings. Valorspire is a city of secrets, whispered among its holy halls. Hidden catacombs beneath the city are rumored to hold relics of ancient Paladins, and legends speak of a sacred sword that can only be wielded by the pure of heart. As you walk the righteous streets of Valorspire, you can't help but feel the strength of conviction and the call to uphold justice that permeate every corner of this holy city. It is a place where the boundaries between right and wrong are clear, where valor and honor are celebrated, and where the light of righteousness guides every step.",
+        "Place Is Known For": "the annual Knight's Vigil",
+        "Amount Of Land": "400 acres",
+        "Population": 18000,
+        "Number of Buildings": 2800,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Shieldhaven": "15 miles north",
             "Ardentwatch": "12 miles east",
             "Honorhold": "30 miles southeast",
             "Champion's Rest": "50 miles south",
             "Divinegate": "10 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Sheer cliff overlooking the wilderness",
             "Radiant sigils of goodness on city walls",
             "Imposing cathedrals and fortifications",
             "Streets filled with knights in shining armor",
             "Gleaming palaces dedicated to justice",
         ],
-        "5 key features": [
+        "Key Features": [
             "Holy Citadel, seat of the Paladin Council",
             "Shrines and temples to deities of righteousness",
             "Knight's Training Grounds for aspiring Paladins",
             "Hall of Sacred Relics housing ancient artifacts",
             "Vigilant Beacon, a towering lighthouse guiding travelers",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "A sacred sword, 'Excalibright,' awaits a worthy Paladin in hidden catacombs",
             "The Holy Citadel holds the Book of Valor, a tome of ancient wisdom",
             "Valorspire's founders were legendary Paladins who defended the realm",
             "The Vigilant Beacon's light is said to protect the city from darkness",
             "Knights undertake quests to prove their valor and earn their titles",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Highlord Seraphina": "Leader of the Paladin Council",
             "Sir Gallant": "Renowned champion and protector of the city",
             "High Priestess Celestia": "Spiritual leader and guide of the city's faith",
             "Squire Aegis": "Young aspiring Paladin on a quest for honor",
             "Elder Paladin Alaric": "Keeper of ancient Paladin traditions and lore",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Torm",
             "Pelor",
             "Bahamut",
             "Iomedae",
             "Kord",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "Hidden catacombs beneath the city house the relics of ancient Paladins",
             "The Holy Citadel holds the Book of Valor, a source of ancient wisdom",
             "The Vigilant Beacon's light is fueled by the prayers of devout Paladins",
             "A sacred sword, 'Excalibright,' awaits a worthy Paladin in the heart of the city",
             "The city's catacombs are rumored to connect to ancient, uncharted ruins",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Abyssal Abyss, a treacherous chasm rumored to be cursed",
             "The Shadowed Alley, a dark and dangerous part of the city",
             "The Labyrinthine Crypts, where ancient undead are said to dwell",
             "The Forbidden Gardens, which hold plants with malevolent powers",
             "The Haunted Chapel, where spirits of fallen Paladins are restless",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Holy Citadel, a symbol of Paladin strength and unity",
             "Knight's Training Grounds, where aspiring Paladins undergo trials",
             "Hall of Sacred Relics, housing ancient artifacts of great power",
             "Shrines and temples, where faithful seek blessings from righteous deities",
             "Vigilant Beacon, a towering lighthouse with stunning views",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "60%",
             "Dwarf": "15%",
             "Half-Elf": "10%",
@@ -5484,7 +5544,7 @@ dnd_cities = {
             "Aasimar": "5%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Paladin": "40%",
             "Cleric": "15%",
             "Fighter": "10%",
@@ -5494,12 +5554,12 @@ dnd_cities = {
             "Sorcerer": "5%",
             "Other": "15%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "900,000 gp",
             "bottom 10% earners": "150 gp",
             "median earners": "40,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Paladin's Armory": 10,
             "Templar's Treasures": 15,
             "Divine Elixirs and Potions": 12,
@@ -5513,7 +5573,7 @@ dnd_cities = {
             "Divine Alchemy": 5,
             "Divine Artifacts and Relics": 2,
         },
-        "services": {
+        "Services": {
             "Holy Citadel Hall": 10,
             "Sanctuaries of Valor": 15,
             "Stables of Purity": 5,
@@ -5585,79 +5645,81 @@ dnd_cities = {
             25: "The city's blessed hot springs are believed to grant strength and purity to those who bathe in them.",
         },
     },
-    "wildwoodhaven" : {
-        "name": "Wildwood Haven",
-        "description": "Wildwood Haven is a city nestled deep within a vast, untamed forest. The city is a haven for rangers, hunters, and those who revere the wild. It thrives on the principles of nature and self-reliance.",
-        "narrative": "Wildwood Haven, a city enshrouded by the wilderness, is a sanctuary for those who embrace the untamed. As you approach Wildwood Haven, the towering trees and the rustling leaves of the dense forest gradually give way to a hidden city, concealed within the natural surroundings. The city's structures are crafted from the materials found in the forest, with wooden homes and cabins blending seamlessly into the landscape. Canopies of leaves provide shade, and the sound of babbling brooks accompanies you as you explore the city's winding paths. The heart of Wildwood Haven is the Ranger's Lodge, a massive treehouse that serves as a meeting place and training ground for the city's rangers and hunters. The Lodge is a place of camaraderie and learning, where knowledge of the wilderness is shared and celebrated. Life in Wildwood Haven is defined by the values of self-reliance and a deep connection to the natural world. The city's residents are skilled in survival, tracking, and archery, and they live in harmony with the forest's creatures. The annual Ranger's Gathering is a highlight of the city, featuring archery contests, wilderness challenges, and storytelling around the campfire. Wildwood Haven's unique environment has also led to the development of a distinct religion centered around the spirits of the forest and the cycle of life. The city's temples are nestled among ancient trees, and ceremonies honor the spirits of the land. Wildwood Haven is a city of secrets, with hidden groves that hold relics of legendary rangers and rumors of ancient druidic rituals. The Temple of the Wild, a sacred site within the city, is believed to be a conduit to the heart of the forest. As you wander through Wildwood Haven's wild and rugged streets, you can't help but feel the spirit of adventure and the call of the untamed that permeate every corner of this ranger's paradise. It is a place where the boundaries between civilization and the wilderness blur, where rangers and hunters find their true home in the heart of nature.",
-        "place is known for": "the annual Ranger's Gathering",
-        "amount of land": "1000 acres",
-        "population": 12000,
-        "number of buildings": 2000,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Wildwoodhaven" : {
+        "Name": "Wildwood Haven",
+        "Description": "Wildwood Haven is a city nestled deep within a vast, untamed forest. The city is a haven for rangers, hunters, and those who revere the wild. It thrives on the principles of nature and self-reliance.",
+        "Narrative": "Wildwood Haven, a city enshrouded by the wilderness, is a sanctuary for those who embrace the untamed. As you approach Wildwood Haven, the towering trees and the rustling leaves of the dense forest gradually give way to a hidden city, concealed within the natural surroundings. The city's structures are crafted from the materials found in the forest, with wooden homes and cabins blending seamlessly into the landscape. Canopies of leaves provide shade, and the sound of babbling brooks accompanies you as you explore the city's winding paths. The heart of Wildwood Haven is the Ranger's Lodge, a massive treehouse that serves as a meeting place and training ground for the city's rangers and hunters. The Lodge is a place of camaraderie and learning, where knowledge of the wilderness is shared and celebrated. Life in Wildwood Haven is defined by the values of self-reliance and a deep connection to the natural world. The city's residents are skilled in survival, tracking, and archery, and they live in harmony with the forest's creatures. The annual Ranger's Gathering is a highlight of the city, featuring archery contests, wilderness challenges, and storytelling around the campfire. Wildwood Haven's unique environment has also led to the development of a distinct religion centered around the spirits of the forest and the cycle of life. The city's temples are nestled among ancient trees, and ceremonies honor the spirits of the land. Wildwood Haven is a city of secrets, with hidden groves that hold relics of legendary rangers and rumors of ancient druidic rituals. The Temple of the Wild, a sacred site within the city, is believed to be a conduit to the heart of the forest. As you wander through Wildwood Haven's wild and rugged streets, you can't help but feel the spirit of adventure and the call of the untamed that permeate every corner of this ranger's paradise. It is a place where the boundaries between civilization and the wilderness blur, where rangers and hunters find their true home in the heart of nature.",
+        "Place Is Known For": "the annual Ranger's Gathering",
+        "Amount Of Land": "1000 acres",
+        "Population": 12000,
+        "Number of Buildings": 2000,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Thornvale": "15 miles north",
             "Wilderness Outpost": "20 miles east",
             "Sylvanwood": "30 miles southeast",
             "Hunters' Haven": "50 miles south",
             "Stonehold": "10 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Tall, ancient trees that shelter the city",
             "Babbling brooks that crisscross the streets",
             "Natural caves used as dwelling spaces",
             "Vibrant, colorful wildflowers lining the paths",
             "The Ranger's Lodge, a towering treehouse in the city's center",
         ],
-        "5 key features": [
+        "Key Features": [
             "Ranger's Lodge, a hub for wilderness training and camaraderie",
             "Temple of the Wild, a sacred site honoring the spirits of the forest",
             "Hunter's Market, where hunters sell their quarry and supplies",
             "Campfire Circle, a gathering place for stories and songs",
             "The Great Oak, a colossal tree rumored to hold ancient wisdom",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The spirits of the forest guide and protect the city's rangers",
             "Wildwood Haven was founded by legendary rangers and hunters",
             "Hidden groves within the city hold relics of ancient heroes",
             "The Temple of the Wild is a conduit to the heart of the forest",
             "The Great Oak is said to grant visions to those who seek wisdom",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Ranger Lord Thaladir": "Leader of the Ranger's Council",
             "Elira Leafshadow": "Renowned ranger known for her tracking skills",
             "Silvanthor the Hunter": "Master archer and protector of the city",
             "Eldric Moonshadow": "Elder druid with deep knowledge of the forest",
             "Talara Swiftbrook": "Bardic storyteller, sharing tales of wilderness adventures",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Spirits of the Forest",
             "Ehlonna",
             "Mielikki",
             "Obad-Hai",
             "The Green Faith",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "Hidden caves within the city hold relics of legendary rangers",
             "Rangers communicate with forest animals through a mystical bond",
             "The Great Oak is rumored to grant visions of the future",
             "The Temple of the Wild is believed to hold the heart of the forest",
             "An underground network of tunnels allows for stealthy movement within the city",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Howling Gorge, where dangerous beasts roam",
             "The Shadowed Glen, a place where darkness and eerie noises unsettle visitors",
             "The Thorned Thicket, a dense, thorny wilderness with hidden dangers",
             "The Silent Pool, where deadly aquatic creatures lurk beneath the surface",
             "The Whispering Woods, a forest said to be haunted by restless spirits",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Ranger's Lodge, a hub of training and camaraderie",
             "The Temple of the Wild, a sacred site of reverence and spiritual connection",
             "Hunter's Market, where supplies and trophies from the wilderness are sold",
             "Campfire Circle, a gathering place for storytelling and songs",
             "The Great Oak, a colossal tree believed to hold ancient wisdom",
         ],
-        "races": {
+        "Race Makeup": {
             "Elf": "35%",
             "Human": "25%",
             "Half-Orc": "10%",
@@ -5669,7 +5731,7 @@ dnd_cities = {
             "Tiefling": "2%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Barbarian": "5%",
             "Bard": "2%",
             "Cleric": "3%",
@@ -5684,12 +5746,12 @@ dnd_cities = {
             "Wizard": "1%",
             "Other": "3%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "500,000 gp",
             "bottom 10% earners": "50 gp",
             "median earners": "20,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Wilderness Outfitters": 10,
             "Archery Emporium": 15,
             "Herbalist's Haven": 12,
@@ -5703,7 +5765,7 @@ dnd_cities = {
             "Trappers and Skins": 5,
             "The Hunter's Den (Tavern)": 2,
         },
-        "services": {
+        "Services": {
             "Ranger's Guildhall": 10,
             "Wildwood Inns": 15,
             "Stables of the Wilderness": 5,
@@ -5775,79 +5837,81 @@ dnd_cities = {
             25: "The city's wilderness guides offer tours to visitors, sharing the beauty and dangers of the surrounding forest.",
         },
     },
-    "shadowhaven" : {
-        "name": "Shadowhaven",
-        "description": "Shadowhaven is a city shrouded in darkness, where the art of stealth and subterfuge thrives. It is known as the den of rogues and spies, where secrets are bought and sold under the cover of night.",
-        "narrative": "Shadowhaven, a city that exists in perpetual twilight, is a place where shadows hold as much power as the light. It is known throughout the land as the den of rogues and spies, where secrecy and subterfuge are the currency of the realm. As you approach Shadowhaven, the sun's rays seem to dim, and the cityscape becomes cloaked in a perpetual twilight, creating an eerie atmosphere. The city's architecture consists of narrow alleys, hidden tunnels, and concealed entrances, all designed to facilitate clandestine activities. Buildings are constructed close together, with shadowy courtyards and concealed balconies, making it difficult for prying eyes to uncover the city's secrets. The heart of Shadowhaven is the Rogue's Den, a massive underground network of tunnels and chambers where the city's most skilled rogues gather. It is here that information is bought and sold, alliances are formed and broken, and covert operations are planned. Life in Shadowhaven revolves around the art of stealth and subterfuge. The city's inhabitants have honed their skills in lock-picking, disguise, and sleight of hand. The annual Shadow Festival is a highlight of the city, featuring stealth challenges, disguise contests, and shadowy performances that push the limits of what's possible in the darkness. Shadowhaven's unique environment has also led to the development of a distinct religion centered around the Shadow Deity, a deity of secrets and hidden knowledge. Worshipers seek the blessing of the Shadow Deity to aid in their clandestine endeavors. Shadowhaven is a city of secrets, and rumors persist of hidden guilds, covert organizations, and ancient artifacts hidden within the city's depths. The Shadow Library, a hidden repository of forbidden knowledge, is rumored to house texts that reveal the true extent of the city's influence. As you navigate Shadowhaven's dimly lit streets, you can't help but feel the tension and intrigue that permeate every corner of this secretive city. It is a place where the boundaries between light and darkness are blurred, where rogues and spies thrive in the shadowy embrace of the night.",
-        "place is known for": "the annual Shadow Festival",
-        "amount of land": "400 acres",
-        "population": 12000,
-        "number of buildings": 2000,
-        "crime rate": "10%",
-        "Neighboring cities and towns": {
+
+
+    "Shadowhaven" : {
+        "Name": "Shadowhaven",
+        "Description": "Shadowhaven is a city shrouded in darkness, where the art of stealth and subterfuge thrives. It is known as the den of rogues and spies, where secrets are bought and sold under the cover of night.",
+        "Narrative": "Shadowhaven, a city that exists in perpetual twilight, is a place where shadows hold as much power as the light. It is known throughout the land as the den of rogues and spies, where secrecy and subterfuge are the currency of the realm. As you approach Shadowhaven, the sun's rays seem to dim, and the cityscape becomes cloaked in a perpetual twilight, creating an eerie atmosphere. The city's architecture consists of narrow alleys, hidden tunnels, and concealed entrances, all designed to facilitate clandestine activities. Buildings are constructed close together, with shadowy courtyards and concealed balconies, making it difficult for prying eyes to uncover the city's secrets. The heart of Shadowhaven is the Rogue's Den, a massive underground network of tunnels and chambers where the city's most skilled rogues gather. It is here that information is bought and sold, alliances are formed and broken, and covert operations are planned. Life in Shadowhaven revolves around the art of stealth and subterfuge. The city's inhabitants have honed their skills in lock-picking, disguise, and sleight of hand. The annual Shadow Festival is a highlight of the city, featuring stealth challenges, disguise contests, and shadowy performances that push the limits of what's possible in the darkness. Shadowhaven's unique environment has also led to the development of a distinct religion centered around the Shadow Deity, a deity of secrets and hidden knowledge. Worshipers seek the blessing of the Shadow Deity to aid in their clandestine endeavors. Shadowhaven is a city of secrets, and rumors persist of hidden guilds, covert organizations, and ancient artifacts hidden within the city's depths. The Shadow Library, a hidden repository of forbidden knowledge, is rumored to house texts that reveal the true extent of the city's influence. As you navigate Shadowhaven's dimly lit streets, you can't help but feel the tension and intrigue that permeate every corner of this secretive city. It is a place where the boundaries between light and darkness are blurred, where rogues and spies thrive in the shadowy embrace of the night.",
+        "Place Is Known For": "the annual Shadow Festival",
+        "Amount Of Land": "400 acres",
+        "Population": 12000,
+        "Number of Buildings": 2000,
+        "Crime Rate": "10%",
+        "Neighboring Cities And Towns": {
             "Whispering Hollow": "20 miles north",
             "Shadewood": "15 miles east",
             "Nocturne's End": "30 miles southeast",
             "Obsidian Keep": "50 miles south",
             "Twilight Grove": "10 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Narrow alleys and concealed entrances",
             "Shadowy courtyards hidden from view",
             "Mysterious tunnels and hidden passages",
             "Buildings designed for covert activities",
             "The Rogue's Den, a massive underground network",
         ],
-        "5 key features": [
+        "Key Features": [
             "Shadow Library, a repository of forbidden knowledge",
             "Shadow Deity's Temple, a place of hidden worship",
             "Guild of Master Spies and Thieves",
             "Shadow Market, where secrets are traded",
             "Shadowcloak Inn, known for discreet meetings",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Shadow Deity grants blessings to those who excel in stealth",
             "Shadowhaven's founders were legendary spies and master thieves",
             "Hidden guilds and organizations control the city's operations",
             "The Shadow Library contains texts revealing the city's true power",
             "Shadow magic is practiced, allowing for concealment and deception",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Master Spy Varian": "Leader of the Guild of Master Spies and Thieves",
             "Nyx Shadowblade": "Renowned rogue known for her elusive skills",
             "Shrouded Mistress Velira": "High priestess of the Shadow Deity's Temple",
             "Silent Shadowfox": "Master of shadow magic and city's protector",
             "Lorekeeper Obscura": "Custodian of forbidden texts in the Shadow Library",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Shadow Deity",
             "Masked Mistress",
             "Whispered Secrets",
             "Nocturnal Watcher",
             "Cloaked Assassin",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The city's tunnels conceal hidden guilds with their own agendas",
             "The Shadow Library contains texts that reveal the city's true rulers",
             "Shadow magic allows for invisibility and manipulation of shadows",
             "The Shadow Deity's blessings can grant the power of stealth",
             "A network of hidden messages and symbols guides those in the know",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Abyssal Caverns, where darkness conceals deadly traps",
             "The Whispering Alley, a cursed place where whispers drive some mad",
             "The Nocturnal Maze, a labyrinth of shifting walls and illusions",
             "The Thieves' Bazaar, where cutthroat deals and betrayals are common",
             "The Shadowrift, a dimensional rift that leads to unknown realms",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Shadow Gardens, a secluded oasis of hidden beauty",
             "The Rogue's Den, where secretive dealings shape the city",
             "The Shadow Festival Grounds, where the annual festival unfolds",
             "The Silent Spire, offering panoramic views of the city's skyline",
             "The Shadowriver Wharf, a hub for clandestine water travel",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "35%",
             "Elf": "20%",
             "Halfling": "15%",
@@ -5858,7 +5922,7 @@ dnd_cities = {
             "Tiefling": "2%",
             "Other": "10%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Rogue": "30%",
             "Bard": "10%",
             "Warlock": "10%",
@@ -5870,12 +5934,12 @@ dnd_cities = {
             "Druid": "3%",
             "Other": "12%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "500,000 gp",
             "bottom 10% earners": "50 gp",
             "median earners": "25,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Shadow Market": 10,
             "Cloak and Dagger Supplies": 15,
             "Ebon Elixirs and Poisons": 12,
@@ -5889,7 +5953,7 @@ dnd_cities = {
             "The Shrouded Flower (Florist)": 5,
             "Shadows and Secrets Curiosities": 2,
         },
-        "services": {
+        "Services": {
             "Guild of Master Spies and Thieves": 10,
             "Silent Taverns": 15,
             "Shadow Stables": 5,
@@ -5961,79 +6025,81 @@ dnd_cities = {
             25: "The city's hidden tunnels connect distant parts of Shadowhaven, allowing for swift and stealthy travel.",
         },
     },
-    "arcanehaven" : {
-        "name": "Arcanehaven",
-        "description": "Arcanehaven is a city shrouded in perpetual twilight, hidden within a colossal underground cavern. It is a sanctuary for sorcerers of all kinds, where the mysteries of magic are revered and explored.",
-        "narrative": "Arcanehaven, a city of eternal twilight, exists in a realm of perpetual mystery. Nestled deep within a massive underground cavern, it is a sanctuary where sorcerers of every origin gather to unlock the secrets of magic. As you approach Arcanehaven, you are greeted by the ethereal glow of softly pulsating crystal formations that line the cavern walls. The city itself is a complex network of intricate arcane bridges and floating platforms, suspended in the vast underground expanse. A constant hum of magical energy fills the air, and the scent of incense and rare mystical herbs wafts through the streets. Arcanehaven is a city devoted to the study and practice of sorcery, and its architecture reflects this dedication. Towering spires of enchanted stone and shimmering crystal rise into the cavern's heights, each one housing sorcerer academies and magical laboratories. At the heart of Arcanehaven stands the Grand Arcanum, a massive crystalline structure that serves as the city's governing council and the epicenter of magical research. Life in Arcanehaven revolves around the pursuit of magical knowledge, and residents are encouraged to explore their sorcerous talents to the fullest. The annual Arcane Convergence is a highlight of the city, where sorcerers from across the realm gather to exchange spells, share arcane secrets, and witness awe-inspiring magical displays. Arcanehaven's unique environment has led to the development of a distinct society, with its own hierarchy and customs. The Council of Sorcerers governs the city, and its members are elected based on their magical prowess and contributions to the arcane arts. Rituals, spell duels, and arcane debates are common forms of entertainment and competition within the city. Arcanehaven is a city of secrets, and its labyrinthine tunnels hide forgotten chambers filled with magical relics and powerful artifacts. The Archives of the Ancients, a vast repository of arcane knowledge, is rumored to hold scrolls that reveal the true nature of sorcery. As you wander through Arcanehaven's mystical streets, you can't help but feel the enchantment and wonder that permeate every corner of this magical city. It is a place where the boundaries between the mundane and the arcane are blurred, where sorcery and exploration merge to create a captivating tapestry of magic and mystery.",
-        "place is known for": "the annual Arcane Convergence",
-        "amount of land": "700 acres",
-        "population": 18000,
-        "number of buildings": 2800,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Arcanehaven" : {
+        "Name": "Arcanehaven",
+        "Description": "Arcanehaven is a city shrouded in perpetual twilight, hidden within a colossal underground cavern. It is a sanctuary for sorcerers of all kinds, where the mysteries of magic are revered and explored.",
+        "Narrative": "Arcanehaven, a city of eternal twilight, exists in a realm of perpetual mystery. Nestled deep within a massive underground cavern, it is a sanctuary where sorcerers of every origin gather to unlock the secrets of magic. As you approach Arcanehaven, you are greeted by the ethereal glow of softly pulsating crystal formations that line the cavern walls. The city itself is a complex network of intricate arcane bridges and floating platforms, suspended in the vast underground expanse. A constant hum of magical energy fills the air, and the scent of incense and rare mystical herbs wafts through the streets. Arcanehaven is a city devoted to the study and practice of sorcery, and its architecture reflects this dedication. Towering spires of enchanted stone and shimmering crystal rise into the cavern's heights, each one housing sorcerer academies and magical laboratories. At the heart of Arcanehaven stands the Grand Arcanum, a massive crystalline structure that serves as the city's governing council and the epicenter of magical research. Life in Arcanehaven revolves around the pursuit of magical knowledge, and residents are encouraged to explore their sorcerous talents to the fullest. The annual Arcane Convergence is a highlight of the city, where sorcerers from across the realm gather to exchange spells, share arcane secrets, and witness awe-inspiring magical displays. Arcanehaven's unique environment has led to the development of a distinct society, with its own hierarchy and customs. The Council of Sorcerers governs the city, and its members are elected based on their magical prowess and contributions to the arcane arts. Rituals, spell duels, and arcane debates are common forms of entertainment and competition within the city. Arcanehaven is a city of secrets, and its labyrinthine tunnels hide forgotten chambers filled with magical relics and powerful artifacts. The Archives of the Ancients, a vast repository of arcane knowledge, is rumored to hold scrolls that reveal the true nature of sorcery. As you wander through Arcanehaven's mystical streets, you can't help but feel the enchantment and wonder that permeate every corner of this magical city. It is a place where the boundaries between the mundane and the arcane are blurred, where sorcery and exploration merge to create a captivating tapestry of magic and mystery.",
+        "Place Is Known For": "the annual Arcane Convergence",
+        "Amount Of Land": "700 acres",
+        "Population": 18000,
+        "Number of Buildings": 2800,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Crystalholm": "20 miles northeast",
             "Mystic Hollow": "15 miles southeast",
             "Spellspire Citadel": "30 miles southwest",
             "Enigma Grove": "40 miles northwest",
             "Eldermist Caverns": "25 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Pulsating crystal formations lining the cavern walls",
             "Intricate arcane bridges suspended in the underground expanse",
             "Glowing magical sigils etched into the stone pathways",
             "Floating platforms adorned with enchanted flora",
             "The Grand Arcanum, a colossal crystalline structure at the city's center",
         ],
-        "5 key features": [
+        "Key Features": [
             "Archmage's Tower, a hub for advanced sorcerous studies",
             "The Conflux Market of Arcane Artifacts and Tomes",
             "Sorcerer's Dueling Arena, where magical battles are held",
             "The Grand Library of Arcane Lore, a repository of ancient spells",
             "Council of Sorcerers' Chambers, governing the city's arcane affairs",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "A hidden chamber within the city holds an ancient well of boundless magical power",
             "The city's founders were a circle of legendary sorcerers who harnessed the cavern's magic",
             "The Grand Arcanum is said to contain a portal to otherworldly realms of magic",
             "The Archives of the Ancients hide forbidden spells that defy comprehension",
             "Arcanehaven's residents are known to communicate through telepathic connections",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Archmage Orinthal": "Leader of the Council of Sorcerers",
             "Sylvia Starweaver": "Renowned sorceress known for her mastery of elemental magic",
             "Thaldrin Shadowtome": "Keeper of the Grand Library and ancient spell scholar",
             "Lirael Moonshadow": "Expert in the study of planar magic and dimensional manipulation",
             "Faelon Frostweaver": "Arcane dueling champion and master of ice sorcery",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Arcane Mysteries",
             "Elemental Mysticism",
             "Aetherius Devotion",
             "Eldritch Worship",
             "Sorcerer's Ascendancy",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The city's magical energy flows from the heart of the cavern, rumored to hide a sleeping titan",
             "A hidden chamber within the Council of Sorcerers holds a mirror that reveals alternate realities",
             "The Archives of the Ancients contain spells that can bend time and space",
             "Arcanehaven's flora can be coaxed to produce ingredients for potent potions",
             "Sorcerers' dreams are said to be shared within the city's dream nexus, where secrets are unveiled",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Abyssal Conduit, a rift where raw magical energy warps reality",
             "The Enigmatic Abyss, a zone of unpredictable and chaotic magic",
             "The Whispering Nexus, where eerie voices echo and distort thoughts",
             "The Abyssal Maw, a chasm with deadly arcane anomalies",
             "The Forbidden Chamber, rumored to house ancient and dangerous experiments",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Elemental Atrium, a tranquil garden with magical fountains",
             "Sorcerer's Retreat, a place for meditation and arcane contemplation",
             "The Astral Observatory, where distant planes can be observed",
             "The Ethereal Gallery of Illusions, showcasing illusionary artworks",
             "The Conflux Market, a bustling hub for arcane artifacts and rare tomes",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "30%",
             "Elf": "15%",
             "Tiefling": "15%",
@@ -6045,7 +6111,7 @@ dnd_cities = {
             "Warforged": "3%",
             "Other": "2%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Sorcerer": "50%",
             "Wizard": "20%",
             "Warlock": "10%",
@@ -6054,12 +6120,12 @@ dnd_cities = {
             "Druid": "3%",
             "Other": "7%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "2,000,000 gp",
             "bottom 10% earners": "300 gp",
             "median earners": "75,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Arcane Emporium": 10,
             "Mystic Tomes and Scrolls": 15,
             "Enchantment Forge": 12,
@@ -6073,7 +6139,7 @@ dnd_cities = {
             "Sorcerer's Supplies": 5,
             "Artifacts of the Arcane": 2,
         },
-        "services": {
+        "Services": {
             "Council of Sorcerers' Hall": 10,
             "Twilight Inns": 15,
             "Arcane Stables": 5,
@@ -6145,79 +6211,81 @@ dnd_cities = {
             25: "The city's mystical hot springs are said to offer visions of otherworldly realms, attracting seekers of knowledge.",
         },
     },
-    "eldritchspire": {
-        "name": "Eldritchspire",
-        "description": "Eldritchspire is a city shrouded in eternal twilight, nestled within a shadowy valley. It is known as the haven for warlocks and their otherworldly patrons, where dark secrets and eldritch powers converge.",
-        "narrative": "Eldritchspire, a city bathed in perpetual twilight, lies hidden within a shadowy valley. It is a place where warlocks and their otherworldly patrons hold sway, and where dark secrets and eldritch powers intertwine. As you approach Eldritchspire, the world seems to dim, and a sense of eerie calm envelops you. The city's architecture is a blend of gothic spires and ancient ruins, and its streets are illuminated by the dim light of arcane lanterns that cast elongated shadows. Eldritchspire is a haven for those who have forged pacts with powerful entities from the far reaches of the multiverse. Warlocks from all walks of life converge here to learn, practice, and harness their eldritch abilities. The central hub of the city is the Spire of Shadows, a massive obsidian tower that serves as both a citadel and a library of forbidden knowledge. It is said that within its depths lie tomes and relics containing the secrets of eldritch power. Life in Eldritchspire revolves around the pursuit of arcane mastery. Practitioners of dark arts can be seen conducting eerie rituals in the city's twisted alleyways, while warlocks gather in shadowy taverns to share their experiences and insights. The annual Eldritch Conclave is a highlight of the city, where warlocks from across the land gather to exchange forbidden lore and seek guidance from their enigmatic patrons. Eldritchspire is a city of hidden agendas and whispered pacts. Rumors persist of secret covens and cabals, each devoted to a different otherworldly being, and the city's alleys are filled with cloaked figures engaged in clandestine dealings. The Temple of the Void, a massive obsidian structure, stands as the city's center of worship for warlocks who revere their patrons as deities. As you wander through Eldritchspire's shadowy streets, you can't help but feel the palpable presence of eldritch power that permeates every corner of this enigmatic city. It is a place where the boundaries between the mundane and the mysterious blur, where secrets are bartered for power, and where the echoes of ancient pacts resonate in the eerie twilight.",
-        "place is known for": "the annual Eldritch Conclave",
-        "amount of land": "400 acres",
-        "population": 12000,
-        "number of buildings": 2000,
-        "crime rate": "5%",
-        "Neighboring cities and towns": {
+
+
+    "Eldritchspire": {
+        "Name": "Eldritchspire",
+        "Description": "Eldritchspire is a city shrouded in eternal twilight, nestled within a shadowy valley. It is known as the haven for warlocks and their otherworldly patrons, where dark secrets and eldritch powers converge.",
+        "Narrative": "Eldritchspire, a city bathed in perpetual twilight, lies hidden within a shadowy valley. It is a place where warlocks and their otherworldly patrons hold sway, and where dark secrets and eldritch powers intertwine. As you approach Eldritchspire, the world seems to dim, and a sense of eerie calm envelops you. The city's architecture is a blend of gothic spires and ancient ruins, and its streets are illuminated by the dim light of arcane lanterns that cast elongated shadows. Eldritchspire is a haven for those who have forged pacts with powerful entities from the far reaches of the multiverse. Warlocks from all walks of life converge here to learn, practice, and harness their eldritch abilities. The central hub of the city is the Spire of Shadows, a massive obsidian tower that serves as both a citadel and a library of forbidden knowledge. It is said that within its depths lie tomes and relics containing the secrets of eldritch power. Life in Eldritchspire revolves around the pursuit of arcane mastery. Practitioners of dark arts can be seen conducting eerie rituals in the city's twisted alleyways, while warlocks gather in shadowy taverns to share their experiences and insights. The annual Eldritch Conclave is a highlight of the city, where warlocks from across the land gather to exchange forbidden lore and seek guidance from their enigmatic patrons. Eldritchspire is a city of hidden agendas and whispered pacts. Rumors persist of secret covens and cabals, each devoted to a different otherworldly being, and the city's alleys are filled with cloaked figures engaged in clandestine dealings. The Temple of the Void, a massive obsidian structure, stands as the city's center of worship for warlocks who revere their patrons as deities. As you wander through Eldritchspire's shadowy streets, you can't help but feel the palpable presence of eldritch power that permeates every corner of this enigmatic city. It is a place where the boundaries between the mundane and the mysterious blur, where secrets are bartered for power, and where the echoes of ancient pacts resonate in the eerie twilight.",
+        "Place Is Known For": "the annual Eldritch Conclave",
+        "Amount Of Land": "400 acres",
+        "Population": 12000,
+        "Number of Buildings": 2000,
+        "Crime Rate": "5%",
+        "Neighboring Cities And Towns": {
             "Shadowfell Hollow": "10 miles north",
             "Cursedwood Village": "15 miles east",
             "Abyssal Spire": "20 miles southeast",
             "Wraithhold": "30 miles south",
             "Umbralhaven": "8 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Twisted gothic spires that pierce the sky",
             "Eternal twilight that shrouds the city",
             "Dimly lit streets with arcane lanterns",
             "Shadowy alleyways filled with secrets",
             "The Spire of Shadows, a towering obsidian citadel",
         ],
-        "5 key features": [
+        "Key Features": [
             "Spire of Shadows, a citadel and library of forbidden knowledge",
             "Temple of the Void, a place of worship for patrons",
             "Eldritch Conclave, an annual gathering of warlocks",
             "Shadowweaver's Tavern, a meeting place for practitioners of dark arts",
             "Coven's Crypt, rumored to hold the darkest secrets of the city",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Spire of Shadows houses tomes of eldritch power and forbidden knowledge",
             "Warlocks make pacts with enigmatic patrons in exchange for power",
             "Clandestine covens and cabals hold secret meetings in the city's shadows",
             "The Temple of the Void is said to be a conduit to otherworldly realms",
             "Eldritch power courses through the city, granting its inhabitants dark abilities",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Eldritch Master Vossara": "Leader of the Eldritch Conclave",
             "Thaldrin the Voidcaller": "Renowned warlock known for summoning eldritch horrors",
             "Morrigan Shadowmire": "High priestess of the Temple of the Void",
             "Xal'thar the Pactmaker": "Mysterious warlock rumored to have made pacts with multiple patrons",
             "Lorekeeper Obsidianthorn": "Custodian of the forbidden tomes within the Spire of Shadows",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Patron Worship",
             "The Void",
             "The Abyss",
             "Eldritch Powers",
             "Otherworldly Entities",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The Spire of Shadows contains portals to other planes of existence",
             "Warlocks in Eldritchspire often hold dual or even triple pacts with patrons",
             "The Temple of the Void hides chambers with relics of ancient power",
             "Eldritchspire's alleys conceal hidden passages to secret meeting places",
             "The city's eternal twilight is a result of an ancient warlock's pact",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Abyssal Abyss, where eldritch horrors are said to lurk",
             "The Cursed Crypts, home to restless spirits and dark enchantments",
             "The Umbral Tunnels, a labyrinthine maze of shifting shadows",
             "The Wraith's Hollow, a desolate and eerie expanse",
             "The Eldritch Nexus, a place where reality itself is unstable",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Eldritch Gardens, where rare and eerie flora thrive",
             "The Obsidian Plaza, a gathering place for warlocks and their patrons",
             "The Veiled Market, where eldritch artifacts are traded",
             "The Voidborn Sanctum, a place of meditation and communion with patrons",
             "The Astral Observatory, offering glimpses into distant planes",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "35%",
             "Tiefling": "20%",
             "Half-Elf": "15%",
@@ -6229,7 +6297,7 @@ dnd_cities = {
             "Genasi": "2%",
             "Other": "6%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Warlock": "60%",
             "Sorcerer": "10%",
             "Wizard": "5%",
@@ -6242,12 +6310,12 @@ dnd_cities = {
             "Monk": "2%",
             "Other": "1%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "1,500,000 gp",
             "bottom 10% earners": "300 gp",
             "median earners": "60,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Eldritch Tomes and Relics": 10,
             "Shadowy Elixirs and Potions": 15,
             "Cursed Artifacts Emporium": 12,
@@ -6261,7 +6329,7 @@ dnd_cities = {
             "Arcane Oddities and Curiosities": 5,
             "Otherworldly Artifacts": 2,
         },
-        "services": {
+        "Services": {
             "Spire of Shadows Archives": 10,
             "Eldritch Taverns": 15,
             "Shadowweaver's Forge": 5,
@@ -6333,79 +6401,81 @@ dnd_cities = {
             25: "The city's dark catacombs are said to contain the whispers of ancient pacts with otherworldly beings.",
         },
     },
-    "mageholm" : {
-        "name": "Mageholm",
-        "description": "Mageholm is a city known as the Sanctum of Sorcery, where arcane magic reigns supreme. The city is a hub of knowledge, magical research, and spellcasting excellence.",
-        "narrative": "Mageholm, often referred to as the Sanctum of Sorcery, stands as a testament to the power of arcane magic. Nestled amidst a sprawling landscape of mystical energies, the city is a beacon for wizards and spellcasters from across the realms. As you approach Mageholm, you can sense the palpable aura of magic that permeates the very air. The city's skyline is dominated by towering spires adorned with enchanting runes that shimmer with otherworldly energy. Arcane academies, alchemical laboratories, and grand libraries line the streets, bustling with scholars and mages engrossed in the pursuit of magical knowledge. Magical lights, powered by the city's ley lines, illuminate the avenues with a kaleidoscope of colors that dance through the night. The heart of Mageholm is the Arcane College, a colossal citadel of arcane learning that houses some of the most brilliant minds in the realm. Here, aspiring wizards undergo rigorous training, conducting experiments that push the boundaries of magical understanding. The city's society is built upon a hierarchy of magical prowess, with archmages and renowned spellcasters holding positions of influence and authority. The annual Mage Festival is a highlight of the city, featuring spell duels, magical exhibitions, and the unveiling of groundbreaking arcane discoveries. Mageholm's unique environment has also led to the development of a distinct religion centered around the Arcane Deities, divine beings believed to grant power to those who unlock the deepest secrets of magic. Pilgrims and spellcasters travel from far and wide to seek enlightenment within the city's hallowed halls. Mageholm is a city of secrets, and rumors persist of hidden vaults containing ancient tomes of forbidden spells, and portals to other realms accessible only by the most skilled wizards. The Astral Observatory, a legendary tower that pierces the very fabric of the cosmos, is said to hold the key to unlocking the mysteries of the multiverse. As you wander through Mageholm's mystical streets, you can't help but feel the pulsating energy of arcane power that flows through every corner of this spellbound city. It is a place where the boundaries between reality and magic are blurred, where knowledge and spellcraft merge to create a breathtaking tapestry of mystic wonder.",
-        "place is known for": "the annual Mage Festival",
-        "amount of land": "700 acres",
-        "population": 25000,
-        "number of buildings": 3500,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Mageholm" : {
+        "Name": "Mageholm",
+        "Description": "Mageholm is a city known as the Sanctum of Sorcery, where arcane magic reigns supreme. The city is a hub of knowledge, magical research, and spellcasting excellence.",
+        "Narrative": "Mageholm, often referred to as the Sanctum of Sorcery, stands as a testament to the power of arcane magic. Nestled amidst a sprawling landscape of mystical energies, the city is a beacon for wizards and spellcasters from across the realms. As you approach Mageholm, you can sense the palpable aura of magic that permeates the very air. The city's skyline is dominated by towering spires adorned with enchanting runes that shimmer with otherworldly energy. Arcane academies, alchemical laboratories, and grand libraries line the streets, bustling with scholars and mages engrossed in the pursuit of magical knowledge. Magical lights, powered by the city's ley lines, illuminate the avenues with a kaleidoscope of colors that dance through the night. The heart of Mageholm is the Arcane College, a colossal citadel of arcane learning that houses some of the most brilliant minds in the realm. Here, aspiring wizards undergo rigorous training, conducting experiments that push the boundaries of magical understanding. The city's society is built upon a hierarchy of magical prowess, with archmages and renowned spellcasters holding positions of influence and authority. The annual Mage Festival is a highlight of the city, featuring spell duels, magical exhibitions, and the unveiling of groundbreaking arcane discoveries. Mageholm's unique environment has also led to the development of a distinct religion centered around the Arcane Deities, divine beings believed to grant power to those who unlock the deepest secrets of magic. Pilgrims and spellcasters travel from far and wide to seek enlightenment within the city's hallowed halls. Mageholm is a city of secrets, and rumors persist of hidden vaults containing ancient tomes of forbidden spells, and portals to other realms accessible only by the most skilled wizards. The Astral Observatory, a legendary tower that pierces the very fabric of the cosmos, is said to hold the key to unlocking the mysteries of the multiverse. As you wander through Mageholm's mystical streets, you can't help but feel the pulsating energy of arcane power that flows through every corner of this spellbound city. It is a place where the boundaries between reality and magic are blurred, where knowledge and spellcraft merge to create a breathtaking tapestry of mystic wonder.",
+        "Place Is Known For": "the annual Mage Festival",
+        "Amount Of Land": "700 acres",
+        "Population": 25000,
+        "Number of Buildings": 3500,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Sorcerers' Haven": "20 miles north",
             "Enchanters' Enclave": "15 miles east",
             "Arcanum Spire": "30 miles southeast",
             "Mysticgate": "50 miles south",
             "Wizard's Rest": "10 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Towering spires adorned with enchanting runes",
             "Ley lines that crisscross the city, channeling magical energy",
             "Arcane academies and laboratories conducting magical experiments",
             "Grand libraries filled with ancient tomes and spell scrolls",
             "The Astral Observatory, a tower that pierces the fabric of the multiverse",
         ],
-        "5 key features": [
+        "Key Features": [
             "Arcane College, the epicenter of magical learning",
             "Temple of the Arcane Deities, a place of divine reverence",
             "Spellcaster's Bazaar, where magical artifacts are traded",
             "Mystic Archives, a repository of forbidden and rare magical texts",
             "Astral Nexus, a place where planes converge and portals open",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Arcane Deities grant power to those who unlock the deepest secrets of magic",
             "Mageholm's founders were legendary archmages who harnessed the ley lines",
             "Hidden vaults contain ancient tomes of forbidden spells and artifacts of immense power",
             "The Astral Observatory can reveal the mysteries of the multiverse to those who dare to ascend",
             "Arcane magic flows through the city's ley lines, empowering its spellcasters",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Archmage Aurelia": "Leader of the Arcane Council",
             "Eldric the Enchanter": "Renowned mage known for crafting powerful magical items",
             "High Priestess Seraphina": "Keeper of the Temple of the Arcane Deities",
             "Voren the Astral Sage": "Mystic who studies the cosmos and the Astral Observatory",
             "Sylas Spellweaver": "Curator of the Mystic Archives, guardian of forbidden knowledge",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Arcane Deities",
             "Ioun",
             "Mystra",
             "Vecna",
             "Azuth",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "Hidden chambers beneath the city contain powerful artifacts and ancient spells",
             "The Mystic Archives hold tomes of knowledge that challenge the very nature of reality",
             "The Astral Observatory's pinnacle can reveal glimpses of other planes and alternate realities",
             "Mageholm's ley lines can be harnessed to augment spells and magic items",
             "The city's underground catacombs are rumored to be haunted by arcane spirits",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Abyssal Confluence, where chaotic magic runs rampant",
             "The Eldritch Maze, a labyrinth of shifting magical illusions",
             "The Enigma Vault, rumored to imprison ancient and dangerous magical entities",
             "The Void Nexus, a place where magic warps and reality unravels",
             "The Shadowfell Gate, a portal to a dark and perilous plane",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Arcane Gardens, a place of serene contemplation and magical experiments",
             "The Spellcaster's Bazaar, where rare and exotic magical items can be found",
             "The Astral Nexus, where planes converge and portals offer glimpses of other worlds",
             "The Temple of the Arcane Deities, a site of divine reverence and magical enlightenment",
             "The Grand Library of Spells, housing an extensive collection of magical tomes",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "35%",
             "Elf": "20%",
             "Gnome": "15%",
@@ -6417,7 +6487,7 @@ dnd_cities = {
             "Aasimar": "2%",
             "Other": "1%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Wizard": "40%",
             "Sorcerer": "15%",
             "Warlock": "10%",
@@ -6432,12 +6502,12 @@ dnd_cities = {
             "Barbarian": "1%",
             "Other": "2%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "2,000,000 gp",
             "bottom 10% earners": "500 gp",
             "median earners": "100,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Arcane Emporium": 10,
             "Ethereal Enchantments": 15,
             "Arcanist's Alchemy": 12,
@@ -6450,7 +6520,7 @@ dnd_cities = {
             "Harmonious Harps": 3,
             "The Crystal Petal (Florist)": 2,
         },
-        "services": {
+        "Services": {
             "Arcane Council Hall": 10,
             "Luminary Inns": 15,
             "Arcane Stables": 5,
@@ -6522,76 +6592,78 @@ dnd_cities = {
             25: "The city's magical hot springs are said to grant visions of possible futures to those who bathe in them.",
         },
     },
-    "emberwood" : {
-        "name": "Emberwood",
-        "description": "Emberwood is a quaint and picturesque town nestled in a dense forest. It's known for its warm hospitality and the enchanting glow of fireflies that illuminate the night.",
-        "narrative": "Emberwood, a charming and tranquil town, rests within the embrace of a lush and ancient forest. As you approach Emberwood, the scent of pine and wildflowers fills the air, and the soft rustling of leaves in the gentle breeze welcomes you. The town itself is a collection of cozy cottages and wooden structures, each adorned with vibrant flowers and ivy that seem to blend seamlessly with the surrounding woods. At night, the forest comes alive with the magical glow of fireflies, casting a warm and enchanting radiance over the town. Emberwood's heart is the Town Square, where residents gather to share stories, trade goods, and celebrate local festivals. A grand oak tree stands at the center, said to be a conduit to the fey realm. Emberwood is a place where the rhythms of nature are embraced and respected. The town's inhabitants are skilled hunters, gatherers, and herbalists, living in harmony with the forest. The annual Firefly Festival is the highlight of Emberwood's social calendar, featuring firefly-themed lanterns, dancing, and music. The town's simple wooden chapel, dedicated to the God of the Forest, hosts regular ceremonies to give thanks for the bounties of the woods. Emberwood is also home to a network of tunnels and underground chambers, rumored to hold ancient secrets and treasures hidden by the forest's protectors. As you wander through Emberwood's serene streets, you can't help but feel the warmth and tranquility that permeate every corner of this idyllic town. It is a place where nature and community are intertwined, where the glow of fireflies guides your way through the peaceful embrace of the forest.",
-        "place is known for": "the annual Firefly Festival",
-        "amount of land": "200 acres",
-        "population": 1200,
-        "number of buildings": 200,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Emberwood" : {
+        "Name": "Emberwood",
+        "Description": "Emberwood is a quaint and picturesque town nestled in a dense forest. It's known for its warm hospitality and the enchanting glow of fireflies that illuminate the night.",
+        "Narrative": "Emberwood, a charming and tranquil town, rests within the embrace of a lush and ancient forest. As you approach Emberwood, the scent of pine and wildflowers fills the air, and the soft rustling of leaves in the gentle breeze welcomes you. The town itself is a collection of cozy cottages and wooden structures, each adorned with vibrant flowers and ivy that seem to blend seamlessly with the surrounding woods. At night, the forest comes alive with the magical glow of fireflies, casting a warm and enchanting radiance over the town. Emberwood's heart is the Town Square, where residents gather to share stories, trade goods, and celebrate local festivals. A grand oak tree stands at the center, said to be a conduit to the fey realm. Emberwood is a place where the rhythms of nature are embraced and respected. The town's inhabitants are skilled hunters, gatherers, and herbalists, living in harmony with the forest. The annual Firefly Festival is the highlight of Emberwood's social calendar, featuring firefly-themed lanterns, dancing, and music. The town's simple wooden chapel, dedicated to the God of the Forest, hosts regular ceremonies to give thanks for the bounties of the woods. Emberwood is also home to a network of tunnels and underground chambers, rumored to hold ancient secrets and treasures hidden by the forest's protectors. As you wander through Emberwood's serene streets, you can't help but feel the warmth and tranquility that permeate every corner of this idyllic town. It is a place where nature and community are intertwined, where the glow of fireflies guides your way through the peaceful embrace of the forest.",
+        "Place Is Known For": "the annual Firefly Festival",
+        "Amount Of Land": "200 acres",
+        "Population": 1200,
+        "Number of Buildings": 200,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Thornbrook": "10 miles east",
             "Mossy Hollow": "8 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Ancient, towering oaks and pines surrounding the town",
             "A gentle river that winds through the town, providing fresh water",
             "Cozy cottages with thatched roofs and flower-filled gardens",
             "A grand oak tree at the Town Square, rumored to connect to the fey realm",
             "Enchanting fireflies that illuminate the town at night",
         ],
-        "5 key features": [
+        "Key Features": [
             "The Town Square with the grand oak tree",
             "The Forest Chapel dedicated to the God of the Forest",
             "Hunters' Lodge where forest bounty is prepared and shared",
             "Firefly Lantern Shop, specializing in handcrafted lanterns",
             "Emberwood Herbalists' Guild, experts in forest remedies",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The grand oak at the Town Square is a fey conduit granting visions to the worthy",
             "Emberwood was founded by druids who sought to protect the forest",
             "Hidden tunnels beneath the town hold treasures guarded by forest spirits",
             "The Firefly Festival is said to bring blessings from the fey",
             "The town's herbalists possess secret knowledge of rare forest herbs",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Elder Thandor": "Wisdom keeper and leader of the Town Council",
             "Lorelei Greenleaf": "Renowned herbalist and protector of the forest",
             "Sylas Foxglove": "Master archer and hunter, known for his incredible aim",
             "Eldara Moonglow": "Mistress of the Firefly Festival, renowned for her lanterns",
             "Brother Aldric": "Dedicated priest of the God of the Forest at the chapel",
         },
-        "5 top religions": [
+        "Top Religions": [
             "God of the Forest",
             "Ehlonna",
             "Obad-Hai",
             "Mielikki",
             "Silvanus",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The grand oak at the Town Square has a hidden chamber containing ancient scrolls",
             "Emberwood's tunnels connect to an underground grove of sacred trees",
             "The fireflies of Emberwood are rumored to be guardians of the forest",
             "The town's herbalists possess a rare recipe for a potion of forest sight",
             "The river holds a hidden pool with healing properties known only to the locals",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Shadowed Glen, where the forest grows dense and eerie",
             "The Whispering Woods, a section of the forest with haunting whispers",
             "The Hollowed Tree, a decaying tree with a dark history",
             "The Moonlit Clearing, said to be a portal to the fey realm",
             "The Misty Marshes, home to venomous creatures and treacherous terrain",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Forest Pond, a serene spot for reflection and meditation",
             "The Firefly Meadow, where the glow of fireflies is particularly enchanting",
             "The Forest Chapel, a place of quiet reverence and natural beauty",
             "The Elder's Grove, where ancient trees stand as living testaments to time",
             "The Riverbank Market, a gathering place for fresh forest produce",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "50%",
             "Elf": "20%",
             "Halfling": "10%",
@@ -6600,7 +6672,7 @@ dnd_cities = {
             "Tabaxi": "5%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Ranger": "20%",
             "Druid": "15%",
             "Cleric": "10%",
@@ -6613,19 +6685,19 @@ dnd_cities = {
             "Paladin": "5%",
             "Other": "5%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "50,000 gp",
             "bottom 10% earners": "10 gp",
             "median earners": "2,500 gp",
         },
-        "shops": {
+        "Shops": {
             "Emberwood Traders": 5,
             "Firefly Lanterns": 8,
             "Herbal Remedies": 10,
             "Forest Provisions": 5,
             "Woodland Crafts": 6,
         },
-        "services": {
+        "Services": {
             "Forest Chapel Services": 3,
             "Taverns of Warmth": 5,
             "Stable and Wagon Rentals": 2,
@@ -6677,79 +6749,81 @@ dnd_cities = {
             25: "The town's river has clear, pristine waters, perfect for drinking and bathing."
         },
     },
-    "iron_village" : {
-        "name": "Iron Village",
-        "description": "Iron Village is a small town perched precariously on towering iron cliffs. The town's unique location has made it a resilient but isolated community.",
-        "narrative": "Iron Village, a remote and hardy community, stands as a testament to the resilience of its inhabitants. This small town is perched precariously on towering iron cliffs that jut out from the surrounding rugged landscape. The cliffs themselves are rich in iron ore, which has been both a boon and a challenge for the town's people. Iron Village is a place of rugged beauty, with the iron cliffs casting long shadows over the town. The town's buildings are hewn from the iron itself, and the streets are narrow and winding, following the contours of the cliffs. The sound of blacksmiths' hammers ringing against iron echoes through the village, for the people of Iron Village are skilled in metallurgy and have learned to forge their homes and tools from the very cliffs that support them. Life in Iron Village is marked by self-sufficiency and resourcefulness. The town relies heavily on mining iron ore from the cliffs, which they trade with neighboring settlements for food and other necessities. However, the cliffs have recently shown signs of instability, causing concern among the residents. Cracks have appeared in some of the iron walls, and occasional tremors have rattled the village. The annual Iron Festival, which celebrates the town's mining and blacksmithing traditions, has taken on a bittersweet tone as the people of Iron Village face an uncertain future. Despite the challenges, the community remains tight-knit, and the Iron Council, a group of elders and skilled miners, leads the town with wisdom and pragmatism. Iron Village is known for its skilled blacksmiths, who craft exceptional weapons and armor from the iron ore. The town's defenses are formidable, and they have repelled many threats from the wild and often hostile terrain that surrounds them. As rumors of the cliffs' instability spread, adventurers have flocked to Iron Village, seeking to uncover the cause and find a solution to the impending catastrophe. The town's Iron Temple, dedicated to the deity of earth and metal, has become a focal point for prayers and offerings, as the residents hope for divine intervention to stabilize the cliffs. As you approach Iron Village, you can't help but admire the resilience and determination of its people, who have built their lives on the precipice of danger, and now face their greatest challenge yet.",
-        "place is known for": "the annual Iron Festival",
-        "amount of land": "300 acres",
-        "population": 2400,
-        "number of buildings": 400,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Iron_village" : {
+        "Name": "Iron Village",
+        "Description": "Iron Village is a small town perched precariously on towering iron cliffs. The town's unique location has made it a resilient but isolated community.",
+        "Narrative": "Iron Village, a remote and hardy community, stands as a testament to the resilience of its inhabitants. This small town is perched precariously on towering iron cliffs that jut out from the surrounding rugged landscape. The cliffs themselves are rich in iron ore, which has been both a boon and a challenge for the town's people. Iron Village is a place of rugged beauty, with the iron cliffs casting long shadows over the town. The town's buildings are hewn from the iron itself, and the streets are narrow and winding, following the contours of the cliffs. The sound of blacksmiths' hammers ringing against iron echoes through the village, for the people of Iron Village are skilled in metallurgy and have learned to forge their homes and tools from the very cliffs that support them. Life in Iron Village is marked by self-sufficiency and resourcefulness. The town relies heavily on mining iron ore from the cliffs, which they trade with neighboring settlements for food and other necessities. However, the cliffs have recently shown signs of instability, causing concern among the residents. Cracks have appeared in some of the iron walls, and occasional tremors have rattled the village. The annual Iron Festival, which celebrates the town's mining and blacksmithing traditions, has taken on a bittersweet tone as the people of Iron Village face an uncertain future. Despite the challenges, the community remains tight-knit, and the Iron Council, a group of elders and skilled miners, leads the town with wisdom and pragmatism. Iron Village is known for its skilled blacksmiths, who craft exceptional weapons and armor from the iron ore. The town's defenses are formidable, and they have repelled many threats from the wild and often hostile terrain that surrounds them. As rumors of the cliffs' instability spread, adventurers have flocked to Iron Village, seeking to uncover the cause and find a solution to the impending catastrophe. The town's Iron Temple, dedicated to the deity of earth and metal, has become a focal point for prayers and offerings, as the residents hope for divine intervention to stabilize the cliffs. As you approach Iron Village, you can't help but admire the resilience and determination of its people, who have built their lives on the precipice of danger, and now face their greatest challenge yet.",
+        "Place Is Known For": "the annual Iron Festival",
+        "Amount Of Land": "300 acres",
+        "Population": 2400,
+        "Number of Buildings": 400,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Moltenforge": "15 miles north",
             "Ironhold": "8 miles east",
             "Sablevale": "20 miles southeast",
             "Rusthaven": "30 miles south",
             "Orespring": "10 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Towering iron cliffs that shelter the town",
             "Iron ore deposits visible in the cliff faces",
             "Narrow and winding streets that follow the cliffs' contours",
             "Blacksmiths' forges and workshops scattered throughout the village",
             "The Iron Temple, perched on the highest cliff, overlooking the town",
         ],
-        "5 key features": [
+        "Key Features": [
             "The Iron Council's Hall, where town decisions are made",
             "The Ironsmiths' Guild, home to skilled blacksmiths and artisans",
             "The Iron Market, where ore and goods are traded with neighboring settlements",
             "The Ironwatch Tower, a formidable defensive structure",
             "The Iron Temple, a place of worship for the deity of earth and metal",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The iron cliffs are said to be the remains of a colossal golem of ancient times",
             "The Iron Council possesses knowledge of secret tunnels within the cliffs",
             "Mysterious runes on the cliffs' surface are believed to hold protective magic",
             "The Iron Festival once attracted a dragon seeking a legendary artifact",
             "A hidden treasure is rumored to be buried deep within the cliffs",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Elder Thordan Stoneforge": "Leader of the Iron Council",
             "Hilda Ironheart": "Master blacksmith known for crafting legendary weapons",
             "Sorin Stonebreaker": "Head priest of the Iron Temple",
             "Kara Ironshaper": "Renowned metallurgist and inventor",
             "Grimm Ironbeard": "Legendary miner who uncovered ancient caverns",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Earth and Metal Deity",
             "Forgefather",
             "Stoneguard",
             "Mountain Matron",
             "Molten Heart",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "Ancient tunnels within the cliffs connect Iron Village to hidden chambers",
             "The Iron Council holds knowledge of a secret cache of powerful weapons",
             "Runes etched into the cliffs' surface are said to grant protection",
             "The Iron Temple possesses a relic with the power to stabilize the cliffs",
             "An underground river flows beneath the cliffs, a source of freshwater",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Crumbling Overhang, where iron cliffs show signs of collapse",
             "The Unstable Mines, tunnels at risk of cave-ins",
             "The Echoing Abyss, a chasm with treacherous pathways",
             "The Iron Gorge, a deep ravine with unstable rock bridges",
             "The Ironwatch Tower's haunted lower chambers",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Iron Plaza, a gathering place for festivals and celebrations",
             "The Ironsmiths' Guild, where master blacksmiths craft exceptional weapons",
             "The Iron Market, bustling with traders and artisans",
             "The Ironwatch Tower, offering panoramic views of the surrounding landscape",
             "The Iron Temple, a serene place of worship with breathtaking vistas",
         ],
-        "races": {
+        "Race Makeup": {
             "Dwarf": "50%",
             "Human": "20%",
             "Gnome": "10%",
@@ -6758,7 +6832,7 @@ dnd_cities = {
             "Kobold": "5%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Barbarian": "5%",
             "Bard": "2%",
             "Cleric": "10%",
@@ -6768,12 +6842,12 @@ dnd_cities = {
             "Artificer": "10%",
             "Other": "1%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "100,000 gp",
             "bottom 10% earners": "10 gp",
             "median earners": "5,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Ironsmith's Forge": 10,
             "Metallic Treasures": 15,
             "Iron Ore Traders": 12,
@@ -6787,7 +6861,7 @@ dnd_cities = {
             "Runestone Engraving": 5,
             "Religious Offerings": 2,
         },
-        "services": {
+        "Services": {
             "Iron Council Hall": 10,
             "Iron Innkeepers": 15,
             "Iron Stables": 5,
@@ -6858,78 +6932,80 @@ dnd_cities = {
             25: "The town's iron cliffs cast long shadows, creating a unique and striking visual landscape.",
         },
     },
-    "frostcliff" : {
-        "name": "Frostcliff",
-        "description": "Frostcliff is a small coastal town nestled within a frost-covered forest. The town's quiet exterior hides a chilling mystery, as the forest surrounding it is rumored to conceal a portal to the Shadowfell.",
-        "narrative": "Frostcliff, a small coastal town, is a place where frost and shadow coexist in an eerie harmony. As you approach Frostcliff, you'll find it nestled within a forest covered in a perpetual frost, creating an enchanting but chilling atmosphere. The town itself is quaint, with cobblestone streets winding between timber-framed buildings. The buildings are adorned with frost-covered wooden shingles and intricate carvings that depict ancient tales of the forest's enigmatic past. The townsfolk of Frostcliff are a hardy and close-knit community, their lives deeply intertwined with the mysterious forest that surrounds them. The forest, known as the Frostveil Wood, is said to contain a portal to the Shadowfell, a dark and shadowy plane. This rumor has shrouded the town in an aura of foreboding, and some residents believe that strange occurrences within the forest are connected to the portal's existence. Frostcliff is a place where secrets are whispered among the residents, and the forest is both revered and feared. The annual Frostfest is a time of celebration and remembrance, where the townsfolk pay homage to their ancestors and the forest's guardian spirits. Ice sculptures and lanterns light up the town square, and tales of the forest's mysteries are shared around bonfires. The Frostcliff Inn, run by the jovial innkeeper Grenda, is the heart of the town, where travelers gather to hear stories of the forest's chilling wonders. Frostcliff is not a bustling trade hub, but it does offer unique resources found in the Frostveil Wood, such as rare herbs and enchanted wood. The town's economy relies on these resources and the occasional traveler seeking to uncover the truth about the Shadowfell portal. As you wander through Frostcliff, you can't help but feel the weight of the forest's secrets, knowing that beneath the frost-covered canopy lies a gateway to a realm of shadows and mysteries.",
-        "place is known for": "the annual Frostfest",
-        "amount of land": "400 acres",
-        "population": 1300,
-        "number of buildings": 200,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Frostcliff" : {
+        "Name": "Frostcliff",
+        "Description": "Frostcliff is a small coastal town nestled within a frost-covered forest. The town's quiet exterior hides a chilling mystery, as the forest surrounding it is rumored to conceal a portal to the Shadowfell.",
+        "Narrative": "Frostcliff, a small coastal town, is a place where frost and shadow coexist in an eerie harmony. As you approach Frostcliff, you'll find it nestled within a forest covered in a perpetual frost, creating an enchanting but chilling atmosphere. The town itself is quaint, with cobblestone streets winding between timber-framed buildings. The buildings are adorned with frost-covered wooden shingles and intricate carvings that depict ancient tales of the forest's enigmatic past. The townsfolk of Frostcliff are a hardy and close-knit community, their lives deeply intertwined with the mysterious forest that surrounds them. The forest, known as the Frostveil Wood, is said to contain a portal to the Shadowfell, a dark and shadowy plane. This rumor has shrouded the town in an aura of foreboding, and some residents believe that strange occurrences within the forest are connected to the portal's existence. Frostcliff is a place where secrets are whispered among the residents, and the forest is both revered and feared. The annual Frostfest is a time of celebration and remembrance, where the townsfolk pay homage to their ancestors and the forest's guardian spirits. Ice sculptures and lanterns light up the town square, and tales of the forest's mysteries are shared around bonfires. The Frostcliff Inn, run by the jovial innkeeper Grenda, is the heart of the town, where travelers gather to hear stories of the forest's chilling wonders. Frostcliff is not a bustling trade hub, but it does offer unique resources found in the Frostveil Wood, such as rare herbs and enchanted wood. The town's economy relies on these resources and the occasional traveler seeking to uncover the truth about the Shadowfell portal. As you wander through Frostcliff, you can't help but feel the weight of the forest's secrets, knowing that beneath the frost-covered canopy lies a gateway to a realm of shadows and mysteries.",
+        "Place Is Known For": "the annual Frostfest",
+        "Amount Of Land": "400 acres",
+        "Population": 1300,
+        "Number of Buildings": 200,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Icetide Village": "10 miles north",
             "Shadowshore": "15 miles east (coastal)",
             "Whispering Pines": "20 miles south",
             "Snowdrift Haven": "25 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Perpetually frost-covered trees in the Frostveil Wood",
             "A coastal stretch where the forest meets the icy sea",
             "Eerie, shadowy groves deep within the forest",
             "Frozen waterfalls cascading down icy cliffs",
             "Ancient standing stones said to mark mystical sites",
         ],
-        "5 key features": [
+        "Key Features": [
             "Frostcliff Inn, the heart of the town's social life",
             "The Whispering Grove, a mysterious forest glade",
             "Shadowfell Shrine, a place of shadowy reverence",
             "Frozen Waterfall Plaza, a gathering spot with stunning views",
             "Portal Watchtower, where residents keep vigil over the forest",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Frostveil Wood conceals a portal to the Shadowfell",
             "Guardian spirits of the forest protect Frostcliff's residents",
             "The town's founders made a pact with shadowy entities for protection",
             "The Whispering Grove is a place of strange occurrences",
             "The Frostcliff Inn houses a hidden chamber filled with cryptic writings",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Eldric Frostwatcher": "Elder of the town and guardian of the forest's secrets",
             "Grenda Snowheart": "Innkeeper of the Frostcliff Inn, known for her warm hospitality",
             "Silas Shadowbinder": "Mysterious scholar researching the Shadowfell portal",
             "Lena Frostwhisper": "Seer who interprets the whispers of the Whispering Grove",
             "Kael Icebreaker": "Local fisherman who braves the icy waters for sustenance",
         },
-        "5 top religions": [
+        "Top Religions": [
             "The Frost Spirits",
             "The Shadowfell Seekers",
             "The Ancients of Frostveil",
             "The Sea Deities",
             "The Guardians of the Whispering Grove",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The town's elders hold knowledge of the Shadowfell portal's location",
             "A hidden passage in the Frostcliff Inn leads to a forgotten chamber",
             "The Whispering Grove's whispers are believed to reveal glimpses of the future",
             "The portal to the Shadowfell can only be opened by a specific ritual",
             "The forest's shadows come to life at night, revealing unsettling secrets",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Shadowy Hollows, where darkness is at its most intense",
             "The Haunted Glade, where restless spirits are said to linger",
             "The Frostbite Marsh, a frigid swamp with treacherous icy patches",
             "The Abyssal Caves, rumored to be linked to the Shadowfell",
             "The Frozen Sea Cliffs, where dangerous creatures prowl",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Frostcliff Lighthouse, offering sweeping views of the icy sea",
             "The Frostveil Wood's edge, where frost-covered trees create an otherworldly sight",
             "The Whispering Grove, a serene glade where the forest's whispers are heard",
             "The Frozen Waterfall Plaza, a stunning overlook of cascading ice",
             "The Portal Watchtower, offering a glimpse into the heart of the forest",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "45%",
             "Elf": "25%",
             "Dwarf": "10%",
@@ -6939,7 +7015,7 @@ dnd_cities = {
             "Tiefling": "3%",
             "Other": "4%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Barbarian": "2%",
             "Bard": "5%",
             "Cleric": "7%",
@@ -6954,12 +7030,12 @@ dnd_cities = {
             "Wizard": "5%",
             "Other": "10%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "150,000 gp",
             "bottom 10% earners": "20 gp",
             "median earners": "8,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Frostcliff Provisions": 10,
             "Shadowfell Artifacts": 15,
             "Frostbite Brews and Potions": 12,
@@ -6973,7 +7049,7 @@ dnd_cities = {
             "Frostcliff Alchemical Supplies": 5,
             "Frozen Sea Treasures": 2,
         },
-        "services": {
+        "Services": {
             "Elder's Council Hall": 10,
             "Shadowsong Inn": 15,
             "Frostbite Stables": 5,
@@ -7045,78 +7121,80 @@ dnd_cities = {
             25: "The town's frosty hot springs are said to have mysterious and rejuvenating properties, attracting curious travelers.",
         },
     },
-    "thorngrove" : {
-        "name": "Thorngrove",
-        "description": "Thorngrove is a medium-sized town nestled within dense thorny thickets. The town's unique location has led to a thriving community with a mysterious connection to ancient forest guardians.",
-        "narrative": "Thorngrove, a medium-sized town, is a hidden gem nestled deep within a sprawling thorny thicket. The town's isolation has given rise to a unique way of life, where the inhabitants have learned to coexist with the thorny wilderness that surrounds them. As you approach Thorngrove, you are immediately struck by the imposing thorny thickets that act as both a natural defense and a barrier to the outside world. The town's walls are woven from the thorny branches, providing protection and a sense of unity among the townsfolk. The thorny terrain has become an integral part of daily life, and the town's buildings are constructed with a blend of wood and thorn, creating an architectural style that is both rustic and resilient. The heart of Thorngrove is Thornsquare, a bustling marketplace where traders from distant lands gather to exchange goods. The thorny thickets are home to unique flora, and the town's apothecaries have become skilled in crafting remedies from the thorns, which are believed to contain the essence of ancient forest guardians. Thorngrove's annual Thornfest is a highlight of the year, featuring thorn-weaving competitions, potion-making contests, and performances that pay homage to the forest guardians. The townsfolk hold a deep reverence for the thorns and believe that they are a gift from the forest guardians, granting them protection and prosperity. Thorngrove is a city of secrets, with rumors circulating about hidden groves within the thorny thicket where the ancient forest guardians are said to dwell. The Thorned Temple, a sacred site within the town, is believed to be a place of communion with these guardians. As you explore Thorngrove's unique landscape, you can't help but feel the mystique and resilience that permeate every corner of this enigmatic town. It is a place where the boundaries between civilization and wilderness blur, where thorns are both a barrier and a blessing, and where the essence of ancient forest guardians is woven into the very fabric of daily life.",
-        "place is known for": "the annual Thornfest",
-        "amount of land": "300 acres",
-        "population": 3600,
-        "number of buildings": 600,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Thorngrove" : {
+        "Name": "Thorngrove",
+        "Description": "Thorngrove is a medium-sized town nestled within dense thorny thickets. The town's unique location has led to a thriving community with a mysterious connection to ancient forest guardians.",
+        "Narrative": "Thorngrove, a medium-sized town, is a hidden gem nestled deep within a sprawling thorny thicket. The town's isolation has given rise to a unique way of life, where the inhabitants have learned to coexist with the thorny wilderness that surrounds them. As you approach Thorngrove, you are immediately struck by the imposing thorny thickets that act as both a natural defense and a barrier to the outside world. The town's walls are woven from the thorny branches, providing protection and a sense of unity among the townsfolk. The thorny terrain has become an integral part of daily life, and the town's buildings are constructed with a blend of wood and thorn, creating an architectural style that is both rustic and resilient. The heart of Thorngrove is Thornsquare, a bustling marketplace where traders from distant lands gather to exchange goods. The thorny thickets are home to unique flora, and the town's apothecaries have become skilled in crafting remedies from the thorns, which are believed to contain the essence of ancient forest guardians. Thorngrove's annual Thornfest is a highlight of the year, featuring thorn-weaving competitions, potion-making contests, and performances that pay homage to the forest guardians. The townsfolk hold a deep reverence for the thorns and believe that they are a gift from the forest guardians, granting them protection and prosperity. Thorngrove is a city of secrets, with rumors circulating about hidden groves within the thorny thicket where the ancient forest guardians are said to dwell. The Thorned Temple, a sacred site within the town, is believed to be a place of communion with these guardians. As you explore Thorngrove's unique landscape, you can't help but feel the mystique and resilience that permeate every corner of this enigmatic town. It is a place where the boundaries between civilization and wilderness blur, where thorns are both a barrier and a blessing, and where the essence of ancient forest guardians is woven into the very fabric of daily life.",
+        "Place Is Known For": "the annual Thornfest",
+        "Amount Of Land": "300 acres",
+        "Population": 3600,
+        "Number of Buildings": 600,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Thistlebrook": "15 miles west",
             "Briarthorn Village": "12 miles north",
             "Thornbloom Hamlet": "8 miles east",
             "Bramblewood Settlement": "10 miles south",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Dense thorny thickets that surround the town",
             "Thorny walls woven to provide protection",
             "Thorn and wood architecture in buildings",
             "Thorn-weaving competitions during Thornfest",
             "The Thorned Temple, a sacred site for communion with forest guardians",
         ],
-        "5 key features": [
+        "Key Features": [
             "Thornsquare, the bustling marketplace",
             "Thorned Apothecaries crafting remedies from thorns",
             "Thorn-crafted jewelry and artistry",
             "The Thorned Inn, a favorite gathering spot",
             "Thorned Guardians who protect the town",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The thorns contain the essence of ancient forest guardians",
             "Thorngrove was founded by a group of druids seeking to commune with nature",
             "Hidden groves within the thicket hold the secrets of the forest guardians",
             "Thorn-weaving competitions honor the town's unique heritage",
             "The Thorned Temple is a place of mystical communion with forest spirits",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Elden Thornweaver": "Leader of the Thorn Council",
             "Briar Rose": "Renowned thorn-weaver and artisan",
             "Thalia Thornsinger": "High priestess of the Thorned Temple",
             "Bram Thicketbane": "Guardian of the town's thorny borders",
             "Verdant Thornfield": "Herbalist known for thorn-based remedies",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Forest Guardians",
             "Nature's Blessing",
             "Thorned Faith",
             "Wildwood Spirits",
             "Harmony of Thorns",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "Hidden groves within the thicket are home to ancient forest guardians",
             "The Thorned Temple holds a portal to a mystical forest realm",
             "Thorns can be used to create powerful protective wards",
             "The Thorned Inn serves a special thorn-infused brew during Thornfest",
             "A rare thorned flower blooms only once every decade, bringing good fortune",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Thorned Maze, where travelers can get lost for days",
             "The Bramble Thicket, home to dangerous thorned creatures",
             "The Thorned Bog, a quagmire of thorny vines and quicksand",
             "The Whispering Thorns, where eerie voices are said to beckon",
             "The Thorned Veil, a mysterious barrier within the thicket",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "Thornsquare, the heart of town's commerce and culture",
             "The Thorned Apothecaries, offering unique thorn-based remedies",
             "Thorned Artisans' Quarter, showcasing thorn-crafted jewelry and art",
             "The Thorned Inn, a warm and welcoming gathering spot",
             "The Thorned Temple, a place of mystical communion with forest spirits",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "50%",
             "Elf": "20%",
             "Halfling": "10%",
@@ -7125,7 +7203,7 @@ dnd_cities = {
             "Tabaxi": "5%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Druid": "15%",
             "Ranger": "10%",
             "Cleric": "5%",
@@ -7137,12 +7215,12 @@ dnd_cities = {
             "Wizard": "2%",
             "Other": "3%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "100,000 gp",
             "bottom 10% earners": "50 gp",
             "median earners": "10,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Thorned Traders": 10,
             "Thorned Crafts and Artistry": 15,
             "Thorned Apothecaries": 12,
@@ -7156,7 +7234,7 @@ dnd_cities = {
             "Thorned Florist": 5,
             "Thorned Gem Emporium": 2,
         },
-        "services": {
+        "Services": {
             "Thorn Council Hall": 10,
             "Thorned Inns and Lodgings": 15,
             "Thorned Stables": 5,
@@ -7228,78 +7306,80 @@ dnd_cities = {
             25: "The town's thorny hot springs are said to have rejuvenating properties, attracting visitors seeking healing."
         },
     },
-    "silvergrove" : {
-        "name": "Silvergrove",
-        "description": "Silvergrove is a medium-sized town nestled along the banks of a silvery river. The town is known for its serene beauty and the enigmatic secret of the river believed to hold the key to a hidden realm of water elementals.",
-        "narrative": "Silvergrove, a tranquil town of serene beauty, lies nestled along the meandering banks of a shimmering silvery river. The town's picturesque setting is a haven for those seeking solace and mystery. As you approach Silvergrove, you are greeted by the gentle sound of the river's flowing waters, which seem to whisper secrets of the hidden realm that may exist beneath its silvery surface. The town itself is a charming collection of wooden cottages, stone bridges, and cobblestone streets. Silvergrove's inhabitants are a close-knit community, deeply connected to the river that sustains their livelihoods. The river's waters have a unique silver hue, reflecting the pale light of the moon even in the daytime. Legends tell of a hidden realm of water elementals that can be accessed by those who discover the river's secrets. The annual Riverwatch Festival is a highlight of Silvergrove, featuring boat races, water elemental-themed performances, and a sense of anticipation as the townsfolk gather along the riverbanks, hoping for a glimpse of the hidden realm. Life in Silvergrove is centered around the river, with fishing and boat-building being common trades. The town's fishermen have a deep respect for the river, and they believe it to be inhabited by guardian spirits. The Temple of Aquaria, a serene shrine by the river, is dedicated to the water goddess and serves as a place of reverence and meditation. Silvergrove is a place of mystery, and many have ventured into the river's depths in search of the hidden realm. Rumors persist of ancient maps and rituals that may lead to the realm of water elementals. As you explore Silvergrove's peaceful streets, you can't help but feel the aura of curiosity and anticipation that surrounds this enigmatic town. It is a place where the river holds the key to secrets yet to be discovered, and where the line between reality and mystery is as thin as the silvery waters that flow through its heart.",
-        "place is known for": "the annual Riverwatch Festival",
-        "amount of land": "450 acres",
-        "population": 5300,
-        "number of buildings": 800,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Silvergrove" : {
+        "Name": "Silvergrove",
+        "Description": "Silvergrove is a medium-sized town nestled along the banks of a silvery river. The town is known for its serene beauty and the enigmatic secret of the river believed to hold the key to a hidden realm of water elementals.",
+        "Narrative": "Silvergrove, a tranquil town of serene beauty, lies nestled along the meandering banks of a shimmering silvery river. The town's picturesque setting is a haven for those seeking solace and mystery. As you approach Silvergrove, you are greeted by the gentle sound of the river's flowing waters, which seem to whisper secrets of the hidden realm that may exist beneath its silvery surface. The town itself is a charming collection of wooden cottages, stone bridges, and cobblestone streets. Silvergrove's inhabitants are a close-knit community, deeply connected to the river that sustains their livelihoods. The river's waters have a unique silver hue, reflecting the pale light of the moon even in the daytime. Legends tell of a hidden realm of water elementals that can be accessed by those who discover the river's secrets. The annual Riverwatch Festival is a highlight of Silvergrove, featuring boat races, water elemental-themed performances, and a sense of anticipation as the townsfolk gather along the riverbanks, hoping for a glimpse of the hidden realm. Life in Silvergrove is centered around the river, with fishing and boat-building being common trades. The town's fishermen have a deep respect for the river, and they believe it to be inhabited by guardian spirits. The Temple of Aquaria, a serene shrine by the river, is dedicated to the water goddess and serves as a place of reverence and meditation. Silvergrove is a place of mystery, and many have ventured into the river's depths in search of the hidden realm. Rumors persist of ancient maps and rituals that may lead to the realm of water elementals. As you explore Silvergrove's peaceful streets, you can't help but feel the aura of curiosity and anticipation that surrounds this enigmatic town. It is a place where the river holds the key to secrets yet to be discovered, and where the line between reality and mystery is as thin as the silvery waters that flow through its heart.",
+        "Place Is Known For": "the annual Riverwatch Festival",
+        "Amount Of Land": "450 acres",
+        "Population": 5300,
+        "Number of Buildings": 800,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Mistwood": "20 miles north",
             "Silverstream": "15 miles east",
             "Aquamere": "30 miles south",
             "Moonshade": "12 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Shimmering silvery river with a unique hue",
             "Wooden cottages with thatched roofs",
             "Stone bridges crossing the river",
             "Cobblestone streets that wind through the town",
             "The Temple of Aquaria, a serene shrine by the river",
         ],
-        "5 key features": [
+        "Key Features": [
             "Riverwatch Square, the heart of the town's festivities",
             "Fishermen's Guild, where tales of the river are shared",
             "River's Edge Inn, a cozy establishment with river views",
             "The Silverleaf Apothecary, known for unique river-themed potions",
             "Mystic's Cartography, a shop rumored to possess ancient maps",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The river's unique silver hue is believed to conceal the realm of water elementals",
             "Fishermen hold rituals to honor the guardian spirits of the river",
             "The Temple of Aquaria serves as a place of meditation and reverence",
             "Ancient maps and hidden rituals may lead to the realm beneath the river",
             "The Riverwatch Festival is the town's most anticipated event, celebrating the river's mysteries",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Mayor Elara Riversong": "Leader of Silvergrove",
             "Finnegan the Fisher": "Respected fisherman and keeper of river lore",
             "Luna Silverstream": "Owner of River's Edge Inn and a skilled storyteller",
             "Aria Waterbloom": "High priestess of the Temple of Aquaria",
             "Thaddeus Mysticus": "Owner of Mystic's Cartography, a source of hidden maps",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Aquaria",
             "Elemental Spirits",
             "Selene",
             "River Guardians",
             "Mystic Waters",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The river is rumored to change course to reveal the hidden realm at certain times",
             "Fishermen exchange tales of guardian spirits for good luck on the river",
             "The Temple of Aquaria holds ancient rituals to commune with the river's spirits",
             "Mystic's Cartography may possess a map leading to the realm of water elementals",
             "The silvery river's waters are believed to have healing properties when touched by moonlight",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Murky Marshes, a dangerous wetland on the outskirts of town",
             "The Whirlpool Gorge, a treacherous part of the river with strong currents",
             "The Forgotten Docks, abandoned and unsafe for navigation",
             "The Shadowed Grove, a dense forest known for mysterious occurrences",
             "The Cursed Falls, where ill-fated boats have disappeared without a trace",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "Riverwatch Square, bustling with market stalls and festival activities",
             "Fishermen's Guild, where tales of river legends are shared",
             "The Temple of Aquaria, a place of tranquility and reflection",
             "River's Edge Inn, offering scenic views of the silvery river",
             "Mystic's Cartography, a shop with intriguing maps and lore",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "60%",
             "Elf": "15%",
             "Dwarf": "8%",
@@ -7309,7 +7389,7 @@ dnd_cities = {
             "Firbolg": "2%",
             "Other": "2%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Bard": "10%",
             "Cleric": "8%",
             "Druid": "15%",
@@ -7320,12 +7400,12 @@ dnd_cities = {
             "Wizard": "4%",
             "Other": "33%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "100,000 gp",
             "bottom 10% earners": "500 gp",
             "median earners": "20,000 gp",
         },
-        "shops": {
+        "Shops": {
             "River's Bounty Market": 10,
             "Mystic's Cartography": 15,
             "River's Edge Inn Gift Shop": 12,
@@ -7339,7 +7419,7 @@ dnd_cities = {
             "Temple Offerings and Relics": 5,
             "Curiosities from the Hidden Realm": 2,
         },
-        "services": {
+        "Services": {
             "Temple of Aquaria Services": 10,
             "River's Edge Inn Lodging": 15,
             "Riverboat Rentals": 5,
@@ -7411,79 +7491,81 @@ dnd_cities = {
             25: "The town's crystal-clear fountain is believed to mirror the purity of the silvery river's waters.",
         },
     },
-    "stormgrove" : {
-        "name": "Stormgrove",
-        "description": "Stormgrove is a small town perched on the tumultuous slopes of a stormy mountain. The constant thunderstorms and lightning strikes have shaped the town's unique culture and way of life.",
-        "narrative": "Stormgrove, a small and rugged town, clings to the treacherous slopes of a stormy mountain. The town is a testament to the indomitable spirit of its inhabitants who have learned to thrive in the face of nature's fury. As you approach Stormgrove, you can hear the distant rumble of thunder and see dark clouds swirling ominously overhead. The town itself is a jumble of sturdy stone buildings and wooden structures, all weathered and reinforced to withstand the constant onslaught of storms. The streets are narrow and winding, designed to channel rainwater away from the town's center. The town's unique architecture includes lightning rods and conductive materials to minimize damage from lightning strikes. Stormgrove's economy revolves around the gathering of storm-related resources. Residents collect rainwater, harvest storm-charged crystals, and mine the mountain for special metals that conduct electricity. The heart of Stormgrove is the Stormcaster's Spire, a towering structure where a reclusive wizard known as the Stormcaster is said to control the mountain's tempestuous weather. The Stormcaster's identity and motives are shrouded in mystery, but the townsfolk believe that their control over the storms keeps the town safe from even greater calamities. Life in Stormgrove is marked by a close-knit community spirit, with residents banding together to repair storm damage and support each other during the harshest weather. The annual Thunderfest is a celebration of their resilience, featuring lightning-themed games and contests of courage. The town's unique environment has led to a distinct religion centered around the Stormcaller, a deity believed to be the master of storms. Pilgrims come to Stormgrove to seek blessings from the Stormcaller and to witness the awe-inspiring storms that rage around the town. Stormgrove is a town of secrets, with rumors of hidden chambers within the Stormcaster's Spire and ancient runes that keep the storms in check. As you navigate the town's rain-slicked streets, you can't help but feel the resilience and determination that define this storm-battered community. It is a place where the line between survival and thriving blurs, and where the power of nature is both feared and revered.",
-        "place is known for": "the annual Thunderfest",
-        "amount of land": "200 acres",
-        "population": 2100,
-        "number of buildings": 300,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Stormgrove" : {
+        "Name": "Stormgrove",
+        "Description": "Stormgrove is a small town perched on the tumultuous slopes of a stormy mountain. The constant thunderstorms and lightning strikes have shaped the town's unique culture and way of life.",
+        "Narrative": "Stormgrove, a small and rugged town, clings to the treacherous slopes of a stormy mountain. The town is a testament to the indomitable spirit of its inhabitants who have learned to thrive in the face of nature's fury. As you approach Stormgrove, you can hear the distant rumble of thunder and see dark clouds swirling ominously overhead. The town itself is a jumble of sturdy stone buildings and wooden structures, all weathered and reinforced to withstand the constant onslaught of storms. The streets are narrow and winding, designed to channel rainwater away from the town's center. The town's unique architecture includes lightning rods and conductive materials to minimize damage from lightning strikes. Stormgrove's economy revolves around the gathering of storm-related resources. Residents collect rainwater, harvest storm-charged crystals, and mine the mountain for special metals that conduct electricity. The heart of Stormgrove is the Stormcaster's Spire, a towering structure where a reclusive wizard known as the Stormcaster is said to control the mountain's tempestuous weather. The Stormcaster's identity and motives are shrouded in mystery, but the townsfolk believe that their control over the storms keeps the town safe from even greater calamities. Life in Stormgrove is marked by a close-knit community spirit, with residents banding together to repair storm damage and support each other during the harshest weather. The annual Thunderfest is a celebration of their resilience, featuring lightning-themed games and contests of courage. The town's unique environment has led to a distinct religion centered around the Stormcaller, a deity believed to be the master of storms. Pilgrims come to Stormgrove to seek blessings from the Stormcaller and to witness the awe-inspiring storms that rage around the town. Stormgrove is a town of secrets, with rumors of hidden chambers within the Stormcaster's Spire and ancient runes that keep the storms in check. As you navigate the town's rain-slicked streets, you can't help but feel the resilience and determination that define this storm-battered community. It is a place where the line between survival and thriving blurs, and where the power of nature is both feared and revered.",
+        "Place Is Known For": "the annual Thunderfest",
+        "Amount Of Land": "200 acres",
+        "Population": 2100,
+        "Number of Buildings": 300,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Galewood": "10 miles north",
             "Lightning's Edge": "15 miles east",
             "Thunderhold": "20 miles southeast",
             "Misthaven": "30 miles south",
             "Tempestreach": "12 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Turbulent skies with constant thunderstorms",
             "Sturdy stone and reinforced wooden buildings",
             "Narrow, winding streets designed to channel rainwater",
             "Storm-resistant architecture with lightning rods and conductive materials",
             "The imposing Stormcaster's Spire at the center of town",
         ],
-        "5 key features": [
+        "Key Features": [
             "Stormcaster's Spire, the mysterious abode of the reclusive wizard",
             "Thunderforge Workshop, where storm-charged crystals are crafted",
             "Tempest's Tavern, a gathering place for residents during storms",
             "Stormcaller's Shrine, a sacred place dedicated to the deity of storms",
             "Conductor's Market, where storm-related resources are traded",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Stormcaster wields powerful magic to control the mountain's storms",
             "Ancient runes hidden within the Spire maintain the town's safety",
             "The Thunderforge Workshop holds the secret to crafting storm-charged crystals",
             "Stormgrove's resilience is a testament to the power of community",
             "The Stormcaller grants blessings to those who weather the storms",
         ],
-        "5 popular people": {
+        "Popular People": {
             "The Stormcaster": "Reclusive wizard believed to control the storms",
             "Bryn Stormheart": "Master of the Thunderforge Workshop",
             "Elira Raindancer": "High priestess of the Stormcaller's Shrine",
             "Kael Stormrider": "Courageous leader during the town's storms",
             "Thorn Ironshroud": "Trader known for sourcing storm-related resources",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Stormcaller",
             "Tempestus",
             "Thunderlord",
             "Rainbringer",
             "Lightningstrike",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "Hidden chambers within the Stormcaster's Spire hold ancient knowledge",
             "Stormgrove's lightning rods are enchanted to absorb energy for protection",
             "The Stormcaster's control over the storms may have unintended consequences",
             "Ancient runes hidden in the streets are believed to ward off catastrophic storms",
             "Stormchasing adventurers seek to uncover the secrets of the mountain's tempests",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Thundering Precipice, where lightning strikes are most frequent",
             "The Tempest Tunnels, treacherous caves carved by storm-driven torrents",
             "The Gale Gorge, a narrow ravine prone to sudden floods",
             "The Lightning's Reach, a precipitous ledge with strong winds and unstable footing",
             "The Thunderstrike Cliffs, where rockslides are a constant danger",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Stormcaller's Shrine, a place of quiet contemplation during storms",
             "Thunderforge Workshop, where storm-charged crystals are crafted",
             "Tempest's Tavern, a lively gathering spot with storm-themed decor",
             "Conductor's Market, where you can find unique storm-related goods",
             "Stormcaster's Spire, a place of mystery and rumored power",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "50%",
             "Dwarf": "15%",
             "Gnome": "10%",
@@ -7493,7 +7575,7 @@ dnd_cities = {
             "Aarakocra": "2%",
             "Other": "3%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Wizard": "10%",
             "Artificer": "10%",
             "Sorcerer": "10%",
@@ -7505,12 +7587,12 @@ dnd_cities = {
             "Druid": "5%",
             "Other": "10%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "100,000 gp",
             "bottom 10% earners": "10 gp",
             "median earners": "20,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Stormforge Smithy": 5,
             "Tempest Treasures": 7,
             "Thunderstorm Supplies": 6,
@@ -7524,7 +7606,7 @@ dnd_cities = {
             "Stormy Scrolls and Tomes": 2,
             "Mistral Maps and Cartography": 1,
         },
-        "services": {
+        "Services": {
             "Stormcaster's Assistance": 5,
             "Tempest Inns": 7,
             "Thunderforge Stables": 6,
@@ -7595,78 +7677,80 @@ dnd_cities = {
             25: "Stormgrove's crystal hot springs are said to have rejuvenating properties, attracting visitors seeking respite from storms."
         },
     },
-    "irongrove" : {
-        "name": "Irongrove",
-        "description": "Irongrove is a small town known for its towering iron gate that conceals the entrance to an underground labyrinth. The town's population is modest but its secret is shrouded in mystery.",
-        "narrative": "Irongrove, a modest and unassuming town, is nestled amidst rolling hills and dense forests. Its defining feature is the imposing and enigmatic Iron Gate that looms at the town's entrance. This massive gate, crafted from dark, weathered iron, stands as a sentinel to a closely guarded secret. As you approach Irongrove, you can't help but feel the weight of history and mystery that hangs in the air. The town itself is small, with a population of around 1,500 residents, who lead simple lives. The buildings in Irongrove are made of sturdy stone and timber, and the town's economy primarily revolves around farming, craftsmanship, and providing supplies to adventurers curious about the labyrinth concealed beneath. The labyrinth, shrouded in myth and legend, is rumored to be a vast underground maze filled with untold treasures, traps, and mysteries. It is said that those who dare to enter the labyrinth may find riches beyond imagination, but the journey is fraught with peril. The entrance to the labyrinth can only be unlocked with a unique key, held by a mysterious guardian known as the Gatekeeper. The Gatekeeper's identity is a closely guarded secret, and they are entrusted with ensuring that only those deemed worthy can enter the underground maze. The town's annual Labyrinth Festival draws adventurers and treasure seekers from distant lands, all hoping to obtain the coveted key to the labyrinth. Irongrove's residents are a tight-knit community who value their town's peaceful way of life and the protection of the labyrinth's secrets. They are known for their hospitality, offering respite to weary travelers and sharing stories of the labyrinth's history. The town's temple, dedicated to a deity of secrets and protection, plays a central role in the town's culture, and its priests hold knowledge of the labyrinth's ancient lore. Irongrove is a place of contrasts, where the simplicity of rural life collides with the allure of the labyrinth's mysteries. It is a town where the past and present are intertwined, and where adventurers seek their fortunes beneath the earth's surface, guided by the enigmatic Iron Gate and the key held by the Gatekeeper.",
-        "place is known for": "the annual Labyrinth Festival",
-        "amount of land": "500 acres",
-        "population": 1500,
-        "number of buildings": 300,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Irongrove" : {
+        "Name": "Irongrove",
+        "Description": "Irongrove is a small town known for its towering iron gate that conceals the entrance to an underground labyrinth. The town's population is modest but its secret is shrouded in mystery.",
+        "Narrative": "Irongrove, a modest and unassuming town, is nestled amidst rolling hills and dense forests. Its defining feature is the imposing and enigmatic Iron Gate that looms at the town's entrance. This massive gate, crafted from dark, weathered iron, stands as a sentinel to a closely guarded secret. As you approach Irongrove, you can't help but feel the weight of history and mystery that hangs in the air. The town itself is small, with a population of around 1,500 residents, who lead simple lives. The buildings in Irongrove are made of sturdy stone and timber, and the town's economy primarily revolves around farming, craftsmanship, and providing supplies to adventurers curious about the labyrinth concealed beneath. The labyrinth, shrouded in myth and legend, is rumored to be a vast underground maze filled with untold treasures, traps, and mysteries. It is said that those who dare to enter the labyrinth may find riches beyond imagination, but the journey is fraught with peril. The entrance to the labyrinth can only be unlocked with a unique key, held by a mysterious guardian known as the Gatekeeper. The Gatekeeper's identity is a closely guarded secret, and they are entrusted with ensuring that only those deemed worthy can enter the underground maze. The town's annual Labyrinth Festival draws adventurers and treasure seekers from distant lands, all hoping to obtain the coveted key to the labyrinth. Irongrove's residents are a tight-knit community who value their town's peaceful way of life and the protection of the labyrinth's secrets. They are known for their hospitality, offering respite to weary travelers and sharing stories of the labyrinth's history. The town's temple, dedicated to a deity of secrets and protection, plays a central role in the town's culture, and its priests hold knowledge of the labyrinth's ancient lore. Irongrove is a place of contrasts, where the simplicity of rural life collides with the allure of the labyrinth's mysteries. It is a town where the past and present are intertwined, and where adventurers seek their fortunes beneath the earth's surface, guided by the enigmatic Iron Gate and the key held by the Gatekeeper.",
+        "Place Is Known For": "the annual Labyrinth Festival",
+        "Amount Of Land": "500 acres",
+        "Population": 1500,
+        "Number of Buildings": 300,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Stonebrook": "15 miles north",
             "Hollowwood": "12 miles east",
             "Thornhill": "20 miles south",
             "Ironhold": "18 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Rolling hills that surround the town",
             "Dense forests bordering the town's outskirts",
             "The towering and weathered Iron Gate at the town's entrance",
             "A hidden entrance to the labyrinth within the nearby hills",
             "A small river that winds through the town, providing fresh water",
         ],
-        "5 key features": [
+        "Key Features": [
             "The Iron Gate, concealing the entrance to the underground labyrinth",
             "Temple of the Hidden Path, dedicated to the deity of secrets",
             "Labyrinth Explorer's Guild, a hub for adventurers seeking the labyrinth",
             "Gatekeeper's Residence, the enigmatic guardian of the labyrinth key",
             "Labyrinth Inn, a popular resting place for travelers and treasure seekers",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The labyrinth beneath Irongrove was created by an ancient civilization",
             "The key to the labyrinth is rumored to hold immense magical power",
             "The Gatekeeper is chosen by the deity of secrets and must pass tests of wisdom",
             "Treasures within the labyrinth are guarded by cunning traps and puzzles",
             "The labyrinth holds the answer to a forgotten prophecy that could change the world",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Eldric Stoneheart": "Gatekeeper and guardian of the labyrinth key",
             "Sylva Thornbloom": "High priestess of the Temple of the Hidden Path",
             "Finnian Oakshadow": "Leader of the Labyrinth Explorer's Guild",
             "Marina Ironfoot": "Owner of the Labyrinth Inn and a skilled storyteller",
             "Alden Silvercloak": "Renowned historian and expert on the labyrinth's history",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Deity of Secrets",
             "Traveler",
             "Luckbringer",
             "Fateweaver",
             "Guardian of Mysteries",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The Iron Gate was forged from a rare meteorite that fell centuries ago",
             "The labyrinth's walls are said to hold the stories of those who entered and never returned",
             "The key to the labyrinth has the power to unlock hidden knowledge",
             "The Temple of the Hidden Path holds ancient scrolls revealing the labyrinth's history",
             "A secret society known as the Seekers of the Key is dedicated to discovering the labyrinth's secrets",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Whispering Woods, where eerie voices can lead travelers astray",
             "The Cursed Glen, plagued by strange magical disturbances",
             "The Haunted Hollow, rumored to be the resting place of restless spirits",
             "The Labyrinth's Abyss, a treacherous section with deadly traps",
             "The Gatekeeper's Grove, where the guardian dwells and tests potential entrants",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Iron Gate Plaza, where the annual Labyrinth Festival is held",
             "The Temple of the Hidden Path, a place of reverence and ancient knowledge",
             "The Labyrinth Explorer's Guild, a bustling hub of adventurers",
             "The Labyrinth Inn, offering comfort and tales of past explorations",
             "The Labyrinth's Edge, where the labyrinth's entrance beckons the curious",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "40%",
             "Dwarf": "20%",
             "Half-Elf": "10%",
@@ -7674,7 +7758,7 @@ dnd_cities = {
             "Halfling": "10%",
             "Other": "10%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Fighter": "20%",
             "Rogue": "15%",
             "Wizard": "15%",
@@ -7682,12 +7766,12 @@ dnd_cities = {
             "Bard": "10%",
             "Other": "30%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "100,000 gp",
             "bottom 10% earners": "10 gp",
             "median earners": "5,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Iron Gate Traders": 5,
             "Labyrinth Supplies": 8,
             "Temple Relics and Artifacts": 3,
@@ -7695,7 +7779,7 @@ dnd_cities = {
             "Mystic Keys and Locks": 2,
             "Labyrinth Antiques": 2,
         },
-        "services": {
+        "Services": {
             "Temple Blessings": 2,
             "Gatekeeper's Guidance": 3,
             "Labyrinth Scholar's Library": 2,
@@ -7747,78 +7831,80 @@ dnd_cities = {
             25: "The labyrinth's entrance is marked by a mysterious and ornate archway."
         },
     },
-    "riverbrook" : {
-        "name": "Riverbrook",
-        "description": "Riverbrook is a charming, medium-sized town nestled alongside a tranquil river. The town is known for its picturesque landscapes and a yearly enchanting phenomenon that draws visitors from far and wide.",
-        "narrative": "Riverbrook, a picturesque town nestled on the banks of a tranquil river, is a place of serene beauty and curious wonders. As you approach the town, you are greeted by the soothing sound of the river's gentle flow, its waters reflecting the clear blue sky above. The town itself exudes an inviting warmth, with cobblestone streets lined by cozy cottages adorned with colorful flower gardens. Riverbrook is a close-knit community of approximately 2,500 residents who take great pride in their town's natural beauty and unique mystery. Every year, on the night of the summer solstice, the river that winds through Riverbrook mysteriously glows with a soft, ethereal blue light. This annual event has become a well-known spectacle, attracting curious visitors from all corners of the realm. The townsfolk celebrate this phenomenon with a grand festival known as the 'Blue Glow Revelry.' During the festival, the entire town is adorned with blue lanterns, and the riverbank becomes a hub of activity, with food stalls, music, and dancing. Locals and visitors alike gather along the river's edge to witness the mesmerizing blue glow, which is said to be a blessing from a benevolent water spirit that resides in the depths of the river. Riverbrook's residents are known for their hospitality, and they welcome travelers with open arms, offering them a chance to partake in the revelry and experience the enchantment of the river's glow. The river itself is the lifeblood of the town, providing not only a source of freshwater but also a bountiful supply of fish and aquatic plants. The townsfolk are skilled fishermen and crafters, creating intricate jewelry and art from river stones and pearls found in the riverbed. Riverbrook also boasts a renowned herbalist who harnesses the river's unique magic to brew potent potions and elixirs. The town is governed by a council of elders who ensure that the river's ecosystem remains balanced and that the annual Blue Glow Revelry goes off without a hitch. Riverbrook is a place where the ordinary and the extraordinary harmoniously coexist, making it a tranquil and charming destination for adventurers seeking respite and wonder.",
-        "place is known for": "the annual Blue Glow Revelry",
-        "amount of land": "300 acres",
-        "population": 2500,
-        "number of buildings": 350,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Riverbrook" : {
+        "Name": "Riverbrook",
+        "Description": "Riverbrook is a charming, medium-sized town nestled alongside a tranquil river. The town is known for its picturesque landscapes and a yearly enchanting phenomenon that draws visitors from far and wide.",
+        "Narrative": "Riverbrook, a picturesque town nestled on the banks of a tranquil river, is a place of serene beauty and curious wonders. As you approach the town, you are greeted by the soothing sound of the river's gentle flow, its waters reflecting the clear blue sky above. The town itself exudes an inviting warmth, with cobblestone streets lined by cozy cottages adorned with colorful flower gardens. Riverbrook is a close-knit community of approximately 2,500 residents who take great pride in their town's natural beauty and unique mystery. Every year, on the night of the summer solstice, the river that winds through Riverbrook mysteriously glows with a soft, ethereal blue light. This annual event has become a well-known spectacle, attracting curious visitors from all corners of the realm. The townsfolk celebrate this phenomenon with a grand festival known as the 'Blue Glow Revelry.' During the festival, the entire town is adorned with blue lanterns, and the riverbank becomes a hub of activity, with food stalls, music, and dancing. Locals and visitors alike gather along the river's edge to witness the mesmerizing blue glow, which is said to be a blessing from a benevolent water spirit that resides in the depths of the river. Riverbrook's residents are known for their hospitality, and they welcome travelers with open arms, offering them a chance to partake in the revelry and experience the enchantment of the river's glow. The river itself is the lifeblood of the town, providing not only a source of freshwater but also a bountiful supply of fish and aquatic plants. The townsfolk are skilled fishermen and crafters, creating intricate jewelry and art from river stones and pearls found in the riverbed. Riverbrook also boasts a renowned herbalist who harnesses the river's unique magic to brew potent potions and elixirs. The town is governed by a council of elders who ensure that the river's ecosystem remains balanced and that the annual Blue Glow Revelry goes off without a hitch. Riverbrook is a place where the ordinary and the extraordinary harmoniously coexist, making it a tranquil and charming destination for adventurers seeking respite and wonder.",
+        "Place Is Known For": "the annual Blue Glow Revelry",
+        "Amount Of Land": "300 acres",
+        "Population": 2500,
+        "Number of Buildings": 350,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Waterside Village": "10 miles north",
             "Willowbrook": "15 miles east",
             "Stonebridge": "20 miles south",
             "Mistwood": "12 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Tranquil river with crystal-clear waters",
             "Cobblestone streets lined with colorful flower gardens",
             "Cozy cottages with thatched roofs",
             "Blue lanterns adorning the town during the Blue Glow Revelry",
             "River stones and pearls found in the riverbed",
         ],
-        "5 key features": [
+        "Key Features": [
             "The Blue Glow Revelry, an annual festival celebrating the river's enchanting glow",
             "The Pearl's Embrace Jewelry Shop, known for its exquisite river stone and pearl jewelry",
             "Riverbrook Herbal Haven, a shop specializing in river-magic-infused potions",
             "Council of Elders' Meeting Hall, where town matters are discussed",
             "The River's Edge Inn, a cozy lodging for travelers",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The river's blue glow is a blessing from a benevolent water spirit",
             "The town was founded by a group of fishermen who discovered the magical river",
             "Pearls found in the river are said to bring good fortune to their owners",
             "During the Blue Glow Revelry, wishes made by the river's edge are more likely to come true",
             "The river's tranquil waters hold ancient secrets known only to the town's elders",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Elder Mariel": "Leader of the Council of Elders",
             "Fisher's Guildmaster Thomlin": "Master of the town's fishing trade",
             "Pearl Artisan Elara": "Renowned jeweler specializing in river stone and pearl creations",
             "Herbalist Lysandra": "Crafts potent potions using the river's unique magic",
             "Innkeeper Alaric": "Owner of The River's Edge Inn, a favorite among travelers",
         },
-        "5 top religions": [
+        "Top Religions": [
             "The Water Spirit",
             "Eidolon",
             "Goibhniu",
             "Silvanus",
             "Yondalla",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The river's blue glow is said to grant visions to those who immerse themselves in its waters",
             "Hidden caves along the river's edge contain ancient artifacts of unknown origin",
             "A rare breed of riverfish with magical properties can only be found here",
             "A tunnel beneath the town connects to an underground chamber with mysterious markings",
             "The council of elders holds ancient scrolls detailing the history of the river's magic",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Whispering Reeds, where swampy terrain can be treacherous",
             "The Murky Depths, a deep section of the river with unknown hazards",
             "The Haunted Hollow, rumored to be inhabited by restless spirits",
             "The Mysterious Tunnel, its purpose and origin shrouded in mystery",
             "The Shadowed Grove, where the forest conceals hidden dangers",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The River's Edge Park, a peaceful spot for picnics and relaxation",
             "The Pearl's Embrace Jewelry Shop, showcasing stunning river stone and pearl creations",
             "Riverbrook Herbal Haven, offering unique potions and elixirs",
             "The Council of Elders' Meeting Hall, a place to learn about the town's history",
             "The Blue Glow Revelry Grounds, where the annual festival takes place",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "70%",
             "Halfling": "10%",
             "Elf": "5%",
@@ -7828,7 +7914,7 @@ dnd_cities = {
             "Tiefling": "2%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Barbarian": "1%",
             "Bard": "5%",
             "Cleric": "5%",
@@ -7843,19 +7929,19 @@ dnd_cities = {
             "Wizard": "1%",
             "Other": "5%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "100,000 gp",
             "bottom 10% earners": "10 gp",
             "median earners": "2,500 gp",
         },
-        "shops": {
+        "Shops": {
             "Pearl's Embrace Jewelry Shop": 1,
             "Riverbrook Herbal Haven": 1,
             "The River's Edge Inn": 1,
             "Fishermen's Supplies": 1,
             "Tranquil Waters Apothecary": 1,
         },
-        "services": {
+        "Services": {
             "Council of Elders' Meeting Hall": 1,
             "The River's Edge Inn": 1,
             "Riverbrook Herbal Haven": 1,
@@ -7908,79 +7994,81 @@ dnd_cities = {
             25: "The river's gentle lullaby is said to bring peaceful dreams to those who listen.",
         },
     },
-    "stoneshield" : {
-        "name": "Stoneshield",
-        "description": "Stoneshield is a medium-sized town known for its formidable stone walls adorned with ancient runes of protection. The city exudes an aura of safety and resilience, making it a haven for those seeking refuge.",
-        "narrative": "Stoneshield, a town of unwavering strength, stands as a testament to the enduring power of stone and magic. Nestled within the embrace of formidable stone walls, the city is a sanctuary for its inhabitants. As you approach Stoneshield, the grandness of its defenses becomes evident. Towering walls, intricately carved from local stone, surround the town, bearing ancient runes of protection that shimmer with an otherworldly glow. These runes are believed to have been inscribed by skilled runemasters of old, channeling the power of the earth to ward off threats. The town's architecture, like its walls, is solid and resilient, constructed from the same durable stone that characterizes Stoneshield's defenses. Cobblestone streets wind their way through the town, lined with sturdy stone buildings that offer both homes and businesses. Stoneshield is a place where the safety of its citizens is of paramount importance. The annual Shieldfest, a celebration of the city's strength and unity, draws visitors from far and wide. During this event, competitions of endurance and strength take place, and a grand parade showcases the town's martial prowess. Stoneshield's unique environment has also given rise to a distinct religion centered around the Earthwardens, guardians of the ancient runestones. Pilgrims journey to Stoneshield to seek blessings from these revered protectors. Stoneshield is a town of secrets, with rumors of hidden chambers within the walls that hold ancient artifacts and forgotten knowledge. The Earthwardens are said to have the ability to commune with the stones themselves, granting them unparalleled insights into the town's defenses. As you wander through Stoneshield's stone-paved streets, you can't help but feel the aura of safety and resilience that permeates every corner of this well-fortified town. It is a place where the ancient runes of protection are not just symbols but a living part of the town's identity, ensuring that Stoneshield stands strong against any threat.",
-        "place is known for": "the annual Shieldfest",
-        "amount of land": "400 acres",
-        "population": 3000,
-        "number of buildings": 500,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Stoneshield" : {
+        "Name": "Stoneshield",
+        "Description": "Stoneshield is a medium-sized town known for its formidable stone walls adorned with ancient runes of protection. The city exudes an aura of safety and resilience, making it a haven for those seeking refuge.",
+        "Narrative": "Stoneshield, a town of unwavering strength, stands as a testament to the enduring power of stone and magic. Nestled within the embrace of formidable stone walls, the city is a sanctuary for its inhabitants. As you approach Stoneshield, the grandness of its defenses becomes evident. Towering walls, intricately carved from local stone, surround the town, bearing ancient runes of protection that shimmer with an otherworldly glow. These runes are believed to have been inscribed by skilled runemasters of old, channeling the power of the earth to ward off threats. The town's architecture, like its walls, is solid and resilient, constructed from the same durable stone that characterizes Stoneshield's defenses. Cobblestone streets wind their way through the town, lined with sturdy stone buildings that offer both homes and businesses. Stoneshield is a place where the safety of its citizens is of paramount importance. The annual Shieldfest, a celebration of the city's strength and unity, draws visitors from far and wide. During this event, competitions of endurance and strength take place, and a grand parade showcases the town's martial prowess. Stoneshield's unique environment has also given rise to a distinct religion centered around the Earthwardens, guardians of the ancient runestones. Pilgrims journey to Stoneshield to seek blessings from these revered protectors. Stoneshield is a town of secrets, with rumors of hidden chambers within the walls that hold ancient artifacts and forgotten knowledge. The Earthwardens are said to have the ability to commune with the stones themselves, granting them unparalleled insights into the town's defenses. As you wander through Stoneshield's stone-paved streets, you can't help but feel the aura of safety and resilience that permeates every corner of this well-fortified town. It is a place where the ancient runes of protection are not just symbols but a living part of the town's identity, ensuring that Stoneshield stands strong against any threat.",
+        "Place Is Known For": "the annual Shieldfest",
+        "Amount Of Land": "400 acres",
+        "Population": 3000,
+        "Number of Buildings": 500,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Stonehaven": "15 miles north",
             "Ironforge": "10 miles east",
             "Shieldbrook": "20 miles southeast",
             "Granitepeak": "30 miles south",
             "Rockspire": "12 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Formidable stone walls adorned with ancient protective runes",
             "Cobblestone streets that wind through the town",
             "Solid and resilient stone buildings",
             "The central runestone plaza, a focal point of religious significance",
             "The Earthwardens' Watchtower, a tall structure overlooking the town",
         ],
-        "5 key features": [
+        "Key Features": [
             "Runestone Plaza, a place of religious significance and gatherings",
             "Earthwardens' Watchtower, a guardian's lookout over the town",
             "Shieldsmiths' Guild, skilled artisans crafting protective gear",
             "Stonehaven Inn, a popular gathering place for locals and travelers",
             "Runebound Library, housing ancient tomes and runic knowledge",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The ancient runes of protection on the walls were inscribed by master runemasters",
             "Stoneshield's founders were skilled stonecrafters who harnessed the power of earth",
             "Hidden chambers within the walls hold artifacts of ancient power",
             "The Earthwardens have the ability to commune with the stones and foresee threats",
             "Stoneshield's runic magic ensures the town's enduring safety",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Warden Thoren Stoneheart": "Leader of the Earthwardens",
             "Hilda Stonehammer": "Master shieldsmith known for crafting enchanted shields",
             "High Priest Gavrin Stonewatcher": "Spiritual leader of the Earthwardens",
             "Keldan Stoneguard": "Captain of the town guard, a skilled tactician",
             "Sibylla Earthshaper": "Caretaker of the Runebound Library's ancient tomes",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Earthwardens",
             "Ancestor Spirits",
             "Mountainlord",
             "Solidarity",
             "Runekeepers",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "Hidden chambers within the walls contain powerful relics and protective talismans",
             "The Earthwardens possess the ability to sense disturbances in the town's runic magic",
             "A secret underground passage connects Stoneshield to a neighboring town",
             "The runestones have the power to amplify the town's defensive magic during crises",
             "The Earthwardens hold ancient runic rituals to strengthen Stoneshield's protection",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Forgotten Tunnels, unstable underground passages prone to collapse",
             "The Shadowed Alley, a dimly lit area rumored to harbor unsavory characters",
             "The Abandoned Quarry, a hazardous area with abandoned mining equipment",
             "The Crumbling Bastion, a section of the walls in disrepair and dangerous",
             "The Veiled Chasm, a deep crevice near the town with treacherous terrain",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "Runestone Plaza, a place of religious significance and tranquility",
             "Runebound Library, housing ancient tomes and runic knowledge",
             "Earthwardens' Watchtower, offering panoramic views of Stoneshield",
             "Stonehaven Inn, a cozy establishment with hearty meals and local stories",
             "Shieldsmiths' Guild, where master artisans craft protective gear",
         ],
-        "races": {
+        "Race Makeup": {
             "Dwarf": "40%",
             "Human": "30%",
             "Gnome": "10%",
@@ -7989,7 +8077,7 @@ dnd_cities = {
             "Halfling": "5%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Fighter": "20%",
             "Cleric": "10%",
             "Rogue": "10%",
@@ -7999,12 +8087,12 @@ dnd_cities = {
             "Sorcerer": "5%",
             "Other": "35%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "500,000 gp",
             "bottom 10% earners": "100 gp",
             "median earners": "25,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Stonecrafters' Emporium": 10,
             "Runic Enchantments": 15,
             "Shieldsmiths' Forge": 12,
@@ -8018,7 +8106,7 @@ dnd_cities = {
             "Stonecarvers' Artistry": 5,
             "Minerals and Gems Emporium": 2,
         },
-        "services": {
+        "Services": {
             "Earthwardens' Hall": 10,
             "Shieldbearer Inns": 15,
             "Stoneshield Stables": 5,
@@ -8090,75 +8178,77 @@ dnd_cities = {
             25: "The city's stone hot springs are said to have rejuvenating properties, attracting those seeking renewal.",
         },
     },
-    "willowdale" : {
-        "name": "Willowdale",
-        "description": "Willowdale is a small town nestled amidst a lush grove of ancient willow trees. The town was transformed into an island a century ago due to a catastrophic flood, isolating it from the mainland.",
-        "narrative": "Willowdale, a quaint and serene town, is a hidden gem nestled amidst a lush grove of ancient willow trees. The town's charming cottages and buildings are built on stilts, standing above the tranquil waters that now surround Willowdale. A century ago, a great flood washed over the region, transforming Willowdale into an island and isolating it from the mainland. Since then, the town has thrived as a close-knit community, living in harmony with the natural world that surrounds them. As you approach Willowdale, you are greeted by the gentle rustling of the willow leaves and the soothing sound of the river that meanders through the town. Willow trees with sweeping branches provide shade and shelter, and the town's inhabitants have built wooden walkways and bridges that crisscross above the water. Lanterns hang from the willow branches, casting a warm, inviting glow in the evenings. The heart of Willowdale is the Willow Plaza, a central gathering place where residents trade goods, share stories, and celebrate festivals. The town's inhabitants are resourceful and skilled in fishing, crafting, and survival, making the most of their island existence. The annual Flood Festival commemorates the town's transformation, with boat races and water-themed competitions. Willowdale's unique environment has also led to the development of a distinct religion centered around the Willow Spirit, a guardian believed to watch over the island. Pilgrims from other lands journey to Willowdale to seek the wisdom of the Willow Spirit. Willowdale is a town of resilience, and stories abound of how the townsfolk came together to rebuild their lives after the cataclysmic flood. The Willow Archive, a humble repository of knowledge, holds records of the town's history and the tales of those who endured the catastrophe. As you explore Willowdale's tranquil streets, you can't help but feel the sense of community and connection to nature that permeate every corner of this unique island town. It is a place where the resilience of its inhabitants and the beauty of the willow grove create a serene and inviting atmosphere.",
-        "amount of land": "200 acres",
-        "population": 1800,
-        "number of buildings": 300,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Willowdale" : {
+        "Name": "Willowdale",
+        "Description": "Willowdale is a small town nestled amidst a lush grove of ancient willow trees. The town was transformed into an island a century ago due to a catastrophic flood, isolating it from the mainland.",
+        "Narrative": "Willowdale, a quaint and serene town, is a hidden gem nestled amidst a lush grove of ancient willow trees. The town's charming cottages and buildings are built on stilts, standing above the tranquil waters that now surround Willowdale. A century ago, a great flood washed over the region, transforming Willowdale into an island and isolating it from the mainland. Since then, the town has thrived as a close-knit community, living in harmony with the natural world that surrounds them. As you approach Willowdale, you are greeted by the gentle rustling of the willow leaves and the soothing sound of the river that meanders through the town. Willow trees with sweeping branches provide shade and shelter, and the town's inhabitants have built wooden walkways and bridges that crisscross above the water. Lanterns hang from the willow branches, casting a warm, inviting glow in the evenings. The heart of Willowdale is the Willow Plaza, a central gathering place where residents trade goods, share stories, and celebrate festivals. The town's inhabitants are resourceful and skilled in fishing, crafting, and survival, making the most of their island existence. The annual Flood Festival commemorates the town's transformation, with boat races and water-themed competitions. Willowdale's unique environment has also led to the development of a distinct religion centered around the Willow Spirit, a guardian believed to watch over the island. Pilgrims from other lands journey to Willowdale to seek the wisdom of the Willow Spirit. Willowdale is a town of resilience, and stories abound of how the townsfolk came together to rebuild their lives after the cataclysmic flood. The Willow Archive, a humble repository of knowledge, holds records of the town's history and the tales of those who endured the catastrophe. As you explore Willowdale's tranquil streets, you can't help but feel the sense of community and connection to nature that permeate every corner of this unique island town. It is a place where the resilience of its inhabitants and the beauty of the willow grove create a serene and inviting atmosphere.",
+        "Amount Of Land": "200 acres",
+        "Population": 1800,
+        "Number of Buildings": 300,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Aquafield": "20 miles south (accessible by boat)",
             "Riverbend": "15 miles east (accessible by boat)",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Ancient willow trees with sweeping branches",
             "Tranquil river meandering through the town",
             "Stilted buildings and wooden walkways above the water",
             "Lanterns hanging from willow branches",
             "Willow Plaza, the central gathering place",
         ],
-        "5 key features": [
+        "Key Features": [
             "Willow Archive, a repository of town history",
             "Willow Spirit's Shrine, a place of reverence",
             "Flood Festival, an annual celebration of resilience",
             "Willowdale's Fishing Guild, a source of livelihood",
             "Willow Carvers' Workshop, known for intricate wooden sculptures",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Willow Spirit guided the town through the cataclysmic flood",
             "Willowdale's inhabitants are skilled boat builders and fishermen",
             "A submerged temple beneath the waters holds ancient secrets",
             "The Flood Festival's boat race is a test of skill and teamwork",
             "Willow Plaza's lanterns are said to ward off malevolent spirits",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Mayor Elyssia Willowbrook": "Leader of Willowdale's community",
             "Caelan Riverwind": "Master boat builder and fisherman",
             "Aria Mistleaf": "High priestess of the Willow Spirit's Shrine",
             "Thorne Watercaster": "Flood Festival boat race champion",
             "Elden Oakheart": "Renowned willow carver and artist",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Willow Spirit",
             "Rivergod",
             "Floodbringer",
             "Naiad",
             "Nature's Blessing",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The submerged temple holds a map to a hidden treasure in the willow grove",
             "Willowdale's lanterns are enchanted to protect against flooding",
             "The town's boat builders possess knowledge of crafting magical vessels",
             "The Willow Spirit's Shrine is said to grant visions during the Flood Festival",
             "A secret network of underwater tunnels connects Willowdale to neighboring towns",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Murky Marsh, where dangerous creatures lurk in the waters",
             "The Whispering Willows, where eerie voices unsettle visitors",
             "The Tidal Currents, treacherous waters with strong undercurrents",
             "The Flooded Ruins, submerged remnants of the town's past",
             "The Enchanted Swamp, a bewitched area with unpredictable magic",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Willow Grove, a serene grove of ancient willow trees",
             "The Willow Plaza, a bustling center of trade and socializing",
             "The Flood Festival Grounds, where boat races and festivities take place",
             "The Willow Spirit's Shrine, a place of spiritual reflection",
             "The Willow Archive, holding records of the town's history",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "50%",
             "Halfling": "20%",
             "Half-Elf": "10%",
@@ -8169,7 +8259,7 @@ dnd_cities = {
             "Aarakocra": "1%",
             "Other": "1%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Rogue": "15%",
             "Bard": "10%",
             "Cleric": "10%",
@@ -8184,12 +8274,12 @@ dnd_cities = {
             "Barbarian": "2%",
             "Other": "10%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "10,000 gp",
             "bottom 10% earners": "20 gp",
             "median earners": "500 gp",
         },
-        "shops": {
+        "Shops": {
             "Willow's Wares": 5,
             "Tranquil Tidings (Tavern)": 2,
             "River's Edge Apothecary": 3,
@@ -8201,7 +8291,7 @@ dnd_cities = {
             "Whispers of the Willow (Bookstore)": 2,
             "The Watery Gem (Gem Shop)": 1,
         },
-        "services": {
+        "Services": {
             "Willow's Temple (Religious Services)": 2,
             "Willowdale's Healing Springs": 2,
             "Willow's Watch (Guard Services)": 3,
@@ -8271,79 +8361,81 @@ dnd_cities = {
             25: "The town's navigators offer guidance and safe passage for travelers navigating the waters around Willowdale.",
         },
     },
-    "ironglave" : {
-        "name": "Ironglave",
-        "description": "Ironglave is a medium-sized city known for its iron fortifications and a deep, hidden forge rumored to be connected to a long-forgotten dwarven kingdom.",
-        "narrative": "Ironglave stands as a resilient medium-sized city, its identity intricately bound to the unyielding strength of iron. The city is a testament to dwarven craftsmanship and human resilience. As you approach Ironglave, you are immediately struck by the sight of towering iron walls that encircle the city, a formidable defense against any threat. The gates are adorned with intricate ironwork, depicting heroic dwarves forging mighty weapons and armor. Within the city, the streets are lined with stout iron lampposts that cast a warm, orange glow at night, giving Ironglave an almost ethereal ambiance. The heart of Ironglave is the Iron Citadel, a massive fortress built into the heart of a mountain, serving as both a symbol of strength and a functional center of governance. The city's leaders, a council of dwarves and humans, are chosen based on their dedication to preserving the city's history and guarding its secrets. Life in Ironglave revolves around the forge, as the city is renowned for its master blacksmiths and metalworkers. The Iron Anvil Market bustles with activity, with traders and merchants offering a wide array of iron goods, from weapons and armor to ornate iron jewelry. The annual Ironsmith's Tournament is a highlight of Ironglave, where blacksmiths from far and wide gather to showcase their skills in crafting iron masterpieces. Ironglave's hidden mystery lies deep within the city's core. Rumors persist of a concealed forge, ancient and untouched, that is said to be connected to a long-forgotten dwarven kingdom. Adventurers are drawn to Ironglave in search of this hidden treasure, as tales speak of legendary weapons and artifacts forged by dwarven kings of old. The Temple of Moradin, the dwarven god of craftsmanship, is a place of reverence and spiritual solace for the city's inhabitants. Ironglave is a city of secrets and resilience, where the clang of hammers and the hiss of quenching metal resound through the streets, and where the legacy of dwarven craftsmanship endures in every iron creation.",
-        "place is known for": "the annual Ironsmith's Tournament",
-        "amount of land": "600 acres",
-        "population": 4500,
-        "number of buildings": 800,
-        "crime rate": "4%",
-        "Neighboring cities and towns": {
+
+
+    "Ironglave" : {
+        "Name": "Ironglave",
+        "Description": "Ironglave is a medium-sized city known for its iron fortifications and a deep, hidden forge rumored to be connected to a long-forgotten dwarven kingdom.",
+        "Narrative": "Ironglave stands as a resilient medium-sized city, its identity intricately bound to the unyielding strength of iron. The city is a testament to dwarven craftsmanship and human resilience. As you approach Ironglave, you are immediately struck by the sight of towering iron walls that encircle the city, a formidable defense against any threat. The gates are adorned with intricate ironwork, depicting heroic dwarves forging mighty weapons and armor. Within the city, the streets are lined with stout iron lampposts that cast a warm, orange glow at night, giving Ironglave an almost ethereal ambiance. The heart of Ironglave is the Iron Citadel, a massive fortress built into the heart of a mountain, serving as both a symbol of strength and a functional center of governance. The city's leaders, a council of dwarves and humans, are chosen based on their dedication to preserving the city's history and guarding its secrets. Life in Ironglave revolves around the forge, as the city is renowned for its master blacksmiths and metalworkers. The Iron Anvil Market bustles with activity, with traders and merchants offering a wide array of iron goods, from weapons and armor to ornate iron jewelry. The annual Ironsmith's Tournament is a highlight of Ironglave, where blacksmiths from far and wide gather to showcase their skills in crafting iron masterpieces. Ironglave's hidden mystery lies deep within the city's core. Rumors persist of a concealed forge, ancient and untouched, that is said to be connected to a long-forgotten dwarven kingdom. Adventurers are drawn to Ironglave in search of this hidden treasure, as tales speak of legendary weapons and artifacts forged by dwarven kings of old. The Temple of Moradin, the dwarven god of craftsmanship, is a place of reverence and spiritual solace for the city's inhabitants. Ironglave is a city of secrets and resilience, where the clang of hammers and the hiss of quenching metal resound through the streets, and where the legacy of dwarven craftsmanship endures in every iron creation.",
+        "Place Is Known For": "the annual Ironsmith's Tournament",
+        "Amount Of Land": "600 acres",
+        "Population": 4500,
+        "Number of Buildings": 800,
+        "Crime Rate": "4%",
+        "Neighboring Cities And Towns": {
             "Steelholm": "15 miles north",
             "Ironforge Hold": "10 miles east",
             "Moltenheart": "25 miles southeast",
             "Anvil's End": "40 miles south",
             "Emberstone": "12 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Towering iron walls that encircle the city",
             "Intricate ironwork adorning the city gates",
             "Iron lampposts that cast an orange glow at night",
             "The Iron Citadel, a massive fortress at the city's core",
             "The Iron Anvil Market bustling with traders and merchants",
         ],
-        "5 key features": [
+        "Key Features": [
             "The Hidden Forge of the Dwarven Kings",
             "Ironsmith's Guild, a gathering place for blacksmiths",
             "Temple of Moradin, a place of dwarven worship",
             "Iron Anvil Market, a hub of trade and commerce",
             "Ironheart Tavern, where stories and legends are shared",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Hidden Forge is said to hold ancient dwarven relics of great power",
             "Ironglave was founded by a coalition of dwarves and humans",
             "The Iron Citadel's vaults contain historical artifacts and treasures",
             "Legends tell of a secret passage to the lost dwarven kingdom",
             "The Iron Anvil Market was built upon the site of an ancient battle",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Thrain Ironforge": "Elder of the Dwarven Council",
             "Elena Steelhammer": "Master blacksmith renowned for her craftsmanship",
             "Brogar Stonehelm": "Head of the Ironsmith's Guild",
             "Sylas Ironheart": "Owner of the Ironheart Tavern and storyteller",
             "Dorin Steelbeard": "High priest of the Temple of Moradin",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Moradin",
             "Clangeddin Silverbeard",
             "Berronar Truesilver",
             "Gorm Gulthyn",
             "Sharindlar",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The Hidden Forge is protected by powerful enchantments",
             "The Iron Citadel's vaults hold ancient maps of dwarven kingdoms",
             "A secret tunnel leads to the abandoned mines beneath the city",
             "The Iron Anvil Market's central anvil is believed to be magical",
             "The city's sewers hide a network of secret passages and chambers",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Forgotten Tunnels, unstable passages beneath the city",
             "The Shadowed Alley, a haven for thieves and ne'er-do-wells",
             "The Rusting District, where decaying iron structures pose risks",
             "The Smoldering Foundry, a dangerous area with molten metal hazards",
             "The Haunted Ironworks, said to be cursed by ancient spirits",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Ironheart Tavern, a gathering place for tales and legends",
             "The Ironsmith's Guild, where master blacksmiths display their work",
             "The Temple of Moradin, a place of dwarven worship and reflection",
             "The Iron Anvil Market, a bustling hub of trade and commerce",
             "The Hidden Forge of the Dwarven Kings, a legendary treasure",
         ],
-        "races": {
+        "Race Makeup": {
             "Dwarf": "40%",
             "Human": "35%",
             "Gnome": "5%",
@@ -8353,7 +8445,7 @@ dnd_cities = {
             "Tiefling": "2%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Barbarian": "2%",
             "Bard": "4%",
             "Cleric": "5%",
@@ -8368,12 +8460,12 @@ dnd_cities = {
             "Wizard": "3%",
             "Other": "5%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "500,000 gp",
             "bottom 10% earners": "50 gp",
             "median earners": "25,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Ironforge Armory": 10,
             "Steelcraft Weaponsmiths": 15,
             "Dwarven Relics Emporium": 12,
@@ -8386,7 +8478,7 @@ dnd_cities = {
             "Smithy's Supplies": 5,
             "Gemstone Traders": 2,
         },
-        "services": {
+        "Services": {
             "Council Hall of Ironglave": 10,
             "The Iron Hearth Inn": 15,
             "Dwarven Stables": 5,
@@ -8458,79 +8550,81 @@ dnd_cities = {
             25: "The Hidden Forge's location remains a well-guarded secret, known to only a few."
         },
     },
-    "frostglave" : {
-        "name": "Frostglave",
-        "description": "Frostglave is a small town perched on a high plateau, overlooking a breathtaking landscape of snowy peaks and icy valleys. The town is known for its strange and vivid auroras that light up the night sky, which have a mesmerizing yet chaotic effect on the local wildlife.",
-        "narrative": "Frostglave, a remote and picturesque small town, stands sentinel atop a high plateau, offering panoramic views of a vast, snow-covered wilderness. The town's architecture consists of sturdy, log-built structures with steeply pitched roofs designed to withstand the heavy snowfall of the region. As you approach Frostglave, the crisp mountain air carries the scent of pine and the distant howling of wolves echoes through the frozen landscape. The heart of Frostglave is its central square, dominated by a large bonfire that burns year-round to provide warmth and a gathering place for the town's residents. The local inn, 'Aurora's Hearth,' is a welcoming establishment where travelers and townsfolk alike share tales of the strange and vivid auroras that light up the night sky. These auroras, known as the 'Glacial Spectra,' are a phenomenon unique to Frostglave and are said to be both enchanting and unpredictable. The Glacial Spectra can manifest in various forms, from shimmering ribbons of emerald and sapphire to frenzied bursts of crimson and violet. While they paint the heavens with stunning colors, they also have a bewildering effect on the wildlife of the region. Local creatures, such as snow foxes and mountain goats, exhibit erratic behavior under the influence of the Glacial Spectra, making hunting and survival in the area a constant challenge. Frostglave's economy revolves around trapping, fur trading, and ice fishing, with the local trappers braving the unpredictable wilderness to secure valuable pelts. The annual Frost Festival, held during the peak of winter, celebrates the town's resilience and the beauty of the Glacial Spectra. Activities include ice sculpting, sled races, and a mystical light show as the auroras reach their zenith. The town's folklore is rich with tales of the 'Aurora Guardians,' mystical beings said to be born from the Glacial Spectra. These guardians are believed to protect the town from the chaotic influences of the auroras. Frostglave is a place where the beauty of nature's extremes is entwined with the unpredictability of the mystical forces that govern the region. As you explore this small town, you can't help but feel a sense of wonder and trepidation in the face of both its natural beauty and supernatural mysteries.",
-        "place is known for": "the annual Frost Festival",
-        "amount of land": "200 acres",
-        "population": 2200,
-        "number of buildings": 350,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Frostglave" : {
+        "Name": "Frostglave",
+        "Description": "Frostglave is a small town perched on a high plateau, overlooking a breathtaking landscape of snowy peaks and icy valleys. The town is known for its strange and vivid auroras that light up the night sky, which have a mesmerizing yet chaotic effect on the local wildlife.",
+        "Narrative": "Frostglave, a remote and picturesque small town, stands sentinel atop a high plateau, offering panoramic views of a vast, snow-covered wilderness. The town's architecture consists of sturdy, log-built structures with steeply pitched roofs designed to withstand the heavy snowfall of the region. As you approach Frostglave, the crisp mountain air carries the scent of pine and the distant howling of wolves echoes through the frozen landscape. The heart of Frostglave is its central square, dominated by a large bonfire that burns year-round to provide warmth and a gathering place for the town's residents. The local inn, 'Aurora's Hearth,' is a welcoming establishment where travelers and townsfolk alike share tales of the strange and vivid auroras that light up the night sky. These auroras, known as the 'Glacial Spectra,' are a phenomenon unique to Frostglave and are said to be both enchanting and unpredictable. The Glacial Spectra can manifest in various forms, from shimmering ribbons of emerald and sapphire to frenzied bursts of crimson and violet. While they paint the heavens with stunning colors, they also have a bewildering effect on the wildlife of the region. Local creatures, such as snow foxes and mountain goats, exhibit erratic behavior under the influence of the Glacial Spectra, making hunting and survival in the area a constant challenge. Frostglave's economy revolves around trapping, fur trading, and ice fishing, with the local trappers braving the unpredictable wilderness to secure valuable pelts. The annual Frost Festival, held during the peak of winter, celebrates the town's resilience and the beauty of the Glacial Spectra. Activities include ice sculpting, sled races, and a mystical light show as the auroras reach their zenith. The town's folklore is rich with tales of the 'Aurora Guardians,' mystical beings said to be born from the Glacial Spectra. These guardians are believed to protect the town from the chaotic influences of the auroras. Frostglave is a place where the beauty of nature's extremes is entwined with the unpredictability of the mystical forces that govern the region. As you explore this small town, you can't help but feel a sense of wonder and trepidation in the face of both its natural beauty and supernatural mysteries.",
+        "Place Is Known For": "the annual Frost Festival",
+        "Amount Of Land": "200 acres",
+        "Population": 2200,
+        "Number of Buildings": 350,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Iceshadow Village": "30 miles north",
             "Glacier's Edge": "15 miles east",
             "Snowdrift Hollow": "20 miles south",
             "Crystalpeaks": "40 miles west",
             "Aurora's Watch": "10 miles northeast",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Snow-covered plateau overlooking a vast expanse of snowy peaks",
             "The Glacial Spectra, strange and vivid auroras that light up the night sky",
             "Sturdy log-built structures designed to withstand heavy snowfall",
             "A central square with a perpetual bonfire for warmth and gatherings",
             "Frozen lakes and rivers that provide sustenance through ice fishing",
         ],
-        "5 key features": [
+        "Key Features": [
             "Aurora's Hearth, the town's welcoming inn and storytelling hub",
             "Trapper's Guildhall, where hunters gather to trade pelts and tales",
             "Frostglave's Frost Festival, a celebration of the Glacial Spectra",
             "The Frozen Pines, a mysterious grove of ancient, ice-covered trees",
             "Aurora Guardians' Shrine, a place of reverence for mystical protectors",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Glacial Spectra are influenced by the moods of ancient ice spirits",
             "Aurora Guardians appear during the Frost Festival to bless the town",
             "Frostglave was founded by a legendary trapper who tamed a fearsome ice beast",
             "The Glacial Spectra hold the secrets to hidden treasures in the snowy wilderness",
             "The town's bonfire is said to ward off malevolent spirits during the long nights",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Mayor Thora Iceheart": "Respected leader of Frostglave",
             "Branthor Frostbeard": "Master trapper and storyteller",
             "Elara Snowshimmer": "Innkeeper of Aurora's Hearth",
             "Kara Whitefox": "Renowned ice sculptor",
             "Lysa Icewhisper": "Keeper of the Aurora Guardians' Shrine",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Icebringer",
             "Aurora Spirits",
             "Frostwardens",
             "Glacial Guardians",
             "Wildsoul",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The Glacial Spectra reveal hidden paths through the treacherous snowfields",
             "The Aurora Guardians may appear to those with pure hearts during the Frost Festival",
             "An ancient ice cavern beneath Frostglave hides mysterious crystals of power",
             "The Glacial Spectra have been known to temporarily bless those who witness them",
             "Aurora's Hearth holds a hidden passage to a chamber of ancient tales and artifacts",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Howling Abyss, a frigid and dangerous chasm to the north",
             "The Unstable Ice Bridge, a treacherous path over frozen rivers",
             "The Chaotic Glen, where the effects of the Glacial Spectra are most unpredictable",
             "The Frozen Caves, home to territorial ice creatures",
             "The Tumultuous Bluff, a high peak where avalanches are common",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Glacial Overlook, offering the best view of the Glacial Spectra",
             "Aurora's Hearth, for warm meals and enchanting stories",
             "Trapper's Guildhall, where tales of survival and adventure are shared",
             "The Frozen Pines, a mystical grove where the spirits of the ice are said to reside",
             "Aurora Guardians' Shrine, a place of peace and contemplation",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "50%",
             "Dwarf": "20%",
             "Gnome": "10%",
@@ -8539,7 +8633,7 @@ dnd_cities = {
             "Elf": "5%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Barbarian": "3%",
             "Bard": "5%",
             "Cleric": "5%",
@@ -8553,12 +8647,12 @@ dnd_cities = {
             "Wizard": "5%",
             "Other": "5%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "100,000 gp",
             "bottom 10% earners": "10 gp",
             "median earners": "5,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Aurora's Trinkets and Supplies": 5,
             "Frostbite Forge": 3,
             "Snowy Treasures Emporium": 7,
@@ -8570,7 +8664,7 @@ dnd_cities = {
             "Snowshoe Smithy": 5,
             "Mystic Crystals and Gems": 2,
         },
-        "services": {
+        "Services": {
             "Aurora's Hearth Inn": 10,
             "Trapper's Lodge": 8,
             "Frostglave's Stables": 4,
@@ -8639,78 +8733,80 @@ dnd_cities = {
             25: "The town's ice hot springs are believed to have rejuvenating properties, attracting travelers seeking warmth and healing.",
         },
     },
-    "greengrove" : {
-        "name": "Greengrove",
-        "description": "Greengrove is a medium-sized town nestled in a lush valley, known for its natural beauty and the sacred grove believed to be the birthplace of the first druid.",
-        "narrative": "Greengrove, a charming town cradled within a lush valley, is a testament to the serene beauty of nature. As you approach the town, you are greeted by rolling hills covered in vibrant, emerald-green grasses, and the air is filled with the sweet scent of blooming wildflowers. Greengrove's picturesque landscape is dotted with quaint cottages, each adorned with colorful climbing vines and flower-filled gardens. The heart of the town is the Sacred Grove, a place of deep reverence believed to be the birthplace of the very first druid. The grove is a tranquil sanctuary, surrounded by ancient, gnarled trees and a chorus of singing birds. A crystal-clear stream meanders through the grove, its waters said to possess healing properties. The townsfolk gather at the Sacred Grove to pay homage to the natural world, seeking guidance from the spirits of the land. Life in Greengrove revolves around harmony with nature, and the townspeople have a profound respect for the wilderness that surrounds them. The annual Grove Festival is a highlight of the town, featuring ceremonies, storytelling, and contests of natural prowess, including archery and herblore competitions. Local bards fill the air with melodic tunes that echo through the valley. Greengrove is a town of hidden secrets, and rumors persist of a mystical guardian who watches over the Sacred Grove, protecting it from harm. The local herbalists are renowned for their knowledge of the valley's flora, offering remedies and potions to those in need. The Temple of the Green Lady stands at the edge of the grove, where druids and worshippers gather to honor the spirits of the land. As you wander through Greengrove's idyllic streets, you can't help but feel the tranquility and connection to nature that permeate every corner of this picturesque town. It is a place where the boundaries between civilization and the wilderness blur, where the legacy of the first druid lives on in the hearts of its inhabitants.",
-        "place is known for": "the annual Grove Festival",
-        "amount of land": "300 acres",
-        "population": 3600,
-        "number of buildings": 600,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Greengrove" : {
+        "Name": "Greengrove",
+        "Description": "Greengrove is a medium-sized town nestled in a lush valley, known for its natural beauty and the sacred grove believed to be the birthplace of the first druid.",
+        "Narrative": "Greengrove, a charming town cradled within a lush valley, is a testament to the serene beauty of nature. As you approach the town, you are greeted by rolling hills covered in vibrant, emerald-green grasses, and the air is filled with the sweet scent of blooming wildflowers. Greengrove's picturesque landscape is dotted with quaint cottages, each adorned with colorful climbing vines and flower-filled gardens. The heart of the town is the Sacred Grove, a place of deep reverence believed to be the birthplace of the very first druid. The grove is a tranquil sanctuary, surrounded by ancient, gnarled trees and a chorus of singing birds. A crystal-clear stream meanders through the grove, its waters said to possess healing properties. The townsfolk gather at the Sacred Grove to pay homage to the natural world, seeking guidance from the spirits of the land. Life in Greengrove revolves around harmony with nature, and the townspeople have a profound respect for the wilderness that surrounds them. The annual Grove Festival is a highlight of the town, featuring ceremonies, storytelling, and contests of natural prowess, including archery and herblore competitions. Local bards fill the air with melodic tunes that echo through the valley. Greengrove is a town of hidden secrets, and rumors persist of a mystical guardian who watches over the Sacred Grove, protecting it from harm. The local herbalists are renowned for their knowledge of the valley's flora, offering remedies and potions to those in need. The Temple of the Green Lady stands at the edge of the grove, where druids and worshippers gather to honor the spirits of the land. As you wander through Greengrove's idyllic streets, you can't help but feel the tranquility and connection to nature that permeate every corner of this picturesque town. It is a place where the boundaries between civilization and the wilderness blur, where the legacy of the first druid lives on in the hearts of its inhabitants.",
+        "Place Is Known For": "the annual Grove Festival",
+        "Amount Of Land": "300 acres",
+        "Population": 3600,
+        "Number of Buildings": 600,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Meadowbrook": "10 miles west",
             "River's Edge": "15 miles north",
             "Woodland Haven": "8 miles east",
             "Valleyview": "12 miles south",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Rolling hills covered in emerald-green grasses",
             "Lush valleys and meadows filled with wildflowers",
             "Ancient, gnarled trees in the Sacred Grove",
             "Crystal-clear stream with healing properties",
             "Quaint cottages adorned with colorful gardens",
         ],
-        "5 key features": [
+        "Key Features": [
             "The Sacred Grove, believed to be the birthplace of the first druid",
             "Temple of the Green Lady, a place of druidic worship",
             "Herbalists' Haven, known for remedies from local flora",
             "Grove Festival Grounds, site of annual celebrations",
             "Bardic Circle, where local bards share melodies and stories",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The Sacred Grove is protected by a mystical guardian",
             "Greengrove's founders were druids who communed with nature spirits",
             "The crystal-clear stream in the grove possesses healing properties",
             "The Temple of the Green Lady houses ancient druidic relics",
             "The first druid is said to have received visions in the Sacred Grove",
         ],
-        "5 popular people": {
+        "Popular People": {
             "High Druid Thalindra": "Guardian of the Sacred Grove",
             "Eldertree Tannith": "Elder herbalist and healer",
             "Sylvan Harper Lirael": "Bard known for enchanting melodies",
             "Brother Oakthorn": "Keeper of the Temple of the Green Lady",
             "Sage Bramblefoot": "Scholar of Greengrove's natural history",
         },
-        "5 top religions": [
+        "Top Religions": [
             "The Green Lady",
             "Ehlonna",
             "Obad-Hai",
             "Mielikki",
             "Silvanus",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The Sacred Grove conceals ancient druidic runes beneath its soil",
             "A hidden path in the valley leads to a hidden waterfall sanctuary",
             "Local owlbears are protectors of the town and its surroundings",
             "The crystal-clear stream in the grove can purify tainted water",
             "Herbalists' Haven holds a rare tome of forgotten herbal remedies",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Thorned Thicket, a dense and treacherous thorny forest",
             "The Whispering Woods, where eerie whispers unsettle visitors",
             "The Shadowed Glen, a place known for mysterious disappearances",
             "The Haunted Hollow, where restless spirits are said to roam",
             "The Cursed Clearing, where an old curse still lingers",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Sacred Grove, a serene sanctuary of nature",
             "Temple of the Green Lady, a place of spiritual connection",
             "Herbalists' Haven, where natural remedies are crafted",
             "Grove Festival Grounds, site of joyful celebrations",
             "Bardic Circle, where enchanting melodies fill the air",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "60%",
             "Elf": "20%",
             "Half-Elf": "5%",
@@ -8719,7 +8815,7 @@ dnd_cities = {
             "Firbolg": "3%",
             "Other": "3%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Druid": "25%",
             "Cleric": "10%",
             "Bard": "10%",
@@ -8728,12 +8824,12 @@ dnd_cities = {
             "Sorcerer": "5%",
             "Other": "35%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "200,000 gp",
             "bottom 10% earners": "500 gp",
             "median earners": "20,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Nature's Blessings (Herbalist)": 4,
             "Greenleaf Inn": 5,
             "Meadowbrook Traders": 6,
@@ -8743,7 +8839,7 @@ dnd_cities = {
             "Harmony Potions and Charms": 3,
             "Whispers in the Wind (Bookstore)": 1,
         },
-        "services": {
+        "Services": {
             "Temple of the Green Lady": 2,
             "Sacred Grove Guides": 4,
             "Grove Festival Organizers": 2,
@@ -8809,79 +8905,81 @@ dnd_cities = {
             25: "The town's crystal-clear hot springs are said to have rejuvenating properties, attracting visitors from afar.",
         },
     },
-    "stormglave" : {
-        "name": "Stormglave",
-        "description": "Stormglave is a medium-sized coastal city known for its frequent storms and a deep-rooted belief that it was founded by a legendary storm giant who ascended to the heavens.",
-        "narrative": "Stormglave is a city of contrasts, perched on the edge of a tumultuous sea and battered by frequent storms. The city's architecture reflects its resilience, with buildings constructed from sturdy materials to withstand the relentless fury of the elements. As you approach Stormglave, the roar of crashing waves and the deafening thunder of storms fill the air, giving the city an eerie and mysterious ambiance. The coastal cliffs upon which Stormglave is built provide a breathtaking view of the tempestuous sea, but it's not a place for the faint of heart. The city's residents are hardy and resourceful, their lives deeply intertwined with the unpredictable weather that shapes their existence. The most enduring mystery of Stormglave lies in its origin. Legends and stories passed down through generations claim that the city was founded by a legendary storm giant known as Galdur, who ascended to the heavens after gifting the city with its name and protection from the worst of the storms. Stormglavers hold this belief close to their hearts, and it has become an integral part of their culture and identity. The city's most prominent landmark is the colossal Stormspire, a towering lighthouse that emits a beacon of light during the fiercest storms, guiding ships away from treacherous waters. The annual Stormcaller Festival is a highlight of the city, during which residents honor the memory of Galdur with dramatic reenactments of his ascent and powerful displays of elemental magic. Stormglave's economy revolves around its unique resources, such as storm-touched crystals and enchanted seashells that have various magical properties. The city is a hub for alchemists and spellcasters who seek to harness the power of the storms for their crafts. Hidden beneath the city are catacombs believed to house Galdur's legendary relics and treasures, although few have dared to venture into their depths. Stormglave is a city of mystery, where the untamed forces of nature meet the indomitable spirit of its people. It is a place where legends come to life amidst the crashing waves and thunderous skies.",
-        "place is known for": "the annual Stormcaller Festival",
-        "amount of land": "500 acres",
-        "population": 8000,
-        "number of buildings": 1200,
-        "crime rate": "4%",
-        "Neighboring cities and towns": {
+
+
+    "Stormglave" : {
+        "Name": "Stormglave",
+        "Description": "Stormglave is a medium-sized coastal city known for its frequent storms and a deep-rooted belief that it was founded by a legendary storm giant who ascended to the heavens.",
+        "Narrative": "Stormglave is a city of contrasts, perched on the edge of a tumultuous sea and battered by frequent storms. The city's architecture reflects its resilience, with buildings constructed from sturdy materials to withstand the relentless fury of the elements. As you approach Stormglave, the roar of crashing waves and the deafening thunder of storms fill the air, giving the city an eerie and mysterious ambiance. The coastal cliffs upon which Stormglave is built provide a breathtaking view of the tempestuous sea, but it's not a place for the faint of heart. The city's residents are hardy and resourceful, their lives deeply intertwined with the unpredictable weather that shapes their existence. The most enduring mystery of Stormglave lies in its origin. Legends and stories passed down through generations claim that the city was founded by a legendary storm giant known as Galdur, who ascended to the heavens after gifting the city with its name and protection from the worst of the storms. Stormglavers hold this belief close to their hearts, and it has become an integral part of their culture and identity. The city's most prominent landmark is the colossal Stormspire, a towering lighthouse that emits a beacon of light during the fiercest storms, guiding ships away from treacherous waters. The annual Stormcaller Festival is a highlight of the city, during which residents honor the memory of Galdur with dramatic reenactments of his ascent and powerful displays of elemental magic. Stormglave's economy revolves around its unique resources, such as storm-touched crystals and enchanted seashells that have various magical properties. The city is a hub for alchemists and spellcasters who seek to harness the power of the storms for their crafts. Hidden beneath the city are catacombs believed to house Galdur's legendary relics and treasures, although few have dared to venture into their depths. Stormglave is a city of mystery, where the untamed forces of nature meet the indomitable spirit of its people. It is a place where legends come to life amidst the crashing waves and thunderous skies.",
+        "Place Is Known For": "the annual Stormcaller Festival",
+        "Amount Of Land": "500 acres",
+        "Population": 8000,
+        "Number of Buildings": 1200,
+        "Crime Rate": "4%",
+        "Neighboring Cities And Towns": {
             "Wavecrest": "15 miles north",
             "Tempest Bay": "8 miles east",
             "Galeharbor": "25 miles southeast",
             "Misthaven": "30 miles south",
             "Whirlwind Keep": "10 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Coastal cliffs with breathtaking views of the sea",
             "Colossal Stormspire, a towering lighthouse",
             "Enchanted seashells scattered along the shoreline",
             "Storm-touched crystals found in the city's mines",
             "Mysterious catacombs rumored to hold relics",
         ],
-        "5 key features": [
+        "Key Features": [
             "Stormcaller Square, the heart of the city's festivals",
             "Tempest Alchemy Emporium, specializing in storm-touched ingredients",
             "Galdur's Watchtower, a monument to the legendary storm giant",
             "Seashell Market, where magical shells are bought and sold",
             "The Stormwardens' Guild, masters of weather manipulation",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "Galdur, the storm giant, ascended to the heavens after founding Stormglave",
             "Storm-touched crystals hold the essence of the city's storms",
             "The Stormspire's beacon protects ships during the fiercest storms",
             "Enchanted seashells are said to grant protection from the elements",
             "The catacombs beneath the city hide Galdur's legendary relics",
         ],
-        "5 popular people": {
+        "Popular People": {
             "High Stormcaller Eira": "Leader of the Stormwardens' Guild",
             "Thalor Windweaver": "Renowned alchemist specializing in storm magic",
             "Captain Nereida Stormwatch": "Sea captain known for navigating treacherous waters",
             "Sorin Stormchaser": "Adventurous explorer of the catacombs",
             "Orinna Deepseer": "Seer who interprets the storms' omens",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Galdur, the Storm Giant",
             "Talos, the Storm Lord",
             "Umberlee, the Sea Queen",
             "Akadi, the Queen of Air",
             "Kord, the Stormbringer",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The Stormwardens' Guild controls the city's weather to a degree",
             "A hidden chamber in the Stormspire holds Galdur's personal journal",
             "Storm-touched crystals can amplify spellcasting when used as foci",
             "Enchanted seashells can protect against lightning strikes at sea",
             "The catacombs hide ancient relics and a chamber with an everlasting storm",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Tempest Caverns, where unpredictable whirlpools form",
             "The Lightning Strand, a perilous stretch of coastline",
             "The Abyssal Grotto, a deep underwater cave with unknown inhabitants",
             "The Thunderclap Cliffs, prone to landslides during storms",
             "The Maelstrom Channel, a turbulent sea passage with treacherous currents",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "Stormcaller Square, bustling with market stalls and festival activities",
             "Tempest Alchemy Emporium, for rare storm-touched ingredients",
             "Galdur's Watchtower, offering panoramic views of the sea",
             "Seashell Market, where enchantments are bought and sold",
             "The Stormwardens' Guild, for those interested in storm manipulation",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "45%",
             "Dwarf": "15%",
             "Triton": "10%",
@@ -8893,7 +8991,7 @@ dnd_cities = {
             "Aarakocra": "2%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Sorcerer": "10%",
             "Wizard": "10%",
             "Cleric": "8%",
@@ -8908,12 +9006,12 @@ dnd_cities = {
             "Paladin": "2%",
             "Other": "4%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "500,000 gp",
             "bottom 10% earners": "100 gp",
             "median earners": "30,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Stormcrystal Emporium": 10,
             "Tempest Enchantments": 15,
             "Seashell Artistry": 12,
@@ -8927,7 +9025,7 @@ dnd_cities = {
             "Whispers of the Abyss (Bookstore)": 5,
             "Mysteries of the Storm (Library)": 2,
         },
-        "services": {
+        "Services": {
             "Stormcaller Guild Hall": 10,
             "Tempest Taverns": 15,
             "Stormtide Stables": 5,
@@ -8999,78 +9097,80 @@ dnd_cities = {
             25: "The city's stormy sea is teeming with unique sea creatures, some of which have never been documented before.",
         },
     },
-    "oakshade" : {
-        "name": "Oakshade",
-        "description": "Oakshade is a quaint small town nestled amidst towering oak trees. Its unique history is rooted in a cataclysm that fragmented a massive sentient tree into separate entities, which now serve as protectors and providers for the town.",
-        "narrative": "Oakshade, a charming small town, is a hidden gem among the towering oak trees that surround it. The town's history is intertwined with a cataclysmic event that changed the course of its destiny. Long ago, a colossal sentient tree known as the 'Eldertree' stood at the heart of Oakshade. It was a beacon of life and wisdom, and its branches stretched high into the sky, providing shelter and sustenance to the town's inhabitants. However, a cataclysmic event shook the land, shattering the Eldertree into separate entities, each containing a fragment of its consciousness. These fragmented trees, now known as the 'Eldershades,' continue to tower over Oakshade, serving as protectors and providers for the town. The Eldershades are wise and ancient, offering guidance and support to the townsfolk. They are also a source of unique resources, such as luminescent sap used in the creation of magical items. Life in Oakshade revolves around the Eldershades, and the town's inhabitants have developed a deep bond with these living entities. The town's architecture blends seamlessly with the natural surroundings, and houses are often built around the massive trunks of the Eldershades. Oakshade's economy thrives on the trade of enchanted goods created from the Eldershades' resources, attracting merchants and adventurers from afar. The annual Oakshade Harvest Festival is a celebration of the town's unique bond with nature and the Eldershades. It features competitions, storytelling, and the sharing of magical insights among residents and visitors alike. Oakshade is a place of tranquility and wisdom, where the wisdom of the Eldertree lives on in the fragments that protect and nurture the town. The townsfolk honor the memory of the Eldertree with reverence, and many seek to uncover the secrets of the cataclysm that changed their lives forever. As you wander through Oakshade's peaceful streets, you can't help but feel the harmony and connection that permeate every corner of this extraordinary town. It is a place where the past is intertwined with the present, where nature and community thrive in the shadow of ancient guardians.",
-        "place is known for": "the annual Oakshade Harvest Festival",
-        "amount of land": "500 acres",
-        "population": 2700,
-        "number of buildings": 400,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Oakshade" : {
+        "Name": "Oakshade",
+        "Description": "Oakshade is a quaint small town nestled amidst towering oak trees. Its unique history is rooted in a cataclysm that fragmented a massive sentient tree into separate entities, which now serve as protectors and providers for the town.",
+        "Narrative": "Oakshade, a charming small town, is a hidden gem among the towering oak trees that surround it. The town's history is intertwined with a cataclysmic event that changed the course of its destiny. Long ago, a colossal sentient tree known as the 'Eldertree' stood at the heart of Oakshade. It was a beacon of life and wisdom, and its branches stretched high into the sky, providing shelter and sustenance to the town's inhabitants. However, a cataclysmic event shook the land, shattering the Eldertree into separate entities, each containing a fragment of its consciousness. These fragmented trees, now known as the 'Eldershades,' continue to tower over Oakshade, serving as protectors and providers for the town. The Eldershades are wise and ancient, offering guidance and support to the townsfolk. They are also a source of unique resources, such as luminescent sap used in the creation of magical items. Life in Oakshade revolves around the Eldershades, and the town's inhabitants have developed a deep bond with these living entities. The town's architecture blends seamlessly with the natural surroundings, and houses are often built around the massive trunks of the Eldershades. Oakshade's economy thrives on the trade of enchanted goods created from the Eldershades' resources, attracting merchants and adventurers from afar. The annual Oakshade Harvest Festival is a celebration of the town's unique bond with nature and the Eldershades. It features competitions, storytelling, and the sharing of magical insights among residents and visitors alike. Oakshade is a place of tranquility and wisdom, where the wisdom of the Eldertree lives on in the fragments that protect and nurture the town. The townsfolk honor the memory of the Eldertree with reverence, and many seek to uncover the secrets of the cataclysm that changed their lives forever. As you wander through Oakshade's peaceful streets, you can't help but feel the harmony and connection that permeate every corner of this extraordinary town. It is a place where the past is intertwined with the present, where nature and community thrive in the shadow of ancient guardians.",
+        "Place Is Known For": "the annual Oakshade Harvest Festival",
+        "Amount Of Land": "500 acres",
+        "Population": 2700,
+        "Number of Buildings": 400,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Barkhollow": "10 miles north",
             "Leafshade": "8 miles east",
             "Groveville": "12 miles south",
             "Mossybrook": "15 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Towering oak trees that dominate the landscape",
             "Enchanted flora that thrives under the Eldershades' influence",
             "Houses built around the massive trunks of the Eldershades",
             "Luminescent sap flowing from the Eldershades used for magical purposes",
             "The Eldershades themselves, ancient guardians of Oakshade",
         ],
-        "5 key features": [
+        "Key Features": [
             "Eldertree Square, a central gathering place for townsfolk",
             "Sapwood Enchanters' Guild, where magical items are crafted",
             "Eldershade Council, the ruling body that consults with the Eldershades",
             "Harmony Plaza, a serene location for meditation and reflection",
             "Eldergrove Library, housing records of the Eldertree's history",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The cataclysm that shattered the Eldertree remains a mystery",
             "The Eldershades contain fragments of the Eldertree's wisdom",
             "The luminescent sap of the Eldershades has unique magical properties",
             "The town's founders made a pact with the Eldertree for protection",
             "The Eldershades communicate with the townsfolk through whispers in the wind",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Mayor Thaelin Oakheart": "Leader of Oakshade's governance",
             "Eldertender Elara": "Guardian of the largest Eldershade",
             "Master Enchanter Brynden": "Head of the Sapwood Enchanters' Guild",
             "Sylvan Storyteller Lirael": "Keeper of Oakshade's oral history",
             "Sapwood Artisan Nessa": "Renowned craftsman known for Eldertree-inspired art",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Eldertree Reverence",
             "Nature's Blessing",
             "Sylvan Harmony",
             "Cataclysmic Mysteries",
             "Eldershade Communion",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The Eldertree's cataclysmic event may have been triggered by an external force.",
             "The Eldershades possess ancient knowledge of the land's hidden secrets.",
             "The luminescent sap of the Eldershades can reveal glimpses of the past.",
             "A network of underground tunnels connects the Eldershades, forming a hidden sanctuary.",
             "The Eldertree's consciousness may still exist within the Eldershades, awaiting discovery.",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Shadowed Hollow, where dark and mysterious creatures dwell",
             "The Whispering Glade, a place where eerie voices can unsettle visitors",
             "The Thornswood Thicket, a dense forest with treacherous terrain",
             "The Mirewood Swamp, home to dangerous creatures and quicksand pits",
             "The Eldershades' Root Chamber, a sacred place only accessible to the chosen",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "Eldertree Square, the heart of town's social life",
             "Sapwood Enchanters' Guild, a hub of magical craftsmanship",
             "Harmony Plaza, a serene location for meditation and reflection",
             "Eldergrove Library, a treasure trove of historical knowledge",
             "Eldertender's Grove, the largest and oldest Eldershade in Oakshade",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "40%",
             "Elf": "20%",
             "Halfling": "15%",
@@ -9079,7 +9179,7 @@ dnd_cities = {
             "Dwarf": "5%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Druid": "15%",
             "Ranger": "10%",
             "Cleric": "10%",
@@ -9088,12 +9188,12 @@ dnd_cities = {
             "Sorcerer": "5%",
             "Other": "45%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "100,000 gp",
             "bottom 10% earners": "10 gp",
             "median earners": "15,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Oakwood Traders": 6,
             "Eldertree Enchantments": 8,
             "Nature's Bounty Provisions": 10,
@@ -9103,7 +9203,7 @@ dnd_cities = {
             "Sylvan Curiosities": 7,
             "Eldergrove Herbs and Potions": 6,
         },
-        "services": {
+        "Services": {
             "Eldertree Council Hall": 2,
             "The Oak Inn": 6,
             "Sapwood Stables": 3,
@@ -9174,78 +9274,80 @@ dnd_cities = {
             25: "The town's natural hot springs are said to have healing properties, attracting visitors seeking rejuvenation.",
         },
     },
-    "silverlight" : {
-        "name": "Silverlight",
-        "description": "Silverlight is a medium-sized city nestled on the banks of a silvery river. It is known for its silver mines, which are believed to be cursed and bring misfortune to those who work there.",
-        "narrative": "Silverlight, a city with a shimmering name, is a place of both beauty and foreboding. Situated along the banks of a silvery river, the city glistens like a jewel in the sunlight. Its buildings are constructed with silver-veined stone, reflecting the radiant light of the river's waters. As you approach Silverlight, you are immediately struck by the sight of its bustling docks, where traders and fishermen ply their trades amidst the sparkling reflections of the river's surface. However, the city is most famous for its silver mines, which have long been a source of wealth and misfortune. The mines, deep within the nearby mountains, are rumored to be cursed. Miners who toil in their depths are said to suffer from strange accidents, mysterious illnesses, and bouts of bad luck. The curse has led to a superstitious atmosphere in Silverlight, and many residents avoid mentioning the mines or entering them. The city's economy revolves around the silver trade, with merchants selling finely crafted silverware, jewelry, and coins. The annual Silver Festival celebrates the city's silver heritage, featuring contests of craftsmanship and riverboat races. Silverlight is governed by a council of prominent citizens who strive to manage the city's resources and navigate the challenges posed by the mines' curse. The Silverlight Temple, dedicated to a deity of fortune and luck, is a place of worship and solace for those seeking protection from the curse. Despite the curse, some adventurers are drawn to the silver mines, believing that the rumors of hidden treasures within the cursed depths may be true. The city's lore is filled with tales of brave souls who ventured into the mines, some returning with riches and others never seen again. As you explore Silverlight's streets, you can't help but feel the juxtaposition of beauty and danger that defines this city. It is a place where the promise of wealth shines as brightly as the silver it produces, but where the shadow of misfortune looms over those who dare to delve too deep into the mines.",
-        "place is known for": "the annual Silver Festival",
-        "amount of land": "400 acres",
-        "population": 6800,
-        "number of buildings": 1100,
-        "crime rate": "5%",
-        "Neighboring cities and towns": {
+
+
+    "Silverlight" : {
+        "Name": "Silverlight",
+        "Description": "Silverlight is a medium-sized city nestled on the banks of a silvery river. It is known for its silver mines, which are believed to be cursed and bring misfortune to those who work there.",
+        "Narrative": "Silverlight, a city with a shimmering name, is a place of both beauty and foreboding. Situated along the banks of a silvery river, the city glistens like a jewel in the sunlight. Its buildings are constructed with silver-veined stone, reflecting the radiant light of the river's waters. As you approach Silverlight, you are immediately struck by the sight of its bustling docks, where traders and fishermen ply their trades amidst the sparkling reflections of the river's surface. However, the city is most famous for its silver mines, which have long been a source of wealth and misfortune. The mines, deep within the nearby mountains, are rumored to be cursed. Miners who toil in their depths are said to suffer from strange accidents, mysterious illnesses, and bouts of bad luck. The curse has led to a superstitious atmosphere in Silverlight, and many residents avoid mentioning the mines or entering them. The city's economy revolves around the silver trade, with merchants selling finely crafted silverware, jewelry, and coins. The annual Silver Festival celebrates the city's silver heritage, featuring contests of craftsmanship and riverboat races. Silverlight is governed by a council of prominent citizens who strive to manage the city's resources and navigate the challenges posed by the mines' curse. The Silverlight Temple, dedicated to a deity of fortune and luck, is a place of worship and solace for those seeking protection from the curse. Despite the curse, some adventurers are drawn to the silver mines, believing that the rumors of hidden treasures within the cursed depths may be true. The city's lore is filled with tales of brave souls who ventured into the mines, some returning with riches and others never seen again. As you explore Silverlight's streets, you can't help but feel the juxtaposition of beauty and danger that defines this city. It is a place where the promise of wealth shines as brightly as the silver it produces, but where the shadow of misfortune looms over those who dare to delve too deep into the mines.",
+        "Place Is Known For": "the annual Silver Festival",
+        "Amount Of Land": "400 acres",
+        "Population": 6800,
+        "Number of Buildings": 1100,
+        "Crime Rate": "5%",
+        "Neighboring Cities And Towns": {
             "Silvershore": "20 miles north",
             "Riverside Haven": "12 miles east",
             "Cursed Hollow": "30 miles southeast",
             "Silverwood": "40 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Silvery river with bustling docks",
             "Silver-veined stone buildings",
             "Mysterious and cursed silver mines in nearby mountains",
             "Shimmering reflections of the river's surface",
             "Silver Festival grounds with decorative silver sculptures",
         ],
-        "5 key features": [
+        "Key Features": [
             "Silverlight Temple of Luck and Fortune",
             "Silvercrafters' Guild for fine silverwork",
             "Fortune's Plaza, a hub for traders and merchants",
             "Cursed Mineshaft Tavern, a place of superstition and tales",
             "Riverboat Racecourse for the annual Silver Festival",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The curse of the silver mines is linked to a vengeful spirit of a former miner.",
             "Silverlight's founders discovered the silver mines, leading to the city's prosperity.",
             "Adventurers who brave the cursed mines may find hidden chambers of untold wealth.",
             "The Silverlight Temple's priests offer blessings to protect against the curse.",
             "The river's silvery waters are believed to have mystical properties.",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Mayor Thalia Silverblade": "Leader of the Silverlight Council",
             "Master Silversmith Argentia": "Renowned artisan known for exquisite silverwork",
             "High Priest Lysander": "Spiritual guide at the Silverlight Temple",
             "Cursed Mineshaft Tavernkeeper: Grumblestone": "Keeper of stories and superstitions",
             "Riverboat Captain Seraphina": "Champion of the annual Silver Festival races",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Deity of Luck and Fortune",
             "Silverstream",
             "Gilded Protector",
             "Prosperity's Grace",
             "The Cursed Watcher",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "A hidden chamber within the mines contains an otherworldly silver vein of extraordinary value.",
             "The Silverlight Temple has a secret chamber with relics to break the mines' curse.",
             "The river's silvery waters are said to grant temporary good luck to those who bathe in them.",
             "A secret society of miners seeks to unravel the mystery of the mines' curse.",
             "The cursed mines have unstable tunnels that lead to unknown depths and dangers.",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Forsaken Tunnels, where the curse is most palpable",
             "The Haunted Shaft, known for eerie sounds and ghostly apparitions",
             "The Abyssal Vein, a treacherous and uncharted part of the mines",
             "The Cursed Riverbank, where accidents seem more common",
             "The Enigmatic Cavern, believed to hold the source of the mines' curse",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "Silverlight Docks, where traders and fishermen bring their wares",
             "Silverlight Park, a scenic spot with views of the silvery river",
             "Fortune's Plaza, a bustling market with silver jewelry and crafts",
             "Silverlight Temple, offering blessings to protect against the curse",
             "Riverboat Racecourse during the lively Silver Festival",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "40%",
             "Dwarf": "20%",
             "Half-Elf": "10%",
@@ -9257,7 +9359,7 @@ dnd_cities = {
             "Aasimar": "1%",
             "Other": "1%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Fighter": "20%",
             "Rogue": "15%",
             "Wizard": "10%",
@@ -9272,12 +9374,12 @@ dnd_cities = {
             "Barbarian": "1%",
             "Other": "4%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "500,000 gp",
             "bottom 10% earners": "100 gp",
             "median earners": "25,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Silverlight Silversmiths": 10,
             "Fortune's Treasures": 15,
             "Cursed Relics Emporium": 12,
@@ -9291,7 +9393,7 @@ dnd_cities = {
             "Curse-Breaker Services": 5,
             "Miner's Gear and Tools": 2,
         },
-        "services": {
+        "Services": {
             "Silverlight Council Hall": 10,
             "Riverfront Inns": 15,
             "Silversmiths' Workshops": 5,
@@ -9361,78 +9463,80 @@ dnd_cities = {
             25: "The riverbank hot springs are said to have soothing properties, attracting those seeking relief from misfortune.",
         },
     },
-    "thunderhill" : {
-        "name": "Thunderhill",
-        "description": "Thunderhill is a medium-sized town perched atop a towering plateau. It is known for its mysterious weather phenomenon - relentless thunderstorms that rage overhead, yet lightning never strikes the town itself.",
-        "narrative": "Thunderhill, a medium-sized town situated on a massive plateau, is a place shrouded in both wonder and mystery. The town's unique feature is its ever-present thunderstorms that continuously rage above, casting dark clouds and rumbling thunder that echo through the surrounding lands. Despite the relentless tempest above, the most peculiar aspect of Thunderhill is that lightning never strikes the town itself. The citizens of Thunderhill have come to accept this as a strange but comforting part of their daily lives. The town's buildings and structures, constructed from sturdy stone and wood, are adorned with lightning rod charms and symbols, offering protection against the fury of the storm. Visitors often marvel at the spectacle of dark, brooding clouds and rolling thunder that envelop Thunderhill, creating an eerie and yet captivating atmosphere. The plateau upon which Thunderhill rests provides natural defenses, making it difficult for outsiders to reach the town without proper knowledge of the winding paths that lead to its gates. The annual Thunderfest is a highlight of the town's calendar, where the townsfolk celebrate their unique weather phenomenon with lightning-themed festivities, including contests of courage, daring acrobatics, and even performances by local bards who use the thunderstorm's rumble as their percussion. Thunderhill is a place of secrets and speculation. Some believe the town is protected by ancient and powerful wards, while others think it has a mystical connection to the Plane of Thunder. There are even rumors of a reclusive group of storm sorcerers who reside in Thunderhill, their magic keeping the lightning at bay. The town's only temple, dedicated to the God of Storms, serves as both a place of worship and a center of knowledge about the storms that envelop Thunderhill. As you wander through the town's narrow streets, you can't help but feel the tension in the air, the anticipation of the next thunderclap, and the wonder of a place where nature's fury dances above but never descends upon the people below.",
-        "place is known for": "the annual Thunderfest",
-        "amount of land": "300 acres",
-        "population": 4000,
-        "number of buildings": 600,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Thunderhill" : {
+        "Name": "Thunderhill",
+        "Description": "Thunderhill is a medium-sized town perched atop a towering plateau. It is known for its mysterious weather phenomenon - relentless thunderstorms that rage overhead, yet lightning never strikes the town itself.",
+        "Narrative": "Thunderhill, a medium-sized town situated on a massive plateau, is a place shrouded in both wonder and mystery. The town's unique feature is its ever-present thunderstorms that continuously rage above, casting dark clouds and rumbling thunder that echo through the surrounding lands. Despite the relentless tempest above, the most peculiar aspect of Thunderhill is that lightning never strikes the town itself. The citizens of Thunderhill have come to accept this as a strange but comforting part of their daily lives. The town's buildings and structures, constructed from sturdy stone and wood, are adorned with lightning rod charms and symbols, offering protection against the fury of the storm. Visitors often marvel at the spectacle of dark, brooding clouds and rolling thunder that envelop Thunderhill, creating an eerie and yet captivating atmosphere. The plateau upon which Thunderhill rests provides natural defenses, making it difficult for outsiders to reach the town without proper knowledge of the winding paths that lead to its gates. The annual Thunderfest is a highlight of the town's calendar, where the townsfolk celebrate their unique weather phenomenon with lightning-themed festivities, including contests of courage, daring acrobatics, and even performances by local bards who use the thunderstorm's rumble as their percussion. Thunderhill is a place of secrets and speculation. Some believe the town is protected by ancient and powerful wards, while others think it has a mystical connection to the Plane of Thunder. There are even rumors of a reclusive group of storm sorcerers who reside in Thunderhill, their magic keeping the lightning at bay. The town's only temple, dedicated to the God of Storms, serves as both a place of worship and a center of knowledge about the storms that envelop Thunderhill. As you wander through the town's narrow streets, you can't help but feel the tension in the air, the anticipation of the next thunderclap, and the wonder of a place where nature's fury dances above but never descends upon the people below.",
+        "Place Is Known For": "the annual Thunderfest",
+        "Amount Of Land": "300 acres",
+        "Population": 4000,
+        "Number of Buildings": 600,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Stormwatch": "25 miles south",
             "Cloudspire": "15 miles west",
             "Lightning's Edge": "30 miles east",
             "Misthaven": "40 miles north",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Massive plateau providing natural defense",
             "Dark clouds and relentless thunderstorms overhead",
             "Lightning rod charms and symbols adorning buildings",
             "Narrow, winding paths leading to the town gates",
             "The Temple of the God of Storms at the town's center",
         ],
-        "5 key features": [
+        "Key Features": [
             "Thunderfest Grounds, where lightning-themed festivities are held",
             "Temple of the God of Storms, a center of knowledge about the storms",
             "Storm Sorcerers' Retreat, rumored home of powerful storm sorcerers",
             "Plateau Viewpoint, offering breathtaking vistas of the surrounding lands",
             "Mystic Lightning Charms Emporium, a shop specializing in protective charms",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "Ancient wards protect Thunderhill from lightning strikes",
             "The town has a mystical connection to the Plane of Thunder",
             "Reclusive storm sorcerers are responsible for the storm's behavior",
             "The plateau upon which Thunderhill rests hides hidden chambers and tunnels",
             "The God of Storms watches over the town, keeping it safe from harm",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Mayor Thundertop": "Leader of Thunderhill's town council",
             "Bard Stormsong": "Renowned performer who uses thunder as percussion",
             "Sorceress Lightningstrike": "Rumored to be a member of the storm sorcerers",
             "Elder Thunderclap": "Keeper of ancient legends and lore at the temple",
             "Charmed Charmcaster": "Shopkeeper renowned for protective lightning charms",
         },
-        "5 top religions": [
+        "Top Religions": [
             "God of Storms",
             "Elemental Thunderlords",
             "Tempestor",
             "Celestial Thundercallers",
             "Ancestral Thunderkin",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "A hidden tunnel network exists beneath Thunderhill for emergencies",
             "The Temple of the God of Storms holds a sacred artifact linked to the storms",
             "The town's lightning rod charms are infused with ancient magic",
             "The plateau viewpoint conceals an entrance to a labyrinthine cave system",
             "A prophecy speaks of a day when Thunderhill will harness the storm's power",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Abyssal Gorge, a treacherous chasm on the plateau's edge",
             "The Thunderstruck Bluffs, where lightning occasionally strikes",
             "The Shadowed Caves, rumored to be home to dangerous creatures",
             "The Forgotten Tunnel, a hidden passage prone to collapses",
             "The Stormcaller's Retreat, where powerful storms can manifest suddenly",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Thunderfest Grounds, alive with lightning-themed festivities",
             "The Temple of the God of Storms, a place of divine reverence and knowledge",
             "The Plateau Viewpoint, offering stunning vistas of the surrounding lands",
             "The Mystic Lightning Charms Emporium, for protective charms and trinkets",
             "The Lightningstruck Park, a tranquil oasis within the town's protective charms",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "45%",
             "Dwarf": "15%",
             "Half-Elf": "10%",
@@ -9442,7 +9546,7 @@ dnd_cities = {
             "Tiefling": "5%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Sorcerer": "10%",
             "Wizard": "10%",
             "Cleric": "10%",
@@ -9457,12 +9561,12 @@ dnd_cities = {
             "Warlock": "5%",
             "Other": "5%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "200,000 gp",
             "bottom 10% earners": "20 gp",
             "median earners": "5,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Stormwatch Supplies": 5,
             "Thunderstruck Forge": 8,
             "Mystic Lightning Charms Emporium": 10,
@@ -9472,7 +9576,7 @@ dnd_cities = {
             "Plateau Provisions": 7,
             "Bolted Clothier": 4,
         },
-        "services": {
+        "Services": {
             "Temple of the God of Storms": 3,
             "Thunderhill Inns": 8,
             "Plateau Stables": 5,
@@ -9544,79 +9648,81 @@ dnd_cities = {
             25: "The town's thunder hot springs are said to have rejuvenating properties, attracting visitors seeking renewal.",
         },
     },
-    "misty lakeside": {
-        "name": "Misty Lakeside",
-        "description": "Misty Lakeside is a medium-sized town located near the shores of a mysterious mist-covered lake. The town's existence is shaped by the enigmatic mist that occasionally brings forth creatures and objects from other planes.",
-        "narrative": "Misty Lakeside, a town of intrigue and mystery, is situated on the tranquil shores of a mist-covered lake. The town's existence revolves around the enigmatic mist that blankets the lake's surface, concealing its depths from prying eyes. As you approach Misty Lakeside, the first thing that strikes you is the ethereal mist that perpetually shrouds the lake, creating an atmosphere of eerie beauty. The townsfolk have embraced the mystical nature of their home, with buildings adorned in shades of blue and silver to mimic the ever-present mist. The streets are cobbled with translucent stones that seem to glow faintly, casting an eerie, enchanting light during the evening hours. Life in Misty Lakeside is marked by a sense of anticipation, as the lake's mists are known to occasionally bring forth creatures and objects from other planes. The town's residents have learned to coexist with these phenomena, and many make a living by studying and harnessing the power of the mysterious mist. The annual Mistwatch Festival is a highlight of the town, where visitors gather to witness the arrival of creatures and treasures from distant realms. The Mistwatch Tower, a grand observatory, stands at the lake's edge, serving as both a lookout and a research center for the phenomena. Misty Lakeside is a city of secrets, with rumors circulating about portals hidden beneath the lake's surface that connect to other planes of existence. The Temple of Mistral, a place of worship dedicated to the lake's mystical nature, is rumored to hold the key to understanding the origins of the mist. As you wander through Misty Lakeside's enigmatic streets, you can't help but feel the sense of wonder and curiosity that permeates every corner of this town. It is a place where the boundaries between reality and the unknown are blurred, where mysteries from other planes manifest on the shores of the mist-covered lake.",
-        "place is known for": "the annual Mistwatch Festival",
-        "amount of land": "400 acres",
-        "population": 3200,
-        "number of buildings": 500,
-        "crime rate": "4%",
-        "Neighboring cities and towns": {
+
+
+    "Misty lakeside": {
+        "Name": "Misty Lakeside",
+        "Description": "Misty Lakeside is a medium-sized town located near the shores of a mysterious mist-covered lake. The town's existence is shaped by the enigmatic mist that occasionally brings forth creatures and objects from other planes.",
+        "Narrative": "Misty Lakeside, a town of intrigue and mystery, is situated on the tranquil shores of a mist-covered lake. The town's existence revolves around the enigmatic mist that blankets the lake's surface, concealing its depths from prying eyes. As you approach Misty Lakeside, the first thing that strikes you is the ethereal mist that perpetually shrouds the lake, creating an atmosphere of eerie beauty. The townsfolk have embraced the mystical nature of their home, with buildings adorned in shades of blue and silver to mimic the ever-present mist. The streets are cobbled with translucent stones that seem to glow faintly, casting an eerie, enchanting light during the evening hours. Life in Misty Lakeside is marked by a sense of anticipation, as the lake's mists are known to occasionally bring forth creatures and objects from other planes. The town's residents have learned to coexist with these phenomena, and many make a living by studying and harnessing the power of the mysterious mist. The annual Mistwatch Festival is a highlight of the town, where visitors gather to witness the arrival of creatures and treasures from distant realms. The Mistwatch Tower, a grand observatory, stands at the lake's edge, serving as both a lookout and a research center for the phenomena. Misty Lakeside is a city of secrets, with rumors circulating about portals hidden beneath the lake's surface that connect to other planes of existence. The Temple of Mistral, a place of worship dedicated to the lake's mystical nature, is rumored to hold the key to understanding the origins of the mist. As you wander through Misty Lakeside's enigmatic streets, you can't help but feel the sense of wonder and curiosity that permeates every corner of this town. It is a place where the boundaries between reality and the unknown are blurred, where mysteries from other planes manifest on the shores of the mist-covered lake.",
+        "Place Is Known For": "the annual Mistwatch Festival",
+        "Amount Of Land": "400 acres",
+        "Population": 3200,
+        "Number of Buildings": 500,
+        "Crime Rate": "4%",
+        "Neighboring Cities And Towns": {
             "Foghaven": "15 miles northeast",
             "Whispering Pines": "10 miles west",
             "Ethereal Shores": "20 miles south",
             "Abyssal Cove": "30 miles southeast",
             "Aurora Springs": "25 miles north",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Mist-covered lake with ever-shifting mists",
             "Translucent cobblestone streets glowing in the misty light",
             "Mysterious portals occasionally appearing on the lake's surface",
             "Mistwatch Tower, a grand observatory at the lake's edge",
             "Ethereal flora that thrives in the town's unique atmosphere",
         ],
-        "5 key features": [
+        "Key Features": [
             "Mistwatch Tower, an observatory and research center",
             "Temple of Mistral, a place of worship for the lake's mysteries",
             "Mystic Traders' Bazaar, where goods from other planes are sold",
             "Mistborn Inn, a gathering place for travelers and researchers",
             "Mystic Enchantment Emporium, specializing in mist-infused items",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The lake's mists conceal portals to other planes of existence",
             "The Temple of Mistral holds the key to understanding the mist's origins",
             "Misty Lakeside was founded by explorers drawn to the lake's mysteries",
             "Creatures and objects occasionally arrive from distant realms via the mist",
             "Mistwardens, guardians of the town, harness the power of the mist",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Mistwarden Selene": "Leader of the Mistwardens, protectors of the town",
             "Professor Thalos": "Renowned researcher of interplanar phenomena",
             "High Priestess Lysara": "Spiritual leader of the Temple of Mistral",
             "Aldric the Mystic Trader": "Merchant specializing in exotic goods",
             "Innkeeper Elara": "Proprietor of the Mistborn Inn, a hub for travelers",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Mistral",
             "Planar Seekers",
             "Ethereal Serenity",
             "Abyssal Watchers",
             "Aurora Faith",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "Hidden portals beneath the lake connect to distant planes of existence",
             "The lake's mists reveal glimpses of otherworldly landscapes and beings",
             "The Mistwardens have a secret chamber where they study interplanar phenomena",
             "Mistborn Inn offers special mist-infused drinks with unusual effects",
             "A hidden library in Mistwatch Tower contains forbidden knowledge of the mists",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Veiled Abyss, a mist-covered area with unpredictable interplanar effects",
             "The Shifting Shoreline, where the lake's edge is constantly changing",
             "The Whispering Thicket, a dense forest where echoes can lead you astray",
             "The Abyssal Trench, a deep underwater chasm filled with unknown creatures",
             "The Mistborne Rift, a place where the mists converge into chaotic anomalies",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Mistwatch Tower's observatory for breathtaking views of the lake",
             "The Temple of Mistral for serene contemplation of the lake's mysteries",
             "The Mystic Traders' Bazaar for exotic goods and rare artifacts",
             "Mistborn Inn for a cozy atmosphere and mist-infused drinks",
             "The Mistborn Enchantment Emporium for unique magical items",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "40%",
             "Elf": "20%",
             "Gnome": "10%",
@@ -9627,7 +9733,7 @@ dnd_cities = {
             "Firbolg": "3%",
             "Other": "7%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Wizard": "10%",
             "Sorcerer": "8%",
             "Cleric": "7%",
@@ -9642,12 +9748,12 @@ dnd_cities = {
             "Fighter": "5%",
             "Other": "5%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "500,000 gp",
             "bottom 10% earners": "50 gp",
             "median earners": "20,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Mystic Traders' Bazaar": 10,
             "Ethereal Enchantments": 15,
             "Mistforged Artifacts": 12,
@@ -9661,7 +9767,7 @@ dnd_cities = {
             "The Misty Apothecary (Herbs and Potions)": 5,
             "Interdimensional Oddities and Antiques": 2,
         },
-        "services": {
+        "Services": {
             "Mistwatch Tower Observatory Tours": 10,
             "The Mistborn Inn and Tavern": 15,
             "Interplanar Expeditions and Tours": 5,
@@ -9733,78 +9839,80 @@ dnd_cities = {
             25: "The town's misty atmosphere is believed to have healing properties, attracting those seeking rejuvenation."
         },
     },
-    "stonecliff" : {
-        "name": "Stonecliff",
-        "description": "Stonecliff is a small town nestled within the rugged, towering cliffs of a rocky landscape. The town's inhabitants have made their home amidst the challenging terrain, and it is said to hold a secret related to an ancient dwarven king's hidden treasure.",
-        "narrative": "Stonecliff, a modest town nestled within the harsh embrace of towering cliffs, stands as a testament to resilience and adaptability. As you approach Stonecliff, you are greeted by the sight of sturdy stone buildings built directly into the rocky outcrops, seamlessly blending with the natural formations. The townsfolk have ingeniously carved dwellings, walkways, and even a marketplace within the cliffs themselves. Narrow stone bridges span chasms, connecting the different sections of the town, and torches cast a warm glow over the rugged terrain. Stonecliff's lore is steeped in mystery and legend. It is whispered that this town was the last refuge of an ancient dwarven king, who sought to protect his most prized possession: a treasure of untold wealth and power. The whereabouts of this treasure remain a closely guarded secret, passed down through generations in hushed tones. The town's economy relies heavily on mining and stonecrafting, with skilled artisans creating intricate sculptures and jewelry from the precious gems and metals found within the cliffs. The annual Stonecarver's Festival is a highlight of the town's calendar, where craftsmen display their finest works, and traders from distant lands seek the town's renowned gemstones. Life in Stonecliff is centered around the rugged terrain, and the townsfolk have developed remarkable climbing skills to navigate the cliffs with ease. The town's Temple of Moradin, the dwarven deity, serves as a place of worship and a focal point of the community's spiritual life. Stonecliff is a town where secrets lurk in the depths of the earth, and adventurers are drawn by the promise of uncovering the hidden treasure of the dwarven king. Tales speak of perilous journeys into uncharted tunnels and caverns beneath the town, where traps and guardians protect the ancient wealth. Stonecliff is also known for its hearty cuisine, with dishes featuring locally foraged mushrooms and herbs that thrive in the rocky terrain. As you explore Stonecliff's winding pathways and hidden alcoves, you can't help but sense the intrigue and anticipation that fill the air. It is a place where determination and the allure of hidden riches converge, offering adventurers the promise of glory or peril in equal measure.",
-        "place is known for": "the annual Stonecarver's Festival",
-        "amount of land": "200 acres",
-        "population": 1500,
-        "number of buildings": 300,
-        "crime rate": "5%",
-        "Neighboring cities and towns": {
+
+
+    "Stonecliff" : {
+        "Name": "Stonecliff",
+        "Description": "Stonecliff is a small town nestled within the rugged, towering cliffs of a rocky landscape. The town's inhabitants have made their home amidst the challenging terrain, and it is said to hold a secret related to an ancient dwarven king's hidden treasure.",
+        "Narrative": "Stonecliff, a modest town nestled within the harsh embrace of towering cliffs, stands as a testament to resilience and adaptability. As you approach Stonecliff, you are greeted by the sight of sturdy stone buildings built directly into the rocky outcrops, seamlessly blending with the natural formations. The townsfolk have ingeniously carved dwellings, walkways, and even a marketplace within the cliffs themselves. Narrow stone bridges span chasms, connecting the different sections of the town, and torches cast a warm glow over the rugged terrain. Stonecliff's lore is steeped in mystery and legend. It is whispered that this town was the last refuge of an ancient dwarven king, who sought to protect his most prized possession: a treasure of untold wealth and power. The whereabouts of this treasure remain a closely guarded secret, passed down through generations in hushed tones. The town's economy relies heavily on mining and stonecrafting, with skilled artisans creating intricate sculptures and jewelry from the precious gems and metals found within the cliffs. The annual Stonecarver's Festival is a highlight of the town's calendar, where craftsmen display their finest works, and traders from distant lands seek the town's renowned gemstones. Life in Stonecliff is centered around the rugged terrain, and the townsfolk have developed remarkable climbing skills to navigate the cliffs with ease. The town's Temple of Moradin, the dwarven deity, serves as a place of worship and a focal point of the community's spiritual life. Stonecliff is a town where secrets lurk in the depths of the earth, and adventurers are drawn by the promise of uncovering the hidden treasure of the dwarven king. Tales speak of perilous journeys into uncharted tunnels and caverns beneath the town, where traps and guardians protect the ancient wealth. Stonecliff is also known for its hearty cuisine, with dishes featuring locally foraged mushrooms and herbs that thrive in the rocky terrain. As you explore Stonecliff's winding pathways and hidden alcoves, you can't help but sense the intrigue and anticipation that fill the air. It is a place where determination and the allure of hidden riches converge, offering adventurers the promise of glory or peril in equal measure.",
+        "Place Is Known For": "the annual Stonecarver's Festival",
+        "Amount Of Land": "200 acres",
+        "Population": 1500,
+        "Number of Buildings": 300,
+        "Crime Rate": "5%",
+        "Neighboring Cities And Towns": {
             "Rockhaven": "15 miles northeast",
             "Cliffside Hold": "10 miles northwest",
             "Stonemeadow": "8 miles south",
             "Ironforge Outpost": "20 miles east",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Towering cliffs that envelop the town",
             "Stone bridges connecting different levels of the town",
             "Hidden tunnels and caverns within the rocky landscape",
             "Precious gemstone veins running through the cliffs",
             "The Temple of Moradin, a sacred dwarven site",
         ],
-        "5 key features": [
+        "Key Features": [
             "Stonecarver's Plaza, a hub for artisans and traders",
             "The Hidden Tunnels, rumored to hide the dwarven king's treasure",
             "Dwarven Embassy, a diplomatic center for relations with other races",
             "Gemstone Market, where rare gems and minerals are traded",
             "Cliffside Inn, a popular establishment for travelers and adventurers",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The ancient dwarven king's treasure remains hidden in the depths",
             "Stonecliff was founded by dwarven refugees seeking refuge from a cataclysm",
             "The Temple of Moradin is said to hold ancient dwarven relics",
             "Hidden tunnels beneath the town are filled with traps and guardians",
             "Local mushrooms and herbs are prized for their unique flavors",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Thrain Stonecarver": "Master gemstone artisan and festival organizer",
             "Dorin Ironbeard": "Guardian of the Hidden Tunnels",
             "Lady Eilin Hammerfist": "Dwarven ambassador to other towns",
             "Gilda Mossfoot": "Herbalist and forager of local ingredients",
             "Fenrik Deepdelve": "Innkeeper of the Cliffside Inn",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Moradin",
             "Berronar Truesilver",
             "Sharindlar",
             "Gorm Gulthyn",
             "Dugmaren Brightmantle",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The location of the dwarven king's treasure is encoded in ancient runestones.",
             "Stonecliff's hidden tunnels are home to mysterious, sentient crystals.",
             "A network of underground hot springs provides warmth and sustenance.",
             "The town's guards secretly train in rock-climbing techniques.",
             "The Temple of Moradin has a hidden chamber with ancient dwarven relics.",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Chasm of Echoes, a treacherous ravine with unstable cliffs",
             "The Forgotten Caverns, where dangerous creatures lurk",
             "The Abyssal Depths, a network of uncharted tunnels",
             "The Shattered Bridge, a bridge rumored to be cursed",
             "The Labyrinthine Tunnels, where travelers can easily get lost",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "Stonecarver's Plaza during the annual festival",
             "The Hidden Tunnels with a guide experienced in dwarven lore",
             "The Gemstone Market for rare and exquisite gemstones",
             "The Temple of Moradin for spiritual reflection",
             "Cliffside Inn for a taste of local cuisine and a cozy atmosphere",
         ],
-        "races": {
+        "Race Makeup": {
             "Dwarf": "40%",
             "Human": "25%",
             "Gnome": "10%",
@@ -9814,7 +9922,7 @@ dnd_cities = {
             "Tiefling": "2%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Barbarian": "1%",
             "Bard": "5%",
             "Cleric": "5%",
@@ -9829,12 +9937,12 @@ dnd_cities = {
             "Wizard": "2%",
             "Other": "5%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "100,000 gp",
             "bottom 10% earners": "10 gp",
             "median earners": "20,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Stonecarver's Emporium": 10,
             "Dwarven Crafts and Artifacts": 15,
             "Gemstone Traders": 12,
@@ -9848,7 +9956,7 @@ dnd_cities = {
             "Dwarven Distillery": 5,
             "Miner's Guild Supplies": 2,
         },
-        "services": {
+        "Services": {
             "Temple of Moradin": 10,
             "Inns and Taverns": 15,
             "Stable and Mount Rentals": 5,
@@ -9920,78 +10028,80 @@ dnd_cities = {
             25: "The cliffs are home to an ancient and rare species of moss found nowhere else.",
         },
     },
-    "embergrove" : {
-        "name": "Embergrove",
-        "description": "Embergrove is a quaint, small town with an enchanting ambiance, where firefly-lit streets create a magical and mysterious atmosphere.",
-        "narrative": "Embergrove, a charming and cozy small town, is a hidden gem in the realm. Nestled in a lush forest, the town is known for its unique feature—the firefly-lit streets. As you approach Embergrove, you are welcomed by the warm glow of countless fireflies that flit about the town, casting an enchanting light upon its cobblestone streets. The fireflies create a mesmerizing display of flickering lights, illuminating the town in an ever-changing dance of luminescence. Embergrove's residents have long believed that these fireflies carry the memories of the town's oldest inhabitants. The townsfolk often gather in the evening to watch the fireflies and share stories of their ancestors, believing that the memories of past generations are preserved within the tiny, radiant insects. The heart of Embergrove is the Memory Square, a tranquil park where the largest congregation of fireflies can be found. It is a place of reflection and remembrance, where residents go to connect with their heritage and seek guidance from the memories of their forebears. Life in Embergrove is centered around community and tradition. The town hosts regular festivals and events celebrating its unique heritage, with the fireflies taking center stage in these celebrations. The annual Firefly Festival is a highlight, featuring music, dance, and the release of thousands of fireflies into the night sky. Visitors from all over the realm come to witness the breathtaking spectacle. Embergrove is a city of secrets, and the mystery of the fireflies continues to baffle scholars and enchant adventurers. Some believe that the fireflies are a manifestation of the spirits of the town's founders, while others seek to unlock the hidden knowledge within the insects' glow. The Firefly Guild, a secretive organization of scholars, is dedicated to unraveling the secrets of the fireflies and their connection to the town's history. As you explore Embergrove's firefly-lit streets, you can't help but feel the warmth and wonder that permeate every corner of this mystical town. It is a place where the past is alive in the present, where memories are preserved in the glow of tiny insects, and where the community cherishes its unique and mysterious heritage.",
-        "place is known for": "the annual Firefly Festival",
-        "amount of land": "300 acres",
-        "population": 2800,
-        "number of buildings": 450,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Embergrove" : {
+        "Name": "Embergrove",
+        "Description": "Embergrove is a quaint, small town with an enchanting ambiance, where firefly-lit streets create a magical and mysterious atmosphere.",
+        "Narrative": "Embergrove, a charming and cozy small town, is a hidden gem in the realm. Nestled in a lush forest, the town is known for its unique feature—the firefly-lit streets. As you approach Embergrove, you are welcomed by the warm glow of countless fireflies that flit about the town, casting an enchanting light upon its cobblestone streets. The fireflies create a mesmerizing display of flickering lights, illuminating the town in an ever-changing dance of luminescence. Embergrove's residents have long believed that these fireflies carry the memories of the town's oldest inhabitants. The townsfolk often gather in the evening to watch the fireflies and share stories of their ancestors, believing that the memories of past generations are preserved within the tiny, radiant insects. The heart of Embergrove is the Memory Square, a tranquil park where the largest congregation of fireflies can be found. It is a place of reflection and remembrance, where residents go to connect with their heritage and seek guidance from the memories of their forebears. Life in Embergrove is centered around community and tradition. The town hosts regular festivals and events celebrating its unique heritage, with the fireflies taking center stage in these celebrations. The annual Firefly Festival is a highlight, featuring music, dance, and the release of thousands of fireflies into the night sky. Visitors from all over the realm come to witness the breathtaking spectacle. Embergrove is a city of secrets, and the mystery of the fireflies continues to baffle scholars and enchant adventurers. Some believe that the fireflies are a manifestation of the spirits of the town's founders, while others seek to unlock the hidden knowledge within the insects' glow. The Firefly Guild, a secretive organization of scholars, is dedicated to unraveling the secrets of the fireflies and their connection to the town's history. As you explore Embergrove's firefly-lit streets, you can't help but feel the warmth and wonder that permeate every corner of this mystical town. It is a place where the past is alive in the present, where memories are preserved in the glow of tiny insects, and where the community cherishes its unique and mysterious heritage.",
+        "Place Is Known For": "the annual Firefly Festival",
+        "Amount Of Land": "300 acres",
+        "Population": 2800,
+        "Number of Buildings": 450,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Glimmerbrook": "10 miles north",
             "Lumina Springs": "15 miles east",
             "Shadowvale": "20 miles south",
             "Fernwood": "12 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Firefly-lit cobblestone streets that glow at night",
             "Lush forest surrounding the town",
             "Memory Square, a tranquil park with the most fireflies",
             "The Emberwood Inn, a popular gathering place for residents and travelers",
             "The Whispering Stream, a gentle brook that winds through the town",
         ],
-        "5 key features": [
+        "Key Features": [
             "Memory Square, a park where fireflies gather in abundance",
             "The Emberwood Inn, known for its cozy atmosphere and local tales",
             "The Firefly Guild, a secretive organization dedicated to unraveling the fireflies' mysteries",
             "The Firefly Festival Grounds, where the annual festival takes place",
             "The Memory Keepers' Shrine, a place of reverence for the town's ancestors",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "Fireflies in Embergrove are believed to carry the memories of the town's oldest residents",
             "The Memory Keepers' Shrine holds relics of the town's founders",
             "The Firefly Guild possesses ancient texts about the history of the fireflies",
             "During the Firefly Festival, wishes made upon the fireflies are said to come true",
             "Visitors who connect with the fireflies may experience vivid ancestral memories",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Mayor Elira Emberlight": "Leader of Embergrove and a staunch protector of its traditions",
             "Faelan Firegaze": "Firefly scholar and head of the Firefly Guild",
             "Elyssia Moonshadow": "Innkeeper of the Emberwood Inn and storyteller extraordinaire",
             "Thoren Whisperbrook": "Bard renowned for composing songs inspired by the fireflies",
             "Sylvana Greenthorn": "Guardian of the Memory Keepers' Shrine and keeper of ancestral relics",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Ancestor Worship",
             "Eidolon",
             "Selenia",
             "Luminaris",
             "Eternal Flame",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "Fireflies' memories can be unlocked through a rare ritual known only to a few",
             "The fireflies' glow can reveal hidden paths in the surrounding forest",
             "Embergrove's founders were rumored to have a special bond with the fireflies",
             "The Memory Keepers' Shrine is said to hold a portal to a hidden realm of memories",
             "The fireflies' light has a calming effect, reducing stress and anxiety in those who watch them",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Enchanted Thicket, a dense forest with magical illusions that disorient travelers",
             "The Shadowy Hollow, a mysterious glen where strange apparitions are said to appear",
             "The Whispering Glen, where eerie whispers from the past unsettle visitors",
             "The Emberwood Swamp, known for treacherous quicksand and venomous creatures",
             "The Misty Caverns, a network of underground tunnels that can be disorienting",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "Memory Square, the heart of Embergrove's firefly magic",
             "The Emberwood Inn, for stories and camaraderie",
             "The Firefly Guild's Library, filled with ancient tomes on the fireflies' history",
             "The Firefly Festival Grounds, during the annual celebration",
             "The Memory Keepers' Shrine, for a deeper connection with the town's heritage",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "50%",
             "Halfling": "15%",
             "Elf": "10%",
@@ -10002,7 +10112,7 @@ dnd_cities = {
             "Firbolg": "1%",
             "Other": "1%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Bard": "15%",
             "Cleric": "10%",
             "Druid": "20%",
@@ -10012,12 +10122,12 @@ dnd_cities = {
             "Wizard": "10%",
             "Other": "10%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "100,000 gp",
             "bottom 10% earners": "10 gp",
             "median earners": "20,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Firefly Trinkets and Keepsakes": 5,
             "Emberwood Potions and Elixirs": 6,
             "Memory Emporium": 4,
@@ -10027,7 +10137,7 @@ dnd_cities = {
             "Luminous Crystals and Gems": 4,
             "Fae Wonders and Oddities": 3,
         },
-        "services": {
+        "Services": {
             "Memory Restorations": 4,
             "Emberwood Inn and Tavern": 6,
             "The Firefly Ritualist": 3,
@@ -10086,78 +10196,80 @@ dnd_cities = {
             25: "Visitors are encouraged to wear firefly-inspired accessories as a sign of respect for the town's unique heritage.",
         },
     },
-    "willow lakeside" : {
-        "name": "Willow Lakeside",
-        "description": "Willow Lakeside is a quaint and idyllic small town nestled along the tranquil shore of a picturesque lake. Its residents live in harmony with nature, but the town faces a looming crisis as the once-plentiful lake slowly dries up, and the cause remains a mystery.",
-        "narrative": "Willow Lakeside, a charming and serene small town, is a hidden gem along the tranquil shore of a picturesque lake. As you approach Willow Lakeside, you are welcomed by the sight of quaint cottages with thatched roofs, surrounded by lush willow trees that cast their graceful shadows on the cobblestone streets. The town exudes a sense of peacefulness and serenity, and the gentle sound of the lake's waters lapping against the shore fills the air. Willow Lakeside is home to a tight-knit community of 1,900 residents who live in harmony with the natural beauty that surrounds them. The townsfolk are known for their hospitality and their deep connection to the land and water. Fishing and boating are a way of life here, and the town's economy thrives on the abundant fish from the lake. However, a looming crisis has cast a shadow over Willow Lakeside. The once-plentiful lake is slowly drying up, and the cause remains a mystery. This cataclysmic event has sparked concern and uncertainty among the townsfolk, as their way of life is threatened. The town's leaders have called upon adventurers to help uncover the source of the problem and find a solution before the lake dries up completely. The annual Lakeside Festival, a celebration of the town's connection to the lake, has taken on a bittersweet tone in recent years as the water levels continue to drop. Willow Lakeside's residents are known for their resourcefulness, and they have started digging wells and exploring underground water sources in a desperate attempt to find water. Temples to nature deities like Eldath and Umberlee are places of solace, where prayers are offered to restore the lake's vitality. As you walk through Willow Lakeside's picturesque streets, you can't help but be touched by the sense of community and resilience that pervades the town. It is a place where the bond between the townsfolk and the lake runs deep, and the mystery of the drying lake has become a shared quest for survival and hope.",
-        "place is known for": "the annual Lakeside Festival",
-        "amount of land": "200 acres",
-        "population": 1900,
-        "number of buildings": 300,
-        "crime rate": "1%",
-        "Neighboring cities and towns": {
+
+
+    "Willow lakeside" : {
+        "Name": "Willow Lakeside",
+        "Description": "Willow Lakeside is a quaint and idyllic small town nestled along the tranquil shore of a picturesque lake. Its residents live in harmony with nature, but the town faces a looming crisis as the once-plentiful lake slowly dries up, and the cause remains a mystery.",
+        "Narrative": "Willow Lakeside, a charming and serene small town, is a hidden gem along the tranquil shore of a picturesque lake. As you approach Willow Lakeside, you are welcomed by the sight of quaint cottages with thatched roofs, surrounded by lush willow trees that cast their graceful shadows on the cobblestone streets. The town exudes a sense of peacefulness and serenity, and the gentle sound of the lake's waters lapping against the shore fills the air. Willow Lakeside is home to a tight-knit community of 1,900 residents who live in harmony with the natural beauty that surrounds them. The townsfolk are known for their hospitality and their deep connection to the land and water. Fishing and boating are a way of life here, and the town's economy thrives on the abundant fish from the lake. However, a looming crisis has cast a shadow over Willow Lakeside. The once-plentiful lake is slowly drying up, and the cause remains a mystery. This cataclysmic event has sparked concern and uncertainty among the townsfolk, as their way of life is threatened. The town's leaders have called upon adventurers to help uncover the source of the problem and find a solution before the lake dries up completely. The annual Lakeside Festival, a celebration of the town's connection to the lake, has taken on a bittersweet tone in recent years as the water levels continue to drop. Willow Lakeside's residents are known for their resourcefulness, and they have started digging wells and exploring underground water sources in a desperate attempt to find water. Temples to nature deities like Eldath and Umberlee are places of solace, where prayers are offered to restore the lake's vitality. As you walk through Willow Lakeside's picturesque streets, you can't help but be touched by the sense of community and resilience that pervades the town. It is a place where the bond between the townsfolk and the lake runs deep, and the mystery of the drying lake has become a shared quest for survival and hope.",
+        "Place Is Known For": "the annual Lakeside Festival",
+        "Amount Of Land": "200 acres",
+        "Population": 1900,
+        "Number of Buildings": 300,
+        "Crime Rate": "1%",
+        "Neighboring Cities And Towns": {
             "Birchwood Village": "10 miles north",
             "Stonebridge": "15 miles east",
             "Azure Harbor": "20 miles south",
             "Thornhill": "12 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Picturesque lakeside cottages with thatched roofs",
             "Graceful willow trees casting shadows on cobblestone streets",
             "Tranquil lake waters lapping gently against the shore",
             "Quaint fishing docks and boat rental stations",
             "Mysterious caves along the lake's edge",
         ],
-        "5 key features": [
+        "Key Features": [
             "Eldath's Tranquil Sanctuary, a temple of solace and hope",
             "Umberlee's Shrine, where prayers are offered to restore the lake",
             "Lakeside Market Square, bustling with local vendors and fishermen",
             "Fishermen's Guild Hall, where strategies to save the lake are discussed",
             "The Drying Lake Inn, a popular gathering place for travelers and adventurers",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The lake's drying is seen as an omen of impending disaster",
             "Legends speak of hidden underwater caves beneath the lake's surface",
             "Umberlee, the sea goddess, is believed to hold the lake's fate in her hands",
             "The town's founder was a skilled fisherman who made a pact with a water spirit",
             "The lake was once teeming with magical fish rumored to grant wishes",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Mayor Elara Willowbrook": "Leader of Willow Lakeside and a voice of hope",
             "Fisherman Joren Whitewater": "Respected for his knowledge of the lake's secrets",
             "Sister Elowen of Eldath": "Spiritual guide and caretaker of Eldath's Sanctuary",
             "Captain Thalos Stormrider": "Oversees the efforts to find the lake's source",
             "Innkeeper Elira Watersong": "Runs The Drying Lake Inn and provides information to travelers",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Eldath",
             "Umberlee",
             "Chauntea",
             "Mielikki",
             "Lathander",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "A hidden underwater cave is said to hold the key to the lake's restoration",
             "The town's founder is rumored to have left a cryptic message about the lake",
             "A magical conch shell, lost in the lake, may hold clues to the mystery",
             "Eldath's Sanctuary is said to have a hidden chamber with ancient wisdom",
             "Umberlee's Shrine is rumored to possess a sacred relic of great power",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Cracked Basin, where the lake's waters have disappeared entirely",
             "The Murmuring Marshes, a swampy area filled with eerie sounds",
             "The Abandoned Fishermen's Village, where buildings stand vacant",
             "The Droughtstruck Quarry, a desolate place where rocks bear witness to the drying lake",
             "The Whispering Caves, said to be inhabited by mysterious creatures",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "Eldath's Tranquil Sanctuary, a place of peace and reflection",
             "The Lakeside Market Square, where locals gather to share stories",
             "Umberlee's Shrine, offering prayers for the lake's restoration",
             "The Fishermen's Guild Hall, where plans to save the lake are hatched",
             "The Drying Lake Inn, a hub of activity and information for travelers",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "75%",
             "Halfling": "10%",
             "Elf": "5%",
@@ -10167,7 +10279,7 @@ dnd_cities = {
             "Tiefling": "1%",
             "Other": "10%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Fighter": "10%",
             "Ranger": "8%",
             "Cleric": "5%",
@@ -10179,12 +10291,12 @@ dnd_cities = {
             "Warlock": "2%",
             "Other": "4%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "60,000 gp",
             "bottom 10% earners": "500 gp",
             "median earners": "8,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Lakeside Provisions": 5,
             "Willow's Herbs and Remedies": 3,
             "Fishermen's Supply Store": 4,
@@ -10195,7 +10307,7 @@ dnd_cities = {
             "Watersong Inn's Gift Shop": 1,
             "The Cryptic Conch": 1,
         },
-        "services": {
+        "Services": {
             "Eldath's Sanctuary Refuge": 2,
             "Healing Springs Clinic": 3,
             "Fishermen's Guild Services": 4,
@@ -10266,79 +10378,81 @@ dnd_cities = {
             25: "Willow's Botanical Garden is a lush oasis featuring unique plants and flora from the region."
         },
     },
-    "shadowford" : {
-        "name": "Shadowford",
-        "description": "Shadowford is a medium-sized town nestled within the heart of a dark and marshy forest. The town's eerie atmosphere is shrouded in mystery, and its inhabitants are known for their connection to an ancient elven ritual that can commune with lost spirits.",
-        "narrative": "Shadowford, a town of enigmatic allure, lies hidden deep within a dark and marshy forest. The town's eerie atmosphere is palpable as you approach, with wisps of mist drifting between gnarled trees, and the distant croaking of marsh creatures echoing through the dense foliage. The town itself seems to emerge from the shadows, its buildings constructed from dark timber and moss-covered stone, blending seamlessly with the surrounding environment. The people of Shadowford are a resilient and enigmatic lot, and they are bound together by a shared secret—a connection to an ancient elven ritual known only to a select few. This ritual allows them to commune with lost spirits, seeking guidance from the ethereal realm. The annual Shadow Moon Festival is a major event in the town, during which the townsfolk gather at the heart of the marsh to perform the ritual and honor their ancestors. Shadowford's marsh, though foreboding, is believed to hold the key to this mystical tradition. The town is divided into districts, each with its own unique character. The Marsh Quarter, closest to the swamp's edge, houses those who are most attuned to the marsh's secrets. The Market Square bustles with traders who bring rare herbs and exotic ingredients from the forest. The Shadowed Grove, a sacred grove at the town's center, is where the elven ritual is performed during the festival. The Spooky Hollows, a network of dimly lit alleys, is home to secretive individuals and clandestine meetings. Shadowford is a town of mysteries and whispered legends. Rumors abound of spirits that wander the marsh at night, and some say that the town's guardian, an ancient treant known as Oakshade, watches over the town's well-being. The town's library, known as the Tome of Shadows, contains ancient scrolls and books related to the elven ritual and the marsh's history. As you wander through Shadowford's eerie streets, you can't help but feel the weight of history and the palpable connection between the living and the departed. It is a place where the boundaries between the mortal realm and the spirit world blur, casting a perpetual shadow over the town's enigmatic existence.",
-        "place is known for": "the annual Shadow Moon Festival",
-        "amount of land": "200 acres",
-        "population": 3400,
-        "number of buildings": 500,
-        "crime rate": "4%",
-        "Neighboring cities and towns": {
+
+
+    "Shadowford" : {
+        "Name": "Shadowford",
+        "Description": "Shadowford is a medium-sized town nestled within the heart of a dark and marshy forest. The town's eerie atmosphere is shrouded in mystery, and its inhabitants are known for their connection to an ancient elven ritual that can commune with lost spirits.",
+        "Narrative": "Shadowford, a town of enigmatic allure, lies hidden deep within a dark and marshy forest. The town's eerie atmosphere is palpable as you approach, with wisps of mist drifting between gnarled trees, and the distant croaking of marsh creatures echoing through the dense foliage. The town itself seems to emerge from the shadows, its buildings constructed from dark timber and moss-covered stone, blending seamlessly with the surrounding environment. The people of Shadowford are a resilient and enigmatic lot, and they are bound together by a shared secret—a connection to an ancient elven ritual known only to a select few. This ritual allows them to commune with lost spirits, seeking guidance from the ethereal realm. The annual Shadow Moon Festival is a major event in the town, during which the townsfolk gather at the heart of the marsh to perform the ritual and honor their ancestors. Shadowford's marsh, though foreboding, is believed to hold the key to this mystical tradition. The town is divided into districts, each with its own unique character. The Marsh Quarter, closest to the swamp's edge, houses those who are most attuned to the marsh's secrets. The Market Square bustles with traders who bring rare herbs and exotic ingredients from the forest. The Shadowed Grove, a sacred grove at the town's center, is where the elven ritual is performed during the festival. The Spooky Hollows, a network of dimly lit alleys, is home to secretive individuals and clandestine meetings. Shadowford is a town of mysteries and whispered legends. Rumors abound of spirits that wander the marsh at night, and some say that the town's guardian, an ancient treant known as Oakshade, watches over the town's well-being. The town's library, known as the Tome of Shadows, contains ancient scrolls and books related to the elven ritual and the marsh's history. As you wander through Shadowford's eerie streets, you can't help but feel the weight of history and the palpable connection between the living and the departed. It is a place where the boundaries between the mortal realm and the spirit world blur, casting a perpetual shadow over the town's enigmatic existence.",
+        "Place Is Known For": "the annual Shadow Moon Festival",
+        "Amount Of Land": "200 acres",
+        "Population": 3400,
+        "Number of Buildings": 500,
+        "Crime Rate": "4%",
+        "Neighboring Cities And Towns": {
             "Misthaven": "15 miles north",
             "Bogside": "8 miles east",
             "Gloomwood": "20 miles southeast",
             "Duskwald": "35 miles south",
             "Wraithspire": "10 miles west",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Eerie mist that blankets the marsh",
             "Gnarled and twisted trees that seem to reach for the sky",
             "Dimly lit pathways with flickering lanterns",
             "The Shadowed Grove, a sacred ritual site",
             "The Tome of Shadows, the town's ancient library",
         ],
-        "5 key features": [
+        "Key Features": [
             "Marsh Quarter, home to the marsh's secrets",
             "Market Square, bustling with traders and exotic goods",
             "Shadowed Grove, the heart of the elven ritual",
             "Spooky Hollows, a network of secretive alleys",
             "Tome of Shadows, housing ancient scrolls and books",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The marsh conceals ancient elven knowledge of spirit communion",
             "Oakshade, the guardian treant, watches over the town",
             "Spirits are said to wander the marsh at night",
             "The elven ritual during the Shadow Moon Festival seeks guidance from the departed",
             "The Tome of Shadows contains scrolls that hold the town's secrets",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Eldara Moonshadow": "Keeper of the Shadowed Grove",
             "Thorn Bramblethorn": "Market Square's charismatic trader",
             "Aelar Shadowbinder": "Custodian of the Tome of Shadows",
             "Silva Wraithcaller": "Mystical seer known for her visions",
             "Branthor Oakshade": "Ancient treant guardian of Shadowford",
         },
-        "5 top religions": [
+        "Top Religions": [
             "The Spiritbound Covenant",
             "Elara, Lady of Shadows",
             "Silvanus",
             "Mask, the God of Secrets",
             "Eidolon",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The Marsh Quarter holds hidden entrances to underground passages",
             "Shadowford's mist is rumored to be a gateway to the spirit world",
             "The guardian treant, Oakshade, can communicate with the spirits",
             "The Tome of Shadows contains a map to an ancient burial site",
             "The Spooky Hollows hide a network of tunnels beneath the town",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Wailing Bog, where eerie cries are heard at night",
             "The Whispering Thicket, a dense forest with mysterious voices",
             "The Shrouded Swamp, known for treacherous quicksand",
             "The Murky Depths, a marshy area with hidden sinkholes",
             "The Ghostly Glade, where apparitions are said to roam",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Shadowed Grove, the heart of the elven ritual",
             "Market Square, bustling with traders and exotic goods",
             "The Tome of Shadows, housing ancient scrolls and books",
             "The Misty Bridge, a scenic walkway across the marsh",
             "The Spiritbound Sanctuary, where spiritual guidance is offered",
         ],
-        "races": {
+        "Race Makeup": {
             "Elf": "20%",
             "Human": "35%",
             "Halfling": "10%",
@@ -10349,7 +10463,7 @@ dnd_cities = {
             "Tiefling": "5%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Barbarian": "2%",
             "Bard": "5%",
             "Cleric": "5%",
@@ -10364,12 +10478,12 @@ dnd_cities = {
             "Wizard": "5%",
             "Other": "1%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "150,000 gp",
             "bottom 10% earners": "20 gp",
             "median earners": "8,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Shadowed Treasures": 5,
             "Mystic Herbs and Potions": 8,
             "Marshland Artifacts": 10,
@@ -10383,7 +10497,7 @@ dnd_cities = {
             "Spectral Wares": 2,
             "Antiques of the Elders": 1,
         },
-        "services": {
+        "Services": {
             "Spirit Communion Hall": 5,
             "Taverns of Shadows": 8,
             "Marshland Stables": 4,
@@ -10454,78 +10568,80 @@ dnd_cities = {
             25: "The town's ethereal hot springs are said to have restorative properties, attracting seekers of spiritual insight.",
         },
     },
-    "sunnyshore" : {
-        "name": "Sunnyshore",
-        "description": "Sunnyshore is a medium-sized coastal city known for its sunny, sandy shoreline. Beneath the seemingly idyllic beach lies a mysterious underground labyrinth rumored to be a gateway to another world.",
-        "narrative": "Sunnyshore, a charming coastal city, stretches along a picturesque sandy shoreline bathed in perpetual sunlight. The city is a haven for beach lovers, with crystal-clear waters that gently lap against the shore and an endless stretch of golden sand. Colorful umbrellas and beach towels dot the beach as residents and tourists bask in the warm, sunny weather. Surfboards and sailboats can be seen riding the waves, and the salty breeze carries the sounds of laughter and seaside melodies. As you stroll through Sunnyshore, the scent of saltwater and the gentle roar of the ocean waves fill the air, creating an atmosphere of relaxation and serenity. However, beneath the sun-soaked sands lies a well-guarded secret known to only a few. Legends speak of an underground labyrinth, concealed beneath the city's beaches, that is said to be a portal to another world. The entrance to this labyrinth remains hidden, known only to a secretive group of scholars and adventurers who seek the truth behind the legends. The city's population of 7,100 inhabitants enjoys a tranquil coastal lifestyle, making a living through fishing, trade, and tourism. The annual Sunnyshore Summer Festival is a highlight, featuring beach games, seafood feasts, and sandcastle-building competitions that attract visitors from far and wide. The city is governed by a council of coastal elders who oversee the welfare of the community and ensure the secret of the underground labyrinth remains protected. Sunnyshore is a place where the ordinary and the extraordinary coexist, where the sun's warmth masks the hidden mysteries that lie beneath the sand. Adventurers and scholars are drawn to this coastal gem in search of the truth, and the city's enchanting shores hide secrets waiting to be discovered.",
-        "place is known for": "the annual Sunnyshore Summer Festival",
-        "amount of land": "500 acres",
-        "population": 7100,
-        "number of buildings": 1000,
-        "crime rate": "4%",
-        "Neighboring cities and towns": {
+
+
+    "Sunnyshore" : {
+        "Name": "Sunnyshore",
+        "Description": "Sunnyshore is a medium-sized coastal city known for its sunny, sandy shoreline. Beneath the seemingly idyllic beach lies a mysterious underground labyrinth rumored to be a gateway to another world.",
+        "Narrative": "Sunnyshore, a charming coastal city, stretches along a picturesque sandy shoreline bathed in perpetual sunlight. The city is a haven for beach lovers, with crystal-clear waters that gently lap against the shore and an endless stretch of golden sand. Colorful umbrellas and beach towels dot the beach as residents and tourists bask in the warm, sunny weather. Surfboards and sailboats can be seen riding the waves, and the salty breeze carries the sounds of laughter and seaside melodies. As you stroll through Sunnyshore, the scent of saltwater and the gentle roar of the ocean waves fill the air, creating an atmosphere of relaxation and serenity. However, beneath the sun-soaked sands lies a well-guarded secret known to only a few. Legends speak of an underground labyrinth, concealed beneath the city's beaches, that is said to be a portal to another world. The entrance to this labyrinth remains hidden, known only to a secretive group of scholars and adventurers who seek the truth behind the legends. The city's population of 7,100 inhabitants enjoys a tranquil coastal lifestyle, making a living through fishing, trade, and tourism. The annual Sunnyshore Summer Festival is a highlight, featuring beach games, seafood feasts, and sandcastle-building competitions that attract visitors from far and wide. The city is governed by a council of coastal elders who oversee the welfare of the community and ensure the secret of the underground labyrinth remains protected. Sunnyshore is a place where the ordinary and the extraordinary coexist, where the sun's warmth masks the hidden mysteries that lie beneath the sand. Adventurers and scholars are drawn to this coastal gem in search of the truth, and the city's enchanting shores hide secrets waiting to be discovered.",
+        "Place Is Known For": "the annual Sunnyshore Summer Festival",
+        "Amount Of Land": "500 acres",
+        "Population": 7100,
+        "Number of Buildings": 1000,
+        "Crime Rate": "4%",
+        "Neighboring Cities And Towns": {
             "Seabreeze Harbor": "15 miles north",
             "Sandbar Cove": "8 miles east",
             "Coastal Haven": "20 miles southwest",
             "Sunset Bay": "30 miles south",
         },
-        "5 terrain features": [
+        "Terrain Features": [
             "Sunny, sandy beaches that stretch for miles",
             "Crystal-clear waters with vibrant marine life",
             "Coastal cliffs overlooking the ocean",
             "Palm tree-lined promenades and boardwalks",
             "Seaside caves that house hidden treasures",
         ],
-        "5 key features": [
+        "Key Features": [
             "Sandyshore Market, a bustling hub of seafood and beachside trinkets",
             "The Ocean's Bounty Inn, famous for its fresh catch of the day",
             "The Coastal Library, a repository of maritime knowledge",
             "The Lighthouse Plaza, offering panoramic views of the coast",
             "The Hidden Scholar's Society, guardians of the labyrinth's secret",
         ],
-        "5 local lores": [
+        "Local Lores": [
             "The underground labyrinth is said to connect with an alternate realm.",
             "Sunnyshore's founders were sailors who discovered the labyrinth's existence.",
             "The city's elders protect the secret of the labyrinth at all costs.",
             "Hidden clues within seashells are said to lead to the labyrinth's entrance.",
             "A mysterious seer can predict when the labyrinth's gateway will open.",
         ],
-        "5 popular people": {
+        "Popular People": {
             "Elder Marius": "Leader of the Coastal Council",
             "Captain Seabreeze": "Famed sailor and owner of The Ocean's Bounty Inn",
             "Sage Coraline": "Keeper of the Coastal Library's ancient maritime texts",
             "Surfer Leo": "Champion of the Sunnyshore Surfing Competition",
             "Adventurer Selene": "Renowned explorer in search of the labyrinth's truth",
         },
-        "5 top religions": [
+        "Top Religions": [
             "Sune",
             "Umberlee",
             "Eldath",
             "Talos",
             "Akadi",
         ],
-        "5 little-known secrets": [
+        "Little Known Secrets": [
             "The labyrinth's entrance is concealed beneath a specific tide pattern.",
             "Seashells contain hidden messages leading to the labyrinth's location.",
             "The Coastal Library holds maps and lore about the labyrinth's mysteries.",
             "The Ocean's Bounty Inn is rumored to have a secret passage to the labyrinth.",
             "The Coastal Council uses illusions to deter unwanted exploration of the labyrinth.",
         ],
-        "5 areas you should avoid": [
+        "Areas You Should Avoid": [
             "The Whispering Caves, where eerie echoes and strange lights are witnessed",
             "The Undertow Abyss, a dangerous area with treacherous currents",
             "The Seagull Roost, home to territorial seabirds",
             "The Shipwreck Graveyard, where sunken vessels hide dangers",
             "The Darkened Cove, a secluded spot where shadowy figures gather at night",
         ],
-        "5 areas best to visit": [
+        "Areas Best To Visit": [
             "The Sandyshore Market, filled with the aroma of freshly caught seafood",
             "The Beachfront Gardens, a serene oasis of coastal flora and fauna",
             "The Coastal Library, where ancient maritime knowledge is preserved",
             "The Lighthouse Plaza, offering breathtaking views of the coast and ocean",
             "The Hidden Scholar's Society, a secluded haven of knowledge seekers",
         ],
-        "races": {
+        "Race Makeup": {
             "Human": "60%",
             "Half-Elf": "10%",
             "Triton": "10%",
@@ -10535,7 +10651,7 @@ dnd_cities = {
             "Aarakocra": "2%",
             "Other": "5%",
         },
-        "classes": {
+        "Classes Makeup": {
             "Barbarian": "2%",
             "Bard": "5%",
             "Cleric": "5%",
@@ -10547,12 +10663,12 @@ dnd_cities = {
             "Wizard": "5%",
             "Other": "45%",
         },
-        "annual income": {
+        "Annual Income": {
             "top 10% earners": "150,000 gp",
             "bottom 10% earners": "5 gp",
             "median earners": "20,000 gp",
         },
-        "shops": {
+        "Shops": {
             "Sandyshore Seafood Market": 10,
             "Treasures of the Tides": 15,
             "Beachside Souvenirs": 12,
@@ -10566,7 +10682,7 @@ dnd_cities = {
             "Sunnyshore Spirits (Tavern)": 5,
             "The Hidden Chamber (Antiques)": 2,
         },
-        "services": {
+        "Services": {
             "Sunnyshore Community Center": 10,
             "The Ocean's Bounty Inn": 15,
             "Coastal Stables": 5,
@@ -11173,3 +11289,4 @@ dnd_cities = {
 # Mystery: The mist occasionally reveals glimpses of distant lands.
 
 }
+

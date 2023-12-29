@@ -26,7 +26,7 @@ def generate_character_image(
     number_of_images=1,
     ):
     chatgpt_dall_e_prompt_raw = f"""
-Optimize the following query so that it will create a well constructed query to create a DALL-E image - just provide me the new prompt and include as much details form what I originally provided:
+Optimize the following query to be a well constructed query to create a DALL-E image - just provide me the new prompt and include as much details form what I originally provided:
 '''
 Create a {image_style} style collage of a dnd 5e character, specifically for a {character_gender}, {character_age} year old, {character_race} {character_class}. 
 Their background is: {background_name}
@@ -37,7 +37,7 @@ Here is more descriptive traits: {description}
 """
     # input(chatgpt_dall_e_prompt_raw)
     chatgpt_dall_e_prompt = query_chatgpt(openai_key, chatgpt_dall_e_prompt_raw)
-    chatgpt_dall_e_prompt += f" Emphasize the image on the race [{character_race}] and class [{character_class}] of the character. The image should be a collage with three distinct sections: the character's face at an angle, a full head-to-toe view of the character from the front, and a full head-to-toe view from the rear. These views are intended to showcase the character's clothing and gear in detail."
+    chatgpt_dall_e_prompt += f" Emphasize the image on the race [{character_race}] and class [{character_class}] of the character. The image should consist of two distinct sections: the character's face at an angle, and full body head-to-toe view of the character from the front."
     # input(chatgpt_dall_e_prompt)
     chatgpt_dall_e_prompt = chatgpt_dall_e_prompt.strip()
     chatgpt_dall_e_prompt =  re.sub(r'[ ]+', ' ', chatgpt_dall_e_prompt)

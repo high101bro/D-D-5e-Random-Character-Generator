@@ -4,6 +4,7 @@ from simple_term_menu import TerminalMenu
 import pickle_handler
 from dnd_monsters import *
 from dnd_helper import *
+from dnd_generate_character import *
 # from menu import *
 import random, os, re
 from dnd_lists import *
@@ -120,22 +121,27 @@ def main(all_characters):
         char_in_battle.hp_total   = character.capabilities['combat']['hit_points']['total']
         char_in_battle.hp_current = character.capabilities['combat']['hit_points']['current']
         char_in_battle.speed      = character.capabilities['physical']['speed']
-        while True:
-            try:
-                user_roll = int(input(f"  {char_in_battle.name} the {char_in_battle.char_race} {char_in_battle.char_class}: "))
-                initiative_calc = int(character.attributes['dexterity']['modifier']) + user_roll
-                break
-            except:
-                print(f"Error, please input a number")
-        char_in_battle.initiative = initiative_calc
         char_in_battle.str        = int(character.attributes['strength']['modifier'])
         char_in_battle.dex        = int(character.attributes['constitution']['modifier'])
         char_in_battle.con        = int(character.attributes['dexterity']['modifier'])
         char_in_battle.int        = int(character.attributes['intelligence']['modifier'])
         char_in_battle.wis        = int(character.attributes['wisdom']['modifier'])
         char_in_battle.cha        = int(character.attributes['charisma']['modifier'])
+        while True:
+            user_roll = input(f"  Roll for {char_in_battle.name} the {char_in_battle.char_race} {char_in_battle.char_class}: ")
+            if user_roll == None or user_roll == "":
+                initiative_calc = dnd_roll_dice(dice_number=1,dice_sides=20,roll_modifier=char_in_battle.dex)
+                break
+            else:
+                try:
+                    user_roll = int(user_roll)
+                    initiative_calc = int(character.attributes['dexterity']['modifier']) + user_roll
+                    break
+                except:
+                    print(f"Error, please input a number")
+        char_in_battle.initiative = initiative_calc
         char_in_battle.attacks    = character.weapons
-        char_in_battle.skills     = character.capabilities['Skills']
+        char_in_battle.skills     = character.skills
         char_in_battle.effects    = []
         char_in_battle.friendly   = True
 
@@ -299,6 +305,7 @@ def main(all_characters):
 
 
     battle_in_initiative_order = []
+    temp_battle_characters = []
 
     def print_turn_banner():
         print(f"  ======================================================================================================================================================")
@@ -307,7 +314,7 @@ def main(all_characters):
 
 
     def get_hp_color(current, total):
-        hp_percentage = (current / total) * 100
+        hp_percentage = (int(current) / int(total)) * 100
 
         if hp_percentage > 75:
             return "\033[92m"  # Green
@@ -340,13 +347,23 @@ def main(all_characters):
 
 
 
-    def select_character_menu_menu(character_list):
+    def select_character_menu(character_list,from_battle=False):
         for index, character in enumerate(battle_in_initiative_order):
             display_name = f"{character.name} the {character.char_race} {character.char_class}"
-            if len(character.effects) == 0:
-                character_list.append(f"{index + 1:>4}   [{character.initiative:>2}]   {display_name:<65} {character.hp_current:>4} /{character.hp_total:>4}    {'None':<8}")
-            else:
-                character_list.append(f"{index + 1:>4}   [{character.initiative:>2}]   {display_name:<65} {character.hp_current:>4} /{character.hp_total:>4}    {', '.join(character.effects):<8}")
+            if from_battle == False:
+                if len(character.effects) == 0:
+                    character_list.append(f"{index + 1:>4}   [{character.initiative:>2}]   {display_name:<65} {character.hp_current:>4} /{character.hp_total:>4}    {'None':<8}")
+                else:
+                    character_list.append(f"{index + 1:>4}   [{character.initiative:>2}]   {display_name:<65} {character.hp_current:>4} /{character.hp_total:>4}    {', '.join(character.effects):<8}")
+            # The purpose of the below is to show just those characters who are not already a member of the party, so we can add them if desired
+            elif from_battle == True:
+                is_name_present = any(char.profile['name']['full'] in display_name for char in all_characters)
+                if not is_name_present:
+                    if len(character.effects) == 0:
+                        character_list.append(f"{index + 1:>4}   [{character.initiative:>2}]   {display_name:<65} {character.hp_current:>4} /{character.hp_total:>4}    {'None':<8}")
+                    else:
+                        character_list.append(f"{index + 1:>4}   [{character.initiative:>2}]   {display_name:<65} {character.hp_current:>4} /{character.hp_total:>4}    {', '.join(character.effects):<8}")
+
 
         character_list.append('Exit')
 
@@ -363,8 +380,6 @@ def main(all_characters):
 
 
 
-
-
     if len(all_characters) == 0:
         print(f"There are not character available to enter battle.")
     else:
@@ -378,18 +393,23 @@ def main(all_characters):
 
         if pickle_files:
             clear()
-            for pickle_file in pickle_files:
-                print(f"Previous save stated detected: {pickle_file}")
             load_pickle = ['Load previous battle','Start new battle']
             print("\n\033[91mDo you want to load it?\033[0m\n")
             load_pickle_menu = TerminalMenu(load_pickle)
             load_pickle_menu_index = load_pickle_menu.show()
             load_pickle_menu_selected = load_pickle[load_pickle_menu_index]
             if load_pickle_menu_selected == 'Load previous battle':
-                battle_in_initiative_order = pickle_handler.load_pkl_file(pickle_file, directory_path)
+                for pickle_file in pickle_files:
+                    # print(f"Previous save stated detected: {pickle_file}")
+                    if pickle_file == "battle.pkl":
+                        battle_in_initiative_order = pickle_handler.load_pkl_file(pickle_file, directory_path)
+                    if pickle_file == "temp_battle_characters.pkl":
+                        temp_battle_characters = pickle_handler.load_pkl_file(pickle_file, directory_path)
             elif load_pickle_menu_selected == 'Start new battle':
                 clear()
                 print(f"\n\033[91mMake Inititative Rolls:\033[0m\n")
+                print(f"Leave blank and press [Enter] for auto-roll, or enter a value manually.")
+                print()
                 for index, character in enumerate(all_characters):
                     characters_in_battle.append(character_enters_the_battle(character))
                 battle_in_initiative_order = sorted(characters_in_battle, key=lambda char: char.initiative, reverse=True)
@@ -411,11 +431,13 @@ def main(all_characters):
         'Apply an Effect to a Character',
         'Remove an Effect from a Character',
         'Modify the Turn Order',
-        'Add an Character to the Battle',
+        'Swap Friendly/Enemy Status',
+        'Add a Character to the Battle',
+        'Add a Monster to the Battle',
         'Remove a Character from the Battle',
+        'Have a Character Join To Party',
         'Character Management',
         'Roll Dice',
-        'Test',
         'Exit',
     ]
 
@@ -439,7 +461,7 @@ def main(all_characters):
             print_turn_banner()
 
             character_list = []
-            selected_character, selected_index, character_menu_index = select_character_menu_menu(character_list)
+            selected_character, selected_index, character_menu_index = select_character_menu(character_list)
 
 
             def character_inspection():
@@ -454,7 +476,65 @@ def main(all_characters):
                 input("\nPress Enter to Continue...")
 
 
-        elif battle_task_menu_selected == 'Add an Character to the Battle':
+
+        elif battle_task_menu_selected == 'Swap Friendly/Enemy Status':
+            clear()
+            print(battle_task_menu_selected)
+            print_turn_banner()
+
+            character_list = []
+            selected_character, selected_index, character_menu_index = select_character_menu(character_list)
+
+            if selected_character == 'Exit':
+                break                
+
+            else:
+                if battle_in_initiative_order[selected_index].friendly == True:
+                    battle_in_initiative_order[selected_index].friendly = False
+                elif battle_in_initiative_order[selected_index].friendly == False:
+                    battle_in_initiative_order[selected_index].friendly = True
+
+
+            # for index, character in enumerate(battle_in_initiative_order):
+            #     display_name = f"{character.name} the {character.char_race} {character.char_class}"
+
+            #     current_hp = character.hp_current
+            #     total_hp = character.hp_total
+            #     hp_color = get_hp_color(current_hp, total_hp)
+
+            #     if character.friendly == True:
+            #         if len(character.effects) == 0:
+            #             print(f"  {index + 1:>4}   [{character.initiative:>2}]   \033[92m{display_name:<65}\033[0m  {hp_color}{character.hp_current:>4} /{character.hp_total:>4}\033[0m    {'None':<8}")
+            #         else:
+            #             print(f"  {index + 1:>4}   [{character.initiative:>2}]   \033[92m{display_name:<65}\033[0m  {hp_color}{character.hp_current:>4} /{character.hp_total:>4}\033[0m    {', '.join(character.effects):<8}")
+            #     elif character.friendly == False:
+            #         if len(character.effects) == 0:
+            #             print(f"  {index + 1:>4}   [{character.initiative:>2}]   \033[91m{display_name:<65}\033[0m  {hp_color}{character.hp_current:>4} /{character.hp_total:>4}\033[0m    {'None':<8}")
+            #         else:
+            #             print(f"  {index + 1:>4}   [{character.initiative:>2}]   \033[91m{display_name:<65}\033[0m  {hp_color}{character.hp_current:>4} /{character.hp_total:>4}\033[0m    {', '.join(character.effects):<8}")
+
+        elif battle_task_menu_selected == 'Add a Character to the Battle':
+            clear()
+            print(battle_task_menu_selected)
+            print_turn_banner()
+            print_turn_order()
+
+            character_number_tracker = max((char.profile['character number'] for char in all_characters), default=0) + 1
+            create_character(all_characters,character_number_tracker,only_one=True)
+            new_character_in_battle = all_characters[-1]
+            temp_battle_characters.append(new_character_in_battle)
+            all_characters.pop()
+            pickle_handler.save_dnd_state('characters', all_characters)
+            pickle_handler.save_dnd_state('temp_battle_characters', temp_battle_characters, "./save_states/battles")
+
+
+            print(f"\n\033[91mMake an Inititative Roll:\033[0m\n")
+            print(f"Leave blank and press [Enter] for auto-roll, or enter a value manually.")
+            battle_in_initiative_order.append(character_enters_the_battle(new_character_in_battle))
+            pickle_handler.save_dnd_state('battle', battle_in_initiative_order, "./save_states/battles")
+
+
+        elif battle_task_menu_selected == 'Add a Monster to the Battle':
             clear()
             print(battle_task_menu_selected)
             print_turn_banner()
@@ -521,7 +601,7 @@ def main(all_characters):
                     print_turn_banner()
 
                     character_list = []
-                    selected_character, selected_index, character_menu_index = select_character_menu_menu(character_list)
+                    selected_character, selected_index, character_menu_index = select_character_menu(character_list)
 
                     if selected_character == 'Exit':
                         break
@@ -542,7 +622,7 @@ def main(all_characters):
             print_turn_banner()
 
             character_list = []
-            selected_character, selected_index, character_menu_index = select_character_menu_menu(character_list)
+            selected_character, selected_index, character_menu_index = select_character_menu(character_list)
 
             if selected_character == 'Exit':
                 pass
@@ -608,7 +688,7 @@ def main(all_characters):
             print_turn_banner()
 
             character_list = []
-            selected_character, selected_index, character_menu_index = select_character_menu_menu(character_list)
+            selected_character, selected_index, character_menu_index = select_character_menu(character_list)
 
             if selected_character == 'Exit':
                 pass
@@ -667,7 +747,7 @@ def main(all_characters):
             print_turn_banner()
 
             character_list = []
-            selected_character, selected_index, character_menu_index = select_character_menu_menu(character_list)
+            selected_character, selected_index, character_menu_index = select_character_menu(character_list)
 
             if selected_character == 'Exit':
                 pass
@@ -730,7 +810,7 @@ def main(all_characters):
             print_turn_banner()
 
             character_list = []
-            selected_character, selected_index, character_menu_index = select_character_menu_menu(character_list)
+            selected_character, selected_index, character_menu_index = select_character_menu(character_list)
 
             if selected_character == 'Exit':
                 pass
@@ -781,7 +861,7 @@ def main(all_characters):
             print_turn_banner()
 
             character_list = []
-            selected_character, selected_index, character_menu_index = select_character_menu_menu(character_list)
+            selected_character, selected_index, character_menu_index = select_character_menu(character_list)
 
             if selected_character == 'Exit':
                 pass
@@ -818,7 +898,7 @@ def main(all_characters):
                 print_turn_banner()
                 
                 character_list = []
-                selected_character, selected_index, character_menu_index = select_character_menu_menu(character_list)
+                selected_character, selected_index, character_menu_index = select_character_menu(character_list)
                 
                 if selected_character == 'Exit':
                     pass
@@ -834,50 +914,39 @@ def main(all_characters):
                 break
 
 
+        elif battle_task_menu_selected == 'Have a Character Join To Party':
+            clear()
+            print(battle_task_menu_selected)
+            print_turn_banner()
+
+            character_list = []
+            selected_character, selected_index, character_menu_index = select_character_menu(character_list, from_battle=True)
+
+            print(f"\n  Note: You can only have Character join a party - monsters are not supported.\n")
+            if selected_character == 'Exit':
+                break                
+            else:
+                for character_in_battle in temp_battle_characters:
+                    if character_in_battle.profile['name']['full'] in selected_character:
+                        all_characters.append(character_in_battle)
+                        pickle_handler.save_dnd_state('characters', all_characters)
+                        print(f"  {character_in_battle.profile['name']['full']} the {character_in_battle.character_race['Name']} {character_in_battle.character_class['Name']} has joined the party.\n")
+                    # else:
+                    #     print(f"\n  This is currently not permitted. {character_in_battle.profile['name']['full']} is a monster can not join the party.\n")
+
+                input(f"  Press enter to continue.")
+
         elif battle_task_menu_selected == 'Character Management':
             character_management(all_characters)
+
 
         elif battle_task_menu_selected == 'Roll Dice':
             dnd_roll_dice()
             input("\nPress Enter to Continue...")
 
+
         elif battle_task_menu_selected == 'Exit':
             break
-
-        elif battle_task_menu_selected == 'Test':
-
-
-            from pygments import formatters, highlight, lexers
-            from pygments.util import ClassNotFound
-
-
-            # def highlight_file(filepath):
-            #     with open(filepath, "r") as f:
-            #         file_content = f.read()
-            #     try:
-            #         lexer = lexers.get_lexer_for_filename(filepath, stripnl=False, stripall=False)
-            #     except ClassNotFound:
-            #         lexer = lexers.get_lexer_by_name("text", stripnl=False, stripall=False)
-            #     formatter = formatters.TerminalFormatter(bg="dark")  # dark or light
-            #     highlighted_file_content = highlight(file_content, lexer, formatter)
-            #     return highlighted_file_content
-            def highlight_file(filepath):
-                file_content = print_character(filepath)
-                try:
-                    lexer = lexers.get_lexer_for_filename(filepath, stripnl=False, stripall=False)
-                except ClassNotFound:
-                    lexer = lexers.get_lexer_by_name("text", stripnl=False, stripall=False)
-                formatter = formatters.TerminalFormatter(bg="dark")  
-                highlighted_file_content = highlight(file_content, lexer, formatter)
-                return highlighted_file_content
-
-            def list_files(directory="."):
-                return (file for file in os.listdir(directory) if os.path.isfile(os.path.join(directory, file)))
-
-
-            terminal_menu = TerminalMenu(battle_in_initiative_order, preview_command=highlight_file, preview_size=0.75)
-            menu_entry_index = terminal_menu.show()
-
 
         else:
             print('What the F is this error...')

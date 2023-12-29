@@ -54,7 +54,7 @@ def terminalmenu_quick_select(list,title):
     return list[terminal_menu_index]
 
 
-def dnd_roll_dice():
+def dnd_roll_dice(dice_number='roll',dice_sides='roll',roll_modifier='roll'):
     def roll_dice(sides):
         def roll(sides):
             roll = str(random.randint(1, sides))
@@ -67,26 +67,28 @@ def dnd_roll_dice():
         final_roll = the_roll
         return final_roll
 
-    while True:
-        try:
-            dice_number = int(input(f"Enter the number of dice: "))
-            break
-        except:
-            print(f"Enter a number!")
-    while True:
-        try:
-            dice_sides = int(input(f"Enter the dice size/number of sides: "))
-            break
-        except:
-            print(f"Enter a number!")
-    while True:
-        try:
-            roll_modifier = int(input(f"Enter your total modifier to add to each roll: "))
-            break
-        except:
-            print(f"Enter a number!")
+    if dice_number == 'roll':
+        while True:
+            try:
+                dice_number = int(input(f"Enter the number of dice: "))
+                break
+            except:
+                print(f"Enter a number!")
+    if dice_sides == 'roll':
+        while True:
+            try:
+                dice_sides = int(input(f"Enter the dice size/number of sides: "))
+                break
+            except:
+                print(f"Enter a number!")
+    if roll_modifier == 'roll':
+        while True:
+            try:
+                roll_modifier = int(input(f"Enter your total modifier to add to each roll: "))
+                break
+            except:
+                print(f"Enter a number!")
 
-    clear()
     print("==================================================")
     print(f"Going to roll {dice_number}d{dice_sides} + {roll_modifier}.")
     print("==================================================")
@@ -211,17 +213,23 @@ def character_management(all_characters):
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Chat with the Character':
                 character_names = [f"{character.profile['name']['first']} {character.profile['name']['last']} the {character.character_race['Name']} {character.character_class['Name']}" for character in all_characters]
                 character_names.append('Exit')
-                npc_description = all_characters[characters_menu_index].background.copy()
-               
-               
+                npc_background = all_characters[characters_menu_index].background.copy()
+                del npc_background['Source']
+                # born_and_raised = all_characters[characters_menu_index].profile['born and raised']
+                # input(born_and_raised)
+                # born_and_raised_details = dnd_towns_and_cities[born_and_raised].copy()
+                # del born_and_raised_details[]
                 conversation_with_npc(
                     character_names = character_names,
                     npc_name  = all_characters[characters_menu_index].profile['name']['full'],
                     npc_race  = all_characters[characters_menu_index].character_race["Name"],
                     npc_class = all_characters[characters_menu_index].character_class["Name"],
-                    npc_description = npc_description,
-                    # npc_salutations=,
-                    # npc_follow_up_statements=
+                    npc_background    = npc_background,
+                    # npc_salutations=None,
+                    # npc_follow_up_statements=None,
+                    born_and_raised   = all_characters[characters_menu_index].profile['born and raised'],
+                    current_residence = all_characters[characters_menu_index].profile['current residence'],
+                    places_visited    = all_characters[characters_menu_index].profile['places visited'],
                 )
                 input("\nPress Enter to Continue...")
             if dnd_menu_character_class_section_selection[dnd_menu_character_class_section_selection_menu_index] == 'Profile':
