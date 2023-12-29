@@ -8,12 +8,14 @@ from dnd_generate_character import *
 # from menu import *
 import random, os, re
 from dnd_lists import *
+import battlefield
 
 
 
 class Character_in_battle():
     def __init__(self):
         self.name = ''
+        self.display_name = ''
         self.cr = 0
         self.char_race = ''
         self.char_class = ''
@@ -34,6 +36,7 @@ class Character_in_battle():
     def to_dict(self):
         return {
             'name' : self.name,
+            'display_name' : self.display_name,
             'cr' : self.cr,
             'char_race' : self.char_race,
             'char_class' : self.char_class,
@@ -108,8 +111,9 @@ def main(all_characters):
     # number_of_characters = int(input(f"How many characters? "))
 
     def character_enters_the_battle(character):
-        char_in_battle            = Character_in_battle()
-        char_in_battle.name       = f"{character.profile['name']['first']} {character.profile['name']['last']}"
+        char_in_battle              = Character_in_battle()
+        char_in_battle.name         = f"{character.profile['name']['first']} {character.profile['name']['last']}"
+        char_in_battle.display_name = f"{character.profile['name']['first']} {character.profile['name']['last']}"
         # char_in_battle.cr         = character.profile['level']
         char_in_battle.level      = character.profile['level']
         char_in_battle.pb         = character.profile['proficiency bonus']
@@ -128,7 +132,7 @@ def main(all_characters):
         char_in_battle.wis        = int(character.attributes['wisdom']['modifier'])
         char_in_battle.cha        = int(character.attributes['charisma']['modifier'])
         while True:
-            user_roll = input(f"  Roll for {char_in_battle.name} the {char_in_battle.char_race} {char_in_battle.char_class}: ")
+            user_roll = input(f"  Roll for {char_in_battle.display_name} the {char_in_battle.char_race} {char_in_battle.char_class}: ")
             if user_roll == None or user_roll == "":
                 initiative_calc = dnd_roll_dice(dice_number=1,dice_sides=20,roll_modifier=char_in_battle.dex)
                 break
@@ -148,16 +152,17 @@ def main(all_characters):
         return char_in_battle
 
     def monster_enters_the_battle(monster):
-        mon_in_battle            = Character_in_battle()
-        mon_in_battle.name       = f"[{monster['Name']}] {random.choice(monster['5 Common First Names'])} {random.choice(monster['5 Common Last Names'])}"
-        mon_in_battle.cr         = monster["Challenge Rating"]
-        mon_in_battle.level      = 0
-        mon_in_battle.pb         = 0
-        mon_in_battle.char_race  = monster["Race"]
-        mon_in_battle.char_class = monster["Class"]
-        mon_in_battle.type       = monster["Type"]
-        mon_in_battle.size       = monster['Size']
-        mon_in_battle.ac         = monster["Armor Class"].split()[0]
+        mon_in_battle              = Character_in_battle()
+        mon_in_battle.name         = monster['Name']
+        mon_in_battle.display_name = f"[{monster['Name']}] {random.choice(monster['5 Common First Names'])} {random.choice(monster['5 Common Last Names'])}"
+        mon_in_battle.cr           = monster["Challenge Rating"]
+        mon_in_battle.level        = 0
+        mon_in_battle.pb           = 0
+        mon_in_battle.char_race    = monster["Race"]
+        mon_in_battle.char_class   = monster["Class"]
+        mon_in_battle.type         = monster["Type"]
+        mon_in_battle.size         = monster['Size']
+        mon_in_battle.ac           = monster["Armor Class"].split()[0]
 
         # Calculate dynamic hp base of ex: "350 (20d20 + 140)"
         match = re.search(r'(\d+) \((\d+)d(\d+) \+ (\d+)\)', monster["Hit Points"])
@@ -305,7 +310,9 @@ def main(all_characters):
 
 
     battle_in_initiative_order = []
-    temp_battle_characters = []
+    monsters_on_the_battlefield = []
+    temporary_battle_characters = []
+    original_battle_characters = []
 
     def print_turn_banner():
         print(f"  ======================================================================================================================================================")
@@ -328,7 +335,7 @@ def main(all_characters):
 
     def print_turn_order():
         for index, character in enumerate(battle_in_initiative_order):
-            display_name = f"{character.name} the {character.char_race} {character.char_class}"
+            display_name = f"{character.display_name} the {character.char_race} {character.char_class}"
 
             current_hp = character.hp_current
             total_hp = character.hp_total
@@ -349,7 +356,7 @@ def main(all_characters):
 
     def select_character_menu(character_list,from_battle=False):
         for index, character in enumerate(battle_in_initiative_order):
-            display_name = f"{character.name} the {character.char_race} {character.char_class}"
+            display_name = f"{character.display_name} the {character.char_race} {character.char_class}"
             if from_battle == False:
                 if len(character.effects) == 0:
                     character_list.append(f"{index + 1:>4}   [{character.initiative:>2}]   {display_name:<65} {character.hp_current:>4} /{character.hp_total:>4}    {'None':<8}")
@@ -403,15 +410,27 @@ def main(all_characters):
                     # print(f"Previous save stated detected: {pickle_file}")
                     if pickle_file == "battle.pkl":
                         battle_in_initiative_order = pickle_handler.load_pkl_file(pickle_file, directory_path)
-                    if pickle_file == "temp_battle_characters.pkl":
-                        temp_battle_characters = pickle_handler.load_pkl_file(pickle_file, directory_path)
+                    if pickle_file == "temporary_battle_characters.pkl":
+                        temporary_battle_characters = pickle_handler.load_pkl_file(pickle_file, directory_path)
+                    if pickle_file == "monsters_on_the_battlefield.pkl":
+                        monsters_on_the_battlefield = pickle_handler.load_pkl_file(pickle_file, directory_path)
+                    if pickle_file == "original_battle_characters.pkl":
+                        original_battle_characters = pickle_handler.load_pkl_file(pickle_file, directory_path)
+                        
+
             elif load_pickle_menu_selected == 'Start new battle':
                 clear()
                 print(f"\n\033[91mMake Inititative Rolls:\033[0m\n")
                 print(f"Leave blank and press [Enter] for auto-roll, or enter a value manually.")
                 print()
                 for index, character in enumerate(all_characters):
-                    characters_in_battle.append(character_enters_the_battle(character))
+                    char_to_add = character_enters_the_battle(character)
+                    characters_in_battle.append(char_to_add)
+                    original_battle_characters.append(char_to_add)
+
+                pickle_handler.save_dnd_state('original_battle_characters', original_battle_characters, "./save_states/battles")
+
+
                 battle_in_initiative_order = sorted(characters_in_battle, key=lambda char: char.initiative, reverse=True)
                 pickle_handler.save_dnd_state('battle', battle_in_initiative_order, "./save_states/battles")
         else:
@@ -419,7 +438,12 @@ def main(all_characters):
             print("No pickle files found in the directory.")
             print(f"\nMake Inititative Rolls:")
             for index, character in enumerate(all_characters):
-                characters_in_battle.append(character_enters_the_battle(character))
+                char_to_add = character_enters_the_battle(character)
+                characters_in_battle.append(char_to_add)
+                original_battle_characters.append(char_to_add)
+
+            pickle_handler.save_dnd_state('original_battle_characters', original_battle_characters, "./save_states/battles")
+
             battle_in_initiative_order = sorted(characters_in_battle, key=lambda char: char.initiative, reverse=True)
             pickle_handler.save_dnd_state('battle', battle_in_initiative_order, "./save_states/battles")
 
@@ -436,6 +460,7 @@ def main(all_characters):
         'Add a Monster to the Battle',
         'Remove a Character from the Battle',
         'Have a Character Join To Party',
+        'Generate Battlefield',
         'Character Management',
         'Roll Dice',
         'Exit',
@@ -496,7 +521,7 @@ def main(all_characters):
 
 
             # for index, character in enumerate(battle_in_initiative_order):
-            #     display_name = f"{character.name} the {character.char_race} {character.char_class}"
+            #     display_name = f"{character.display_name} the {character.char_race} {character.char_class}"
 
             #     current_hp = character.hp_current
             #     total_hp = character.hp_total
@@ -522,16 +547,21 @@ def main(all_characters):
             character_number_tracker = max((char.profile['character number'] for char in all_characters), default=0) + 1
             create_character(all_characters,character_number_tracker,only_one=True)
             new_character_in_battle = all_characters[-1]
-            temp_battle_characters.append(new_character_in_battle)
+            temporary_battle_characters.append(new_character_in_battle)
             all_characters.pop()
             pickle_handler.save_dnd_state('characters', all_characters)
-            pickle_handler.save_dnd_state('temp_battle_characters', temp_battle_characters, "./save_states/battles")
-
+            pickle_handler.save_dnd_state('temporary_battle_characters', temporary_battle_characters, "./save_states/battles")
 
             print(f"\n\033[91mMake an Inititative Roll:\033[0m\n")
             print(f"Leave blank and press [Enter] for auto-roll, or enter a value manually.")
-            battle_in_initiative_order.append(character_enters_the_battle(new_character_in_battle))
+
+            char_to_add = character_enters_the_battle(new_character_in_battle)
+
+            battle_in_initiative_order.append(char_to_add)
             pickle_handler.save_dnd_state('battle', battle_in_initiative_order, "./save_states/battles")
+
+            original_battle_characters.append(char_to_add)
+            pickle_handler.save_dnd_state('original_battle_characters', original_battle_characters, "./save_states/battles")
 
 
         elif battle_task_menu_selected == 'Add a Monster to the Battle':
@@ -567,13 +597,26 @@ def main(all_characters):
                         # print(f"[+] You have {dnd_monsters[matching_key]} {matching_key}(s) in your inventory.")
                         print_character(dnd_monsters[matching_key])
 
+                        num_mon_to_add = ['1','2','3','4','5','6','7','8','9','10']
+                        num_mon_to_add_menu = TerminalMenu(
+                            num_mon_to_add,
+                            title=f"Number of {matching_key} to add: "
+                        )
+                        num_mon_to_add_index = num_mon_to_add_menu.show()
+                        num_mon_to_add_selected = num_mon_to_add[num_mon_to_add_index]
+
+
                         options=['Yes','No']
-                        menu = TerminalMenu(options,title='Do you want to add this to the battle?')
+                        menu = TerminalMenu(options,title=f"Do you want to add {num_mon_to_add_selected} {matching_key}s this to the battle? ")
                         index = menu.show()
                         selected = options[index]
 
                         if selected == 'Yes':
-                            battle_in_initiative_order.append(monster_enters_the_battle(dnd_monsters[matching_key]))
+                            for _ in range(int(num_mon_to_add_selected)):
+                                monsters_on_the_battlefield.append(monster_enters_the_battle(dnd_monsters[matching_key]))
+                                battle_in_initiative_order.append(monster_enters_the_battle(dnd_monsters[matching_key]))
+
+                            pickle_handler.save_dnd_state('monsters_on_the_battlefield', monsters_on_the_battlefield, "./save_states/battles")
                             pickle_handler.save_dnd_state('battle', battle_in_initiative_order, "./save_states/battles")
 
                         elif selected == 'No':
@@ -926,7 +969,7 @@ def main(all_characters):
             if selected_character == 'Exit':
                 break                
             else:
-                for character_in_battle in temp_battle_characters:
+                for character_in_battle in temporary_battle_characters:
                     if character_in_battle.profile['name']['full'] in selected_character:
                         all_characters.append(character_in_battle)
                         pickle_handler.save_dnd_state('characters', all_characters)
@@ -935,6 +978,45 @@ def main(all_characters):
                     #     print(f"\n  This is currently not permitted. {character_in_battle.profile['name']['full']} is a monster can not join the party.\n")
 
                 input(f"  Press enter to continue.")
+
+
+
+        elif battle_task_menu_selected == 'Generate Battlefield':
+
+            # Convert the monsters_on_the_battlefield to be compatible with the battlefield map generator
+            monster_counts = {}
+            for monster in monsters_on_the_battlefield:
+                # if monster.name 
+                if monster.name not in monster_counts:
+                    monster_counts[monster.name] = 1
+                elif monster.name in monster_counts:
+                    monster_counts[monster.name] += 1
+
+            # debug(len(monsters_on_the_battlefield)) # too many, inclues char, temp char, and mon
+            # debug(temporary_battle_characters) #too few
+            # debug(characters_in_battle) #none?
+            map_these_characters = {}
+            for index, char in enumerate(original_battle_characters):
+                # print(
+                #     char.name,
+                #     char.char_race,
+                #     char.char_class,
+                #     index +1,
+                #     "'Color': 'Magenta_BG'",
+                # )
+                map_these_characters[char.name] = {
+                    'Marker': f"{index +1:02d}",
+                    'Color': 'Magenta_BG',
+                }
+
+            battlefield_grid_display = battlefield.main(
+                grid_size = 50,
+                monster_counts = monster_counts,
+                map_these_characters = map_these_characters,
+            )
+
+            input(f"Press enter to continue")
+
 
         elif battle_task_menu_selected == 'Character Management':
             character_management(all_characters)

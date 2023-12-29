@@ -256,6 +256,7 @@ def main():
                         
             input("\nPress Enter to Continue...")
             
+
         elif re.compile("^Monster Manual").match(main_menu_selected):
             # print_character(dnd_monsters)
 

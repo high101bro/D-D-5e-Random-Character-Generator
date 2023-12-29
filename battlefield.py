@@ -1,7 +1,6 @@
 #! /usr/bin/env python3
 
 
-
 import numpy as np
 import random
 import os
@@ -10,13 +9,12 @@ def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 clear()
 
+# Colors
+empty_area_color = "\033[100m"
+path_color = "\033[43m"
+town_color = "\033[106m" 
+reset_color = "\033[0m"
 
-
-# Initialize the grid and path start column
-grid_size = 100
-path_width = 5  # Define path_width here
-middle_start = grid_size // 2
-path_start_col = random.randint(middle_start - 5, middle_start + 5)
 
 def update_path_start_col(path_start_col, grid_size, path_width):
     path_start_col += random.choice([-1, 0, 1])
@@ -78,7 +76,7 @@ def get_color_code(color_name):
 ####################################################################################################
 # Symbols
 ####################################################################################################
-
+# TODO: Integrated symbols... though not compatible with simple_term_menu
 utf8_symbols = {
     'menu': '\u2630',            # ☰
     'heart': '\u2665',           # ♥
@@ -373,43 +371,6 @@ def place_graveyard(grid, grid_size):
                 break  # Exit loop after placing the graveyard
 
 
-# ####################################################################################################
-# # Town
-# ####################################################################################################
-# def place_town(grid, grid_size):
-#     town_color = get_color_code('Cyan')  # Define a color for the town buildings
-#     num_buildings = random.randint(0, 3)  # Number of buildings in the town
-
-#     # Store centers of the existing buildings
-#     building_centers = []
-
-#     for _ in range(num_buildings):
-#         building_width = random.randint(2, 4)
-#         building_height = random.randint(2, 4)
-
-#         if building_centers:
-#             # Choose a random building and place the new one within 5-10 squares
-#             ref_building = random.choice(building_centers)
-#             distance = random.randint(5, 10)
-#             direction = random.choice([(1,0), (-1,0), (0,1), (0,-1)])
-#             town_row = max(0, min(ref_building[0] + direction[0] * distance, grid_size - building_height))
-#             town_col = max(0, min(ref_building[1] + direction[1] * distance, grid_size - building_width))
-#         else:
-#             # Randomly choose a starting location for the first building
-#             town_row = random.randint(0, grid_size - building_height)
-#             town_col = random.randint(0, grid_size - building_width)
-
-#         # Place each building in the town
-#         for r in range(building_height):
-#             for c in range(building_width):
-#                 new_row = town_row + r
-#                 new_col = town_col + c
-#                 grid[new_row, new_col] = f"{town_color}[Bl]{reset_color}"
-
-#         # Add the center of the new building to building_centers
-#         building_centers.append((town_row + building_height // 2, town_col + building_width // 2))
-
-
 ####################################################################################################
 # Town with potential wall 
 ####################################################################################################
@@ -502,7 +463,7 @@ def place_town_with_walls(grid, grid_size, num_buildings_range, building_width_r
 # Bridges
 ####################################################################################################
 
-def create_bridge():
+def create_bridge(grid_size,path_grid,grid):
     # Determine if the path crosses the river and place bridges
     for row in range(grid_size):
         for col in range(grid_size):
@@ -514,7 +475,22 @@ def create_bridge():
 # Place Characters
 ####################################################################################################
 
-def place_characters_in_formation(grid, center_row, center_col, characters):
+def extend_pattern(base_offsets, num_characters):
+    extended_offsets = []
+    index = 0
+
+    while len(extended_offsets) < num_characters:
+        dy, dx = base_offsets[index % len(base_offsets)]
+        # Apply a modifier to spread out characters
+        modifier = index // len(base_offsets)
+        new_offset = (dy + modifier, dx + modifier)
+        extended_offsets.append(new_offset)
+        index += 1
+
+    return extended_offsets
+
+
+def place_characters_in_formation(grid_size, grid, center_row, center_col, characters):
     formations = [
         'V', 'inverted V', 'square', 'circle', 'vertical line', 'horizontal line', 'random',
         'spread out', 'leading', 'trailing', 'two groups vertical', 'two groups horizontal',
@@ -522,36 +498,62 @@ def place_characters_in_formation(grid, center_row, center_col, characters):
     ]
     formation = random.choice(formations)
 
+    num_characters = len(characters)
+
     # Default offsets in case no formation matches
-    offsets = [(random.randint(-3, 3), random.randint(-3, 3)) for _ in range(5)]
+    offsets = [(random.randint(-5, 5), random.randint(-5, 5)) for _ in range(num_characters)]
 
     if formation == 'V':
-        offsets = [(0, 0), (-1, -1), (-2, -2), (-1, 1), (-2, 2)]
+        base_offsets = [(0, 0), (-2, -2), (-4, -4), (-2, 2), (-4, 4)]
     elif formation == 'inverted V':
-        offsets = [(0, 0), (1, -1), (2, -2), (1, 1), (2, 2)]
-    # ... [existing formations] ...
+        base_offsets = [(0, 0), (2, -2), (4, -4), (2, 2), (4, 4)]
     elif formation == 'spread out':
-        offsets = [(0, 0), (-2, -2), (2, 2), (-2, 2), (2, -2)]
+        base_offsets = [(0, 0), (-4, -4), (4, 4), (-4, 4), (4, -4)]
     elif formation == 'leading':
-        offsets = [(0, 0), (-1, 0), (-2, 0), (-3, 0), (-4, 0)]
+        base_offsets = [(0, 0), (-2, 0), (-4, 0), (-6, 0), (-8, 0)]
     elif formation == 'trailing':
-        offsets = [(0, 0), (1, 0), (2, 0), (3, 0), (4, 0)]
+        base_offsets = [(0, 0), (2, 0), (4, 0), (6, 0), (8, 0)]
     elif formation == 'two groups vertical':
-        offsets = [(0, 0), (0, 1), (1, 0), (1, 1), (2, 3)]
+        base_offsets = [(0, 0), (0, 2), (2, 0), (2, 2), (4, 4)]
     elif formation == 'two groups horizontal':
-        offsets = [(0, 0), (1, 0), (0, 1), (2, 0), (1, 3)]
+        base_offsets = [(0, 0), (2, 0), (0, 2), (4, 0), (2, 4)]
     elif formation == 'swiggle vertical':
-        offsets = [(0, 0), (1, 1), (2, 0), (3, 1), (4, 0)]
+        base_offsets = [(0, 0), (2, 2), (4, 0), (6, 2), (8, 0)]
     elif formation == 'swiggle horizontal':
-        offsets = [(0, 0), (1, -1), (1, 0), (1, 1), (1, 2)]
+        base_offsets = [(0, 0), (2, -2), (2, 0), (2, 2), (2, 4)]
     elif formation == 'box':
-        offsets = [(0, 0), (0, 1), (1, 0), (1, 1), (2, 2)]
+        base_offsets = [(0, 0), (0, 2), (2, 0), (2, 2), (4, 4)]
     elif formation == 'carrot left':
-        offsets = [(0, 0), (-1, -1), (-2, -2), (-3, -1), (-4, 0)]
+        base_offsets = [(0, 0), (-2, -2), (-4, -4), (-6, -2), (-8, 0)]
     elif formation == 'carrot right':
-        offsets = [(0, 0), (-1, 1), (-2, 2), (-3, 1), (-4, 0)]
+        base_offsets = [(0, 0), (-2, 2), (-4, 4), (-6, 2), (-8, 0)]
     elif formation == 'two columns':
-        offsets = [(0, 0), (1, 0), (2, 0), (0, 1), (1, 1)]
+        base_offsets = [(0, 0), (2, 0), (4, 0), (0, 2), (2, 2)]
+    else:
+        base_offsets = offsets
+
+    print(formation)
+    offsets = extend_pattern(base_offsets, num_characters)
+
+    character_keys = list(characters.keys())
+    placed_characters = 0
+
+    for i in range(len(characters)):
+        if placed_characters >= num_characters:
+            break
+
+        char = character_keys[i]
+        info = characters[char]
+        dy, dx = offsets[i]
+
+        new_row = center_row + dy
+        new_col = center_col + dx
+
+        if 0 <= new_row < grid_size and 0 <= new_col < grid_size and grid[new_row][new_col] is None:
+            grid[new_row][new_col] = f"{get_color_code(info['Color'])}[{info['Marker']}]{get_color_code('Reset All')}"
+            info['Location'] = (new_row, new_col)
+            placed_characters += 1
+
 
     for char, info in characters.items():
         dy, dx = offsets.pop(0)
@@ -563,6 +565,7 @@ def is_location_freee(grid, row, col, grid_size):
     """ Check if a grid location is free. """
     return 0 <= row < grid_size and 0 <= col < grid_size and grid[row, col] == f"{empty_area_color}[  ]{reset_color}"
 
+
 def place_characters_randomly(grid, grid_size, characters):
     for char, info in characters.items():
         while True:
@@ -572,6 +575,7 @@ def place_characters_randomly(grid, grid_size, characters):
                 grid[row, col] = f"{get_color_code(info['Color'])}[{info['Marker']}]{reset_color}"
                 info['Location'] = (row, col)
                 break
+
 
 ####################################################################################################
 # Place Monsters
@@ -628,116 +632,124 @@ def generate_wildlife(grid, grid_size, num_wildlife):
 
 
 
-# Colors
-empty_area_color = "\033[100m"
-path_color = "\033[43m"
-town_color = "\033[106m" 
-reset_color = "\033[0m"
+def main(grid_size=100, monster_counts={'Zombie': 8, 'Skeleton': 4, 'Raptors1': 4, 'Raptors2': 4},map_these_characters=None):
 
-# Create the initial grid with pre-generated path
-grid = np.full((grid_size, grid_size), f"{empty_area_color}[  ]{reset_color}")
-path_grid = np.zeros((grid_size, grid_size), dtype=bool)  # This will track the path
-for row in range(grid_size):
-    path_start_col = update_path_start_col(path_start_col, grid_size, path_width)
-    for col in range(path_start_col, path_start_col + path_width):
-        grid[row, col] = f"{path_color}[  ]{reset_color}"
-        path_grid[row, col] = True  # Mark path cells
-
-# Determine the center point of the path
-center_row = grid_size // 2
-center_col = path_start_col + path_width // 2
+    # Initialize the grid and path start column
+    
+    path_width = 5  # Define path_width here
+    middle_start = grid_size // 2
+    path_start_col = random.randint(middle_start - 5, middle_start + 5)
 
 
-# Place boulders on the grid
-num_boulders = random.randint(20, 40)
-place_boulders(grid, grid_size, num_boulders)
+    # Create the initial grid with pre-generated path
+    grid = np.full((grid_size, grid_size), f"{empty_area_color}[  ]{reset_color}")
+    path_grid = np.zeros((grid_size, grid_size), dtype=bool)  # This will track the path
+    for row in range(grid_size):
+        path_start_col = update_path_start_col(path_start_col, grid_size, path_width)
+        for col in range(path_start_col, path_start_col + path_width):
+            grid[row, col] = f"{path_color}[  ]{reset_color}"
+            path_grid[row, col] = True  # Mark path cells
 
-num_wildlife = random.randint(20, 40)
-generate_wildlife(grid, grid_size, num_wildlife)
-
-# Place a graveyard on the grid
-place_graveyard(grid, grid_size)
-
-# Place lake
-place_lake(grid, grid_size)
-
-# Place river
-place_river(grid, grid_size)
-
-if random.choice([False,False,False,True]):
-    place_town_with_walls(grid, grid_size, building_width_range=(4, 6), building_height_range=(4, 6), num_buildings_range=(15, 20), generate_wall=True)
-
-if random.choice([False,False,False,True]):
-    place_town_with_walls(grid, grid_size, building_width_range=(2, 5), building_height_range=(2, 5), num_buildings_range=(0, 3), generate_wall=False)
-
-create_bridge
-
-# Place trees
-place_trees(grid, grid_size, random.randint(30,150), random.randint(1,3))  # Adjust 30 to the desired number of trees
-
-# Place town
-# place_town(grid, grid_size)
+    # Determine the center point of the path
+    center_row = grid_size // 2
+    center_col = path_start_col + path_width // 2
 
 
-# Character information with their locations
-characters = {
-    'Druid': {
-        'Name': 'Hippie', 
-        'Marker': '01', 
-        # 'Location': character_positions[0],
-        'Color': 'Magenta_BG'
-    },
-    'Ranger': {
-        'Name': 'Eragon', 
-        'Marker': '02', 
-        # 'Location': character_positions[1],
-        'Color': 'Magenta_BG'
-    },
-    'Sorcerer': {
-        'Name': 'Witcher', 
-        'Marker': '03', 
-        # 'Location': character_positions[2],
-        'Color': 'Magenta_BG'
-    },
-    'Rogue': {
-        'Name': 'Slyman', 
-        'Marker': '04', 
-        # 'Location': character_positions[3],
-        'Color': 'Magenta_BG'
-    },
-    'Paladin': {
-        'Name': 'Gunter', 
-        'Marker': '05', 
-        # 'Location': character_positions[4],
-        'Color': 'Magenta_BG'
-    }
-}
+    # Place boulders on the grid
+    num_boulders = random.randint(20, 40)
+    place_boulders(grid, grid_size, num_boulders)
 
-place_characters_in_formation(grid, center_row, center_col, characters)
+    num_wildlife = random.randint(20, 40)
+    generate_wildlife(grid, grid_size, num_wildlife)
+
+    # Place a graveyard on the grid
+    place_graveyard(grid, grid_size)
+
+    # Place lake
+    place_lake(grid, grid_size)
+
+    # Place river
+    place_river(grid, grid_size)
+
+    if random.choice([False,False,False,True]):
+        place_town_with_walls(grid, grid_size, building_width_range=(4, 6), building_height_range=(4, 6), num_buildings_range=(15, 20), generate_wall=True)
+
+    if random.choice([False,False,False,True]):
+        place_town_with_walls(grid, grid_size, building_width_range=(2, 5), building_height_range=(2, 5), num_buildings_range=(0, 3), generate_wall=False)
+
+    create_bridge
+
+    # Place trees
+    place_trees(grid, grid_size, random.randint(30,150), random.randint(1,3))  # Adjust 30 to the desired number of trees
+
+    # Place town
+    # place_town(grid, grid_size)
 
 
+    # Character information with their locations
+    # map_these_characters = {
+    #     'Druid': {
+    #         'Name': 'Hippie', 
+    #         'Marker': '01', 
+    #         # 'Location': character_positions[0],
+    #         'Color': 'Magenta_BG'
+    #     },
+    #     'Ranger': {
+    #         'Name': 'Eragon', 
+    #         'Marker': '02', 
+    #         # 'Location': character_positions[1],
+    #         'Color': 'Magenta_BG'
+    #     },
+    #     'Sorcerer': {
+    #         'Name': 'Witcher', 
+    #         'Marker': '03', 
+    #         # 'Location': character_positions[2],
+    #         'Color': 'Magenta_BG'
+    #     },
+    #     'Rogue': {
+    #         'Name': 'Slyman', 
+    #         'Marker': '04', 
+    #         # 'Location': character_positions[3],
+    #         'Color': 'Magenta_BG'
+    #     },
+    #     'Paladin': {
+    #         'Name': 'Gunter', 
+    #         'Marker': '05', 
+    #         # 'Location': character_positions[4],
+    #         'Color': 'Magenta_BG'
+    #     },
+    #     'Rogued': {
+    #         'Name': 'Slyman', 
+    #         'Marker': '06', 
+    #         # 'Location': character_positions[3],
+    #         'Color': 'Magenta_BG'
+    #     },
+    #     'Paladind': {
+    #         'Name': 'Gunter', 
+    #         'Marker': '07', 
+    #         # 'Location': character_positions[4],
+    #         'Color': 'Magenta_BG'
+    #     }
+    # }
 
-monster_counts = {'Zombie': 8, 'Skeleton': 4, 'Raptors1': 4, 'Raptors2': 4}  # Specify count for each monster type
-monsters = generate_monsters(monster_counts)
-for monster_type in monsters:
-    place_monsters_in_clusters(grid, grid_size, monsters[monster_type])
+    place_characters_in_formation(grid_size, grid, center_row, center_col, map_these_characters)
+    
+    # place_characters_randomly(grid, grid_size, characters)
 
 
+    monsters = generate_monsters(monster_counts)
+    for monster_type in monsters:
+        place_monsters_in_clusters(grid, grid_size, monsters[monster_type])
 
 
-
-create_bridge
-
+    create_bridge(grid_size,path_grid,grid)
 
 
+    # Format grid for display
+    grid_display = "\n".join(["".join(row) for row in grid])
+    print(f"Formation: {grid_display}")
+    return grid_display
 
 
-
-
-
-
-
-
-# Format grid for display
-grid_display = "\n".join(["".join(row) for row in grid])
-print(grid_display)
+if __name__ == "__main__":
+    main()

@@ -44,16 +44,6 @@ class Character():
         self.character_class = {}
         self.description = {}
         self.background = {}
-
-        #         'traits' : {
-        #             'personality' : [],
-        #             'feats' : [],
-        #             'ideals' : [],
-        #             'bonds' : [],
-        #             'flaws' : []
-        #         },
-        #         'all_proficiencies' : [],
-        #         'all_languages' : []
         self.level_chart = {}
         self.attributes = {
             'strength' : {},
