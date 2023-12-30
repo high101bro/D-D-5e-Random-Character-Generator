@@ -41935,5 +41935,105 @@ dnd_monsters = {
             "Volpcrawler",
             "One-Eye"
         ]
-    }
+    },
+    "Velociraptor": {
+        "Name": "Velociraptor",
+        "Type": "Medium Beast",
+        "Alignment": "Unaligned",
+        "Armor Class": "13 (natural armor)",
+        "Hit Points": "22 (4d8)",
+        "Speed": "60 ft.",
+        "Damage Immunities": "None",
+        "Condition Immunities": "None",
+        "Senses": "passive Perception 13",
+        "Languages": "—",
+        "Challenge Rating": "1 (200 XP)",
+        "STR": "14 (+2)",
+        "DEX": "16 (+3)",
+        "CON": "13 (+1)",
+        "INT": "2 (-4)",
+        "WIS": "12 (+1)",
+        "CHA": "5 (-3)",
+        "Features": [
+            "Pack Tactics: The velociraptor has advantage on an attack roll against a creature if at least one of the velociraptor's allies is within 5 feet of the creature and the ally isn't incapacitated.",
+            "Ambusher: In the first round of combat, the velociraptor has advantage on attack rolls against any creature it surprised."
+        ],
+        "Actions": [
+            "Bite: Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.",
+            "Pounce: If the velociraptor moves at least 20 feet straight toward a creature and then hits it with a bite attack on the same turn, the target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the velociraptor can make one bite attack against it as a bonus action."
+        ],
+        "Description": "The velociraptor is a swift and agile predator, resembling a small, feathered dinosaur with sharp claws and teeth. It moves on two legs and has a long tail for balance.",
+        "Narrative": "Velociraptors are cunning hunters, often found in dense jungles and forests. They are known for their coordinated pack hunting techniques and their ability to ambush their prey.",
+        "Background": "These creatures are often the result of ancient magic or the tampering of natural order, making them both feared and revered in certain cultures.",
+        "History": "Velociraptors, once thought to be mere legends, have been brought to life through the meddling of powerful wizards or by the natural evolution in remote ecosystems.",
+        "Lore": "They are often associated with ancient temples and lost civilizations, where they act as natural guardians of long-forgotten secrets.",
+        "Encounter Odds Percentage": "10%",
+        "Also Known By": "Feathered Terror, Jungle Stalker, Swift Lizard",
+        "Physical Features": "Velociraptors are small, agile, and feathered, with sharp claws and teeth. They have a lean build, with a length of about 6 to 7 feet from snout to tail.",
+        "Location Found": "Dense jungles, deep forests, ancient ruins.",
+        "Sleeps": "Yes",
+        "Active During": "Dusk and Dawn",
+        "Role In Ecosystem": "Predator, controlling populations of smaller animals.",
+        "Environmental Factors": "Adaptable to various environments but prefer dense foliage for ambush hunting.",
+        "Habits": "Pack hunters, known for their stealth and speed.",
+        "Behavior": "Highly aggressive when hunting or threatened; otherwise, elusive.",
+        "Cultural Significance": "In some cultures, velociraptors are revered as symbols of swiftness and cunning. In others, they are feared as ruthless predators.",
+        "Worshiped By": "Some primitive tribes",
+        "Worshiper Of": "None",
+        "Monster's Deity Or Patron": "None",
+        "Motivations": "Driven by instinct to hunt and survive.",
+        "Misconceptions": "Often mistaken for being larger due to their reputation; actual size is smaller.",
+        "Stereotypes": "Seen as mindless predators, but they possess a high degree of intelligence and social structure.",
+        "Commonly Mistake For": "Smaller, less dangerous lizards or birds.",
+        "Tactics If Alone": "Relies on speed and stealth to ambush prey.",
+        "Tactics Within A Group": "Coordinates with pack for strategic hunting and ambushes.",
+        "Group Dynamics": "Operates in a pack with a clear social hierarchy.",
+        "Avoids": "Large groups of armed adventurers, larger predators.",
+        "Targets": "Smaller creatures, isolated individuals.",
+        "Commonly Found With": [
+            "Other velociraptors (as part of a pack)",
+            "Smaller forest creatures"
+        ],
+        "Travels In Groups": "Yes, typically in packs",
+        "Aggressiveness": "High when hunting",
+        "Do They Hunt Humans": "Yes, if they perceive humans as prey",
+        "Strengths": "Speed, agility, pack tactics, ambush hunting",
+        "Weaknesses": "Low hit points, vulnerable to area-of-effect attacks",
+        "Are There Any Non-combat Approaches": "Can be avoided or deterred with caution and stealth",
+        "Pro-Tip Against Monster": "Use area control spells and tactics to disrupt pack coordination. Take advantage of their low HP in combat.",
+        "Weapons Used": "Natural weapons (teeth and claws)",
+        "Armor Used": "None",
+        "Items Used": "None",
+        "5 Random Facts": [
+            "Velociraptors communicate with each other using subtle body language and vocalizations.",
+            "They are known to set up ambushes along well-traveled paths in their territory.",
+            "Their feathers provide them with camouflage in their natural environment.",
+            "They can run at bursts of speed up to 60 feet per round.",
+            "Their hunting tactics show a surprising level of intelligence and cooperation."
+        ],
+        "5 Common Treasure Drops": [
+            "Remnants of previous prey (bones, fur, etc.)",
+            "Lost items from devoured adventurers",
+            "Rare jungle herbs or plants found in their territory",
+            "Feathers or claws (could be used in potion making or rituals)",
+            "Small trinkets or coins from previous prey"
+        ],
+        "Race": "Beast",
+        "Class": "Predator",
+        "Size": "Medium",
+        "5 Common First Names": [
+            "Sly",
+            "Swift",
+            "Razor",
+            "Hunter",
+            "Shadow"
+        ],
+        "5 Common Last Names": [
+            "Stalker",
+            "Pouncer",
+            "Claw",
+            "Fang",
+            "Runner"
+        ]
+    },
 }

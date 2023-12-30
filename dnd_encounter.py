@@ -450,6 +450,7 @@ def main(all_characters):
     battle_tasks = [
         'Inspect Character',
         'Attack a Character',
+        'Fumble Generator',
         'Heal a Character',
         'Resurrect a Character',
         'Apply an Effect to a Character',
@@ -724,6 +725,49 @@ def main(all_characters):
                                 except:
                                     print(f"Ensure to enter a number")
                         break
+
+
+        elif battle_task_menu_selected == 'Fumble Generator':
+            clear()
+
+            fumble_types = ['Melee Attack', 'Ranged Attack', 'Spell Attack', 'Skills Checks', 'Saving Throws']
+            fumble_types_menu = TerminalMenu(fumble_types,title=f"Select a fumble type to generate: ")
+            fumble_types_index = fumble_types_menu.show()
+            fumble_types_selected = fumble_types[fumble_types_index]
+
+            if fumble_types_selected == 'Melee Attack':
+                print(random.choice(dnd_fumbles_melee))
+                print()
+                input(f"Press enter to continue")
+
+            elif fumble_types_selected == 'Ranged Attack':
+                print(random.choice(dnd_fumbles_ranged))
+                print()
+                input(f"Press enter to continue")
+
+            elif fumble_types_selected == 'Spell Attack':
+                print(random.choice(dnd_fumbles_spells))
+                print()
+                input(f"Press enter to continue")
+
+            elif fumble_types_selected == 'Skills Checks':
+                dnd_fumbles_skills_list = list(dnd_fumbles_skills.keys())
+                fumble_menu = TerminalMenu(dnd_fumbles_skills_list)
+                fumble_menu_index = fumble_menu.show()
+                fumble_menu_selected = dnd_fumbles_skills_list[fumble_menu_index]
+                print(random.choice(dnd_fumbles_skills.get(fumble_menu_selected)))
+                print()
+                input(f"Press enter to continue")
+
+            elif fumble_types_selected ==  'Saving Throws':
+                dnd_fumble_attribute_saves_list = list(dnd_fumble_attribute_saves.keys())
+                fumble_menu = TerminalMenu(dnd_fumble_attribute_saves_list)
+                fumble_menu_index = fumble_menu.show()
+                fumble_menu_selected = dnd_fumble_attribute_saves_list[fumble_menu_index]
+                print(random.choice(dnd_fumble_attribute_saves.get(fumble_menu_selected)))
+                print()
+                input(f"Press enter to continue")
+
 
         elif battle_task_menu_selected == 'Heal a Character':
             clear()
