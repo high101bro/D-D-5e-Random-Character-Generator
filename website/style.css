@@ -1,0 +1,71 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto 1fr auto auto;
+  gap: 10px;
+  width: 100%;
+  height: 100vh;
+}
+.full-width { 
+  grid-column: 1 / span 5; 
+}
+.left-col { 
+  grid-column: 1; 
+}
+.inner-container {
+  display: flex;
+  width: 100%;
+}
+.inner-column {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 2px;
+}
+.middle-col { 
+  grid-column: 2; 
+}
+.right-col { 
+  grid-column: 3; 
+}
+.top, .middle, .bottom, .left-col, .middle-col, .right-col {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 2px;
+}
+.top {
+  display: flex; /* This will line up your columns horizontally */
+}
+
+.column {
+  flex: 1; /* This makes each column take up equal space */
+  padding: 10px; /* Add padding for spacing */
+  border: 1px solid #ccc; /* Optional, for visual separation */
+  margin: 2px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  margin-right: 10px;
+}
+
+.label-title {
+  font-size: large;
+  color: darkred;
+}
+
+.input-field {
+  width: 100px; /* or any other width you prefer */
+  color: black;
+}
+
+* {
+  font-weight: bold;
+  color: darkblue;
+}
